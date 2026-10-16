@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Guia Tax Deed</title>
+<style>
+  @page { size: A4; margin: 0; }
+  :root { --navy:#0f3d5e; --navy2:#1b5e8a; --gold:#f2b705; --ink:#1d2430; --muted:#5b6675; --line:#dde3ea; --soft:#f4f7fa; --red:#c62828; --green:#2e7d32; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:"DejaVu Sans","Liberation Sans","Noto Color Emoji",sans-serif; color:var(--ink); font-size:10.2pt; line-height:1.5; }
+  .page { width:210mm; height:297mm; overflow:hidden; padding:18mm 17mm 20mm; position:relative; page-break-after:always; }
+  .page:last-child { page-break-after:auto; }
+  h1 { font-size:20pt; color:var(--navy); margin:0 0 4px; }
+  h2 { font-size:13pt; color:var(--navy2); margin:18px 0 6px; }
+  .kicker { color:var(--gold); font-weight:bold; letter-spacing:2px; font-size:9pt; text-transform:uppercase; }
+  .bar { height:4px; width:60px; background:var(--gold); margin:8px 0 14px; }
+  p { margin:6px 0; }
+  table { width:100%; border-collapse:collapse; margin:8px 0 12px; font-size:9.2pt; }
+  th { background:var(--navy); color:#fff; text-align:left; padding:6px 7px; }
+  td { border-bottom:1px solid var(--line); padding:5px 7px; vertical-align:top; }
+  tr:nth-child(even) td { background:var(--soft); }
+  .box { background:var(--soft); border-left:4px solid var(--navy2); padding:9px 12px; margin:10px 0; border-radius:3px; }
+  .warn { background:#fff8e1; border-left-color:var(--gold); }
+  .alert { background:#fdecea; border-left-color:var(--red); }
+  .two { display:flex; gap:12px; }
+  .two > div { flex:1; }
+  .card { border:1px solid var(--line); border-radius:6px; padding:10px 12px; }
+  .card h3 { margin:0 0 4px; font-size:11pt; color:var(--navy); }
+  .steps { counter-reset:s; list-style:none; padding:0; margin:8px 0; }
+  .steps li { counter-increment:s; position:relative; padding:7px 0 7px 40px; border-bottom:1px dashed var(--line); }
+  .steps li::before { content:counter(s); position:absolute; left:0; top:6px; width:28px; height:28px; border-radius:50%; background:var(--navy); color:#fff; font-weight:bold; text-align:center; line-height:28px; }
+  .check { list-style:none; padding:0; margin:6px 0; }
+  .check li { padding:4px 0 4px 26px; position:relative; border-bottom:1px solid var(--line); }
+  .check li::before { content:"☐"; position:absolute; left:2px; top:2px; font-size:13pt; color:var(--navy2); }
+  .calc td:last-child { text-align:right; font-family:"DejaVu Sans Mono",monospace; }
+  .calc tr.total td { background:var(--navy); color:#fff; font-weight:bold; }
+  .foot { position:absolute; bottom:9mm; left:17mm; right:17mm; font-size:7.5pt; color:var(--muted); display:flex; justify-content:space-between; border-top:1px solid var(--line); padding-top:4px; }
+  .small { font-size:8.6pt; color:var(--muted); }
+  /* cover */
+  .cover { background:var(--navy); color:#fff; padding:0; display:flex; flex-direction:column; }
+  .cover .top { padding:30mm 20mm 0; flex:1; }
+  .cover h1 { color:#fff; font-size:34pt; line-height:1.1; margin:10px 0; }
+  .cover .sub { font-size:14pt; color:#cfe0ee; max-width:150mm; }
+  .cover .tag { display:inline-block; background:var(--gold); color:var(--navy); font-weight:bold; padding:5px 12px; border-radius:3px; font-size:10pt; letter-spacing:1px; }
+  .cover ul { margin:22px 0 0; padding:0; list-style:none; font-size:11.5pt; }
+  .cover ul li { padding:6px 0; border-bottom:1px solid rgba(255,255,255,.15); }
+  .cover .bottom { background:#0a2c44; padding:12mm 20mm; font-size:10pt; color:#cfe0ee; }
+  .cover .bottom b { color:#fff; }
+  .house { font-size:60pt; margin-top:10mm; }
+  .cta { background:var(--navy); color:#fff; border-radius:8px; padding:14px 16px; margin-top:12px; }
+  .cta b { color:var(--gold); }
+</style>
+</head>
+<body>
+
+<!-- CAPA -->
+<section class="page cover">
+  <div class="top">
+    <span class="tag">GUIA GRATUITO</span>
+    <h1>Tax Deed:<br>como funciona a compra de casas em leilão de impostos nos EUA</h1>
+    <p class="sub">O passo a passo explicado em português, do leilão à venda, para quem mora no Brasil e quer entender esse mercado antes de dar o primeiro lance.</p>
+    <ul>
+      <li>🏛️ O que é Tax Deed e por que essas casas vão a leilão</li>
+      <li>🗺️ Como funcionam os leilões na PA, CT, NY e OH</li>
+      <li>🔍 O checklist de análise que usamos antes de cada lance</li>
+      <li>🧮 A conta do lance máximo</li>
+      <li>⚠️ Os riscos reais, sem enfeite</li>
+    </ul>
+    <div class="house">🏚️ ➜ 🏡</div>
+  </div>
+  <div class="bottom">
+    <b>Discovery Investment</b> · Instagram <b>@discoveryremodeling</b><br>
+    Família brasileira que visita, arremata e reforma imóveis de leilão em Connecticut, Pensilvânia, Ohio e Nova York.
+  </div>
+</section>
+
+<!-- 1 -->
+<section class="page">
+  <div class="kicker">Capítulo 1</div>
+  <h1>O que é Tax Deed</h1>
+  <div class="bar"></div>
+  <p>Nos Estados Unidos, todo dono de imóvel paga um imposto anual sobre a propriedade, o <b>property tax</b>, parecido com o nosso IPTU. É ele que financia escolas, polícia e serviços da cidade.</p>
+  <p>Quando o dono deixa de pagar por um período longo, o condado ou a cidade pode <b>levar o imóvel a leilão</b> para recuperar o imposto devido. Quem vence o leilão recebe a escritura do imóvel, a <b>deed</b>. Daí o nome: <b>Tax Deed</b>.</p>
+
+  <h2>Tax Deed × Tax Lien: não confunda</h2>
+  <div class="two">
+    <div class="card">
+      <h3>🏠 Tax Deed</h3>
+      <p>Você compra <b>o imóvel</b>.</p>
+      <p class="small">O ganho vem de reformar e vender, ou de alugar. Exige análise do imóvel, obra e gestão.</p>
+    </div>
+    <div class="card">
+      <h3>📄 Tax Lien</h3>
+      <p>Você compra <b>a dívida do imposto</b>.</p>
+      <p class="small">O ganho vem dos juros pagos quando o dono quita a dívida. Na maioria dos casos você não fica com o imóvel.</p>
+    </div>
+  </div>
+  <p class="small">Cada estado escolhe o seu sistema, e alguns usam os dois ou modelos híbridos. Este guia fala de leilões em que se compra o imóvel.</p>
+
+  <h2>Por que essas casas vão a leilão?</h2>
+  <p>As situações mais comuns:</p>
+  <ul>
+    <li>dono que faleceu sem herdeiros organizados;</li>
+    <li>imóvel abandonado há anos;</li>
+    <li>dono que mudou de estado e esqueceu a propriedade;</li>
+    <li>dificuldade financeira.</li>
+  </ul>
+  <p>Por isso muitas casas estão <b>vazias, deterioradas e precisando de reforma</b>, e é também por isso que o lance inicial pode ser baixo.</p>
+
+  <div class="box warn"><b>Preço baixo não é sinônimo de oportunidade.</b> Muitos imóveis de leilão custam pouco porque têm problemas sérios: estrutura condenada, ordem de demolição, terreno sem acesso ou dívidas que continuam no imóvel. A análise é o que separa a oportunidade do prejuízo.</div>
+
+  <div class="foot"><span>Guia Tax Deed · Discovery Investment</span><span>2</span></div>
+</section>
+
+<!-- 2 -->
+<section class="page">
+  <div class="kicker">Capítulo 2</div>
+  <h1>O processo em 7 passos</h1>
+  <div class="bar"></div>
+  <ol class="steps">
+    <li><b>O condado publica a lista.</b> Semanas ou meses antes do leilão sai a relação de imóveis, com o número da parcela (parcel), o endereço (quando existe) e o lance inicial.</li>
+    <li><b>Inscrição de licitante.</b> Muitos condados exigem cadastro prévio, depósito e documentos. <b>O prazo de inscrição costuma fechar dias ou semanas antes do leilão.</b> Quem perde o prazo, não participa.</li>
+    <li><b>Pesquisa e visita.</b> Título, dívidas, enchente, acesso, vizinhança e visita presencial. Veja o checklist no capítulo 4.</li>
+    <li><b>Definição do lance máximo.</b> Conta feita <b>antes</b> do leilão, nunca na hora. Veja o capítulo 5.</li>
+    <li><b>Leilão.</b> Pode ser presencial ou online, conforme o condado. O pagamento costuma ter prazo curto, às vezes no mesmo dia.</li>
+    <li><b>Escritura e regularização.</b> O condado emite a escritura. Em alguns casos é recomendável um processo de regularização do título (<i>quiet title</i>) antes de vender ou financiar.</li>
+    <li><b>Reforma e saída.</b> Reformar e vender (<i>fix and flip</i>) ou alugar. É aqui que o resultado se confirma, ou não.</li>
+  </ol>
+
+  <h2>Quanto tempo leva?</h2>
+  <table>
+    <tr><th>Etapa</th><th>Prazo típico</th></tr>
+    <tr><td>Da lista ao leilão</td><td>de 1 a 3 meses</td></tr>
+    <tr><td>Do leilão à escritura</td><td>de dias a alguns meses, conforme o estado e o condado</td></tr>
+    <tr><td>Período de resgate (onde existe)</td><td>pode chegar a meses (ver capítulo 3)</td></tr>
+    <tr><td>Reforma</td><td>de 2 a 6 meses, conforme o tamanho da obra</td></tr>
+    <tr><td>Venda</td><td>de 1 a 3 meses, conforme o mercado local</td></tr>
+  </table>
+  <p class="small">Os prazos são estimativas gerais e variam muito de caso para caso.</p>
+
+  <div class="foot"><span>Guia Tax Deed · Discovery Investment</span><span>3</span></div>
+</section>
+
+<!-- 3 -->
+<section class="page">
+  <div class="kicker">Capítulo 3</div>
+  <h1>Como funcionam os leilões nos estados onde atuamos</h1>
+  <div class="bar"></div>
+  <p>Cada estado tem sua lei, e cada condado tem suas próprias regras de inscrição, pagamento e prazos. A tabela abaixo é uma <b>visão geral simplificada</b>.</p>
+
+  <table style="font-size:8.6pt">
+    <tr><th style="width:20%">Estado</th><th>Como funciona, em linhas gerais</th><th style="width:28%">Atenção</th></tr>
+    <tr><td><b>Pensilvânia</b><br><span class="small">Upset Sale</span></td><td>É o 1º leilão anual de imóveis com imposto atrasado. O lance inicial (<i>upset price</i>) cobre os impostos e os custos.</td><td>Em geral o imóvel é vendido <b>sujeito</b> a hipotecas e outros ônus que não são divididos na venda. Pesquisar as dívidas é obrigatório.</td></tr>
+    <tr><td><b>Pensilvânia</b><br><span class="small">Judicial Sale</span></td><td>É o leilão por ordem judicial dos imóveis que não foram vendidos no Upset Sale.</td><td>Em geral a venda é feita livre da maioria dos ônus, mas o processo é mais longo.</td></tr>
+    <tr><td><b>Pensilvânia</b><br><span class="small">Repository</span></td><td>Reúne os imóveis que não foram vendidos no Judicial Sale. Recebe propostas que precisam ser aprovadas pelos órgãos de impostos.</td><td>O processo é lento, e o imóvel costuma estar em estado ruim.</td></tr>
+    <tr><td><b>Connecticut</b></td><td>As cidades fazem a venda por imposto atrasado.</td><td>Há um <b>período de resgate depois da venda</b>, em que o antigo dono pode recuperar o imóvel pagando a dívida com juros ao comprador.</td></tr>
+    <tr><td><b>Nova York</b></td><td>Muitos condados executam a dívida, assumem o imóvel e depois o leiloam (<i>tax foreclosure auction</i>).</td><td>As regras e o calendário variam por condado. A venda é "no estado em que se encontra" (<i>as is</i>).</td></tr>
+    <tr><td><b>Ohio</b></td><td>Há execução por imposto, com venda pelo xerife, e venda de terras retomadas (<i>forfeited land</i>), conforme o condado.</td><td>Alguns condados também vendem certificados de dívida (lien). Confirme o tipo de venda.</td></tr>
+  </table>
+
+  <div class="box alert"><b>Importante:</b> este quadro é educativo e simplificado. Antes de qualquer lance, leia o edital (<i>terms and conditions of sale</i>) do condado e consulte um advogado imobiliário do estado. Regras sobre dívidas que continuam no imóvel, período de resgate, depósito e prazo de pagamento mudam de um lugar para outro e podem mudar com o tempo.</div>
+
+  <h2>Dá para participar do Brasil?</h2>
+  <p>Vários condados fazem <b>leilões online</b>, e dá para dar lance de qualquer lugar. Mas uma coisa não muda: <b>alguém precisa ver o imóvel pessoalmente antes</b>. A foto da lista quase nunca mostra o que importa.</p>
+
+  <div class="foot"><span>Guia Tax Deed · Discovery Investment</span><span>4</span></div>
+</section>
+
+<!-- 4 -->
+<section class="page">
+  <div class="kicker">Capítulo 4</div>
+  <h1>Checklist de análise antes do lance</h1>
+  <div class="bar"></div>
+  <p>É o mesmo roteiro que seguimos em cada imóvel. Se algum item ficar sem resposta, <b>o lance fica para a próxima</b>.</p>
+
+  <h2>📄 Documentos e dívidas</h2>
+  <ul class="check">
+    <li>Endereço, tamanho do lote e tipo de imóvel conferidos no registro do condado ou num mapa de parcelas.</li>
+    <li>Hipotecas e outros ônus pesquisados no cartório do condado (<i>Recorder of Deeds</i>).</li>
+    <li>Processos e julgamentos civis contra o proprietário pesquisados no portal judicial do estado.</li>
+    <li>Edital lido: o que é cancelado na venda e o que continua no imóvel.</li>
+    <li>Contas de água, esgoto e serviços municipais em atraso verificadas.</li>
+  </ul>
+
+  <h2>🌊 Riscos do terreno</h2>
+  <ul class="check">
+    <li>Zona de enchente consultada no mapa oficial da FEMA (zona de alto risco exige seguro obrigatório).</li>
+    <li>Área de preservação (<i>wetlands</i>) consultada no mapa nacional (NWI).</li>
+    <li>Acesso legal pela rua confirmado. Terreno sem acesso (<i>landlocked</i>) é uma armadilha comum.</li>
+    <li>Zoneamento: o uso que você planeja é permitido?</li>
+  </ul>
+
+  <h2>🏚️ Visita presencial</h2>
+  <ul class="check">
+    <li>Estrutura: fundação, telhado, paredes, sinais de umidade e mofo.</li>
+    <li>Instalações: elétrica, encanamento e aquecimento.</li>
+    <li>Ocupação: o imóvel está vazio ou tem alguém morando? A desocupação tem custo e prazo.</li>
+    <li>Avisos da prefeitura: imóvel condenado ou com ordem de demolição.</li>
+    <li>Vizinhança: ruas ao redor e casas vizinhas.</li>
+  </ul>
+
+  <h2>🧮 Números</h2>
+  <ul class="check">
+    <li>Valor de venda depois de reformado (<b>ARV</b>), estimado com vendas recentes de casas parecidas na mesma região.</li>
+    <li>Orçamento de reforma feito com quem executa obra na região. Nos EUA a mão de obra é cara.</li>
+    <li>Custos de compra, de manutenção enquanto está parado e de venda.</li>
+    <li>Lance máximo calculado e anotado <b>antes</b> do leilão (capítulo 5).</li>
+  </ul>
+
+  <div class="foot"><span>Guia Tax Deed · Discovery Investment</span><span>5</span></div>
+</section>
+
+<!-- 5 -->
+<section class="page">
+  <div class="kicker">Capítulo 5</div>
+  <h1>A conta do lance máximo</h1>
+  <div class="bar"></div>
+  <p>Na hora do leilão, com o cronômetro correndo, é fácil se empolgar. Por isso o limite é decidido em casa, com esta conta:</p>
+
+  <div class="box"><b>Lance máximo = valor depois da reforma − reforma − custos − margem de segurança</b></div>
+
+  <h2>Exemplo (hipotético, só para ilustrar a conta)</h2>
+  <table class="calc">
+    <tr><th>Item</th><th style="text-align:right">US$</th></tr>
+    <tr><td>Valor estimado de venda depois da reforma (ARV)</td><td>150.000</td></tr>
+    <tr><td>(−) Reforma orçada</td><td>45.000</td></tr>
+    <tr><td>(−) Custos: escritura, regularização do título, impostos, seguro, contas enquanto está parado, comissão e fechamento da venda</td><td>18.000</td></tr>
+    <tr><td>(−) Margem de segurança e lucro desejado (cerca de 20% do valor de venda)</td><td>30.000</td></tr>
+    <tr class="total"><td>Lance máximo</td><td>57.000</td></tr>
+  </table>
+  <p>Se o leilão passar de US$ 57.000, <b>você para de dar lance</b>. Perder um leilão não custa nada. Pagar caro demais custa a sua margem, ou o seu dinheiro.</p>
+
+  <h2>Os erros que mais destroem a margem</h2>
+  <table>
+    <tr><th>Erro</th><th>Consequência</th></tr>
+    <tr><td>Subestimar a reforma</td><td>Uma obra completa nos EUA pode passar de US$ 100 mil</td></tr>
+    <tr><td>Usar um ARV otimista</td><td>A casa é vendida por menos do que a conta previa</td></tr>
+    <tr><td>Esquecer o tempo parado</td><td>Impostos, seguro e contas continuam correndo todo mês</td></tr>
+    <tr><td>Ignorar dívidas que continuam no imóvel</td><td>O "barato" vira uma dívida a mais</td></tr>
+    <tr><td>Dar lance no impulso</td><td>Passar do limite em nome da emoção</td></tr>
+  </table>
+
+  <div class="foot"><span>Guia Tax Deed · Discovery Investment</span><span>6</span></div>
+</section>
+
+<!-- 6 -->
+<section class="page">
+  <div class="kicker">Capítulo 6</div>
+  <h1>Riscos reais e como investir morando no Brasil</h1>
+  <div class="bar"></div>
+
+  <h2>⚠️ Os riscos, sem enfeite</h2>
+  <ul>
+    <li><b>Imóvel pior do que parecia:</b> problemas escondidos aparecem durante a obra.</li>
+    <li><b>Título com problema:</b> pode atrasar a venda ou exigir um processo judicial de regularização.</li>
+    <li><b>Ocupantes no imóvel:</b> a desocupação leva tempo e custa dinheiro.</li>
+    <li><b>Resgate pelo antigo dono:</b> nos estados que preveem esse direito, o imóvel pode voltar para ele.</li>
+    <li><b>Mercado:</b> preços e prazos de venda mudam, e o ARV pode não se confirmar.</li>
+    <li><b>Câmbio:</b> para quem investe a partir do Brasil, a variação do dólar afeta o resultado em reais.</li>
+    <li><b>Liquidez:</b> o dinheiro fica parado durante a obra e a venda, e não dá para resgatar a qualquer momento.</li>
+  </ul>
+
+  <h2>🇧🇷 Perguntas de quem mora no Brasil</h2>
+  <table>
+    <tr><th style="width:38%">Pergunta</th><th>Em linhas gerais</th></tr>
+    <tr><td>Preciso de visto ou green card para comprar?</td><td>Estrangeiros podem comprar imóveis nos EUA. Mas cada condado tem suas exigências para participar do leilão, então confirme no edital.</td></tr>
+    <tr><td>Preciso abrir uma empresa (LLC)?</td><td>Não é obrigatório em todos os casos, mas é comum, por organização e proteção patrimonial. Avalie com advogado e contador.</td></tr>
+    <tr><td>E os impostos nos EUA?</td><td>Há imposto sobre o lucro da venda. Quando o vendedor é estrangeiro, pode haver uma retenção na venda (FIRPTA). É preciso um número de contribuinte americano (ITIN ou EIN) para declarar.</td></tr>
+    <tr><td>E no Brasil?</td><td>Bens e rendimentos no exterior devem ser declarados no Imposto de Renda, e a remessa de dinheiro deve passar por canais regulares.</td></tr>
+  </table>
+  <div class="box warn">As regras fiscais nos dois países mudam e dependem do seu caso. <b>Antes de investir, consulte um contador que trabalhe com Brasil e EUA.</b></div>
+
+  <div class="foot"><span>Guia Tax Deed · Discovery Investment</span><span>7</span></div>
+</section>
+
+<!-- 7 -->
+<section class="page">
+  <div class="kicker">Extra</div>
+  <h1>Glossário rápido</h1>
+  <div class="bar"></div>
+  <table>
+    <tr><th style="width:28%">Termo</th><th>O que significa</th></tr>
+    <tr><td><b>Property tax</b></td><td>Imposto anual sobre o imóvel, parecido com o IPTU.</td></tr>
+    <tr><td><b>Tax Deed</b></td><td>Escritura recebida por quem arremata um imóvel em leilão de imposto atrasado.</td></tr>
+    <tr><td><b>Tax Lien</b></td><td>Certificado da dívida de imposto. Quem compra recebe juros, não o imóvel.</td></tr>
+    <tr><td><b>Parcel / Map number</b></td><td>O número de identificação do lote no condado.</td></tr>
+    <tr><td><b>Opening bid / Upset price</b></td><td>O lance inicial do leilão.</td></tr>
+    <tr><td><b>Upset / Judicial / Repository</b></td><td>As três etapas de venda por imposto na Pensilvânia.</td></tr>
+    <tr><td><b>Redemption period</b></td><td>Prazo para o antigo dono recuperar o imóvel, nos estados onde existe.</td></tr>
+    <tr><td><b>Lien / Encumbrance</b></td><td>Dívida ou ônus registrado sobre o imóvel.</td></tr>
+    <tr><td><b>Quiet title</b></td><td>Ação judicial para regularizar e "limpar" o título.</td></tr>
+    <tr><td><b>Due diligence</b></td><td>A pesquisa completa antes do lance.</td></tr>
+    <tr><td><b>ARV (After Repair Value)</b></td><td>O valor estimado de venda depois da reforma.</td></tr>
+    <tr><td><b>Fix and flip</b></td><td>Estratégia de comprar, reformar e vender.</td></tr>
+    <tr><td><b>Landlocked</b></td><td>Terreno sem acesso legal por uma rua.</td></tr>
+    <tr><td><b>Flood zone (FEMA)</b></td><td>Área de risco de enchente no mapa oficial do governo.</td></tr>
+    <tr><td><b>Wetlands</b></td><td>Área úmida protegida, com restrições para construir.</td></tr>
+    <tr><td><b>As is</b></td><td>"No estado em que se encontra": sem garantia sobre as condições do imóvel.</td></tr>
+  </table>
+
+  <div class="cta">
+    <p style="margin:0 0 6px;font-size:12pt"><b>Quer ver tudo isso na prática?</b></p>
+    <p style="margin:0">Toda semana mostramos no Instagram as casas que visitamos antes dos leilões, as que compramos, as que <b>não</b> compraríamos e as obras do início ao fim.</p>
+    <p style="margin:8px 0 0">📲 Siga <b>@discoveryremodeling</b> · 🌐 discoveryinvestimentos.com/pt · 💬 WhatsApp +1 (475) 298-5931</p>
+  </div>
+
+  <p class="small" style="margin-top:14px"><b>Aviso:</b> este material tem caráter exclusivamente educativo e informativo. Não é oferta, recomendação de investimento nem aconselhamento jurídico ou tributário. As regras de leilão variam por estado e condado e podem mudar. Todo investimento envolve riscos, inclusive a perda do capital. Resultados passados não garantem resultados futuros. Consulte profissionais habilitados antes de investir.</p>
+
+  <div class="foot"><span>Guia Tax Deed · Discovery Investment</span><span>8</span></div>
+</section>
+
+</body>
+</html>
