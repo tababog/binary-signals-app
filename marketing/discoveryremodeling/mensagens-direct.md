@@ -13,8 +13,9 @@
 
 ## 1. Quem comentou "GUIA" (curioso, ainda no começo)
 
-**Mensagem 1 (envie com o PDF):**
+**Mensagem 1:**
 > Oi, [nome]! Aqui está o guia gratuito de como funciona o Tax Deed 📘
+> https://drive.google.com/file/d/1ulALUwXcDuyvy-1aK0RQ5Rf8V-tRbsnd/view
 > Me conta: você já pensa em investir nos EUA ou ainda está conhecendo?
 
 **Se a pessoa responder "estou conhecendo":**
