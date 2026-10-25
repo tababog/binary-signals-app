@@ -56,6 +56,10 @@ STORIES:
 - Vertical 1080x1920, MP4, de 5 a 15 segundos, sem texto, com o som original.
 CARROSSEL:
 - Imagens JPG de 1080x1350, nítidas, com os textos combinados no mesmo estilo dos Reels.
+MARCA DISCOVERY (todos os Reels):
+- Coloque a logo branca (arquivo logo-discovery-branca.png) pequena, como marca d'água, no canto de cima à direita, com uns 120 px de largura e 80% de opacidade, durante todo o vídeo.
+- Termine cada Reel com o vídeo logo-reveal-discovery.mp4 (4 segundos) depois da chamada para ação.
+- Cor principal da marca: verde-escuro #17361A, com destaque dourado #F2C14E. Use essas cores nas faixas e nos destaques de texto.
 TODOS:
 - Desfocar rostos de terceiros, placas de carro, documentos e fotos pessoais encontradas na casa.
 
