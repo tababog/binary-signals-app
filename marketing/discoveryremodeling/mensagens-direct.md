@@ -67,7 +67,7 @@ Mande uma pergunta, espere a resposta e só então mande a próxima.
 > Vamos fazer uma conversa de 20 minutos? Te explico como funciona a assessoria. Prefere por vídeo ou por ligação? Qual dia fica bom?
 
 **Depois que a pessoa escolher o horário:**
-> Combinado! [dia] às [hora] (horário de [Brasília/Nova York]). Vou te chamar no WhatsApp [+1 (475) 298-5931] para confirmar. Até lá! 🤝
+> Combinado! [dia] às [hora] (horário de [Brasília/Nova York]). Vou te chamar no WhatsApp [+1 (475) 439-9986] para confirmar. Até lá! 🤝
 
 ---
 
