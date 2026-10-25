@@ -88,7 +88,7 @@ Somos uma família brasileira que compra e reforma casas de leilão nos EUA
 
 Requisitos: portfólio de Reels com cortes rápidos, legendas dinâmicas e prazo em dia.
 
-👉 Mande seu portfólio no direct ou pelo WhatsApp [+1 (475) 439-9986]
+👉 Mande seu portfólio no direct ou pelo WhatsApp [+1 (475) 349-9986]
 ```
 
 ---

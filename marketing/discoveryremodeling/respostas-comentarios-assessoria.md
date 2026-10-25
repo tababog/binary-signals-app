@@ -67,7 +67,7 @@ Depois que a pessoa responder, siga para a **qualificação** (seção 3 do arqu
 > Oi, [nome]! Vi que você comentou ASSESSORIA no nosso post. Ainda faz sentido pra você conversar sobre comprar uma casa em leilão nos EUA? 🙂
 
 **Depois de 7 dias (última tentativa):**
-> Oi, [nome]! Vou deixar nosso WhatsApp aqui caso prefira falar por lá: +1 (475) 439-9986. Quando quiser, é só chamar 🤝
+> Oi, [nome]! Vou deixar nosso WhatsApp aqui caso prefira falar por lá: +1 (475) 349-9986. Quando quiser, é só chamar 🤝
 
 Depois disso, não insista mais. Marque a pessoa como "fria" na planilha de acompanhamento.
 

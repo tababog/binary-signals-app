@@ -97,7 +97,7 @@ Confira essa lista com o que vocês realmente oferecem. Tire o que não estiver 
 **Story 8: como começar**
 > **Quer comprar sua casa em leilão nos EUA?**
 > 💬 Me chama no direct com a palavra **ASSESSORIA**
-> ou no WhatsApp: +1 (475) 439-9986
+> ou no WhatsApp: +1 (475) 349-9986
 
 Adicione a figurinha de **Link** apontando para o WhatsApp e a figurinha de **Mencionar** (@discoveryremodeling).
 
