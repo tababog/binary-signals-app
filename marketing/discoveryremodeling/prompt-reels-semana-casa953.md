@@ -15,7 +15,7 @@ Você vai ser o editor de vídeo do Instagram @discoveryremodeling. Somos uma fa
 4. Marque o que deve ficar de fora: trechos dirigindo, tremidas, ajustes de celular, silêncios longos.
 
 ## ETAPA 2: plano da semana
-Com base no inventário, proponha **5 Reels diferentes**, um para cada dia útil da semana. Cada Reel deve ter de 30 a 50 segundos e usar o formato que melhor combinar com o material disponível, entre estes:
+Com base no inventário, proponha **6 Reels diferentes**. Postamos todos os dias (7 posts por semana): 6 dias são Reels e 1 dia é um carrossel que já está pronto. Cada Reel deve ter de 30 a 50 segundos e usar o formato que melhor combinar com o material disponível, entre estes:
 - **Abrindo a porta:** entrar na casa pela primeira vez, mostrando os cômodos, com o pior cômodo no final.
 - **Antes e depois:** a mesma posição de câmera antes e depois da limpeza ou da obra.
 - **O que deixaram para trás:** objetos, móveis e coisas estranhas que estavam na casa.
@@ -24,8 +24,8 @@ Com base no inventário, proponha **5 Reels diferentes**, um para cada dia útil
 - **Sinais de alerta:** problemas da casa, como umidade, telhado e estrutura.
 
 Objetivo da semana: **ganhar seguidores** e começar a atrair clientes para a nossa **assessoria**. Ajudamos brasileiros que moram no Brasil ou nos EUA a comprar casas em leilão nos EUA.
-- Os Reels 1 a 4 servem para atrair e gerar confiança. Termine com uma chamada para seguir: "Siga para ver a reforma 🔨".
-- O Reel 5 é de **oferta**. Use as melhores cenas que sobraram e termine com: "Quer comprar sua casa em leilão nos EUA com a gente? Comente ASSESSORIA 👇". Não prometa lucro nem retorno.
+- Os Reels 1 a 5 servem para atrair e gerar confiança. Termine com uma chamada para seguir: "Siga para ver a reforma 🔨".
+- O Reel 6 é de **oferta**. Use as melhores cenas que sobraram e termine com: "Quer comprar sua casa em leilão nos EUA com a gente? Comente ASSESSORIA 👇". Não prometa lucro nem retorno.
 
 Para cada Reel, me mostre:
 - o título;
@@ -35,7 +35,7 @@ Para cada Reel, me mostre:
 - os textos na tela de cada cena;
 - a legenda do post.
 
-**Espere minha aprovação antes de editar.** Se o material não der para 5 Reels bons, proponha menos e me diga isso. Não repita as mesmas cenas em Reels diferentes.
+**Espere minha aprovação antes de editar.** Se o material não der para 6 Reels bons, proponha menos e me diga isso. Não repita as mesmas cenas em Reels diferentes.
 
 ## ETAPA 3: edição (depois que eu aprovar)
 Para cada Reel aprovado:
