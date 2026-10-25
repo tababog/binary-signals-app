@@ -23,6 +23,10 @@ Com base no inventário, proponha **5 Reels diferentes**, um para cada dia útil
 - **Os números na tela:** só se houver valores reais informados por mim. Nunca invente valores.
 - **Sinais de alerta:** problemas da casa, como umidade, telhado e estrutura.
 
+Objetivo da semana: **ganhar seguidores** e começar a atrair clientes para a nossa **assessoria**. Ajudamos brasileiros que moram no Brasil ou nos EUA a comprar casas em leilão nos EUA.
+- Os Reels 1 a 4 servem para atrair e gerar confiança. Termine com uma chamada para seguir: "Siga para ver a reforma 🔨".
+- O Reel 5 é de **oferta**. Use as melhores cenas que sobraram e termine com: "Quer comprar sua casa em leilão nos EUA com a gente? Comente ASSESSORIA 👇". Não prometa lucro nem retorno.
+
 Para cada Reel, me mostre:
 - o título;
 - o formato;
