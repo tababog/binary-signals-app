@@ -1,0 +1,863 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>__TITULO__</title>
+<!-- MODELO das paginas de caixa por casa. Gerado de "Caixa 1104 Agnew" em 25/10/2026.
+     Substituir, por casa: __TITULO__ __ENDERECO__ __CIDADE_ESTADO__ __PRECO__ __PLANILHA__
+     __CHAVE_ABA__ (ex. aba1104) __CASA__ (ex. 1104 Agnew) __LOGO__ (jpeg em base64)
+     __DADOS__ (JSON do exportar.ps1) __CRIPTO__ (blocos dos investidores, ou null)
+     __CUSTOS__ (closing do estado da casa).
+     Ja inclui: envio de recibo com Camera/Galeria/PDF e aviso quando falta permissao. -->
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: painel de obra — faixa de números no topo, abas por planilha, tabelas roláveis por dentro */
+:root{
+  --bg:#f6f7f3; --surface:#ffffff; --fg:#1f2a1c; --muted:#5f6b5a; --line:#dfe3d8;
+  --brand:#2e7d1a; --brand-soft:#e6f1df; --earth:#6d5d58;
+  --in:#23803a; --out:#c0392b; --disc:#1f5a9c; --warn-bg:#fff6d6;
+  --f-display:"Barlow Semi Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141912; --surface:#1c231a; --fg:#e7ece2; --muted:#a3ad9c; --line:#2f3a2b;
+  --brand:#6cc04a; --brand-soft:#243320; --earth:#bfaea8;
+  --in:#5fd17a; --out:#ff7b6b; --disc:#7fb2ff; --warn-bg:#3a3317; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141912; --surface:#1c231a; --fg:#e7ece2; --muted:#a3ad9c; --line:#2f3a2b;
+  --brand:#6cc04a; --brand-soft:#243320; --earth:#bfaea8;
+  --in:#5fd17a; --out:#ff7b6b; --disc:#7fb2ff; --warn-bg:#3a3317; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.45 var(--f-body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 40px}
+.wrap{max-width:1100px;margin:0 auto;display:grid;gap:20px}
+header{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+header img{width:56px;height:56px;border-radius:50%;background:#fff;object-fit:contain}
+header h1{font:700 1.7rem/1.1 var(--f-display);margin:0;letter-spacing:.01em;text-wrap:balance}
+header p{margin:2px 0 0;color:var(--muted);font-size:.9rem}
+.tag{margin-left:auto;font:600 .75rem var(--f-display);text-transform:uppercase;letter-spacing:.08em;color:var(--earth);border:1px solid var(--line);border-radius:999px;padding:4px 10px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.kpi{background:var(--surface);padding:14px 16px;display:grid;gap:4px;min-width:0}
+.kpi span{font:600 .72rem var(--f-display);text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.kpi b{font:700 1.45rem/1 var(--f-display);font-variant-numeric:tabular-nums;white-space:nowrap}
+.kpi small{color:var(--muted);font-size:.75rem}
+.pos{color:var(--in)} .neg{color:var(--out)} .dis{color:var(--disc)}
+nav{display:flex;gap:6px;flex-wrap:wrap;border-bottom:2px solid var(--line)}
+nav button{font:600 1rem var(--f-display);letter-spacing:.02em;background:none;border:0;color:var(--muted);padding:10px 14px;border-bottom:3px solid transparent;margin-bottom:-2px;cursor:pointer}
+nav button[aria-selected="true"]{color:var(--brand);border-bottom-color:var(--brand)}
+nav button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+section{display:grid;gap:14px;min-width:0}
+h2{font:700 1.2rem var(--f-display);margin:0}
+.note{color:var(--muted);font-size:.85rem;margin:0}
+.scroll{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font:600 .75rem var(--f-display);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);background:var(--brand-soft);position:sticky;top:0}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+td.wrap{white-space:normal;min-width:180px}
+tr.tot td{font-weight:600;background:var(--brand-soft)}
+tr.obs td{background:var(--warn-bg)}
+.pill{font:600 .75rem var(--f-display);letter-spacing:.04em;padding:2px 8px;border-radius:999px;border:1px solid currentColor}
+.filtros{display:flex;gap:10px;flex-wrap:wrap}
+.filtros input,.filtros select{font:inherit;color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 10px;min-width:0;flex:1 1 180px}
+.chart{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px}
+.chart svg{width:100%;height:auto;display:block}
+.chart text{fill:var(--muted);font:12px var(--f-body)}
+.foot{color:var(--muted);font-size:.8rem}
+.campos{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.campos label{display:grid;gap:4px;font:600 .75rem var(--f-display);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.campos input,.campos select{font:600 1.05rem var(--f-body);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:9px 10px;min-width:0;font-variant-numeric:tabular-nums}
+tr.sub td{color:var(--muted)}
+.invs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.inv{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:10px;min-width:0}
+.inv h3{margin:0;font:700 1.25rem var(--f-display);display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.inv h3 small{font:600 .8rem var(--f-display);color:var(--muted);letter-spacing:.04em}
+.inv dl{margin:0;display:grid;grid-template-columns:1fr auto;gap:4px 10px;font-size:.92rem}
+.inv dt{color:var(--muted)} .inv dd{margin:0;text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.inv .bloco{font:600 .7rem var(--f-display);text-transform:uppercase;letter-spacing:.08em;color:var(--earth);grid-column:1/-1;border-top:1px solid var(--line);padding-top:8px;margin-top:2px}
+.inv .grande{font:700 1.35rem var(--f-display)}
+td.ind{padding-left:24px}
+#v-custos input{width:7.5em;font:600 .95rem var(--f-body);color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:5px 7px;text-align:right;font-variant-numeric:tabular-nums}
+#v-custos .un{color:var(--muted);font-size:.85rem;padding-left:4px}
+.recibo{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.85rem;color:var(--muted)}
+.recibo[hidden]{display:none}
+.recibo>span{font:600 .72rem var(--f-display);text-transform:uppercase;letter-spacing:.07em}
+.rec-botoes{display:flex;gap:6px;flex-wrap:wrap}
+.rec-botoes label{position:relative;display:inline-flex;align-items:center;gap:5px;min-height:40px;padding:6px 12px;border-radius:999px;font:600 .85rem var(--f-display);letter-spacing:.02em;cursor:pointer;border:1px solid var(--line);background:var(--surface);color:var(--brand)}
+.rec-botoes label:hover{border-color:var(--brand)}
+.rec-botoes label:focus-within{outline:2px solid var(--brand);outline-offset:2px}
+/* o input cobre o botão inteiro: no celular o toque cai nele, não no label */
+.rec-botoes input[type=file]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.rec-botoes svg{width:15px;height:15px;flex:none}
+#rec-nota{font:inherit;font-size:.85rem;color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 12px;min-height:32px;flex:1 1 180px;min-width:0}
+#rec-status{margin:0;font-size:.85rem;flex-basis:100%}
+#rec-status:empty{display:none}
+#rec-status.ok{color:var(--in)} #rec-status.erro{color:var(--out)}
+.rec-lista{display:flex;gap:6px;flex-wrap:wrap;list-style:none;margin:0;padding:0;flex-basis:100%}
+.rec-lista:empty{display:none}
+.rec-lista li{position:relative;display:grid;gap:2px;width:56px;font-size:.65rem;color:var(--muted)}
+.rec-lista .abrir{padding:0;border:0;background:none;cursor:zoom-in;border-radius:6px}
+.rec-lista img,.rec-lista .pdf{width:56px;height:56px;object-fit:cover;border-radius:6px;border:1px solid var(--line);background:var(--bg);display:grid;place-items:center;font:700 .9rem var(--f-display);color:var(--muted)}
+.rec-lista li.sel img,.rec-lista li.sel .pdf{outline:3px solid var(--out);outline-offset:-1px}
+.rec-lista input[type=checkbox]{position:absolute;top:2px;left:2px;width:18px;height:18px;margin:0;accent-color:var(--out);cursor:pointer}
+.rec-acoes{display:flex;gap:6px;align-items:center;flex-wrap:wrap;flex-basis:100%}
+.rec-acoes[hidden],#rec-confirma[hidden]{display:none}
+.rec-acoes button{display:inline-flex;align-items:center;gap:5px;min-height:30px;padding:3px 10px;border-radius:999px;font:600 .8rem var(--f-display);cursor:pointer;border:1px solid var(--line);background:var(--surface);color:var(--brand)}
+.rec-acoes button:disabled{opacity:.45;cursor:default}
+.rec-acoes button.perigo,#rec-excluir:not(:disabled){color:var(--out)}
+.rec-acoes button.perigo{border-color:var(--out)}
+.rec-acoes svg{width:14px;height:14px;flex:none}
+.rec-duvidas{display:grid;gap:8px;list-style:none;margin:0;padding:0;flex-basis:100%}
+.rec-duvidas:empty{display:none}
+.rec-duvidas li{display:grid;grid-template-columns:56px 1fr;gap:4px 12px;align-items:start;background:var(--surface);border:1px solid var(--out);border-radius:10px;padding:10px 12px;color:var(--fg)}
+.rec-duvidas .abrir{grid-row:span 2;padding:0;border:0;background:none;cursor:zoom-in}
+.rec-duvidas .abrir img,.rec-duvidas .abrir .pdf{width:56px;height:56px;object-fit:cover;border-radius:6px;border:1px solid var(--line);display:grid;place-items:center;font:700 .9rem var(--f-display);color:var(--muted);background:var(--bg)}
+.rec-duvidas .q{margin:0;font-size:.88rem}
+.rec-duvidas .q b{color:var(--out);font:600 .72rem var(--f-display);text-transform:uppercase;letter-spacing:.06em;margin-right:6px}
+.rec-duvidas form{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.rec-duvidas select,.rec-duvidas input{font:inherit;font-size:.85rem;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:5px 8px;min-height:32px;max-width:100%}
+.rec-duvidas select{flex:1 1 220px}
+.rec-duvidas .novo{display:flex;gap:6px;flex-wrap:wrap;flex-basis:100%}
+.rec-duvidas .novo[hidden]{display:none}
+.rec-duvidas .novo input{flex:1 1 180px}
+.rec-duvidas button{font:600 .82rem var(--f-display);border-radius:999px;padding:5px 14px;min-height:32px;cursor:pointer;border:1px solid var(--brand);background:var(--brand);color:#fff}
+#rec-ver{max-width:min(96vw,1100px);max-height:94vh;padding:0;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+#rec-ver::backdrop{background:rgba(0,0,0,.7)}
+#rec-ver img{display:block;max-width:100%;max-height:88vh;margin:auto}
+#rec-ver iframe{display:block;width:min(92vw,1000px);height:86vh;border:0}
+#rec-ver p{margin:8px 14px;font-size:.85rem;color:var(--muted)}
+#rec-fechar{position:sticky;top:8px;float:right;margin:8px;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--fg);font-size:1rem;cursor:pointer}
+.tranca{display:flex;align-items:flex-end;gap:10px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.tranca label{display:grid;gap:4px;font:600 .75rem var(--f-display);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.tranca input{font:600 1.05rem var(--f-body);color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;width:12em;max-width:100%}
+.tranca button,.sair{font:600 .95rem var(--f-display);border-radius:8px;padding:9px 16px;cursor:pointer;border:1px solid var(--brand);background:var(--brand);color:#fff}
+.sair{background:var(--surface);color:var(--brand);justify-self:start}
+.tranca-msg{font-size:.9rem;color:var(--muted)} .tranca-msg.erro{color:var(--out)}
+@media (prefers-reduced-motion:no-preference){nav button{transition:color .15s,border-color .15s}}
+</style>
+
+<div class="wrap">
+  <header>
+    <img src="data:image/jpeg;base64,__LOGO__" alt="Discovery Remodeling">
+    <div><h1>__TITULO__</h1><p>__ENDERECO__ · fluxo de caixa dos investidores</p></div>
+    <span class="tag" id="gerado"></span>
+  </header>
+
+  <div class="recibo" id="recibo" hidden role="group" aria-label="Enviar recibo" title="Lançado automaticamente todo dia às 22h. Só quem administra a página vê isto.">
+    <span>Recibo</span>
+    <div class="rec-botoes">
+      <label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Câmera<input id="rec-cam" type="file" accept="image/*" capture="environment"></label>
+      <label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="m4 17 5-5 4 4 2.5-2.5L20 17"/></svg>Galeria<input id="rec-gal" type="file" accept="image/*" multiple></label>
+      <label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg>PDF<input id="rec-pdf" type="file" accept="application/pdf" multiple></label>
+    </div>
+    <input id="rec-nota" type="text" maxlength="200" placeholder="Observação (opcional)" aria-label="Observação do recibo">
+    <p id="rec-status" role="status" aria-live="polite"></p>
+    <div class="rec-acoes" id="rec-acoes">
+      <button type="button" id="rec-atualizar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v5h-5"/></svg>Atualizar</button>
+      <button type="button" id="rec-excluir" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/></svg>Excluir selecionados</button>
+      <span id="rec-confirma" hidden>Excluir <b id="rec-qtd"></b>? <button type="button" id="rec-sim" class="perigo">Sim, excluir</button> <button type="button" id="rec-nao">Não</button></span>
+    </div>
+    <ul class="rec-lista" id="rec-lista" aria-label="Recibos aguardando lançamento"></ul>
+    <ul class="rec-duvidas" id="rec-duvidas" aria-label="Recibos com dúvida sobre onde lançar"></ul>
+  </div>
+  <dialog id="rec-ver" aria-label="Recibo"><button type="button" id="rec-fechar" aria-label="Fechar">✕</button><div id="rec-ver-corpo"></div></dialog>
+
+  <div class="kpis" id="kpis"></div>
+
+  <nav role="tablist">
+    <button role="tab" id="t-resumo" aria-selected="true" data-p="resumo">Resumo</button>
+    <button role="tab" id="t-lanc" aria-selected="false" data-p="lanc">Lançamentos</button>
+    <button role="tab" id="t-cat" aria-selected="false" data-p="cat">Categorias</button>
+    <button role="tab" id="t-proj" aria-selected="false" data-p="proj">Projeção</button>
+    <button role="tab" id="t-venda" aria-selected="false" data-p="venda">Venda</button>
+    <button role="tab" id="t-inv" aria-selected="false" data-p="inv">Investidores</button>
+    <button role="tab" id="t-disc" aria-selected="false" data-p="disc">Discovery 🔒</button>
+  </nav>
+
+  <section id="p-resumo">
+    <h2>Saldo acumulado em caixa, mês a mês</h2>
+    <div class="chart" id="grafico"></div>
+    <div class="scroll"><table id="tab-meses"></table></div>
+    <h2>Por grupo</h2>
+    <div class="scroll"><table id="tab-grupos"></table></div>
+  </section>
+
+  <section id="p-lanc" hidden>
+    <div class="filtros">
+      <input id="busca" type="search" placeholder="Buscar descrição ou categoria">
+      <select id="f-tipo"><option value="">Todos os tipos</option><option>Entrada</option><option>Saída</option></select>
+      <select id="f-cat"><option value="">Todas as categorias</option></select>
+    </div>
+    <div class="scroll"><table id="tab-lanc"></table></div>
+    <p class="note">Linhas em amarelo têm observação para conferir. Os aportes dos investidores aparecem só no total; o detalhe de cada um fica na aba Investidores, com a senha de cada investidor.</p>
+  </section>
+
+  <section id="p-cat" hidden>
+    <p class="note">Só categorias com valor. Total acumulado desde o início da obra.</p>
+    <div class="scroll"><table id="tab-cat"></table></div>
+  </section>
+
+  <section id="p-proj" hidden>
+    <p class="note">Falta = previsto − já lançado no mês. Cada lançamento abate do previsto da linha ligada à categoria.</p>
+    <div class="scroll"><table id="tab-proj"></table></div>
+  </section>
+
+  <section id="p-venda" hidden>
+    <h2>Simulação da venda</h2>
+    <p class="note">Parte do saldo projetado da planilha e soma a venda. Mude os campos para testar outros cenários; nada aqui altera a planilha.</p>
+    <div class="campos">
+      <label for="v-preco">Preço de venda<input id="v-preco" type="number" min="0" step="1000" value="__PRECO__"></label>
+      <label for="v-mes">Mês da venda<select id="v-mes"></select></label>
+      <label for="v-disc" id="v-disc-w" hidden>Taxa de serviço de venda (% do lucro)<input id="v-disc" type="number" min="0" max="100" step="1" value="10"></label>
+    </div>
+    <h2>Custos de venda (closing) do vendedor — __CIDADE_ESTADO__</h2>
+    <p class="note">Padrão de closing do estado onde fica a casa. Ajuste os valores caso a caso. Percentuais são sobre o preço de venda.</p>
+    <div class="scroll"><table id="v-custos"></table></div>
+    <div class="kpis" id="v-kpis"></div>
+    <div class="scroll"><table id="v-tab"></table></div>
+    <p class="note" id="v-pub">Resultado da casa = venda líquida − tudo o que foi e será investido, antes das taxas de serviço e da divisão entre os investidores. A parte de cada investidor fica na aba Investidores, com a senha dele.</p>
+    <div id="v-div" hidden>
+      <h2>Divisão por cotista</h2>
+      <div class="scroll"><table id="v-cotas"></table></div>
+      <p class="note" id="v-nota"></p>
+    </div>
+  </section>
+
+  <section id="p-inv" hidden>
+    <h2>Por investidor</h2>
+    <form class="tranca" data-tranca>
+      <label>Senha do investidor<input type="password" inputmode="numeric" autocomplete="off" aria-label="Senha do investidor"></label>
+      <button type="submit">Abrir</button>
+      <span class="tranca-msg" role="status" aria-live="polite"></span>
+    </form>
+    <p class="note" data-trancado>Cada investidor vê só os próprios números. Digite a sua senha para abrir.</p>
+    <div data-aberto hidden>
+      <p class="note" id="inv-cenario"></p>
+      <div class="invs" id="inv-cards"></div>
+      <div class="scroll" id="inv-tab-w" hidden><table id="inv-tab"></table></div>
+      <p class="note">Entrada combinada = compra da casa ÷ nº de investidores. Quem pagou a mais na entrada tem crédito; quem pagou a menos deve a diferença. O aporte que falta = reforma (labor + material, ÷ nº de investidores) − crédito, ou + o que deve. A taxa de reforma é paga pelos investidores e entra no total a pagar. A taxa de venda já sai do lucro antes da divisão. A taxa de arremate já foi paga e aparece só para informação.</p>
+      <button type="button" class="sair" data-sair>Fechar (trancar de novo)</button>
+    </div>
+  </section>
+
+  <section id="p-disc" hidden>
+    <h2>Discovery — só para a administração</h2>
+    <form class="tranca" data-tranca>
+      <label>Senha da Discovery<input type="password" inputmode="numeric" autocomplete="off" aria-label="Senha da Discovery"></label>
+      <button type="submit">Abrir</button>
+      <span class="tranca-msg" role="status" aria-live="polite"></span>
+    </form>
+    <p class="note" data-trancado>Área da Discovery: aportes de cada investidor, regras de cada um, taxas e faturamento.</p>
+    <div data-aberto-full hidden>
+      <div class="kpis" id="k-disc"></div>
+      <h2>Aportes por investidor</h2>
+      <div class="scroll"><table id="disc-inv"></table></div>
+      <h2>Lançamentos da Discovery (taxas de serviço)</h2>
+      <div class="scroll"><table id="disc-lanc"></table></div>
+      <h2>Quanto a Discovery fatura como administradora</h2>
+      <p class="note">Só o que a Discovery recebe por administrar o negócio: taxas de arremate, reforma e venda. O que ela ganha como cotista não entra aqui. O cenário de venda é o da aba Venda.</p>
+      <div class="campos">
+        <label for="v-assess">Assessoria Discovery ($)<input id="v-assess" type="number" min="0" step="500" value="0"></label>
+      </div>
+      <div class="kpis" id="d-kpis"></div>
+      <div class="scroll"><table id="d-tab"></table></div>
+      <h2>Alterar senha do investidor</h2>
+      <p class="note">A nova senha vale em todas as casas desse investidor. Ela entra na próxima atualização das páginas (todo dia às 21h50, ou na hora, se você pedir ao Claude). Só quem administra a página consegue salvar.</p>
+      <form class="tranca" id="nova-senha">
+        <label>Investidor<select id="ns-nome" aria-label="Investidor"></select></label>
+        <label>Nova senha (4 a 12 dígitos)<input id="ns-senha" type="password" inputmode="numeric" autocomplete="new-password" pattern="[0-9]{4,12}" aria-label="Nova senha"></label>
+        <button type="submit">Salvar nova senha</button>
+        <span class="tranca-msg" id="ns-msg" role="status" aria-live="polite"></span>
+      </form>
+      <button type="button" class="sair" data-sair>Fechar (trancar de novo)</button>
+    </div>
+  </section>
+
+  <p class="foot">Página de teste, só leitura. Os dados vêm da planilha "__PLANILHA__"; a planilha continua sendo o registro oficial.</p>
+</div>
+
+<script>
+const D = __DADOS__;
+const fmt = v => (v < 0 ? '-' : '') + '$' + Math.abs(v).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+const mes = s => { if(!s) return ''; const [y,m] = s.split('-'); return ['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'][+m-1] + '/' + y.slice(2); };
+const dia = s => s ? s.split('-').reverse().join('/') : '';
+const cls = v => v < 0 ? 'neg' : (v > 0 ? 'pos' : '');
+const tcls = t => t === 'Entrada' ? 'pos' : t === 'Saída' ? 'neg' : 'dis';
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+// PRIVACIDADE: a página aberta só tem os números da casa. Os dados de cada investidor (aporte, regra, taxas)
+// e a receita da Discovery vêm criptografados; cada investidor abre só o dele e a senha da Discovery abre tudo.
+const CRIPTO = __CRIPTO__;   // lista de blocos criptografados (null = página sem cadeado)
+let PRIV = null;       // dados privados abertos (só quando a página é gerada sem senha)
+const N_INV = Math.max(1, D.nInv || 1), TOT_APORTADO = D.totAportado || 0;
+let COTAS = [];
+function prepPriv(){ COTAS = PRIV ? PRIV.cotas.map(c => Object.assign({ pct: 1 / N_INV }, c)).sort((x,y) => x.nome.localeCompare(y.nome,'pt')) : []; } // sempre em ordem alfabética
+prepPriv();
+const FULL = () => !!(PRIV && PRIV.full);
+const MODO = () => PRIV ? PRIV.modo : 'igual';
+const RESTANTE = () => PRIV ? PRIV.restante : null;
+const COTA = n => COTAS.find(c => c.nome === n) || {};
+const arrPago = n => COTA(n).arrPago || 0;
+const arrDevido = n => COTA(n).arrDevido || 0;
+const regraDe = n => COTA(n).regra || { reformaPct: 10, vendaPct: 10, rotulo: 'Padrão Discovery: reforma 10%, venda 10% do lucro' };
+const arrFalta = n => Math.max(0, arrDevido(n) - arrPago(n));
+const pctTxt = p => (p*100).toFixed(2).replace('.',',') + '%';
+// aporte que falta de cada um, para que todos terminem com o mesmo capital investido
+const faltaIgual = (c, novo) => (TOT_APORTADO + novo) / N_INV - c.ap;
+
+document.getElementById('gerado').textContent = 'Atualizado ' + D.geradoEm.split(' ')[0].split('-').reverse().join('/');
+const titProj = D.projetadoTitulo.replace('Saldo projetado em ','');
+document.getElementById('kpis').innerHTML = [
+  ['Entrou', D.entrou, 'aportes dos investidores', 'pos'],
+  ['Saiu', D.saiu, 'compra, reforma e custos', 'neg'],
+  ['Saldo em caixa hoje', D.hoje, 'inclui saldo inicial de ' + fmt(D.saldoInicial), cls(D.hoje)],
+  ['Saldo projetado', D.projetado, 'fim de ' + mes(D.projMeses[3]), cls(D.projetado)],
+  ['Aporte que falta', Math.max(0,-D.projetado), 'total dos investidores', ''],
+].map(([t,v,s,c]) => `<div class="kpi"><span>${t}</span><b class="${c}">${fmt(v)}</b><small>${s}</small></div>`).join('');
+
+// gráfico do saldo acumulado: meses com movimento + projeção
+(function(){
+  const reais = D.meses.filter(m => m.entradas || m.saidas);
+  const ultimo = D.meses.findIndex(m => m.mes === reais[reais.length-1].mes);
+  const ptsR = D.meses.slice(0, ultimo+1).map(m => ({mes:m.mes, v:m.acumulado, p:false}));
+  const linhaSaldo = D.projecao.find(l => l.item.startsWith('SALDO PROJETADO'));
+  const ptsP = D.projMeses.map((m,i) => ({mes:m, v:linhaSaldo.falta[i], p:true}));
+  const pts = ptsR.concat(ptsP);
+  const W=760,H=240,L=78,R=16,T=16,B=34, min=Math.min(0,...pts.map(p=>p.v)), max=Math.max(0,...pts.map(p=>p.v));
+  const x = i => L + i*(W-L-R)/(pts.length-1), y = v => T + (max-v)*(H-T-B)/((max-min)||1);
+  const passo = 10000, ticks=[]; for(let t=Math.ceil(min/passo)*passo; t<=max; t+=passo) ticks.push(t);
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Saldo acumulado em caixa por mês">`;
+  ticks.forEach(t => s += `<line x1="${L}" x2="${W-R}" y1="${y(t)}" y2="${y(t)}" stroke="var(--line)" stroke-width="1"/><text x="${L-8}" y="${y(t)+4}" text-anchor="end">${t===0?'$0':'-$'+Math.abs(t/1000)+'k'}</text>`);
+  const path = arr => arr.map((p,i)=>`${i?'L':'M'}${x(pts.indexOf(p)).toFixed(1)},${y(p.v).toFixed(1)}`).join('');
+  const area = ptsR.map((p,i)=>`${i?'L':'M'}${x(i).toFixed(1)},${y(p.v).toFixed(1)}`).join('') + `L${x(ptsR.length-1)},${y(0)}L${x(0)},${y(0)}Z`;
+  s += `<path d="${area}" fill="var(--out)" fill-opacity=".10"/>`;
+  s += `<path d="${path(ptsR)}" fill="none" stroke="var(--out)" stroke-width="2.5"/>`;
+  s += `<path d="${path([ptsR[ptsR.length-1]].concat(ptsP))}" fill="none" stroke="var(--out)" stroke-width="2" stroke-dasharray="5 5"/>`;
+  pts.forEach((p,i) => { s += `<text x="${x(i)}" y="${H-12}" text-anchor="middle">${mes(p.mes)}</text>`; });
+  const fimR = ptsR[ptsR.length-1], fimP = ptsP[ptsP.length-1];
+  s += `<circle cx="${x(ptsR.length-1)}" cy="${y(fimR.v)}" r="4.5" fill="var(--out)"/><text x="${x(ptsR.length-1)}" y="${y(fimR.v)-10}" text-anchor="middle" style="fill:var(--fg);font-weight:600">${fmt(fimR.v)}</text>`;
+  s += `<circle cx="${x(pts.length-1)}" cy="${y(fimP.v)}" r="4.5" fill="var(--surface)" stroke="var(--out)" stroke-width="2"/><text x="${x(pts.length-1)-6}" y="${y(fimP.v)-10}" text-anchor="end" style="fill:var(--fg);font-weight:600">${fmt(fimP.v)}</text>`;
+  s += `</svg><p class="note">Linha cheia: caixa real. Tracejada: projeção.</p>`;
+  document.getElementById('grafico').innerHTML = s;
+})();
+
+// tabela de meses
+(function(){
+  const ms = D.meses.filter(m => m.entradas || m.saidas);
+  let h = '<thead><tr><th>Mês</th><th class="n">Entradas</th><th class="n">Saídas</th><th class="n">Saldo do mês</th><th class="n">Acumulado</th></tr></thead><tbody>';
+  ms.forEach(m => { const s = m.entradas - m.saidas; h += `<tr><td>${mes(m.mes)}</td><td class="n pos">${fmt(m.entradas)}</td><td class="n neg">${fmt(m.saidas)}</td><td class="n ${cls(s)}">${fmt(s)}</td><td class="n ${cls(m.acumulado)}">${fmt(m.acumulado)}</td></tr>`; });
+  h += `<tr class="tot"><td>Total</td><td class="n pos">${fmt(D.entrou)}</td><td class="n neg">${fmt(D.saiu)}</td><td class="n ${cls(D.entrou-D.saiu)}">${fmt(D.entrou-D.saiu)}</td><td class="n ${cls(D.hoje)}">${fmt(D.hoje)}</td></tr></tbody>`;
+  document.getElementById('tab-meses').innerHTML = h;
+  const g = {}; D.categorias.forEach(c => { if(!c.total) return; (g[c.grupo] ||= {tipo:c.tipo,total:0}).total += c.total; });
+  let gh = '<thead><tr><th>Grupo</th><th>Tipo</th><th class="n">Total</th></tr></thead><tbody>';
+  Object.entries(g).forEach(([k,o]) => gh += `<tr><td>${esc(k)}</td><td><span class="pill ${tcls(o.tipo)}">${o.tipo}</span></td><td class="n">${fmt(o.total)}</td></tr>`);
+  document.getElementById('tab-grupos').innerHTML = gh + '</tbody>';
+})();
+
+// lançamentos com filtros
+const fCat = document.getElementById('f-cat');
+[...new Set(D.lancamentos.map(l => l.categoria))].sort().forEach(c => fCat.insertAdjacentHTML('beforeend', `<option>${esc(c)}</option>`));
+function renderLanc(){
+  const q = document.getElementById('busca').value.toLowerCase(), tp = document.getElementById('f-tipo').value, ct = fCat.value;
+  const ls = D.lancamentos.filter(l => (!tp || l.tipo===tp) && (!ct || l.categoria===ct) && (!q || (l.descricao+' '+l.categoria+' '+l.obs).toLowerCase().includes(q)));
+  let saldo = 0;
+  let h = '<thead><tr><th>Data</th><th>Categoria</th><th>Descrição</th><th class="n">Valor</th><th>Tipo</th><th>Obs</th></tr></thead><tbody>';
+  ls.forEach(l => { saldo += l.tipo==='Entrada' ? l.valor : l.tipo==='Saída' ? -l.valor : 0;
+    h += `<tr class="${l.obs?'obs':''}"><td>${dia(l.data)}</td><td>${esc(l.categoria)}</td><td class="wrap">${esc(l.descricao)}</td><td class="n">${fmt(l.valor)}</td><td><span class="pill ${tcls(l.tipo)}">${l.tipo}</span></td><td class="wrap">${esc(l.obs)}</td></tr>`; });
+  if (!tp || tp === 'Entrada') h += `<tr class="sub"><td></td><td>Entrada de Investidores</td><td class="wrap">Aportes dos investidores — só o total (${D.qtdAportes || 0} depósitos)</td><td class="n">${fmt(TOT_APORTADO)}</td><td><span class="pill pos">Entrada</span></td><td></td></tr>`;
+  h += `<tr class="tot"><td colspan="3">${ls.length} lançamentos · entradas − saídas (sem os aportes)</td><td class="n ${cls(saldo)}">${fmt(saldo)}</td><td colspan="2"></td></tr></tbody>`;
+  document.getElementById('tab-lanc').innerHTML = h;
+}
+['busca','f-tipo','f-cat'].forEach(id => document.getElementById(id).addEventListener('input', renderLanc));
+renderLanc();
+
+// categorias
+(function(){
+  const cs = D.categorias.filter(c => c.total).sort((a,b) => b.total - a.total);
+  let h = '<thead><tr><th>Categoria</th><th>Grupo</th><th>Tipo</th><th class="n">Lanç.</th><th class="n">Total</th></tr></thead><tbody>';
+  cs.forEach(c => h += `<tr><td>${esc(c.categoria)}</td><td>${esc(c.grupo)}</td><td><span class="pill ${tcls(c.tipo)}">${c.tipo}</span></td><td class="n">${c.qtd}</td><td class="n">${fmt(c.total)}</td></tr>`);
+  document.getElementById('tab-cat').innerHTML = h + '</tbody>';
+})();
+
+// projeção
+function renderProj(){
+  const ms = D.projMeses.map(mes);
+  let h = `<thead><tr><th>Item</th>${ms.map(m=>`<th class="n">${m}</th>`).join('')}<th class="n">Total</th></tr></thead><tbody>`;
+  D.projecao.forEach(l => {
+    if (l.item.startsWith('Precisa')) return;
+    const tot = /^(TOTAL|SALDO|Saldo)/.test(l.item);
+    const c = l.tipo === 'Discovery' ? 'dis' : '';
+    const det = (l.tipo==='Entrada'||l.tipo==='Saída'||l.tipo==='Discovery') ? l.falta.map((v,i)=>`<td class="n ${c}" title="previsto ${fmt(l.previsto[i])} · já lançado ${fmt(l.lancado[i])}">${fmt(v)}</td>`).join('') : l.falta.map(v=>`<td class="n ${tot?cls(v):''}">${fmt(v)}</td>`).join('');
+    h += `<tr class="${tot?'tot':''}"><td class="${c}">${esc(l.item)}</td>${det}<td class="n ${c}">${fmt(l.total)}</td></tr>`;
+  });
+  const ap = D.projecao.find(l => l.item.startsWith('Precisa'));
+  h += `<tr class="tot"><td>Aporte necessário até ${ms[3]}</td><td class="n neg" colspan="5">${fmt(ap.falta[0])}</td></tr>`;
+  if (MODO() !== 'proporcional') COTAS.forEach(c => h += `<tr class="sub"><td class="ind">${esc(c.nome)}</td><td class="n" colspan="5">${fmt(faltaIgual(c, ap.falta[0]))}</td></tr>`);
+  h += '</tbody>';
+  document.getElementById('tab-proj').innerHTML = h;
+}
+renderProj();
+
+// simulação da venda
+(function(){
+  const fimProj = D.projMeses[3];
+  const addMes = (s,n) => { const [y,m] = s.split('-').map(Number); const d = new Date(y, m-1+n, 1); return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-01'; };
+  const sel = document.getElementById('v-mes');
+  for (let i = 0; i <= 8; i++) { const m = addMes(fimProj, i); sel.insertAdjacentHTML('beforeend', `<option value="${i}">${mes(m)}${i===0?' (fim da projeção)':''}</option>`); }
+  sel.value = '2';
+  const fixos = ['Água','Energia e gás','Seguro','Imposto'];
+  const custoMes = D.projecao.filter(l => fixos.some(f => l.item.startsWith(f))).reduce((s,l) => s + l.previsto[3], 0);
+  const aportesFeitos = D.categorias.filter(c => c.categoria === 'Entrada de Investidores').reduce((s,c) => s + c.total, 0);
+  // custos de venda do vendedor (padrão do estado da casa, editáveis)
+  const CUSTOS = __CUSTOS__;
+  document.getElementById('v-custos').innerHTML = '<thead><tr><th>Item</th><th class="n">Valor</th><th class="n">Em $</th><th>Observação</th></tr></thead><tbody>' +
+    CUSTOS.map(c => `<tr><td>${c.nome}</td><td class="n">${c.pct?'':'<span class="un">$</span>'}<input id="${c.id}" aria-label="${c.nome}" type="number" min="0" step="${c.pct?0.05:50}" value="${c.v}">${c.pct?'<span class="un">%</span>':''}</td><td class="n" id="${c.id}-v"></td><td class="wrap note">${c.nota}</td></tr>`).join('') +
+    '<tr class="tot"><td>Total dos custos de venda</td><td class="n" id="c-pct"></td><td class="n" id="c-tot"></td><td></td></tr></tbody>';
+  function calc(){
+    const preco = +document.getElementById('v-preco').value || 0;
+    let closing = 0;
+    CUSTOS.forEach(c => { const x = +document.getElementById(c.id).value || 0; const v = c.pct ? preco * x / 100 : x; closing += v; document.getElementById(c.id+'-v').textContent = fmt(v); });
+    const pc = preco ? closing / preco : 0;
+    document.getElementById('c-tot').textContent = fmt(closing);
+    document.getElementById('c-pct').textContent = (pc*100).toFixed(2).replace('.',',') + '% do preço';
+    const extra = +sel.value;
+    const pd = (+document.getElementById('v-disc').value || 0) / 100;
+    const liquida = preco - closing;
+    const custosExtra = custoMes * extra;
+    const saldoAntes = D.projetado - custosExtra;
+    const aporteNovo = Math.max(0, -saldoAntes);
+    // taxa de serviço de reforma: 10% de todas as despesas da casa (sem a compra), paga pelos investidores à Discovery
+    const somaCat = n => D.categorias.filter(c => c.categoria === n).reduce((s,c) => s + c.total, 0);
+    const prevFut0 = D.projecao.filter(l => l.tipo === 'Saída').reduce((s,l) => s + l.previsto.reduce((a,b) => a+b, 0), 0);
+    const taxaRefTotal = Math.round(((D.saiu - somaCat('COMPRA DA CASA')) + prevFut0 + custosExtra) * 10) / 100;
+    let taxaRef = Math.max(0, taxaRefTotal - (D.reformaPaga || 0));
+    let capital = aportesFeitos + aporteNovo + taxaRef;
+    let lucro = liquida + saldoAntes + aporteNovo - capital; // = líquida − capital + sobra de caixa
+    let disc = Math.max(0, lucro) * pd, invest = lucro - disc;
+    let retorno = capital ? invest / capital : 0;
+    // modo proporcional (casas com regra por investidor): cada um tem a % do capital que colocou e taxas próprias
+    let PROP = null;
+    if (MODO() === 'proporcional' && COTAS.length) {
+      const custoTotal = aportesFeitos + aporteNovo;                  // tudo o que saiu do caixa até a venda
+      const lucroBruto = liquida + saldoAntes - aportesFeitos;        // venda líquida − custo total
+      const baseSemCompra = (D.saiu - somaCat('COMPRA DA CASA')) + prevFut0 + custosExtra;
+      const linhas = COTAS.map(c => {
+        const r = regraDe(c.nome), resto = c.nome === RESTANTE();
+        const cap = c.ap + (resto ? aporteNovo : 0), s = custoTotal ? cap / custoTotal : 0;
+        const arr = resto ? 0 : arrDevido(c.nome), ref = resto ? 0 : baseSemCompra * s * (r.reformaPct / 100);
+        const bruto = s * lucroBruto, antes = bruto - arr - ref, venda = resto ? 0 : Math.max(0, antes) * (r.vendaPct / 100);
+        return { nome: c.nome, ap: c.ap, cap, s, arr, ref, bruto, venda, liq: antes - venda, resto, rotulo: resto ? 'cobre o restante do capital' : r.rotulo };
+      });
+      const sum = k => linhas.reduce((a, l) => a + l[k], 0);
+      PROP = { linhas, custoTotal, lucroBruto, baseSemCompra };
+      if (FULL()) { // totais do projeto só com todos os investidores abertos (senha da Discovery)
+        taxaRef = sum('ref'); capital = custoTotal + taxaRef + sum('arr');
+        lucro = lucroBruto - taxaRef - sum('arr'); disc = sum('venda'); invest = sum('liq');
+        retorno = capital ? invest / capital : 0;
+      }
+    }
+    const mesVenda = sel.options[sel.selectedIndex].text.split(' ')[0];
+    document.getElementById('v-div').hidden = !FULL(); document.getElementById('v-pub').hidden = FULL(); document.getElementById('v-disc-w').hidden = !FULL();
+    if (FULL()) {
+    document.getElementById('v-kpis').innerHTML = [
+      ['Venda líquida', liquida, 'preço − closing costs', ''],
+      ['Lucro do projeto', lucro, 'venda líquida − capital', cls(lucro)],
+      ['Lucro dos investidores', invest, PROP ? 'proporcional ao capital de cada um' : 'dividido igualmente entre os cotistas', cls(invest)],
+      ['Retorno sobre o capital', retorno*100, 'sobre o capital total', cls(invest)],
+    ].map(([t,v,s,c],i) => `<div class="kpi"><span>${t}</span><b class="${c}">${i===3 ? v.toFixed(1).replace('.',',')+'%' : fmt(v)}</b><small>${s}</small></div>`).join('');
+    // divisão por cotista, proporcional ao aporte
+    let tc = '<thead><tr><th>Cotista</th><th class="n">Já aportou</th><th class="n">Participação</th><th class="n">Falta pagar (aporte + taxa de reforma)</th><th class="n">Capital total</th><th class="n">Lucro</th><th class="n">Recebe na venda</th></tr></thead><tbody>';
+    if (PROP) {
+      tc = '<thead><tr><th>Cotista</th><th>Regra</th><th class="n">Capital</th><th class="n">% do capital</th><th class="n">Taxas (arremate + reforma)</th><th class="n">Parte da Discovery no lucro</th><th class="n">Lucro</th><th class="n">Recebe na venda</th></tr></thead><tbody>';
+      PROP.linhas.forEach(l => { tc += `<tr><td>${esc(l.nome)}</td><td class="wrap note">${esc(l.rotulo)}</td><td class="n">${fmt(l.cap)}</td><td class="n">${pctTxt(l.s)}</td><td class="n dis">${fmt(l.arr + l.ref)}</td><td class="n dis">${fmt(l.venda)}</td><td class="n ${cls(l.liq)}">${fmt(l.liq)}</td><td class="n">${fmt(l.cap + l.arr + l.ref + l.liq)}</td></tr>`; });
+      tc += `<tr class="tot"><td colspan="2">Total</td><td class="n">${fmt(PROP.custoTotal)}</td><td class="n">100%</td><td class="n dis">${fmt(taxaRef + PROP.linhas.reduce((a,l)=>a+l.arr,0))}</td><td class="n dis">${fmt(disc)}</td><td class="n ${cls(invest)}">${fmt(invest)}</td><td class="n">${fmt(capital + invest)}</td></tr></tbody>`;
+    } else {
+    COTAS.forEach(c => { const falta = faltaIgual(c, aporteNovo) + taxaRef / COTAS.length, cap = c.ap + falta, luc = invest*c.pct;
+      tc += `<tr><td>${esc(c.nome)}</td><td class="n">${fmt(c.ap)}</td><td class="n">${pctTxt(c.pct)}</td><td class="n">${fmt(falta)}</td><td class="n">${fmt(cap)}</td><td class="n ${cls(luc)}">${fmt(luc)}</td><td class="n">${fmt(cap+luc)}</td></tr>`; });
+    tc += `<tr class="tot"><td>Total</td><td class="n">${fmt(aportesFeitos)}</td><td class="n">100%</td><td class="n">${fmt(aporteNovo+taxaRef)}</td><td class="n">${fmt(capital)}</td><td class="n ${cls(invest)}">${fmt(invest)}</td><td class="n">${fmt(capital+invest)}</td></tr></tbody>`;
+    }
+    document.getElementById('v-cotas').innerHTML = tc;
+    const linha = (t,v,o={}) => `<tr class="${o.cl||''}"><td class="${o.ind?'ind':''}">${t}</td><td class="n ${o.c||''}">${fmt(v)}</td><td class="wrap">${o.n||''}</td></tr>`;
+    document.getElementById('v-tab').innerHTML = '<thead><tr><th>Etapa</th><th class="n">Valor</th><th>Como foi calculado</th></tr></thead><tbody>' +
+      linha('Preço de venda', preco) +
+      linha('Custos de venda (closing)', -closing, {ind:1, c:'neg', n:(pc*100).toFixed(2).replace('.',',')+'% do preço — detalhe na tabela acima'}) +
+      linha('Venda líquida', liquida, {cl:'tot'}) +
+      linha('Saldo projetado no fim de '+mes(fimProj), D.projetado, {c:cls(D.projetado), n:'da aba Projeção (caixa real + o que falta pagar)'}) +
+      linha('Custos mensais até a venda', -custosExtra, {ind:1, c:'neg', n: extra+' mês(es) × '+fmt(custoMes)+' (água, energia, seguro, imposto)'}) +
+      linha('Aporte que ainda falta dos cotistas', aporteNovo, {ind:1, n:'até '+mesVenda+', cada cotista completa até o mesmo capital (tabela abaixo)'}) +
+      linha('Taxa de serviço de reforma (Discovery)', taxaRef, {ind:1, c:'dis', n:'10% de todas as despesas da casa sem a compra; paga pelos investidores'}) +
+      linha('Capital total dos cotistas', capital, {cl:'tot', n:fmt(aportesFeitos)+' já aportados + '+fmt(aporteNovo)+' de aporte + '+fmt(capital-aportesFeitos-aporteNovo)+(PROP ? ' de taxas (arremate + reforma)' : ' de taxa de reforma')}) +
+      linha('Lucro do projeto', lucro, {cl:'tot', c:cls(lucro), n:'venda líquida − capital total'}) +
+      linha('Taxa de serviço de venda (Discovery)', -disc, {ind:1, c:'dis', n:(pd*100)+'% do lucro'}) +
+      linha('Lucro dos investidores', invest, {cl:'tot', c:cls(invest), n:'retorno de '+(retorno*100).toFixed(1).replace('.',',')+'% · dividido igualmente entre os 4'}) +
+      '</tbody>';
+    document.getElementById('v-nota').textContent = 'Cenário: venda em ' + mesVenda + '. O capital inclui só os aportes de investidores; as taxas de serviço da Discovery ficam fora. Os impostos do imóvel até a venda já estão nos custos mensais. Imposto de renda sobre o ganho não entra no closing. A taxa de venda da Discovery é 10% do lucro (estrutura do negócio).';
+    } else {
+      // página aberta: só o resultado da casa, sem taxas, sem divisão e sem nomes
+      const lucroCasa = liquida + saldoAntes - aportesFeitos;
+      document.getElementById('v-kpis').innerHTML = [
+        ['Venda líquida', liquida, 'preço − closing costs', ''],
+        ['Resultado da casa', lucroCasa, 'antes das taxas e da divisão', cls(lucroCasa)],
+        ['Aporte que falta', aporteNovo, 'total dos investidores até ' + mesVenda, ''],
+      ].map(([t,v,s,c]) => '<div class="kpi"><span>'+t+'</span><b class="'+c+'">'+fmt(v)+'</b><small>'+s+'</small></div>').join('');
+      const lp = (t,v,o={}) => '<tr class="'+(o.cl||'')+'"><td class="'+(o.ind?'ind':'')+'">'+t+'</td><td class="n '+(o.c||'')+'">'+fmt(v)+'</td><td class="wrap">'+(o.n||'')+'</td></tr>';
+      document.getElementById('v-tab').innerHTML = '<thead><tr><th>Etapa</th><th class="n">Valor</th><th>Como foi calculado</th></tr></thead><tbody>' +
+        lp('Preço de venda', preco) +
+        lp('Custos de venda (closing)', -closing, {ind:1, c:'neg', n:(pc*100).toFixed(2).replace('.',',')+'% do preço — detalhe na tabela acima'}) +
+        lp('Venda líquida', liquida, {cl:'tot'}) +
+        lp('Saldo projetado no fim de '+mes(fimProj), D.projetado, {c:cls(D.projetado), n:'da aba Projeção (caixa real + o que falta pagar)'}) +
+        lp('Custos mensais até a venda', -custosExtra, {ind:1, c:'neg', n: extra+' mês(es) × '+fmt(custoMes)+' (água, energia, seguro, imposto)'}) +
+        lp('Aporte que ainda falta (total)', aporteNovo, {ind:1, n:'até '+mesVenda}) +
+        lp('Investido na casa (aportes já feitos + o que falta)', aportesFeitos + aporteNovo, {cl:'tot'}) +
+        lp('Resultado da casa', lucroCasa, {cl:'tot', c:cls(lucroCasa), n:'venda líquida − tudo o que foi investido, antes das taxas de serviço e da divisão'}) +
+        '</tbody>';
+    }
+
+    // faturamento da Discovery
+    const catTot = n => D.categorias.concat(PRIV && PRIV.catDisc || []).filter(c => c.categoria === n).reduce((s,c) => s + c.total, 0);
+    const projTot = p => D.projecao.filter(l => l.item.startsWith(p)).reduce((s,l) => s + l.total, 0);
+    const arremate = catTot('Taxa de Servico de Arremate');
+    const reformaRec = catTot('Taxa de Servico de Reforma');
+    const compra = catTot('COMPRA DA CASA');
+    const gastoReal = D.saiu - compra;
+    const prevFut = D.projecao.filter(l => l.tipo === 'Saída').reduce((s,l) => s + l.previsto.reduce((a,b) => a+b, 0), 0);
+    const baseTaxa = gastoReal + prevFut + custosExtra;
+    let reformaPrev = Math.max(0, Math.round(baseTaxa * 10) / 100 - reformaRec0());
+    if (PROP) reformaPrev = Math.max(0, taxaRef - reformaRec0());
+    function reformaRec0(){ return catTot('Taxa de Servico de Reforma'); }
+    const vendaRec = catTot('Taxa de Servico de Venda');
+    const vendaPrev = 0; // a taxa de venda é a parte da Discovery no lucro (linha própria abaixo)
+    const assess = +document.getElementById('v-assess').value || 0;
+    const arrAReceber = COTAS.reduce((s,c) => s + (PROP && c.nome === RESTANTE() ? 0 : arrFalta(c.nome)), 0);
+    const taxas = arremate + arrAReceber + reformaRec + reformaPrev + vendaRec + vendaPrev + assess;
+    const fat = taxas + disc;
+    const cota = invest / 4;
+    const lD = (t,v,o={}) => `<tr class="${o.cl||''}"><td class="${o.ind?'ind':''}">${t}</td><td>${o.s||''}</td><td class="n ${o.c||'dis'}">${fmt(v)}</td><td class="wrap">${o.n||''}</td></tr>`;
+    if (FULL()) {
+    document.getElementById('d-kpis').innerHTML = [
+      ['Já recebido', arremate + reformaRec + vendaRec, 'taxas lançadas na planilha', 'dis'],
+      ['Faturamento total previsto', fat, 'taxas + parte no lucro', 'dis'],
+      ['% do preço de venda', preco ? fat/preco*100 : 0, '', ''],
+      ['A receber até a venda', fat - (arremate + reformaRec + vendaRec), 'taxas previstas + parte no lucro', 'dis'],
+    ].map(([t,v,s,c],i) => `<div class="kpi"><span>${t}</span><b class="${c}">${i===2 ? v.toFixed(1).replace('.',',')+'%' : fmt(v)}</b><small>${s}</small></div>`).join('');
+    document.getElementById('d-tab').innerHTML = '<thead><tr><th>Origem</th><th>Situação</th><th class="n">Valor</th><th>De onde vem</th></tr></thead><tbody>' +
+      lD('Taxa de serviço de arremate', arremate, {s:'<span class="pill pos">recebido</span>', n:fmt(PRIV && PRIV.arremateTotal || 0)+' por arremate, dividido entre os '+N_INV+' investidores'}) +
+      (arrAReceber > 0.005 ? lD('Taxa de serviço de arremate', arrAReceber, {s:'<span class="pill dis">a receber</span>', n:'parte dos investidores que ainda não foi paga'}) : '') +
+      lD('Taxa de serviço de reforma', reformaRec, {s:'<span class="pill pos">recebido</span>', n:'lançamentos da categoria "Taxa de Servico de Reforma"'}) +
+      lD('Taxa de serviço de reforma', reformaPrev, {s:'<span class="pill dis">a receber</span>', n:'10% de todas as despesas da casa sem a compra: '+fmt(gastoReal)+' já gastos + '+fmt(prevFut)+' previstos até '+mes(D.projMeses[3])+' + '+fmt(custosExtra)+' até a venda = '+fmt(baseTaxa)+(reformaRec?' (menos '+fmt(reformaRec)+' já recebidos)':'')}) +
+      lD('Assessoria Discovery', assess, {s:'<span class="pill dis">previsto</span>', n:'campo acima; a "Projeção Financeira" fala em $5.000'}) +
+      lD('Taxa de serviço de venda', disc + vendaRec, {s:'<span class="pill dis">na venda</span>', n:(pd*100)+'% do lucro do projeto'}) +
+      lD('FATURAMENTO DA DISCOVERY COMO ADMINISTRADORA', fat, {cl:'tot', n:'não inclui o que ela ganha como cotista'}) +
+      '</tbody>';
+    }
+
+    // aba Investidores
+    const arrematePor = arrPago;
+    document.getElementById('inv-cenario').textContent = 'Cenário da aba Venda: venda de ' + fmt(preco) + ' em ' + mesVenda + ', custos de venda de ' + fmt(closing) + ', lucro dos investidores de ' + fmt(invest) + ' (retorno de ' + (retorno*100).toFixed(1).replace('.',',') + '%). Mude o cenário na aba Venda.';
+    const nC = N_INV, baseEntrada = compra / nC, parcelaObra = (TOT_APORTADO + aporteNovo - compra) / nC, taxaRefCota = taxaRef / nC;
+    let cards = '', it = '<thead><tr><th>Investidor</th><th class="n">Entrada (compra ÷ n)</th><th class="n">Crédito (+) / deve (−)</th><th class="n">Reforma (Labor + Material)</th><th class="n">Aporte que falta</th><th class="n">Taxa de reforma</th><th class="n">Taxa de arremate a pagar</th><th class="n">Total a pagar</th><th class="n">Total investido</th><th class="n">Lucro</th><th class="n">Recebe na venda</th></tr></thead><tbody>';
+    let tA=0,tT=0,tF=0,tL=0;
+    COTAS.forEach(c => {
+      const dif = c.ap - baseEntrada, falta = parcelaObra - dif, cap = c.ap + falta + taxaRefCota, luc = invest*c.pct, arr = arrematePor(c.nome);
+      const difTxt = Math.abs(dif) < 0.005 ? fmt(0) : (dif > 0 ? '+' + fmt(dif) : '−' + fmt(-dif));
+      tA+=c.ap; tT+=arr; tF+=falta; tL+=luc;
+      cards += `<article class="inv"><h3>${esc(c.nome)} <small>${pctTxt(c.pct)} do lucro</small></h3><dl>
+        <dt class="bloco">Entrada</dt>
+        <dt>Entrada (compra ÷ ${nC})</dt><dd>${fmt(baseEntrada)}</dd>
+        ${Math.abs(dif) > 0.005 ? `<dt>${dif > 0 ? 'Pagou a mais (crédito)' : 'Falta pagar da entrada'}</dt><dd class="${dif > 0 ? 'pos' : 'neg'}">${difTxt}</dd>` : ''}
+        <dt>Taxa de arremate (sua parte)</dt><dd class="dis">${fmt(arrDevido(c.nome))}</dd>
+        <dt class="bloco">Ainda tem que pagar</dt>
+        <dt>Reforma (Labor + Material)</dt><dd>${fmt(parcelaObra)}</dd>
+        <dt>Aporte até ${mesVenda} (reforma ${dif > 0.005 ? '− crédito' : dif < -0.005 ? '+ o que deve' : ''})</dt><dd class="neg">${fmt(falta)}</dd>
+        <dt>Taxa de reforma (10%, sua parte)</dt><dd class="dis">${fmt(taxaRefCota)}</dd>
+        ${arrFalta(c.nome) > 0.005 ? `<dt>Taxa de arremate</dt><dd class="dis">${fmt(arrFalta(c.nome))}</dd>` : ''}
+        <dt>Total a pagar</dt><dd class="neg grande">${fmt(falta + taxaRefCota + arrFalta(c.nome))}</dd>
+        <dt>Total investido no fim</dt><dd>${fmt(cap)}</dd>
+        <dt class="bloco">No final (venda)</dt>
+        <dt>Lucro</dt><dd class="grande ${cls(luc)}">${fmt(luc)}</dd>
+        <dt>Recebe na venda</dt><dd>${fmt(cap+luc)}</dd>
+        <dt>Retorno</dt><dd>${(retorno*100).toFixed(1).replace('.',',')}%</dd>
+      </dl></article>`;
+      it += `<tr><td>${esc(c.nome)}</td><td class="n">${fmt(baseEntrada)}</td><td class="n ${dif > 0.005 ? 'pos' : dif < -0.005 ? 'neg' : ''}">${difTxt}</td><td class="n">${fmt(parcelaObra)}</td><td class="n neg">${fmt(falta)}</td><td class="n dis">${fmt(taxaRefCota)}</td><td class="n dis">${fmt(arrFalta(c.nome))}</td><td class="n neg">${fmt(falta+taxaRefCota+arrFalta(c.nome))}</td><td class="n">${fmt(cap)}</td><td class="n ${cls(luc)}">${fmt(luc)}</td><td class="n">${fmt(cap+luc)}</td></tr>`;
+    });
+    it += `<tr class="tot"><td>Total</td><td class="n">${fmt(compra)}</td><td class="n">${fmt(tA-compra)}</td><td class="n">${fmt(parcelaObra*nC)}</td><td class="n neg">${fmt(tF)}</td><td class="n dis">${fmt(taxaRef)}</td><td class="n dis">${fmt(COTAS.reduce((s,c)=>s+arrFalta(c.nome),0))}</td><td class="n neg">${fmt(tF+taxaRef+COTAS.reduce((s,c)=>s+arrFalta(c.nome),0))}</td><td class="n">${fmt(tA+tF+taxaRef)}</td><td class="n ${cls(tL)}">${fmt(tL)}</td><td class="n">${fmt(tA+tF+taxaRef+tL)}</td></tr></tbody>`;
+    if (PROP) {
+      // modo proporcional: cada investidor com a sua regra
+      cards = ''; it = '<thead><tr><th>Investidor</th><th>Regra</th><th class="n">Capital</th><th class="n">% do capital</th><th class="n">Lucro bruto da parte</th><th class="n">Taxa de arremate</th><th class="n">Taxa de reforma</th><th class="n">Parte da Discovery no lucro</th><th class="n">Lucro líquido</th><th class="n">Recebe na venda</th><th class="n">Retorno</th></tr></thead><tbody>';
+      PROP.linhas.forEach(l => {
+        const recebe = l.cap + l.arr + l.ref + l.liq, inv = l.cap + l.arr + l.ref, ret = inv ? l.liq / inv * 100 : 0;
+        cards += `<article class="inv"><h3>${esc(l.nome)} <small>${pctTxt(l.s)} do capital</small></h3><dl>
+          <dt class="bloco">Regra</dt><dt style="grid-column:1/-1">${esc(l.rotulo)}</dt>
+          <dt class="bloco">Capital</dt>
+          <dt>${l.resto ? 'Capital coberto pela Discovery' : 'Aporte (já pago)'}</dt><dd>${fmt(l.cap)}</dd>
+          ${l.arr > 0.005 ? `<dt>Taxa de arremate</dt><dd class="dis">${fmt(l.arr)}</dd>` : ''}
+          ${l.ref > 0.005 ? `<dt>Taxa de reforma</dt><dd class="dis">${fmt(l.ref)}</dd>` : ''}
+          <dt class="bloco">No final (venda)</dt>
+          <dt>Lucro bruto da parte</dt><dd>${fmt(l.bruto)}</dd>
+          ${l.venda > 0.005 ? `<dt>Parte da Discovery no lucro</dt><dd class="dis">−${fmt(l.venda)}</dd>` : ''}
+          <dt>Lucro líquido</dt><dd class="grande ${cls(l.liq)}">${fmt(l.liq)}</dd>
+          <dt>Recebe na venda</dt><dd>${fmt(recebe)}</dd>
+          <dt>Retorno</dt><dd>${ret.toFixed(1).replace('.',',')}%</dd>
+        </dl></article>`;
+        it += `<tr><td>${esc(l.nome)}</td><td class="wrap note">${esc(l.rotulo)}</td><td class="n">${fmt(l.cap)}</td><td class="n">${pctTxt(l.s)}</td><td class="n">${fmt(l.bruto)}</td><td class="n dis">${fmt(l.arr)}</td><td class="n dis">${fmt(l.ref)}</td><td class="n dis">${fmt(l.venda)}</td><td class="n ${cls(l.liq)}">${fmt(l.liq)}</td><td class="n">${fmt(recebe)}</td><td class="n">${ret.toFixed(1).replace('.',',')}%</td></tr>`;
+      });
+      const s = k => PROP.linhas.reduce((a,l) => a + l[k], 0);
+      it += `<tr class="tot"><td colspan="2">Total</td><td class="n">${fmt(PROP.custoTotal)}</td><td class="n">100%</td><td class="n">${fmt(s('bruto'))}</td><td class="n dis">${fmt(s('arr'))}</td><td class="n dis">${fmt(s('ref'))}</td><td class="n dis">${fmt(s('venda'))}</td><td class="n ${cls(invest)}">${fmt(invest)}</td><td class="n">${fmt(capital + invest)}</td><td></td></tr></tbody>`;
+      document.getElementById('inv-cenario').textContent = 'Cenário da aba Venda: venda de ' + fmt(preco) + ' em ' + mesVenda + ', custos de venda de ' + fmt(closing) + '. Nesta casa cada investidor tem a % do capital que colocou e a sua própria regra de taxas; a Discovery cobre o restante do capital.';
+    }
+    document.getElementById('inv-cards').innerHTML = cards;
+    document.getElementById('inv-tab').innerHTML = it;
+    document.getElementById('inv-tab-w').hidden = !FULL();
+  }
+  ['v-preco','v-mes','v-disc','v-assess'].concat(CUSTOS.map(c => c.id)).forEach(id => document.getElementById(id).addEventListener('input', calc));
+  calc();
+  window.__calc = calc;
+})();
+
+// abas
+const abas = document.querySelectorAll('nav button');
+const PAGS = ['resumo','lanc','cat','proj','venda','inv','disc'];
+function abrir(p){ abas.forEach(b => b.setAttribute('aria-selected', b.dataset.p===p)); PAGS.forEach(k => document.getElementById('p-'+k).hidden = k!==p); try{localStorage.setItem('__CHAVE_ABA__',p)}catch(e){} }
+abas.forEach(b => b.addEventListener('click', () => abrir(b.dataset.p)));
+const h0 = location.hash.slice(1); let salva=null; try{salva=localStorage.getItem('__CHAVE_ABA__')}catch(e){}
+abrir(PAGS.includes(h0) ? h0 : (PAGS.includes(salva) ? salva : 'resumo'));
+
+// cadeado: a senha abre o bloco criptografado certo (investidor = só o card dele; Discovery = tudo)
+const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+async function tentar(senha, blob){
+  const base = await crypto.subtle.importKey('raw', new TextEncoder().encode(senha), 'PBKDF2', false, ['deriveKey']);
+  const key = await crypto.subtle.deriveKey({ name: 'PBKDF2', salt: b64(blob.s), iterations: blob.it, hash: 'SHA-256' }, base, { name: 'AES-CBC', length: 256 }, false, ['decrypt']);
+  const txt = new TextDecoder().decode(await crypto.subtle.decrypt({ name: 'AES-CBC', iv: b64(blob.iv) }, key, b64(blob.c)));
+  if (!txt.startsWith('OK:')) throw new Error('senha');
+  return JSON.parse(txt.slice(3));
+}
+function renderDisc(){
+  if (!FULL()) return;
+  const sum = xs => xs.reduce((s,l) => s + l.valor, 0);
+  document.getElementById('k-disc').innerHTML = [
+    ['Aportes dos investidores', TOT_APORTADO, (PRIV.lancInv||[]).length + ' depósitos', 'pos'],
+    ['Taxas Discovery já recebidas', sum(PRIV.lancDisc||[]), 'fora do caixa dos investidores', 'dis'],
+    ['Investidores', COTAS.length, PRIV.modo === 'proporcional' ? 'regra própria por investidor' : 'divisão igual', ''],
+  ].map(([t,v,s,c],i) => `<div class="kpi"><span>${t}</span><b class="${c}">${i===2 ? v : fmt(v)}</b><small>${s}</small></div>`).join('');
+  let h = '<thead><tr><th>Investidor</th><th class="n">Aportado</th><th class="n">Arremate pago</th><th>Regra</th></tr></thead><tbody>';
+  COTAS.forEach(c => h += `<tr><td>${esc(c.nome)}</td><td class="n">${fmt(c.ap)}</td><td class="n dis">${fmt(c.arrPago)}</td><td class="wrap note">${esc((c.regra||{}).rotulo||'')}</td></tr>`);
+  h += `<tr class="tot"><td>Total</td><td class="n">${fmt(COTAS.reduce((s,c)=>s+c.ap,0))}</td><td class="n dis">${fmt(COTAS.reduce((s,c)=>s+c.arrPago,0))}</td><td></td></tr></tbody>`;
+  document.getElementById('disc-inv').innerHTML = h;
+  const linhas = (PRIV.lancInv||[]).concat(PRIV.lancDisc||[]).sort((a,b) => a.data < b.data ? -1 : 1);
+  let g = '<thead><tr><th>Data</th><th>Categoria</th><th>Descrição</th><th class="n">Valor</th><th>Tipo</th><th>Obs</th></tr></thead><tbody>';
+  linhas.forEach(l => g += `<tr class="${l.obs?'obs':''}"><td>${dia(l.data)}</td><td>${esc(l.categoria)}</td><td class="wrap">${esc(l.descricao)}</td><td class="n">${fmt(l.valor)}</td><td><span class="pill ${tcls(l.tipo)}">${l.tipo}</span></td><td class="wrap">${esc(l.obs)}</td></tr>`);
+  document.getElementById('disc-lanc').innerHTML = g + '</tbody>';
+  document.getElementById('ns-nome').innerHTML = COTAS.filter(c => c.nome !== 'Discovery').map(c => `<option>${esc(c.nome)}</option>`).join('');
+}
+// pedido de troca de senha: vai para o banco "senhas" da página (só administrador lê e grava); o Claude aplica e regenera as páginas
+document.getElementById('nova-senha').addEventListener('submit', async ev => {
+  ev.preventDefault();
+  const msg = document.getElementById('ns-msg'), nome = document.getElementById('ns-nome').value, inp = document.getElementById('ns-senha'), senha = inp.value.trim();
+  if (!/^[0-9]{4,12}$/.test(senha)) { msg.className = 'tranca-msg erro'; msg.textContent = 'Use de 4 a 12 dígitos.'; return; }
+  const db = window.claude && claude.use ? await claude.use('db') : null;
+  if (!db) { msg.className = 'tranca-msg erro'; msg.textContent = 'Aqui não dá para salvar. Abra a página no claude.ai como administrador ou peça ao Claude.'; return; }
+  try {
+    await db.collection('senhas').add({ nome, senha, casa: '__CASA__', pedidoEm: new Date().toISOString(), status: 'novo' });
+    inp.value = ''; msg.className = 'tranca-msg'; msg.textContent = 'Nova senha de ' + nome + ' salva. Ela entra hoje às 21h50.';
+  } catch (e) { msg.className = 'tranca-msg erro'; msg.textContent = 'Não deu para salvar (sem permissão?).'; }
+});
+function mostrarAberto(){
+  document.querySelectorAll('[data-tranca],[data-trancado]').forEach(e => e.hidden = !!PRIV && (FULL() || !!e.closest('#p-inv')));
+  document.querySelectorAll('[data-aberto]').forEach(e => e.hidden = !PRIV);
+  document.querySelectorAll('[data-aberto-full]').forEach(e => e.hidden = !FULL());
+  document.getElementById('t-disc').textContent = FULL() ? 'Discovery' : 'Discovery 🔒';
+}
+document.querySelectorAll('[data-tranca]').forEach(f => f.addEventListener('submit', async ev => {
+  ev.preventDefault();
+  const inp = f.querySelector('input'), msg = f.querySelector('.tranca-msg'), senha = inp.value.trim();
+  if (!senha || !CRIPTO) return;
+  msg.className = 'tranca-msg'; msg.textContent = 'Abrindo…';
+  let achou = null;
+  for (const blob of CRIPTO) { try { achou = await tentar(senha, blob); break; } catch (e) {} }
+  if (!achou) { msg.className = 'tranca-msg erro'; msg.textContent = 'Senha incorreta.'; return; }
+  if (f.closest('#p-disc') && !achou.full) { msg.className = 'tranca-msg erro'; msg.textContent = 'Esta senha é de investidor: abra na aba Investidores.'; return; }
+  PRIV = achou; prepPriv(); inp.value = ''; msg.textContent = '';
+  if (FULL() && PRIV.projecao) D.projecao = PRIV.projecao;
+  renderProj(); window.__calc && window.__calc(); renderDisc(); mostrarAberto();
+}));
+document.querySelectorAll('[data-sair]').forEach(b => b.addEventListener('click', () => location.reload()));
+if (PRIV && FULL() && PRIV.projecao) { D.projecao = PRIV.projecao; renderProj(); window.__calc && window.__calc(); }
+renderDisc(); mostrarAberto();
+</script>
+<script>
+// Enviar recibo: só aparece para quem administra a página (assets só é liberado para Editor/Dono).
+// A foto vai para o armazenamento da página e uma linha em db "recibos" (status "novo"); o Claude baixa, lança e marca "lancado".
+(async () => {
+  if (!window.claude || !claude.use) return;   // navegador comum (link compartilhado): a barra nem aparece
+  const box = document.getElementById('recibo'), st = document.getElementById('rec-status'), lista = document.getElementById('rec-lista');
+  // dentro do Claude mas sem permissao de dono: diz o motivo em vez de esconder a barra em silencio
+  let assets = null, db = null;
+  try { [assets, db] = await Promise.all([claude.use('assets'), claude.use('db')]); } catch (e) {}
+  if (!assets || !db) {
+    box.hidden = false;
+    document.querySelector('.rec-botoes').hidden = true;
+    document.getElementById('rec-nota').hidden = true;
+    document.getElementById('rec-acoes').hidden = true;
+    st.className = 'erro';
+    st.textContent = 'Esta página está aberta como leitura, por isso o envio de recibo não aparece. Abra-a pela sua lista de artefatos, na conta que é dona da página. (Falta: ' + [!assets && 'armazenamento', !db && 'banco de dados'].filter(Boolean).join(' e ') + '.)';
+    return;
+  }
+  const col = db.collection('recibos');
+  box.hidden = false;
+  const msg = (t, c) => { st.textContent = t; st.className = c || ''; };
+  const ACEITOS = ['image/jpeg','image/png','image/webp','application/pdf'];
+  // foto grande, HEIC ou outro formato vira JPEG de até 2400 px (continua legível e sobe rápido)
+  async function preparar(f) {
+    if (f.type === 'application/pdf') return { blob: f, type: f.type };
+    if (ACEITOS.includes(f.type) && f.size <= 3e6) return { blob: f, type: f.type };
+    try {
+      const bmp = await createImageBitmap(f);
+      const k = Math.min(1, 2400 / Math.max(bmp.width, bmp.height));
+      const c = document.createElement('canvas'); c.width = Math.round(bmp.width * k); c.height = Math.round(bmp.height * k);
+      c.getContext('2d').drawImage(bmp, 0, 0, c.width, c.height);
+      const b = await new Promise(r => c.toBlob(r, 'image/jpeg', 0.85));
+      if (b) return { blob: b, type: 'image/jpeg' };
+    } catch (e) {}
+    if (ACEITOS.includes(f.type)) return { blob: f, type: f.type };
+    throw { code: 'unsupported_type' };
+  }
+  const ERROS = { too_large: 'arquivo grande demais (máx. 20 MB)', unsupported_type: 'formato não aceito — use foto (JPG/PNG) ou PDF', quota_or_state: 'o espaço da página acabou', rate_limited: 'muitos envios seguidos, espere um pouco', not_granted: 'sem permissão para enviar', upstream_auth: 'faça login de novo e recarregue' };
+  async function enviar(files) {
+    files = [...files]; if (!files.length) return;
+    const nota = document.getElementById('rec-nota').value.trim();
+    let ok = 0;
+    for (const [i, f] of files.entries()) {
+      msg(`Enviando ${i + 1} de ${files.length}…`);
+      try {
+        const { blob, type } = await preparar(f);
+        const up = await assets.upload(blob, { type });
+        await col.add({ asset: up.id, tipo: up.contentType, nome: f.name || 'foto', nota, enviadoEm: new Date().toISOString(), status: 'novo' });
+        ok++;
+      } catch (e) {
+        msg(`Não deu para enviar "${f.name || 'foto'}": ${ERROS[e && e.code] || 'erro, tente de novo'}.`, 'erro'); return;
+      }
+    }
+    document.getElementById('rec-nota').value = '';
+    msg(ok === 1 ? 'Recibo enviado. Será lançado hoje às 22h.' : `${ok} recibos enviados. Serão lançados hoje às 22h.`, 'ok');
+  }
+  for (const id of ['rec-cam', 'rec-gal', 'rec-pdf']) {
+    const inp = document.getElementById(id);
+    inp.addEventListener('change', async () => { await enviar(inp.files); inp.value = ''; });
+  }
+  // lista dos recibos aguardando: clique na miniatura abre; a caixinha marca para excluir
+  const pendentes = col.where('status', '==', 'novo');
+  const sel = new Set();
+  const btExcluir = document.getElementById('rec-excluir'), confirma = document.getElementById('rec-confirma');
+  const ver = document.getElementById('rec-ver'), corpo = document.getElementById('rec-ver-corpo');
+  function marcar() {
+    btExcluir.disabled = sel.size === 0;
+    btExcluir.textContent = '';
+    btExcluir.insertAdjacentHTML('beforeend', '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/></svg>');
+    btExcluir.append(sel.size ? `Excluir selecionados (${sel.size})` : 'Excluir selecionados');
+    if (!sel.size) confirma.hidden = true;
+  }
+  function abrir(r, quando) {
+    corpo.innerHTML = '';
+    const url = '/_blob/' + r.asset;
+    if (String(r.tipo).startsWith('image/')) { const im = document.createElement('img'); im.src = url; im.alt = 'Recibo enviado em ' + quando; corpo.append(im); }
+    else { const fr = document.createElement('iframe'); fr.src = url; fr.title = 'Recibo em PDF enviado em ' + quando; corpo.append(fr); }
+    const p = document.createElement('p'); p.textContent = [quando, r.nome, r.nota].filter(Boolean).join(' · '); corpo.append(p);
+    ver.showModal();
+  }
+  document.getElementById('rec-fechar').addEventListener('click', () => ver.close());
+  ver.addEventListener('click', e => { if (e.target === ver) ver.close(); });
+  function desenhar(docs) {
+    lista.innerHTML = '';
+    const ids = new Set(docs.map(d => d.id));
+    for (const id of [...sel]) if (!ids.has(id)) sel.delete(id);
+    docs.map(d => ({ id: d.id, ...d.data() })).sort((a, b) => a.enviadoEm < b.enviadoEm ? 1 : -1).forEach(r => {
+      const li = document.createElement('li'); li.classList.toggle('sel', sel.has(r.id));
+      const quando = new Date(r.enviadoEm).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' });
+      const bt = document.createElement('button'); bt.type = 'button'; bt.className = 'abrir'; bt.title = 'Abrir recibo';
+      if (String(r.tipo).startsWith('image/')) { const im = document.createElement('img'); im.src = '/_blob/' + r.asset; im.alt = 'Abrir recibo enviado em ' + quando; im.loading = 'lazy'; bt.append(im); }
+      else { const p = document.createElement('div'); p.className = 'pdf'; p.textContent = 'PDF'; bt.setAttribute('aria-label', 'Abrir recibo em PDF enviado em ' + quando); bt.append(p); }
+      bt.addEventListener('click', () => abrir(r, quando));
+      const cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = sel.has(r.id); cb.setAttribute('aria-label', 'Selecionar recibo de ' + quando);
+      cb.addEventListener('change', () => { cb.checked ? sel.add(r.id) : sel.delete(r.id); li.classList.toggle('sel', cb.checked); marcar(); });
+      const s = document.createElement('span'); s.textContent = quando + ' · aguardando';
+      li.append(bt, cb, s); li.dataset.asset = r.asset; li.dataset.id = r.id;
+      lista.append(li);
+    });
+    marcar();
+  }
+  pendentes.onSnapshot(snap => desenhar(snap.docs), () => {});
+
+  // Recibo com dúvida: o Claude marca status "duvida" (com a pergunta em "duvida" e, se tiver, "sugestoes").
+  // Aqui aparece a lista das categorias já usadas na casa e, no fim, "Novo item". A resposta volta para "novo" e é lançada às 22h.
+  const duvidas = col.where('status', '==', 'duvida'), boxDuv = document.getElementById('rec-duvidas');
+  const usadas = D.categorias.filter(c => c.total && c.tipo !== 'Discovery' && c.categoria !== 'Entrada de Investidores');
+  const grupos = [...new Set(D.categorias.map(c => c.grupo).filter(g => g && g !== 'Entradas' && g !== 'Taxas Discovery'))];
+  const opt = (v, t) => { const o = document.createElement('option'); o.value = v; o.textContent = t; return o; };
+  function desenharDuvidas(docs) {
+    boxDuv.innerHTML = '';
+    docs.map(d => ({ id: d.id, ...d.data() })).sort((a, b) => a.enviadoEm < b.enviadoEm ? -1 : 1).forEach(r => {
+      const li = document.createElement('li');
+      const quando = new Date(r.enviadoEm).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' });
+      const bt = document.createElement('button'); bt.type = 'button'; bt.className = 'abrir'; bt.title = 'Abrir recibo';
+      if (String(r.tipo).startsWith('image/')) { const im = document.createElement('img'); im.src = '/_blob/' + r.asset; im.alt = 'Abrir recibo enviado em ' + quando; bt.append(im); }
+      else { const p = document.createElement('div'); p.className = 'pdf'; p.textContent = 'PDF'; bt.setAttribute('aria-label', 'Abrir recibo em PDF enviado em ' + quando); bt.append(p); }
+      bt.addEventListener('click', () => abrir(r, quando));
+      const q = document.createElement('p'); q.className = 'q';
+      const tag = document.createElement('b'); tag.textContent = 'Onde lançar?';
+      q.append(tag, r.duvida || `Recibo de ${quando}${r.nota ? ' · ' + r.nota : ''}`);
+      const f = document.createElement('form');
+      const sel = document.createElement('select'); sel.setAttribute('aria-label', 'Categoria do recibo'); sel.required = true;
+      sel.append(opt('', 'Escolha a categoria…'));
+      const sug = (Array.isArray(r.sugestoes) ? r.sugestoes : []).filter(s => D.categorias.some(c => c.categoria === s));
+      if (sug.length) { const og = document.createElement('optgroup'); og.label = 'Sugestão do Claude'; sug.forEach(s => og.append(opt(s, s))); sel.append(og); }
+      const porGrupo = {}; usadas.forEach(c => (porGrupo[c.grupo] ||= []).push(c.categoria));
+      Object.keys(porGrupo).forEach(g => { const og = document.createElement('optgroup'); og.label = g; [...new Set(porGrupo[g])].sort().forEach(c => og.append(opt(c, c))); sel.append(og); });
+      sel.append(opt('+novo', '+ Novo item…'));
+      const novo = document.createElement('div'); novo.className = 'novo'; novo.hidden = true;
+      const nome = document.createElement('input'); nome.type = 'text'; nome.maxLength = 40; nome.placeholder = 'Nome do novo item'; nome.setAttribute('aria-label', 'Nome do novo item');
+      const grp = document.createElement('select'); grp.setAttribute('aria-label', 'Grupo do novo item');
+      grp.append(opt('', 'Grupo…')); grupos.forEach(g => grp.append(opt(g, g)));
+      novo.append(nome, grp);
+      sel.addEventListener('change', () => { novo.hidden = sel.value !== '+novo'; nome.required = grp.required = !novo.hidden; if (!novo.hidden) nome.focus(); });
+      const ok = document.createElement('button'); ok.type = 'submit'; ok.textContent = 'Salvar';
+      f.append(sel, ok, novo);
+      f.addEventListener('submit', async e => {
+        e.preventDefault();
+        const nova = sel.value === '+novo';
+        const categoria = nova ? nome.value.trim().toUpperCase() : sel.value;
+        const grupo = nova ? grp.value : (usadas.find(c => c.categoria === categoria) || {}).grupo;
+        if (!categoria) return;
+        ok.disabled = true;
+        try {
+          await col.doc(r.id).update({ status: 'novo', categoria, grupo: grupo || '', categoriaNova: nova, respondidoEm: new Date().toISOString() });
+          msg(`Recibo de ${quando} vai para "${categoria}". Será lançado hoje às 22h.`, 'ok');
+        } catch (err) { ok.disabled = false; msg('Não deu para salvar. Tente de novo.', 'erro'); }
+      });
+      li.append(bt, q, f);
+      boxDuv.append(li);
+    });
+  }
+  duvidas.onSnapshot(snap => desenharDuvidas(snap.docs), () => {});
+
+  document.getElementById('rec-atualizar').addEventListener('click', async () => {
+    msg('Atualizando…');
+    try { const [a, b] = await Promise.all([pendentes.get(), duvidas.get()]); desenhar(a.docs); desenharDuvidas(b.docs); msg('Lista atualizada.', 'ok'); }
+    catch (e) { msg('Não deu para atualizar. Recarregue a página.', 'erro'); }
+  });
+  btExcluir.addEventListener('click', () => { document.getElementById('rec-qtd').textContent = sel.size === 1 ? '1 recibo' : sel.size + ' recibos'; confirma.hidden = false; });
+  document.getElementById('rec-nao').addEventListener('click', () => { confirma.hidden = true; });
+  document.getElementById('rec-sim').addEventListener('click', async () => {
+    confirma.hidden = true;
+    const alvo = [...lista.querySelectorAll('li')].filter(li => sel.has(li.dataset.id));
+    let ok = 0;
+    for (const li of alvo) {
+      try {
+        await col.doc(li.dataset.id).delete();
+        try { await assets.delete(li.dataset.asset); } catch (e) {}
+        sel.delete(li.dataset.id); ok++;
+      } catch (e) { msg('Não deu para excluir um dos recibos. Tente de novo.', 'erro'); marcar(); return; }
+    }
+    marcar();
+    msg(ok === 1 ? 'Recibo excluído.' : `${ok} recibos excluídos.`, 'ok');
+  });
+})();
+</script>
+
+</body></html>
