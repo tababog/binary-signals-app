@@ -48,7 +48,7 @@ O Claude publica tudo pela conexão Windsor (conta 17841475103023266), sem pedir
 ```
 Comprar em leilão de Tax Deed tem disso: a casa já é sua, a escritura está na mão… mas a chave não vem junto 😅
 
-Foi assim a nossa primeira noite na 953 Erie St, em Elmira, NY. Plano B: a janela 🪟
+Foi assim a nossa primeira noite na casa, em Elmira, NY. Plano B: a janela 🪟
 
 Siga para ver a reforma 🔨
 
@@ -91,7 +91,7 @@ Siga para ver a reforma 🔨
 ```
 Mesma casa, uma semana de diferença 👇
 
-Cozinha, sala, porão e garagem: tudo vazio e pronto para a obra começar na 953 Erie St.
+Cozinha, sala, porão e garagem: tudo vazio e pronto para a obra começar.
 
 Siga para ver a reforma 🔨
 
@@ -106,7 +106,7 @@ Ninguém mostra essa parte do leilão… 🚛
 
 Antes da reforma começar, a casa precisa ficar VAZIA. Foram 2 caçambas de entulho, móveis velhos e até um sofá rosa 😅 direto para o centro de descarte.
 
-Casa 953 Erie St — próximo passo: a reforma.
+Próximo passo: a reforma.
 
 Siga para ver a reforma 🔨
 
