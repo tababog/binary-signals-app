@@ -89,9 +89,9 @@ Siga para ver a reforma 🔨
 
 **Reel 5: Antes e depois**
 ```
-Mesma casa, uma semana de diferença 👇
+Antes e depois da LIMPEZA 🧹 Mesma casa, uma semana de diferença.
 
-Cozinha, sala, porão e garagem: tudo vazio e pronto para começar a obra.
+Cozinha, sala, porão e garagem: tudo vazio e pronto para começar a obra. A reforma ainda vem aí!
 
 Siga para ver a reforma 🔨
 
