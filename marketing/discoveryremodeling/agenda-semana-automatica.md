@@ -91,7 +91,7 @@ Siga para ver a reforma 🔨
 ```
 Mesma casa, uma semana de diferença 👇
 
-Cozinha, sala, porão e garagem: tudo vazio e pronto para a obra começar.
+Cozinha, sala, porão e garagem: tudo vazio e pronto para começar a obra.
 
 Siga para ver a reforma 🔨
 
