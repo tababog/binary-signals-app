@@ -52,6 +52,8 @@ Foi assim a nossa primeira noite na 953 Erie St, em Elmira, NY. Plano B: a janel
 
 Siga para ver a reforma 🔨
 
+📘 Quer entender como funciona? Comente GUIA
+
 #taxdeed #leilaodeimoveis #imoveisnoseua #reforma #brasileirosnoseua
 ```
 
@@ -64,6 +66,8 @@ Escada, banheiro, quartos… e no final, o teto 😬
 A gente mostra tudo do jeito que encontrou.
 
 Siga para ver a reforma 🔨
+
+📘 Quer entender como funciona? Comente GUIA
 
 #taxdeed #leilaodeimoveis #imoveisnoseua #reforma #brasileirosnoseua
 ```
@@ -78,6 +82,8 @@ O que você faria com isso? Conta aqui 👇
 
 Siga para ver a reforma 🔨
 
+📘 Quer entender como funciona? Comente GUIA
+
 #taxdeed #leilaodeimoveis #imoveisnoseua #reforma #brasileirosnoseua
 ```
 
@@ -88,6 +94,8 @@ Mesma casa, uma semana de diferença 👇
 Cozinha, sala, porão e garagem: tudo vazio e pronto para a obra começar na 953 Erie St.
 
 Siga para ver a reforma 🔨
+
+📘 Quer entender como funciona? Comente GUIA
 
 #taxdeed #leilaodeimoveis #imoveisnoseua #reforma #brasileirosnoseua
 ```
@@ -101,6 +109,8 @@ Antes da reforma começar, a casa precisa ficar VAZIA. Foram 2 caçambas de entu
 Casa 953 Erie St — próximo passo: a reforma.
 
 Siga para ver a reforma 🔨
+
+📘 Quer entender como funciona? Comente GUIA
 
 #taxdeed #leilaodeimoveis #imoveisnoseua #reforma #brasileirosnoseua
 ```
@@ -119,6 +129,6 @@ Quer comprar sua casa em leilão nos EUA com a gente? Comente ASSESSORIA 👇
 ## Comentários (nos horários de 14h e 19h)
 
 Responder em público só nos posts desta semana, variando o texto e sem falar de preço ou retorno:
-- **GUIA:** "Oi, [nome]! O guia grátis está no primeiro link da bio 📘"
+- **GUIA:** "Oi, [nome]! O guia grátis está no primeiro link da bio 📘" (varie: "Tá no primeiro link da bio, [nome]! 📘", "Link do guia na bio, é só tocar 📘")
 - **ASSESSORIA:** "Que bom, [nome]! Chama a gente no WhatsApp, o link está na bio 💬"
 - Perguntas, críticas ou dúvidas: não responder. Listar para o Alessandro no resumo do dia.
