@@ -35,6 +35,8 @@ Formato: carrossel (ou Reel) "As 3 últimas oportunidades de leilão em 2026", t
 | # | Leilão | Data | Inscrição | Situação |
 |---|---|---|---|---|
 | 1 | Bucks County, PA: upset adiado + judicial (online, GovEase) | 08/12/2026 | Presencial, US$ 100. O site do condado mostra 14/11 e 24/11: usar 14/11, a data mais segura | Confirmado no site do condado |
-| 2 | A confirmar com o Alessandro | | | |
-| 3 | A confirmar com o Alessandro | | | |
+| 2 | Washington County, NY: tax foreclosed (online, Auctions International) | encerra 04/11/2026, às 10h | **fecha 02/11/2026** | Anúncio da Auctions International: conferir no site antes de publicar |
+| 3 | Essex County, NY: tax foreclosure, ao vivo com lances online (NYSAuctions) | 12/11/2026, às 10h | ver no site | Conferir no site antes de publicar |
+| 4 | Warren County, NY: tax foreclosed (Auctions International) | encerra 17/11/2026 | ver no site | Conferir no site antes de publicar |
+ATENÇÃO: a inscrição de Washington County fecha em 02/11, o primeiro dia da semana de vendas. Para essa urgência servir, o post precisa sair ainda nesta semana.
 Delaware County, PA (10/12) não foi confirmado no site do condado: a última lista publicada é de 11/12/2025.
