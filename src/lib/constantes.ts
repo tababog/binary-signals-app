@@ -6,6 +6,7 @@ export const CATEGORIAS_DESPESA = {
   SERVICO: "Serviços / subempreiteiros",
   EQUIPAMENTO: "Equipamentos / aluguel",
   LICENCA: "Licenças (permits) / inspeções",
+  SEGURO: "Seguro específico da obra",
   DESCARTE: "Descarte / caçamba (dumpster)",
   OUTROS: "Outros",
 } as const;

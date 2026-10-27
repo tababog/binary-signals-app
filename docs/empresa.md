@@ -36,6 +36,30 @@ Levantado em 27/10/2026 a partir de perfis públicos. Itens marcados **[confirma
 - Pontualidade ("comes in time")
 - Profissionalismo e resposta rápida
 
+## Custos fixos da empresa (overhead) — base da etapa 10
+
+Custos que existem com ou sem obra. Não entram no caixa de uma obra específica: são somados por mês e
+**divididos entre as obras** (rateio), para que o preço de venda cubra também esses gastos.
+
+| Custo fixo | Informado por |
+| --- | --- |
+| Água | Alessandro |
+| Energia elétrica | Alessandro |
+| Seguro dos carros | Alessandro |
+| Aluguel do galpão | Alessandro |
+| General liability (seguro de responsabilidade civil) | Alessandro |
+| Combustível | Alessandro |
+| Ferramentas (compra e reposição) | Alessandro |
+| Contador | Sugestão |
+
+Costumam ser esquecidos e vale conferir se a Tababog tem: workers' compensation (obrigatório em CT para quem tem
+funcionários), taxa de leads do Thumbtack/Angi, manutenção dos carros, financiamento/parcelas de veículos,
+telefone e internet, software, marketing, renovação da licença HIC e **o salário dos próprios sócios**.
+
+**Gasto de obra x custo fixo:** combustível e ferramentas são custo fixo por padrão. Quando forem comprados só para
+uma obra (ex.: uma ferramenta específica, aluguel de equipamento), lançar como despesa daquela obra
+(categoria *Equipamentos / aluguel*). Seguro feito só para uma obra vai em *Seguro específico da obra*.
+
 ## Regras de Connecticut que afetam o app
 
 - **Contrato de home improvement:** a lei de CT (Home Improvement Act) exige contrato escrito e assinado pelas duas

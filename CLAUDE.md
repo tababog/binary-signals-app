@@ -12,7 +12,8 @@ Conversa com o usuário em português; telas internas em português.
    Valores guardados em centavos (`Int`), formatados com `dinheiro()` em `src/lib/format.ts`.
 2. **Meta de lucro: preço de venda = no mínimo 2x o custo.** Sempre buscar o dobro do que foi investido.
    Custo = material + delivery/frete + mão de obra (equipe própria e terceiros) + instalação + serviços/subempreiteiros
-   + equipamentos/aluguel + licenças (permits)/inspeções + descarte/caçamba + outros.
+   + equipamentos/aluguel + licenças (permits)/inspeções + seguro da obra + descarte/caçamba + outros
+   + a parte da obra nos custos fixos da empresa (rateio, etapa 10).
    Categorias definidas em `CATEGORIAS_DESPESA` (`src/lib/constantes.ts`); nenhum custo pode ficar de fora do preço.
    Toda tela, relatório ou orçamento deve mostrar o multiplicador (preço ÷ custo) e alertar quando ficar abaixo de 2x.
 3. **Todo orçamento tem duas opções** para o cliente (por exemplo, Essencial e Premium), cada uma com itens,
@@ -51,4 +52,6 @@ Conversa com o usuário em português; telas internas em português.
 - [ ] 8. Proposta para o cliente: apresentação profissional (portfólio da categoria + escopo item a item +
        duas opções + valores) com aceite e assinatura do contrato online.
 - [ ] 9. Relatório final da obra: lucro ou prejuízo, multiplicador atingido x meta 2x, onde o custo estourou.
-- [ ] 10. Diagnóstico de lucro da empresa: custos fixos (seguro, veículo, ferramentas, contador...) rateados nas obras.
+- [ ] 10. Diagnóstico de lucro da empresa: custos fixos mensais (água, energia, seguro dos carros, aluguel do galpão,
+       general liability, combustível, ferramentas, contador... lista em `docs/empresa.md`) rateados nas obras;
+       a precificação (etapa 6) soma esse rateio ao custo antes de aplicar a meta 2x.
