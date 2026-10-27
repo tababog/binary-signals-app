@@ -34,7 +34,7 @@ Status: **APROVADA pelo Alessandro em 27/10** (com a troca: o Reel "Você não p
 
 ## O que falta (dono)
 1. **Notebook:** os 4 Reels das visitas de campo (prompt `prompt-reels-visitas-de-campo.md`), até sábado 31/10.
-2. ~~Ale: valores~~ casa-1 (C13): lance US$ 14.000 / mercado ~US$ 320.000; casa-2 (C22): lance US$ 6.500 / mercado ~US$ 125.000 (confirmados pelo Ale em 27/10). Casas 3 e 4 sem valores.
+2. ~~Ale: valores~~ casa-1 (C13): lance US$ 14.000 / mercado ~US$ 320.000; casa-2 (C22): lance US$ 6.500 / mercado ~US$ 125.000 (confirmados pelo Ale em 27/10). casa-4 (C08): lance US$ 3.500 / mercado ~US$ 125.000. Casa 3 sem valores.
 3. **Ale:** gravar 1 minuto para o Reel de SEGUNDA 02/11 (roteiro abaixo), até quinta 29/10.
 4. **Notebook:** carrossel e Reel da casa de Elkland (prompt `prompt-casa-elkland.md`).
 6. ~~Ale: valores de Elkland~~ CONFIRMADO em 27/10: compra US$ 11.000, reforma US$ 60.000, venda US$ 123.000, pode mostrar. Correção do carrossel em `prompt-correcao-carrossel-elkland.md`.

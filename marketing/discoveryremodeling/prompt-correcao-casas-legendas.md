@@ -63,3 +63,8 @@ Primeiro faça só o casa-1-nova-york-v2.mp4 e me mostre 3 prints (um com legend
 ```
 VALORES DA casa-2 (C22, casa de 2 famílias na avenida principal): lance inicial US$ 6.500 · valor de mercado ~US$ 125.000. Use nos cartões de número no estilo novo (mesmo padrão do casa-1), com o aviso de risco junto.
 ```
+
+## Valores da casa-4 (C08), passados pelo Alessandro em 27/10
+```
+VALORES DA casa-4 (C08, "a importância da visita presencial"): lance inicial US$ 3.500 · valor de mercado ~US$ 125.000. Use os cartões de número no estilo novo LOGO DEPOIS da parte do Google ("no Google parecia bonita…"), antes de mostrar o interior. Logo em seguida, um cartão "MAS OLHA O QUE TINHA LÁ DENTRO 😳". Aviso de risco junto dos números.
+```
