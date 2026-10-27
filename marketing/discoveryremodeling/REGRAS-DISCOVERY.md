@@ -41,6 +41,7 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - O Alessandro aprova a semana uma vez; depois eu publico tudo sozinho, sem pedir aprovação de novo.
 - Horários (Brasília): story em vídeo às 8h, post do feed às 12h (sexta 19h, sábado 10h, domingo 19h), story de pergunta às 14h, checagem de comentários às 14h e 19h.
 - Regra do v2: se existir o "-v2" no Drive na hora do post, publico o v2; se não, publico o original.
+- Semana de vendas (02 a 08/11): `agenda-semana-vendas-automatica.md` (mesma rotina, desliga em 09/11; o repositório fica público até 09/11 porque as artes saem dele).
 - A agenda fica em `agenda-semana-automatica.md`, a rotina "Semana automática Discovery" lê a versão mais nova, e o painel fica em https://claude.ai/artifact/J39wU8iVxtmEvYAZ1XBHhW (fixado na barra lateral).
 - Pela conexão (Windsor) não dá para colocar música, figurinhas, link no story nem vídeo em carrossel, e também não dá para criar destaques. Essas coisas ficam com o Alessandro.
 - Responder em público só comentários com GUIA (mandar para o link da bio) ou ASSESSORIA (te chamei no direct / WhatsApp). Listar perguntas e críticas para o Alessandro.
