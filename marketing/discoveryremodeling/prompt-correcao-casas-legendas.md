@@ -73,3 +73,16 @@ VALORES DA casa-4 (C08, "a importância da visita presencial"): lance inicial US
 ```
 VALORES DA casa-3 (C18, "essa a gente NÃO compraria"): lance inicial US$ 5.000 · valor de mercado ~US$ 110.000. Mostre os cartões de número logo no começo e, em seguida, o cartão "E MESMO ASSIM A GENTE NÃO COMPRARIA. OLHA POR QUÊ 👇" antes da minha fala. Aviso de risco junto dos números.
 ```
+
+## casa-5 (C12, "VENDEMOS!"), valores passados pelo Alessandro em 27/10
+```
+casa-5 – "VENDEMOS!" (C12: vídeos 20260521_140307.mp4 e 20260521_140338.mp4 da pasta "Pesquisa de Campo"), no mesmo padrão visual novo das casas 1 a 4 (legendas karaokê, cartões, final e áudio).
+- Gancho (0 a 2 s): eu dizendo "Vendemos!" + texto "VENDEMOS! 🎉" em Alumni Sans Black 150 px, caixa alta, com "VENDEMOS!" em dourado, e a etiqueta "35 DIAS NO MERCADO".
+- Tour da casa pronta (deck, piso, pintura, banheiro) com as minhas falas inteiras. Corte o que for repetido; alvo de 45 a 60 s.
+- Perto do fim, 3 cartões entrando um de cada vez (0,4 s de intervalo), sobre a imagem mais bonita da casa pronta:
+  "COMPRA" US$ 48.000 / "REFORMA" US$ 38.000 / "VENDA" US$ 135.000
+  + aviso: "Valores reais deste caso. Resultados passados não garantem resultados futuros. Todo investimento envolve risco." Sem a palavra "lucro" e sem fazer a conta.
+- Final: painel verde com "SÓ 2 VAGAS NA ASSESSORIA", "QUER FAZER O MESMO COM A GENTE?" e a pílula "Comente ASSESSORIA 👇", depois o logo-reveal.
+- Sem endereço, número da casa ou placa (desfoque).
+Salve como casa-5-vendemos.mp4 na pasta "Reels Semana Vendas" até sábado 31/10.
+```

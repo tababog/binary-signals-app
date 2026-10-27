@@ -58,7 +58,7 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 - **Qua 12h, Casa 2:** "Casa de 2 famílias numa avenida principal: compraria? 🤔 Olha o tour por dentro." + CTA
 - **Qui 12h, Carrossel Elkland:** use a legenda do notebook; se não tiver: "Do leilão à venda: a transformação da casa de Elkland, PA, cômodo por cômodo 🔨➡️🏡 Arraste pro lado." + CTA
 - **Qui 19h, Frase 2:** "Casa barata não é oportunidade. Oportunidade é casa bem analisada. 🔍" + CTA
-- **Sex 12h, VENDEMOS:** "VENDEMOS! 🎉 Do leilão à reforma e à venda, 100% do processo concluído. 35 dias no mercado." + CTA
+- **Sex 12h, VENDEMOS:** "VENDEMOS! 🎉 Compramos, reformamos e vendemos: 100% do processo concluído, 35 dias no mercado. Compra US$ 48.000 · Reforma US$ 38.000 · Venda US$ 135.000 (valores reais deste caso)." + CTA
 - **Sex 19h, Casa 3:** "Essa a gente NÃO compraria, e você precisa saber por quê 👇" + CTA
 - **Sáb 10h, Casa 4:** "No Google ela parecia bonita… olha o que a gente encontrou na visita 😳 Por isso a visita presencial é obrigatória." + CTA
 - **Sáb 19h, Reel Elkland:** use a legenda do notebook; se não tiver: "Essa casa foi a leilão… olha como ela ficou depois da reforma 🏡✨" + CTA
