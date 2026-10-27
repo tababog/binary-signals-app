@@ -8,7 +8,7 @@ CORREÇÃO DOS REELS casa-1 a casa-4 (pasta "Reels Semana Vendas") – PADRÃO V
 Analisei o casa-1-nova-york.mp4 (43,6 s). A edição e as falas estão boas, mas o visual está amador. Corrija os 4 vídeos com as regras abaixo e salve como casa-1-nova-york-v2.mp4 … casa-4-nova-york-v2.mp4 (sem apagar os originais).
 
 === 0. ANTES DE TUDO: OS VALORES ===
-O casa-1 mostra "Lance inicial: US$ 14.000" e "Valor de mercado: ~US$ 320.000". De onde vieram esses números? Se eu não te passei esses valores, TIRE os dois cartões até eu confirmar. Nunca invente valor. O mesmo vale para as casas 2 a 4.
+Os valores do casa-1 (lance inicial US$ 14.000 e valor de mercado ~US$ 320.000) foram passados por mim: MANTENHA, só no estilo novo dos cartões. Nas casas 2 a 4, use só valores que eu te passei; sem valor meu, sem cartão de número.
 
 === 1. FONTES (instale, são grátis no Google Fonts) ===
 - Alumni Sans, peso Black (900): títulos, números e legendas. Sempre em CAIXA ALTA.
