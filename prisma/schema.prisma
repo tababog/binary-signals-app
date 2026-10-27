@@ -64,6 +64,10 @@ model Obra {
   dataInicio      DateTime?
   dataPrevista    DateTime?
   progresso       Int       @default(0)
+  // Ponto central da obra e distância máxima aceita para o ponto da equipe
+  latitude        Float?
+  longitude       Float?
+  raioMetros      Int       @default(200)
   criadoEm        DateTime  @default(now())
 
   clienteId       String
@@ -119,9 +123,13 @@ model RegistroPonto {
   valorHoraCent Int
   latEntrada    Float?
   lngEntrada    Float?
+  precisaoEntrada Float?
   latSaida      Float?
   lngSaida      Float?
+  precisaoSaida Float?
   observacao    String?
+  // true quando o administrador lançou as horas (sem GPS do funcionário)
+  manual        Boolean   @default(false)
 
   @@index([usuarioId, entrada])
   @@index([obraId])

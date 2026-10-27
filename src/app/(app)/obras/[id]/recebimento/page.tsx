@@ -22,7 +22,7 @@ export default async function NovoRecebimento({ params }: { params: { id: string
         <Formulario acao={lancarRecebimento.bind(null, obra.id)}>
           <div className="grid gap-4 sm:grid-cols-2">
             <Campo rotulo="Valor recebido *">
-              <input className="campo text-lg" name="valor" inputMode="decimal" placeholder="0,00" required />
+              <input className="campo text-lg" name="valor" inputMode="decimal" placeholder="0.00" required />
             </Campo>
             <Campo rotulo="Data">
               <input className="campo" name="data" type="date" defaultValue={campoData(new Date())} />

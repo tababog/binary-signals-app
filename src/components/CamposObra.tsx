@@ -1,6 +1,7 @@
 import { campoData, centavosParaCampo } from "@/lib/format";
 import { STATUS_OBRA } from "@/lib/constantes";
 import { Campo } from "./ui";
+import { CamposLocalObra } from "./CamposLocalObra";
 
 type Obra = {
   nome: string;
@@ -12,6 +13,9 @@ type Obra = {
   dataInicio: Date | null;
   dataPrevista: Date | null;
   progresso: number;
+  latitude: number | null;
+  longitude: number | null;
+  raioMetros: number;
 };
 
 export function CamposObra({ valor, clientes, clienteInicial }: { valor?: Obra; clientes: { id: string; nome: string }[]; clienteInicial?: string }) {
@@ -34,7 +38,7 @@ export function CamposObra({ valor, clientes, clienteInicial }: { valor?: Obra; 
         </Campo>
       </div>
       <Campo rotulo="Valor fechado com o cliente (contrato)">
-        <input className="campo" name="valorContrato" inputMode="decimal" placeholder="0,00" defaultValue={valor ? centavosParaCampo(valor.valorContratoCent) : ""} />
+        <input className="campo" name="valorContrato" inputMode="decimal" placeholder="0.00" defaultValue={valor ? centavosParaCampo(valor.valorContratoCent) : ""} />
       </Campo>
       <Campo rotulo="Situação">
         <select className="campo" name="status" defaultValue={valor?.status ?? "PLANEJADA"}>
@@ -52,6 +56,7 @@ export function CamposObra({ valor, clientes, clienteInicial }: { valor?: Obra; 
       <Campo rotulo="Andamento da obra (%)">
         <input className="campo" name="progresso" type="number" min={0} max={100} defaultValue={valor?.progresso ?? 0} />
       </Campo>
+      <CamposLocalObra latitude={valor?.latitude ?? null} longitude={valor?.longitude ?? null} raioMetros={valor?.raioMetros ?? 200} />
       <div className="sm:col-span-2">
         <Campo rotulo="Descrição / escopo">
           <textarea className="campo" name="descricao" rows={3} defaultValue={valor?.descricao ?? ""} />

@@ -26,7 +26,7 @@ export default async function NovaDespesa({ params }: { params: { id: string } }
           <FotoRecibo />
           <div className="grid gap-4 sm:grid-cols-2">
             <Campo rotulo="Valor total *">
-              <input className="campo text-lg" name="valor" inputMode="decimal" placeholder="0,00" required />
+              <input className="campo text-lg" name="valor" inputMode="decimal" placeholder="0.00" required />
             </Campo>
             <Campo rotulo="Data da compra">
               <input className="campo" name="data" type="date" defaultValue={campoData(new Date())} />

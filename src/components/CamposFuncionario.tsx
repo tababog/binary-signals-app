@@ -26,7 +26,7 @@ export function CamposFuncionario({ valor, novo }: { valor?: Funcionario; novo?:
         <input className="campo" name="funcao" defaultValue={valor?.funcao ?? ""} />
       </Campo>
       <Campo rotulo="Valor da hora">
-        <input className="campo" name="valorHora" inputMode="decimal" placeholder="0,00" defaultValue={valor ? centavosParaCampo(valor.valorHoraCent) : ""} />
+        <input className="campo" name="valorHora" inputMode="decimal" placeholder="0.00" defaultValue={valor ? centavosParaCampo(valor.valorHoraCent) : ""} />
       </Campo>
       <Campo rotulo="Tipo de acesso">
         <select className="campo" name="papel" defaultValue={valor?.papel ?? "FUNCIONARIO"}>

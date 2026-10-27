@@ -8,6 +8,7 @@ import { custoPonto, duracaoMs, resumoObra } from "@/lib/financeiro";
 import { Cabecalho, Campo, Indicador, SeloStatus, Vazio, Voltar } from "@/components/ui";
 import { Formulario } from "@/components/Formulario";
 import { BotaoEnviar } from "@/components/BotaoEnviar";
+import { SeloLocal } from "@/components/SeloLocal";
 import { adicionarItemOrcamento, atualizarProgresso, excluirLancamento, removerItemOrcamento } from "../actions";
 
 const ABAS = [
@@ -78,12 +79,17 @@ function AbaResumo({ resumo }: { resumo: Awaited<ReturnType<typeof resumoObra>> 
         <Indicador rotulo="Saldo em caixa da obra" valor={dinheiro(resumo.saldoCaixa)} tom={resumo.saldoCaixa < 0 ? "ruim" : "bom"} detalhe="Recebido − custos" />
       </div>
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
-        <Indicador rotulo="Lucro previsto (orçamento)" valor={dinheiro(resumo.lucroPrevisto)} detalhe={`${pct(resumo.lucroPrevisto, obra.valorContratoCent)}% do contrato`} />
+        <Indicador
+          rotulo="Lucro previsto (orçamento)"
+          valor={dinheiro(resumo.lucroPrevisto)}
+          tom={resumo.orcadoTotal > 0 && obra.valorContratoCent < resumo.orcadoTotal * 2 ? "ruim" : "neutro"}
+          detalhe={resumo.orcadoTotal > 0 ? `Contrato = ${(obra.valorContratoCent / resumo.orcadoTotal).toFixed(2)}x o custo orçado (meta 2x)` : "Monte o orçamento"}
+        />
         <Indicador
           rotulo={obra.status === "CONCLUIDA" ? "Lucro final" : "Lucro se parar aqui"}
           valor={dinheiro(resumo.lucroAtual)}
           tom={resumo.lucroAtual < 0 ? "ruim" : "bom"}
-          detalhe="Contrato − custo realizado"
+          detalhe={resumo.custoTotal > 0 ? `Contrato = ${(obra.valorContratoCent / resumo.custoTotal).toFixed(2)}x o custo real (meta 2x)` : "Contrato − custo realizado"}
         />
         <Indicador rotulo="Mão de obra da equipe" valor={dinheiro(resumo.custoEquipe)} detalhe={`${horas(resumo.horasEquipeMs)} trabalhadas`} />
         <Indicador rotulo="Orçamento usado" valor={`${pct(resumo.custoTotal, resumo.orcadoTotal)}%`} tom={resumo.custoTotal > resumo.orcadoTotal && resumo.orcadoTotal > 0 ? "ruim" : "neutro"} detalhe={`Obra ${obra.progresso}% concluída`} />
@@ -232,7 +238,7 @@ async function AbaOrcamento({ obraId, resumo }: { obraId: string; resumo: Awaite
             <input className="campo" name="descricao" placeholder="Ex.: Alvenaria — blocos e argamassa" required />
           </Campo>
           <Campo rotulo="Valor previsto">
-            <input className="campo" name="valor" inputMode="decimal" placeholder="0,00" required />
+            <input className="campo" name="valor" inputMode="decimal" placeholder="0.00" required />
           </Campo>
           <BotaoEnviar>Adicionar</BotaoEnviar>
         </Formulario>
@@ -274,7 +280,7 @@ async function AbaOrcamento({ obraId, resumo }: { obraId: string; resumo: Awaite
 }
 
 async function AbaEquipe({ obraId }: { obraId: string }) {
-  const registros = await db.registroPonto.findMany({ where: { obraId }, include: { usuario: true }, orderBy: { entrada: "desc" } });
+  const registros = await db.registroPonto.findMany({ where: { obraId }, include: { usuario: true, obra: true }, orderBy: { entrada: "desc" } });
 
   const porFuncionario = new Map<string, { nome: string; ms: number; custo: number; dias: Set<string> }>();
   for (const r of registros.filter((r) => r.saida)) {
@@ -293,7 +299,10 @@ async function AbaEquipe({ obraId }: { obraId: string }) {
           <h2 className="mb-2">Na obra agora</h2>
           <ul className="text-sm">
             {agora.map((r) => (
-              <li key={r.id}>{r.usuario.nome} — entrou às {hora(r.entrada)} ({data(r.entrada)})</li>
+              <li key={r.id} className="flex flex-wrap items-center gap-2">
+                {r.usuario.nome} — entrou às {hora(r.entrada)} ({data(r.entrada)})
+                <SeloLocal lat={r.latEntrada} lng={r.lngEntrada} precisao={r.precisaoEntrada} obra={r.obra} />
+              </li>
             ))}
           </ul>
         </div>

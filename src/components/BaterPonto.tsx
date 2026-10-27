@@ -4,13 +4,16 @@ import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { registrarEntrada, registrarSaida } from "@/app/(app)/ponto/actions";
 
-function pegarLocal(): Promise<{ lat: number; lng: number } | null> {
+type Local = { lat: number; lng: number; precisao: number };
+
+// maximumAge 0: sempre uma leitura nova do GPS no momento do toque
+function pegarLocal(): Promise<Local | null> {
   return new Promise((ok) => {
     if (!navigator.geolocation) return ok(null);
     navigator.geolocation.getCurrentPosition(
-      (p) => ok({ lat: p.coords.latitude, lng: p.coords.longitude }),
+      (p) => ok({ lat: p.coords.latitude, lng: p.coords.longitude, precisao: p.coords.accuracy }),
       () => ok(null),
-      { enableHighAccuracy: true, timeout: 8000 },
+      { enableHighAccuracy: true, timeout: 15000, maximumAge: 0 },
     );
   });
 }
@@ -21,7 +24,7 @@ export function BaterPonto({ obras, aberto }: { obras: { id: string; nome: strin
   const [pendente, iniciar] = useTransition();
   const router = useRouter();
 
-  function executar(fn: (local: { lat: number; lng: number } | null) => Promise<{ erro?: string }>) {
+  function executar(fn: (local: Local | null) => Promise<{ erro?: string }>) {
     setErro(null);
     iniciar(async () => {
       const r = await fn(await pegarLocal());
@@ -62,7 +65,7 @@ export function BaterPonto({ obras, aberto }: { obras: { id: string; nome: strin
         {pendente ? "Registrando..." : "Registrar ENTRADA"}
       </button>
       {erro && <p className="text-sm text-red-700">{erro}</p>}
-      <p className="text-center text-xs text-stone-500">A localização do celular é registrada junto com o horário.</p>
+      <p className="text-center text-xs text-stone-500">Sua localização é registrada ao marcar entrada e saída.</p>
     </div>
   );
 }

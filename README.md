@@ -21,12 +21,15 @@ Funciona no navegador do computador e do celular (pode ser "instalado" na tela i
 - **Clientes** e **Fornecedores**: cadastro completo; o fornecedor mostra o total já comprado dele.
 - **Funcionários**: cria o login (e-mail + senha) de cada funcionário, define o valor da hora e o tipo de acesso.
   Para tirar o acesso de quem saiu da empresa, basta desmarcar "Acesso ativo".
-- **Horas**: todos os registros de ponto, com filtros, custo do período, localização no mapa, correção de
-  horários e lançamento manual para quem esqueceu de bater o ponto.
+- **Horas**: todos os registros de ponto, com filtros, custo do período, correção de horários e lançamento
+  manual para quem esqueceu de bater o ponto. Cada entrada e saída mostra **"✓ Na obra"** ou **"⚠ Fora"** com a
+  distância até a obra e o link para o mapa. O Painel lista os pontos fora da obra dos últimos 7 dias.
+  Para isso, cadastre a localização da obra (botão "Usar minha localização atual" estando no local) e o raio aceito.
 
 **Funcionários (acesso de usuário)**
 - Só veem a tela **Meu ponto**: escolhem a obra e tocam em *Registrar ENTRADA* / *Registrar SAÍDA*.
-  O horário é o do servidor (não dá para alterar) e a localização do celular é gravada junto.
+  O horário é o do servidor (não dá para alterar) e o GPS do celular é lido a cada toque, na entrada e na saída.
+  Sem localização o ponto não é registrado.
 - Veem as próprias horas do dia e do mês e podem trocar a própria senha.
 
 ### Como o custo da obra é calculado
@@ -67,8 +70,8 @@ Depois de entrar pela primeira vez, cada administrador deve trocar a senha em **
 | `DATABASE_URL` | Banco de dados. Padrão é SQLite (`file:./dev.db`). |
 | `AUTH_SECRET` | Segredo das sessões de login. Use um valor longo e aleatório. |
 | `UPLOAD_DIR` | Pasta onde as fotos dos recibos ficam guardadas. |
-| `NEXT_PUBLIC_MOEDA` | Moeda das telas (`BRL`, `USD`...). |
-| `NEXT_PUBLIC_FUSO` | Fuso horário do ponto (`America/Sao_Paulo`, `America/New_York`...). |
+| `NEXT_PUBLIC_MOEDA` | Moeda das telas (padrão `USD`). |
+| `NEXT_PUBLIC_FUSO` | Fuso horário do ponto (`America/New_York`, `America/Chicago`, `America/Denver`, `America/Los_Angeles`). |
 | `ADMIN1_*`, `ADMIN2_*` | Nome, e-mail e senha inicial dos dois administradores. |
 
 > A câmera e a localização do celular só funcionam quando o app está em **HTTPS** (ou em `localhost`).

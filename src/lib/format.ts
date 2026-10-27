@@ -1,24 +1,28 @@
-const MOEDA = process.env.NEXT_PUBLIC_MOEDA || "BRL";
-export const FUSO = process.env.NEXT_PUBLIC_FUSO || "America/Sao_Paulo";
+const MOEDA = process.env.NEXT_PUBLIC_MOEDA || "USD";
+export const FUSO = process.env.NEXT_PUBLIC_FUSO || "America/New_York";
 
-const fmtMoeda = new Intl.NumberFormat("pt-BR", { style: "currency", currency: MOEDA });
+const fmtMoeda = new Intl.NumberFormat("en-US", { style: "currency", currency: MOEDA });
 
 export function dinheiro(centavos: number) {
   return fmtMoeda.format(centavos / 100);
 }
 
-/** Aceita "1.234,56", "1234,56", "1234.56" ou "1234". Retorna centavos. */
+/**
+ * Aceita "1,234.56", "1234.56", "1.234,56" ou "1234". Retorna centavos.
+ * O último separador seguido de 1 ou 2 dígitos é o decimal; os outros são milhar.
+ */
 export function paraCentavos(texto: FormDataEntryValue | null): number {
-  let s = String(texto ?? "").trim().replace(/[^\d.,-]/g, "");
+  const s = String(texto ?? "").trim().replace(/[^\d.,-]/g, "");
   if (!s) return 0;
-  if (s.includes(",")) s = s.replace(/\./g, "").replace(",", ".");
-  const n = Number(s);
+  const decimal = s.match(/[.,](\d{1,2})$/);
+  const inteiro = (decimal ? s.slice(0, -decimal[0].length) : s).replace(/[.,]/g, "");
+  const n = Number(`${inteiro || "0"}.${decimal ? decimal[1] : "0"}`);
   return Number.isFinite(n) ? Math.round(n * 100) : 0;
 }
 
-/** Centavos para o formato usado nos campos de formulário ("1234,56"). */
+/** Centavos para o formato usado nos campos de formulário ("1234.56"). */
 export function centavosParaCampo(centavos: number) {
-  return (centavos / 100).toFixed(2).replace(".", ",");
+  return (centavos / 100).toFixed(2);
 }
 
 export function data(d: Date | null | undefined) {

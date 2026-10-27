@@ -34,7 +34,7 @@ export async function lancarRegistroManual(_e: EstadoForm, form: FormData): Prom
 
   const usuario = await db.usuario.findUniqueOrThrow({ where: { id: usuarioId } });
   await db.registroPonto.create({
-    data: { usuarioId, obraId, entrada, saida, valorHoraCent: usuario.valorHoraCent, observacao: texto(form.get("observacao")) ?? "Lançado pelo administrador" },
+    data: { usuarioId, obraId, entrada, saida, manual: true, valorHoraCent: usuario.valorHoraCent, observacao: texto(form.get("observacao")) ?? "Lançado pelo administrador" },
   });
   atualizar();
   return {};

@@ -6,16 +6,21 @@ import { data, dinheiro, hora } from "@/lib/format";
 import { nomeStatus } from "@/lib/constantes";
 import { resumoObra } from "@/lib/financeiro";
 import { Cabecalho, Indicador, SeloStatus, Vazio } from "@/components/ui";
+import { SeloLocal } from "@/components/SeloLocal";
+import { temAlertaLocal } from "@/lib/geo";
 
 export default async function Painel() {
   const usuario = await exigirUsuario();
   if (usuario.papel !== "ADMIN") redirect("/ponto");
 
-  const [obras, naObra, ultimos] = await Promise.all([
+  const seteDias = new Date(Date.now() - 7 * 24 * 3600 * 1000);
+  const [obras, naObra, ultimos, recentes] = await Promise.all([
     db.obra.findMany({ where: { status: { not: "CONCLUIDA" } }, orderBy: { criadoEm: "desc" } }),
     db.registroPonto.findMany({ where: { saida: null }, include: { usuario: true, obra: true }, orderBy: { entrada: "asc" } }),
     db.lancamento.findMany({ include: { obra: true }, orderBy: { criadoEm: "desc" }, take: 8 }),
+    db.registroPonto.findMany({ where: { entrada: { gte: seteDias } }, include: { usuario: true, obra: true }, orderBy: { entrada: "desc" } }),
   ]);
+  const alertas = recentes.filter(temAlertaLocal);
   const resumos = await Promise.all(obras.map((o) => resumoObra(o.id)));
   const soma = (f: (r: (typeof resumos)[number]) => number) => resumos.reduce((s, r) => s + f(r), 0);
 
@@ -69,6 +74,19 @@ export default async function Painel() {
         </div>
 
         <div className="space-y-4">
+          {alertas.length > 0 && (
+            <div className="cartao border-red-200 bg-red-50">
+              <h2 className="mb-2">⚠ Ponto fora da obra (7 dias)</h2>
+              <ul className="space-y-1 text-sm">
+                {alertas.slice(0, 6).map((r) => (
+                  <li key={r.id}>
+                    <b>{r.usuario.nome}</b> · {r.obra.nome} · {data(r.entrada)} {hora(r.entrada)}
+                  </li>
+                ))}
+              </ul>
+              <Link href="/registros?alertas=1" className="link mt-2 inline-block text-sm">Ver todos os alertas →</Link>
+            </div>
+          )}
           <div className="cartao">
             <h2 className="mb-2">Equipe trabalhando agora</h2>
             {naObra.length === 0 ? (
@@ -78,7 +96,8 @@ export default async function Painel() {
                 {naObra.map((r) => (
                   <li key={r.id}>
                     <b>{r.usuario.nome}</b> em {r.obra.nome}
-                    <span className="text-stone-500"> desde {hora(r.entrada)}</span>
+                    <span className="text-stone-500"> desde {hora(r.entrada)}</span>{" "}
+                    <SeloLocal lat={r.latEntrada} lng={r.lngEntrada} precisao={r.precisaoEntrada} obra={r.obra} />
                   </li>
                 ))}
               </ul>

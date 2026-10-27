@@ -11,6 +11,13 @@ import { CATEGORIAS_DESPESA, STATUS_OBRA } from "@/lib/constantes";
 import { PASTA_UPLOADS, salvarComprovante } from "@/lib/uploads";
 import type { EstadoForm } from "@/components/Formulario";
 
+function coordenada(valor: FormDataEntryValue | null, limite: number) {
+  const s = String(valor ?? "").trim();
+  if (!s) return null;
+  const n = Number(s);
+  return Number.isFinite(n) && Math.abs(n) <= limite ? n : null;
+}
+
 function atualizar(obraId: string) {
   revalidatePath(`/obras/${obraId}`);
   revalidatePath("/obras");
@@ -30,8 +37,12 @@ export async function salvarObra(id: string | null, _e: EstadoForm, form: FormDa
     dataInicio: lerData(form.get("dataInicio")),
     dataPrevista: lerData(form.get("dataPrevista")),
     progresso: Math.min(100, Math.max(0, Number(form.get("progresso")) || 0)),
+    latitude: coordenada(form.get("latitude"), 90),
+    longitude: coordenada(form.get("longitude"), 180),
+    raioMetros: Math.min(5000, Math.max(20, Number(form.get("raioMetros")) || 200)),
   };
   if (!dados.nome) return { erro: "Informe o nome da obra." };
+  if ((dados.latitude == null) !== (dados.longitude == null)) return { erro: "Informe latitude e longitude da obra (ou deixe as duas em branco)." };
   if (!dados.clienteId) return { erro: "Escolha o cliente da obra." };
 
   const obra = id ? await db.obra.update({ where: { id }, data: dados }) : await db.obra.create({ data: dados });
