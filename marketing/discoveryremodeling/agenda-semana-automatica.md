@@ -27,7 +27,7 @@ O Claude publica tudo pela conexão Windsor (conta 17841475103023266), sem pedir
 | story-dia6.mp4 | 1WPnZscXbNZmIXXDv2gNcPPVYzh4FWows |
 | story-dia7.mp4 | 13H4hm_s7Prb2zzsjvLO06svjsxkDsg0G |
 
-**Regra do v2:** na hora de cada Reel, procure no Drive o mesmo nome com "-v2" (por exemplo, reel-1-nao-veio-a-chave-v2.mp4). Se existir, publique o v2. Se não, publique o original.
+**Regra do v2 (Reels e stories em vídeo):** na hora de cada Reel ou story-diaN, procure no Drive o mesmo nome com "-v2" (por exemplo, reel-1-nao-veio-a-chave-v2.mp4 ou story-dia1-v2.mp4). Se existir, publique o v2 (link de download com o ID dele). Se não, publique o original.
 
 ## Programação
 
