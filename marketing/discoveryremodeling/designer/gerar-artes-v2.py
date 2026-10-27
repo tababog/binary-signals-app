@@ -16,13 +16,13 @@ MARCA = 'file://' + os.path.join(BASE, '..', 'marca') + '/'
 G, G2, AU, CR, TX, CINZA = '#17361A', '#29721D', '#F2C14E', '#F5F1E6', '#14231A', '#5d6b60'
 
 HEAD = f'''<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@900&family=Work+Sans:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap">
 <style>*{{margin:0;padding:0;box-sizing:border-box}}
 .s{{position:relative;overflow:hidden}}.a{{position:absolute}}
-.d{{font-family:"Alumni Sans",sans-serif;font-weight:900;text-transform:uppercase;line-height:.88}}
-.w{{font-family:"Work Sans",sans-serif}}.b{{font-weight:700}}
-.tag{{font-family:"Work Sans",sans-serif;font-weight:700;letter-spacing:5px;font-size:30px}}
-.pill{{font-family:"Work Sans",sans-serif;font-weight:700;text-align:center;border-radius:999px}}
+.d{{font-family:"Montserrat",sans-serif;font-weight:800;line-height:1.06;letter-spacing:-1px}}
+.w{{font-family:"Montserrat",sans-serif;font-weight:500}}.b{{font-weight:700}}
+.tag{{font-family:"Montserrat",sans-serif;font-weight:800;letter-spacing:4px;font-size:26px}}
+.pill{{font-family:"Montserrat",sans-serif;font-weight:700;text-align:center;border-radius:999px}}
 </style></head><body>'''
 
 def logo(cor='branca', x=None, y=60, w=130, W=1080):
@@ -32,7 +32,14 @@ def logo(cor='branca', x=None, y=60, w=130, W=1080):
 def foto(nome, x, y, w, h, r=0, pos='50% 50%'):
     return f'<img class="a" src="{FOTO}{nome}" style="left:{x}px;top:{y}px;width:{w}px;height:{h}px;object-fit:cover;object-position:{pos};border-radius:{r}px">'
 
+ESCALA_TITULO = 0.68  # Montserrat é mais larga que a Alumni Sans: títulos ficam ~62% do tamanho antigo
+def _escala(body):
+    import re
+    def f(m):
+        return m.group(1) + str(round(int(m.group(2)) * ESCALA_TITULO)) + 'px'
+    return re.sub(r'(class="(?:a )?d"[^>]*?font-size:)(\d+)px', f, body)
 def page(nome, W, H, bg, body):
+    body = _escala(body)
     with open(os.path.join(HTML, nome + '.html'), 'w') as f:
         f.write(HEAD + f'<div class="s" style="width:{W}px;height:{H}px;background:{bg}">{body}</div></body></html>')
     return nome
@@ -162,7 +169,7 @@ pages.append(page('story-destaque-avaliacao', W, H, CR, foto('deck-pronto.jpg', 
     f'<div class="a d" style="left:72px;top:390px;width:936px;color:#fff;font-size:140px">Como é comprar casa em leilão com a gente?</div>'
     f'<div class="a w" style="left:72px;top:830px;width:936px;color:{TX};font-size:44px;line-height:1.35">Quem já fez a assessoria conta tudo no destaque:</div>'
     f'<div class="a" style="left:390px;top:990px;width:300px;height:300px;border-radius:50%;background:{G};border:10px solid {AU}"></div>'
-    f'<div class="a d" style="left:390px;top:1085px;width:300px;text-align:center;color:{AU};font-family:\'Work Sans\';font-size:76px;letter-spacing:4px">★★★</div>'
+    f'<div class="a d" style="left:390px;top:1085px;width:300px;text-align:center;color:{AU};font-size:76px;letter-spacing:4px">★★★</div>'
     f'<div class="a d" style="left:72px;top:1320px;width:936px;text-align:center;color:{G};font-size:80px">Avaliação</div>'
     + cta('Veja no destaque AVALIAÇÃO', 1440, sub='Toque em @discoveryremodeling no topo')))
 

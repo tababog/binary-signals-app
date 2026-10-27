@@ -12,7 +12,8 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - Perfil: nome "Alessandro | Leilão Casas EUA"; links da bio: Guia grátis, WhatsApp e site; destaques verdes, com "Assessoria" em primeiro e "Avaliação" para os depoimentos.
 
 ### Padrão visual (Designer, aprovado em 27/10)
-- Fontes: **Alumni Sans Black** (títulos, caixa alta) + **Work Sans** (texto). Cores da marca + creme #F5F1E6.
+- **Fonte oficial (27/10): Montserrat** (ExtraBold 800 nos títulos, em letras normais, sem caixa alta; Medium 500 no texto; Bold nas etiquetas e botões). O Alessandro adorou essa fonte: usar em TODOS os carrosséis, stories e Reels daqui pra frente. Cores da marca + creme #F5F1E6. Fundo não muito escuro.
+- **A cara do Alessandro:** em posts de assessoria, venda e oferta, usar fotos dele (rosto, na frente das casas, em visita). Em posts sobre casas, usar as casas. Não em todos os posts, conforme o assunto.
 - Fotos reais e **nítidas** (nada de foto desfocada no fundo). Fotos em `designer/fotos/`.
 - 6 famílias de layout que se alternam (nunca a mesma duas vezes seguidas): capa (foto em cima + bloco verde), número gigante, foto cheia com degradê, fundo dourado, fundo verde só com texto e lista em cartões.
 - **Stories são vídeos animados de 7 s** (palavras entrando uma a uma, foto com zoom lento, botão pulsando): `designer/anim.js` + `designer/gravar.js`, salvos em `semana-vendas/animados/`. Carrossel explicativo vira **Reel animado** (o Alessandro acha carrossel estático amador).
@@ -32,7 +33,7 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - A FALA MANDA NO CORTE: frases inteiras, com 0,3 s de folga antes e 0,5 s depois; corte só nas pausas entre frases; nunca cortar no meio da palavra.
 - Nunca acelerar trecho com fala. Partes sem fala podem ser rápidas ou aceleradas.
 - Corte J/L quando a imagem precisar trocar durante a fala.
-- **Legendas no padrão novo (27/10):** estilo karaokê, até 3 palavras por vez, Alumni Sans Black em caixa alta, palavra falada em dourado, sem contorno/caixa, degradê escuro suave embaixo. Detalhes em `prompt-correcao-casas-legendas.md`. Aviso de risco só junto dos números e no final.
+- **Legendas no padrão novo (27/10):** estilo karaokê, até 3 palavras por vez, Montserrat ExtraBold, palavra falada em dourado, sem contorno/caixa, degradê escuro suave embaixo. Detalhes em `prompt-correcao-casas-legendas.md`. Aviso de risco só junto dos números e no final.
 - Legendas sincronizadas em português no terço de baixo; gancho em texto no terço de cima; nada nos 15% de baixo nem nos 10% de cima.
 - Deixar claro o contexto: "ANTES DA LIMPEZA / DEPOIS DA LIMPEZA" (não confundir com reforma).
 - Stories: série "DIÁRIO DA CASA DE LEILÃO · DIA X/7", com texto de contexto e chamada para o post do dia, texto animado e a logo.

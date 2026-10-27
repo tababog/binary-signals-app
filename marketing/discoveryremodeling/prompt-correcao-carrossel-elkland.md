@@ -1,5 +1,10 @@
 # Prompt para o Claude do notebook: correção do carrossel de Elkland (padrão visual novo)
 
+> **ATUALIZAÇÃO 27/10 – FONTE NOVA:** troque Alumni Sans e Work Sans por **Montserrat** (Google Fonts) em tudo:
+> títulos e legendas em **Montserrat ExtraBold (800)**, em letras normais (NÃO precisa caixa alta), com ~70% do tamanho indicado abaixo;
+> textos pequenos, etiquetas e botões em **Montserrat Bold (700)** ou **Medium (500)**.
+
+
 Copie o bloco abaixo e cole na conversa do Claude do notebook.
 
 ```
