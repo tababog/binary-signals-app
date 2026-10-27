@@ -3,7 +3,7 @@
 Copie o bloco abaixo e cole numa conversa do Claude do notebook.
 
 ```
-NOVA SÉRIE DE REELS PARA A SEMANA QUE VEM – "LANCE INICIAL × VALOR DE MERCADO"
+NOVA SÉRIE DE REELS PARA A SEMANA DE VENDAS (02/11 a 08/11) – "LANCE INICIAL × VALOR DE MERCADO"
 
 Objetivo: aparecer mais (eu, Alessandro, na frente da câmera) e chamar atenção mostrando casas que visitamos em campo, com o LANCE INICIAL do leilão e o VALOR DE MERCADO estimado de cada uma.
 
@@ -24,7 +24,10 @@ MATERIAL: as pastas de visitas de campo no Google Drive (dentro de "Isaques - Di
 IMPORTANTE: NÃO INVENTE NÚMEROS. Se o valor não aparece na fala ou num documento da pasta, deixe a célula como "FALTA" que eu preencho.
 
 === ETAPA 2 – PLANO (espere minha aprovação) ===
-Proponha 5 Reels, 1 casa por Reel, de 30 a 45 segundos, com as casas mais impressionantes (diferença grande entre lance e valor, casa bonita, ou casa com um "porém" interessante).
+Proponha 4 Reels, 1 casa por Reel, de 30 a 45 segundos, para a semana de vendas:
+- CASA 1 (terça) e CASA 2 (quarta): as 2 casas mais impressionantes (maior diferença entre lance e valor, ou casa bonita). Formato "Lance inicial × Valor de mercado".
+- CASA 3 (sexta): uma casa que a gente NÃO compraria. Gancho: "Lance de US$ X… e a gente NÃO compraria. Olha por quê 👀". Mostre os problemas (estrutura, telhado, vizinhança, reforma cara).
+- CASA 4 (sábado): gancho de pergunta: "Você compraria essa casa por US$ X? Responde aí: SIM ou NÃO 👇". Termina pedindo o comentário.
 
 Formato de cada Reel:
 1. GANCHO (0 a 2 s): eu na frente da casa + texto grande na tela:
@@ -46,7 +49,9 @@ Formato de cada Reel:
 - NUNCA escrever "lucro garantido", "lucro de US$ ..." ou a conta "valor de mercado menos lance = lucro". Sempre deixar claro que a reforma e os custos mudam tudo.
 
 === ETAPA 4 – ENTREGA ===
-Salve como casa-1-[cidade].mp4 até casa-5-[cidade].mp4 numa pasta nova "Reels Visitas de Campo" em G:\My Drive\Isaques - Discovery, e crie "legendas-visitas.txt" com a legenda de cada Reel (terminando com "Comente ASSESSORIA 👇", com a mesma frase de risco no final e as hashtags #taxdeed #leilaodeimoveis #imoveisnoseua #brasileirosnoseua #casasnoseua).
+Salve como casa-1-[cidade].mp4 até casa-4-[cidade].mp4 na pasta G:\My Drive\Isaques - Discovery\Reels Semana Vendas (crie a pasta se não existir), e crie "legendas-visitas.txt" com a legenda de cada Reel (terminando com "Comente ASSESSORIA 👇", com a mesma frase de risco no final e as hashtags #taxdeed #leilaodeimoveis #imoveisnoseua #brasileirosnoseua #casasnoseua).
+
+PRAZO: entregar até sábado, 31/10.
 
 Comece pela ETAPA 1.
 ```
