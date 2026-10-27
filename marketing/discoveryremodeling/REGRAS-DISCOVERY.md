@@ -51,3 +51,8 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - Gosta de ver o resultado (imagem ou arquivo) antes de aprovar.
 - Casa 953 (Elmira, NY): telhado vai ser **preto**; carrossel de cores aprovado (cinza escuro, off-white, verde-exército, azul-escuro).
 - Ferramentas: Nano Banana (Gemini) só funciona em sessão nova, com a variável GEMINI_API_KEY; HeyGen é para vídeos educativos com avatar (marcar "Informação de IA").
+
+## 7. Organização e pesquisa de concorrentes
+- Organograma e ciclo semanal: `ORGANOGRAMA.md`.
+- Toda sexta, às 8h54, o agente de pesquisa analisa os concorrentes e salva o relatório em `inteligencia-concorrentes/`. A pauta da semana seguinte sempre parte do relatório mais recente.
+- Concorrentes acompanhados: @lucipuerari, @roavanzo, @bm_investiments, @minas__home, @ocacadordetitulos (Marcos Jacober), @wkleiloes.
