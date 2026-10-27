@@ -210,5 +210,24 @@ pages.append(page('post-calendario-leiloes', W, H, CR, foto('elkland-fundos.jpg'
     f'<div class="a w b" style="left:64px;top:1214px;color:{G};font-size:30px">Mande pra quem quer investir nos EUA 🇧🇷🇺🇸</div>'
     f'<div class="a w" style="left:64px;top:1262px;width:952px;color:{CINZA};font-size:19px;line-height:1.35">Datas conferidas nos sites oficiais em 27/10/2026 e sujeitas a mudança. Confira no site do condado antes de se inscrever. Não é recomendação de investimento.</div>'))
 
+# ---------------- DIÁRIO DA CASA (stories da semana 27/10 a 02/11, casa de Elmira) ----------------
+W, H = 1080, 1920
+diario = [("Compramos uma casa em leilão. Hoje é o 1º dia lá dentro", "Ao meio-dia: o que aconteceu na porta 🔑", 'casa-frente.jpg', '50% 40%'),
+          ("Primeira visita de dia… e debaixo de chuva", "Ao meio-dia: o tour pela casa 🏠", 'casa-frente.jpg', '80% 50%'),
+          ("Lá dentro: o que deixaram pra trás?", "Ao meio-dia: o que encontramos 👀", 'quarto-antes.jpg', '50% 50%'),
+          ("Dia de limpeza: tudo que ficou tem que sair", "Às 19h: o antes e depois da limpeza", 'cozinha-antes.jpg', '50% 40%'),
+          ("E a garagem? Lotada até o teto", "Às 10h: pra onde vai todo esse entulho 🚛", 'casa-frente.jpg', '95% 60%'),
+          ("Mais uma carga pro descarte", "Às 19h: quem somos e como ajudamos você", 'andar-de-cima-antes.jpg', '50% 50%'),
+          ("Casa vazia e limpa. Agora começa a reforma", "Siga pra acompanhar a obra ✨", 'casa-frente.jpg', '30% 45%')]
+dl = []
+for i, (ctx, cham, f, pos) in enumerate(diario, 1):
+    barra = ''.join(f'<div class="a" style="left:{72+k*112}px;top:350px;width:100px;height:10px;border-radius:5px;background:{AU if k < i else "rgba(255,255,255,.35)"}"></div>' for k in range(7))
+    dl.append(page(f'diario-dia{i}', W, H, G, foto(f, 0, 0, W, H, pos=pos) +
+        veu('linear-gradient(180deg,rgba(10,30,14,.55) 0%,rgba(10,30,14,.05) 30%,rgba(10,30,14,.93) 62%)') + logo(y=230, W=W) +
+        f'<div class="a tag" style="left:72px;top:255px;color:{G};background:{AU};padding:12px 22px">DIÁRIO DA CASA · DIA {i}/7</div>' + barra +
+        f'<div class="a" style="left:72px;bottom:560px;width:936px"><div class="d" style="color:#fff;font-size:150px">{ctx}</div></div>'
+        + cta(cham, 1440, bg=AU, fg=G, fs=40)))
+open(os.path.join(HTML, 'diario.txt'), 'w').write('\n'.join(dl))
+
 open(os.path.join(HTML, 'lista.txt'), 'w').write('\n'.join(pages))
 print(len(pages), 'artes')

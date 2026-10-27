@@ -27,20 +27,22 @@ O Claude publica tudo pela conexão Windsor (conta 17841475103023266), sem pedir
 | story-dia6.mp4 | 1WPnZscXbNZmIXXDv2gNcPPVYzh4FWows |
 | story-dia7.mp4 | 13H4hm_s7Prb2zzsjvLO06svjsxkDsg0G |
 
-**Regra do v2 (Reels e stories em vídeo):** na hora de cada Reel ou story-diaN, procure no Drive o mesmo nome com "-v2" (por exemplo, reel-1-nao-veio-a-chave-v2.mp4 ou story-dia1-v2.mp4). Se existir, publique o v2 (link de download com o ID dele). Se não, publique o original.
+**STORIES DO DIÁRIO (trocados em 27/10 a pedido do Alessandro):** os story-diaN do Drive NÃO são mais usados. Publique os vídeos animados novos: `https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/diario-diaN.mp4` (N = 1 a 7), com create_story video_url.
+
+**Regra do v2 (só para os Reels):** na hora de cada Reel ou story-diaN, procure no Drive o mesmo nome com "-v2" (por exemplo, reel-1-nao-veio-a-chave-v2.mp4 ou story-dia1-v2.mp4). Se existir, publique o v2 (link de download com o ID dele). Se não, publique o original.
 
 ## Programação
 
 | Dia | 8h | 10h / 12h / 19h | 14h |
 |---|---|---|---|
 | Seg 26/10 | — | 12h: carrossel de cores (rotina própria) | story-seg-enquete.jpg |
-| Ter 27/10 | story-dia1 | 12h: Reel 1 | story-ter-quiz.jpg |
-| Qua 28/10 | story-dia2 | 12h: Reel 2 | story-qua-cores.jpg |
-| Qui 29/10 | story-dia3 | 12h: Reel 3 | story-qui-caixinha.jpg |
-| Sex 30/10 | story-dia4 | 19h: Reel 5 | story-sex-slider.jpg |
-| Sáb 31/10 | story-dia5 | 10h: Reel 4 | — |
-| Dom 01/11 | story-dia6 | 19h: Reel 6 (oferta) | story-dom-assessoria.jpg |
-| Seg 02/11 | story-dia7 | — | — |
+| Ter 27/10 | diario-dia1.mp4 (GitHub) | 12h: Reel 1 | story-ter-quiz.jpg |
+| Qua 28/10 | diario-dia2.mp4 (GitHub) | 12h: Reel 2 | story-qua-cores.jpg |
+| Qui 29/10 | diario-dia3.mp4 (GitHub) | 12h: Reel 3 | story-qui-caixinha.jpg |
+| Sex 30/10 | diario-dia4.mp4 (GitHub) | 19h: Reel 5 | story-sex-slider.jpg |
+| Sáb 31/10 | diario-dia5.mp4 (GitHub) | 10h: Reel 4 | — |
+| Dom 01/11 | diario-dia6.mp4 (GitHub) | 19h: Reel 6 (oferta) | story-dom-assessoria.jpg |
+| Seg 02/11 | diario-dia7.mp4 (GitHub) | — | — |
 
 ## Legendas dos Reels
 
