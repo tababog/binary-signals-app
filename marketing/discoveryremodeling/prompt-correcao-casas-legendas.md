@@ -68,3 +68,8 @@ VALORES DA casa-2 (C22, casa de 2 famílias na avenida principal): lance inicial
 ```
 VALORES DA casa-4 (C08, "a importância da visita presencial"): lance inicial US$ 3.500 · valor de mercado ~US$ 125.000. Use os cartões de número no estilo novo LOGO DEPOIS da parte do Google ("no Google parecia bonita…"), antes de mostrar o interior. Logo em seguida, um cartão "MAS OLHA O QUE TINHA LÁ DENTRO 😳". Aviso de risco junto dos números.
 ```
+
+## Valores da casa-3 (C18), passados pelo Alessandro em 27/10
+```
+VALORES DA casa-3 (C18, "essa a gente NÃO compraria"): lance inicial US$ 5.000 · valor de mercado ~US$ 110.000. Mostre os cartões de número logo no começo e, em seguida, o cartão "E MESMO ASSIM A GENTE NÃO COMPRARIA. OLHA POR QUÊ 👇" antes da minha fala. Aviso de risco junto dos números.
+```
