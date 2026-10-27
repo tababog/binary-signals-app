@@ -20,7 +20,7 @@ Status: **APROVADA pelo Alessandro em 27/10** (com a troca: o Reel "Você não p
 ## Stories (todos com a logo e as cores da marca)
 | Dia | 8h | 14h |
 |---|---|---|
-| Seg | "3 últimos leilões do ano" (Essex 12/11, Warren 17/11, Bucks 08/12, com datas conferidas) | Pergunta: "Você já pensou em comprar casa nos EUA?" (responda o story) |
+| Seg | "Calendário de leilões Nov/Dez" para salvar e compartilhar (ver `calendario-leiloes/`; Warren já aconteceu em 17/10, então saiu da lista) | Pergunta: "Você já pensou em comprar casa nos EUA?" (responda o story) |
 | Ter | Bastidor da visita de campo (Ale) | "Quiz: quanto vale essa casa?" |
 | Qua | **Depoimentos: destaque AVALIAÇÃO** (arte pronta) | Objeção: "Preciso morar nos EUA?" (resposta curta) |
 | Qui | "Só 2 vagas na assessoria este mês" | Objeção: "É seguro?" (processo de análise, sem promessa) |

@@ -55,3 +55,14 @@ PRAZO: entregar até sábado, 31/10.
 
 Comece pela ETAPA 1.
 ```
+
+## Resposta da ETAPA 2 (Alessandro, 27/10): só CASAS, nada de terreno
+```
+ETAPA 2 – DECISÃO: só CASAS, nada de terreno por agora. Os valores entram como TÍTULO na tela (não precisam estar na fala); onde eu não passar o valor, não mostre número.
+- casa-1 (ter): C13 "A melhor casa do leilão" (P035 + Bruno em P036). Título: "Lance inicial: US$ [valor que eu passar]".
+- casa-2 (qua): C22 casa de 2 famílias na avenida principal (P092, tour por dentro). Título com lance e valor que eu passar.
+- casa-3 (sex): C18 "Essa a gente NÃO compraria, e por quê 👀" (P087).
+- casa-4 (sáb): C08 "Olha a importância da visita presencial" (P022): Google × realidade. Final: "A gente visita por você. Comente ASSESSORIA 👇".
+- BÔNUS casa-5: C12 "VENDEMOS! 35 dias no mercado" (P031 + P032), autorizado. Sem números de venda.
+Todo o resto segue o prompt original (falas inteiras, rodapé de risco, sem endereço, entrega até 31/10).
+```
