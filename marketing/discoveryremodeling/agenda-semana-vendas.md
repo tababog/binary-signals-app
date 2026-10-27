@@ -37,7 +37,7 @@ Status: **APROVADA pelo Alessandro em 27/10** (com a troca: o Reel "Você não p
 2. **Ale:** os valores reais (bid inicial e valor de mercado) das 4 casas.
 3. **Ale:** gravar 1 minuto para o Reel de SEGUNDA 02/11 (roteiro abaixo), até quinta 29/10.
 4. **Notebook:** carrossel e Reel da casa de Elkland (prompt `prompt-casa-elkland.md`).
-6. **Ale:** confirmar os valores reais da casa de Elkland (lance do leilão, custo da reforma, valor de venda) e se pode mostrar esses números.
+6. ~~Ale: valores de Elkland~~ CONFIRMADO em 27/10: compra US$ 11.000, reforma US$ 60.000, venda US$ 123.000, pode mostrar. Correção do carrossel em `prompt-correcao-carrossel-elkland.md`.
 - O Tour da casa de Elmira fica para a semana seguinte.
 5. **Claude:** carrossel "Como funciona", 3 frases, artes dos stories, post dos leilões (com as datas conferidas) e a agenda automática.
 

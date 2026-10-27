@@ -9,7 +9,7 @@
   - imagens: `BASE + frase-01.jpg`, `frase-02.jpg`, `frase-03.jpg`, `post-calendario-leiloes.jpg`
 - **Vídeos do Claude do notebook**: pasta do Drive **"Reels Semana Vendas"** (dentro de "Isaques - Discovery"). Encontre o arquivo com `mcp__Google_Drive__search_files` (title contains '<nome>') e publique com `https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t`. Se a pasta não estiver como "qualquer pessoa com o link", avise o Alessandro para liberar.
   - `reel-segunda-assessoria.mp4`, `casa-1-*.mp4` … `casa-5-*.mp4`, `elkland-carrossel-01.jpg` … `-10.jpg`, `elkland-reel.mp4`
-  - Se existir a versão "-v2", use a v2.
+  - Se existir a versão "-v2", use a v2 (no carrossel de Elkland, use os elkland-carrossel-NN-v2.jpg; se o slide 8 foi retirado, são 9 imagens).
 - **Se o arquivo do notebook ainda não existir na hora:** não publique nada no lugar. Avise o Alessandro na hora ("o vídeo X não chegou no Drive") e tente de novo no próximo horário do mesmo dia. Se não chegar até as 19h, pule o item e anote no resumo.
 
 ## Feed
