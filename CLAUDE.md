@@ -1,6 +1,7 @@
 # Tababog Obras — regras do projeto
 
-App de gestão da Tababog, empresa de construção/reforma nos **Estados Unidos**.
+App de gestão da **Tababog Construction LLC**, empresa de construção/reforma em **Bridgeport, Connecticut (EUA)**.
+Perfil da empresa, serviços e regras de CT: `docs/empresa.md`.
 Sócios e administradores: **Alessandro** e **Emanuel**. Funcionários usam o app só para o ponto.
 Conversa com o usuário em português; telas internas em português.
 
@@ -19,7 +20,8 @@ Conversa com o usuário em português; telas internas em português.
    referência: tipo de serviço, cidade/região, quantidades (sq ft, unidades, ft lineares), custo de material,
    horas, preço cobrado e lucro real. Ao precificar, usar primeiro esse histórico, depois o mercado.
 5. **Preço de mercado** vem de fontes de referência dos EUA: cost guides do Thumbtack, Angi/HomeAdvisor,
-   HomeGuide, Homewyse e preços de material de Home Depot/Lowe's, sempre para a cidade/CEP da obra.
+   HomeGuide, Homewyse e preços de material de Home Depot/Lowe's, sempre para a cidade/CEP da obra
+   (padrão: região de Bridgeport / Fairfield County, CT).
    Sempre citar as fontes e a data da consulta.
 6. **Ponto com GPS.** Toda entrada e saída grava a localização. Sem GPS o ponto é bloqueado (o administrador pode
    lançar manualmente). A tela do funcionário mostra só um aviso curto de que a localização é registrada;
