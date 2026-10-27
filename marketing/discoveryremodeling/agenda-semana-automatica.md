@@ -28,6 +28,7 @@ O Claude publica tudo pela conexão Windsor (conta 17841475103023266), sem pedir
 | story-dia7.mp4 | 13H4hm_s7Prb2zzsjvLO06svjsxkDsg0G |
 
 **STORIES DO DIÁRIO (trocados em 27/10 a pedido do Alessandro):** os story-diaN do Drive NÃO são mais usados. Publique os vídeos animados novos: `https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/diario-diaN.mp4` (N = 1 a 7), com create_story video_url.
+**Prioridade:** se existir no Drive (pasta Reels 953 Erie St) o arquivo `diario-diaN-video.mp4` (versão em vídeo feita pelo notebook no padrão novo), publique ESSE (link de download do Drive com o ID dele). Se não existir, publique o diario-diaN.mp4 do GitHub. Nunca publique os antigos story-diaN.
 
 **Regra do v2 (só para os Reels):** na hora de cada Reel ou story-diaN, procure no Drive o mesmo nome com "-v2" (por exemplo, reel-1-nao-veio-a-chave-v2.mp4 ou story-dia1-v2.mp4). Se existir, publique o v2 (link de download com o ID dele). Se não, publique o original.
 
