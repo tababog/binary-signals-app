@@ -46,6 +46,7 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 
 ## 6. Preferências do Alessandro
 - Quer o mínimo de trabalho possível: eu faço tudo e só peço o que for indispensável.
+- Não quer inventar formatos: prefere MODELAR o que já dá resultado nos concorrentes (mesma estrutura, gancho e formato), com as informações e os vídeos dele. Nunca copiar vídeo, texto ou imagem dos outros literalmente.
 - Usa celular Samsung com o Instagram em inglês e o computador com Windows. Passo a passo sempre com os nomes dos botões em inglês.
 - Gosta de ver o resultado (imagem ou arquivo) antes de aprovar.
 - Casa 953 (Elmira, NY): telhado vai ser **preto**; carrossel de cores aprovado (cinza escuro, off-white, verde-exército, azul-escuro).
