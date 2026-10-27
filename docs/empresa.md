@@ -8,14 +8,15 @@ Levantado em 27/10/2026 a partir de perfis públicos. Itens marcados **[confirma
 | Item | Informação | Fonte |
 | --- | --- | --- |
 | Razão social | Tababog Construction LLC | Thumbtack, Angi, HomeAdvisor, Porch, BuildZoom |
-| Sede / região | Bridgeport, Connecticut (CT) — fuso America/New_York | Thumbtack, Angi |
+| Sede | Bridgeport, Connecticut (CT) — fuso America/New_York | Thumbtack, Angi |
+| Área de atuação | Todo o estado de Connecticut | Alessandro |
 | Sócios | Alessandro e Emanuel **[confirmar sobrenomes, cargos e bios]** | Conversa |
 | Tempo de mercado | 8 a 10 anos (os perfis divergem) **[confirmar ano de fundação]** | Thumbtack |
 | Licença | Connecticut Home Improvement Contractor (HIC) **[confirmar número e validade]** | BuildZoom |
 | Avaliação | 4.7 estrelas, cerca de 60 avaliações (Thumbtack 62, Porch 58) | Thumbtack, Porch |
 | Orçamento | Gratuito | Angi |
 | Site | tababog.com — **domínio não está no ar** em 27/10/2026 **[confirmar]** | — |
-| Instagram | Existe link no Thumbtack, mas o @ não aparece na busca **[informar o @]** | Thumbtack |
+| Instagram | [@tababog_construction](https://www.instagram.com/tababog_construction/) | Alessandro |
 | Fotos | Cerca de 104 fotos de projetos no Thumbtack | Thumbtack |
 
 ## Serviços citados nos perfis
@@ -50,3 +51,4 @@ Levantado em 27/10/2026 a partir de perfis públicos. Itens marcados **[confirma
 - HomeAdvisor: https://www.homeadvisor.com/rated.TababogConstructionLLC.61448582.html
 - Porch: https://pro.porch.com/bridgeport-ct/drywall-contractors/tababog-construction-llc/pp
 - BuildZoom: https://www.buildzoom.com/contractor/tababog-construction-llc
+- Instagram: https://www.instagram.com/tababog_construction/
