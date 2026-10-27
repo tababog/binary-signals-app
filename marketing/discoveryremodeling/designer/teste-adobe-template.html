@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="hz:slide-selector" content=".slide">
+<title>Discovery teste Adobe</title>
+<link rel="stylesheet" href="https://use.typekit.net/odb6zoh.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@900&family=Work+Sans:wght@400;700&display=swap">
+<style>
+  :root{--g:#17361A;--g2:#29721D;--au:#F2C14E;--cr:#F5F1E6;--tx:#14231A;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#ddd;}
+  .slide{position:relative;overflow:hidden;margin:0 auto 40px;}
+  .disp{font-family:"alumni-sans","Alumni Sans",sans-serif;font-weight:900;text-transform:uppercase;line-height:.86;}
+  .ws{font-family:"work-sans","Work Sans",sans-serif;}
+  .abs{position:absolute;}
+</style>
+</head>
+<body>
+
+<!-- 1. Capa do carrossel "Como funciona" (1080x1350) -->
+<div class="slide" data-canvas-width="1080" data-canvas-height="1350" style="width:1080px;height:1350px;background:var(--g);">
+  <img class="abs" src="{{CASA}}" alt="Casa de leilão em Elmira, NY" style="left:0;top:0;width:1080px;height:860px;object-fit:cover;object-position:50% 40%;">
+  <img class="abs" src="{{LOGOB}}" alt="Discovery" style="right:48px;top:44px;width:150px;">
+  <div class="abs ws" style="left:64px;top:800px;background:var(--au);color:var(--g);font-weight:700;font-size:30px;letter-spacing:4px;padding:16px 28px;">ASSESSORIA DISCOVERY</div>
+  <div class="abs disp" style="left:64px;top:900px;width:960px;color:#fff;font-size:150px;">Como funciona<br>em <span style="color:var(--au);">5 passos</span></div>
+  <div class="abs ws" style="left:64px;top:1190px;width:700px;color:#cfe3cf;font-size:32px;line-height:1.3;">Do leilão à chave na mão, sem você precisar morar nos EUA.</div>
+  <div class="abs ws" style="right:64px;top:1230px;color:var(--au);font-weight:700;font-size:30px;">Arraste →</div>
+</div>
+
+<!-- 2. Story "Só 2 vagas" (1080x1920) -->
+<div class="slide" data-canvas-width="1080" data-canvas-height="1920" style="width:1080px;height:1920px;background:var(--cr);">
+  <img class="abs" src="{{LOGOC}}" alt="Discovery" style="left:72px;top:230px;width:170px;">
+  <div class="abs ws" style="left:72px;top:440px;color:var(--g2);font-weight:700;font-size:34px;letter-spacing:5px;">ASSESSORIA · NOVEMBRO</div>
+  <div class="abs disp" style="left:60px;top:470px;color:var(--g);font-size:560px;line-height:.9;">2</div>
+  <div class="abs disp" style="left:400px;top:560px;width:620px;color:var(--g);font-size:170px;">vagas<br><span style="color:var(--g2);">abertas</span></div>
+  <img class="abs" src="{{HALL}}" alt="Corredor reformado" style="left:72px;top:1010px;width:936px;height:440px;object-fit:cover;border-radius:28px;">
+  <div class="abs ws" style="left:72px;top:1490px;width:936px;color:var(--tx);font-size:40px;line-height:1.3;">A gente escolhe o leilão, visita a casa e acompanha a reforma por você.</div>
+  <div class="abs ws" style="left:72px;top:1640px;width:936px;background:var(--g);color:var(--au);font-weight:700;font-size:40px;text-align:center;padding:30px 0;border-radius:999px;">Conversa grátis de 20 min →</div>
+</div>
+
+<!-- 3. Post para salvar: calendário de leilões (1080x1350) -->
+<div class="slide" data-canvas-width="1080" data-canvas-height="1350" style="width:1080px;height:1350px;background:var(--cr);">
+  <div class="abs" style="left:0;top:0;width:1080px;height:330px;background:var(--g);"></div>
+  <img class="abs" src="{{LOGOB}}" alt="Discovery" style="right:56px;top:48px;width:130px;">
+  <div class="abs ws" style="left:64px;top:62px;color:var(--au);font-weight:700;font-size:30px;letter-spacing:5px;">SALVE ESTE POST 📌</div>
+  <div class="abs disp" style="left:64px;top:120px;width:900px;color:#fff;font-size:120px;">Leilões de casas<br>nos EUA · Nov/Dez</div>
+  {{ROWS}}
+  <div class="abs ws" style="left:64px;top:1220px;width:952px;color:var(--g);font-weight:700;font-size:30px;">Mande pra quem quer investir nos EUA 🇧🇷🇺🇸</div>
+  <div class="abs ws" style="left:64px;top:1272px;width:952px;color:#5d6b60;font-size:20px;line-height:1.35;">Datas conferidas nos sites oficiais em 27/10/2026 e sujeitas a mudança. Confira no site do condado antes de se inscrever. Não é recomendação de investimento.</div>
+</div>
+
+</body>
+</html>
