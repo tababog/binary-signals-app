@@ -9,7 +9,9 @@ Conversa com o usuário em português; telas internas em português.
 1. **Moeda: dólar (USD).** Todos os valores, preços de referência e orçamentos em USD.
    Valores guardados em centavos (`Int`), formatados com `dinheiro()` em `src/lib/format.ts`.
 2. **Meta de lucro: preço de venda = no mínimo 2x o custo.** Sempre buscar o dobro do que foi investido.
-   Custo = material + mão de obra (equipe própria e terceiros) + serviços + equipamentos + outros.
+   Custo = material + delivery/frete + mão de obra (equipe própria e terceiros) + instalação + serviços/subempreiteiros
+   + equipamentos/aluguel + licenças (permits)/inspeções + descarte/caçamba + outros.
+   Categorias definidas em `CATEGORIAS_DESPESA` (`src/lib/constantes.ts`); nenhum custo pode ficar de fora do preço.
    Toda tela, relatório ou orçamento deve mostrar o multiplicador (preço ÷ custo) e alertar quando ficar abaixo de 2x.
 3. **Todo orçamento tem duas opções** para o cliente (por exemplo, Essencial e Premium), cada uma com itens,
    materiais, mão de obra, custo, preço e multiplicador.

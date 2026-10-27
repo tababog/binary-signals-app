@@ -1,8 +1,12 @@
 export const CATEGORIAS_DESPESA = {
   MATERIAL: "Material",
+  ENTREGA: "Delivery / frete",
   MAO_DE_OBRA: "Mão de obra",
-  SERVICO: "Serviços",
+  INSTALACAO: "Instalação",
+  SERVICO: "Serviços / subempreiteiros",
   EQUIPAMENTO: "Equipamentos / aluguel",
+  LICENCA: "Licenças (permits) / inspeções",
+  DESCARTE: "Descarte / caçamba (dumpster)",
   OUTROS: "Outros",
 } as const;
 

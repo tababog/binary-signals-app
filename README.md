@@ -12,7 +12,8 @@ Funciona no navegador do computador e do celular (pode ser "instalado" na tela i
 - **Obras**: cada obra tem cliente, valor do contrato, datas, andamento (%) e quatro abas:
   - *Resumo* — contrato, recebido, a receber, custo até agora, saldo em caixa da obra, lucro previsto e lucro real.
   - *Fluxo de caixa* — entradas (pagamentos do cliente) e saídas (despesas) **só desta obra**, com link para a foto do recibo.
-  - *Orçamento* — itens previstos por categoria (material, mão de obra, serviços, equipamentos, outros) e o
+  - *Orçamento* — itens previstos por categoria (material, delivery, mão de obra, instalação, serviços, equipamentos,
+    licenças/permits, descarte/caçamba, outros) e o
     comparativo **orçado x realizado**, mostrando se o orçamento foi bem feito.
   - *Equipe e horas* — horas e custo de cada funcionário nesta obra.
 - **Lançar despesa**: tira a foto do recibo/nota pelo celular, informa valor, fornecedor e categoria, e o gasto
@@ -35,7 +36,8 @@ Funciona no navegador do computador e do celular (pode ser "instalado" na tela i
 ### Como o custo da obra é calculado
 
 ```
-Custo da obra  = despesas lançadas (material, serviços, equipamentos, outros, mão de obra terceirizada)
+Custo da obra  = despesas lançadas (material, delivery, mão de obra terceirizada, instalação, serviços,
+                 equipamentos, licenças/permits, descarte/caçamba, outros)
                + horas da equipe registradas no ponto × valor da hora de cada funcionário
 Saldo em caixa = pagamentos recebidos do cliente − custo da obra
 Lucro final    = valor do contrato − custo da obra
