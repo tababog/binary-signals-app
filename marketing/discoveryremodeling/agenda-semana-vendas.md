@@ -1,12 +1,12 @@
 # Agenda da semana de vendas: 02/11 a 08/11 (horário de Brasília)
 
 Oferta: conversa grátis de 20 minutos · sem preço · **só 2 vagas** · CTA "Comente ASSESSORIA" ou WhatsApp.
-Status: **PROPOSTA, aguardando aprovação do Alessandro.**
+Status: **APROVADA pelo Alessandro em 27/10** (com a troca: o Reel "Você não precisa morar nos EUA" abre a semana na segunda e o carrossel "Como funciona" fecha no domingo).
 
 ## Feed
 | Dia | Hora | Post | Formato (modelo) | Quem produz | Status |
 |---|---|---|---|---|---|
-| Seg 02/11 | 12h | **"Como funciona a nossa assessoria"** em 5 passos + "Só 2 vagas" | Carrossel (oferta) | Claude | a fazer |
+| Seg 02/11 | 12h | **"Você NÃO precisa morar nos EUA para comprar casa em leilão"**, com o Ale falando para a câmera: abre a semana com a oferta + "Só 2 vagas" | Reel (Minas, quebra de mito) | **Ale grava 1 minuto** (roteiro pronto) até qui 29/10 + notebook edita até sáb 31/10 | aguardando gravação |
 | Ter 03/11 | 12h | **Casa 1: "Bid inicial US$ X · valor de mercado US$ Y"**, com o Ale na frente da casa | Reel (WK, campeão) | Claude do notebook (visitas de campo) | aguardando vídeo e valores |
 | Ter 03/11 | 19h | **Frase de mentalidade** sobre foto real | Imagem (Caçador) | Claude | a fazer |
 | Qua 04/11 | 12h | **Casa 2:** lance × valor | Reel (WK) | Claude do notebook | aguardando |
@@ -15,7 +15,7 @@ Status: **PROPOSTA, aguardando aprovação do Alessandro.**
 | Sex 06/11 | 19h | **Casa 3: "Essa a gente NÃO compraria, e por quê"** | Reel (autoridade) | Claude do notebook | aguardando |
 | Sáb 07/11 | 10h | **Casa 4: "Você compraria essa casa por US$ X? Sim ou não?"** | Reel (Luci, pergunta) | Claude do notebook | aguardando |
 | Sáb 07/11 | 19h | **Reel "Do leilão à venda": casa de Elkland** | Reel (roavanzo/BM, antes e depois) | Claude do notebook | aguardando |
-| Dom 08/11 | 19h | **"Você NÃO precisa morar nos EUA para comprar casa em leilão"**, com o Ale falando para a câmera: oferta final + "Só 2 vagas" | Reel (Minas, quebra de mito) | **Ale grava 1 minuto** (roteiro pronto) + notebook edita | aguardando gravação |
+| Dom 08/11 | 19h | **"Como funciona a nossa assessoria"** em 5 passos + "Só 2 vagas": fecha a semana com a oferta | Carrossel (oferta) | Claude | a fazer |
 
 ## Stories (todos com a logo e as cores da marca)
 | Dia | 8h | 14h |
@@ -35,13 +35,13 @@ Status: **PROPOSTA, aguardando aprovação do Alessandro.**
 ## O que falta (dono)
 1. **Notebook:** os 4 Reels das visitas de campo (prompt `prompt-reels-visitas-de-campo.md`), até sábado 31/10.
 2. **Ale:** os valores reais (bid inicial e valor de mercado) das 4 casas.
-3. **Ale:** gravar 1 minuto para o Reel de domingo (roteiro abaixo), até quinta 05/11.
+3. **Ale:** gravar 1 minuto para o Reel de SEGUNDA 02/11 (roteiro abaixo), até quinta 29/10.
 4. **Notebook:** carrossel e Reel da casa de Elkland (prompt `prompt-casa-elkland.md`).
 6. **Ale:** confirmar os valores reais da casa de Elkland (lance do leilão, custo da reforma, valor de venda) e se pode mostrar esses números.
 - O Tour da casa de Elmira fica para a semana seguinte.
 5. **Claude:** carrossel "Como funciona", 3 frases, artes dos stories, post dos leilões (com as datas conferidas) e a agenda automática.
 
-## Roteiro do Reel de domingo (Ale grava no celular, olhando para a câmera, ~45 s)
+## Roteiro do Reel de segunda (abertura da semana) (Ale grava no celular, olhando para a câmera, ~45 s)
 > Você NÃO precisa morar nos Estados Unidos pra comprar uma casa em leilão aqui.
 > Eu sou o Alessandro, da Discovery. A gente é uma família brasileira que visita, analisa e compra casas em leilão aqui nos EUA.
 > Muita gente do Brasil quer investir aqui, mas não sabe por onde começar, nem tem como visitar a casa. É exatamente isso que a gente faz por você: escolhe o leilão, visita o imóvel, faz a análise e acompanha até a reforma.

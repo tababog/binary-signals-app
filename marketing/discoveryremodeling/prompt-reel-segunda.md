@@ -1,9 +1,9 @@
-# Prompt para o Claude do notebook: Reel de domingo (oferta com o Alessandro)
+# Prompt para o Claude do notebook: Reel de abertura da semana de vendas (segunda 02/11)
 
 Use depois que o Alessandro gravar o vídeo de 1 minuto lendo o roteiro (está em `agenda-semana-vendas.md`).
 
 ```
-REEL DE DOMINGO 08/11 – "VOCÊ NÃO PRECISA MORAR NOS EUA PRA COMPRAR CASA EM LEILÃO"
+REEL DE SEGUNDA 02/11 (abre a semana de vendas) – "VOCÊ NÃO PRECISA MORAR NOS EUA PRA COMPRAR CASA EM LEILÃO"
 
 MATERIAL: o vídeo que eu (Alessandro) gravei falando para a câmera (vou te dizer o nome do arquivo) + imagens das nossas casas (Elmira, NY e Elkland, PA) e das visitas de campo para cobrir partes da fala.
 
@@ -17,5 +17,5 @@ EDIÇÃO:
 7. Vertical 1080x1920, 30 fps, MP4, até 60 s + 4 s de logo. Sem endereço de casa, sem placa, sem rosto de terceiros.
 
 ANTES DE RENDERIZAR: me mostre a transcrição com os tempos.
-ENTREGA: salve como reel-domingo-assessoria.mp4 em G:\My Drive\Isaques - Discovery\Reels Semana Vendas. Prazo: sábado 07/11.
+ENTREGA: salve como reel-segunda-assessoria.mp4 em G:\My Drive\Isaques - Discovery\Reels Semana Vendas. Prazo: sábado 31/10.
 ```
