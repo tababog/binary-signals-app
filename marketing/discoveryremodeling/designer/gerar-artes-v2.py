@@ -188,5 +188,27 @@ reel.append(page('reel-cf-6', W, H, G, foto('deck-estrutura.jpg', 0, 0, W, H) +
     + cta('Comente ASSESSORIA', 1400, bg=AU, fg=G, fs=52, sub='ou chame no WhatsApp: link na bio', subcor='#e2ecdf')))
 open(os.path.join(HTML, 'reel.txt'), 'w').write('\n'.join(reel))
 
+# ---------------- POST PARA SALVAR: calendário de leilões (1080x1350) ----------------
+W, H = 1080, 1350
+leiloes = [("05","NOV","Livingston County","Nova York · presencial"), ("05","NOV","Poughkeepsie","Nova York · online"),
+           ("12","NOV","Essex County","Nova York · presencial + online"), ("17","NOV","Orleans County","Nova York · online (13 a 17/11)"),
+           ("18","NOV","Rochester","Nova York · presencial"), ("24","NOV","Lewis County","Nova York · online"),
+           ("08","DEZ","Bucks County","Pensilvânia · online"), ("10","DEZ","Delaware County","Pensilvânia · upset sale")]
+linhas = ''
+for i, (d, m, c, sub) in enumerate(leiloes):
+    y = 380 + i * 102
+    linhas += (f'<div class="a" style="left:64px;top:{y}px;width:952px;height:88px;background:#fff;border-radius:18px"></div>'
+               f'<div class="a" style="left:64px;top:{y}px;width:150px;height:88px;background:{AU};border-radius:18px 0 0 18px"></div>'
+               f'<div class="a d" style="left:64px;top:{y+8}px;width:150px;text-align:center;color:{G};font-size:58px">{d}</div>'
+               f'<div class="a w b" style="left:64px;top:{y+58}px;width:150px;text-align:center;color:{G};font-size:19px;letter-spacing:3px">{m}</div>'
+               f'<div class="a w b" style="left:240px;top:{y+12}px;color:{G};font-size:33px">{c}</div>'
+               f'<div class="a w" style="left:240px;top:{y+52}px;color:{CINZA};font-size:23px">{sub}</div>')
+pages.append(page('post-calendario-leiloes', W, H, CR, foto('elkland-fundos.jpg', 0, 0, 1080, 340, pos='50% 60%') +
+    f'<div class="a" style="left:0;top:0;width:1080px;height:340px;background:rgba(23,54,26,.8)"></div>' + logo(y=44, w=120) +
+    f'<div class="a tag" style="left:64px;top:56px;color:{AU}">SALVE ESTE POST 📌</div>'
+    f'<div class="a d" style="left:64px;top:115px;width:880px;color:#fff;font-size:116px">Leilões de casas<br>nos EUA · Nov/Dez</div>' + linhas +
+    f'<div class="a w b" style="left:64px;top:1214px;color:{G};font-size:30px">Mande pra quem quer investir nos EUA 🇧🇷🇺🇸</div>'
+    f'<div class="a w" style="left:64px;top:1262px;width:952px;color:{CINZA};font-size:19px;line-height:1.35">Datas conferidas nos sites oficiais em 27/10/2026 e sujeitas a mudança. Confira no site do condado antes de se inscrever. Não é recomendação de investimento.</div>'))
+
 open(os.path.join(HTML, 'lista.txt'), 'w').write('\n'.join(pages))
 print(len(pages), 'artes')
