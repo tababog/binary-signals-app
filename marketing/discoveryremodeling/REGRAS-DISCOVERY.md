@@ -32,6 +32,7 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - A FALA MANDA NO CORTE: frases inteiras, com 0,3 s de folga antes e 0,5 s depois; corte só nas pausas entre frases; nunca cortar no meio da palavra.
 - Nunca acelerar trecho com fala. Partes sem fala podem ser rápidas ou aceleradas.
 - Corte J/L quando a imagem precisar trocar durante a fala.
+- **Legendas no padrão novo (27/10):** estilo karaokê, até 3 palavras por vez, Alumni Sans Black em caixa alta, palavra falada em dourado, sem contorno/caixa, degradê escuro suave embaixo. Detalhes em `prompt-correcao-casas-legendas.md`. Aviso de risco só junto dos números e no final.
 - Legendas sincronizadas em português no terço de baixo; gancho em texto no terço de cima; nada nos 15% de baixo nem nos 10% de cima.
 - Deixar claro o contexto: "ANTES DA LIMPEZA / DEPOIS DA LIMPEZA" (não confundir com reforma).
 - Stories: série "DIÁRIO DA CASA DE LEILÃO · DIA X/7", com texto de contexto e chamada para o post do dia, texto animado e a logo.
