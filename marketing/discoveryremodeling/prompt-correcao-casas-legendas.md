@@ -58,3 +58,8 @@ Normalize para -14 LUFS (pico -1 dB). Se quiser, coloque uma música instrumenta
 === ENTREGA ===
 Primeiro faça só o casa-1-nova-york-v2.mp4 e me mostre 3 prints (um com legenda, um com cartão de número e um do final). Depois que eu aprovar, aplique nos outros 3. Prazo: sexta 30/10.
 ```
+
+## Valores da casa-2 (C22), passados pelo Alessandro em 27/10
+```
+VALORES DA casa-2 (C22, casa de 2 famílias na avenida principal): lance inicial US$ 6.500 · valor de mercado ~US$ 125.000. Use nos cartões de número no estilo novo (mesmo padrão do casa-1), com o aviso de risco junto.
+```
