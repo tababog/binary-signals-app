@@ -92,17 +92,21 @@ pages.append(page('frase-03', W, H, CR,
 
 # ---------------- STORIES (1080x1920) ----------------
 W, H = 1080, 1920
-def st_verde(nome, tag, titulo, corpo, c, sub=None):
-    return page(nome, W, H, G, logo(y=230, W=W) +
+def veu(cor):
+    return f'<div class="a" style="left:0;top:0;width:1080px;height:1920px;background:{cor}"></div>'
+def st_verde(nome, tag, titulo, corpo, c, sub=None, bg='casa-frente.jpg', pos='50% 50%'):
+    return page(nome, W, H, G, foto(bg, 0, 0, W, H, pos=pos) +
+        veu('linear-gradient(180deg,rgba(23,54,26,.35) 0%,rgba(23,54,26,.78) 40%,rgba(23,54,26,.94) 100%)') + logo(y=230, W=W) +
         f'<div class="a tag" style="left:72px;top:250px;color:{AU}">{tag}</div>'
         f'<div class="a" style="left:72px;top:440px;width:936px"><div class="d" style="color:#fff;font-size:160px">{titulo}</div>'
         f'<div class="w" style="margin-top:60px;color:#cfe3cf;font-size:44px;line-height:1.35">{corpo}</div></div>'
         + cta(c, 1440, bg=AU, fg=G, sub=sub, subcor='#cfe3cf'))
-def st_ouro(nome, tag, titulo, corpo, c, sub=None):
-    return page(nome, W, H, AU, logo('colorida', y=220, W=W) +
-        f'<div class="a tag" style="left:72px;top:250px;color:{G}">{tag}</div>'
-        f'<div class="a" style="left:72px;top:440px;width:936px"><div class="d" style="color:{G};font-size:150px">{titulo}</div>'
-        f'<div class="w" style="margin-top:60px;color:{TX};font-size:44px;line-height:1.35">{corpo}</div></div>'
+def st_ouro(nome, tag, titulo, corpo, c, sub=None, bg='elkland-fundos.jpg', pos='50% 50%'):
+    return page(nome, W, H, AU, foto(bg, 0, 0, W, 1000, pos=pos) +
+        '<div class="a" style="left:0;top:560px;width:1080px;height:1360px;background:linear-gradient(180deg,rgba(242,193,78,0) 0%,#F2C14E 30%)"></div>' + logo(y=230, W=W) +
+        f'<div class="a tag" style="left:72px;top:250px;color:#fff;background:{G};padding:12px 22px">{tag}</div>'
+        f'<div class="a" style="left:72px;bottom:560px;width:936px"><div class="d" style="color:{G};font-size:140px">{titulo}</div>'
+        f'<div class="w" style="margin-top:40px;color:{TX};font-size:42px;line-height:1.35">{corpo}</div></div>'
         + cta(c, 1440, sub=sub))
 def st_cheia(nome, tag, titulo, corpo, c, f, pos, sub=None):
     return page(nome, W, H, G, foto(f, 0, 0, W, H, pos=pos) +
@@ -119,12 +123,12 @@ def st_numero(nome, tag, num, palavra, corpo, c, f, pos, sub=None):
         + foto(f, 72, 960, 936, 420, 28, pos) +
         f'<div class="a w" style="left:72px;top:1405px;width:936px;color:{TX};font-size:38px;line-height:1.3">{corpo}</div>'
         + cta(c, 1540, sub=sub))
-def st_lista(nome, tag, titulo, itens, c, sub=None):
+def st_lista(nome, tag, titulo, itens, c, sub=None, bg='deck-pronto.jpg'):
     cards = ''.join(f'<div class="a" style="left:72px;top:{760+i*190}px;width:936px;height:160px;background:#fff;border-radius:24px"></div>'
                     f'<div class="a d" style="left:72px;top:{772+i*190}px;width:150px;text-align:center;color:{AU};font-size:140px">{i+1}</div>'
                     f'<div class="a w b" style="left:230px;top:{815+i*190}px;width:740px;color:{G};font-size:42px">{t}</div>' for i, t in enumerate(itens))
-    return page(nome, W, H, CR,
-        f'<div class="a" style="left:0;top:0;width:1080px;height:700px;background:{G}"></div>' + logo(y=230, W=W) +
+    return page(nome, W, H, CR, foto(bg, 0, 0, 1080, 700, pos='50% 50%') +
+        f'<div class="a" style="left:0;top:0;width:1080px;height:700px;background:rgba(23,54,26,.72)"></div>' + logo(y=230, W=W) +
         f'<div class="a tag" style="left:72px;top:250px;color:{AU}">{tag}</div>'
         f'<div class="a d" style="left:72px;top:380px;width:936px;color:#fff;font-size:130px">{titulo}</div>' + cards + cta(c, 1440, sub=sub))
 
@@ -133,27 +137,27 @@ def st_lista(nome, tag, titulo, itens, c, sub=None):
 pages.append(st_cheia('story-seg-08', 'SEMANA ESPECIAL', 'Essa semana é sobre você comprar sua casa nos EUA',
     'Todo dia: casas reais, lances reais e como a gente te ajuda.', 'Ao meio-dia: vídeo novo', 'casa-frente.jpg', '50% 40%', 'com o Alessandro'))
 pages.append(st_verde('story-seg-14', 'PERGUNTA RÁPIDA', 'Você já pensou em comprar uma casa nos EUA?',
-    'Me conta: pra morar, alugar ou revender?', 'Responda este story', 'A gente responde todo mundo'))
+    'Me conta: pra morar, alugar ou revender?', 'Responda este story', 'A gente responde todo mundo', 'elkland-lateral.jpg'))
 pages.append(st_numero('story-ter-14', 'QUIZ', '?', 'Quanto vale essa casa?', 'Quanto você acha que vale uma casa reformada aqui? Responda com seu palpite em dólares.',
     'Responda com seu palpite', 'corredor-reformado.jpg', '50% 60%', 'No vídeo de amanhã tem o número real'))
 pages.append(st_ouro('story-qua-14', 'PERGUNTA FREQUENTE', '“Preciso morar nos EUA pra comprar?”',
-    'Não. Muitos dos nossos clientes moram no Brasil. A gente visita, analisa e acompanha tudo por você.', 'Responda ASSESSORIA', 'e eu te explico como funciona'))
+    'Não. Muitos dos nossos clientes moram no Brasil. A gente visita, analisa e acompanha tudo por você.', 'Responda ASSESSORIA', 'e eu te explico como funciona', 'elkland-ale-quintal.jpg', '50% 45%'))
 pages.append(st_numero('story-qui-08', 'ASSESSORIA · NOVEMBRO', '2', 'vagas<br><span style="color:#29721D">abertas</span>',
-    'Atendemos poucas famílias por vez pra visitar e analisar cada casa com cuidado.', 'Responda VAGA', 'corredor-reformado.jpg', '50% 60%', 'e eu te chamo pra uma conversa grátis'))
+    'Atendemos poucas famílias por vez pra visitar e analisar cada casa com cuidado.', 'Responda VAGA', 'deck-pronto.jpg', '50% 55%', 'e eu te chamo pra uma conversa grátis'))
 pages.append(st_verde('story-qui-14', 'PERGUNTA FREQUENTE', '“É seguro comprar casa em leilão?”',
-    'Todo investimento tem risco. O nosso trabalho é reduzir esse risco: visita presencial, pesquisa de dívidas e lance máximo calculado antes.', 'Responda ASSESSORIA'))
+    'Todo investimento tem risco. O nosso trabalho é reduzir esse risco: visita presencial, pesquisa de dívidas e lance máximo calculado antes.', 'Responda ASSESSORIA', None, 'casa-igreja-antes.jpg'))
 pages.append(st_lista('story-sex-14', 'COMO É A CONVERSA', 'A conversa grátis de 20 minutos',
     ['Você conta o seu objetivo', 'A gente explica o processo', 'Você decide, sem compromisso'], 'Responda CONVERSA', 'que eu te mando os horários'))
 pages.append(st_cheia('story-sab-08', 'UM DOS ÚLTIMOS LEILÕES DO ANO', 'Bucks County, PA · 8 de dezembro',
-    'Leilão online. A inscrição do licitante é presencial e fecha em 14/11.', 'Responda LEILÃO', 'cozinha-antes.jpg', '50% 40%', 'que eu te explico como participar'))
+    'Leilão online. A inscrição do licitante é presencial e fecha em 14/11.', 'Responda LEILÃO', 'elkland-fundos.jpg', '50% 50%', 'que eu te explico como participar'))
 pages.append(st_ouro('story-sab-14', 'CAIXINHA', 'Qual é a sua maior dúvida sobre leilão de casas nos EUA?',
-    'Mande aqui que eu respondo nos próximos stories.', 'Responda este story'))
+    'Mande aqui que eu respondo nos próximos stories.', 'Responda este story', None, 'casa-igreja-lateral.jpg', '50% 40%'))
 pages.append(st_numero('story-dom-08', 'ÚLTIMOS DIAS', '2', 'vagas<br><span style="color:#29721D">este mês</span>',
-    'Ainda tem vaga na assessoria. A conversa é grátis e sem compromisso.', 'Chame no WhatsApp', 'casa-frente.jpg', '50% 45%', 'link na bio · +1 (475) 349-9986'))
+    'Ainda tem vaga na assessoria. A conversa é grátis e sem compromisso.', 'Chame no WhatsApp', 'deck-estrutura.jpg', '50% 50%', 'link na bio · +1 (475) 349-9986'))
 pages.append(st_verde('story-dom-14', 'HOJE ÀS 19H', 'Como funciona a nossa assessoria, passo a passo',
-    'No feed, às 19h. Fica de olho.', 'Ative as notificações'))
-pages.append(page('story-destaque-avaliacao', W, H, CR,
-    f'<div class="a" style="left:0;top:0;width:1080px;height:760px;background:{G}"></div>' + logo(y=230, W=W) +
+    'No feed, às 19h. Fica de olho.', 'Ative as notificações', None, 'deck-obra.jpg'))
+pages.append(page('story-destaque-avaliacao', W, H, CR, foto('deck-pronto.jpg', 0, 0, 1080, 760) +
+    f'<div class="a" style="left:0;top:0;width:1080px;height:760px;background:rgba(23,54,26,.74)"></div>' + logo(y=230, W=W) +
     f'<div class="a tag" style="left:72px;top:250px;color:{AU}">DEPOIMENTOS DE CLIENTES</div>'
     f'<div class="a d" style="left:72px;top:390px;width:936px;color:#fff;font-size:140px">Como é comprar casa em leilão com a gente?</div>'
     f'<div class="a w" style="left:72px;top:830px;width:936px;color:{TX};font-size:44px;line-height:1.35">Quem já fez a assessoria conta tudo no destaque:</div>'
@@ -161,6 +165,28 @@ pages.append(page('story-destaque-avaliacao', W, H, CR,
     f'<div class="a d" style="left:390px;top:1085px;width:300px;text-align:center;color:{AU};font-family:\'Work Sans\';font-size:76px;letter-spacing:4px">★★★</div>'
     f'<div class="a d" style="left:72px;top:1320px;width:936px;text-align:center;color:{G};font-size:80px">Avaliação</div>'
     + cta('Veja no destaque AVALIAÇÃO', 1440, sub='Toque em @discoveryremodeling no topo')))
+
+def cena(nome, f, pos, topo, titulo, corpo, passo=None):
+    barra = ''
+    if passo:
+        barra = ''.join(f'<div class="a" style="left:{72+k*160}px;top:250px;width:146px;height:10px;border-radius:5px;background:{AU if k < passo else "rgba(255,255,255,.35)"}"></div>' for k in range(5))
+        barra += f'<div class="a d" style="left:60px;top:300px;color:{AU};font-size:420px;line-height:.85">{passo}</div>'
+    return page(nome, W, H, G, foto(f, 0, 0, W, H, pos=pos) +
+        veu('linear-gradient(180deg,rgba(10,30,14,.55) 0%,rgba(10,30,14,.1) 30%,rgba(10,30,14,.92) 62%)') + logo(y=230, W=W) + barra +
+        (f'<div class="a tag" style="left:72px;top:{300 if not passo else 760}px;color:{G};background:{AU};padding:12px 22px">{topo}</div>' if topo else '') +
+        f'<div class="a" style="left:72px;bottom:460px;width:936px"><div class="d" style="color:#fff;font-size:150px">{titulo}</div>'
+        f'<div class="w" style="margin-top:40px;color:#e2ecdf;font-size:44px;line-height:1.35">{corpo}</div></div>')
+reel = [cena('reel-cf-0', 'casa-frente.jpg', '50% 40%', 'ASSESSORIA DISCOVERY', 'Como funciona em <span style="color:#F2C14E">5 passos</span>', 'Do leilão à chave na mão, sem você precisar morar nos EUA.')]
+fotos_passos = [('elkland-ale-quintal.jpg', '50% 45%'), ('casa-igreja-lateral.jpg', '50% 40%'), ('casa-igreja-antes.jpg', '50% 50%'), ('elkland-fundos.jpg', '50% 50%'), ('deck-pronto.jpg', '50% 50%')]
+for i, ((t, desc, *_), (f, pos)) in enumerate(zip(steps, fotos_passos), 1):
+    reel.append(cena(f'reel-cf-{i}', f, pos, None, t, desc, passo=i))
+reel.append(page('reel-cf-6', W, H, G, foto('deck-estrutura.jpg', 0, 0, W, H) +
+    veu('linear-gradient(180deg,rgba(23,54,26,.6) 0%,rgba(23,54,26,.9) 45%,rgba(23,54,26,.96) 100%)') + logo(y=230, W=W) +
+    f'<div class="a tag" style="left:72px;top:250px;color:{G};background:{AU};padding:12px 22px">SÓ 2 VAGAS ESTE MÊS</div>'
+    f'<div class="a" style="left:72px;top:420px;width:936px"><div class="d" style="color:#fff;font-size:150px">Quer comprar sua casa em leilão nos EUA <span style="color:{AU}">com a gente?</span></div>'
+    f'<div class="w" style="margin-top:50px;color:#e2ecdf;font-size:44px;line-height:1.35">O primeiro passo é uma conversa grátis de 20 minutos.</div></div>'
+    + cta('Comente ASSESSORIA', 1400, bg=AU, fg=G, fs=52, sub='ou chame no WhatsApp: link na bio', subcor='#e2ecdf')))
+open(os.path.join(HTML, 'reel.txt'), 'w').write('\n'.join(reel))
 
 open(os.path.join(HTML, 'lista.txt'), 'w').write('\n'.join(pages))
 print(len(pages), 'artes')

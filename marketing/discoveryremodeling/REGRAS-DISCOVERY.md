@@ -15,6 +15,8 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - Fontes: **Alumni Sans Black** (títulos, caixa alta) + **Work Sans** (texto). Cores da marca + creme #F5F1E6.
 - Fotos reais e **nítidas** (nada de foto desfocada no fundo). Fotos em `designer/fotos/`.
 - 6 famílias de layout que se alternam (nunca a mesma duas vezes seguidas): capa (foto em cima + bloco verde), número gigante, foto cheia com degradê, fundo dourado, fundo verde só com texto e lista em cartões.
+- **Stories são vídeos animados de 7 s** (palavras entrando uma a uma, foto com zoom lento, botão pulsando): `designer/anim.js` + `designer/gravar.js`, salvos em `semana-vendas/animados/`. Carrossel explicativo vira **Reel animado** (o Alessandro acha carrossel estático amador).
+- Sempre **fotos de casas reais ao fundo**, variando entre as pastas do Drive (Elkland, 501 Elmira, Casa da Igreja, 953 Erie...). O Drive MCP baixa fotos até ~5 MB.
 - Gerador: `designer/gerar-artes-v2.py` (HTML → JPG com `designer/render.js`). Também dá para mandar para o Adobe Express para editar.
 
 ## 2. O que nunca fazer

@@ -15,9 +15,9 @@ Status: **APROVADA pelo Alessandro em 27/10** (com a troca: o Reel "Você não p
 | Sex 06/11 | 19h | **Casa 3: "Essa a gente NÃO compraria, e por quê"** | Reel (autoridade) | Claude do notebook | aguardando |
 | Sáb 07/11 | 10h | **Casa 4: "Você compraria essa casa por US$ X? Sim ou não?"** | Reel (Luci, pergunta) | Claude do notebook | aguardando |
 | Sáb 07/11 | 19h | **Reel "Do leilão à venda": casa de Elkland** | Reel (roavanzo/BM, antes e depois) | Claude do notebook | aguardando |
-| Dom 08/11 | 19h | **"Como funciona a nossa assessoria"** em 5 passos + "Só 2 vagas": fecha a semana com a oferta | Carrossel (oferta) | Claude | a fazer |
+| Dom 08/11 | 19h | **"Como funciona a nossa assessoria"** em 5 passos + "Só 2 vagas": fecha a semana com a oferta | **Reel animado** 30 s (`semana-vendas/animados/reel-como-funciona.mp4`) | Claude | pronto, aguarda aprovação |
 
-## Stories (todos com a logo e as cores da marca)
+## Stories (vídeos animados de 7 s em `semana-vendas/animados/`, com a logo e as cores da marca)
 | Dia | 8h | 14h |
 |---|---|---|
 | Seg | "Calendário de leilões Nov/Dez" para salvar e compartilhar (ver `calendario-leiloes/`; Warren já aconteceu em 17/10, então saiu da lista) | Pergunta: "Você já pensou em comprar casa nos EUA?" (responda o story) |
