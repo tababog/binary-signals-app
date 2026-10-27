@@ -36,14 +36,16 @@ Conversa com o usuário em português; telas internas em português.
 
 - O projeto é grande: cada módulo do roteiro abaixo é feito em um prompt/sessão separado.
 - Antes de enviar: `npx tsc --noEmit`, `npm run build` e um teste real no navegador (Playwright) do fluxo alterado.
-- Stack: Next.js 14 (App Router, Server Actions), TypeScript, Prisma, Tailwind. Permissões: `exigirAdmin()` /
+- Stack: Next.js 14 (App Router, Server Actions), TypeScript, Prisma + Postgres (Supabase), fotos no Supabase Storage
+  (`src/lib/uploads.ts`), Tailwind, hospedagem na Vercel. Permissões: `exigirAdmin()` /
   `exigirUsuario()` em `src/lib/auth.ts` em toda página e ação do servidor.
 
 ## Roteiro
 
 - [x] 1. Base: obras, clientes, fornecedores, funcionários, orçamento x realizado, caixa por obra, recibos com foto, ponto.
 - [x] 2. USD e ponto com GPS (raio da obra, alertas de ponto fora da obra).
-- [ ] 3. Hospedagem gratuita para teste: Postgres e fotos em nuvem (o disco de servidores gratuitos é apagado).
+- [~] 3. Hospedagem gratuita: código pronto (Postgres + fotos no Supabase Storage + `vercel-build`);
+       falta o Alessandro criar as contas e seguir `docs/hospedagem.md`.
 - [ ] 4. Visita técnica / levantamento: fotos, medidas e anotações no cliente antes de virar obra.
 - [ ] 5. Banco de preços histórico (regra 4) + cadastro de trabalhos antigos.
 - [ ] 6. Skill de precificação: materiais, mão de obra, custo, preço de mercado e duas opções (regras 2, 3 e 5).

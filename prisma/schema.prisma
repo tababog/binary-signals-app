@@ -4,9 +4,11 @@ generator client {
   provider = "prisma-client-js"
 }
 
+// Supabase: DATABASE_URL usa o pooler (porta 6543, ?pgbouncer=true) e DIRECT_URL a conexão direta (porta 5432).
 datasource db {
-  provider = "sqlite"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 // papel: "ADMIN" (acesso total) ou "FUNCIONARIO" (apenas ponto e próprio histórico)

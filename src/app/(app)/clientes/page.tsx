@@ -7,7 +7,7 @@ export default async function Clientes({ searchParams }: { searchParams: { q?: s
   await exigirAdmin();
   const q = searchParams.q?.trim();
   const clientes = await db.cliente.findMany({
-    where: q ? { OR: [{ nome: { contains: q } }, { documento: { contains: q } }, { telefone: { contains: q } }] } : undefined,
+    where: q ? { OR: [{ nome: { contains: q, mode: "insensitive" } }, { documento: { contains: q } }, { telefone: { contains: q } }] } : undefined,
     include: { _count: { select: { obras: true } } },
     orderBy: { nome: "asc" },
   });

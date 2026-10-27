@@ -89,7 +89,11 @@ function AbaResumo({ resumo }: { resumo: Awaited<ReturnType<typeof resumoObra>> 
           rotulo={obra.status === "CONCLUIDA" ? "Lucro final" : "Lucro se parar aqui"}
           valor={dinheiro(resumo.lucroAtual)}
           tom={resumo.lucroAtual < 0 ? "ruim" : "bom"}
-          detalhe={resumo.custoTotal > 0 ? `Contrato = ${(obra.valorContratoCent / resumo.custoTotal).toFixed(2)}x o custo real (meta 2x)` : "Contrato − custo realizado"}
+          detalhe={
+            obra.status === "CONCLUIDA" && resumo.custoTotal > 0
+              ? `Contrato = ${(obra.valorContratoCent / resumo.custoTotal).toFixed(2)}x o custo real (meta 2x)`
+              : "Contrato − custo realizado até agora"
+          }
         />
         <Indicador rotulo="Mão de obra da equipe" valor={dinheiro(resumo.custoEquipe)} detalhe={`${horas(resumo.horasEquipeMs)} trabalhadas`} />
         <Indicador rotulo="Orçamento usado" valor={`${pct(resumo.custoTotal, resumo.orcadoTotal)}%`} tom={resumo.custoTotal > resumo.orcadoTotal && resumo.orcadoTotal > 0 ? "ruim" : "neutro"} detalhe={`Obra ${obra.progresso}% concluída`} />

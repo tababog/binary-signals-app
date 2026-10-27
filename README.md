@@ -51,17 +51,13 @@ Requer Node.js 20 ou superior.
 
 ```bash
 npm install
-cp .env.example .env      # edite AUTH_SECRET, e-mails e senhas dos dois administradores
-npm run setup             # cria o banco de dados e os dois administradores
+cp .env.example .env      # banco Postgres, AUTH_SECRET, e-mails e senhas dos dois administradores
+npm run setup             # cria as tabelas e os dois administradores
 npm run dev               # abre em http://localhost:3000
 ```
 
-Para produção:
-
-```bash
-npm run build
-npm start
-```
+Para colocar na internet (Vercel + Supabase, plano grátis), siga o passo a passo em
+[`docs/hospedagem.md`](docs/hospedagem.md).
 
 Depois de entrar pela primeira vez, cada administrador deve trocar a senha em **Minha conta**.
 
@@ -69,16 +65,16 @@ Depois de entrar pela primeira vez, cada administrador deve trocar a senha em **
 
 | Variável | Para quê |
 | --- | --- |
-| `DATABASE_URL` | Banco de dados. Padrão é SQLite (`file:./dev.db`). |
+| `DATABASE_URL`, `DIRECT_URL` | Banco Postgres (Supabase ou local). |
 | `AUTH_SECRET` | Segredo das sessões de login. Use um valor longo e aleatório. |
-| `UPLOAD_DIR` | Pasta onde as fotos dos recibos ficam guardadas. |
+| `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` | Guardam as fotos dos recibos no Supabase Storage. Sem elas, as fotos ficam na pasta `UPLOAD_DIR`. |
 | `NEXT_PUBLIC_MOEDA` | Moeda das telas (padrão `USD`). |
 | `NEXT_PUBLIC_FUSO` | Fuso horário do ponto (`America/New_York`, `America/Chicago`, `America/Denver`, `America/Los_Angeles`). |
 | `ADMIN1_*`, `ADMIN2_*` | Nome, e-mail e senha inicial dos dois administradores. |
 
 > A câmera e a localização do celular só funcionam quando o app está em **HTTPS** (ou em `localhost`).
-> Ao publicar, use um domínio com HTTPS. Faça backup do arquivo do banco e da pasta `uploads`.
+> A Vercel já entrega o app em HTTPS.
 
 ## Tecnologia
 
-Next.js 14 (App Router, Server Actions) · TypeScript · Prisma · SQLite · Tailwind CSS.
+Next.js 14 (App Router, Server Actions) · TypeScript · Prisma · Postgres · Supabase Storage · Tailwind CSS · Vercel.

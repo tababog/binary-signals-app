@@ -10,16 +10,42 @@ Levantado em 27/10/2026 a partir de perfis públicos. Itens marcados **[confirma
 | Razão social | Tababog Construction LLC | Thumbtack, Angi, HomeAdvisor, Porch, BuildZoom |
 | Sede | Bridgeport, Connecticut (CT) — fuso America/New_York | Thumbtack, Angi |
 | Área de atuação | Todo o estado de Connecticut | Alessandro |
-| Sócios | Alessandro e Emanuel **[confirmar sobrenomes, cargos e bios]** | Conversa |
-| Tempo de mercado | 8 a 10 anos (os perfis divergem) **[confirmar ano de fundação]** | Thumbtack |
-| Licença | Connecticut Home Improvement Contractor (HIC) **[confirmar número e validade]** | BuildZoom |
+| Sócios | Alessandro de Oliveira e Emanuel Lopez | Alessandro |
+| Fundação | 2017 | Alessandro |
+| Licença | Connecticut Home Improvement Contractor **HIC.0655127** **[confirmar validade]** | Alessandro / BuildZoom |
 | Avaliação | 4.7 estrelas, cerca de 60 avaliações (Thumbtack 62, Porch 58) | Thumbtack, Porch |
 | Orçamento | Gratuito | Angi |
 | Site | tababog.com — **domínio não está no ar** em 27/10/2026 **[confirmar]** | — |
 | Instagram | [@tababog_construction](https://www.instagram.com/tababog_construction/) | Alessandro |
 | Fotos | Cerca de 104 fotos de projetos no Thumbtack | Thumbtack |
 
-## Serviços citados nos perfis
+## Sócios (textos para o portfólio e as propostas)
+
+Rascunho para o Alessandro revisar. As propostas para clientes saem em inglês.
+
+**Alessandro de Oliveira — Co-Founder & Project Manager**
+- EN: Alessandro co-founded Tababog Construction in 2017 and personally oversees every project, from the first
+  site visit and estimate to the final walkthrough, making sure each job is delivered on time, on budget and
+  exactly as promised.
+- PT: Cofundador da Tababog em 2017, acompanha cada projeto da primeira visita e do orçamento até a entrega final,
+  garantindo prazo, orçamento e qualidade.
+
+**Emanuel Lopez — Co-Founder & Lead Craftsman**
+- EN: Emanuel co-founded Tababog Construction in 2017 and leads the crew in the field. His attention to detail is
+  behind the custom cabinets and decks our clients are proudest of.
+- PT: Cofundador da Tababog em 2017, lidera a equipe em campo; o cuidado com os detalhes dele está nos gabinetes
+  customizados e decks que os clientes mais elogiam.
+
+**[confirmar]** os cargos acima (quem faz orçamento/atendimento e quem lidera a obra).
+
+## Serviços principais (mais feitos e mais lucrativos)
+
+1. **Decks** (construção e reforma)
+2. **Gabinetes customizados** (custom cabinets)
+
+Prioridade para o portfólio (etapa 7), a precificação (etapa 6) e o banco de preços (etapa 5): começar por estes dois.
+
+## Outros serviços citados nos perfis
 
 - Drywall: instalação (residencial e comercial), reparo, acabamento e textura
 - Pintura
@@ -41,20 +67,36 @@ Levantado em 27/10/2026 a partir de perfis públicos. Itens marcados **[confirma
 Custos que existem com ou sem obra. Não entram no caixa de uma obra específica: são somados por mês e
 **divididos entre as obras** (rateio), para que o preço de venda cubra também esses gastos.
 
-| Custo fixo | Informado por |
-| --- | --- |
-| Água | Alessandro |
-| Energia elétrica | Alessandro |
-| Seguro dos carros | Alessandro |
-| Aluguel do galpão | Alessandro |
-| General liability (seguro de responsabilidade civil) | Alessandro |
-| Combustível | Alessandro |
-| Ferramentas (compra e reposição) | Alessandro |
-| Contador | Sugestão |
+| Custo fixo | Valor | Situação |
+| --- | --- | --- |
+| Pró-labore Alessandro | $1,000/semana | Informado |
+| Pró-labore Emanuel | $1,000/semana | Informado |
+| Aluguel do galpão | **[informar valor/mês]** | Tem |
+| Água | **[informar valor/mês]** | Tem |
+| Energia elétrica | **[informar valor/mês]** | Tem |
+| Seguro dos carros | **[informar valor/mês]** | Tem |
+| General liability | **[informar valor/mês]** | Tem |
+| Combustível | **[informar valor/mês]** | Tem |
+| Ferramentas (compra e reposição) | **[informar valor/mês]** | Tem |
+| Telefone, internet e contador | **[informar valor/mês]** | Tem |
+| Manutenção e parcelas dos carros | — | Não tem |
+| Taxa de leads (Thumbtack/Angi) | — | Não tem |
+| Workers' compensation | — | **Não tem — ver alerta abaixo** |
 
-Costumam ser esquecidos e vale conferir se a Tababog tem: workers' compensation (obrigatório em CT para quem tem
-funcionários), taxa de leads do Thumbtack/Angi, manutenção dos carros, financiamento/parcelas de veículos,
-telefone e internet, software, marketing, renovação da licença HIC e **o salário dos próprios sócios**.
+Só o pró-labore dos dois sócios já soma **$2,000 por semana (cerca de $8,667 por mês)**, que precisam sair do lucro
+das obras.
+
+> **Alerta — workers' compensation:** em Connecticut o seguro é obrigatório para quem tem 1 ou mais funcionários,
+> inclusive meio período ou por diária. Sem ele, a empresa paga sozinha qualquer acidente de trabalho e fica sujeita a
+> multa e ordem de parada da obra. Conversar com o corretor de seguros e o contador; quando contratar, entra como
+> custo fixo (ou por obra, se o corretor calcular sobre a folha).
+
+## Equipe
+
+| Nome | Função | Pagamento | Valor/hora no app |
+| --- | --- | --- | --- |
+| Bruno | Funcionário | $200 por diária | $25/h (diária de 8 h) **[confirmar horas da diária]** |
+| Emerson | Funcionário | $200 por diária | $25/h (diária de 8 h) **[confirmar horas da diária]** |
 
 **Gasto de obra x custo fixo:** combustível e ferramentas são custo fixo por padrão. Quando forem comprados só para
 uma obra (ex.: uma ferramenta específica, aluguel de equipamento), lançar como despesa daquela obra

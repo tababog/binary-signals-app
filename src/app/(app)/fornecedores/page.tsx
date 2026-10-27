@@ -9,7 +9,7 @@ export default async function Fornecedores({ searchParams }: { searchParams: { q
   const q = searchParams.q?.trim();
   const [fornecedores, totais] = await Promise.all([
     db.fornecedor.findMany({
-      where: q ? { OR: [{ nome: { contains: q } }, { categoria: { contains: q } }, { documento: { contains: q } }] } : undefined,
+      where: q ? { OR: [{ nome: { contains: q, mode: "insensitive" } }, { categoria: { contains: q, mode: "insensitive" } }, { documento: { contains: q } }] } : undefined,
       orderBy: { nome: "asc" },
     }),
     db.lancamento.groupBy({ by: ["fornecedorId"], where: { tipo: "SAIDA", fornecedorId: { not: null } }, _sum: { valorCent: true } }),

@@ -35,6 +35,11 @@ export function FotoRecibo({ rotulo = "Foto do recibo / nota fiscal" }: { rotulo
     if (!original || !campoReal.current) return;
     setProcessando(true);
     const arquivo = await comprimir(original);
+    if (arquivo.size > 4 * 1024 * 1024) {
+      setProcessando(false);
+      alert("Arquivo maior que 4 MB. Use o botão Tirar foto ou envie um arquivo menor.");
+      return;
+    }
     const dt = new DataTransfer();
     dt.items.add(arquivo);
     campoReal.current.files = dt.files;

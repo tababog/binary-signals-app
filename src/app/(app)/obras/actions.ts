@@ -1,14 +1,12 @@
 "use server";
 
-import { unlink } from "node:fs/promises";
-import path from "node:path";
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { db } from "@/lib/db";
 import { exigirAdmin } from "@/lib/auth";
 import { lerData, paraCentavos, texto } from "@/lib/format";
 import { CATEGORIAS_DESPESA, STATUS_OBRA } from "@/lib/constantes";
-import { PASTA_UPLOADS, salvarComprovante } from "@/lib/uploads";
+import { apagarComprovante, salvarComprovante } from "@/lib/uploads";
 import type { EstadoForm } from "@/components/Formulario";
 
 function coordenada(valor: FormDataEntryValue | null, limite: number) {
@@ -61,7 +59,7 @@ export async function excluirObra(id: string) {
   await exigirAdmin();
   const comprovantes = await db.lancamento.findMany({ where: { obraId: id, comprovante: { not: null } }, select: { comprovante: true } });
   await db.obra.delete({ where: { id } });
-  await Promise.all(comprovantes.map((c) => apagarArquivo(c.comprovante)));
+  await Promise.all(comprovantes.map((c) => apagarComprovante(c.comprovante)));
   revalidatePath("/obras");
   revalidatePath("/");
   redirect("/obras");
@@ -157,11 +155,6 @@ export async function lancarRecebimento(obraId: string, _e: EstadoForm, form: Fo
 export async function excluirLancamento(id: string) {
   await exigirAdmin();
   const lanc = await db.lancamento.delete({ where: { id } });
-  await apagarArquivo(lanc.comprovante);
+  await apagarComprovante(lanc.comprovante);
   atualizar(lanc.obraId);
-}
-
-async function apagarArquivo(nome: string | null) {
-  if (!nome) return;
-  await unlink(path.join(PASTA_UPLOADS, path.basename(nome))).catch(() => {});
 }
