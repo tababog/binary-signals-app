@@ -24,9 +24,17 @@
 - Resposta pública ao comentário ASSESSORIA: "Que bom, [nome]! Te chamei no direct pra marcar uma conversa grátis de 20 min 📞"
 
 ## Pendente (Alessandro)
-- Próximos leilões com data e prazo de inscrição.
 - Depoimento de cliente, com autorização.
 - Valores reais (lance inicial e valor de mercado) das casas das visitas de campo.
 
 ## Regra das vagas
 - Quando uma vaga for preenchida, o Alessandro avisa e o texto muda para "Só 1 vaga". Quando as duas fecharem: "Vagas encerradas. Comente ASSESSORIA para entrar na lista de espera".
+
+## Post "3 últimos leilões do ano" (urgência real)
+Formato: carrossel (ou Reel) "As 3 últimas oportunidades de leilão em 2026", terminando em "Só 2 vagas na assessoria · Comente ASSESSORIA".
+| # | Leilão | Data | Inscrição | Situação |
+|---|---|---|---|---|
+| 1 | Bucks County, PA: upset adiado + judicial (online, GovEase) | 08/12/2026 | Presencial, US$ 100. O site do condado mostra 14/11 e 24/11: usar 14/11, a data mais segura | Confirmado no site do condado |
+| 2 | A confirmar com o Alessandro | | | |
+| 3 | A confirmar com o Alessandro | | | |
+Delaware County, PA (10/12) não foi confirmado no site do condado: a última lista publicada é de 11/12/2025.
