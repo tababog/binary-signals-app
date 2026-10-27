@@ -4,7 +4,8 @@
 - **Conversa grátis de 20 minutos** (vídeo ou ligação), sem preço na divulgação.
 - O preço só é falado na conversa.
 - Chamada padrão: **"Comente ASSESSORIA 👇"** ou **"Chama no WhatsApp: link na bio"**.
-- Não usar "vagas limitadas" nem prazos de leilão até o Alessandro confirmar números reais.
+- **Vagas: 2 clientes novos** neste momento (confirmado pelo Alessandro). Usar "Só 2 vagas abertas" de forma verdadeira e atualizar quando preencher.
+- Não usar prazos de leilão até o Alessandro confirmar datas reais.
 
 ## Programação do feed
 | Dia | Post | Objetivo |
@@ -18,12 +19,14 @@
 | Dom 08/11 | Reel "Por que fazer com a Discovery" (Alessandro falando) | Oferta direta |
 
 ## Textos de chamada
-- Reels: "Quer que a gente encontre e analise uma casa assim pra você? Comente ASSESSORIA 👇"
-- Legendas: "📞 Conversa grátis de 20 minutos pra entender seu objetivo. Comente ASSESSORIA ou chame no WhatsApp (link na bio)."
+- Reels: "Quer que a gente encontre e analise uma casa assim pra você? Comente ASSESSORIA 👇" + selo "Só 2 vagas abertas"
+- Legendas: "📞 Conversa grátis de 20 minutos pra entender seu objetivo. Estamos com só 2 vagas abertas na assessoria. Comente ASSESSORIA ou chame no WhatsApp (link na bio)."
 - Resposta pública ao comentário ASSESSORIA: "Que bom, [nome]! Te chamei no direct pra marcar uma conversa grátis de 20 min 📞"
 
 ## Pendente (Alessandro)
-- Capacidade de clientes no momento (para usar ou não "vagas limitadas").
 - Próximos leilões com data e prazo de inscrição.
 - Depoimento de cliente, com autorização.
 - Valores reais (lance inicial e valor de mercado) das casas das visitas de campo.
+
+## Regra das vagas
+- Quando uma vaga for preenchida, o Alessandro avisa e o texto muda para "Só 1 vaga". Quando as duas fecharem: "Vagas encerradas. Comente ASSESSORIA para entrar na lista de espera".

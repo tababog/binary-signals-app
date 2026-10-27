@@ -32,7 +32,7 @@ Formato de cada Reel:
 2. (2 a 5 s) Segundo texto: "Valor de mercado na região: ~US$ Y"
 3. (5 a 30 s) Eu falando sobre a casa (frase inteira, sem cortes no meio): onde fica (cidade/condado, sem endereço), o estado da casa, o que precisa de reforma, e se a gente daria lance ou não, e por quê.
 4. Cenas da casa por dentro/por fora, com a minha fala por cima (corte J/L).
-5. TEXTO FINAL (esta é uma semana de VENDAS da assessoria): "Vale a pena? Depende da reforma e da análise 🔍" e depois "Quer que a gente encontre e analise uma casa assim pra você? Comente ASSESSORIA 👇". Eu falo essa chamada para a câmera no final, se tiver um trecho meu dizendo algo parecido; se não tiver, só o texto.
+5. TEXTO FINAL (esta é uma semana de VENDAS da assessoria): "Vale a pena? Depende da reforma e da análise 🔍" e depois "Quer que a gente encontre e analise uma casa assim pra você? Comente ASSESSORIA 👇", com um selo dourado pequeno "Só 2 vagas abertas". Eu falo essa chamada para a câmera no final, se tiver um trecho meu dizendo algo parecido; se não tiver, só o texto.
 6. Rodapé pequeno fixo: "Valores estimados. Resultados passados não garantem resultados futuros. Todo investimento envolve risco."
 
 === ETAPA 3 – EDIÇÃO (depois que eu aprovar e preencher os valores) ===
