@@ -9,6 +9,8 @@ Fonte: Windsor (Instagram Public), lida em 27/10/2026. Ranking por curtidas + co
 | @roavanzo | 157.371 | 169 (quase 2 por dia) | 314 | 92% Reels |
 | @bm_investiments | 122.082 | 49 | 305 | 100% Reels |
 | @minas__home | 13.615 | 33 | 166 | 91% Reels |
+| @ocacadordetitulos | 189.307 | 186 (2 por dia) | 356 | 74% Reels, 26% imagens |
+| @wkleiloes | 75.853 | 34 | 429 | 97% Reels |
 | @discoveryremodeling | 1.403 | ~30 | ~15 | Reels + carrossel |
 
 ## Os posts que mais bombaram e por quê
@@ -22,6 +24,10 @@ Fonte: Windsor (Instagram Public), lida em 27/10/2026. Ranking por curtidas + co
 8. **@minas__home, 127 comentários:** "60 casas indo a leilão dia 8; escolhi 5 com lances diferentes". Lista com datas e lances.
 9. **@minas__home:** depoimento de cliente e entrega da chave. É prova social.
 10. **@roavanzo e @bm_investiments:** "Arrematada por $X". Preço baixo no gancho, antes e depois da casa pronta.
+
+11. **@ocacadordetitulos, 18 mil e 8,3 mil:** imagens com FRASE sobre dinheiro ("O dinheiro não muda ninguém. Ele revela…", "Não trabalhe por dinheiro, faça o dinheiro trabalhar por você"). Frase de mentalidade é compartilhada e salva.
+12. **@ocacadordetitulos e @minas__home:** notícia do mercado americano ("O governo anunciou medidas para reduzir custos da casa…"). Assunto do momento.
+13. **@wkleiloes, o mais engajado deles:** "Casa indo pra leilão, bid inicial 8 mil dólares, valor de mercado 100 mil dólares". **É exatamente o formato "Lance inicial × Valor de mercado" que já planejamos.**
 
 ## Padrões que se repetem
 - **O número no 1º segundo:** "$5.400", "$7.200", "$4k".
@@ -43,3 +49,6 @@ Fonte: Windsor (Instagram Public), lida em 27/10/2026. Ranking por curtidas + co
 | 7 | Opinião ou polêmica (roavanzo) | "Brasileiro arrematou casa sem visitar… o que você acha que aconteceu?" (caso real de leilão, sem expor nomes) |
 | 8 | Antes e depois da casa pronta (roavanzo) | Carrossel de uma casa que vocês já terminaram: compra, reforma e resultado, com o aviso de risco |
 | 9 | Depoimento (Minas) | Vídeo curto de cliente da assessoria, com autorização |
+| 10 | Frase de mentalidade (Caçador) | Imagem com frase forte ("Quem espera o momento certo vê os outros comprando") sobre foto real de casa ou da família, com a logo. Fácil e rápida de fazer |
+| 11 | Notícia do mercado (Caçador e Minas) | Ale comentando em 30 s uma notícia real da semana sobre imóveis nos EUA (fonte citada) |
+| 12 | Lance × valor (WK) | Série das visitas de campo: "Bid inicial US$ X, valor de mercado US$ Y" (com o aviso de risco) |
