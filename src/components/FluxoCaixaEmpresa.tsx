@@ -21,7 +21,10 @@ export function FluxoCaixaEmpresa({ fluxo }: { fluxo: FluxoCaixa }) {
   const todos = sel === -1;
   const selecionado = useRef<HTMLButtonElement>(null);
   // No celular o mês escolhido pode ficar fora da tela: rola a fila de meses até ele
-  useEffect(() => selecionado.current?.scrollIntoView({ block: "nearest", inline: "center" }), [sel]);
+  // (chaves no corpo: no Chrome novo scrollIntoView devolve uma Promise, que o React tomaria por função de limpeza)
+  useEffect(() => {
+    selecionado.current?.scrollIntoView({ block: "nearest", inline: "center" });
+  }, [sel]);
 
   const v = (valores: number[]) => (todos ? valores.reduce((s, x) => s + x, 0) : valores[sel] ?? 0);
   const entradas = v(fluxo.totalEntradas);
