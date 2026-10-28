@@ -11,6 +11,7 @@ export default async function LayoutApp({ children }: { children: React.ReactNod
     ? [
         { href: "/", rotulo: "Painel" },
         { href: "/obras", rotulo: "Obras" },
+        { href: "/visitas", rotulo: "Visitas" },
         { href: "/clientes", rotulo: "Clientes" },
         { href: "/fornecedores", rotulo: "Fornecedores" },
         { href: "/funcionarios", rotulo: "Funcionários" },

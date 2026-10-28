@@ -34,8 +34,13 @@ export function CamposFuncionario({ valor, novo }: { valor?: Funcionario; novo?:
           <option value="ADMIN">Administrador (acesso total)</option>
         </select>
       </Campo>
-      <Campo rotulo={novo ? "Senha inicial *" : "Nova senha (deixe em branco para manter)"}>
-        <input className="campo" name="senha" type="text" autoComplete="new-password" required={novo} minLength={6} />
+      <Campo rotulo={novo ? "Senha inicial (opcional)" : "Nova senha (deixe em branco para manter)"}>
+        <input className="campo" name="senha" type="text" autoComplete="new-password" minLength={6} />
+        {novo && (
+          <span className="mt-1 block text-xs text-stone-500">
+            Deixe em branco para gerar um link de convite: o funcionário cria a própria senha.
+          </span>
+        )}
       </Campo>
     </div>
   );

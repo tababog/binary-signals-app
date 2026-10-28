@@ -23,9 +23,14 @@ model Usuario {
   valorHoraCent  Int      @default(0)
   ativo          Boolean  @default(true)
   criadoEm       DateTime @default(now())
+  // Link de convite / redefinição de senha: guarda só o hash SHA-256 do token enviado ao funcionário
+  conviteHash    String?
+  conviteExpira  DateTime?
 
   registros      RegistroPonto[]
   lancamentos    Lancamento[]
+
+  @@index([conviteHash])
 }
 
 model Cliente {
@@ -39,6 +44,7 @@ model Cliente {
   criadoEm  DateTime @default(now())
 
   obras     Obra[]
+  visitas   Visita[]
 }
 
 model Fornecedor {
@@ -80,6 +86,7 @@ model Obra {
   orcamento       ItemOrcamento[]
   lancamentos     Lancamento[]
   registros       RegistroPonto[]
+  referencia      TrabalhoReferencia?
 }
 
 // categoria: "MATERIAL", "MAO_DE_OBRA", "SERVICO", "EQUIPAMENTO", "OUTROS"
@@ -158,4 +165,44 @@ model GastoEmpresa {
   data        DateTime
   comprovante String?
   criadoEm    DateTime @default(now())
+}
+
+// Banco de preços: trabalhos já feitos (antigos ou obras concluídas no app), base para precificar novos.
+// tipoServico: chave de TIPOS_SERVICO; unidade: chave de UNIDADES (src/lib/constantes.ts)
+model TrabalhoReferencia {
+  id                String   @id @default(cuid())
+  tipoServico       String
+  descricao         String
+  cidade            String?
+  condado           String?
+  quantidade        Float
+  unidade           String
+  data              DateTime?
+  custoMaterialCent Int      @default(0)
+  custoMaoObraCent  Int      @default(0)
+  custoOutrosCent   Int      @default(0)
+  dias              Int      @default(0)
+  precoCobradoCent  Int
+  observacoes       String?
+  obraId            String?  @unique
+  obra              Obra?    @relation(fields: [obraId], references: [id], onDelete: SetNull)
+  criadoEm          DateTime @default(now())
+
+  @@index([tipoServico])
+}
+
+// Visita ao cliente para levantamento e orçamento, antes de virar obra.
+// status: "AGENDADA", "REALIZADA" ou "CANCELADA"; tipoServico: chave de TIPOS_SERVICO
+model Visita {
+  id          String   @id @default(cuid())
+  clienteId   String
+  cliente     Cliente  @relation(fields: [clienteId], references: [id])
+  dataHora    DateTime
+  endereco    String?
+  tipoServico String?
+  descricao   String?
+  status      String   @default("AGENDADA")
+  criadoEm    DateTime @default(now())
+
+  @@index([dataHora])
 }

@@ -10,7 +10,7 @@ export default async function NovoFuncionario() {
   return (
     <>
       <Voltar href="/funcionarios" rotulo="Funcionários" />
-      <Cabecalho titulo="Novo funcionário" subtitulo="Passe o e-mail e a senha inicial para o funcionário entrar no app" />
+      <Cabecalho titulo="Novo funcionário" subtitulo="Deixe a senha em branco para enviar um link de convite pelo WhatsApp" />
       <div className="cartao">
         <Formulario acao={criarFuncionario}>
           <CamposFuncionario novo />
