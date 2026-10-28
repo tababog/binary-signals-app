@@ -1,5 +1,7 @@
 import { readFile } from "fs/promises";
-import { importPKCS8, SignJWT } from "jose";
+import { contaServico, tokenGoogle } from "./google";
+
+export { emailContaServico } from "./google";
 
 /**
  * Fluxo de caixa da empresa lido da planilha "Fluxo de Caixa ... - resumo" na pasta do Google Drive.
@@ -167,50 +169,6 @@ export function mediasCustosFixos(fluxo: FluxoCaixa, grupos: Grupo[] = ["FIXO", 
 
 // ---------- acesso ao Google Drive ----------
 
-type ContaServico = { client_email: string; private_key: string };
-
-function contaServico(): ContaServico | null {
-  const bruto = process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
-  if (!bruto) return null;
-  try {
-    const json = JSON.parse(bruto.trim().startsWith("{") ? bruto : Buffer.from(bruto, "base64").toString("utf8"));
-    if (!json.client_email || !json.private_key) return null;
-    return { client_email: json.client_email, private_key: String(json.private_key).replace(/\\n/g, "\n") };
-  } catch {
-    return null;
-  }
-}
-
-let tokenGuardado: { valor: string; expira: number } | null = null;
-
-async function tokenGoogle(conta: ContaServico) {
-  if (tokenGuardado && tokenGuardado.expira > Date.now() + 60_000) return tokenGuardado.valor;
-  const chave = await importPKCS8(conta.private_key, "RS256");
-  const agora = Math.floor(Date.now() / 1000);
-  const assercao = await new SignJWT({ scope: "https://www.googleapis.com/auth/drive.readonly" })
-    .setProtectedHeader({ alg: "RS256", typ: "JWT" })
-    .setIssuer(conta.client_email)
-    .setAudience("https://oauth2.googleapis.com/token")
-    .setIssuedAt(agora)
-    .setExpirationTime(agora + 3600)
-    .sign(chave);
-  const resp = await fetch("https://oauth2.googleapis.com/token", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams({ grant_type: "urn:ietf:params:oauth:grant-type:jwt-bearer", assertion: assercao }),
-    cache: "no-store",
-  });
-  if (!resp.ok) throw new Error(`Google recusou a conta de serviço (${resp.status}).`);
-  const dados = (await resp.json()) as { access_token: string; expires_in: number };
-  tokenGuardado = { valor: dados.access_token, expira: Date.now() + dados.expires_in * 1000 };
-  return dados.access_token;
-}
-
-/** E-mail da conta de serviço, para mostrar com quem compartilhar a pasta. */
-export function emailContaServico() {
-  return contaServico()?.client_email ?? null;
-}
-
 export async function lerFluxoCaixa(): Promise<ResultadoFluxo> {
   // Só para testes no computador: lê um CSV salvo em vez do Drive
   const local = process.env.NODE_ENV !== "production" ? process.env.FLUXO_CAIXA_CSV_LOCAL : undefined;
@@ -222,7 +180,7 @@ export async function lerFluxoCaixa(): Promise<ResultadoFluxo> {
   const conta = contaServico();
   if (!conta) return { ok: false, motivo: "SEM_CONFIGURACAO" };
   try {
-    const token = await tokenGoogle(conta);
+    const token = await tokenGoogle(conta, "https://www.googleapis.com/auth/drive.readonly");
     const auth = { Authorization: `Bearer ${token}` };
     const pasta = process.env.GOOGLE_DRIVE_PASTA_FLUXO || PASTA_PADRAO;
     const q = `'${pasta}' in parents and mimeType='application/vnd.google-apps.spreadsheet' and trashed=false`;

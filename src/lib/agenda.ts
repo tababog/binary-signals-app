@@ -55,7 +55,7 @@ function dobrar(linha: string) {
   return partes.join("\r\n ");
 }
 
-/** Arquivo .ics da visita com dois alarmes: 1 dia antes e 1 hora antes. */
+/** Arquivo .ics da visita com dois alarmes: 1 dia antes e 2 horas antes. */
 export function icsVisita(v: Visita, linkApp: string) {
   const alarme = (gatilho: string, texto: string) => ["BEGIN:VALARM", "ACTION:DISPLAY", `DESCRIPTION:${escapar(texto)}`, `TRIGGER:${gatilho}`, "END:VALARM"];
   const linhas = [
@@ -74,7 +74,7 @@ export function icsVisita(v: Visita, linkApp: string) {
     `DESCRIPTION:${escapar([detalhes(v), linkApp].filter(Boolean).join("\n"))}`,
     `URL:${linkApp}`,
     ...alarme("-P1D", `Amanhã: ${titulo(v)}`),
-    ...alarme("-PT1H", `Em 1 hora: ${titulo(v)}`),
+    ...alarme("-PT2H", `Em 2 horas: ${titulo(v)}`),
     "END:VEVENT",
     "END:VCALENDAR",
   ];

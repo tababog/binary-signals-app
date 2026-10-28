@@ -10,6 +10,7 @@ import { PREFIXO_PERSONALIZADO, STATUS_VISITA, SUBSERVICOS, TIPOS_SERVICO } from
 import { apagarComprovante, salvarComprovante } from "@/lib/uploads";
 import type { EstadoForm } from "@/components/Formulario";
 import { agendarFollowUps, CANAIS } from "@/lib/followup";
+import { linkDaVisita, sincronizarAgenda } from "@/lib/agenda-google";
 
 function atualizar() {
   revalidatePath("/visitas");
@@ -43,7 +44,11 @@ export async function salvarVisita(id: string | null, _e: EstadoForm, form: Form
   }
 
   const status = String(form.get("status") ?? "AGENDADA");
+  // Quem vai fazer a visita: um dos sócios (administradores ativos)
+  const responsavelId = String(form.get("responsavelId") ?? "");
+  const responsavel = responsavelId ? await db.usuario.findFirst({ where: { id: responsavelId, papel: "ADMIN", ativo: true } }) : null;
   const dados = {
+    responsavelId: responsavel?.id ?? null,
     clienteId,
     dataHora,
     endereco: texto(form.get("endereco")),
@@ -54,6 +59,7 @@ export async function salvarVisita(id: string | null, _e: EstadoForm, form: Form
   };
   if (id) {
     await db.visita.update({ where: { id }, data: dados });
+    await sincronizarAgenda(id, linkDaVisita(id));
     const erro = await guardarFotos(id, form);
     atualizar();
     if (erro) return { erro };
@@ -61,6 +67,7 @@ export async function salvarVisita(id: string | null, _e: EstadoForm, form: Form
   }
   // Visita nova: abre a página dela já pedindo para colocar o lembrete no celular
   const visita = await db.visita.create({ data: dados });
+  await sincronizarAgenda(visita.id, linkDaVisita(visita.id));
   const erro = await guardarFotos(visita.id, form);
   atualizar();
   redirect(`/visitas/${visita.id}?lembrete=1${erro ? "&erroFoto=1" : ""}`);
@@ -99,6 +106,8 @@ export async function mudarStatusVisita(id: string, status: string) {
   const visita = await db.visita.update({ where: { id }, data: { status } });
   // Visita feita: começa o acompanhamento do cliente
   if (status === "REALIZADA") await agendarFollowUps(id, visita.dataHora < new Date() ? new Date() : visita.dataHora);
+  // Cancelada ou realizada sai da agenda dos sócios; voltando para agendada, os lembretes são criados de novo
+  await sincronizarAgenda(id, linkDaVisita(id));
   atualizar();
   revalidatePath(`/visitas/${id}`);
 }
@@ -159,6 +168,9 @@ export async function adicionarFollowUp(visitaId: string, form: FormData) {
 export async function excluirVisita(id: string) {
   await exigirAdmin();
   const fotos = await db.fotoVisita.findMany({ where: { visitaId: id } });
+  // Tira os lembretes da agenda dos sócios antes de apagar
+  await db.visita.update({ where: { id }, data: { status: "CANCELADA" } });
+  await sincronizarAgenda(id, "");
   await db.visita.delete({ where: { id } });
   await Promise.all(fotos.map((f) => apagarComprovante(f.arquivo)));
   atualizar();

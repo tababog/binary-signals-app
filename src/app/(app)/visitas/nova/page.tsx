@@ -6,13 +6,15 @@ import { BotaoEnviar } from "@/components/BotaoEnviar";
 import { CamposVisita } from "@/components/CamposVisita";
 import { salvarVisita } from "../actions";
 import { getT } from "@/i18n/servidor";
+import { adminsDaVisita } from "@/lib/agenda-google";
 
 export default async function NovaVisita({ searchParams }: { searchParams: { cliente?: string } }) {
-  await exigirAdmin();
+  const usuario = await exigirAdmin();
   const t = getT();
-  const [clientes, personalizados] = await Promise.all([
+  const [clientes, personalizados, admins] = await Promise.all([
     db.cliente.findMany({ orderBy: { nome: "asc" }, select: { id: true, nome: true, endereco: true } }),
     db.servicoPersonalizado.findMany({ orderBy: { nome: "asc" } }),
+    adminsDaVisita(),
   ]);
   return (
     <>
@@ -20,7 +22,7 @@ export default async function NovaVisita({ searchParams }: { searchParams: { cli
       <Cabecalho titulo={t("Agendar visita")} />
       <div className="cartao max-w-2xl">
         <Formulario acao={salvarVisita.bind(null, null)}>
-          <CamposVisita clientes={clientes} personalizados={personalizados.map((p) => p.nome)} clienteInicial={searchParams.cliente} />
+          <CamposVisita clientes={clientes} personalizados={personalizados.map((p) => p.nome)} clienteInicial={searchParams.cliente} responsaveis={admins} responsavelPadrao={usuario.id} />
           <BotaoEnviar>{t("Agendar")}</BotaoEnviar>
         </Formulario>
       </div>
