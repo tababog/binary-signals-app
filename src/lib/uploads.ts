@@ -29,8 +29,12 @@ function urlObjeto(nome: string) {
   return `${SUPABASE_URL}/storage/v1/object/${BUCKET}/${encodeURIComponent(nome)}`;
 }
 
-function cabecalhos(extra: Record<string, string> = {}) {
-  return { Authorization: `Bearer ${SUPABASE_KEY}`, apikey: SUPABASE_KEY!, ...extra };
+// Chaves novas do Supabase ("sb_secret_...") vão só no cabeçalho apikey; as antigas (JWT "eyJ...")
+// também precisam do Authorization.
+function cabecalhos(extra: Record<string, string> = {}): Record<string, string> {
+  const base: Record<string, string> = { apikey: SUPABASE_KEY! };
+  if (!SUPABASE_KEY!.startsWith("sb_")) base.Authorization = `Bearer ${SUPABASE_KEY}`;
+  return { ...base, ...extra };
 }
 
 /** Salva a foto do recibo e devolve o nome do arquivo (ou null se não houver arquivo). */

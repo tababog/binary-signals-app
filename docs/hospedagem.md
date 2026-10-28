@@ -23,16 +23,21 @@ Tempo estimado: 30 minutos. Use o computador, não o celular.
 3. **Bucket para as fotos:** menu lateral **Storage** → **New bucket**
    - **Name:** `comprovantes`
    - **Public bucket:** deixe **desligado** (os recibos são privados).
+   - Ao criar o projeto, deixe **Enable Data API** desmarcado: o app não usa essa API e assim as tabelas não ficam
+     expostas. Se o painel sugerir "Enable Data API", ignore.
    - **Create**.
-4. **Endereços do banco:** clique no botão **Connect** (no topo da página do projeto) → aba **Connection String**.
-   Copie dois endereços para um bloco de notas, trocando `[YOUR-PASSWORD]` pela senha do passo 2:
+4. **Endereços do banco:** clique no botão **Connect** (no topo da página do projeto) → quadro **ORM** → **Prisma**.
+   Aparecem as linhas `DATABASE_URL` e `DIRECT_URL` prontas; copie as duas trocando `[YOUR-PASSWORD]` pela senha do
+   passo 2. Se não houver a opção Prisma, use o quadro **Direct** e copie:
    - **Transaction pooler** (termina em `:6543/postgres`): acrescente `?pgbouncer=true` no final.
      Este será o `DATABASE_URL`.
    - **Session pooler** (termina em `:5432/postgres`). Este será o `DIRECT_URL`.
-5. **Chaves:** menu **Project Settings** (engrenagem) → **API Keys** → aba **Legacy API Keys**:
-   - Copie o **Project URL** (algo como `https://abcd1234.supabase.co`, aparece em *Project Settings → Data API*).
+5. **Chaves:**
+   - O **Project URL** aparece na página inicial do projeto (algo como `https://abcd1234.supabase.co`).
      Este será o `SUPABASE_URL`.
-   - Clique em **Reveal** na chave **service_role** e copie. Este será o `SUPABASE_SERVICE_ROLE_KEY`.
+   - Menu **Project Settings** (engrenagem) → **API Keys**. Na aba **Legacy API Keys**, clique em **Reveal** na chave
+     **service_role** (começa com `eyJ`); se essa aba não existir, copie a **Secret key** (começa com `sb_secret_`).
+     Este será o `SUPABASE_SERVICE_ROLE_KEY`.
      **Essa chave dá acesso total ao banco: não mande para ninguém e não publique.**
 
 ---
