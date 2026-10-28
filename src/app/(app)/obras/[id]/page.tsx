@@ -23,7 +23,7 @@ const ABAS = [
 export default async function Obra({ params, searchParams }: { params: { id: string }; searchParams: { aba?: string } }) {
   await exigirAdmin();
   const t = getT();
-  const existe = await db.obra.findUnique({ where: { id: params.id }, select: { id: true } });
+  const existe = await db.obra.findUnique({ where: { id: params.id }, select: { id: true, referencia: { select: { id: true } } } });
   if (!existe) notFound();
   const resumo = await resumoObra(params.id);
   const { obra } = resumo;
@@ -46,6 +46,18 @@ export default async function Obra({ params, searchParams }: { params: { id: str
         <Link href={`/obras/${obra.id}/recebimento`} className="botao-secundario">{t("+ Pagamento do cliente")}</Link>
         <Link href={`/obras/${obra.id}/editar`} className="botao-secundario">{t("Editar")}</Link>
       </Cabecalho>
+
+      {obra.status === "CONCLUIDA" &&
+        (existe.referencia ? (
+          <p className="mb-4 text-sm">
+            <Link href={`/precos/${existe.referencia.id}`} className="link">{t("✓ Esta obra está no banco de preços →")}</Link>
+          </p>
+        ) : (
+          <div className="cartao mb-4 border-amber-200 bg-amber-50">
+            <p className="mb-2 text-sm text-amber-900">{t("Obra concluída: leve os números reais para o banco de preços, para precificar as próximas.")}</p>
+            <Link href={`/precos/novo?obra=${obra.id}`} className="botao">{t("Salvar no banco de preços")}</Link>
+          </div>
+        ))}
 
       <div className="mb-4 flex gap-1 overflow-x-auto border-b border-stone-200">
         {ABAS.map((a) => (

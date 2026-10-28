@@ -29,20 +29,26 @@ export function abaixoDaMeta(a: Analise) {
   return a.multiplicador !== null && a.multiplicador < META_MULTIPLICADOR;
 }
 
+/** Subserviços principais (sem os detalhes "INTERNA.TETO"), para agrupar trabalhos comparáveis. */
+function subsPrincipais(subServicos: string | null) {
+  return (subServicos ?? "").split(",").filter((c) => c && !c.includes(".")).sort().join(",");
+}
+
 /**
- * Resumo por tipo de serviço e unidade. Os valores por unidade são ponderados pela quantidade
+ * Resumo por tipo de serviço, subserviço principal (ex.: deck novo x só o piso) e unidade. Os valores por unidade são ponderados pela quantidade
  * (soma dos preços ÷ soma das quantidades), para um deck grande pesar mais que um pequeno.
  */
 export function resumirPorServico(trabalhos: TrabalhoReferencia[], custoFixoPorDia: number) {
-  const grupos = new Map<string, { tipo: string; unidade: string; itens: { t: TrabalhoReferencia; a: Analise }[] }>();
+  const grupos = new Map<string, { tipo: string; subServicos: string; unidade: string; itens: { t: TrabalhoReferencia; a: Analise }[] }>();
   for (const t of trabalhos) {
-    const chave = `${t.tipoServico}|${t.unidade}`;
-    if (!grupos.has(chave)) grupos.set(chave, { tipo: t.tipoServico, unidade: t.unidade, itens: [] });
+    const subs = subsPrincipais(t.subServicos);
+    const chave = `${t.tipoServico}|${subs}|${t.unidade}`;
+    if (!grupos.has(chave)) grupos.set(chave, { tipo: t.tipoServico, subServicos: subs, unidade: t.unidade, itens: [] });
     grupos.get(chave)!.itens.push({ t, a: analisarTrabalho(t, custoFixoPorDia) });
   }
 
   return [...grupos.values()]
-    .map(({ tipo, unidade, itens }) => {
+    .map(({ tipo, subServicos, unidade, itens }) => {
       const soma = (f: (x: (typeof itens)[number]) => number) => itens.reduce((s, x) => s + f(x), 0);
       const quantidade = soma((x) => x.t.quantidade);
       const preco = soma((x) => x.t.precoCobradoCent);
@@ -52,6 +58,7 @@ export function resumirPorServico(trabalhos: TrabalhoReferencia[], custoFixoPorD
       const precosUnit = itens.map((x) => x.a.precoPorUnidade).filter((v): v is number => v !== null);
       return {
         tipo,
+        subServicos,
         unidade,
         trabalhos: itens.length,
         abaixoDaMeta: itens.filter((x) => abaixoDaMeta(x.a)).length,
