@@ -356,6 +356,9 @@ function OpcaoCard({ t, opcao, calc, numero, outra, custoDia, ia }: { t: T; opca
           </tr>
         </tbody>
       </table>
+      <a href={`/api/contrato/${opcao.orcamentoId}?opcao=${opcao.id}`} target="_blank" rel="noreferrer" className="botao-secundario mt-3 w-full">
+        {t("📄 Contrato desta opção (PDF)")}
+      </a>
       {abaixo && (
         <p className="mt-2 rounded-lg bg-red-50 p-2 text-sm font-semibold text-red-800">
           {t("⚠ Abaixo da meta 2x. Para chegar ao dobro, o preço seria {valor}.", { valor: dinheiro(calc.custoTotal * 2) })}

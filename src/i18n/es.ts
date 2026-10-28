@@ -752,5 +752,6 @@ const es: Record<string, string> = {
   "Não consegui ler o comprovante ({motivo}). Preencha os campos à mão.": "No pude leer el comprobante ({motivo}). Llena los campos a mano.",
   "Lançar Despesa": "Registrar Gasto",
   "Nenhum lançamento ainda. Use “Lançar Despesa” ou “Pagamento do cliente”.": "Todavía no hay movimientos. Usa “Registrar Gasto” o “Pago del cliente”.",
+  "📄 Contrato desta opção (PDF)": "📄 Contrato de esta opción (PDF)",
 };
 export default es;
