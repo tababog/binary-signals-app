@@ -9,6 +9,7 @@ import { db } from "@/lib/db";
 import { exigirAdmin, exigirUsuario } from "@/lib/auth";
 import { paraCentavos, texto } from "@/lib/format";
 import { gerarConvite } from "@/lib/convite";
+import { documentoDoFormulario } from "@/lib/documento-fiscal";
 import { idiomaValido } from "@/i18n/idiomas";
 import type { EstadoForm } from "@/components/Formulario";
 
@@ -26,7 +27,14 @@ function dadosFuncionario(form: FormData) {
     vinculo: form.get("vinculo") === "HELPER" ? "HELPER" : "FIXO",
     papel: form.get("papel") === "ADMIN" ? "ADMIN" : "FUNCIONARIO",
     idioma: idiomaValido(form.get("idioma")) ? (form.get("idioma") as string) : "pt",
+    // Helper precisa do ITIN/SSN (ou EIN) para o 1099
+    fiscal: documentoDoFormulario(form, form.get("vinculo") === "HELPER"),
   };
+}
+
+/** Campos do funcionário para gravar no banco (sem os auxiliares da validação). */
+function paraGravar({ fiscal, ...dados }: ReturnType<typeof dadosFuncionario>) {
+  return { ...dados, ...("erro" in fiscal ? {} : fiscal) };
 }
 
 const soDigitos = (t: string | null) => (t ?? "").replace(/\D/g, "").slice(-10);
@@ -34,6 +42,7 @@ const soDigitos = (t: string | null) => (t ?? "").replace(/\D/g, "").slice(-10);
 /** O login é por e-mail ou telefone, então os dois precisam ser únicos entre os usuários. */
 async function conferirLogin(dados: ReturnType<typeof dadosFuncionario>, id?: string): Promise<string | null> {
   if (!dados.nome) return "Informe o nome.";
+  if ("erro" in dados.fiscal) return dados.fiscal.erro;
   if (!dados.email && soDigitos(dados.telefone).length < 10) return "Informe o telefone (com DDD) ou o e-mail: é por ele que a pessoa entra no app.";
   if (dados.email) {
     const outro = await db.usuario.findUnique({ where: { email: dados.email } });
@@ -58,7 +67,7 @@ export async function criarFuncionario(_e: EstadoForm, form: FormData): Promise<
 
   // Sem senha: o funcionário cria a dele pelo link de convite. Até lá a conta tem uma senha aleatória que ninguém conhece.
   const senhaHash = await bcrypt.hash(senha || randomBytes(32).toString("hex"), 10);
-  const usuario = await db.usuario.create({ data: { ...dados, senhaHash } });
+  const usuario = await db.usuario.create({ data: { ...paraGravar(dados), senhaHash } });
   revalidatePath("/funcionarios");
   if (senha) redirect(`/funcionarios/${usuario.id}`);
   const token = await gerarConvite(usuario.id);
@@ -80,7 +89,7 @@ export async function atualizarFuncionario(id: string, _e: EstadoForm, form: For
 
   await db.usuario.update({
     where: { id },
-    data: { ...dados, ativo, ...(novaSenha ? { senhaHash: await bcrypt.hash(novaSenha, 10) } : {}) },
+    data: { ...paraGravar(dados), ativo, ...(novaSenha ? { senhaHash: await bcrypt.hash(novaSenha, 10) } : {}) },
   });
   revalidatePath("/funcionarios");
   redirect(`/funcionarios/${id}?salvo=1`);

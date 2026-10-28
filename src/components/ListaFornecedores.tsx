@@ -6,6 +6,7 @@ import { Cabecalho, Vazio } from "@/components/ui";
 import { SeloSeguro } from "@/components/SeloSeguro";
 import { TextoUsuario } from "@/components/TextoUsuario";
 import { getT } from "@/i18n/servidor";
+import { documentoMascarado } from "@/lib/documento-fiscal";
 
 /** Lista de fornecedores ou de subcontratados (a página /subcontratados usa a mesma lista). */
 export async function ListaFornecedores({ tipo, q: busca }: { tipo: "FORNECEDOR" | "SUBCONTRATADO"; q?: string }) {
@@ -44,7 +45,14 @@ export async function ListaFornecedores({ tipo, q: busca }: { tipo: "FORNECEDOR"
             <tbody>
               {fornecedores.map((f) => (
                 <tr key={f.id}>
-                  <td><Link href={`/fornecedores/${f.id}`} className="link">{f.nome}</Link></td>
+                  <td>
+                    <Link href={`/fornecedores/${f.id}`} className="link">{f.nome}</Link>
+                    {f.documento ? (
+                      <div className="text-xs text-stone-500">{documentoMascarado(f.tipoDocumento, f.documento)}</div>
+                    ) : (
+                      sub && <span className="selo mt-0.5 bg-red-100 text-red-700">{t("Falta EIN/ITIN")}</span>
+                    )}
+                  </td>
                   <td className="hidden sm:table-cell">{f.categoria ? <TextoUsuario texto={f.categoria} /> : "—"}</td>
                   <td>{sub ? <SeloSeguro validade={f.seguroValidade} /> : f.telefone ?? "—"}</td>
                   <td className="text-right tabular-nums">{dinheiro(totalPor.get(f.id) ?? 0)}</td>

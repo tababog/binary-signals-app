@@ -1,11 +1,13 @@
 import { campoData } from "@/lib/format";
 import { CamposContato } from "./CamposContato";
+import { CampoDocumentoFiscal } from "./CampoDocumentoFiscal";
 import { Campo } from "./ui";
 import { getT } from "@/i18n/servidor";
 
 type Fornecedor = {
   nome: string;
   documento: string | null;
+  tipoDocumento: string | null;
   telefone: string | null;
   email: string | null;
   endereco: string | null;
@@ -32,7 +34,11 @@ export function CamposFornecedor({ valor, tipoInicial }: { valor?: Fornecedor; t
           <input className="campo" name="categoria" defaultValue={valor?.categoria ?? ""} />
         </Campo>
       </div>
-      <CamposContato valor={valor} />
+      <CamposContato valor={valor} comDocumento={false} />
+      <div className="grid gap-4 sm:grid-cols-2">
+        <CampoDocumentoFiscal tipo={valor?.tipoDocumento} documento={valor?.documento} obrigatorio={tipo === "SUBCONTRATADO"} />
+        <p className="-mt-2 text-xs text-stone-500 sm:col-span-2">{t("Obrigatório para subcontratados: EIN se for empresa, ITIN (ou SSN) se for pessoa física. Vai no 1099 do fim do ano.")}</p>
+      </div>
       <fieldset className="grid gap-4 rounded-lg border border-stone-200 p-3 sm:grid-cols-2">
         <legend className="px-1 text-sm font-semibold">{t("Para subcontratados")}</legend>
         <Campo rotulo={t("Licença (ex.: CT E-1, HIC)")}>

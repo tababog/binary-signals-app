@@ -1,5 +1,6 @@
 import { centavosParaCampo } from "@/lib/format";
 import { Campo } from "./ui";
+import { CampoDocumentoFiscal } from "./CampoDocumentoFiscal";
 import { BANDEIRAS, IDIOMAS } from "@/i18n/idiomas";
 import { getT } from "@/i18n/servidor";
 
@@ -14,6 +15,8 @@ type Funcionario = {
   vinculo: string;
   papel: string;
   idioma: string;
+  tipoDocumento: string | null;
+  documento: string | null;
 };
 
 export function CamposFuncionario({ valor, novo, vinculoInicial }: { valor?: Funcionario; novo?: boolean; vinculoInicial?: string }) {
@@ -57,6 +60,8 @@ export function CamposFuncionario({ valor, novo, vinculoInicial }: { valor?: Fun
           />
         </Campo>
       </div>
+      <CampoDocumentoFiscal tipo={valor?.tipoDocumento} documento={valor?.documento} obrigatorio={(valor?.vinculo ?? vinculoInicial) === "HELPER"} />
+      <p className="-mt-2 text-xs text-stone-500 sm:col-span-2">{t("Obrigatório para helpers: ITIN ou SSN (pessoa física) ou EIN (se tiver empresa). Vai no 1099 do fim do ano.")}</p>
       <Campo rotulo={t("Idioma do app")}>
         <select className="campo text-lg" name="idioma" defaultValue={valor?.idioma ?? "pt"}>
           {IDIOMAS.map((i) => (

@@ -28,6 +28,9 @@ model Usuario {
   vinculo        String   @default("FIXO")
   // Idioma das telas: "pt", "en" ou "es"
   idioma         String   @default("pt")
+  // Documento fiscal (obrigatório para helpers): tipoDocumento "EIN", "ITIN" ou "SSN"; documento formatado
+  tipoDocumento  String?
+  documento      String?
   ativo          Boolean  @default(true)
   criadoEm       DateTime @default(now())
   // Link de convite / redefinição de senha: guarda só o hash SHA-256 do token enviado ao funcionário
@@ -62,6 +65,8 @@ model Fornecedor {
   licenca   String?
   seguroValidade DateTime?
   nome      String
+  // Documento fiscal (1099/W-9): tipoDocumento "EIN" (empresa), "ITIN" ou "SSN" (pessoa física); documento formatado
+  tipoDocumento String?
   documento String?
   telefone  String?
   email     String?
