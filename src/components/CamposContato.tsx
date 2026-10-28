@@ -11,16 +11,20 @@ type Contato = {
   observacoes?: string | null;
 };
 
-export function CamposContato({ valor = {}, rotuloDocumento }: { valor?: Contato; rotuloDocumento?: string }) {
+export function CamposContato({ valor = {}, rotuloDocumento, comDocumento = true }: { valor?: Contato; rotuloDocumento?: string; comDocumento?: boolean }) {
   const t = getT();
   return (
     <div className="grid gap-4 sm:grid-cols-2">
       <Campo rotulo={t("Nome *")}>
         <input className="campo" name="nome" defaultValue={valor.nome} required />
       </Campo>
-      <Campo rotulo={rotuloDocumento ?? t("Tax ID / EIN (opcional)")}>
-        <input className="campo" name="documento" defaultValue={valor.documento ?? ""} />
-      </Campo>
+      {comDocumento ? (
+        <Campo rotulo={rotuloDocumento ?? t("Tax ID / EIN (opcional)")}>
+          <input className="campo" name="documento" defaultValue={valor.documento ?? ""} />
+        </Campo>
+      ) : (
+        <div className="hidden sm:block" />
+      )}
       <Campo rotulo={t("Telefone / WhatsApp")}>
         <input className="campo" name="telefone" type="tel" defaultValue={valor.telefone ?? ""} />
       </Campo>

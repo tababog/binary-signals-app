@@ -7,6 +7,7 @@ import { db } from "@/lib/db";
 import { exigirAdmin } from "@/lib/auth";
 import { lerData, texto } from "@/lib/format";
 import { dadosContato } from "@/lib/contato";
+import { documentoDoFormulario } from "@/lib/documento-fiscal";
 import type { EstadoForm } from "@/components/Formulario";
 
 export async function salvarFornecedor(id: string | null, _e: EstadoForm, form: FormData): Promise<EstadoForm> {
@@ -19,6 +20,10 @@ export async function salvarFornecedor(id: string | null, _e: EstadoForm, form: 
     seguroValidade: lerData(form.get("seguroValidade")),
   };
   if (!dados.nome) return { erro: getT()("Informe o nome.") };
+  // Subcontratado precisa do EIN (empresa) ou ITIN/SSN (pessoa física) para o 1099
+  const fiscal = documentoDoFormulario(form, dados.tipo === "SUBCONTRATADO");
+  if ("erro" in fiscal) return { erro: getT()(fiscal.erro) };
+  Object.assign(dados, fiscal);
 
   const fornecedor = id
     ? await db.fornecedor.update({ where: { id }, data: dados })

@@ -55,6 +55,7 @@ export default async function Funcionarios({ searchParams }: { searchParams: { t
                     <span className="selo bg-stone-100">{t("Funcionário")}</span>
                   )}
                   {!u.ativo && <span className="selo ml-1 bg-red-100 text-red-700">{t("Inativo")}</span>}
+                  {u.vinculo === "HELPER" && u.ativo && !u.documento && <span className="selo ml-1 bg-red-100 text-red-700">{t("Falta EIN/ITIN")}</span>}
                   {u.ativo && u.conviteHash && u.conviteExpira && u.conviteExpira > new Date() && (
                     <span className="selo ml-1 bg-amber-100 text-amber-800">{t("Convite pendente")}</span>
                   )}
