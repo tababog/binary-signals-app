@@ -309,7 +309,7 @@ const en: Record<string, string> = {
   "Nenhum fornecedor encontrado.": "No suppliers found.",
   "Nenhum gasto avulso neste mês.": "No one-off expenses this month.",
   "Nenhum item. Adicione os custos previstos da obra por categoria.": "No items. Add the job's expected costs by category.",
-  "Nenhum lançamento ainda. Use “Lançar despesa” ou “Pagamento do cliente”.": "No entries yet. Use “Add expense” or “Client payment”.",
+  "Nenhum lançamento ainda. Use “Lançar despesa” ou “Pagamento do cliente”.": "No entries yet. Use “Add Expense” or “Client payment”.",
   "Nenhum pagamento registrado.": "No payments recorded.",
   "Nenhum registro neste mês.": "No entries this month.",
   "Nenhum registro no período.": "No entries in this period.",
@@ -750,7 +750,7 @@ const en: Record<string, string> = {
   "A API da Anthropic respondeu com erro ({status}): {msg}": "The Anthropic API returned an error ({status}): {msg}",
   "sem resposta do servidor": "no response from the server",
   "Não consegui ler o comprovante ({motivo}). Preencha os campos à mão.": "Couldn't read the document ({motivo}). Fill in the fields by hand.",
-  "Lançar Despesa": "Record Expense",
-  "Nenhum lançamento ainda. Use “Lançar Despesa” ou “Pagamento do cliente”.": "No entries yet. Use “Add expense” or “Client payment”.",
+  "Lançar Despesa": "Add Expense",
+  "Nenhum lançamento ainda. Use “Lançar Despesa” ou “Pagamento do cliente”.": "No entries yet. Use “Add Expense” or “Client payment”.",
 };
 export default en;
