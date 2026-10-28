@@ -20,7 +20,8 @@ export const STATUS_OBRA = {
   CONCLUIDA: "Concluída",
 } as const;
 
-export const FORMAS_PAGAMENTO = ["Pix", "Dinheiro", "Cartão de crédito", "Cartão de débito", "Boleto", "Transferência", "Cheque"];
+/** Formas de pagamento usadas nos EUA (gravadas como texto; a tela traduz). */
+export const FORMAS_PAGAMENTO = ["Cheque", "Zelle", "Dinheiro", "Venmo", "Cartão de crédito", "Cartão de débito", "Transferência bancária (ACH)", "PayPal"];
 
 export function nomeCategoria(c: string) {
   if (c === "PAGAMENTO_CLIENTE") return "Pagamento do cliente";

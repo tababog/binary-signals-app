@@ -27,7 +27,9 @@ tela cheia, como um app).
   - *Equipe e horas* — horas e custo de cada funcionário nesta obra.
 - **Lançar despesa**: tira a foto do recibo/nota pelo celular, informa valor, fornecedor e categoria, e o gasto
   entra direto no caixa da obra.
-- **Pagamento do cliente**: registra o valor recebido, que entra no caixa da obra.
+- **Pagamento do cliente**: registra o valor recebido, que entra no caixa da obra. Ao tirar a foto ou escolher o
+  comprovante (cheque, Zelle, Venmo, recibo...), a IA lê o documento e preenche valor, data e forma de pagamento
+  (o que não encontrar fica em branco). Na despesa, o mesmo vale para o recibo da loja. Tocar na foto abre em tela cheia.
 - **Clientes**, **Fornecedores** e **Subcontratados**: cadastro completo com total comprado/pago. Subcontratados têm
   especialidade, licença e validade do seguro (COI), com aviso quando vence em 30 dias ou já venceu.
 - **Equipe**: funcionários fixos e **helpers** (temporários), pagos **por hora ou por diária**; o login é por e-mail

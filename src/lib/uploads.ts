@@ -47,12 +47,22 @@ export async function salvarComprovante(arquivo: FormDataEntryValue | null): Pro
   const conteudo = Buffer.from(await arquivo.arrayBuffer());
 
   if (usarSupabase) {
-    const r = await fetch(urlObjeto(nome), {
-      method: "POST",
-      headers: cabecalhos({ "Content-Type": arquivo.type, "x-upsert": "false" }),
-      body: conteudo,
-    });
-    if (!r.ok) throw new Error(`Não foi possível guardar o arquivo (${r.status}). Tente de novo.`);
+    const enviar = (headers: Record<string, string>) =>
+      fetch(urlObjeto(nome), { method: "POST", headers: { ...headers, "Content-Type": arquivo.type, "x-upsert": "false" }, body: conteudo });
+    let r = await enviar(cabecalhos());
+    // Recusa de autorização com chave nova (sb_secret_): tenta de novo mandando a chave também no Authorization
+    if (!r.ok && [400, 401, 403].includes(r.status) && SUPABASE_KEY!.startsWith("sb_")) {
+      r = await enviar({ ...cabecalhos(), Authorization: `Bearer ${SUPABASE_KEY}` });
+    }
+    if (!r.ok) {
+      const motivo = (await r.text().catch(() => "")).slice(0, 300);
+      console.error(`Supabase Storage recusou o arquivo (${r.status}): ${motivo}`);
+      let mensagem = "";
+      try {
+        mensagem = (JSON.parse(motivo) as { message?: string }).message ?? "";
+      } catch {}
+      throw new Error(`Não foi possível guardar o arquivo (${r.status}${mensagem ? `: ${mensagem}` : ""}). Tente de novo.`);
+    }
   } else {
     await mkdir(PASTA_UPLOADS, { recursive: true });
     await writeFile(path.join(PASTA_UPLOADS, nome), conteudo);

@@ -2,6 +2,8 @@
 
 import { useRef, useState } from "react";
 import { useT } from "@/i18n/cliente";
+import { lerComprovante } from "@/app/(app)/obras/leitura";
+import { ImagemAmpliavel } from "./ImagemAmpliavel";
 
 const LADO_MAXIMO = 1600;
 
@@ -24,8 +26,13 @@ async function comprimir(arquivo: File): Promise<File> {
   }
 }
 
-export function FotoRecibo({ rotulo }: { rotulo?: string }) {
+/**
+ * Foto ou arquivo do comprovante. Com `ler`, a IA lê o documento e preenche no formulário o valor, a data, a forma
+ * de pagamento e (se estiver vazia) a descrição; o que não encontrar fica em branco.
+ */
+export function FotoRecibo({ rotulo, ler }: { rotulo?: string; ler?: "RECEBIMENTO" | "DESPESA" }) {
   const t = useT();
+  const [leitura, setLeitura] = useState<{ lendo: boolean; aviso: string | null }>({ lendo: false, aviso: null });
   const campoReal = useRef<HTMLInputElement>(null);
   const [previa, setPrevia] = useState<string | null>(null);
   const [nome, setNome] = useState<string | null>(null);
@@ -48,6 +55,38 @@ export function FotoRecibo({ rotulo }: { rotulo?: string }) {
     setNome(arquivo.name);
     setPrevia(arquivo.type.startsWith("image/") && arquivo.type !== "image/heic" ? URL.createObjectURL(arquivo) : null);
     setProcessando(false);
+    if (ler) await lerDocumento(arquivo);
+  }
+
+  async function lerDocumento(arquivo: File) {
+    const form = campoReal.current?.form;
+    if (!form) return;
+    setLeitura({ lendo: true, aviso: null });
+    const dados = new FormData();
+    dados.set("arquivo", arquivo);
+    dados.set("tipo", ler!);
+    const r = await lerComprovante(dados).catch(() => null);
+    if (!r) {
+      setLeitura({ lendo: false, aviso: t("Não consegui ler o comprovante. Preencha os campos à mão.") });
+      return;
+    }
+    const campo = (nome: string) => form.elements.namedItem(nome) as HTMLInputElement | HTMLSelectElement | null;
+    const preencher = (nome: string, valor: string | null) => {
+      const el = campo(nome);
+      if (el) el.value = valor ?? "";
+    };
+    preencher("valor", r.valorCent !== null ? (r.valorCent / 100).toFixed(2) : null);
+    preencher("data", r.data);
+    preencher("formaPagamento", r.formaPagamento);
+    const descricao = campo("descricao");
+    if (descricao && !descricao.value.trim() && r.descricao) descricao.value = r.descricao;
+    const achou = [r.valorCent !== null && t("valor"), r.data && t("data"), r.formaPagamento && t("forma de pagamento")].filter(Boolean);
+    setLeitura({
+      lendo: false,
+      aviso: achou.length
+        ? t("Li o comprovante e preenchi: {campos}. Confira antes de salvar.", { campos: achou.join(", ") })
+        : t("Não encontrei valor, data nem forma de pagamento no comprovante. Preencha à mão."),
+    });
   }
 
   function limpar() {
@@ -71,9 +110,11 @@ export function FotoRecibo({ rotulo }: { rotulo?: string }) {
         </label>
       </div>
       {processando && <p className="mt-2 text-sm text-stone-500">{t("Preparando imagem...")}</p>}
+      {leitura.lendo && <p className="mt-2 text-sm text-stone-500">{t("Lendo o comprovante...")}</p>}
+      {leitura.aviso && <p className="mt-2 rounded-lg bg-sky-50 p-2 text-sm text-sky-900">{leitura.aviso}</p>}
       {nome && (
         <div className="mt-3 rounded-lg border border-stone-200 p-2">
-          {previa ? <img src={previa} alt={t("Prévia do recibo")} className="max-h-72 rounded" /> : <p className="text-sm">{nome}</p>}
+          {previa ? <ImagemAmpliavel src={previa} alt={t("Prévia do recibo")} className="max-h-72 rounded" /> : <p className="text-sm">{nome}</p>}
           <button type="button" onClick={limpar} className="mt-2 text-sm text-red-700 hover:underline">{t("Remover")}</button>
         </div>
       )}
