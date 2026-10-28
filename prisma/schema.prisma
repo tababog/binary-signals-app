@@ -1,0 +1,161 @@
+// Valores em dinheiro são guardados em centavos (Int) para evitar erros de arredondamento.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Supabase: DATABASE_URL usa o pooler (porta 6543, ?pgbouncer=true) e DIRECT_URL a conexão direta (porta 5432).
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+// papel: "ADMIN" (acesso total) ou "FUNCIONARIO" (apenas ponto e próprio histórico)
+model Usuario {
+  id             String   @id @default(cuid())
+  nome           String
+  email          String   @unique
+  senhaHash      String
+  papel          String   @default("FUNCIONARIO")
+  telefone       String?
+  funcao         String?
+  valorHoraCent  Int      @default(0)
+  ativo          Boolean  @default(true)
+  criadoEm       DateTime @default(now())
+
+  registros      RegistroPonto[]
+  lancamentos    Lancamento[]
+}
+
+model Cliente {
+  id        String   @id @default(cuid())
+  nome      String
+  documento String?
+  telefone  String?
+  email     String?
+  endereco  String?
+  observacoes String?
+  criadoEm  DateTime @default(now())
+
+  obras     Obra[]
+}
+
+model Fornecedor {
+  id        String   @id @default(cuid())
+  nome      String
+  documento String?
+  telefone  String?
+  email     String?
+  endereco  String?
+  categoria String?
+  observacoes String?
+  criadoEm  DateTime @default(now())
+
+  lancamentos Lancamento[]
+}
+
+// status: "PLANEJADA", "EM_ANDAMENTO", "PAUSADA", "CONCLUIDA"
+model Obra {
+  id              String    @id @default(cuid())
+  nome            String
+  endereco        String?
+  descricao       String?
+  status          String    @default("PLANEJADA")
+  valorContratoCent Int     @default(0)
+  dataInicio      DateTime?
+  dataPrevista    DateTime?
+  progresso       Int       @default(0)
+  // Ponto central da obra e distância máxima aceita para o ponto da equipe
+  latitude        Float?
+  longitude       Float?
+  raioMetros      Int       @default(200)
+  // Dias de trabalho previstos: usados para orçar a parte da obra nos custos fixos da empresa
+  diasPrevistos   Int       @default(0)
+  criadoEm        DateTime  @default(now())
+
+  clienteId       String
+  cliente         Cliente   @relation(fields: [clienteId], references: [id])
+
+  orcamento       ItemOrcamento[]
+  lancamentos     Lancamento[]
+  registros       RegistroPonto[]
+}
+
+// categoria: "MATERIAL", "MAO_DE_OBRA", "SERVICO", "EQUIPAMENTO", "OUTROS"
+model ItemOrcamento {
+  id          String @id @default(cuid())
+  obraId      String
+  obra        Obra   @relation(fields: [obraId], references: [id], onDelete: Cascade)
+  categoria   String
+  descricao   String
+  valorCent   Int
+}
+
+// Fluxo de caixa de cada obra (conta do cliente).
+// tipo: "ENTRADA" (pagamento do cliente) ou "SAIDA" (despesa da obra)
+model Lancamento {
+  id            String      @id @default(cuid())
+  obraId        String
+  obra          Obra        @relation(fields: [obraId], references: [id], onDelete: Cascade)
+  tipo          String
+  categoria     String
+  descricao     String
+  valorCent     Int
+  data          DateTime
+  formaPagamento String?
+  comprovante   String?
+  fornecedorId  String?
+  fornecedor    Fornecedor? @relation(fields: [fornecedorId], references: [id])
+  criadoPorId   String
+  criadoPor     Usuario     @relation(fields: [criadoPorId], references: [id])
+  criadoEm      DateTime    @default(now())
+
+  @@index([obraId, data])
+}
+
+// valorHoraCent é copiado do funcionário no momento da entrada,
+// assim aumentos de salário não alteram o custo de obras passadas.
+model RegistroPonto {
+  id            String    @id @default(cuid())
+  usuarioId     String
+  usuario       Usuario   @relation(fields: [usuarioId], references: [id])
+  obraId        String
+  obra          Obra      @relation(fields: [obraId], references: [id], onDelete: Cascade)
+  entrada       DateTime
+  saida         DateTime?
+  valorHoraCent Int
+  latEntrada    Float?
+  lngEntrada    Float?
+  precisaoEntrada Float?
+  latSaida      Float?
+  lngSaida      Float?
+  precisaoSaida Float?
+  observacao    String?
+  // true quando o administrador lançou as horas (sem GPS do funcionário)
+  manual        Boolean   @default(false)
+
+  @@index([usuarioId, entrada])
+  @@index([obraId])
+}
+
+// Custos fixos recorrentes da empresa (overhead), rateados entre as obras pelos dias trabalhados.
+// periodicidade: "SEMANAL", "MENSAL" ou "ANUAL"
+model CustoFixo {
+  id            String   @id @default(cuid())
+  nome          String
+  valorCent     Int
+  periodicidade String   @default("MENSAL")
+  ativo         Boolean  @default(true)
+  criadoEm      DateTime @default(now())
+}
+
+// Gastos avulsos da empresa que não são de uma obra (ex.: ferramentas). Entram no custo fixo do mês em que ocorreram.
+model GastoEmpresa {
+  id          String   @id @default(cuid())
+  descricao   String
+  valorCent   Int
+  data        DateTime
+  comprovante String?
+  criadoEm    DateTime @default(now())
+}
