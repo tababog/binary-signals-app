@@ -7,6 +7,7 @@ import { exigirAdmin } from "@/lib/auth";
 import { lerDataHora, texto } from "@/lib/format";
 import { STATUS_VISITA, TIPOS_SERVICO } from "@/lib/constantes";
 import type { EstadoForm } from "@/components/Formulario";
+import { agendarFollowUps, CANAIS } from "@/lib/followup";
 
 function atualizar() {
   revalidatePath("/visitas");
@@ -53,8 +54,64 @@ export async function salvarVisita(id: string | null, _e: EstadoForm, form: Form
 export async function mudarStatusVisita(id: string, status: string) {
   await exigirAdmin();
   if (!(status in STATUS_VISITA)) return;
-  await db.visita.update({ where: { id }, data: { status } });
+  const visita = await db.visita.update({ where: { id }, data: { status } });
+  // Visita feita: começa o acompanhamento do cliente
+  if (status === "REALIZADA") await agendarFollowUps(id, visita.dataHora < new Date() ? new Date() : visita.dataHora);
   atualizar();
+  revalidatePath(`/visitas/${id}`);
+}
+
+/** Resultado da negociação depois da visita: "FECHOU", "SEM_INTERESSE" ou "" para voltar a negociar. */
+export async function definirResultado(id: string, resultado: string) {
+  await exigirAdmin();
+  await db.visita.update({
+    where: { id },
+    data: { resultado: resultado === "FECHOU" || resultado === "SEM_INTERESSE" ? resultado : null },
+  });
+  atualizar();
+  revalidatePath(`/visitas/${id}`);
+}
+
+/** Registra que o follow-up foi enviado (chamado ao tocar em WhatsApp, SMS ou E-mail). */
+export async function marcarFollowUpEnviado(followUpId: string, canal: string) {
+  await exigirAdmin();
+  if (!(canal in CANAIS)) return;
+  const f = await db.followUp.update({ where: { id: followUpId }, data: { enviadoEm: new Date(), canal } });
+  atualizar();
+  revalidatePath(`/visitas/${f.visitaId}`);
+}
+
+export async function desfazerEnvio(followUpId: string) {
+  await exigirAdmin();
+  const f = await db.followUp.update({ where: { id: followUpId }, data: { enviadoEm: null, canal: null } });
+  atualizar();
+  revalidatePath(`/visitas/${f.visitaId}`);
+}
+
+export async function mudarDataFollowUp(followUpId: string, form: FormData) {
+  await exigirAdmin();
+  const data = lerDataHora(`${String(form.get("data") ?? "")}T10:00`);
+  if (!data) return;
+  const f = await db.followUp.update({ where: { id: followUpId }, data: { dataPrevista: data } });
+  atualizar();
+  revalidatePath(`/visitas/${f.visitaId}`);
+}
+
+export async function excluirFollowUp(followUpId: string) {
+  await exigirAdmin();
+  const f = await db.followUp.delete({ where: { id: followUpId } });
+  atualizar();
+  revalidatePath(`/visitas/${f.visitaId}`);
+}
+
+export async function adicionarFollowUp(visitaId: string, form: FormData) {
+  await exigirAdmin();
+  const data = lerDataHora(`${String(form.get("data") ?? "")}T10:00`);
+  if (!data) return;
+  const ultimo = await db.followUp.findFirst({ where: { visitaId }, orderBy: { ordem: "desc" } });
+  await db.followUp.create({ data: { visitaId, ordem: (ultimo?.ordem ?? 0) + 1, dataPrevista: data } });
+  atualizar();
+  revalidatePath(`/visitas/${visitaId}`);
 }
 
 export async function excluirVisita(id: string) {

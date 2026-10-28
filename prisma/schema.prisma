@@ -214,7 +214,25 @@ model Visita {
   tipoServico String?
   descricao   String?
   status      String   @default("AGENDADA")
+  // Depois da visita: null = em negociação, "FECHOU" ou "SEM_INTERESSE" (encerra os follow-ups)
+  resultado   String?
   criadoEm    DateTime @default(now())
 
+  followUps   FollowUp[]
+
   @@index([dataHora])
+}
+
+// Contato de acompanhamento com o cliente depois da visita (enviado pelo celular do administrador).
+// canal: "WHATSAPP", "SMS" ou "EMAIL"
+model FollowUp {
+  id           String    @id @default(cuid())
+  visitaId     String
+  visita       Visita    @relation(fields: [visitaId], references: [id], onDelete: Cascade)
+  ordem        Int
+  dataPrevista DateTime
+  enviadoEm    DateTime?
+  canal        String?
+
+  @@index([dataPrevista])
 }

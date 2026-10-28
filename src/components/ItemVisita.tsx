@@ -10,6 +10,7 @@ type Visita = {
   tipoServico: string | null;
   status: string;
   descricao: string | null;
+  resultado?: string | null;
   cliente: { nome: string; telefone: string | null };
 };
 
@@ -29,7 +30,15 @@ export function ItemVisita({ v, agora }: { v: Visita; agora: Date }) {
           {atrasada && <span className="selo ml-2 bg-amber-100 text-amber-800">Passou do horário</span>}
           {hoje && <span className="selo ml-2 bg-marca-600 text-white">Hoje</span>}
           {amanha && <span className="selo ml-2 bg-marca-100 text-marca-700">Amanhã</span>}
-          {v.status === "REALIZADA" && <span className="selo ml-2 bg-emerald-100 text-emerald-800">Realizada</span>}
+          {v.status === "REALIZADA" && (
+            v.resultado === "FECHOU" ? (
+              <span className="selo ml-2 bg-emerald-100 text-emerald-800">Fechou contrato</span>
+            ) : v.resultado === "SEM_INTERESSE" ? (
+              <span className="selo ml-2 bg-stone-200 text-stone-600">Sem interesse</span>
+            ) : (
+              <span className="selo ml-2 bg-sky-100 text-sky-800">Em negociação</span>
+            )
+          )}
           {v.status === "CANCELADA" && <span className="selo ml-2 bg-stone-200 text-stone-600">Cancelada</span>}
         </div>
         {v.endereco && <div className="truncate text-xs text-stone-500">{v.endereco}</div>}

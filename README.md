@@ -3,7 +3,8 @@
 App para gestão das obras da construtora: clientes, fornecedores, funcionários, orçamento,
 fluxo de caixa por obra (com foto dos recibos) e ponto eletrônico da equipe.
 
-Funciona no navegador do computador e do celular (pode ser "instalado" na tela inicial do celular).
+Funciona no navegador do computador e do celular, Android e iPhone (pode ser "instalado" na tela inicial e abre em
+tela cheia, como um app).
 
 ## O que o app faz
 
@@ -12,6 +13,9 @@ Funciona no navegador do computador e do celular (pode ser "instalado" na tela i
 - **Visitas**: agenda de visitas aos clientes (cliente novo ou já cadastrado), com atalhos para o mapa e para ligar;
   **⏰ Lembrete** que coloca a visita na agenda do celular (Google Agenda ou arquivo de calendário com alarmes 1 dia e
   1 hora antes); marcar como realizada/cancelada e transformar em obra quando o cliente fecha.
+  **Follow-up**: ao marcar a visita como realizada, o app agenda contatos em 3, 7 e 14 dias. No dia, o Painel mostra
+  "Follow-ups de hoje"; a mensagem vem pronta (inglês, português ou espanhol, editável) e abre no WhatsApp, SMS ou
+  e-mail do celular. Marcar "Fechou contrato" ou "Sem interesse" encerra os follow-ups.
 - **Obras**: cada obra tem cliente, valor do contrato, datas, andamento (%) e quatro abas:
   - *Resumo* — contrato, recebido, a receber, custo até agora, saldo em caixa da obra, lucro previsto e lucro real.
   - *Fluxo de caixa* — entradas (pagamentos do cliente) e saídas (despesas) **só desta obra**, com link para a foto do recibo.
