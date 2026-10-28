@@ -309,7 +309,7 @@ const es: Record<string, string> = {
   "Nenhum fornecedor encontrado.": "No se encontró ningún proveedor.",
   "Nenhum gasto avulso neste mês.": "No hay gastos sueltos este mes.",
   "Nenhum item. Adicione os custos previstos da obra por categoria.": "No hay ítems. Agrega los costos previstos de la obra por categoría.",
-  "Nenhum lançamento ainda. Use “Lançar despesa” ou “Pagamento do cliente”.": "Todavía no hay movimientos. Usa “Registrar gasto” o “Pago del cliente”.",
+  "Nenhum lançamento ainda. Use “Lançar despesa” ou “Pagamento do cliente”.": "Todavía no hay movimientos. Usa “Registrar Gasto” o “Pago del cliente”.",
   "Nenhum pagamento registrado.": "No hay pagos registrados.",
   "Nenhum registro neste mês.": "No hay registros este mes.",
   "Nenhum registro no período.": "No hay registros en el período.",
@@ -750,5 +750,7 @@ const es: Record<string, string> = {
   "A API da Anthropic respondeu com erro ({status}): {msg}": "La API de Anthropic respondió con error ({status}): {msg}",
   "sem resposta do servidor": "sin respuesta del servidor",
   "Não consegui ler o comprovante ({motivo}). Preencha os campos à mão.": "No pude leer el comprobante ({motivo}). Llena los campos a mano.",
+  "Lançar Despesa": "Registrar Gasto",
+  "Nenhum lançamento ainda. Use “Lançar Despesa” ou “Pagamento do cliente”.": "Todavía no hay movimientos. Usa “Registrar Gasto” o “Pago del cliente”.",
 };
 export default es;
