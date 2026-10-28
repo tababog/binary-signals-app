@@ -4,7 +4,6 @@ import { db } from "@/lib/db";
 import { exigirUsuario } from "@/lib/auth";
 import { campoData, data, dinheiro, hora, lerDataHora } from "@/lib/format";
 import { nomeStatus, nomeTipoServico } from "@/lib/constantes";
-import { resumoObra } from "@/lib/financeiro";
 import { Cabecalho, SeloStatus, Vazio } from "@/components/ui";
 import { ItemVisita } from "@/components/ItemVisita";
 import { TextoUsuario } from "@/components/TextoUsuario";
@@ -20,7 +19,7 @@ export default async function Painel() {
   const seteDias = new Date(Date.now() - 7 * 24 * 3600 * 1000);
   const fimDeHoje = new Date(lerDataHora(`${campoData(new Date())}T23:59`)!.getTime() + 60_000);
   const [obras, naObra, ultimos, recentes, visitas, followUps] = await Promise.all([
-    db.obra.findMany({ where: { status: { not: "CONCLUIDA" } }, orderBy: { criadoEm: "desc" } }),
+    db.obra.findMany({ where: { status: { not: "CONCLUIDA" } }, include: { cliente: true }, orderBy: { criadoEm: "desc" } }),
     db.registroPonto.findMany({ where: { saida: null }, include: { usuario: true, obra: true }, orderBy: { entrada: "asc" } }),
     db.lancamento.findMany({ include: { obra: true }, orderBy: { criadoEm: "desc" }, take: 8 }),
     db.registroPonto.findMany({ where: { entrada: { gte: seteDias } }, include: { usuario: true, obra: true }, orderBy: { entrada: "desc" } }),
@@ -34,7 +33,6 @@ export default async function Painel() {
   ]);
   const agora = new Date();
   const alertas = recentes.filter(temAlertaLocal);
-  const resumos = await Promise.all(obras.map((o) => resumoObra(o.id)));
 
   return (
     <>
@@ -47,33 +45,25 @@ export default async function Painel() {
         <div className="lg:col-span-2">
         <div className="cartao overflow-x-auto">
           <h2 className="mb-3">{t("Obras em aberto")}</h2>
-          {resumos.length === 0 ? (
+          {obras.length === 0 ? (
             <Vazio>{t("Nenhuma obra em aberto.")}</Vazio>
           ) : (
             <table className="tabela">
               <thead>
-                <tr><th>{t("Obra")}</th><th>{t("Situação")}</th><th className="text-right">{t("Custo / Orçado")}</th><th className="text-right">{t("Saldo")}</th></tr>
+                <tr><th>{t("Obra")}</th><th>{t("Situação")}</th></tr>
               </thead>
               <tbody>
-                {resumos.map((r) => {
-                  const estourou = r.orcadoTotal > 0 && r.custoTotal > r.orcadoTotal;
-                  return (
-                    <tr key={r.obra.id}>
-                      <td>
-                        <Link href={`/obras/${r.obra.id}`} className="link">{r.obra.nome}</Link>
-                        <div className="text-xs text-stone-500">{r.obra.cliente.nome}</div>
-                      </td>
-                      <td>
-                        <SeloStatus status={r.obra.status} rotulo={t(nomeStatus(r.obra.status))} />
-                      </td>
-                      <td className={`text-right tabular-nums ${estourou ? "text-red-700" : ""}`}>
-                        {dinheiro(r.custoTotal)}
-                        <div className="text-xs text-stone-500">{t("de {valor}", { valor: dinheiro(r.orcadoTotal) })}{estourou && " ⚠️"}</div>
-                      </td>
-                      <td className={`text-right tabular-nums ${r.saldoCaixa < 0 ? "text-red-700" : "text-emerald-700"}`}>{dinheiro(r.saldoCaixa)}</td>
-                    </tr>
-                  );
-                })}
+                {obras.map((o) => (
+                  <tr key={o.id}>
+                    <td>
+                      <Link href={`/obras/${o.id}`} className="link">{o.nome}</Link>
+                      <div className="text-xs text-stone-500">{o.cliente.nome}</div>
+                    </td>
+                    <td>
+                      <SeloStatus status={o.status} rotulo={t(nomeStatus(o.status))} />
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           )}
