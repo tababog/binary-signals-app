@@ -719,5 +719,10 @@ const en: Record<string, string> = {
   "A chave ANTHROPIC_API_KEY não é válida.": "The ANTHROPIC_API_KEY is not valid.",
   "A pesquisa demorou demais. Tente de novo.": "The research took too long. Try again.",
   "A pesquisa demorou demais. Tente com menos itens.": "The research took too long. Try with fewer items.",
+  "+ Fornecedor novo": "+ New supplier",
+  "+ Subcontratado novo": "+ New subcontractor",
+  "Nome do fornecedor novo *": "New supplier name *",
+  "Nome do subcontratado novo *": "New subcontractor name *",
+  "Informe o nome do fornecedor ou subcontratado novo.": "Enter the new supplier or subcontractor name.",
 };
 export default en;

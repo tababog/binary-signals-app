@@ -7,6 +7,7 @@ import { Cabecalho, Campo, Voltar } from "@/components/ui";
 import { Formulario } from "@/components/Formulario";
 import { BotaoEnviar } from "@/components/BotaoEnviar";
 import { FotoRecibo } from "@/components/FotoRecibo";
+import { CampoFornecedor } from "@/components/CampoFornecedor";
 import { lancarDespesa } from "../../actions";
 import { getT } from "@/i18n/servidor";
 
@@ -40,17 +41,7 @@ export default async function NovaDespesa({ params }: { params: { id: string } }
                 ))}
               </select>
             </Campo>
-            <Campo rotulo={t("Fornecedor ou subcontratado")}>
-              <select className="campo" name="fornecedorId" defaultValue="">
-                <option value="">{t("— Nenhum —")}</option>
-                <optgroup label={t("Fornecedores")}>
-                  {fornecedores.filter((f) => f.tipo !== "SUBCONTRATADO").map((f) => <option key={f.id} value={f.id}>{f.nome}</option>)}
-                </optgroup>
-                <optgroup label={t("Subcontratados")}>
-                  {fornecedores.filter((f) => f.tipo === "SUBCONTRATADO").map((f) => <option key={f.id} value={f.id}>{f.nome}</option>)}
-                </optgroup>
-              </select>
-            </Campo>
+            <CampoFornecedor fornecedores={fornecedores} />
             <div className="sm:col-span-2">
               <Campo rotulo={t("O que foi comprado *")}>
                 <input className="campo" name="descricao" placeholder={t("Ex.: 20 sacos de cimento CP-II")} required />
