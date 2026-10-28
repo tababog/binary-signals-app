@@ -20,11 +20,11 @@ export default function PaginaLogin() {
         <div className="text-center">
           <img src="/icon.svg" alt="" className="mx-auto mb-2 h-14 w-14" />
           <h1>Tababog Obras</h1>
-          <p className="text-sm text-stone-500">Entre com seu e-mail e senha</p>
+          <p className="text-sm text-stone-500">Entre com seu e-mail ou telefone e a senha</p>
         </div>
         <div>
-          <label className="rotulo" htmlFor="email">E-mail</label>
-          <input className="campo" id="email" name="email" type="email" autoComplete="username" required />
+          <label className="rotulo" htmlFor="email">E-mail ou telefone</label>
+          <input className="campo" id="email" name="email" type="text" autoComplete="username" autoCapitalize="none" required />
         </div>
         <div>
           <label className="rotulo" htmlFor="senha">Senha</label>

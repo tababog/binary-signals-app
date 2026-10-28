@@ -2,17 +2,20 @@ import { db } from "./db";
 import { CATEGORIAS_DESPESA } from "./constantes";
 import { rateioCustosFixos } from "./custos-fixos";
 
-type Registro = { entrada: Date; saida: Date | null; valorHoraCent: number };
+type Registro = { entrada: Date; saida: Date | null; valorHoraCent: number; custoCent?: number | null };
 
 export function duracaoMs(r: { entrada: Date; saida: Date | null }, agora = new Date()) {
   return Math.max(0, (r.saida ?? agora).getTime() - r.entrada.getTime());
 }
 
-/** Custo da mão de obra própria: horas trabalhadas x valor/hora de cada registro fechado. */
+/**
+ * Custo da mão de obra própria dos registros fechados. Usa o custo calculado ao fechar o ponto
+ * (src/lib/custo-ponto.ts, que trata diaristas); registros antigos sem ele usam horas × valor/hora.
+ */
 export function custoPonto(registros: Registro[]) {
   return registros
     .filter((r) => r.saida)
-    .reduce((soma, r) => soma + Math.round((duracaoMs(r) / 3_600_000) * r.valorHoraCent), 0);
+    .reduce((soma, r) => soma + (r.custoCent ?? Math.round((duracaoMs(r) / 3_600_000) * r.valorHoraCent)), 0);
 }
 
 export type ResumoObra = Awaited<ReturnType<typeof resumoObra>>;

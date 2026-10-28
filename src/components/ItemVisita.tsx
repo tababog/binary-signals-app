@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { dataHora } from "@/lib/format";
+import { data, dataHora } from "@/lib/format";
+import { LembreteVisita } from "./LembreteVisita";
 import { nomeTipoServico } from "@/lib/constantes";
 
 type Visita = {
@@ -8,12 +9,17 @@ type Visita = {
   endereco: string | null;
   tipoServico: string | null;
   status: string;
+  descricao: string | null;
+  resultado?: string | null;
   cliente: { nome: string; telefone: string | null };
 };
 
 /** Uma visita na lista: cliente, hora, serviço, e atalhos para o mapa e o telefone. */
 export function ItemVisita({ v, agora }: { v: Visita; agora: Date }) {
   const atrasada = v.status === "AGENDADA" && v.dataHora < agora;
+  const dia = data(v.dataHora);
+  const hoje = v.status === "AGENDADA" && !atrasada && dia === data(agora);
+  const amanha = v.status === "AGENDADA" && dia === data(new Date(agora.getTime() + 24 * 3600 * 1000));
   return (
     <li className="flex flex-wrap items-start justify-between gap-2 py-2">
       <div className="min-w-0">
@@ -22,7 +28,17 @@ export function ItemVisita({ v, agora }: { v: Visita; agora: Date }) {
           {dataHora(v.dataHora)}
           {v.tipoServico && ` · ${nomeTipoServico(v.tipoServico)}`}
           {atrasada && <span className="selo ml-2 bg-amber-100 text-amber-800">Passou do horário</span>}
-          {v.status === "REALIZADA" && <span className="selo ml-2 bg-emerald-100 text-emerald-800">Realizada</span>}
+          {hoje && <span className="selo ml-2 bg-marca-600 text-white">Hoje</span>}
+          {amanha && <span className="selo ml-2 bg-marca-100 text-marca-700">Amanhã</span>}
+          {v.status === "REALIZADA" && (
+            v.resultado === "FECHOU" ? (
+              <span className="selo ml-2 bg-emerald-100 text-emerald-800">Fechou contrato</span>
+            ) : v.resultado === "SEM_INTERESSE" ? (
+              <span className="selo ml-2 bg-stone-200 text-stone-600">Sem interesse</span>
+            ) : (
+              <span className="selo ml-2 bg-sky-100 text-sky-800">Em negociação</span>
+            )
+          )}
           {v.status === "CANCELADA" && <span className="selo ml-2 bg-stone-200 text-stone-600">Cancelada</span>}
         </div>
         {v.endereco && <div className="truncate text-xs text-stone-500">{v.endereco}</div>}
@@ -37,6 +53,7 @@ export function ItemVisita({ v, agora }: { v: Visita; agora: Date }) {
           <a className="botao-secundario px-2 py-1" href={`tel:${v.cliente.telefone.replace(/[^\d+]/g, "")}`}>Ligar</a>
         )}
       </div>
+      {v.status === "AGENDADA" && !atrasada && <LembreteVisita v={v} compacto />}
     </li>
   );
 }

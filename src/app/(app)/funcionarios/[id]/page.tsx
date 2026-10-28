@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { db } from "@/lib/db";
 import { exigirAdmin } from "@/lib/auth";
-import { data, dinheiro, hora, horas, inicioDoMes } from "@/lib/format";
+import { data, dinheiro, hora, horas, inicioDoMes, pagamento } from "@/lib/format";
 import { custoPonto, duracaoMs } from "@/lib/financeiro";
 import { Cabecalho, Indicador, Vazio, Voltar } from "@/components/ui";
 import { Formulario } from "@/components/Formulario";
@@ -31,8 +31,8 @@ export default async function Funcionario({ params, searchParams }: { params: { 
 
   return (
     <>
-      <Voltar href="/funcionarios" rotulo="Funcionários" />
-      <Cabecalho titulo={usuario.nome} subtitulo={usuario.funcao ?? undefined} />
+      <Voltar href="/funcionarios" rotulo="Equipe" />
+      <Cabecalho titulo={usuario.nome} subtitulo={[usuario.vinculo === "HELPER" ? "Helper" : null, usuario.funcao, pagamento(usuario)].filter(Boolean).join(" · ")} />
 
       <div className="mb-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
         <Indicador rotulo="Horas no mês" valor={horas(fechados.reduce((s, r) => s + duracaoMs(r), 0))} />
@@ -72,7 +72,7 @@ export default async function Funcionario({ params, searchParams }: { params: { 
             <CamposFuncionario valor={usuario} />
             <label className="flex items-center gap-2">
               <input type="checkbox" name="ativo" defaultChecked={usuario.ativo} className="h-4 w-4" />
-              <span className="text-sm">Acesso ativo (desmarque quando o funcionário sair da empresa)</span>
+              <span className="text-sm">Acesso ativo (desmarque quando sair da empresa ou o helper terminar o serviço)</span>
             </label>
             <BotaoEnviar>Salvar alterações</BotaoEnviar>
           </Formulario>

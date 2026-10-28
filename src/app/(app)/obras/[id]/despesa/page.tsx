@@ -13,7 +13,7 @@ export default async function NovaDespesa({ params }: { params: { id: string } }
   await exigirAdmin();
   const [obra, fornecedores] = await Promise.all([
     db.obra.findUnique({ where: { id: params.id } }),
-    db.fornecedor.findMany({ orderBy: { nome: "asc" }, select: { id: true, nome: true } }),
+    db.fornecedor.findMany({ orderBy: { nome: "asc" }, select: { id: true, nome: true, tipo: true } }),
   ]);
   if (!obra) notFound();
 
@@ -38,12 +38,15 @@ export default async function NovaDespesa({ params }: { params: { id: string } }
                 ))}
               </select>
             </Campo>
-            <Campo rotulo="Fornecedor">
+            <Campo rotulo="Fornecedor ou subcontratado">
               <select className="campo" name="fornecedorId" defaultValue="">
-                <option value="">— Sem fornecedor —</option>
-                {fornecedores.map((f) => (
-                  <option key={f.id} value={f.id}>{f.nome}</option>
-                ))}
+                <option value="">— Nenhum —</option>
+                <optgroup label="Fornecedores">
+                  {fornecedores.filter((f) => f.tipo !== "SUBCONTRATADO").map((f) => <option key={f.id} value={f.id}>{f.nome}</option>)}
+                </optgroup>
+                <optgroup label="Subcontratados">
+                  {fornecedores.filter((f) => f.tipo === "SUBCONTRATADO").map((f) => <option key={f.id} value={f.id}>{f.nome}</option>)}
+                </optgroup>
               </select>
             </Campo>
             <div className="sm:col-span-2">

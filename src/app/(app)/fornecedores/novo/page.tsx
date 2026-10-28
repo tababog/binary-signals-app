@@ -1,23 +1,21 @@
 import { exigirAdmin } from "@/lib/auth";
-import { Cabecalho, Campo, Voltar } from "@/components/ui";
+import { Cabecalho, Voltar } from "@/components/ui";
 import { Formulario } from "@/components/Formulario";
-import { CamposContato } from "@/components/CamposContato";
+import { CamposFornecedor } from "@/components/CamposFornecedor";
 import { BotaoEnviar } from "@/components/BotaoEnviar";
 import { salvarFornecedor } from "../actions";
 
-export default async function NovoFornecedor() {
+export default async function NovoFornecedor({ searchParams }: { searchParams: { tipo?: string } }) {
   await exigirAdmin();
+  const sub = searchParams.tipo === "SUBCONTRATADO";
   return (
     <>
-      <Voltar href="/fornecedores" rotulo="Fornecedores" />
-      <Cabecalho titulo="Novo fornecedor" />
+      <Voltar href={sub ? "/subcontratados" : "/fornecedores"} rotulo={sub ? "Subcontratados" : "Fornecedores"} />
+      <Cabecalho titulo={sub ? "Novo subcontratado" : "Novo fornecedor"} />
       <div className="cartao">
         <Formulario acao={salvarFornecedor.bind(null, null)}>
-          <CamposContato rotuloDocumento="CNPJ / CPF" />
-          <Campo rotulo="Categoria (ex.: cimento, elétrica, madeira)">
-            <input className="campo" name="categoria" />
-          </Campo>
-          <BotaoEnviar>Salvar fornecedor</BotaoEnviar>
+          <CamposFornecedor tipoInicial={sub ? "SUBCONTRATADO" : "FORNECEDOR"} />
+          <BotaoEnviar>Salvar</BotaoEnviar>
         </Formulario>
       </div>
     </>

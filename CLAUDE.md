@@ -31,6 +31,13 @@ Conversa com o usuário em português; telas internas em português.
    mapas, distâncias e alertas aparecem só para administradores. Não remover esse aviso: alguns estados dos EUA
    exigem notificação de monitoramento eletrônico.
 7. **Fluxo de caixa é por obra** (conta do cliente), separado do caixa geral da empresa.
+8. **Idiomas.** O app tem português, inglês e espanhol; cada pessoa escolhe o seu. Textos escritos pelos usuários
+   (descrições, observações, itens de orçamento) são traduzidos automaticamente para os outros dois idiomas, com
+   tradução guardada para não repetir o custo, e opção de ver o original. Nomes e endereços não são traduzidos.
+9. **Orçamento e proposta para o cliente saem sempre em inglês**, mesmo quando o Alessandro (português) ou o
+   Emanuel (inglês) montam tudo na própria língua. Mensagens de follow-up abrem em inglês por padrão.
+10. **Android e iPhone.** O app é web instalável na tela inicial (ícones PNG, tela cheia no iPhone); toda tela tem que
+   funcionar bem no celular dos dois sistemas.
 
 ## Como trabalhar neste projeto
 
@@ -46,14 +53,20 @@ Conversa com o usuário em português; telas internas em português.
 - [x] 2. USD e ponto com GPS (raio da obra, alertas de ponto fora da obra).
 - [x] 3. Hospedagem: no ar na Vercel (projeto `tababog-obras`, plano Hobby) com Supabase (`tababog-obras`,
        East US, bucket privado `comprovantes`, Data API desligada). Cada push na `main` publica sozinho.
-- [ ] 4. Visita técnica / levantamento: fotos, medidas e anotações no cliente antes de virar obra.
+- [~] 4. Visitas: agenda, lembrete na agenda do celular e follow-up semiautomático (WhatsApp/SMS/e-mail pelo celular,
+       3/7/14 dias, resultado Fechou/Sem interesse). Falta: fotos, medidas e anotações do levantamento.
 - [ ] 5. Banco de preços histórico (regra 4) + cadastro de trabalhos antigos.
 - [ ] 6. Skill de precificação: materiais, mão de obra, custo, preço de mercado e duas opções (regras 2, 3 e 5).
 - [ ] 7. Portfólio da empresa: quem somos, Alessandro e Emanuel, anos de mercado, fotos de trabalhos por categoria
        (cabinets, drywall, etc.).
-- [ ] 8. Proposta para o cliente: apresentação profissional (portfólio da categoria + escopo item a item +
-       duas opções + valores) com aceite e assinatura do contrato online.
+- [ ] 8. Proposta para o cliente (sempre em inglês, regra 9): apresentação profissional (portfólio da categoria +
+       escopo item a item + duas opções + valores) enviada como **link** (WhatsApp/SMS/e-mail). Na página o cliente
+       responde com botões: **aprovar a opção 1 ou 2** (nome, assinatura na tela, data e IP registrados), **recusar**
+       ou **pedir para falar**. A resposta aparece no Painel e, se aprovada, marca a visita como "Fechou contrato"
+       e encerra os follow-ups. Contrato seguindo o Home Improvement Act de CT (ver `docs/empresa.md`).
 - [ ] 9. Relatório final da obra: lucro ou prejuízo, multiplicador atingido x meta 2x, onde o custo estourou.
 - [x] 10. Custos fixos e diagnóstico (página *Empresa*): custos recorrentes + gastos avulsos, rateio por dia trabalhado
        (`src/lib/custos-fixos.ts`), custo fixo entra no custo de cada obra e no orçado (dias previstos × custo/dia),
        resultado do mês. A precificação (etapa 6) deve somar dias previstos × custo fixo por dia antes da meta 2x.
+- [ ] 11. Idiomas (regra 8): telas em PT/EN/ES com seletor + tradução automática do conteúdo pela API da Anthropic
+       (chave em `ANTHROPIC_API_KEY` na Vercel).

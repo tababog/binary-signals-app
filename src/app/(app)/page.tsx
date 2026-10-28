@@ -2,8 +2,8 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { db } from "@/lib/db";
 import { exigirUsuario } from "@/lib/auth";
-import { data, dinheiro, hora } from "@/lib/format";
-import { nomeStatus } from "@/lib/constantes";
+import { campoData, data, dinheiro, hora, lerDataHora } from "@/lib/format";
+import { nomeStatus, nomeTipoServico } from "@/lib/constantes";
 import { resumoObra } from "@/lib/financeiro";
 import { Cabecalho, SeloStatus, Vazio } from "@/components/ui";
 import { ItemVisita } from "@/components/ItemVisita";
@@ -15,12 +15,19 @@ export default async function Painel() {
   if (usuario.papel !== "ADMIN") redirect("/ponto");
 
   const seteDias = new Date(Date.now() - 7 * 24 * 3600 * 1000);
-  const [obras, naObra, ultimos, recentes, visitas] = await Promise.all([
+  const fimDeHoje = new Date(lerDataHora(`${campoData(new Date())}T23:59`)!.getTime() + 60_000);
+  const [obras, naObra, ultimos, recentes, visitas, followUps] = await Promise.all([
     db.obra.findMany({ where: { status: { not: "CONCLUIDA" } }, orderBy: { criadoEm: "desc" } }),
     db.registroPonto.findMany({ where: { saida: null }, include: { usuario: true, obra: true }, orderBy: { entrada: "asc" } }),
     db.lancamento.findMany({ include: { obra: true }, orderBy: { criadoEm: "desc" }, take: 8 }),
     db.registroPonto.findMany({ where: { entrada: { gte: seteDias } }, include: { usuario: true, obra: true }, orderBy: { entrada: "desc" } }),
     db.visita.findMany({ where: { status: "AGENDADA" }, include: { cliente: true }, orderBy: { dataHora: "asc" }, take: 6 }),
+    // Follow-ups que vencem hoje ou já passaram, de clientes ainda em negociação
+    db.followUp.findMany({
+      where: { enviadoEm: null, dataPrevista: { lt: fimDeHoje }, visita: { status: "REALIZADA", resultado: null } },
+      include: { visita: { include: { cliente: true } } },
+      orderBy: { dataPrevista: "asc" },
+    }),
   ]);
   const agora = new Date();
   const alertas = recentes.filter(temAlertaLocal);
@@ -32,8 +39,9 @@ export default async function Painel() {
         <Link href="/obras/nova" className="botao">+ Nova obra</Link>
       </Cabecalho>
 
-      <div className="grid gap-4 lg:grid-cols-3">
-        <div className="space-y-4 lg:col-span-2">
+      {/* Ordem pedida: obras, equipe, visitas, lançamentos. Uma coluna no celular, duas no computador. */}
+      <div className="grid gap-4 lg:grid-cols-2">
+        <div className="lg:col-span-2">
         <div className="cartao overflow-x-auto">
           <h2 className="mb-3">Obras em aberto</h2>
           {resumos.length === 0 ? (
@@ -68,35 +76,8 @@ export default async function Painel() {
             </table>
           )}
         </div>
-
-        <div className="cartao">
-          <div className="mb-2 flex items-center justify-between gap-2">
-            <h2>Visitas agendadas</h2>
-            <Link href="/visitas/nova" className="botao px-3 py-1.5 text-sm">+ Agendar</Link>
-          </div>
-          {visitas.length === 0 ? (
-            <Vazio>Nenhuma visita agendada.</Vazio>
-          ) : (
-            <ul className="divide-y divide-stone-100">{visitas.map((v) => <ItemVisita key={v.id} v={v} agora={agora} />)}</ul>
-          )}
-          <Link href="/visitas" className="link mt-2 inline-block text-sm">Ver todas as visitas →</Link>
         </div>
-        </div>
-
         <div className="space-y-4">
-          {alertas.length > 0 && (
-            <div className="cartao border-red-200 bg-red-50">
-              <h2 className="mb-2">⚠ Ponto fora da obra (7 dias)</h2>
-              <ul className="space-y-1 text-sm">
-                {alertas.slice(0, 6).map((r) => (
-                  <li key={r.id}>
-                    <b>{r.usuario.nome}</b> · {r.obra.nome} · {data(r.entrada)} {hora(r.entrada)}
-                  </li>
-                ))}
-              </ul>
-              <Link href="/registros?alertas=1" className="link mt-2 inline-block text-sm">Ver todos os alertas →</Link>
-            </div>
-          )}
           <div className="cartao">
             <h2 className="mb-2">Equipe trabalhando agora</h2>
             {naObra.length === 0 ? (
@@ -113,6 +94,52 @@ export default async function Painel() {
               </ul>
             )}
           </div>
+          {alertas.length > 0 && (
+            <div className="cartao border-red-200 bg-red-50">
+              <h2 className="mb-2">⚠ Ponto fora da obra (7 dias)</h2>
+              <ul className="space-y-1 text-sm">
+                {alertas.slice(0, 6).map((r) => (
+                  <li key={r.id}>
+                    <b>{r.usuario.nome}</b> · {r.obra.nome} · {data(r.entrada)} {hora(r.entrada)}
+                  </li>
+                ))}
+              </ul>
+              <Link href="/registros?alertas=1" className="link mt-2 inline-block text-sm">Ver todos os alertas →</Link>
+            </div>
+          )}
+        </div>
+        <div className="cartao self-start">
+          <div className="mb-2 flex items-center justify-between gap-2">
+            <h2>Visitas agendadas</h2>
+            <Link href="/visitas/nova" className="botao px-3 py-1.5 text-sm">+ Agendar</Link>
+          </div>
+          {visitas.length === 0 ? (
+            <Vazio>Nenhuma visita agendada.</Vazio>
+          ) : (
+            <ul className="divide-y divide-stone-100">{visitas.map((v) => <ItemVisita key={v.id} v={v} agora={agora} />)}</ul>
+          )}
+          <Link href="/visitas" className="link mt-2 inline-block text-sm">Ver todas as visitas →</Link>
+        </div>
+        {followUps.length > 0 && (
+          <div className="cartao self-start border-sky-200 bg-sky-50 lg:col-start-2">
+            <h2 className="mb-2">💬 Follow-ups de hoje</h2>
+            <ul className="divide-y divide-sky-100 text-sm">
+              {followUps.map((f) => (
+                <li key={f.id} className="flex items-center justify-between gap-2 py-2">
+                  <span>
+                    <b>{f.visita.cliente.nome}</b>
+                    {f.visita.tipoServico && ` · ${nomeTipoServico(f.visita.tipoServico)}`}
+                    <span className="block text-xs text-stone-500">
+                      {f.ordem}º follow-up{f.dataPrevista < lerDataHora(`${campoData(new Date())}T00:00`)! && ` · atrasado desde ${data(f.dataPrevista)}`}
+                    </span>
+                  </span>
+                  <Link href={`/visitas/${f.visitaId}`} className="botao px-3 py-1.5 text-sm">Enviar</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+        <div className="lg:col-span-2">
           <div className="cartao">
             <h2 className="mb-2">Últimos lançamentos</h2>
             {ultimos.length === 0 ? (
