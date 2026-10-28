@@ -1,11 +1,13 @@
 "use server";
 
 import bcrypt from "bcryptjs";
+import { randomBytes } from "node:crypto";
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { db } from "@/lib/db";
 import { exigirAdmin, exigirUsuario } from "@/lib/auth";
 import { paraCentavos, texto } from "@/lib/format";
+import { gerarConvite } from "@/lib/convite";
 import type { EstadoForm } from "@/components/Formulario";
 
 function dadosFuncionario(form: FormData) {
@@ -24,12 +26,16 @@ export async function criarFuncionario(_e: EstadoForm, form: FormData): Promise<
   const dados = dadosFuncionario(form);
   const senha = String(form.get("senha") ?? "");
   if (!dados.nome || !dados.email) return { erro: "Informe nome e e-mail." };
-  if (senha.length < 6) return { erro: "A senha precisa ter pelo menos 6 caracteres." };
+  if (senha && senha.length < 6) return { erro: "A senha precisa ter pelo menos 6 caracteres." };
   if (await db.usuario.findUnique({ where: { email: dados.email } })) return { erro: "Já existe um usuário com este e-mail." };
 
-  const usuario = await db.usuario.create({ data: { ...dados, senhaHash: await bcrypt.hash(senha, 10) } });
+  // Sem senha: o funcionário cria a dele pelo link de convite. Até lá a conta tem uma senha aleatória que ninguém conhece.
+  const senhaHash = await bcrypt.hash(senha || randomBytes(32).toString("hex"), 10);
+  const usuario = await db.usuario.create({ data: { ...dados, senhaHash } });
   revalidatePath("/funcionarios");
-  redirect(`/funcionarios/${usuario.id}`);
+  if (senha) redirect(`/funcionarios/${usuario.id}`);
+  const token = await gerarConvite(usuario.id);
+  redirect(`/funcionarios/${usuario.id}?convite=${token}`);
 }
 
 export async function atualizarFuncionario(id: string, _e: EstadoForm, form: FormData): Promise<EstadoForm> {
@@ -63,4 +69,10 @@ export async function trocarMinhaSenha(_e: EstadoForm, form: FormData): Promise<
   if (nova !== form.get("confirmacao")) return { erro: "A confirmação não confere com a nova senha." };
   await db.usuario.update({ where: { id: usuario.id }, data: { senhaHash: await bcrypt.hash(nova, 10) } });
   redirect("/conta?ok=1");
+}
+
+export async function novoConvite(id: string) {
+  await exigirAdmin();
+  const token = await gerarConvite(id);
+  redirect(`/funcionarios/${id}?convite=${token}`);
 }

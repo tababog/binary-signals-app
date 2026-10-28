@@ -33,6 +33,9 @@ export default async function Funcionarios() {
                 <td>
                   {u.papel === "ADMIN" ? <span className="selo bg-marca-100 text-marca-700">Admin</span> : <span className="selo bg-stone-100">Funcionário</span>}
                   {!u.ativo && <span className="selo ml-1 bg-red-100 text-red-700">Inativo</span>}
+                  {u.ativo && u.conviteHash && u.conviteExpira && u.conviteExpira > new Date() && (
+                    <span className="selo ml-1 bg-amber-100 text-amber-800">Convite pendente</span>
+                  )}
                 </td>
                 <td className="text-right tabular-nums">{dinheiro(u.valorHoraCent)}</td>
                 <td>{naObra.has(u.id) ? <span className="selo bg-emerald-100 text-emerald-800">Em {naObra.get(u.id)}</span> : "—"}</td>

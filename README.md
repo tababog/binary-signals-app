@@ -20,7 +20,9 @@ Funciona no navegador do computador e do celular (pode ser "instalado" na tela i
   entra direto no caixa da obra.
 - **Pagamento do cliente**: registra o valor recebido, que entra no caixa da obra.
 - **Clientes** e **Fornecedores**: cadastro completo; o fornecedor mostra o total já comprado dele.
-- **Funcionários**: cria o login (e-mail + senha) de cada funcionário, define o valor da hora e o tipo de acesso.
+- **Funcionários**: cadastra cada funcionário (ou administrador), o valor da hora e o tipo de acesso. Sem senha, o app
+  gera um **link de convite** (botão "Enviar pelo WhatsApp"): a pessoa abre, cria a própria senha e já entra. O mesmo
+  link serve para quem esqueceu a senha. Vale 7 dias e só uma vez; gerar outro cancela o anterior.
   Para tirar o acesso de quem saiu da empresa, basta desmarcar "Acesso ativo".
 - **Horas**: todos os registros de ponto, com filtros, custo do período, correção de horários e lançamento
   manual para quem esqueceu de bater o ponto. Cada entrada e saída mostra **"✓ Na obra"** ou **"⚠ Fora"** com a

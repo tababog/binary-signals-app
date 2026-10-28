@@ -23,9 +23,14 @@ model Usuario {
   valorHoraCent  Int      @default(0)
   ativo          Boolean  @default(true)
   criadoEm       DateTime @default(now())
+  // Link de convite / redefinição de senha: guarda só o hash SHA-256 do token enviado ao funcionário
+  conviteHash    String?
+  conviteExpira  DateTime?
 
   registros      RegistroPonto[]
   lancamentos    Lancamento[]
+
+  @@index([conviteHash])
 }
 
 model Cliente {
