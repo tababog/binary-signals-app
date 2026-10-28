@@ -40,6 +40,10 @@ tela cheia, como um app).
   distância até a obra e o link para o mapa. O Painel lista os pontos fora da obra dos últimos 7 dias.
   Para isso, cadastre a localização da obra (botão "Usar minha localização atual" estando no local) e o raio aceito.
 
+- **Preços (banco de preços)**: trabalhos já feitos (antigos, cadastrados à mão, e obras concluídas, com os números
+  reais do app) com serviço, cidade/condado, quantidade, material, mão de obra, dias, horas e preço cobrado. Mostra por
+  serviço o preço e o custo por sq ft/ft linear, o multiplicador e o **preço mínimo para a meta 2x**, separando
+  Fairfield County do resto de Connecticut. Obras concluídas que ainda não viraram referência aparecem como pendentes.
 - **Empresa - Fluxo de caixa**: o fluxo de caixa da empresa lido da planilha do Google Drive, em cartões para o
   celular (mês a mês ou acumulado): entradas, custos das obras, custos fixos, retiradas dos sócios, resultado, saldo
   conferido com o extrato do banco e o multiplicador comparado com a meta 2x. Os custos fixos podem usar a média

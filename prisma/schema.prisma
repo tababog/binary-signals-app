@@ -188,6 +188,8 @@ model GastoEmpresa {
 model TrabalhoReferencia {
   id                String   @id @default(cuid())
   tipoServico       String
+  // Subserviços (mesmos códigos da visita, ex.: "NOVO" ou "INTERNA,INTERNA.TETO")
+  subServicos       String?
   descricao         String
   cidade            String?
   condado           String?
@@ -198,6 +200,8 @@ model TrabalhoReferencia {
   custoMaoObraCent  Int      @default(0)
   custoOutrosCent   Int      @default(0)
   dias              Int      @default(0)
+  // Horas de mão de obra (equipe própria) gastas no trabalho
+  horas             Float    @default(0)
   precoCobradoCent  Int
   observacoes       String?
   obraId            String?  @unique

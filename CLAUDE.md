@@ -58,7 +58,10 @@ Conversa com o usuário em português; telas internas em português.
 - [~] 4. Visitas: agenda, lembrete na agenda do celular e follow-up semiautomático (WhatsApp/SMS/e-mail pelo celular,
        3/7/14 dias, resultado Fechou/Sem interesse), serviço + subserviços, "Outros" vira opção fixa
        (`ServicoPersonalizado`), fotos do trabalho (Supabase Storage). Falta: medidas do levantamento.
-- [ ] 5. Banco de preços histórico (regra 4) + cadastro de trabalhos antigos.
+- [x] 5. Banco de preços histórico (regra 4) + cadastro de trabalhos antigos: página *Preços* (`/precos`), resumo por
+       serviço + subserviço + unidade (`src/lib/precos.ts`) com preço/custo por unidade, faixa, multiplicador e preço
+       mínimo para 2x, filtro Fairfield County x resto de CT; obra concluída vira referência com os números reais
+       (`src/lib/referencia-obra.ts`). A etapa 6 deve consultar `resumirPorServico` antes do preço de mercado.
 - [ ] 6. Skill de precificação: materiais, mão de obra, custo, preço de mercado e duas opções (regras 2, 3 e 5).
 - [ ] 7. Portfólio da empresa: quem somos, Alessandro e Emanuel, anos de mercado, fotos de trabalhos por categoria
        (cabinets, drywall, etc.).

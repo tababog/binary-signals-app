@@ -20,6 +20,7 @@ export default async function LayoutApp({ children }: { children: React.ReactNod
         { href: "/subcontratados", rotulo: t("Subcontratados") },
         { href: "/funcionarios", rotulo: t("Equipe") },
         { href: "/registros", rotulo: t("Horas") },
+        { href: "/precos", rotulo: t("Preços") },
         { href: "/empresa", rotulo: t("Empresa") },
         { href: "/ponto", rotulo: t("Meu ponto") },
       ]
