@@ -42,7 +42,7 @@ export default async function Obra({ params, searchParams }: { params: { id: str
           </span>
         }
       >
-        <Link href={`/obras/${obra.id}/despesa`} className="botao">{t("📷 Lançar despesa")}</Link>
+        <Link href={`/obras/${obra.id}/despesa`} className="botao-secundario">{t("📷 Lançar despesa")}</Link>
         <Link href={`/obras/${obra.id}/recebimento`} className="botao-secundario">{t("+ Pagamento do cliente")}</Link>
         <Link href={`/obras/${obra.id}/editar`} className="botao-secundario">{t("Editar")}</Link>
       </Cabecalho>
