@@ -24,7 +24,7 @@ const TIPOS_IMAGEM = ["image/jpeg", "image/png", "image/webp", "image/gif"] as c
 let cliente: Anthropic | null = null;
 function api() {
   if (!process.env.ANTHROPIC_API_KEY) return null;
-  cliente ??= new Anthropic({ timeout: 60_000, maxRetries: 1 });
+  cliente ??= new Anthropic({ timeout: 50_000, maxRetries: 1 });
   return cliente;
 }
 

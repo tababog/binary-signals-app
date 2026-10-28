@@ -65,11 +65,12 @@ export function FotoRecibo({ rotulo, ler }: { rotulo?: string; ler?: "RECEBIMENT
     const dados = new FormData();
     dados.set("arquivo", arquivo);
     dados.set("tipo", ler!);
-    const r = await lerComprovante(dados).catch(() => null);
-    if (!r) {
-      setLeitura({ lendo: false, aviso: t("Não consegui ler o comprovante. Preencha os campos à mão.") });
+    const resposta = await lerComprovante(dados).catch((e: Error) => ({ erro: e.message || t("sem resposta do servidor") }));
+    if ("erro" in resposta) {
+      setLeitura({ lendo: false, aviso: t("Não consegui ler o comprovante ({motivo}). Preencha os campos à mão.", { motivo: resposta.erro }) });
       return;
     }
+    const r = resposta.dados;
     const campo = (nome: string) => form.elements.namedItem(nome) as HTMLInputElement | HTMLSelectElement | null;
     const preencher = (nome: string, valor: string | null) => {
       const el = campo(nome);

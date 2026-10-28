@@ -11,6 +11,9 @@ import { CampoFornecedor } from "@/components/CampoFornecedor";
 import { lancarDespesa } from "../../actions";
 import { getT } from "@/i18n/servidor";
 
+// A leitura do comprovante pela IA (ação chamada desta página) leva de 10 a 30 segundos
+export const maxDuration = 60;
+
 export default async function NovaDespesa({ params }: { params: { id: string } }) {
   await exigirAdmin();
   const t = getT();
