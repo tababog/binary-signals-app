@@ -73,3 +73,9 @@ export function nomeTipoServico(t: string) {
 export function nomeUnidade(u: string) {
   return (UNIDADES as Record<string, string>)[u] ?? u;
 }
+
+export const STATUS_VISITA = {
+  AGENDADA: "Agendada",
+  REALIZADA: "Realizada",
+  CANCELADA: "Cancelada",
+} as const;

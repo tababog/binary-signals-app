@@ -44,6 +44,7 @@ model Cliente {
   criadoEm  DateTime @default(now())
 
   obras     Obra[]
+  visitas   Visita[]
 }
 
 model Fornecedor {
@@ -188,4 +189,20 @@ model TrabalhoReferencia {
   criadoEm          DateTime @default(now())
 
   @@index([tipoServico])
+}
+
+// Visita ao cliente para levantamento e orçamento, antes de virar obra.
+// status: "AGENDADA", "REALIZADA" ou "CANCELADA"; tipoServico: chave de TIPOS_SERVICO
+model Visita {
+  id          String   @id @default(cuid())
+  clienteId   String
+  cliente     Cliente  @relation(fields: [clienteId], references: [id])
+  dataHora    DateTime
+  endereco    String?
+  tipoServico String?
+  descricao   String?
+  status      String   @default("AGENDADA")
+  criadoEm    DateTime @default(now())
+
+  @@index([dataHora])
 }

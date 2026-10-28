@@ -5,7 +5,8 @@ import { exigirUsuario } from "@/lib/auth";
 import { data, dinheiro, hora } from "@/lib/format";
 import { nomeStatus } from "@/lib/constantes";
 import { resumoObra } from "@/lib/financeiro";
-import { Cabecalho, Indicador, SeloStatus, Vazio } from "@/components/ui";
+import { Cabecalho, SeloStatus, Vazio } from "@/components/ui";
+import { ItemVisita } from "@/components/ItemVisita";
 import { SeloLocal } from "@/components/SeloLocal";
 import { temAlertaLocal } from "@/lib/geo";
 
@@ -14,15 +15,16 @@ export default async function Painel() {
   if (usuario.papel !== "ADMIN") redirect("/ponto");
 
   const seteDias = new Date(Date.now() - 7 * 24 * 3600 * 1000);
-  const [obras, naObra, ultimos, recentes] = await Promise.all([
+  const [obras, naObra, ultimos, recentes, visitas] = await Promise.all([
     db.obra.findMany({ where: { status: { not: "CONCLUIDA" } }, orderBy: { criadoEm: "desc" } }),
     db.registroPonto.findMany({ where: { saida: null }, include: { usuario: true, obra: true }, orderBy: { entrada: "asc" } }),
     db.lancamento.findMany({ include: { obra: true }, orderBy: { criadoEm: "desc" }, take: 8 }),
     db.registroPonto.findMany({ where: { entrada: { gte: seteDias } }, include: { usuario: true, obra: true }, orderBy: { entrada: "desc" } }),
+    db.visita.findMany({ where: { status: "AGENDADA" }, include: { cliente: true }, orderBy: { dataHora: "asc" }, take: 6 }),
   ]);
+  const agora = new Date();
   const alertas = recentes.filter(temAlertaLocal);
   const resumos = await Promise.all(obras.map((o) => resumoObra(o.id)));
-  const soma = (f: (r: (typeof resumos)[number]) => number) => resumos.reduce((s, r) => s + f(r), 0);
 
   return (
     <>
@@ -30,15 +32,9 @@ export default async function Painel() {
         <Link href="/obras/nova" className="botao">+ Nova obra</Link>
       </Cabecalho>
 
-      <div className="mb-4 grid grid-cols-2 gap-3 lg:grid-cols-4">
-        <Indicador rotulo="Contratos em aberto" valor={dinheiro(soma((r) => r.obra.valorContratoCent))} />
-        <Indicador rotulo="Já recebido" valor={dinheiro(soma((r) => r.recebido))} detalhe={`A receber ${dinheiro(soma((r) => r.aReceber))}`} />
-        <Indicador rotulo="Custo realizado" valor={dinheiro(soma((r) => r.custoTotal))} />
-        <Indicador rotulo="Saldo das obras" valor={dinheiro(soma((r) => r.saldoCaixa))} tom={soma((r) => r.saldoCaixa) < 0 ? "ruim" : "bom"} />
-      </div>
-
       <div className="grid gap-4 lg:grid-cols-3">
-        <div className="cartao overflow-x-auto lg:col-span-2">
+        <div className="space-y-4 lg:col-span-2">
+        <div className="cartao overflow-x-auto">
           <h2 className="mb-3">Obras em aberto</h2>
           {resumos.length === 0 ? (
             <Vazio>Nenhuma obra em aberto.</Vazio>
@@ -71,6 +67,20 @@ export default async function Painel() {
               </tbody>
             </table>
           )}
+        </div>
+
+        <div className="cartao">
+          <div className="mb-2 flex items-center justify-between gap-2">
+            <h2>Visitas agendadas</h2>
+            <Link href="/visitas/nova" className="botao px-3 py-1.5 text-sm">+ Agendar</Link>
+          </div>
+          {visitas.length === 0 ? (
+            <Vazio>Nenhuma visita agendada.</Vazio>
+          ) : (
+            <ul className="divide-y divide-stone-100">{visitas.map((v) => <ItemVisita key={v.id} v={v} agora={agora} />)}</ul>
+          )}
+          <Link href="/visitas" className="link mt-2 inline-block text-sm">Ver todas as visitas →</Link>
+        </div>
         </div>
 
         <div className="space-y-4">

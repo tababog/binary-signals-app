@@ -22,6 +22,7 @@ export default async function Cliente({ params }: { params: { id: string } }) {
     <>
       <Voltar href="/clientes" rotulo="Clientes" />
       <Cabecalho titulo={cliente.nome}>
+        <Link href={`/visitas/nova?cliente=${cliente.id}`} className="botao-secundario">+ Agendar visita</Link>
         <Link href={`/obras/nova?cliente=${cliente.id}`} className="botao">+ Nova obra para este cliente</Link>
       </Cabecalho>
 

@@ -8,7 +8,9 @@ Funciona no navegador do computador e do celular (pode ser "instalado" na tela i
 ## O que o app faz
 
 **Administradores (acesso total — você e o Emanuel)**
-- **Painel**: todas as obras em aberto, quanto já foi recebido, custo, saldo e quem está trabalhando agora.
+- **Painel**: obras em aberto, visitas agendadas, equipe trabalhando agora e últimos lançamentos.
+- **Visitas**: agenda de visitas aos clientes (cliente novo ou já cadastrado), com atalhos para o mapa e para ligar;
+  marcar como realizada/cancelada e transformar em obra quando o cliente fecha.
 - **Obras**: cada obra tem cliente, valor do contrato, datas, andamento (%) e quatro abas:
   - *Resumo* — contrato, recebido, a receber, custo até agora, saldo em caixa da obra, lucro previsto e lucro real.
   - *Fluxo de caixa* — entradas (pagamentos do cliente) e saídas (despesas) **só desta obra**, com link para a foto do recibo.
