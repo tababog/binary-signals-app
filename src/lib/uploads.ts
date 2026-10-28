@@ -5,7 +5,8 @@ import { randomUUID } from "node:crypto";
 // Com SUPABASE_URL e SUPABASE_SERVICE_ROLE_KEY os arquivos vão para o Supabase Storage (bucket privado).
 // Sem eles, ficam na pasta UPLOAD_DIR do servidor (bom para rodar no próprio computador).
 const SUPABASE_URL = process.env.SUPABASE_URL?.replace(/\/$/, "");
-const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
+// Limpa espaços, quebras de linha e aspas que vêm junto quando a chave é colada na Vercel
+const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY?.replace(/\s+/g, "").replace(/^["']+|["']+$/g, "") || undefined;
 const BUCKET = process.env.SUPABASE_BUCKET || "comprovantes";
 const usarSupabase = Boolean(SUPABASE_URL && SUPABASE_KEY);
 
@@ -58,7 +59,11 @@ export async function salvarComprovante(arquivo: FormDataEntryValue | null): Pro
         mensagem = (JSON.parse(motivo) as { message?: string }).message ?? "";
       } catch {}
       // "Invalid Compact JWS" e afins: a chave na Vercel não serve para o Storage (ver docs/hospedagem.md, Parte 1, passo 5)
-      const dica = SUPABASE_KEY!.startsWith("sb_") ? " Use a chave service_role (Legacy API Keys, começa com eyJ) em SUPABASE_SERVICE_ROLE_KEY." : "";
+      const dica = SUPABASE_KEY!.startsWith("sb_")
+        ? " Use a chave service_role (Legacy API Keys, começa com eyJ) em SUPABASE_SERVICE_ROLE_KEY."
+        : /JWS|JWT|signature/i.test(mensagem)
+          ? ` A chave SUPABASE_SERVICE_ROLE_KEY na Vercel está incompleta ou errada (${SUPABASE_KEY!.split(".").length} partes, ${SUPABASE_KEY!.length} caracteres; o certo são 3 partes e uns 200 caracteres). Copie de novo a service_role do Supabase.`
+          : "";
       throw new Error(`Não foi possível guardar o arquivo (${r.status}${mensagem ? `: ${mensagem}` : ""}).${dica}`);
     }
   } else {
