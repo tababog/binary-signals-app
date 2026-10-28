@@ -11,7 +11,7 @@ import { getT } from "@/i18n/servidor";
 export default async function NovaObra({ searchParams }: { searchParams: { cliente?: string } }) {
   await exigirAdmin();
   const t = getT();
-  const clientes = await db.cliente.findMany({ orderBy: { nome: "asc" }, select: { id: true, nome: true } });
+  const clientes = await db.cliente.findMany({ orderBy: { nome: "asc" }, select: { id: true, nome: true, endereco: true } });
 
   return (
     <>

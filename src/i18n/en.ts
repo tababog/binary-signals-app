@@ -629,5 +629,9 @@ const en: Record<string, string> = {
   "Para guardar o recibo de ferramentas e outros gastos da empresa. O valor não soma de novo no custo fixo: ele já entra pela planilha.": "To keep receipts for tools and other company expenses. The amount isn't added to fixed costs again: it already comes from the spreadsheet.",
   "Pró-labore (retiradas dos sócios)": "Owner's pay (owner draws)",
   "Despesas fixas da empresa": "Company fixed expenses",
+  "Prazo": "Schedule",
+  "{n} dias de trabalho previstos": "{n} work days planned",
+  "{n} dias úteis (seg. a sex.) entre as datas.": "{n} weekdays (Mon–Fri) between the dates.",
+  "Usar": "Use",
 };
 export default en;

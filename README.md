@@ -18,7 +18,7 @@ tela cheia, como um app).
   **Follow-up**: ao marcar a visita como realizada, o app agenda contatos em 3, 7 e 14 dias. No dia, o Painel mostra
   "Follow-ups de hoje"; a mensagem vem pronta (inglês, português ou espanhol, editável) e abre no WhatsApp, SMS ou
   e-mail do celular. Marcar "Fechou contrato" ou "Sem interesse" encerra os follow-ups.
-- **Obras**: cada obra tem cliente, valor do contrato, datas, andamento (%) e quatro abas:
+- **Obras**: cada obra tem cliente (o endereço do cliente vem sozinho), valor do contrato, início e previsão de entrega (os dias de trabalho previstos são calculados de segunda a sexta) e quatro abas:
   - *Resumo* — contrato, recebido, a receber, custo até agora, saldo em caixa da obra, lucro previsto e lucro real.
   - *Fluxo de caixa* — entradas (pagamentos do cliente) e saídas (despesas) **só desta obra**, com link para a foto do recibo.
   - *Orçamento* — itens previstos por categoria (material, delivery, mão de obra, instalação, serviços, equipamentos,

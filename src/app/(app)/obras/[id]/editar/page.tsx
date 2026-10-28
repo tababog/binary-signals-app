@@ -13,7 +13,7 @@ export default async function EditarObra({ params }: { params: { id: string } })
   const t = getT();
   const [obra, clientes] = await Promise.all([
     db.obra.findUnique({ where: { id: params.id } }),
-    db.cliente.findMany({ orderBy: { nome: "asc" }, select: { id: true, nome: true } }),
+    db.cliente.findMany({ orderBy: { nome: "asc" }, select: { id: true, nome: true, endereco: true } }),
   ]);
   if (!obra) notFound();
 

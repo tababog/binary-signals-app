@@ -629,5 +629,9 @@ const es: Record<string, string> = {
   "Para guardar o recibo de ferramentas e outros gastos da empresa. O valor não soma de novo no custo fixo: ele já entra pela planilha.": "Para guardar el recibo de herramientas y otros gastos de la empresa. El monto no se suma de nuevo al costo fijo: ya entra por la hoja.",
   "Pró-labore (retiradas dos sócios)": "Sueldo de los dueños (retiros de los socios)",
   "Despesas fixas da empresa": "Gastos fijos de la empresa",
+  "Prazo": "Plazo",
+  "{n} dias de trabalho previstos": "{n} días de trabajo previstos",
+  "{n} dias úteis (seg. a sex.) entre as datas.": "{n} días hábiles (lun. a vie.) entre las fechas.",
+  "Usar": "Usar",
 };
 export default es;
