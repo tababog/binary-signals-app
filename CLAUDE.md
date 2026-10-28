@@ -60,7 +60,10 @@ Conversa com o usuário em português; telas internas em português.
 - [ ] 7. Portfólio da empresa: quem somos, Alessandro e Emanuel, anos de mercado, fotos de trabalhos por categoria
        (cabinets, drywall, etc.).
 - [ ] 8. Proposta para o cliente (sempre em inglês, regra 9): apresentação profissional (portfólio da categoria +
-       escopo item a item + duas opções + valores) com aceite e assinatura do contrato online.
+       escopo item a item + duas opções + valores) enviada como **link** (WhatsApp/SMS/e-mail). Na página o cliente
+       responde com botões: **aprovar a opção 1 ou 2** (nome, assinatura na tela, data e IP registrados), **recusar**
+       ou **pedir para falar**. A resposta aparece no Painel e, se aprovada, marca a visita como "Fechou contrato"
+       e encerra os follow-ups. Contrato seguindo o Home Improvement Act de CT (ver `docs/empresa.md`).
 - [ ] 9. Relatório final da obra: lucro ou prejuízo, multiplicador atingido x meta 2x, onde o custo estourou.
 - [x] 10. Custos fixos e diagnóstico (página *Empresa*): custos recorrentes + gastos avulsos, rateio por dia trabalhado
        (`src/lib/custos-fixos.ts`), custo fixo entra no custo de cada obra e no orçado (dias previstos × custo/dia),

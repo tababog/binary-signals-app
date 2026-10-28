@@ -5,10 +5,11 @@ import { useRouter } from "next/navigation";
 import { marcarFollowUpEnviado } from "@/app/(app)/visitas/actions";
 
 type Idioma = "en" | "pt" | "es";
-const IDIOMAS: { id: Idioma; rotulo: string }[] = [
-  { id: "en", rotulo: "🇺🇸 English" },
-  { id: "pt", rotulo: "🇧🇷 Português" },
-  { id: "es", rotulo: "🇪🇸 Español" },
+// Só a bandeira na tela; o nome do idioma fica para leitores de tela
+const IDIOMAS: { id: Idioma; bandeira: string; nome: string }[] = [
+  { id: "en", bandeira: "🇺🇸", nome: "English" },
+  { id: "pt", bandeira: "🇧🇷", nome: "Português" },
+  { id: "es", bandeira: "🇪🇸", nome: "Español" },
 ];
 
 /**
@@ -54,9 +55,12 @@ export function EnviarFollowUp({
             key={i.id}
             type="button"
             onClick={() => trocarIdioma(i.id)}
-            className={`rounded-full px-3 py-1 text-sm ${idioma === i.id ? "bg-stone-800 text-white" : "bg-stone-100"}`}
+            aria-label={i.nome}
+            title={i.nome}
+            aria-pressed={idioma === i.id}
+            className={`rounded-full px-3 py-1 text-xl ${idioma === i.id ? "bg-stone-800 ring-2 ring-stone-800" : "bg-stone-100"}`}
           >
-            {i.rotulo}
+            {i.bandeira}
           </button>
         ))}
       </div>
