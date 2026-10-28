@@ -750,5 +750,7 @@ const en: Record<string, string> = {
   "A API da Anthropic respondeu com erro ({status}): {msg}": "The Anthropic API returned an error ({status}): {msg}",
   "sem resposta do servidor": "no response from the server",
   "Não consegui ler o comprovante ({motivo}). Preencha os campos à mão.": "Couldn't read the document ({motivo}). Fill in the fields by hand.",
+  "Lançar Despesa": "Record Expense",
+  "Nenhum lançamento ainda. Use “Lançar Despesa” ou “Pagamento do cliente”.": "No entries yet. Use “Add expense” or “Client payment”.",
 };
 export default en;

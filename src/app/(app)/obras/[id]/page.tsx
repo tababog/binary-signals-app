@@ -42,7 +42,7 @@ export default async function Obra({ params, searchParams }: { params: { id: str
           </span>
         }
       >
-        <Link href={`/obras/${obra.id}/despesa`} className="botao-secundario">{t("📷 Lançar despesa")}</Link>
+        <Link href={`/obras/${obra.id}/despesa`} className="botao-secundario">{t("Lançar Despesa")}</Link>
         <Link href={`/obras/${obra.id}/recebimento`} className="botao-secundario">{t("+ Pagamento do cliente")}</Link>
         <Link href={`/obras/${obra.id}/editar`} className="botao-secundario">{t("Editar")}</Link>
       </Cabecalho>
@@ -209,7 +209,7 @@ async function AbaCaixa({ obraId }: { obraId: string }) {
       </div>
       <div className="cartao overflow-x-auto">
         {lancamentos.length === 0 ? (
-          <Vazio>{t("Nenhum lançamento ainda. Use “Lançar despesa” ou “Pagamento do cliente”.")}</Vazio>
+          <Vazio>{t("Nenhum lançamento ainda. Use “Lançar Despesa” ou “Pagamento do cliente”.")}</Vazio>
         ) : (
           <table className="tabela">
             <thead>
