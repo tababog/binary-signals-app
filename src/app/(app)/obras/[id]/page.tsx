@@ -42,7 +42,7 @@ export default async function Obra({ params, searchParams }: { params: { id: str
           </span>
         }
       >
-        <Link href={`/obras/${obra.id}/despesa`} className="botao">{t("📷 Lançar despesa")}</Link>
+        <Link href={`/obras/${obra.id}/despesa`} className="botao-secundario">{t("📷 Lançar despesa")}</Link>
         <Link href={`/obras/${obra.id}/recebimento`} className="botao-secundario">{t("+ Pagamento do cliente")}</Link>
         <Link href={`/obras/${obra.id}/editar`} className="botao-secundario">{t("Editar")}</Link>
       </Cabecalho>
@@ -202,10 +202,10 @@ async function AbaCaixa({ obraId }: { obraId: string }) {
 
   return (
     <div className="space-y-4">
-      <div className="grid grid-cols-3 gap-3">
-        <Indicador rotulo={t("Entradas")} valor={dinheiro(entradas)} tom="bom" />
-        <Indicador rotulo={t("Saídas")} valor={dinheiro(saidas)} tom="ruim" />
-        <Indicador rotulo={t("Saldo")} valor={dinheiro(entradas - saidas)} tom={entradas - saidas < 0 ? "ruim" : "bom"} detalhe={t("Sem contar horas da equipe")} />
+      <div className="grid grid-cols-3 gap-2 sm:gap-3">
+        <Indicador compacto rotulo={t("Entradas")} valor={dinheiro(entradas)} tom="bom" />
+        <Indicador compacto rotulo={t("Saídas")} valor={dinheiro(saidas)} tom="ruim" />
+        <Indicador compacto rotulo={t("Saldo")} valor={dinheiro(entradas - saidas)} tom={entradas - saidas < 0 ? "ruim" : "bom"} detalhe={t("Sem contar horas da equipe")} />
       </div>
       <div className="cartao overflow-x-auto">
         {lancamentos.length === 0 ? (

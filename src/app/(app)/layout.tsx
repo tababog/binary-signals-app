@@ -33,7 +33,7 @@ export default async function LayoutApp({ children }: { children: React.ReactNod
         <div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-3">
           <Link href={admin ? "/" : "/ponto"} className="flex items-center gap-2 font-bold">
             <img src="/logo.svg" alt="Tababog Construction LLC" className="h-10 w-10" />
-            <span>Tababog</span>
+            <span className="hidden min-[400px]:inline">Tababog</span>
           </Link>
           <Menu itens={itens} />
           <div className="ml-auto flex items-center gap-3 text-sm">
