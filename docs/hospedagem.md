@@ -91,7 +91,8 @@ mude em **Settings → Git → Production Branch** para `ccr-15f09b39-gtigo7`.
 - **Erro no deploy citando `DATABASE_URL`/`P1001`:** confira a senha dentro dos dois endereços e o
   `?pgbouncer=true` no `DATABASE_URL`.
 - **Foto do recibo não salva:** confira `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` e se o bucket se chama
-  `comprovantes`.
+  `comprovantes`. Erro "Invalid Compact JWS" ou "400" ao guardar: troque `SUPABASE_SERVICE_ROLE_KEY` pela chave
+  **service_role** da aba **Legacy API Keys** (começa com `eyJ`) e faça o Redeploy.
 - **Não consigo entrar:** os administradores são criados com os e-mails das variáveis `ADMIN1_EMAIL`/`ADMIN2_EMAIL`.
 - Mande o print do erro para o Claude.
 

@@ -744,5 +744,11 @@ const en: Record<string, string> = {
   "Dinheiro": "Cash",
   "Cartão de crédito": "Credit card",
   "Cartão de débito": "Debit card",
+  "O arquivo chegou vazio.": "The file arrived empty.",
+  "Arquivo maior que 4 MB.": "File larger than 4 MB.",
+  "Formato de arquivo que a IA não lê ({tipo}). Use foto JPG/PNG ou PDF.": "The AI can't read this file type ({tipo}). Use a JPG/PNG photo or a PDF.",
+  "A API da Anthropic respondeu com erro ({status}): {msg}": "The Anthropic API returned an error ({status}): {msg}",
+  "sem resposta do servidor": "no response from the server",
+  "Não consegui ler o comprovante ({motivo}). Preencha os campos à mão.": "Couldn't read the document ({motivo}). Fill in the fields by hand.",
 };
 export default en;
