@@ -8,7 +8,15 @@ try {
 
 const prisma = new PrismaClient();
 
+// Textos de exemplo que podem ficar nas variáveis se o modelo for colado sem preencher.
+const PARECE_EXEMPLO = /seu_?email|email_do|exemplo|SUA_SENHA|SENHA_INICIAL|COLE_AQUI|trocar123/i;
+
 async function criarAdmin(nome: string, email: string, senha: string) {
+  // Nunca cria administrador com e-mail inválido ou senha de exemplo: seria uma porta aberta no app publicado.
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || PARECE_EXEMPLO.test(email) || PARECE_EXEMPLO.test(senha) || senha.length < 6) {
+    console.warn(`Administrador NÃO criado: e-mail ou senha inválidos/de exemplo (${email}). Corrija ADMIN*_EMAIL e ADMIN*_SENHA.`);
+    return;
+  }
   const existente = await prisma.usuario.findUnique({ where: { email } });
   if (existente) {
     console.log(`Administrador já existe: ${email}`);
@@ -39,13 +47,13 @@ async function criarCustosFixos() {
 async function main() {
   await criarAdmin(
     process.env.ADMIN1_NOME ?? "Alessandro de Oliveira",
-    (process.env.ADMIN1_EMAIL ?? "alessandro@tababog.com").toLowerCase(),
-    process.env.ADMIN1_SENHA ?? "trocar123",
+    (process.env.ADMIN1_EMAIL ?? "").trim().toLowerCase(),
+    (process.env.ADMIN1_SENHA ?? "").trim(),
   );
   await criarAdmin(
     process.env.ADMIN2_NOME ?? "Emanuel Lopez",
-    (process.env.ADMIN2_EMAIL ?? "emanuel@tababog.com").toLowerCase(),
-    process.env.ADMIN2_SENHA ?? "trocar123",
+    (process.env.ADMIN2_EMAIL ?? "").trim().toLowerCase(),
+    (process.env.ADMIN2_SENHA ?? "").trim(),
   );
   await criarCustosFixos();
 }

@@ -83,6 +83,8 @@ mude em **Settings → Git → Production Branch** para `ccr-15f09b39-gtigo7`.
   (diária de $200 ÷ 8 h). Passe para cada um o endereço, o e-mail e a senha.
 - **Obras:** em cada obra, estando no local, use **Editar → Usar minha localização atual** para o GPS do ponto.
 - **Atualizações:** cada mudança enviada para a branch principal é publicada sozinha pela Vercel.
+  Os *previews* dos pull requests usam as mesmas variáveis, mas **não alteram o banco**: só a publicação
+  oficial (branch principal) atualiza as tabelas e cria os administradores.
 
 ### Se algo der errado
 
