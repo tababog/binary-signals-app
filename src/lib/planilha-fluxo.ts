@@ -150,13 +150,16 @@ export function totaisPorGrupo(fluxo: FluxoCaixa) {
   return r;
 }
 
-/** Média mensal de cada custo fixo real (meses da planilha que já tiveram movimento). */
-export function mediasCustosFixos(fluxo: FluxoCaixa) {
+/**
+ * Média mensal de cada custo fixo real (meses da planilha que já tiveram movimento).
+ * Por padrão inclui as retiradas dos sócios, que são o pró-labore.
+ */
+export function mediasCustosFixos(fluxo: FluxoCaixa, grupos: Grupo[] = ["FIXO", "SOCIOS"]) {
   const mesesComMovimento = fluxo.meses.map((_, m) => m).filter((m) => fluxo.totalEntradas[m] !== 0 || fluxo.totalSaidas[m] !== 0);
   const n = mesesComMovimento.length || 1;
   const itens = fluxo.saidas
-    .filter((s) => s.grupo === "FIXO")
-    .map((s) => ({ item: s.item, mediaCent: Math.round(mesesComMovimento.reduce((t, m) => t + s.valores[m], 0) / n) }))
+    .filter((s) => s.grupo && grupos.includes(s.grupo))
+    .map((s) => ({ item: s.item, grupo: s.grupo!, mediaCent: Math.round(mesesComMovimento.reduce((t, m) => t + s.valores[m], 0) / n) }))
     .filter((s) => s.mediaCent > 0)
     .sort((a, b) => b.mediaCent - a.mediaCent);
   return { meses: n, itens, totalCent: itens.reduce((t, i) => t + i.mediaCent, 0) };
@@ -246,15 +249,4 @@ export async function lerFluxoCaixa(): Promise<ResultadoFluxo> {
   } catch (e) {
     return { ok: false, motivo: "ERRO", detalhe: (e as Error).message };
   }
-}
-
-// Palavras que indicam o mesmo custo com nomes diferentes (cadastro manual x planilha)
-const SINONIMOS = [/combust|gasolin|fuel|\bgas\b/, /galp|aluguel|\brent\b/, /liabil/, /energia|eletric|elecric|\bluz\b|electric/, /contador|accountant/, /propaganda|marketing|anuncio/];
-
-/** O custo fixo cadastrado à mão é o mesmo que um item da planilha? (ex.: "Combustível" e "Gasolina") */
-export function mesmoCusto(cadastrado: string, item: string) {
-  const a = sem(cadastrado);
-  const b = sem(item);
-  if (a === b) return true;
-  return SINONIMOS.some((re) => re.test(a) && re.test(b));
 }

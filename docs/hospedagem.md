@@ -125,12 +125,15 @@ com "Fluxo de Caixa" no nome). A planilha precisa manter o formato: coluna **Ite
 total; blocos **ENTRADAS** e **SAÍDAS**; linhas **TOTAL DE ENTRADAS**, **TOTAL DE SAÍDAS**, **Resultado do mês**,
 **Saldo final do caixa** e, se quiser a conferência, **Saldo no extrato**.
 
-### Custos fixos com os números reais
+### Custos fixos vêm da planilha
 
-Com a planilha ligada, o quadro **Custos fixos reais da planilha** (página Empresa) mostra a média por mês de cada
-gasto da empresa (galpão, gasolina, refeição, seguro, carro, banco, contador...). O botão **Usar os números reais**
-troca as estimativas pelas médias reais, e esses valores passam a entrar no custo de cada obra e na precificação.
-O app separa as saídas assim:
+Com a planilha ligada, os **custos fixos da empresa são a média mensal real da planilha**: todas as despesas fixas
+(galpão, gasolina, refeição, seguro, carro, banco, contador...) **mais as retiradas dos sócios** (Retirada Alessandro,
+Retirada Emmanuel), que são o pró-labore. Não há mais cadastro manual de custos fixos: para mudar um valor, atualize a
+planilha. O app guarda uma cópia da última média, usada se o Drive estiver fora do ar.
+O app separa as saídas da planilha assim:
 - **Custos diretos das obras:** Supplier/Fornecedor, Sub Contractors, Helpers, Dumpster/Lixo (já entram em cada obra).
-- **Retiradas dos sócios:** linhas com "Retirada" ou "Pró-labore" (o pró-labore continua no cadastro).
-- **Custos fixos:** todo o resto.
+- **Pró-labore:** linhas com "Retirada" ou "Pró-labore".
+- **Despesas fixas:** todo o resto.
+
+Os gastos avulsos lançados no app (ferramentas etc.) ficam só como registro do recibo: o valor já está na planilha.
