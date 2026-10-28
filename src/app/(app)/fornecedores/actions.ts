@@ -1,5 +1,6 @@
 "use server";
 
+import { getT } from "@/i18n/servidor";
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { db } from "@/lib/db";
@@ -17,7 +18,7 @@ export async function salvarFornecedor(id: string | null, _e: EstadoForm, form: 
     licenca: texto(form.get("licenca")),
     seguroValidade: lerData(form.get("seguroValidade")),
   };
-  if (!dados.nome) return { erro: "Informe o nome." };
+  if (!dados.nome) return { erro: getT()("Informe o nome.") };
 
   const fornecedor = id
     ? await db.fornecedor.update({ where: { id }, data: dados })

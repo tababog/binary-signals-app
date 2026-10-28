@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { useT } from "@/i18n/cliente";
 
 const LADO_MAXIMO = 1600;
 
@@ -23,7 +24,8 @@ async function comprimir(arquivo: File): Promise<File> {
   }
 }
 
-export function FotoRecibo({ rotulo = "Foto do recibo / nota fiscal" }: { rotulo?: string }) {
+export function FotoRecibo({ rotulo }: { rotulo?: string }) {
+  const t = useT();
   const campoReal = useRef<HTMLInputElement>(null);
   const [previa, setPrevia] = useState<string | null>(null);
   const [nome, setNome] = useState<string | null>(null);
@@ -37,7 +39,7 @@ export function FotoRecibo({ rotulo = "Foto do recibo / nota fiscal" }: { rotulo
     const arquivo = await comprimir(original);
     if (arquivo.size > 4 * 1024 * 1024) {
       setProcessando(false);
-      alert("Arquivo maior que 4 MB. Use o botão Tirar foto ou envie um arquivo menor.");
+      alert(t("Arquivo maior que 4 MB. Use o botão Tirar foto ou envie um arquivo menor."));
       return;
     }
     const dt = new DataTransfer();
@@ -56,23 +58,23 @@ export function FotoRecibo({ rotulo = "Foto do recibo / nota fiscal" }: { rotulo
 
   return (
     <div>
-      <span className="rotulo">{rotulo}</span>
+      <span className="rotulo">{rotulo ?? t("Foto do recibo / nota fiscal")}</span>
       <input ref={campoReal} type="file" name="comprovante" className="hidden" />
       <div className="flex flex-wrap gap-2">
         <label className="botao cursor-pointer">
-          📷 Tirar foto
+          {t("📷 Tirar foto")}
           <input type="file" accept="image/*" capture="environment" className="hidden" onChange={escolher} />
         </label>
         <label className="botao-secundario cursor-pointer">
-          Escolher arquivo
+          {t("Escolher arquivo")}
           <input type="file" accept="image/*,application/pdf" className="hidden" onChange={escolher} />
         </label>
       </div>
-      {processando && <p className="mt-2 text-sm text-stone-500">Preparando imagem...</p>}
+      {processando && <p className="mt-2 text-sm text-stone-500">{t("Preparando imagem...")}</p>}
       {nome && (
         <div className="mt-3 rounded-lg border border-stone-200 p-2">
-          {previa ? <img src={previa} alt="Prévia do recibo" className="max-h-72 rounded" /> : <p className="text-sm">{nome}</p>}
-          <button type="button" onClick={limpar} className="mt-2 text-sm text-red-700 hover:underline">Remover</button>
+          {previa ? <img src={previa} alt={t("Prévia do recibo")} className="max-h-72 rounded" /> : <p className="text-sm">{nome}</p>}
+          <button type="button" onClick={limpar} className="mt-2 text-sm text-red-700 hover:underline">{t("Remover")}</button>
         </div>
       )}
     </div>

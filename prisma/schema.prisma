@@ -26,6 +26,8 @@ model Usuario {
   tipoPagamento  String   @default("HORA")
   valorDiariaCent Int     @default(0)
   vinculo        String   @default("FIXO")
+  // Idioma das telas: "pt", "en" ou "es"
+  idioma         String   @default("pt")
   ativo          Boolean  @default(true)
   criadoEm       DateTime @default(now())
   // Link de convite / redefinição de senha: guarda só o hash SHA-256 do token enviado ao funcionário
@@ -166,6 +168,8 @@ model CustoFixo {
   valorCent     Int
   periodicidade String   @default("MENSAL")
   ativo         Boolean  @default(true)
+  // "PLANILHA:<item>" quando veio da média real da planilha de fluxo de caixa do Drive; vazio quando cadastrado à mão
+  origem        String?
   criadoEm      DateTime @default(now())
 }
 
@@ -211,7 +215,10 @@ model Visita {
   cliente     Cliente  @relation(fields: [clienteId], references: [id])
   dataHora    DateTime
   endereco    String?
+  // tipoServico: chave de TIPOS_SERVICO ou "P:<nome>" para um serviço criado em "Outros"
   tipoServico String?
+  // Subserviços escolhidos, separados por vírgula (ex.: "INTERNA,INTERNA.TETO,EXTERNA")
+  subServicos String?
   descricao   String?
   status      String   @default("AGENDADA")
   // Depois da visita: null = em negociação, "FECHOU" ou "SEM_INTERESSE" (encerra os follow-ups)
@@ -219,6 +226,7 @@ model Visita {
   criadoEm    DateTime @default(now())
 
   followUps   FollowUp[]
+  fotos       FotoVisita[]
 
   @@index([dataHora])
 }
@@ -235,4 +243,31 @@ model FollowUp {
   canal        String?
 
   @@index([dataPrevista])
+}
+
+// Cache das traduções automáticas de textos escritos pelos usuários (cada texto é traduzido uma vez por idioma).
+model Traducao {
+  id       String   @id @default(cuid())
+  hash     String
+  idioma   String
+  texto    String
+  criadoEm DateTime @default(now())
+
+  @@unique([hash, idioma])
+}
+
+// Fotos tiradas na visita (levantamento do trabalho). Arquivo no mesmo armazenamento dos recibos.
+model FotoVisita {
+  id       String   @id @default(cuid())
+  visitaId String
+  visita   Visita   @relation(fields: [visitaId], references: [id], onDelete: Cascade)
+  arquivo  String
+  criadoEm DateTime @default(now())
+}
+
+// Serviços digitados em "Outros" na visita; passam a aparecer como opção fixa.
+model ServicoPersonalizado {
+  id       String   @id @default(cuid())
+  nome     String   @unique
+  criadoEm DateTime @default(now())
 }

@@ -94,3 +94,43 @@ mude em **Settings → Git → Production Branch** para `ccr-15f09b39-gtigo7`.
   `comprovantes`.
 - **Não consigo entrar:** os administradores são criados com os e-mails das variáveis `ADMIN1_EMAIL`/`ADMIN2_EMAIL`.
 - Mande o print do erro para o Claude.
+
+---
+
+## Parte 4 — Ligar o fluxo de caixa ao Google Drive
+
+A página **Empresa** mostra o fluxo de caixa lido da planilha *"... Fluxo de Caixa ... - resumo"* que fica na pasta
+**Tababog Construction** do Drive. O app lê sempre a planilha de fluxo de caixa mais recente dessa pasta (a de
+lançamentos não é usada). Para isso o app precisa de uma "conta de serviço" do Google, que só tem permissão de
+**leitura** na pasta. Grátis; não precisa de cartão.
+
+1. Acesse **https://console.cloud.google.com** com a conta Google dona da pasta (a que tem as planilhas).
+2. No topo, **Select a project → New project** → nome `tababog-obras` → **Create**. Deixe o projeto selecionado.
+3. Menu ☰ → **APIs & Services → Library** → procure **Google Drive API** → **Enable**.
+4. Menu ☰ → **IAM & Admin → Service Accounts → Create service account**
+   - **Name:** `tababog-app` → **Create and continue** → pule os passos opcionais → **Done**.
+5. Clique na conta criada → aba **Keys → Add key → Create new key → JSON → Create**. Um arquivo `.json` é baixado.
+   **Esse arquivo é uma senha: não mande para ninguém.**
+6. Copie o e-mail da conta de serviço (algo como `tababog-app@tababog-obras.iam.gserviceaccount.com`).
+7. No Google Drive, clique com o botão direito na pasta **Tababog Construction → Compartilhar** → cole esse e-mail →
+   permissão **Leitor** → desmarque "Notificar" → **Compartilhar**.
+8. Na Vercel: projeto **tababog-obras → Settings → Environment Variables → Add**
+   - **Key:** `GOOGLE_SERVICE_ACCOUNT_JSON`
+   - **Value:** abra o arquivo `.json` no Bloco de Notas, copie **todo** o conteúdo e cole.
+   - **Save** e depois **Deployments → ⋯ → Redeploy**.
+9. Abra **Empresa** no app: o fluxo de caixa aparece. Os números são relidos do Drive a cada 5 minutos.
+
+Para atualizar o fluxo de caixa, basta atualizar a planilha no Drive (ou colocar a planilha nova na mesma pasta,
+com "Fluxo de Caixa" no nome). A planilha precisa manter o formato: coluna **Item**, uma coluna por mês e uma de
+total; blocos **ENTRADAS** e **SAÍDAS**; linhas **TOTAL DE ENTRADAS**, **TOTAL DE SAÍDAS**, **Resultado do mês**,
+**Saldo final do caixa** e, se quiser a conferência, **Saldo no extrato**.
+
+### Custos fixos com os números reais
+
+Com a planilha ligada, o quadro **Custos fixos reais da planilha** (página Empresa) mostra a média por mês de cada
+gasto da empresa (galpão, gasolina, refeição, seguro, carro, banco, contador...). O botão **Usar os números reais**
+troca as estimativas pelas médias reais, e esses valores passam a entrar no custo de cada obra e na precificação.
+O app separa as saídas assim:
+- **Custos diretos das obras:** Supplier/Fornecedor, Sub Contractors, Helpers, Dumpster/Lixo (já entram em cada obra).
+- **Retiradas dos sócios:** linhas com "Retirada" ou "Pró-labore" (o pró-labore continua no cadastro).
+- **Custos fixos:** todo o resto.

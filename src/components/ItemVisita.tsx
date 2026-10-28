@@ -1,13 +1,15 @@
 import Link from "next/link";
 import { data, dataHora } from "@/lib/format";
 import { LembreteVisita } from "./LembreteVisita";
-import { nomeTipoServico } from "@/lib/constantes";
+import { descreverSubservicos, nomeTipoServico } from "@/lib/constantes";
+import { getT } from "@/i18n/servidor";
 
 type Visita = {
   id: string;
   dataHora: Date;
   endereco: string | null;
   tipoServico: string | null;
+  subServicos?: string | null;
   status: string;
   descricao: string | null;
   resultado?: string | null;
@@ -16,6 +18,7 @@ type Visita = {
 
 /** Uma visita na lista: cliente, hora, serviço, e atalhos para o mapa e o telefone. */
 export function ItemVisita({ v, agora }: { v: Visita; agora: Date }) {
+  const t = getT();
   const atrasada = v.status === "AGENDADA" && v.dataHora < agora;
   const dia = data(v.dataHora);
   const hoje = v.status === "AGENDADA" && !atrasada && dia === data(agora);
@@ -26,31 +29,32 @@ export function ItemVisita({ v, agora }: { v: Visita; agora: Date }) {
         <Link href={`/visitas/${v.id}`} className="link">{v.cliente.nome}</Link>
         <div className="text-sm text-stone-600">
           {dataHora(v.dataHora)}
-          {v.tipoServico && ` · ${nomeTipoServico(v.tipoServico)}`}
-          {atrasada && <span className="selo ml-2 bg-amber-100 text-amber-800">Passou do horário</span>}
-          {hoje && <span className="selo ml-2 bg-marca-600 text-white">Hoje</span>}
-          {amanha && <span className="selo ml-2 bg-marca-100 text-marca-700">Amanhã</span>}
+          {v.tipoServico && ` · ${t(nomeTipoServico(v.tipoServico))}`}
+          {v.subServicos && ` (${descreverSubservicos(v.tipoServico, v.subServicos, t)})`}
+          {atrasada && <span className="selo ml-2 bg-amber-100 text-amber-800">{t("Passou do horário")}</span>}
+          {hoje && <span className="selo ml-2 bg-marca-600 text-white">{t("Hoje")}</span>}
+          {amanha && <span className="selo ml-2 bg-marca-100 text-marca-700">{t("Amanhã")}</span>}
           {v.status === "REALIZADA" && (
             v.resultado === "FECHOU" ? (
-              <span className="selo ml-2 bg-emerald-100 text-emerald-800">Fechou contrato</span>
+              <span className="selo ml-2 bg-emerald-100 text-emerald-800">{t("Fechou contrato")}</span>
             ) : v.resultado === "SEM_INTERESSE" ? (
-              <span className="selo ml-2 bg-stone-200 text-stone-600">Sem interesse</span>
+              <span className="selo ml-2 bg-stone-200 text-stone-600">{t("Sem interesse")}</span>
             ) : (
-              <span className="selo ml-2 bg-sky-100 text-sky-800">Em negociação</span>
+              <span className="selo ml-2 bg-sky-100 text-sky-800">{t("Em negociação")}</span>
             )
           )}
-          {v.status === "CANCELADA" && <span className="selo ml-2 bg-stone-200 text-stone-600">Cancelada</span>}
+          {v.status === "CANCELADA" && <span className="selo ml-2 bg-stone-200 text-stone-600">{t("Cancelada")}</span>}
         </div>
         {v.endereco && <div className="truncate text-xs text-stone-500">{v.endereco}</div>}
       </div>
       <div className="flex gap-2 text-sm">
         {v.endereco && (
           <a className="botao-secundario px-2 py-1" target="_blank" rel="noreferrer" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(v.endereco)}`}>
-            Mapa
+            {t("Mapa")}
           </a>
         )}
         {v.cliente.telefone && (
-          <a className="botao-secundario px-2 py-1" href={`tel:${v.cliente.telefone.replace(/[^\d+]/g, "")}`}>Ligar</a>
+          <a className="botao-secundario px-2 py-1" href={`tel:${v.cliente.telefone.replace(/[^\d+]/g, "")}`}>{t("Ligar")}</a>
         )}
       </div>
       {v.status === "AGENDADA" && !atrasada && <LembreteVisita v={v} compacto />}

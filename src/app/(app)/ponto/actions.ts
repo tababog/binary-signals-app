@@ -1,5 +1,6 @@
 "use server";
 
+import { getT } from "@/i18n/servidor";
 import { revalidatePath } from "next/cache";
 import { db } from "@/lib/db";
 import { exigirUsuario } from "@/lib/auth";
@@ -10,12 +11,12 @@ const SEM_GPS = "Não foi possível pegar sua localização. Ative a localizaç�
 
 export async function registrarEntrada(obraId: string, local: unknown): Promise<{ erro?: string }> {
   const usuario = await exigirUsuario();
-  if (!localValido(local)) return { erro: SEM_GPS };
+  if (!localValido(local)) return { erro: getT()(SEM_GPS) };
   const aberto = await db.registroPonto.findFirst({ where: { usuarioId: usuario.id, saida: null } });
-  if (aberto) return { erro: "Você já está com uma entrada aberta. Registre a saída primeiro." };
+  if (aberto) return { erro: getT()("Você já está com uma entrada aberta. Registre a saída primeiro.") };
 
   const obra = await db.obra.findUnique({ where: { id: obraId } });
-  if (!obra || obra.status === "CONCLUIDA") return { erro: "Escolha uma obra ativa." };
+  if (!obra || obra.status === "CONCLUIDA") return { erro: getT()("Escolha uma obra ativa.") };
 
   // O horário é sempre o do servidor, o funcionário não consegue alterar.
   await db.registroPonto.create({
@@ -35,9 +36,9 @@ export async function registrarEntrada(obraId: string, local: unknown): Promise<
 
 export async function registrarSaida(local: unknown): Promise<{ erro?: string }> {
   const usuario = await exigirUsuario();
-  if (!localValido(local)) return { erro: SEM_GPS };
+  if (!localValido(local)) return { erro: getT()(SEM_GPS) };
   const aberto = await db.registroPonto.findFirst({ where: { usuarioId: usuario.id, saida: null } });
-  if (!aberto) return { erro: "Você não tem entrada aberta." };
+  if (!aberto) return { erro: getT()("Você não tem entrada aberta.") };
 
   await db.registroPonto.update({
     where: { id: aberto.id },

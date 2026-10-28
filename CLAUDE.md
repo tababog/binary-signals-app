@@ -37,12 +37,14 @@ Conversa com o usuário em português; telas internas em português.
 9. **Orçamento e proposta para o cliente saem sempre em inglês**, mesmo quando o Alessandro (português) ou o
    Emanuel (inglês) montam tudo na própria língua. Mensagens de follow-up abrem em inglês por padrão.
 10. **Android e iPhone.** O app é web instalável na tela inicial (ícones PNG, tela cheia no iPhone); toda tela tem que
-   funcionar bem no celular dos dois sistemas.
+   funcionar bem no celular dos dois sistemas. A logo da Tababog (`public/logo.svg`, vetor) aparece no cabeçalho, no
+   login e nos ícones (`icon-*.png`, `apple-touch-icon.png`, fundo azul `#1b3f7d`).
 
 ## Como trabalhar neste projeto
 
 - O projeto é grande: cada módulo do roteiro abaixo é feito em um prompt/sessão separado.
-- Antes de enviar: `npx tsc --noEmit`, `npm run build` e um teste real no navegador (Playwright) do fluxo alterado.
+- Antes de enviar: `npx tsc --noEmit`, `npm run i18n:verificar` (todo texto novo de tela em `t("...")` precisa estar em
+  `src/i18n/en.ts` e `es.ts`), `npm run build` e um teste real no navegador (Playwright) do fluxo alterado.
 - Stack: Next.js 14 (App Router, Server Actions), TypeScript, Prisma + Postgres (Supabase), fotos no Supabase Storage
   (`src/lib/uploads.ts`), Tailwind, hospedagem na Vercel. Permissões: `exigirAdmin()` /
   `exigirUsuario()` em `src/lib/auth.ts` em toda página e ação do servidor.
@@ -54,7 +56,8 @@ Conversa com o usuário em português; telas internas em português.
 - [x] 3. Hospedagem: no ar na Vercel (projeto `tababog-obras`, plano Hobby) com Supabase (`tababog-obras`,
        East US, bucket privado `comprovantes`, Data API desligada). Cada push na `main` publica sozinho.
 - [~] 4. Visitas: agenda, lembrete na agenda do celular e follow-up semiautomático (WhatsApp/SMS/e-mail pelo celular,
-       3/7/14 dias, resultado Fechou/Sem interesse). Falta: fotos, medidas e anotações do levantamento.
+       3/7/14 dias, resultado Fechou/Sem interesse), serviço + subserviços, "Outros" vira opção fixa
+       (`ServicoPersonalizado`), fotos do trabalho (Supabase Storage). Falta: medidas do levantamento.
 - [ ] 5. Banco de preços histórico (regra 4) + cadastro de trabalhos antigos.
 - [ ] 6. Skill de precificação: materiais, mão de obra, custo, preço de mercado e duas opções (regras 2, 3 e 5).
 - [ ] 7. Portfólio da empresa: quem somos, Alessandro e Emanuel, anos de mercado, fotos de trabalhos por categoria
@@ -68,5 +71,7 @@ Conversa com o usuário em português; telas internas em português.
 - [x] 10. Custos fixos e diagnóstico (página *Empresa*): custos recorrentes + gastos avulsos, rateio por dia trabalhado
        (`src/lib/custos-fixos.ts`), custo fixo entra no custo de cada obra e no orçado (dias previstos × custo/dia),
        resultado do mês. A precificação (etapa 6) deve somar dias previstos × custo fixo por dia antes da meta 2x.
-- [ ] 11. Idiomas (regra 8): telas em PT/EN/ES com seletor + tradução automática do conteúdo pela API da Anthropic
+       Fluxo de caixa da empresa lido da planilha do Google Drive (`src/lib/planilha-fluxo.ts`, conta de serviço
+       `GOOGLE_SERVICE_ACCOUNT_JSON`) e custos fixos pela média real da planilha.
+- [x] 11. Idiomas (regra 8): telas em PT/EN/ES com seletor + tradução automática do conteúdo pela API da Anthropic
        (chave em `ANTHROPIC_API_KEY` na Vercel).

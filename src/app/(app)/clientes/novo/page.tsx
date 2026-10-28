@@ -4,17 +4,19 @@ import { Formulario } from "@/components/Formulario";
 import { CamposContato } from "@/components/CamposContato";
 import { BotaoEnviar } from "@/components/BotaoEnviar";
 import { salvarCliente } from "../actions";
+import { getT } from "@/i18n/servidor";
 
 export default async function NovoCliente() {
   await exigirAdmin();
+  const t = getT();
   return (
     <>
-      <Voltar href="/clientes" rotulo="Clientes" />
-      <Cabecalho titulo="Novo cliente" />
+      <Voltar href="/clientes" rotulo={t("Clientes")} />
+      <Cabecalho titulo={t("Cliente novo")} />
       <div className="cartao">
         <Formulario acao={salvarCliente.bind(null, null)}>
           <CamposContato />
-          <BotaoEnviar>Salvar cliente</BotaoEnviar>
+          <BotaoEnviar>{t("Salvar cliente")}</BotaoEnviar>
         </Formulario>
       </div>
     </>

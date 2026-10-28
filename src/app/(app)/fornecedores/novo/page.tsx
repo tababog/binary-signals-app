@@ -4,18 +4,20 @@ import { Formulario } from "@/components/Formulario";
 import { CamposFornecedor } from "@/components/CamposFornecedor";
 import { BotaoEnviar } from "@/components/BotaoEnviar";
 import { salvarFornecedor } from "../actions";
+import { getT } from "@/i18n/servidor";
 
 export default async function NovoFornecedor({ searchParams }: { searchParams: { tipo?: string } }) {
   await exigirAdmin();
   const sub = searchParams.tipo === "SUBCONTRATADO";
+  const t = getT();
   return (
     <>
-      <Voltar href={sub ? "/subcontratados" : "/fornecedores"} rotulo={sub ? "Subcontratados" : "Fornecedores"} />
-      <Cabecalho titulo={sub ? "Novo subcontratado" : "Novo fornecedor"} />
+      <Voltar href={sub ? "/subcontratados" : "/fornecedores"} rotulo={sub ? t("Subcontratados") : t("Fornecedores")} />
+      <Cabecalho titulo={sub ? t("Novo subcontratado") : t("Novo fornecedor")} />
       <div className="cartao">
         <Formulario acao={salvarFornecedor.bind(null, null)}>
           <CamposFornecedor tipoInicial={sub ? "SUBCONTRATADO" : "FORNECEDOR"} />
-          <BotaoEnviar>Salvar</BotaoEnviar>
+          <BotaoEnviar>{t("Salvar")}</BotaoEnviar>
         </Formulario>
       </div>
     </>

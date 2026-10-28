@@ -1,6 +1,6 @@
 import { db } from "./db";
 import { campoData, lerDataHora } from "./format";
-import { nomeTipoServico } from "./constantes";
+import { PREFIXO_PERSONALIZADO, nomeTipoServico } from "./constantes";
 
 /** Dias depois da visita realizada em que o app sugere falar com o cliente. */
 export const PRAZOS_FOLLOWUP = [3, 7, 14];
@@ -67,13 +67,15 @@ const SERVICOS: Record<string, { en: string; es: string }> = {
   DRYWALL: { en: "drywall", es: "drywall" },
   PINTURA: { en: "painting", es: "pintura" },
   ISOLAMENTO: { en: "insulation", es: "aislamiento" },
-  IMPERMEABILIZACAO: { en: "waterproofing", es: "impermeabilización" },
-  PAPEL_PAREDE: { en: "wallpaper", es: "papel tapiz" },
-  CARPINTARIA: { en: "carpentry", es: "carpintería" },
+  CARPINTARIA: { en: "finish carpentry", es: "carpintería de acabado" },
 };
 
 function nomeServico(idioma: Idioma, tipo: string): string | null {
   if (tipo === "OUTRO") return null;
+  // Serviço digitado em "Outros": usa o nome como foi escrito
+  if (tipo.startsWith(PREFIXO_PERSONALIZADO)) return nomeTipoServico(tipo);
+  if (tipo === "ISOLAMENTO" && idioma === "pt") return "isolamento acústico";
+  if (tipo === "CARPINTARIA" && idioma === "pt") return "carpintaria de acabamento";
   if (idioma === "pt") return nomeTipoServico(tipo).toLowerCase();
   return SERVICOS[tipo]?.[idioma] ?? tipo.toLowerCase();
 }

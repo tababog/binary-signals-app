@@ -1,5 +1,6 @@
 "use server";
 
+import { getT } from "@/i18n/servidor";
 import bcrypt from "bcryptjs";
 import { randomBytes } from "node:crypto";
 import { redirect } from "next/navigation";
@@ -8,6 +9,7 @@ import { db } from "@/lib/db";
 import { exigirAdmin, exigirUsuario } from "@/lib/auth";
 import { paraCentavos, texto } from "@/lib/format";
 import { gerarConvite } from "@/lib/convite";
+import { idiomaValido } from "@/i18n/idiomas";
 import type { EstadoForm } from "@/components/Formulario";
 
 function dadosFuncionario(form: FormData) {
@@ -23,6 +25,7 @@ function dadosFuncionario(form: FormData) {
     valorDiariaCent: diaria ? valor : 0,
     vinculo: form.get("vinculo") === "HELPER" ? "HELPER" : "FIXO",
     papel: form.get("papel") === "ADMIN" ? "ADMIN" : "FUNCIONARIO",
+    idioma: idiomaValido(form.get("idioma")) ? (form.get("idioma") as string) : "pt",
   };
 }
 
@@ -50,8 +53,8 @@ export async function criarFuncionario(_e: EstadoForm, form: FormData): Promise<
   const dados = dadosFuncionario(form);
   const senha = String(form.get("senha") ?? "");
   const problema = await conferirLogin(dados);
-  if (problema) return { erro: problema };
-  if (senha && senha.length < 6) return { erro: "A senha precisa ter pelo menos 6 caracteres." };
+  if (problema) return { erro: getT()(problema) };
+  if (senha && senha.length < 6) return { erro: getT()("A senha precisa ter pelo menos 6 caracteres.") };
 
   // Sem senha: o funcionário cria a dele pelo link de convite. Até lá a conta tem uma senha aleatória que ninguém conhece.
   const senhaHash = await bcrypt.hash(senha || randomBytes(32).toString("hex"), 10);
@@ -67,13 +70,13 @@ export async function atualizarFuncionario(id: string, _e: EstadoForm, form: For
   const dados = dadosFuncionario(form);
   const ativo = form.get("ativo") === "on";
   const problema = await conferirLogin(dados, id);
-  if (problema) return { erro: problema };
+  if (problema) return { erro: getT()(problema) };
   if (id === admin.id && (dados.papel !== "ADMIN" || !ativo)) {
-    return { erro: "Você não pode remover o seu próprio acesso de administrador." };
+    return { erro: getT()("Você não pode remover o seu próprio acesso de administrador.") };
   }
 
   const novaSenha = String(form.get("senha") ?? "");
-  if (novaSenha && novaSenha.length < 6) return { erro: "A nova senha precisa ter pelo menos 6 caracteres." };
+  if (novaSenha && novaSenha.length < 6) return { erro: getT()("A nova senha precisa ter pelo menos 6 caracteres.") };
 
   await db.usuario.update({
     where: { id },
@@ -87,9 +90,9 @@ export async function trocarMinhaSenha(_e: EstadoForm, form: FormData): Promise<
   const usuario = await exigirUsuario();
   const atual = String(form.get("atual") ?? "");
   const nova = String(form.get("nova") ?? "");
-  if (!(await bcrypt.compare(atual, usuario.senhaHash))) return { erro: "Senha atual incorreta." };
-  if (nova.length < 6) return { erro: "A nova senha precisa ter pelo menos 6 caracteres." };
-  if (nova !== form.get("confirmacao")) return { erro: "A confirmação não confere com a nova senha." };
+  if (!(await bcrypt.compare(atual, usuario.senhaHash))) return { erro: getT()("Senha atual incorreta.") };
+  if (nova.length < 6) return { erro: getT()("A nova senha precisa ter pelo menos 6 caracteres.") };
+  if (nova !== form.get("confirmacao")) return { erro: getT()("A confirmação não confere com a nova senha.") };
   await db.usuario.update({ where: { id: usuario.id }, data: { senhaHash: await bcrypt.hash(nova, 10) } });
   redirect("/conta?ok=1");
 }

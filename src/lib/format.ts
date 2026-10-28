@@ -1,11 +1,11 @@
-const MOEDA = process.env.NEXT_PUBLIC_MOEDA || "USD";
+import { BANDEIRAS } from "@/i18n/idiomas";
+import { getT, idiomaAtual } from "@/i18n/servidor";
+
+import { dinheiro } from "./moeda";
+
+export { dinheiro };
+
 export const FUSO = process.env.NEXT_PUBLIC_FUSO || "America/New_York";
-
-const fmtMoeda = new Intl.NumberFormat("en-US", { style: "currency", currency: MOEDA });
-
-export function dinheiro(centavos: number) {
-  return fmtMoeda.format(centavos / 100);
-}
 
 /**
  * Aceita "1,234.56", "1234.56", "1.234,56" ou "1234". Retorna centavos.
@@ -25,19 +25,24 @@ export function centavosParaCampo(centavos: number) {
   return (centavos / 100).toFixed(2);
 }
 
+/** Formato de data do idioma escolhido (pt e es: dia/mês; en: mês/dia). */
+function locale() {
+  return BANDEIRAS[idiomaAtual()].locale;
+}
+
 export function data(d: Date | null | undefined) {
   if (!d) return "—";
-  return d.toLocaleDateString("pt-BR", { timeZone: FUSO });
+  return d.toLocaleDateString(locale(), { timeZone: FUSO });
 }
 
 export function dataHora(d: Date | null | undefined) {
   if (!d) return "—";
-  return d.toLocaleString("pt-BR", { timeZone: FUSO, dateStyle: "short", timeStyle: "short" });
+  return d.toLocaleString(locale(), { timeZone: FUSO, dateStyle: "short", timeStyle: "short" });
 }
 
 export function hora(d: Date | null | undefined) {
   if (!d) return "—";
-  return d.toLocaleTimeString("pt-BR", { timeZone: FUSO, hour: "2-digit", minute: "2-digit" });
+  return d.toLocaleTimeString(locale(), { timeZone: FUSO, hour: "2-digit", minute: "2-digit" });
 }
 
 export function horas(ms: number) {
@@ -90,5 +95,6 @@ export function inicioDoMes() {
 
 /** "$25.00/h" ou "$200.00/dia", conforme a forma de pagamento. */
 export function pagamento(u: { tipoPagamento: string; valorHoraCent: number; valorDiariaCent: number }) {
-  return u.tipoPagamento === "DIARIA" ? `${dinheiro(u.valorDiariaCent)}/dia` : `${dinheiro(u.valorHoraCent)}/h`;
+  const t = getT();
+  return u.tipoPagamento === "DIARIA" ? `${dinheiro(u.valorDiariaCent)}${t("/dia")}` : `${dinheiro(u.valorHoraCent)}/h`;
 }

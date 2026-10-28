@@ -7,12 +7,15 @@ import { nomeStatus, nomeTipoServico } from "@/lib/constantes";
 import { resumoObra } from "@/lib/financeiro";
 import { Cabecalho, SeloStatus, Vazio } from "@/components/ui";
 import { ItemVisita } from "@/components/ItemVisita";
+import { TextoUsuario } from "@/components/TextoUsuario";
 import { SeloLocal } from "@/components/SeloLocal";
 import { temAlertaLocal } from "@/lib/geo";
+import { getT } from "@/i18n/servidor";
 
 export default async function Painel() {
   const usuario = await exigirUsuario();
   if (usuario.papel !== "ADMIN") redirect("/ponto");
+  const t = getT();
 
   const seteDias = new Date(Date.now() - 7 * 24 * 3600 * 1000);
   const fimDeHoje = new Date(lerDataHora(`${campoData(new Date())}T23:59`)!.getTime() + 60_000);
@@ -35,21 +38,21 @@ export default async function Painel() {
 
   return (
     <>
-      <Cabecalho titulo="Painel" subtitulo={`Obras em aberto: ${obras.length}`}>
-        <Link href="/obras/nova" className="botao">+ Nova obra</Link>
+      <Cabecalho titulo={t("Painel")} subtitulo={t("Obras em aberto: {n}", { n: obras.length })}>
+        <Link href="/obras/nova" className="botao">{t("+ Nova obra")}</Link>
       </Cabecalho>
 
       {/* Ordem pedida: obras, equipe, visitas, lançamentos. Uma coluna no celular, duas no computador. */}
       <div className="grid gap-4 lg:grid-cols-2">
         <div className="lg:col-span-2">
         <div className="cartao overflow-x-auto">
-          <h2 className="mb-3">Obras em aberto</h2>
+          <h2 className="mb-3">{t("Obras em aberto")}</h2>
           {resumos.length === 0 ? (
-            <Vazio>Nenhuma obra em aberto.</Vazio>
+            <Vazio>{t("Nenhuma obra em aberto.")}</Vazio>
           ) : (
             <table className="tabela">
               <thead>
-                <tr><th>Obra</th><th>Andamento</th><th className="text-right">Custo / Orçado</th><th className="text-right">Saldo</th></tr>
+                <tr><th>{t("Obra")}</th><th>{t("Andamento")}</th><th className="text-right">{t("Custo / Orçado")}</th><th className="text-right">{t("Saldo")}</th></tr>
               </thead>
               <tbody>
                 {resumos.map((r) => {
@@ -61,12 +64,12 @@ export default async function Painel() {
                         <div className="text-xs text-stone-500">{r.obra.cliente.nome}</div>
                       </td>
                       <td>
-                        <SeloStatus status={r.obra.status} rotulo={nomeStatus(r.obra.status)} />
+                        <SeloStatus status={r.obra.status} rotulo={t(nomeStatus(r.obra.status))} />
                         <div className="text-xs text-stone-500">{r.obra.progresso}%</div>
                       </td>
                       <td className={`text-right tabular-nums ${estourou ? "text-red-700" : ""}`}>
                         {dinheiro(r.custoTotal)}
-                        <div className="text-xs text-stone-500">de {dinheiro(r.orcadoTotal)}{estourou && " ⚠️"}</div>
+                        <div className="text-xs text-stone-500">{t("de {valor}", { valor: dinheiro(r.orcadoTotal) })}{estourou && " ⚠️"}</div>
                       </td>
                       <td className={`text-right tabular-nums ${r.saldoCaixa < 0 ? "text-red-700" : "text-emerald-700"}`}>{dinheiro(r.saldoCaixa)}</td>
                     </tr>
@@ -79,15 +82,15 @@ export default async function Painel() {
         </div>
         <div className="space-y-4">
           <div className="cartao">
-            <h2 className="mb-2">Equipe trabalhando agora</h2>
+            <h2 className="mb-2">{t("Equipe trabalhando agora")}</h2>
             {naObra.length === 0 ? (
-              <Vazio>Ninguém com ponto aberto.</Vazio>
+              <Vazio>{t("Ninguém com ponto aberto.")}</Vazio>
             ) : (
               <ul className="space-y-1 text-sm">
                 {naObra.map((r) => (
                   <li key={r.id}>
-                    <b>{r.usuario.nome}</b> em {r.obra.nome}
-                    <span className="text-stone-500"> desde {hora(r.entrada)}</span>{" "}
+                    <b>{r.usuario.nome}</b> {t("em")} {r.obra.nome}
+                    <span className="text-stone-500"> {t("desde {hora}", { hora: hora(r.entrada) })}</span>{" "}
                     <SeloLocal lat={r.latEntrada} lng={r.lngEntrada} precisao={r.precisaoEntrada} obra={r.obra} />
                   </li>
                 ))}
@@ -96,7 +99,7 @@ export default async function Painel() {
           </div>
           {alertas.length > 0 && (
             <div className="cartao border-red-200 bg-red-50">
-              <h2 className="mb-2">⚠ Ponto fora da obra (7 dias)</h2>
+              <h2 className="mb-2">{t("⚠ Ponto fora da obra (7 dias)")}</h2>
               <ul className="space-y-1 text-sm">
                 {alertas.slice(0, 6).map((r) => (
                   <li key={r.id}>
@@ -104,36 +107,36 @@ export default async function Painel() {
                   </li>
                 ))}
               </ul>
-              <Link href="/registros?alertas=1" className="link mt-2 inline-block text-sm">Ver todos os alertas →</Link>
+              <Link href="/registros?alertas=1" className="link mt-2 inline-block text-sm">{t("Ver todos os alertas →")}</Link>
             </div>
           )}
         </div>
         <div className="cartao self-start">
           <div className="mb-2 flex items-center justify-between gap-2">
-            <h2>Visitas agendadas</h2>
-            <Link href="/visitas/nova" className="botao px-3 py-1.5 text-sm">+ Agendar</Link>
+            <h2>{t("Visitas agendadas")}</h2>
+            <Link href="/visitas/nova" className="botao px-3 py-1.5 text-sm">{t("+ Agendar")}</Link>
           </div>
           {visitas.length === 0 ? (
-            <Vazio>Nenhuma visita agendada.</Vazio>
+            <Vazio>{t("Nenhuma visita agendada.")}</Vazio>
           ) : (
             <ul className="divide-y divide-stone-100">{visitas.map((v) => <ItemVisita key={v.id} v={v} agora={agora} />)}</ul>
           )}
-          <Link href="/visitas" className="link mt-2 inline-block text-sm">Ver todas as visitas →</Link>
+          <Link href="/visitas" className="link mt-2 inline-block text-sm">{t("Ver todas as visitas →")}</Link>
         </div>
         {followUps.length > 0 && (
           <div className="cartao self-start border-sky-200 bg-sky-50 lg:col-start-2">
-            <h2 className="mb-2">💬 Follow-ups de hoje</h2>
+            <h2 className="mb-2">{t("💬 Follow-ups de hoje")}</h2>
             <ul className="divide-y divide-sky-100 text-sm">
               {followUps.map((f) => (
                 <li key={f.id} className="flex items-center justify-between gap-2 py-2">
                   <span>
                     <b>{f.visita.cliente.nome}</b>
-                    {f.visita.tipoServico && ` · ${nomeTipoServico(f.visita.tipoServico)}`}
+                    {f.visita.tipoServico && ` · ${t(nomeTipoServico(f.visita.tipoServico))}`}
                     <span className="block text-xs text-stone-500">
-                      {f.ordem}º follow-up{f.dataPrevista < lerDataHora(`${campoData(new Date())}T00:00`)! && ` · atrasado desde ${data(f.dataPrevista)}`}
+                      {t("{n}º follow-up", { n: f.ordem })}{f.dataPrevista < lerDataHora(`${campoData(new Date())}T00:00`)! && ` · ${t("atrasado desde {data}", { data: data(f.dataPrevista) })}`}
                     </span>
                   </span>
-                  <Link href={`/visitas/${f.visitaId}`} className="botao px-3 py-1.5 text-sm">Enviar</Link>
+                  <Link href={`/visitas/${f.visitaId}`} className="botao px-3 py-1.5 text-sm">{t("Enviar")}</Link>
                 </li>
               ))}
             </ul>
@@ -141,15 +144,15 @@ export default async function Painel() {
         )}
         <div className="lg:col-span-2">
           <div className="cartao">
-            <h2 className="mb-2">Últimos lançamentos</h2>
+            <h2 className="mb-2">{t("Últimos lançamentos")}</h2>
             {ultimos.length === 0 ? (
-              <Vazio>Nada lançado ainda.</Vazio>
+              <Vazio>{t("Nada lançado ainda.")}</Vazio>
             ) : (
               <ul className="divide-y divide-stone-100 text-sm">
                 {ultimos.map((l) => (
                   <li key={l.id} className="flex justify-between gap-2 py-1.5">
                     <span>
-                      {l.descricao}
+                      <TextoUsuario texto={l.descricao} />
                       <span className="block text-xs text-stone-500">{l.obra.nome} · {data(l.data)}</span>
                     </span>
                     <span className={`whitespace-nowrap tabular-nums ${l.tipo === "ENTRADA" ? "text-emerald-700" : "text-red-700"}`}>

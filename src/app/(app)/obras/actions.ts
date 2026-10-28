@@ -1,5 +1,6 @@
 "use server";
 
+import { getT } from "@/i18n/servidor";
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { db } from "@/lib/db";
@@ -40,9 +41,9 @@ export async function salvarObra(id: string | null, _e: EstadoForm, form: FormDa
     raioMetros: Math.min(5000, Math.max(20, Number(form.get("raioMetros")) || 200)),
     diasPrevistos: Math.min(1000, Math.max(0, Math.round(Number(form.get("diasPrevistos")) || 0))),
   };
-  if (!dados.nome) return { erro: "Informe o nome da obra." };
-  if ((dados.latitude == null) !== (dados.longitude == null)) return { erro: "Informe latitude e longitude da obra (ou deixe as duas em branco)." };
-  if (!dados.clienteId) return { erro: "Escolha o cliente da obra." };
+  if (!dados.nome) return { erro: getT()("Informe o nome da obra.") };
+  if ((dados.latitude == null) !== (dados.longitude == null)) return { erro: getT()("Informe latitude e longitude da obra (ou deixe as duas em branco).") };
+  if (!dados.clienteId) return { erro: getT()("Escolha o cliente da obra.") };
 
   const obra = id ? await db.obra.update({ where: { id }, data: dados }) : await db.obra.create({ data: dados });
   atualizar(obra.id);
@@ -73,9 +74,9 @@ export async function adicionarItemOrcamento(obraId: string, _e: EstadoForm, for
   const categoria = String(form.get("categoria") ?? "");
   const descricao = String(form.get("descricao") ?? "").trim();
   const valorCent = paraCentavos(form.get("valor"));
-  if (!(categoria in CATEGORIAS_DESPESA)) return { erro: "Escolha a categoria." };
-  if (!descricao) return { erro: "Descreva o item do orçamento." };
-  if (valorCent <= 0) return { erro: "Informe um valor maior que zero." };
+  if (!(categoria in CATEGORIAS_DESPESA)) return { erro: getT()("Escolha a categoria.") };
+  if (!descricao) return { erro: getT()("Descreva o item do orçamento.") };
+  if (valorCent <= 0) return { erro: getT()("Informe um valor maior que zero.") };
   await db.itemOrcamento.create({ data: { obraId, categoria, descricao, valorCent } });
   atualizar(obraId);
   redirect(`/obras/${obraId}?aba=orcamento`);
@@ -95,15 +96,15 @@ export async function lancarDespesa(obraId: string, _e: EstadoForm, form: FormDa
   const descricao = String(form.get("descricao") ?? "").trim();
   const valorCent = paraCentavos(form.get("valor"));
   const dataLanc = lerData(form.get("data")) ?? new Date();
-  if (!(categoria in CATEGORIAS_DESPESA)) return { erro: "Escolha a categoria." };
-  if (!descricao) return { erro: "Descreva a despesa (ex.: 20 sacos de cimento)." };
-  if (valorCent <= 0) return { erro: "Informe o valor da despesa." };
+  if (!(categoria in CATEGORIAS_DESPESA)) return { erro: getT()("Escolha a categoria.") };
+  if (!descricao) return { erro: getT()("Descreva a despesa (ex.: 20 sacos de cimento).") };
+  if (valorCent <= 0) return { erro: getT()("Informe o valor da despesa.") };
 
   let comprovante: string | null = null;
   try {
     comprovante = await salvarComprovante(form.get("comprovante"));
   } catch (e) {
-    return { erro: (e as Error).message };
+    return { erro: getT()((e as Error).message) };
   }
 
   await db.lancamento.create({
@@ -127,13 +128,13 @@ export async function lancarDespesa(obraId: string, _e: EstadoForm, form: FormDa
 export async function lancarRecebimento(obraId: string, _e: EstadoForm, form: FormData): Promise<EstadoForm> {
   const usuario = await exigirAdmin();
   const valorCent = paraCentavos(form.get("valor"));
-  if (valorCent <= 0) return { erro: "Informe o valor recebido." };
+  if (valorCent <= 0) return { erro: getT()("Informe o valor recebido.") };
 
   let comprovante: string | null = null;
   try {
     comprovante = await salvarComprovante(form.get("comprovante"));
   } catch (e) {
-    return { erro: (e as Error).message };
+    return { erro: getT()((e as Error).message) };
   }
 
   await db.lancamento.create({
