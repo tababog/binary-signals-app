@@ -23,7 +23,7 @@ export default async function Painel() {
     db.registroPonto.findMany({ where: { saida: null }, include: { usuario: true, obra: true }, orderBy: { entrada: "asc" } }),
     db.lancamento.findMany({ include: { obra: true }, orderBy: { criadoEm: "desc" }, take: 8 }),
     db.registroPonto.findMany({ where: { entrada: { gte: seteDias } }, include: { usuario: true, obra: true }, orderBy: { entrada: "desc" } }),
-    db.visita.findMany({ where: { status: "AGENDADA" }, include: { cliente: true }, orderBy: { dataHora: "asc" }, take: 6 }),
+    db.visita.findMany({ where: { status: "AGENDADA" }, include: { cliente: true, responsavel: true }, orderBy: { dataHora: "asc" }, take: 6 }),
     // Follow-ups que vencem hoje ou já passaram, de clientes ainda em negociação
     db.followUp.findMany({
       where: { enviadoEm: null, dataPrevista: { lt: fimDeHoje }, visita: { status: "REALIZADA", resultado: null } },

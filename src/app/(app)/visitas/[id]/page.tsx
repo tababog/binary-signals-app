@@ -27,17 +27,20 @@ import { CANAIS, assuntoFollowUp, mensagemFollowUp, telefoneInternacional, type 
 import { LembreteVisita } from "@/components/LembreteVisita";
 import { dataHora } from "@/lib/format";
 import { getT } from "@/i18n/servidor";
+import { adminsDaVisita, agendaGoogleConfigurada, agendaTudoOk, traduzirStatusAgenda } from "@/lib/agenda-google";
+import { emailContaServico } from "@/lib/google";
 
 export default async function Visita({ params, searchParams }: { params: { id: string }; searchParams: { lembrete?: string; erroFoto?: string } }) {
   const usuario = await exigirAdmin();
   const t = getT();
-  const [visita, clientes, personalizados] = await Promise.all([
+  const [visita, clientes, personalizados, admins] = await Promise.all([
     db.visita.findUnique({
       where: { id: params.id },
-      include: { cliente: true, followUps: { orderBy: { dataPrevista: "asc" } }, fotos: { orderBy: { criadoEm: "asc" } } },
+      include: { cliente: true, responsavel: true, followUps: { orderBy: { dataPrevista: "asc" } }, fotos: { orderBy: { criadoEm: "asc" } } },
     }),
     db.cliente.findMany({ orderBy: { nome: "asc" }, select: { id: true, nome: true, endereco: true } }),
     db.servicoPersonalizado.findMany({ orderBy: { nome: "asc" } }),
+    adminsDaVisita(),
   ]);
   if (!visita) notFound();
 
@@ -64,14 +67,31 @@ export default async function Visita({ params, searchParams }: { params: { id: s
         <Link href={`/obras/nova?cliente=${visita.clienteId}`} className="botao-secundario">{t("Fechou? Criar obra")}</Link>
       </Cabecalho>
 
+      {visita.responsavel && (
+        <p className="mb-3 text-sm font-semibold text-stone-700">{t("👤 Visita do {nome}", { nome: visita.responsavel.nome })}</p>
+      )}
+
       {visita.status === "AGENDADA" && visita.dataHora > new Date() && (
         <div className={`cartao mb-4 max-w-2xl ${searchParams.lembrete ? "border-marca-500 bg-marca-50" : ""}`}>
           <h2 className="mb-1">{t("⏰ Lembrete no celular")}</h2>
           <p className="mb-3 text-sm text-stone-600">
             {searchParams.lembrete && <b>{t("Visita agendada para {quando}.", { quando: dataHora(visita.dataHora) })} </b>}
-            {t("Coloque na agenda do celular para não esquecer. No iPhone e em outros calendários, o evento já vem com dois avisos: 1 dia antes e 1 hora antes. No Google Agenda, valem os avisos padrão da sua agenda.")}
+            {t("Coloque na agenda do celular para não esquecer. No iPhone e em outros calendários, o evento já vem com dois avisos: 1 dia antes e 2 horas antes. No Google Agenda, valem os avisos padrão da sua agenda.")}
           </p>
           <LembreteVisita v={visita} />
+          {agendaGoogleConfigurada() && (
+            <p className="mt-3 text-sm text-stone-600">
+              <b>{t("Google Agenda dos sócios:")}</b>{" "}
+              {visita.agendaStatus
+                ? traduzirStatusAgenda(visita.agendaStatus, t)
+                : t("ainda não sincronizada. Salve a visita para criar os lembretes.")}
+              {visita.agendaStatus && !agendaTudoOk(visita.agendaStatus) && (
+                <span className="mt-1 block text-xs text-stone-500">
+                  {t("Para receber os avisos (1 dia e 2 horas antes), cada sócio compartilha a própria Google Agenda com {email} com a permissão \"Fazer alterações nos eventos\". O e-mail de login no app tem que ser o mesmo da Google Agenda.", { email: emailContaServico() ?? "" })}
+                </span>
+              )}
+            </p>
+          )}
         </div>
       )}
 
@@ -113,6 +133,8 @@ export default async function Visita({ params, searchParams }: { params: { id: s
             clientes={clientes}
             personalizados={personalizados.map((p) => p.nome)}
             comFotos={false}
+            responsaveis={admins}
+            responsavelPadrao={usuario.id}
             valor={{ ...visita, dataHora: campoDataHora(visita.dataHora) }}
           />
           <BotaoEnviar>{t("Salvar alterações")}</BotaoEnviar>

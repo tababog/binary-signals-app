@@ -10,8 +10,8 @@ export default async function Visitas() {
   const t = getT();
   const agora = new Date();
   const [proximas, anteriores] = await Promise.all([
-    db.visita.findMany({ where: { status: "AGENDADA" }, include: { cliente: true }, orderBy: { dataHora: "asc" } }),
-    db.visita.findMany({ where: { status: { not: "AGENDADA" } }, include: { cliente: true }, orderBy: { dataHora: "desc" }, take: 30 }),
+    db.visita.findMany({ where: { status: "AGENDADA" }, include: { cliente: true, responsavel: true }, orderBy: { dataHora: "asc" } }),
+    db.visita.findMany({ where: { status: { not: "AGENDADA" } }, include: { cliente: true, responsavel: true }, orderBy: { dataHora: "desc" }, take: 30 }),
   ]);
 
   return (

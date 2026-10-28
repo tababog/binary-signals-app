@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { data, dataHora } from "@/lib/format";
 import { LembreteVisita } from "./LembreteVisita";
+import { MensagemCliente } from "./MensagemCliente";
 import { descreverSubservicos, nomeTipoServico } from "@/lib/constantes";
 import { getT } from "@/i18n/servidor";
 
@@ -13,7 +14,8 @@ type Visita = {
   status: string;
   descricao: string | null;
   resultado?: string | null;
-  cliente: { nome: string; telefone: string | null };
+  cliente: { nome: string; telefone: string | null; email?: string | null };
+  responsavel?: { nome: string } | null;
 };
 
 /** Uma visita na lista: cliente, hora, serviço, e atalhos para o mapa e o telefone. */
@@ -45,6 +47,7 @@ export function ItemVisita({ v, agora }: { v: Visita; agora: Date }) {
           )}
           {v.status === "CANCELADA" && <span className="selo ml-2 bg-stone-200 text-stone-600">{t("Cancelada")}</span>}
         </div>
+        {v.responsavel && <div className="text-xs font-medium text-marca-700">{t("👤 Visita do {nome}", { nome: v.responsavel.nome.split(" ")[0] })}</div>}
         {v.endereco && <div className="truncate text-xs text-stone-500">{v.endereco}</div>}
       </div>
       <div className="flex gap-2 text-sm">
@@ -56,6 +59,7 @@ export function ItemVisita({ v, agora }: { v: Visita; agora: Date }) {
         {v.cliente.telefone && (
           <a className="botao-secundario px-2 py-1" href={`tel:${v.cliente.telefone.replace(/[^\d+]/g, "")}`}>{t("Ligar")}</a>
         )}
+        {(v.cliente.telefone || v.cliente.email) && <MensagemCliente nome={v.cliente.nome} telefone={v.cliente.telefone} email={v.cliente.email ?? null} />}
       </div>
       {v.status === "AGENDADA" && !atrasada && <LembreteVisita v={v} compacto />}
     </li>

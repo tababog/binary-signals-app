@@ -39,6 +39,7 @@ model Usuario {
 
   registros      RegistroPonto[]
   lancamentos    Lancamento[]
+  visitas        Visita[]
 
   @@index([conviteHash])
 }
@@ -234,6 +235,12 @@ model Visita {
   status      String   @default("AGENDADA")
   // Depois da visita: null = em negociação, "FECHOU" ou "SEM_INTERESSE" (encerra os follow-ups)
   resultado   String?
+  // Quem vai à visita (Alessandro ou Emmanuel)
+  responsavelId String?
+  responsavel Usuario? @relation(fields: [responsavelId], references: [id], onDelete: SetNull)
+  // Lembretes na Google Agenda dos sócios: JSON { usuarioId: eventId } e o resultado do último envio
+  eventosAgenda String?
+  agendaStatus  String?
   criadoEm    DateTime @default(now())
 
   followUps   FollowUp[]

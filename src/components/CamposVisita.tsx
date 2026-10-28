@@ -15,7 +15,9 @@ type Visita = {
   tipoServico: string | null;
   subServicos: string | null;
   descricao: string | null;
+  responsavelId?: string | null;
 };
+type Pessoa = { id: string; nome: string };
 
 export function CamposVisita({
   clientes,
@@ -23,6 +25,8 @@ export function CamposVisita({
   valor,
   clienteInicial,
   comFotos = true,
+  responsaveis = [],
+  responsavelPadrao,
 }: {
   clientes: Cliente[];
   /** Serviços criados antes em "Outros": aparecem como opção junto com os fixos. */
@@ -31,6 +35,9 @@ export function CamposVisita({
   clienteInicial?: string;
   /** Na página da visita as fotos têm um quadro próprio. */
   comFotos?: boolean;
+  /** Administradores que podem fazer a visita (Alessandro e Emmanuel). */
+  responsaveis?: Pessoa[];
+  responsavelPadrao?: string;
 }) {
   const t = useT();
   const [clienteId, setClienteId] = useState(valor?.clienteId ?? clienteInicial ?? (clientes.length ? "" : "NOVO"));
@@ -78,6 +85,14 @@ export function CamposVisita({
       <Campo rotulo={t("Data e hora *")}>
         <input className="campo" name="dataHora" type="datetime-local" defaultValue={valor?.dataHora} required />
       </Campo>
+      {responsaveis.length > 0 && (
+        <Campo rotulo={t("Quem vai fazer a visita *")}>
+          <select className="campo" name="responsavelId" defaultValue={valor?.responsavelId ?? responsavelPadrao ?? ""} required>
+            <option value="" disabled>{t("Selecione...")}</option>
+            {responsaveis.map((p) => <option key={p.id} value={p.id}>{p.nome}</option>)}
+          </select>
+        </Campo>
+      )}
       {clienteId === "NOVO" && (
         <>
           <Campo rotulo={t("Nome do cliente novo *")}>

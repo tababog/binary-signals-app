@@ -138,3 +138,20 @@ O app separa as saídas da planilha assim:
 - **Despesas fixas:** todo o resto.
 
 Os gastos avulsos lançados no app (ferramentas etc.) ficam só como registro do recibo: o valor já está na planilha.
+
+## Parte 5 — Lembretes das visitas na Google Agenda dos sócios
+
+Cada visita agendada vira um evento na Google Agenda do Alessandro e do Emmanuel, com aviso **1 dia antes** e
+**2 horas antes**, dizendo quem vai fazer a visita. Usa a mesma conta de serviço da Parte 4.
+
+1. Ligue a Google Calendar API no projeto `tababog-obras`:
+   https://console.cloud.google.com/apis/library/calendar-json.googleapis.com?project=tababog-obras → **Ativar**.
+2. Cada sócio, no computador, abre https://calendar.google.com → ⚙️ **Configurações** → na esquerda, a agenda com o
+   próprio nome → **Compartilhar com pessoas específicas** → **Adicionar pessoas** →
+   `tababog-app@tababog-obras.iam.gserviceaccount.com` com a permissão **Fazer alterações nos eventos** → Enviar.
+3. O e-mail de login de cada sócio no app tem que ser o e-mail dessa Google Agenda (Funcionários → editar).
+4. Abra uma visita e toque em **Salvar alterações**: no quadro "Lembrete no celular" aparece
+   "Alessandro: lembretes criados ✓ · Emmanuel: lembretes criados ✓". Se aparecer "agenda não compartilhada",
+   falta o passo 2 (ou o passo 3) daquela pessoa.
+
+Visita cancelada, realizada ou excluída sai da agenda sozinha.

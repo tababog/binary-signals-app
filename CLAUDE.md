@@ -60,7 +60,9 @@ Conversa com o usuário em português; telas internas em português.
        East US, bucket privado `comprovantes`, Data API desligada). Cada push na `main` publica sozinho.
 - [~] 4. Visitas: agenda, lembrete na agenda do celular e follow-up semiautomático (WhatsApp/SMS/e-mail pelo celular,
        3/7/14 dias, resultado Fechou/Sem interesse), serviço + subserviços, "Outros" vira opção fixa
-       (`ServicoPersonalizado`), fotos do trabalho (Supabase Storage). Falta: medidas do levantamento.
+       (`ServicoPersonalizado`), fotos do trabalho (Supabase Storage), responsável pela visita (um dos sócios) com evento na Google Agenda dos
+       dois (avisos 1 dia e 2 horas antes, `src/lib/agenda-google.ts`), botão Mensagem que traduz para inglês antes de
+       enviar ao cliente. Falta: medidas do levantamento.
 - [x] 5. Banco de preços histórico (regra 4) + cadastro de trabalhos antigos: página *Preços* (`/precos`), resumo por
        serviço + subserviço + unidade (`src/lib/precos.ts`) com preço/custo por unidade, faixa, multiplicador e preço
        mínimo para 2x, filtro Fairfield County x resto de CT; obra concluída vira referência com os números reais
