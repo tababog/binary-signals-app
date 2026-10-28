@@ -44,8 +44,8 @@ Conversa com o usuário em português; telas internas em português.
 
 - [x] 1. Base: obras, clientes, fornecedores, funcionários, orçamento x realizado, caixa por obra, recibos com foto, ponto.
 - [x] 2. USD e ponto com GPS (raio da obra, alertas de ponto fora da obra).
-- [~] 3. Hospedagem gratuita: código pronto (Postgres + fotos no Supabase Storage + `vercel-build`);
-       falta o Alessandro criar as contas e seguir `docs/hospedagem.md`.
+- [x] 3. Hospedagem: no ar na Vercel (projeto `tababog-obras`, plano Hobby) com Supabase (`tababog-obras`,
+       East US, bucket privado `comprovantes`, Data API desligada). Cada push na `main` publica sozinho.
 - [ ] 4. Visita técnica / levantamento: fotos, medidas e anotações no cliente antes de virar obra.
 - [ ] 5. Banco de preços histórico (regra 4) + cadastro de trabalhos antigos.
 - [ ] 6. Skill de precificação: materiais, mão de obra, custo, preço de mercado e duas opções (regras 2, 3 e 5).
