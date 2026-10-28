@@ -8,9 +8,11 @@ import { Formulario } from "@/components/Formulario";
 import { BotaoEnviar } from "@/components/BotaoEnviar";
 import { FotoRecibo } from "@/components/FotoRecibo";
 import { lancarDespesa } from "../../actions";
+import { getT } from "@/i18n/servidor";
 
 export default async function NovaDespesa({ params }: { params: { id: string } }) {
   await exigirAdmin();
+  const t = getT();
   const [obra, fornecedores] = await Promise.all([
     db.obra.findUnique({ where: { id: params.id } }),
     db.fornecedor.findMany({ orderBy: { nome: "asc" }, select: { id: true, nome: true, tipo: true } }),
@@ -20,48 +22,48 @@ export default async function NovaDespesa({ params }: { params: { id: string } }
   return (
     <>
       <Voltar href={`/obras/${obra.id}?aba=caixa`} rotulo={obra.nome} />
-      <Cabecalho titulo="Lançar despesa" subtitulo="A despesa entra direto no caixa desta obra" />
+      <Cabecalho titulo={t("Lançar despesa")} subtitulo={t("A despesa entra direto no caixa desta obra")} />
       <div className="cartao max-w-2xl">
         <Formulario acao={lancarDespesa.bind(null, obra.id)}>
-          <FotoRecibo />
+          <FotoRecibo rotulo={t("Foto do recibo / nota fiscal")} />
           <div className="grid gap-4 sm:grid-cols-2">
-            <Campo rotulo="Valor total *">
+            <Campo rotulo={t("Valor total *")}>
               <input className="campo text-lg" name="valor" inputMode="decimal" placeholder="0.00" required />
             </Campo>
-            <Campo rotulo="Data da compra">
+            <Campo rotulo={t("Data da compra")}>
               <input className="campo" name="data" type="date" defaultValue={campoData(new Date())} />
             </Campo>
-            <Campo rotulo="Categoria">
+            <Campo rotulo={t("Categoria")}>
               <select className="campo" name="categoria" defaultValue="MATERIAL">
                 {Object.entries(CATEGORIAS_DESPESA).map(([k, v]) => (
-                  <option key={k} value={k}>{v}</option>
+                  <option key={k} value={k}>{t(v)}</option>
                 ))}
               </select>
             </Campo>
-            <Campo rotulo="Fornecedor ou subcontratado">
+            <Campo rotulo={t("Fornecedor ou subcontratado")}>
               <select className="campo" name="fornecedorId" defaultValue="">
-                <option value="">— Nenhum —</option>
-                <optgroup label="Fornecedores">
+                <option value="">{t("— Nenhum —")}</option>
+                <optgroup label={t("Fornecedores")}>
                   {fornecedores.filter((f) => f.tipo !== "SUBCONTRATADO").map((f) => <option key={f.id} value={f.id}>{f.nome}</option>)}
                 </optgroup>
-                <optgroup label="Subcontratados">
+                <optgroup label={t("Subcontratados")}>
                   {fornecedores.filter((f) => f.tipo === "SUBCONTRATADO").map((f) => <option key={f.id} value={f.id}>{f.nome}</option>)}
                 </optgroup>
               </select>
             </Campo>
             <div className="sm:col-span-2">
-              <Campo rotulo="O que foi comprado *">
-                <input className="campo" name="descricao" placeholder="Ex.: 20 sacos de cimento CP-II" required />
+              <Campo rotulo={t("O que foi comprado *")}>
+                <input className="campo" name="descricao" placeholder={t("Ex.: 20 sacos de cimento CP-II")} required />
               </Campo>
             </div>
-            <Campo rotulo="Forma de pagamento">
+            <Campo rotulo={t("Forma de pagamento")}>
               <select className="campo" name="formaPagamento" defaultValue="">
                 <option value="">—</option>
-                {FORMAS_PAGAMENTO.map((f) => <option key={f}>{f}</option>)}
+                {FORMAS_PAGAMENTO.map((f) => <option key={f} value={f}>{t(f)}</option>)}
               </select>
             </Campo>
           </div>
-          <BotaoEnviar>Salvar despesa</BotaoEnviar>
+          <BotaoEnviar>{t("Salvar despesa")}</BotaoEnviar>
         </Formulario>
       </div>
     </>

@@ -10,7 +10,9 @@ tela cheia, como um app).
 
 **Administradores (acesso total — você e o Emanuel)**
 - **Painel**: obras em aberto, equipe trabalhando agora, visitas agendadas (com selos Hoje/Amanhã) e últimos lançamentos.
-- **Visitas**: agenda de visitas aos clientes (cliente novo ou já cadastrado), com atalhos para o mapa e para ligar;
+- **Visitas**: agenda de visitas aos clientes (cliente novo ou já cadastrado), com serviço e subserviços (ex.: Pintura →
+  Interna → Teto, Trims), serviços novos criados em "Outros" que passam a aparecer na lista, o que o cliente quer,
+  fotos do trabalho e endereço com sugestões enquanto digita; atalhos para o mapa e para ligar;
   **⏰ Lembrete** que coloca a visita na agenda do celular (Google Agenda ou arquivo de calendário com alarmes 1 dia e
   1 hora antes); marcar como realizada/cancelada e transformar em obra quando o cliente fecha.
   **Follow-up**: ao marcar a visita como realizada, o app agenda contatos em 3, 7 e 14 dias. No dia, o Painel mostra
@@ -38,7 +40,11 @@ tela cheia, como um app).
   distância até a obra e o link para o mapa. O Painel lista os pontos fora da obra dos últimos 7 dias.
   Para isso, cadastre a localização da obra (botão "Usar minha localização atual" estando no local) e o raio aceito.
 
-- **Empresa**: custos fixos (pró-labore, galpão, combustível, seguros...) e gastos avulsos como ferramentas.
+- **Empresa - Fluxo de caixa**: o fluxo de caixa da empresa lido da planilha do Google Drive, em cartões para o
+  celular (mês a mês ou acumulado): entradas, custos das obras, custos fixos, retiradas dos sócios, resultado, saldo
+  conferido com o extrato do banco e o multiplicador comparado com a meta 2x. Os custos fixos podem usar a média
+  real da planilha (gasolina, refeição, galpão...).
+  Também tem os custos fixos (pró-labore, galpão, combustível, seguros...) e gastos avulsos como ferramentas.
   Mostra o custo fixo por dia útil, **quanto custa um dia de obra**, o resultado de cada mês e quanto do custo fixo
   ficou sem obra para cobrir.
 
@@ -85,6 +91,8 @@ Depois de entrar pela primeira vez, cada administrador deve trocar a senha em **
 | `DATABASE_URL`, `DIRECT_URL` | Banco Postgres (Supabase ou local). |
 | `AUTH_SECRET` | Segredo das sessões de login. Use um valor longo e aleatório. |
 | `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` | Guardam as fotos dos recibos no Supabase Storage. Sem elas, as fotos ficam na pasta `UPLOAD_DIR`. |
+| `GOOGLE_SERVICE_ACCOUNT_JSON` | Conta de serviço do Google para ler o fluxo de caixa no Drive (docs/hospedagem.md, Parte 4). |
+| `ANTHROPIC_API_KEY` | Tradução automática dos textos escritos pelos usuários (português, inglês e espanhol). |
 | `NEXT_PUBLIC_MOEDA` | Moeda das telas (padrão `USD`). |
 | `NEXT_PUBLIC_FUSO` | Fuso horário do ponto (`America/New_York`, `America/Chicago`, `America/Denver`, `America/Los_Angeles`). |
 | `ADMIN1_*`, `ADMIN2_*` | Nome, e-mail e senha inicial dos dois administradores. |

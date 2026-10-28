@@ -1,4 +1,6 @@
 import { Campo } from "./ui";
+import { CampoEndereco } from "./CampoEndereco";
+import { getT } from "@/i18n/servidor";
 
 type Contato = {
   nome?: string;
@@ -9,28 +11,29 @@ type Contato = {
   observacoes?: string | null;
 };
 
-export function CamposContato({ valor = {}, rotuloDocumento = "Tax ID / EIN (opcional)" }: { valor?: Contato; rotuloDocumento?: string }) {
+export function CamposContato({ valor = {}, rotuloDocumento }: { valor?: Contato; rotuloDocumento?: string }) {
+  const t = getT();
   return (
     <div className="grid gap-4 sm:grid-cols-2">
-      <Campo rotulo="Nome *">
+      <Campo rotulo={t("Nome *")}>
         <input className="campo" name="nome" defaultValue={valor.nome} required />
       </Campo>
-      <Campo rotulo={rotuloDocumento}>
+      <Campo rotulo={rotuloDocumento ?? t("Tax ID / EIN (opcional)")}>
         <input className="campo" name="documento" defaultValue={valor.documento ?? ""} />
       </Campo>
-      <Campo rotulo="Telefone / WhatsApp">
+      <Campo rotulo={t("Telefone / WhatsApp")}>
         <input className="campo" name="telefone" type="tel" defaultValue={valor.telefone ?? ""} />
       </Campo>
-      <Campo rotulo="E-mail">
+      <Campo rotulo={t("E-mail")}>
         <input className="campo" name="email" type="email" defaultValue={valor.email ?? ""} />
       </Campo>
       <div className="sm:col-span-2">
-        <Campo rotulo="Endereço">
-          <input className="campo" name="endereco" defaultValue={valor.endereco ?? ""} />
+        <Campo rotulo={t("Endereço")}>
+          <CampoEndereco defaultValue={valor.endereco} />
         </Campo>
       </div>
       <div className="sm:col-span-2">
-        <Campo rotulo="Observações">
+        <Campo rotulo={t("Observações")}>
           <textarea className="campo" name="observacoes" rows={3} defaultValue={valor.observacoes ?? ""} />
         </Campo>
       </div>

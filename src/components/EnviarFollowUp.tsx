@@ -3,6 +3,7 @@
 import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { marcarFollowUpEnviado } from "@/app/(app)/visitas/actions";
+import { useT } from "@/i18n/cliente";
 
 type Idioma = "en" | "pt" | "es";
 // Só a bandeira na tela; o nome do idioma fica para leitores de tela
@@ -33,6 +34,7 @@ export function EnviarFollowUp({
   const [texto, setTexto] = useState(mensagens.en);
   const [, iniciar] = useTransition();
   const router = useRouter();
+  const t = useT();
 
   function trocarIdioma(i: Idioma) {
     setIdioma(i);
@@ -64,7 +66,7 @@ export function EnviarFollowUp({
           </button>
         ))}
       </div>
-      <textarea className="campo text-sm" rows={5} value={texto} onChange={(e) => setTexto(e.target.value)} aria-label="Mensagem" />
+      <textarea className="campo text-sm" rows={5} value={texto} onChange={(e) => setTexto(e.target.value)} aria-label={t("Mensagem")} />
       <div className="flex flex-wrap gap-2">
         {telefone && (
           <>
@@ -79,10 +81,10 @@ export function EnviarFollowUp({
         )}
         {email && (
           <a href={`mailto:${email}?subject=${encodeURIComponent(assuntos[idioma])}&body=${corpo}`} onClick={() => registrar("EMAIL")} className="botao-secundario">
-            E-mail
+            {t("E-mail")}
           </a>
         )}
-        {!telefone && !email && <p className="text-sm text-amber-800">Cadastre o telefone ou o e-mail do cliente para enviar.</p>}
+        {!telefone && !email && <p className="text-sm text-amber-800">{t("Cadastre o telefone ou o e-mail do cliente para enviar.")}</p>}
       </div>
     </div>
   );
