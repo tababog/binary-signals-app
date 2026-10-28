@@ -11,7 +11,7 @@
     "db:push": "prisma db push",
     "db:seed": "tsx prisma/seed.ts",
     "setup": "prisma db push && tsx prisma/seed.ts",
-    "vercel-build": "prisma generate && prisma db push --skip-generate && tsx prisma/seed.ts && next build"
+    "vercel-build": "prisma generate && if [ \"$VERCEL_ENV\" = production ]; then prisma db push --skip-generate && tsx prisma/seed.ts; else echo 'Preview: banco não alterado'; fi && next build"
   },
   "dependencies": {
     "@prisma/client": "5.22.0",
