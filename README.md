@@ -8,7 +8,7 @@ tela cheia, como um app).
 
 ## O que o app faz
 
-**Administradores (acesso total — você e o Emanuel)**
+**Administradores (acesso total — você e o Emmanuel)**
 - **Painel**: obras em aberto, equipe trabalhando agora, visitas agendadas (com selos Hoje/Amanhã) e últimos lançamentos.
 - **Visitas**: agenda de visitas aos clientes (cliente novo ou já cadastrado), com serviço e subserviços (ex.: Pintura →
   Interna → Teto, Trims), serviços novos criados em "Outros" que passam a aparecer na lista, o que o cliente quer,
@@ -40,6 +40,12 @@ tela cheia, como um app).
   distância até a obra e o link para o mapa. O Painel lista os pontos fora da obra dos últimos 7 dias.
   Para isso, cadastre a localização da obra (botão "Usar minha localização atual" estando no local) e o raio aceito.
 
+- **Orçamentos**: cada orçamento (a partir da visita ou novo) tem **duas opções** (Essential e Premium) com itens
+  de custo (material, mão de obra, delivery, permit, caçamba...), dias de trabalho × custo fixo por dia, preço sugerido
+  de 2x o custo, preço final e multiplicador (alerta abaixo de 2x). Mostra o histórico do banco de preços e o mercado.
+  Com a IA (chave `ANTHROPIC_API_KEY`): perguntas sobre o trabalho, pesquisa de mercado (Thumbtack, Angi/HomeAdvisor,
+  HomeGuide, Homewyse, Home Depot/Lowe's) com fontes e data e sugestão das duas opções; e preço da lista de material
+  na Home Depot e na Lowe's (digita o material e a quantidade; usa a loja mais barata).
 - **Preços (banco de preços)**: trabalhos já feitos (antigos, cadastrados à mão, e obras concluídas, com os números
   reais do app) com serviço, cidade/condado, quantidade, material, mão de obra, dias, horas e preço cobrado. Mostra por
   serviço o preço e o custo por sq ft/ft linear, o multiplicador e o **preço mínimo para a meta 2x**, separando

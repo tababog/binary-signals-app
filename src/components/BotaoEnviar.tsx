@@ -3,7 +3,18 @@
 import { useFormStatus } from "react-dom";
 import { useT } from "@/i18n/cliente";
 
-export function BotaoEnviar({ children, className = "botao", confirmar }: { children: React.ReactNode; className?: string; confirmar?: string }) {
+/** Botão de envio: desabilita e mostra "Salvando..." (ou o texto de `aguardando`) enquanto a ação roda. */
+export function BotaoEnviar({
+  children,
+  className = "botao",
+  confirmar,
+  aguardando,
+}: {
+  children: React.ReactNode;
+  className?: string;
+  confirmar?: string;
+  aguardando?: string;
+}) {
   const { pending } = useFormStatus();
   const t = useT();
   return (
@@ -14,7 +25,7 @@ export function BotaoEnviar({ children, className = "botao", confirmar }: { chil
         if (confirmar && !window.confirm(confirmar)) e.preventDefault();
       }}
     >
-      {pending ? t("Salvando...") : children}
+      {pending ? aguardando ?? t("Salvando...") : children}
     </button>
   );
 }

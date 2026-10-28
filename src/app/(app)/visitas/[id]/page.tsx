@@ -60,6 +60,7 @@ export default async function Visita({ params, searchParams }: { params: { id: s
             <BotaoEnviar className="botao-secundario">{t("Voltar para agendada")}</BotaoEnviar>
           </form>
         )}
+        <Link href={`/orcamentos/novo?visita=${visita.id}`} className="botao-secundario">{t("Montar orçamento")}</Link>
         <Link href={`/obras/nova?cliente=${visita.clienteId}`} className="botao-secundario">{t("Fechou? Criar obra")}</Link>
       </Cabecalho>
 

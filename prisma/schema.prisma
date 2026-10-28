@@ -52,6 +52,7 @@ model Cliente {
 
   obras     Obra[]
   visitas   Visita[]
+  orcamentos Orcamento[]
 }
 
 // tipo: "FORNECEDOR" (material) ou "SUBCONTRATADO" (subcontractor que recebe por serviço)
@@ -98,6 +99,7 @@ model Obra {
   lancamentos     Lancamento[]
   registros       RegistroPonto[]
   referencia      TrabalhoReferencia?
+  orcamentos      Orcamento[]
 }
 
 // categoria: "MATERIAL", "MAO_DE_OBRA", "SERVICO", "EQUIPAMENTO", "OUTROS"
@@ -230,6 +232,7 @@ model Visita {
   criadoEm    DateTime @default(now())
 
   followUps   FollowUp[]
+  orcamentos  Orcamento[]
   fotos       FotoVisita[]
 
   @@index([dataHora])
@@ -274,4 +277,65 @@ model ServicoPersonalizado {
   id       String   @id @default(cuid())
   nome     String   @unique
   criadoEm DateTime @default(now())
+}
+
+// Orçamento para o cliente (etapa 6): sempre duas opções (ex.: Essencial e Premium), cada uma com itens de custo,
+// dias previstos (custo fixo) e preço. status: "RASCUNHO", "ENVIADO", "APROVADO" ou "RECUSADO".
+model Orcamento {
+  id          String   @id @default(cuid())
+  clienteId   String
+  cliente     Cliente  @relation(fields: [clienteId], references: [id])
+  visitaId    String?
+  visita      Visita?  @relation(fields: [visitaId], references: [id], onDelete: SetNull)
+  obraId      String?
+  obra        Obra?    @relation(fields: [obraId], references: [id], onDelete: SetNull)
+  // tipoServico/subServicos: os mesmos códigos da visita (TIPOS_SERVICO, "P:<nome>", SUBSERVICOS)
+  tipoServico String?
+  subServicos String?
+  descricao   String?
+  endereco    String?
+  cidade      String?
+  condado     String?
+  quantidade  Float    @default(0)
+  unidade     String   @default("SQFT")
+  status      String   @default("RASCUNHO")
+  // Perguntas da IA sobre o trabalho e as respostas do administrador (JSON: [{ pergunta, opcoes, resposta }])
+  perguntas   String?
+  // Pesquisa de preço de mercado (JSON: faixa, preço por unidade, fontes com link, resumo e data da consulta)
+  mercado     String?
+  criadoEm    DateTime @default(now())
+  atualizadoEm DateTime @updatedAt
+
+  opcoes      OpcaoOrcamento[]
+
+  @@index([clienteId])
+}
+
+model OpcaoOrcamento {
+  id            String     @id @default(cuid())
+  orcamentoId   String
+  orcamento     Orcamento  @relation(fields: [orcamentoId], references: [id], onDelete: Cascade)
+  ordem         Int
+  nome          String
+  descricao     String?
+  diasPrevistos Int        @default(0)
+  // Preço final para o cliente; 0 = ainda não definido (a tela sugere 2x o custo)
+  precoCent     Int        @default(0)
+  itens         ItemOpcao[]
+}
+
+// categoria: chave de CATEGORIAS_DESPESA (material, mão de obra, delivery, permit...)
+model ItemOpcao {
+  id            String         @id @default(cuid())
+  opcaoId       String
+  opcao         OpcaoOrcamento @relation(fields: [opcaoId], references: [id], onDelete: Cascade)
+  ordem         Int            @default(0)
+  categoria     String
+  descricao     String
+  quantidade    Float          @default(1)
+  unidade       String?
+  custoUnitCent Int            @default(0)
+  // De onde veio o preço (ex.: "Home Depot $34.98 · Lowe's $36.48 · 2026-10-28") e o link do produto
+  fonte         String?
+  fonteUrl      String?
 }
