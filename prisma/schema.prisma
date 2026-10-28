@@ -80,6 +80,7 @@ model Obra {
   orcamento       ItemOrcamento[]
   lancamentos     Lancamento[]
   registros       RegistroPonto[]
+  referencia      TrabalhoReferencia?
 }
 
 // categoria: "MATERIAL", "MAO_DE_OBRA", "SERVICO", "EQUIPAMENTO", "OUTROS"
@@ -158,4 +159,28 @@ model GastoEmpresa {
   data        DateTime
   comprovante String?
   criadoEm    DateTime @default(now())
+}
+
+// Banco de preços: trabalhos já feitos (antigos ou obras concluídas no app), base para precificar novos.
+// tipoServico: chave de TIPOS_SERVICO; unidade: chave de UNIDADES (src/lib/constantes.ts)
+model TrabalhoReferencia {
+  id                String   @id @default(cuid())
+  tipoServico       String
+  descricao         String
+  cidade            String?
+  condado           String?
+  quantidade        Float
+  unidade           String
+  data              DateTime?
+  custoMaterialCent Int      @default(0)
+  custoMaoObraCent  Int      @default(0)
+  custoOutrosCent   Int      @default(0)
+  dias              Int      @default(0)
+  precoCobradoCent  Int
+  observacoes       String?
+  obraId            String?  @unique
+  obra              Obra?    @relation(fields: [obraId], references: [id], onDelete: SetNull)
+  criadoEm          DateTime @default(now())
+
+  @@index([tipoServico])
 }
