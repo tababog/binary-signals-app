@@ -26,7 +26,7 @@ export default async function NovaDespesa({ params }: { params: { id: string } }
       <Cabecalho titulo={t("Lançar despesa")} subtitulo={t("A despesa entra direto no caixa desta obra")} />
       <div className="cartao max-w-2xl">
         <Formulario acao={lancarDespesa.bind(null, obra.id)}>
-          <FotoRecibo rotulo={t("Foto do recibo / nota fiscal")} />
+          <FotoRecibo rotulo={t("Foto do recibo / nota fiscal: o app lê e preenche os campos")} ler="DESPESA" />
           <div className="grid gap-4 sm:grid-cols-2">
             <Campo rotulo={t("Valor total *")}>
               <input className="campo text-lg" name="valor" inputMode="decimal" placeholder="0.00" required />

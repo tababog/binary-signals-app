@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useT } from "@/i18n/cliente";
+import { ImagemAmpliavel } from "./ImagemAmpliavel";
 
 const LADO_MAXIMO = 1600;
 // A Vercel aceita ~4,5 MB por envio; fotos reduzidas ficam com 200–500 KB cada
@@ -96,7 +97,7 @@ export function FotosTrabalho({ name = "fotos" }: { name?: string }) {
         <div className="mt-3 grid grid-cols-3 gap-2 sm:grid-cols-4">
           {fotos.map((f, i) => (
             <div key={f.url} className="relative">
-              <img src={f.url} alt="" className="aspect-square w-full rounded-lg object-cover" />
+              <ImagemAmpliavel src={f.url} alt="" className="aspect-square w-full rounded-lg object-cover" />
               <button type="button" onClick={() => remover(i)} aria-label={t("Remover")} className="absolute right-1 top-1 rounded-full bg-white/90 px-2 text-sm text-red-700 shadow">
                 ×
               </button>
