@@ -16,6 +16,7 @@ type Obra = {
   latitude: number | null;
   longitude: number | null;
   raioMetros: number;
+  diasPrevistos: number;
 };
 
 export function CamposObra({ valor, clientes, clienteInicial }: { valor?: Obra; clientes: { id: string; nome: string }[]; clienteInicial?: string }) {
@@ -52,6 +53,9 @@ export function CamposObra({ valor, clientes, clienteInicial }: { valor?: Obra; 
       </Campo>
       <Campo rotulo="Previsão de entrega">
         <input className="campo" name="dataPrevista" type="date" defaultValue={campoData(valor?.dataPrevista)} />
+      </Campo>
+      <Campo rotulo="Dias de trabalho previstos (para orçar os custos fixos)">
+        <input className="campo" name="diasPrevistos" type="number" min={0} max={1000} defaultValue={valor?.diasPrevistos ?? 0} />
       </Campo>
       <Campo rotulo="Andamento da obra (%)">
         <input className="campo" name="progresso" type="number" min={0} max={100} defaultValue={valor?.progresso ?? 0} />

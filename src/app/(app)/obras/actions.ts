@@ -38,6 +38,7 @@ export async function salvarObra(id: string | null, _e: EstadoForm, form: FormDa
     latitude: coordenada(form.get("latitude"), 90),
     longitude: coordenada(form.get("longitude"), 180),
     raioMetros: Math.min(5000, Math.max(20, Number(form.get("raioMetros")) || 200)),
+    diasPrevistos: Math.min(1000, Math.max(0, Math.round(Number(form.get("diasPrevistos")) || 0))),
   };
   if (!dados.nome) return { erro: "Informe o nome da obra." };
   if ((dados.latitude == null) !== (dados.longitude == null)) return { erro: "Informe latitude e longitude da obra (ou deixe as duas em branco)." };

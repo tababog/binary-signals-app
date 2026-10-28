@@ -70,6 +70,8 @@ model Obra {
   latitude        Float?
   longitude       Float?
   raioMetros      Int       @default(200)
+  // Dias de trabalho previstos: usados para orçar a parte da obra nos custos fixos da empresa
+  diasPrevistos   Int       @default(0)
   criadoEm        DateTime  @default(now())
 
   clienteId       String
@@ -135,4 +137,25 @@ model RegistroPonto {
 
   @@index([usuarioId, entrada])
   @@index([obraId])
+}
+
+// Custos fixos recorrentes da empresa (overhead), rateados entre as obras pelos dias trabalhados.
+// periodicidade: "SEMANAL", "MENSAL" ou "ANUAL"
+model CustoFixo {
+  id            String   @id @default(cuid())
+  nome          String
+  valorCent     Int
+  periodicidade String   @default("MENSAL")
+  ativo         Boolean  @default(true)
+  criadoEm      DateTime @default(now())
+}
+
+// Gastos avulsos da empresa que não são de uma obra (ex.: ferramentas). Entram no custo fixo do mês em que ocorreram.
+model GastoEmpresa {
+  id          String   @id @default(cuid())
+  descricao   String
+  valorCent   Int
+  data        DateTime
+  comprovante String?
+  criadoEm    DateTime @default(now())
 }

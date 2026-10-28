@@ -23,7 +23,9 @@ export const STATUS_OBRA = {
 export const FORMAS_PAGAMENTO = ["Pix", "Dinheiro", "Cartão de crédito", "Cartão de débito", "Boleto", "Transferência", "Cheque"];
 
 export function nomeCategoria(c: string) {
-  return (CATEGORIAS_DESPESA as Record<string, string>)[c] ?? (c === "PAGAMENTO_CLIENTE" ? "Pagamento do cliente" : c);
+  if (c === "PAGAMENTO_CLIENTE") return "Pagamento do cliente";
+  if (c === "CUSTO_FIXO") return "Custos fixos da empresa (rateio)";
+  return (CATEGORIAS_DESPESA as Record<string, string>)[c] ?? c;
 }
 
 export function nomeStatus(s: string) {

@@ -12,6 +12,7 @@ Levantado em 27/10/2026 a partir de perfis públicos. Itens marcados **[confirma
 | Área de atuação | Todo o estado de Connecticut | Alessandro |
 | Sócios | Alessandro de Oliveira e Emanuel Lopez | Alessandro |
 | Fundação | 2017 | Alessandro |
+| Telefone | (475) 298-5931 | Alessandro |
 | Licença | Connecticut Home Improvement Contractor **HIC.0655127** **[confirmar validade]** | Alessandro / BuildZoom |
 | Avaliação | 4.7 estrelas, cerca de 60 avaliações (Thumbtack 62, Porch 58) | Thumbtack, Porch |
 | Orçamento | Gratuito | Angi |
@@ -71,20 +72,22 @@ Custos que existem com ou sem obra. Não entram no caixa de uma obra específica
 | --- | --- | --- |
 | Pró-labore Alessandro | $1,000/semana | Informado |
 | Pró-labore Emanuel | $1,000/semana | Informado |
-| Aluguel do galpão | **[informar valor/mês]** | Tem |
-| Água | **[informar valor/mês]** | Tem |
-| Energia elétrica | **[informar valor/mês]** | Tem |
-| Seguro dos carros | **[informar valor/mês]** | Tem |
-| General liability | **[informar valor/mês]** | Tem |
-| Combustível | **[informar valor/mês]** | Tem |
-| Ferramentas (compra e reposição) | **[informar valor/mês]** | Tem |
-| Telefone, internet e contador | **[informar valor/mês]** | Tem |
+| Aluguel do galpão | $1,100/mês | Informado |
+| Água | — | Não tem |
+| Energia elétrica | $120/mês (média) | Informado |
+| Seguro dos carros | — | Pago no pessoal |
+| General liability | $250/mês | Informado |
+| Combustível | $300/semana | Informado |
+| Ferramentas (compra e reposição) | Esporádico | Lançar em *Empresa → Gastos avulsos* |
+| Telefone, internet e contador | — | Pago no pessoal |
 | Manutenção e parcelas dos carros | — | Não tem |
 | Taxa de leads (Thumbtack/Angi) | — | Não tem |
 | Workers' compensation | — | **Não tem — ver alerta abaixo** |
 
-Só o pró-labore dos dois sócios já soma **$2,000 por semana (cerca de $8,667 por mês)**, que precisam sair do lucro
-das obras.
+**Total: cerca de $11,437 por mês, ou $528 por dia útil** (pró-labore $8,667 + combustível $1,300 + galpão $1,100 +
+liability $250 + energia $120). Com as diárias do Bruno e do Emerson ($400), **um dia de obra custa cerca de $928
+antes do material**; pela meta 2x, cada dia de obra precisa faturar cerca de $1,856 + 2x o material.
+Esses valores estão cadastrados no app (página *Empresa*) e são criados pelo `prisma/seed.ts` no primeiro deploy.
 
 > **Alerta — workers' compensation:** em Connecticut o seguro é obrigatório para quem tem 1 ou mais funcionários,
 > inclusive meio período ou por diária. Sem ele, a empresa paga sozinha qualquer acidente de trabalho e fica sujeita a

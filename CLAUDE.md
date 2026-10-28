@@ -54,6 +54,6 @@ Conversa com o usuário em português; telas internas em português.
 - [ ] 8. Proposta para o cliente: apresentação profissional (portfólio da categoria + escopo item a item +
        duas opções + valores) com aceite e assinatura do contrato online.
 - [ ] 9. Relatório final da obra: lucro ou prejuízo, multiplicador atingido x meta 2x, onde o custo estourou.
-- [ ] 10. Diagnóstico de lucro da empresa: custos fixos mensais (água, energia, seguro dos carros, aluguel do galpão,
-       general liability, combustível, ferramentas, contador... lista em `docs/empresa.md`) rateados nas obras;
-       a precificação (etapa 6) soma esse rateio ao custo antes de aplicar a meta 2x.
+- [x] 10. Custos fixos e diagnóstico (página *Empresa*): custos recorrentes + gastos avulsos, rateio por dia trabalhado
+       (`src/lib/custos-fixos.ts`), custo fixo entra no custo de cada obra e no orçado (dias previstos × custo/dia),
+       resultado do mês. A precificação (etapa 6) deve somar dias previstos × custo fixo por dia antes da meta 2x.

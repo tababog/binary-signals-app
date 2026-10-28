@@ -75,8 +75,13 @@ function AbaResumo({ resumo }: { resumo: Awaited<ReturnType<typeof resumoObra>> 
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         <Indicador rotulo="Valor do contrato" valor={dinheiro(obra.valorContratoCent)} />
         <Indicador rotulo="Recebido do cliente" valor={dinheiro(resumo.recebido)} detalhe={`Falta receber ${dinheiro(resumo.aReceber)}`} />
-        <Indicador rotulo="Custo até agora" valor={dinheiro(resumo.custoTotal)} detalhe={`Orçado: ${dinheiro(resumo.orcadoTotal)}`} />
-        <Indicador rotulo="Saldo em caixa da obra" valor={dinheiro(resumo.saldoCaixa)} tom={resumo.saldoCaixa < 0 ? "ruim" : "bom"} detalhe="Recebido − custos" />
+        <Indicador
+          rotulo="Custo até agora"
+          valor={dinheiro(resumo.custoTotal)}
+          tom={resumo.orcadoTotal > 0 && resumo.custoTotal > resumo.orcadoTotal ? "ruim" : "neutro"}
+          detalhe={`Orçado ${dinheiro(resumo.orcadoTotal)} · ${pct(resumo.custoTotal, resumo.orcadoTotal)}% usado`}
+        />
+        <Indicador rotulo="Saldo em caixa da obra" valor={dinheiro(resumo.saldoCaixa)} tom={resumo.saldoCaixa < 0 ? "ruim" : "bom"} detalhe="Recebido − gastos da obra" />
       </div>
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         <Indicador
@@ -96,7 +101,11 @@ function AbaResumo({ resumo }: { resumo: Awaited<ReturnType<typeof resumoObra>> 
           }
         />
         <Indicador rotulo="Mão de obra da equipe" valor={dinheiro(resumo.custoEquipe)} detalhe={`${horas(resumo.horasEquipeMs)} trabalhadas`} />
-        <Indicador rotulo="Orçamento usado" valor={`${pct(resumo.custoTotal, resumo.orcadoTotal)}%`} tom={resumo.custoTotal > resumo.orcadoTotal && resumo.orcadoTotal > 0 ? "ruim" : "neutro"} detalhe={`Obra ${obra.progresso}% concluída`} />
+        <Indicador
+          rotulo="Custos fixos da empresa"
+          valor={dinheiro(resumo.custoFixo)}
+          detalhe={`${resumo.diasTrabalhados} dia(s) de obra · ~${dinheiro(resumo.custoFixoPorDia)}/dia`}
+        />
       </div>
 
       <div className="cartao">
@@ -163,7 +172,11 @@ function ComparativoOrcamento({ resumo }: { resumo: Awaited<ReturnType<typeof re
           </tbody>
         </table>
       )}
-      <p className="mt-2 text-xs text-stone-500">Mão de obra realizada = despesas de mão de obra + horas da equipe registradas no ponto × valor/hora.</p>
+      <p className="mt-2 text-xs text-stone-500">
+        Mão de obra realizada = despesas de mão de obra + horas da equipe registradas no ponto × valor/hora.
+        Custos fixos: orçado = dias previstos × custo fixo por dia; realizado = parte da obra no custo fixo de cada dia com ponto
+        (dividido entre as obras trabalhadas no dia). <Link href="/empresa" className="link">Ver custos fixos</Link>
+      </p>
     </div>
   );
 }

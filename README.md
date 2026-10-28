@@ -27,6 +27,10 @@ Funciona no navegador do computador e do celular (pode ser "instalado" na tela i
   distância até a obra e o link para o mapa. O Painel lista os pontos fora da obra dos últimos 7 dias.
   Para isso, cadastre a localização da obra (botão "Usar minha localização atual" estando no local) e o raio aceito.
 
+- **Empresa**: custos fixos (pró-labore, galpão, combustível, seguros...) e gastos avulsos como ferramentas.
+  Mostra o custo fixo por dia útil, **quanto custa um dia de obra**, o resultado de cada mês e quanto do custo fixo
+  ficou sem obra para cobrir.
+
 **Funcionários (acesso de usuário)**
 - Só veem a tela **Meu ponto**: escolhem a obra e tocam em *Registrar ENTRADA* / *Registrar SAÍDA*.
   O horário é o do servidor (não dá para alterar) e o GPS do celular é lido a cada toque, na entrada e na saída.
@@ -39,7 +43,9 @@ Funciona no navegador do computador e do celular (pode ser "instalado" na tela i
 Custo da obra  = despesas lançadas (material, delivery, mão de obra terceirizada, instalação, serviços,
                  equipamentos, licenças/permits, descarte/caçamba, outros)
                + horas da equipe registradas no ponto × valor da hora de cada funcionário
-Saldo em caixa = pagamentos recebidos do cliente − custo da obra
+               + custos fixos da empresa: em cada dia com ponto, o custo fixo do dia é dividido entre as obras
+                 trabalhadas naquele dia (custo fixo do dia = custos fixos do mês ÷ dias úteis do mês)
+Saldo em caixa = pagamentos recebidos do cliente − gastos lançados e horas da equipe (sem os custos fixos)
 Lucro final    = valor do contrato − custo da obra
 ```
 
