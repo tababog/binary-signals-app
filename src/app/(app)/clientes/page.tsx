@@ -18,7 +18,7 @@ export default async function Clientes({ searchParams }: { searchParams: { q?: s
         <Link href="/clientes/novo" className="botao">+ Novo cliente</Link>
       </Cabecalho>
       <form className="mb-4">
-        <input className="campo" name="q" defaultValue={q} placeholder="Buscar por nome, CPF/CNPJ ou telefone" />
+        <input className="campo" name="q" defaultValue={q} placeholder="Buscar por nome ou telefone" />
       </form>
       <div className="cartao overflow-x-auto">
         {clientes.length === 0 ? (

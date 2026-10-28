@@ -32,8 +32,9 @@ export default async function Painel() {
         <Link href="/obras/nova" className="botao">+ Nova obra</Link>
       </Cabecalho>
 
-      <div className="grid gap-4 lg:grid-cols-3">
-        <div className="space-y-4 lg:col-span-2">
+      {/* Ordem pedida: obras, equipe, visitas, lançamentos. Uma coluna no celular, duas no computador. */}
+      <div className="grid gap-4 lg:grid-cols-2">
+        <div className="lg:col-span-2">
         <div className="cartao overflow-x-auto">
           <h2 className="mb-3">Obras em aberto</h2>
           {resumos.length === 0 ? (
@@ -68,35 +69,8 @@ export default async function Painel() {
             </table>
           )}
         </div>
-
-        <div className="cartao">
-          <div className="mb-2 flex items-center justify-between gap-2">
-            <h2>Visitas agendadas</h2>
-            <Link href="/visitas/nova" className="botao px-3 py-1.5 text-sm">+ Agendar</Link>
-          </div>
-          {visitas.length === 0 ? (
-            <Vazio>Nenhuma visita agendada.</Vazio>
-          ) : (
-            <ul className="divide-y divide-stone-100">{visitas.map((v) => <ItemVisita key={v.id} v={v} agora={agora} />)}</ul>
-          )}
-          <Link href="/visitas" className="link mt-2 inline-block text-sm">Ver todas as visitas →</Link>
         </div>
-        </div>
-
         <div className="space-y-4">
-          {alertas.length > 0 && (
-            <div className="cartao border-red-200 bg-red-50">
-              <h2 className="mb-2">⚠ Ponto fora da obra (7 dias)</h2>
-              <ul className="space-y-1 text-sm">
-                {alertas.slice(0, 6).map((r) => (
-                  <li key={r.id}>
-                    <b>{r.usuario.nome}</b> · {r.obra.nome} · {data(r.entrada)} {hora(r.entrada)}
-                  </li>
-                ))}
-              </ul>
-              <Link href="/registros?alertas=1" className="link mt-2 inline-block text-sm">Ver todos os alertas →</Link>
-            </div>
-          )}
           <div className="cartao">
             <h2 className="mb-2">Equipe trabalhando agora</h2>
             {naObra.length === 0 ? (
@@ -113,6 +87,33 @@ export default async function Painel() {
               </ul>
             )}
           </div>
+          {alertas.length > 0 && (
+            <div className="cartao border-red-200 bg-red-50">
+              <h2 className="mb-2">⚠ Ponto fora da obra (7 dias)</h2>
+              <ul className="space-y-1 text-sm">
+                {alertas.slice(0, 6).map((r) => (
+                  <li key={r.id}>
+                    <b>{r.usuario.nome}</b> · {r.obra.nome} · {data(r.entrada)} {hora(r.entrada)}
+                  </li>
+                ))}
+              </ul>
+              <Link href="/registros?alertas=1" className="link mt-2 inline-block text-sm">Ver todos os alertas →</Link>
+            </div>
+          )}
+        </div>
+        <div className="cartao self-start">
+          <div className="mb-2 flex items-center justify-between gap-2">
+            <h2>Visitas agendadas</h2>
+            <Link href="/visitas/nova" className="botao px-3 py-1.5 text-sm">+ Agendar</Link>
+          </div>
+          {visitas.length === 0 ? (
+            <Vazio>Nenhuma visita agendada.</Vazio>
+          ) : (
+            <ul className="divide-y divide-stone-100">{visitas.map((v) => <ItemVisita key={v.id} v={v} agora={agora} />)}</ul>
+          )}
+          <Link href="/visitas" className="link mt-2 inline-block text-sm">Ver todas as visitas →</Link>
+        </div>
+        <div className="lg:col-span-2">
           <div className="cartao">
             <h2 className="mb-2">Últimos lançamentos</h2>
             {ultimos.length === 0 ? (

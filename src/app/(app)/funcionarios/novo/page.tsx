@@ -5,15 +5,16 @@ import { CamposFuncionario } from "@/components/CamposFuncionario";
 import { BotaoEnviar } from "@/components/BotaoEnviar";
 import { criarFuncionario } from "../actions";
 
-export default async function NovoFuncionario() {
+export default async function NovoFuncionario({ searchParams }: { searchParams: { vinculo?: string } }) {
+  const helper = searchParams.vinculo === "HELPER";
   await exigirAdmin();
   return (
     <>
-      <Voltar href="/funcionarios" rotulo="Funcionários" />
-      <Cabecalho titulo="Novo funcionário" subtitulo="Deixe a senha em branco para enviar um link de convite pelo WhatsApp" />
+      <Voltar href="/funcionarios" rotulo="Equipe" />
+      <Cabecalho titulo={helper ? "Novo helper" : "Novo funcionário"} subtitulo="Deixe a senha em branco para enviar um link de convite pelo WhatsApp" />
       <div className="cartao">
         <Formulario acao={criarFuncionario}>
-          <CamposFuncionario novo />
+          <CamposFuncionario novo vinculoInicial={helper ? "HELPER" : "FIXO"} />
           <BotaoEnviar>Cadastrar</BotaoEnviar>
         </Formulario>
       </div>

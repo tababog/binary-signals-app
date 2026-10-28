@@ -38,14 +38,15 @@ export default async function Empresa({ searchParams }: { searchParams: { mes?: 
     rateioCustosFixos(),
     db.custoFixo.findMany({ orderBy: [{ ativo: "desc" }, { valorCent: "desc" }] }),
     db.gastoEmpresa.findMany({ where: { data: { gte: inicio, lt: fim } }, orderBy: { data: "desc" } }),
-    db.usuario.findMany({ where: { ativo: true, papel: "FUNCIONARIO", valorHoraCent: { gt: 0 } } }),
+    // Equipe fixa (helpers são temporários e entram só quando trabalham)
+    db.usuario.findMany({ where: { ativo: true, papel: "FUNCIONARIO", vinculo: "FIXO" } }),
     db.lancamento.findMany({ where: { data: { gte: inicio, lt: fim } } }),
     db.registroPonto.findMany({ where: { entrada: { gte: inicio, lt: fim } } }),
     db.obra.findMany({ select: { id: true, nome: true } }),
   ]);
 
   // Quanto custa um dia de trabalho da empresa antes do material
-  const diariasEquipe = equipe.reduce((s, u) => s + u.valorHoraCent * HORAS_DIARIA, 0);
+  const diariasEquipe = equipe.reduce((s, u) => s + (u.tipoPagamento === "DIARIA" ? u.valorDiariaCent : u.valorHoraCent * HORAS_DIARIA), 0);
   const custoDiaObra = rateio.porDiaPadrao + diariasEquipe;
 
   // Diagnóstico do mês (visão de caixa)

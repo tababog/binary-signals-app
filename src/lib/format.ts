@@ -87,3 +87,8 @@ export function lerDataHora(valor: FormDataEntryValue | null): Date | null {
 export function inicioDoMes() {
   return lerDataHora(`${campoData(new Date()).slice(0, 8)}01T00:00`)!;
 }
+
+/** "$25.00/h" ou "$200.00/dia", conforme a forma de pagamento. */
+export function pagamento(u: { tipoPagamento: string; valorHoraCent: number; valorDiariaCent: number }) {
+  return u.tipoPagamento === "DIARIA" ? `${dinheiro(u.valorDiariaCent)}/dia` : `${dinheiro(u.valorHoraCent)}/h`;
+}

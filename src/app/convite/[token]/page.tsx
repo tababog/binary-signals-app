@@ -28,7 +28,7 @@ export default async function Convite({ params }: { params: { token: string } })
               Olá, <b>{usuario.nome.split(" ")[0]}</b>! Crie a sua senha para entrar no app.
             </p>
             <p className="rounded-lg bg-stone-100 p-2 text-center text-sm">
-              Seu login: <b>{usuario.email}</b>
+              Seu login: <b>{usuario.email ?? usuario.telefone}</b>
             </p>
             <label className="block">
               <span className="rotulo">Nova senha (mínimo 6 caracteres)</span>

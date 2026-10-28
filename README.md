@@ -8,9 +8,10 @@ Funciona no navegador do computador e do celular (pode ser "instalado" na tela i
 ## O que o app faz
 
 **Administradores (acesso total — você e o Emanuel)**
-- **Painel**: obras em aberto, visitas agendadas, equipe trabalhando agora e últimos lançamentos.
+- **Painel**: obras em aberto, equipe trabalhando agora, visitas agendadas (com selos Hoje/Amanhã) e últimos lançamentos.
 - **Visitas**: agenda de visitas aos clientes (cliente novo ou já cadastrado), com atalhos para o mapa e para ligar;
-  marcar como realizada/cancelada e transformar em obra quando o cliente fecha.
+  **⏰ Lembrete** que coloca a visita na agenda do celular (Google Agenda ou arquivo de calendário com alarmes 1 dia e
+  1 hora antes); marcar como realizada/cancelada e transformar em obra quando o cliente fecha.
 - **Obras**: cada obra tem cliente, valor do contrato, datas, andamento (%) e quatro abas:
   - *Resumo* — contrato, recebido, a receber, custo até agora, saldo em caixa da obra, lucro previsto e lucro real.
   - *Fluxo de caixa* — entradas (pagamentos do cliente) e saídas (despesas) **só desta obra**, com link para a foto do recibo.
@@ -21,10 +22,12 @@ Funciona no navegador do computador e do celular (pode ser "instalado" na tela i
 - **Lançar despesa**: tira a foto do recibo/nota pelo celular, informa valor, fornecedor e categoria, e o gasto
   entra direto no caixa da obra.
 - **Pagamento do cliente**: registra o valor recebido, que entra no caixa da obra.
-- **Clientes** e **Fornecedores**: cadastro completo; o fornecedor mostra o total já comprado dele.
-- **Funcionários**: cadastra cada funcionário (ou administrador), o valor da hora e o tipo de acesso. Sem senha, o app
-  gera um **link de convite** (botão "Enviar pelo WhatsApp"): a pessoa abre, cria a própria senha e já entra. O mesmo
-  link serve para quem esqueceu a senha. Vale 7 dias e só uma vez; gerar outro cancela o anterior.
+- **Clientes**, **Fornecedores** e **Subcontratados**: cadastro completo com total comprado/pago. Subcontratados têm
+  especialidade, licença e validade do seguro (COI), com aviso quando vence em 30 dias ou já venceu.
+- **Equipe**: funcionários fixos e **helpers** (temporários), pagos **por hora ou por diária**; o login é por e-mail
+  ou telefone. Sem senha, o app gera um **link de convite** (botão "Enviar pelo WhatsApp"): a pessoa abre, cria a
+  própria senha e já entra. O mesmo link serve para quem esqueceu a senha (vale 7 dias, uma vez só).
+  Diaristas custam a diária inteira por dia trabalhado, dividida entre as obras do dia pelas horas de cada uma.
   Para tirar o acesso de quem saiu da empresa, basta desmarcar "Acesso ativo".
 - **Horas**: todos os registros de ponto, com filtros, custo do período, correção de horários e lançamento
   manual para quem esqueceu de bater o ponto. Cada entrada e saída mostra **"✓ Na obra"** ou **"⚠ Fora"** com a

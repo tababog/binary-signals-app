@@ -39,10 +39,15 @@ export async function salvarVisita(id: string | null, _e: EstadoForm, form: Form
     descricao: texto(form.get("descricao")),
     status: status in STATUS_VISITA ? status : "AGENDADA",
   };
-  if (id) await db.visita.update({ where: { id }, data: dados });
-  else await db.visita.create({ data: dados });
+  if (id) {
+    await db.visita.update({ where: { id }, data: dados });
+    atualizar();
+    redirect("/visitas");
+  }
+  // Visita nova: abre a página dela já pedindo para colocar o lembrete no celular
+  const visita = await db.visita.create({ data: dados });
   atualizar();
-  redirect("/visitas");
+  redirect(`/visitas/${visita.id}?lembrete=1`);
 }
 
 export async function mudarStatusVisita(id: string, status: string) {

@@ -9,7 +9,7 @@ type Contato = {
   observacoes?: string | null;
 };
 
-export function CamposContato({ valor = {}, rotuloDocumento = "CPF / CNPJ" }: { valor?: Contato; rotuloDocumento?: string }) {
+export function CamposContato({ valor = {}, rotuloDocumento = "Tax ID / EIN (opcional)" }: { valor?: Contato; rotuloDocumento?: string }) {
   return (
     <div className="grid gap-4 sm:grid-cols-2">
       <Campo rotulo="Nome *">

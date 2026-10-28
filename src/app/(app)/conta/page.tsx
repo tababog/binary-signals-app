@@ -8,7 +8,7 @@ export default async function Conta({ searchParams }: { searchParams: { ok?: str
   const usuario = await exigirUsuario();
   return (
     <>
-      <Cabecalho titulo="Minha conta" subtitulo={`${usuario.nome} · ${usuario.email}`} />
+      <Cabecalho titulo="Minha conta" subtitulo={`${usuario.nome} · ${usuario.email ?? usuario.telefone ?? ""}`} />
       <div className="cartao max-w-md">
         <h2 className="mb-3">Trocar senha</h2>
         {searchParams.ok && <p className="mb-3 rounded-lg bg-emerald-50 p-2 text-sm text-emerald-800">Senha alterada com sucesso.</p>}

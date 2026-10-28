@@ -15,12 +15,17 @@ datasource db {
 model Usuario {
   id             String   @id @default(cuid())
   nome           String
-  email          String   @unique
+  // Login por e-mail ou telefone: pelo menos um dos dois é obrigatório
+  email          String?  @unique
   senhaHash      String
   papel          String   @default("FUNCIONARIO")
   telefone       String?
   funcao         String?
   valorHoraCent  Int      @default(0)
+  // tipoPagamento: "HORA" ou "DIARIA"; vinculo: "FIXO" (funcionário) ou "HELPER" (temporário)
+  tipoPagamento  String   @default("HORA")
+  valorDiariaCent Int     @default(0)
+  vinculo        String   @default("FIXO")
   ativo          Boolean  @default(true)
   criadoEm       DateTime @default(now())
   // Link de convite / redefinição de senha: guarda só o hash SHA-256 do token enviado ao funcionário
@@ -47,8 +52,12 @@ model Cliente {
   visitas   Visita[]
 }
 
+// tipo: "FORNECEDOR" (material) ou "SUBCONTRATADO" (subcontractor que recebe por serviço)
 model Fornecedor {
   id        String   @id @default(cuid())
+  tipo      String   @default("FORNECEDOR")
+  licenca   String?
+  seguroValidade DateTime?
   nome      String
   documento String?
   telefone  String?
@@ -132,6 +141,9 @@ model RegistroPonto {
   entrada       DateTime
   saida         DateTime?
   valorHoraCent Int
+  // Diarista: diária do dia (dividida entre as obras do dia pelas horas). custoCent é calculado ao fechar o ponto.
+  valorDiariaCent Int     @default(0)
+  custoCent     Int?
   latEntrada    Float?
   lngEntrada    Float?
   precisaoEntrada Float?
