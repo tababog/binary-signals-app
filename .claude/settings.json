@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Windsor_ai",
+      "mcp__Windsor_ai__*",
+      "mcp__Google_Drive__search_files",
+      "mcp__Google_Drive__get_file_permissions",
+      "mcp__Google_Drive__get_file_metadata",
+      "ArtifactData"
+    ]
+  }
+}
