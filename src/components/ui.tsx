@@ -20,12 +20,25 @@ export function Voltar({ href, rotulo = "Voltar" }: { href: string; rotulo?: str
   );
 }
 
-export function Indicador({ rotulo, valor, tom = "neutro", detalhe }: { rotulo: string; valor: string; tom?: "neutro" | "bom" | "ruim"; detalhe?: string }) {
+export function Indicador({
+  rotulo,
+  valor,
+  tom = "neutro",
+  detalhe,
+  compacto,
+}: {
+  rotulo: string;
+  valor: string;
+  tom?: "neutro" | "bom" | "ruim";
+  detalhe?: string;
+  /** Para 3 cartões lado a lado no celular: texto menor e centralizado, para o valor caber na caixa. */
+  compacto?: boolean;
+}) {
   const cor = tom === "bom" ? "text-emerald-700" : tom === "ruim" ? "text-red-700" : "text-stone-900";
   return (
-    <div className="cartao">
+    <div className={`cartao min-w-0 ${compacto ? "px-2 py-3 text-center sm:p-4 sm:text-left" : ""}`}>
       <div className="text-xs font-medium uppercase tracking-wide text-stone-500">{rotulo}</div>
-      <div className={`mt-1 text-xl font-bold tabular-nums ${cor}`}>{valor}</div>
+      <div className={`mt-1 font-bold tabular-nums ${compacto ? "whitespace-nowrap text-[clamp(0.7rem,3.4vw,1rem)] sm:text-xl" : "text-xl"} ${cor}`}>{valor}</div>
       {detalhe && <div className="mt-0.5 text-xs text-stone-500">{detalhe}</div>}
     </div>
   );
