@@ -49,11 +49,7 @@ export async function salvarComprovante(arquivo: FormDataEntryValue | null): Pro
   if (usarSupabase) {
     const enviar = (headers: Record<string, string>) =>
       fetch(urlObjeto(nome), { method: "POST", headers: { ...headers, "Content-Type": arquivo.type, "x-upsert": "false" }, body: conteudo });
-    let r = await enviar(cabecalhos());
-    // Recusa de autorização com chave nova (sb_secret_): tenta de novo mandando a chave também no Authorization
-    if (!r.ok && [400, 401, 403].includes(r.status) && SUPABASE_KEY!.startsWith("sb_")) {
-      r = await enviar({ ...cabecalhos(), Authorization: `Bearer ${SUPABASE_KEY}` });
-    }
+    const r = await enviar(cabecalhos());
     if (!r.ok) {
       const motivo = (await r.text().catch(() => "")).slice(0, 300);
       console.error(`Supabase Storage recusou o arquivo (${r.status}): ${motivo}`);
@@ -61,7 +57,9 @@ export async function salvarComprovante(arquivo: FormDataEntryValue | null): Pro
       try {
         mensagem = (JSON.parse(motivo) as { message?: string }).message ?? "";
       } catch {}
-      throw new Error(`Não foi possível guardar o arquivo (${r.status}${mensagem ? `: ${mensagem}` : ""}). Tente de novo.`);
+      // "Invalid Compact JWS" e afins: a chave na Vercel não serve para o Storage (ver docs/hospedagem.md, Parte 1, passo 5)
+      const dica = SUPABASE_KEY!.startsWith("sb_") ? " Use a chave service_role (Legacy API Keys, começa com eyJ) em SUPABASE_SERVICE_ROLE_KEY." : "";
+      throw new Error(`Não foi possível guardar o arquivo (${r.status}${mensagem ? `: ${mensagem}` : ""}).${dica}`);
     }
   } else {
     await mkdir(PASTA_UPLOADS, { recursive: true });
