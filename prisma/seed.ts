@@ -31,7 +31,7 @@ async function criarAdmin(nome: string, email: string, senha: string) {
 // Custos fixos informados pelo Alessandro em 28/10/2026. Só são criados se ainda não houver nenhum.
 const CUSTOS_FIXOS_INICIAIS = [
   { nome: "Pró-labore Alessandro", valorCent: 100_000, periodicidade: "SEMANAL" },
-  { nome: "Pró-labore Emanuel", valorCent: 100_000, periodicidade: "SEMANAL" },
+  { nome: "Pró-labore Emmanuel", valorCent: 100_000, periodicidade: "SEMANAL" },
   { nome: "Combustível", valorCent: 30_000, periodicidade: "SEMANAL" },
   { nome: "Aluguel do galpão", valorCent: 110_000, periodicidade: "MENSAL" },
   { nome: "General liability", valorCent: 25_000, periodicidade: "MENSAL" },
@@ -51,7 +51,7 @@ async function main() {
     (process.env.ADMIN1_SENHA ?? "").trim(),
   );
   await criarAdmin(
-    process.env.ADMIN2_NOME ?? "Emanuel Lopez",
+    process.env.ADMIN2_NOME ?? "Emmanuel Lopez",
     (process.env.ADMIN2_EMAIL ?? "").trim().toLowerCase(),
     (process.env.ADMIN2_SENHA ?? "").trim(),
   );

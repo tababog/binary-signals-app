@@ -10,7 +10,7 @@ Levantado em 27/10/2026 a partir de perfis públicos. Itens marcados **[confirma
 | Razão social | Tababog Construction LLC | Thumbtack, Angi, HomeAdvisor, Porch, BuildZoom |
 | Sede | Bridgeport, Connecticut (CT) — fuso America/New_York | Thumbtack, Angi |
 | Área de atuação | Todo o estado de Connecticut | Alessandro |
-| Sócios | Alessandro de Oliveira e Emanuel Lopez | Alessandro |
+| Sócios | Alessandro de Oliveira e Emmanuel Lopez | Alessandro |
 | Fundação | 2017 | Alessandro |
 | Telefone | (475) 298-5931 | Alessandro |
 | Licença | Connecticut Home Improvement Contractor **HIC.0655127** **[confirmar validade]** | Alessandro / BuildZoom |
@@ -31,8 +31,8 @@ Rascunho para o Alessandro revisar. As propostas para clientes saem em inglês.
 - PT: Cofundador da Tababog em 2017, acompanha cada projeto da primeira visita e do orçamento até a entrega final,
   garantindo prazo, orçamento e qualidade.
 
-**Emanuel Lopez — Co-Founder & Lead Craftsman**
-- EN: Emanuel co-founded Tababog Construction in 2017 and leads the crew in the field. His attention to detail is
+**Emmanuel Lopez — Co-Founder & Lead Craftsman**
+- EN: Emmanuel co-founded Tababog Construction in 2017 and leads the crew in the field. His attention to detail is
   behind the custom cabinets and decks our clients are proudest of.
 - PT: Cofundador da Tababog em 2017, lidera a equipe em campo; o cuidado com os detalhes dele está nos gabinetes
   customizados e decks que os clientes mais elogiam.
@@ -71,7 +71,7 @@ Custos que existem com ou sem obra. Não entram no caixa de uma obra específica
 | Custo fixo | Valor | Situação |
 | --- | --- | --- |
 | Pró-labore Alessandro | $1,000/semana | Informado |
-| Pró-labore Emanuel | $1,000/semana | Informado |
+| Pró-labore Emmanuel | $1,000/semana | Informado |
 | Aluguel do galpão | $1,100/mês | Informado |
 | Água | — | Não tem |
 | Energia elétrica | $120/mês (média) | Informado |

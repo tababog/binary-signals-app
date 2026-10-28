@@ -99,6 +99,15 @@ export async function lancarDespesa(obraId: string, _e: EstadoForm, form: FormDa
     return { erro: getT()((e as Error).message) };
   }
 
+  // Fornecedor/subcontratado novo cadastrado no próprio lançamento
+  let fornecedorId = texto(form.get("fornecedorId"));
+  if (fornecedorId === "NOVO_FORNECEDOR" || fornecedorId === "NOVO_SUBCONTRATADO") {
+    const nome = String(form.get("fornecedorNome") ?? "").trim();
+    if (!nome) return { erro: getT()("Informe o nome do fornecedor ou subcontratado novo.") };
+    const novo = await db.fornecedor.create({ data: { nome, tipo: fornecedorId === "NOVO_SUBCONTRATADO" ? "SUBCONTRATADO" : "FORNECEDOR" } });
+    fornecedorId = novo.id;
+  }
+
   await db.lancamento.create({
     data: {
       obraId,
@@ -108,7 +117,7 @@ export async function lancarDespesa(obraId: string, _e: EstadoForm, form: FormDa
       valorCent,
       data: dataLanc,
       formaPagamento: texto(form.get("formaPagamento")),
-      fornecedorId: texto(form.get("fornecedorId")),
+      fornecedorId,
       comprovante,
       criadoPorId: usuario.id,
     },

@@ -68,13 +68,13 @@ mude em **Settings → Git → Production Branch** para `ccr-15f09b39-gtigo7`.
    | `ADMIN1_NOME` | `Alessandro de Oliveira` |
    | `ADMIN1_EMAIL` | seu e-mail |
    | `ADMIN1_SENHA` | uma senha inicial (troque depois no app) |
-   | `ADMIN2_NOME` | `Emanuel Lopez` |
-   | `ADMIN2_EMAIL` | e-mail do Emanuel |
+   | `ADMIN2_NOME` | `Emmanuel Lopez` |
+   | `ADMIN2_EMAIL` | e-mail do Emmanuel |
    | `ADMIN2_SENHA` | uma senha inicial para ele |
 
 4. Clique em **Deploy**. A primeira publicação cria as tabelas e os dois administradores (3 a 5 minutos).
 5. Quando aparecer **Congratulations**, clique no endereço (algo como `https://binary-signals-app.vercel.app`).
-6. Entre com o seu e-mail e senha, vá em **Minha conta** e troque a senha. Peça ao Emanuel o mesmo.
+6. Entre com o seu e-mail e senha, vá em **Minha conta** e troque a senha. Peça ao Emmanuel o mesmo.
 
 ### Depois de publicado
 

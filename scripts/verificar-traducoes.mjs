@@ -20,9 +20,9 @@ for (const a of arquivos) {
   for (const m of s.matchAll(new RegExp(String.raw`\b(?:t|getT\(\))\(\s*` + literal, "g"))) chaves.add(ler(m[1]));
   for (const m of s.matchAll(new RegExp(String.raw`\bt\(\s*'((?:[^'\\]|\\.)*)'`, "g"))) chaves.add(m[1]);
   // Nomes de listas (status, categorias, serviços...) e mensagens de erro passados para t() depois
-  if (/lib[\\/](constantes|custos-fixos|followup)\.ts$/.test(a))
+  if (/lib[\\/](constantes|custos-fixos|followup|orcamento)\.ts$/.test(a))
     for (const m of s.matchAll(new RegExp(String.raw`(?:^|[{,\s])(?:[A-Z_]+|nome|rotulo):\s*` + literal, "gm"))) chaves.add(ler(m[1]));
-  for (const m of s.matchAll(new RegExp(String.raw`new Error\(\s*` + literal, "g"))) if (/lib[\\/](uploads|auth|convite)\.ts$/.test(a)) chaves.add(ler(m[1]));
+  for (const m of s.matchAll(new RegExp(String.raw`new Error\(\s*` + literal, "g"))) if (/lib[\\/](uploads|auth|convite|precificacao-ia)\.ts$/.test(a)) chaves.add(ler(m[1]));
   if (/FluxoCaixaEmpresa|visitas[\\/]\[id\]/.test(a))
     for (const m of s.matchAll(new RegExp(String.raw`(?:OBRA|FIXO|SOCIOS|rotulo):\s*` + literal, "g"))) chaves.add(ler(m[1]));
 }
