@@ -52,7 +52,7 @@ export default async function Painel() {
           ) : (
             <table className="tabela">
               <thead>
-                <tr><th>{t("Obra")}</th><th>{t("Andamento")}</th><th className="text-right">{t("Custo / Orçado")}</th><th className="text-right">{t("Saldo")}</th></tr>
+                <tr><th>{t("Obra")}</th><th>{t("Situação")}</th><th className="text-right">{t("Custo / Orçado")}</th><th className="text-right">{t("Saldo")}</th></tr>
               </thead>
               <tbody>
                 {resumos.map((r) => {
@@ -65,7 +65,6 @@ export default async function Painel() {
                       </td>
                       <td>
                         <SeloStatus status={r.obra.status} rotulo={t(nomeStatus(r.obra.status))} />
-                        <div className="text-xs text-stone-500">{r.obra.progresso}%</div>
                       </td>
                       <td className={`text-right tabular-nums ${estourou ? "text-red-700" : ""}`}>
                         {dinheiro(r.custoTotal)}

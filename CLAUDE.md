@@ -75,6 +75,8 @@ Conversa com o usuário em português; telas internas em português.
        (`src/lib/custos-fixos.ts`), custo fixo entra no custo de cada obra e no orçado (dias previstos × custo/dia),
        resultado do mês. A precificação (etapa 6) deve somar dias previstos × custo fixo por dia antes da meta 2x.
        Fluxo de caixa da empresa lido da planilha do Google Drive (`src/lib/planilha-fluxo.ts`, conta de serviço
-       `GOOGLE_SERVICE_ACCOUNT_JSON`) e custos fixos pela média real da planilha.
+       `GOOGLE_SERVICE_ACCOUNT_JSON`). Os custos fixos são a média mensal real da planilha (despesas fixas + retiradas
+       dos sócios = pró-labore), sem cadastro manual (`custosFixosAtuais` em `src/lib/custos-fixos.ts`, cópia em
+       `CustoFixo` para quando o Drive falhar).
 - [x] 11. Idiomas (regra 8): telas em PT/EN/ES com seletor + tradução automática do conteúdo pela API da Anthropic
        (chave em `ANTHROPIC_API_KEY` na Vercel).

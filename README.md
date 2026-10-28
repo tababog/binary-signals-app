@@ -18,7 +18,7 @@ tela cheia, como um app).
   **Follow-up**: ao marcar a visita como realizada, o app agenda contatos em 3, 7 e 14 dias. No dia, o Painel mostra
   "Follow-ups de hoje"; a mensagem vem pronta (inglês, português ou espanhol, editável) e abre no WhatsApp, SMS ou
   e-mail do celular. Marcar "Fechou contrato" ou "Sem interesse" encerra os follow-ups.
-- **Obras**: cada obra tem cliente, valor do contrato, datas, andamento (%) e quatro abas:
+- **Obras**: cada obra tem cliente (o endereço do cliente vem sozinho), valor do contrato, início e previsão de entrega (os dias de trabalho previstos são calculados de segunda a sexta) e quatro abas:
   - *Resumo* — contrato, recebido, a receber, custo até agora, saldo em caixa da obra, lucro previsto e lucro real.
   - *Fluxo de caixa* — entradas (pagamentos do cliente) e saídas (despesas) **só desta obra**, com link para a foto do recibo.
   - *Orçamento* — itens previstos por categoria (material, delivery, mão de obra, instalação, serviços, equipamentos,
@@ -46,9 +46,9 @@ tela cheia, como um app).
   Fairfield County do resto de Connecticut. Obras concluídas que ainda não viraram referência aparecem como pendentes.
 - **Empresa - Fluxo de caixa**: o fluxo de caixa da empresa lido da planilha do Google Drive, em cartões para o
   celular (mês a mês ou acumulado): entradas, custos das obras, custos fixos, retiradas dos sócios, resultado, saldo
-  conferido com o extrato do banco e o multiplicador comparado com a meta 2x. Os custos fixos podem usar a média
-  real da planilha (gasolina, refeição, galpão...).
-  Também tem os custos fixos (pró-labore, galpão, combustível, seguros...) e gastos avulsos como ferramentas.
+  conferido com o extrato do banco e o multiplicador comparado com a meta 2x. Os **custos fixos** são a média mensal
+  real da planilha: despesas fixas (galpão, gasolina, refeição, seguro, carro...) + retiradas dos sócios (pró-labore).
+  Gastos avulsos (ferramentas) ficam como registro do recibo.
   Mostra o custo fixo por dia útil, **quanto custa um dia de obra**, o resultado de cada mês e quanto do custo fixo
   ficou sem obra para cobrir.
 

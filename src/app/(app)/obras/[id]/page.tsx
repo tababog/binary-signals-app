@@ -10,7 +10,7 @@ import { Formulario } from "@/components/Formulario";
 import { BotaoEnviar } from "@/components/BotaoEnviar";
 import { SeloLocal } from "@/components/SeloLocal";
 import { TextoUsuario } from "@/components/TextoUsuario";
-import { adicionarItemOrcamento, atualizarProgresso, excluirLancamento, removerItemOrcamento } from "../actions";
+import { adicionarItemOrcamento, excluirLancamento, removerItemOrcamento } from "../actions";
 import { getT } from "@/i18n/servidor";
 
 const ABAS = [
@@ -125,20 +125,13 @@ function AbaResumo({ resumo }: { resumo: Awaited<ReturnType<typeof resumoObra>> 
       </div>
 
       <div className="cartao">
-        <div className="mb-2 flex items-center justify-between">
-          <h2>{t("Andamento da obra")}</h2>
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <h2>{t("Prazo")}</h2>
           <span className="text-sm text-stone-500">
             {t("Início {inicio} · Entrega prevista {fim}", { inicio: data(obra.dataInicio), fim: data(obra.dataPrevista) })}
+            {obra.diasPrevistos > 0 && ` · ${t("{n} dias de trabalho previstos", { n: obra.diasPrevistos })}`}
           </span>
         </div>
-        <div className="h-3 overflow-hidden rounded-full bg-stone-100">
-          <div className="h-full bg-marca-500" style={{ width: `${obra.progresso}%` }} />
-        </div>
-        <form action={atualizarProgresso.bind(null, obra.id)} className="mt-3 flex items-center gap-2">
-          <input className="campo w-24" type="number" name="progresso" min={0} max={100} defaultValue={obra.progresso} />
-          <span className="text-sm">%</span>
-          <BotaoEnviar className="botao-secundario">{t("Atualizar")}</BotaoEnviar>
-        </form>
         {obra.descricao && <p className="mt-3 whitespace-pre-line text-sm text-stone-600"><TextoUsuario texto={obra.descricao} /></p>}
       </div>
 

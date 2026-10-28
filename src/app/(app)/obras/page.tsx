@@ -40,10 +40,6 @@ export default async function Obras({ searchParams }: { searchParams: { status?:
                 </div>
                 <SeloStatus status={r.obra.status} rotulo={t(nomeStatus(r.obra.status))} />
               </div>
-              <div className="mt-3 h-2 overflow-hidden rounded-full bg-stone-100">
-                <div className="h-full bg-marca-500" style={{ width: `${r.obra.progresso}%` }} />
-              </div>
-              <div className="mt-1 text-xs text-stone-500">{t("{n}% concluída", { n: r.obra.progresso })}</div>
               <dl className="mt-3 grid grid-cols-3 gap-2 text-sm">
                 <div><dt className="text-xs text-stone-500">{t("Contrato")}</dt><dd className="tabular-nums">{dinheiro(r.obra.valorContratoCent)}</dd></div>
                 <div><dt className="text-xs text-stone-500">{t("Custo até agora")}</dt><dd className="tabular-nums">{dinheiro(r.custoTotal)}</dd></div>

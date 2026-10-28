@@ -3,7 +3,7 @@ import { db } from "@/lib/db";
 import { exigirAdmin } from "@/lib/auth";
 import { campoData, centavosParaCampo, data, dinheiro, lerDataHora } from "@/lib/format";
 import { custoPonto } from "@/lib/financeiro";
-import { PERIODICIDADES, diasUteis, rateioCustosFixos, valorMensal } from "@/lib/custos-fixos";
+import { diasUteis, rateioCustosFixos } from "@/lib/custos-fixos";
 import { Cabecalho, Campo, Indicador, Vazio } from "@/components/ui";
 import { Formulario } from "@/components/Formulario";
 import { BotaoEnviar } from "@/components/BotaoEnviar";
@@ -12,8 +12,8 @@ import { TextoUsuario } from "@/components/TextoUsuario";
 import { getT, idiomaAtual } from "@/i18n/servidor";
 import { BANDEIRAS } from "@/i18n/idiomas";
 import { FluxoCaixaEmpresa } from "@/components/FluxoCaixaEmpresa";
-import { emailContaServico, lerFluxoCaixa, mediasCustosFixos, mesmoCusto, totaisPorGrupo } from "@/lib/planilha-fluxo";
-import { excluirCustoFixo, excluirGastoEmpresa, importarCustosFixos, lancarGastoEmpresa, salvarCustoFixo } from "./actions";
+import { emailContaServico, lerFluxoCaixa } from "@/lib/planilha-fluxo";
+import { excluirGastoEmpresa, lancarGastoEmpresa } from "./actions";
 
 const HORAS_DIARIA = 8;
 
@@ -40,10 +40,9 @@ export default async function Empresa({ searchParams }: { searchParams: { mes?: 
   const inicio = lerDataHora(`${mes}-01T00:00`)!;
   const fim = lerDataHora(`${mesSeguinte(mes)}-01T00:00`)!;
 
-  const [planilha, rateio, custos, gastos, equipe, lancamentos, registros, obras] = await Promise.all([
+  const [planilha, rateio, gastos, equipe, lancamentos, registros, obras] = await Promise.all([
     lerFluxoCaixa(),
     rateioCustosFixos(),
-    db.custoFixo.findMany({ orderBy: [{ ativo: "desc" }, { valorCent: "desc" }] }),
     db.gastoEmpresa.findMany({ where: { data: { gte: inicio, lt: fim } }, orderBy: { data: "desc" } }),
     // Equipe fixa (helpers são temporários e entram só quando trabalham)
     db.usuario.findMany({ where: { ativo: true, papel: "FUNCIONARIO", vinculo: "FIXO" } }),
@@ -68,11 +67,7 @@ export default async function Empresa({ searchParams }: { searchParams: { mes?: 
     .filter((o) => o.fixo > 0)
     .sort((a, b) => b.fixo - a.fixo);
 
-  // Custos fixos reais: média mensal de cada item da planilha (gasolina, refeição, galpão...)
-  const medias = planilha.ok ? mediasCustosFixos(planilha.fluxo) : null;
-  const retiradas = planilha.ok ? totaisPorGrupo(planilha.fluxo).SOCIOS : [];
-  const retiradaMedia = medias ? Math.round(retiradas.reduce((s, v) => s + v, 0) / medias.meses) : 0;
-  const manuaisAtivos = custos.filter((c) => c.ativo && !c.origem);
+  const fixos = rateio.custos;
 
   return (
     <>
@@ -96,7 +91,7 @@ export default async function Empresa({ searchParams }: { searchParams: { mes?: 
       </div>
 
       <div className="mb-4 grid grid-cols-2 gap-3 lg:grid-cols-4">
-        <Indicador rotulo={t("Custo fixo por mês")} valor={dinheiro(rateio.recorrenteMensal)} detalhe={t("Custos recorrentes ativos")} />
+        <Indicador rotulo={t("Custo fixo por mês")} valor={dinheiro(rateio.recorrenteMensal)} detalhe={fixos.fonte === "PLANILHA" ? t("Média real da planilha, com pró-labore") : t("Custos fixos guardados")} />
         <Indicador rotulo={t("Custo fixo por dia útil")} valor={dinheiro(rateio.porDiaPadrao)} detalhe={t("Mês médio de 21,7 dias úteis")} />
         <Indicador
           rotulo={t("Um dia de obra custa")}
@@ -168,98 +163,46 @@ export default async function Empresa({ searchParams }: { searchParams: { mes?: 
       </div>
 
       <div className="grid gap-4 lg:grid-cols-2">
-        <div className="cartao overflow-x-auto">
-          <h2 className="mb-1">{t("Custos fixos recorrentes")}</h2>
+        <div className="cartao">
+          <h2 className="mb-1">{t("Custos fixos")}</h2>
           <p className="mb-3 text-sm text-stone-500">
-            {t("Gastos que a empresa tem com ou sem obra. São divididos entre as obras pelos dias trabalhados.")}
+            {fixos.fonte === "PLANILHA"
+              ? t("Média por mês dos últimos {n} meses da planilha de fluxo de caixa. Atualiza sozinho quando a planilha muda. Esses valores são divididos entre as obras pelos dias trabalhados.", { n: fixos.meses })
+              : fixos.fonte === "COPIA"
+                ? t("Não consegui ler a planilha agora: usando a última média guardada.")
+                : t("A planilha de fluxo de caixa ainda não está ligada: os custos fixos virão dela.")}
           </p>
-          {custos.length === 0 ? (
-            <Vazio>{t("Nenhum custo fixo cadastrado.")}</Vazio>
+          {fixos.itens.length === 0 ? (
+            <Vazio>{t("Nenhum custo fixo.")}</Vazio>
           ) : (
-            <div className="space-y-2">
-              {custos.map((c) => (
-                <Formulario key={c.id} acao={salvarCustoFixo.bind(null, c.id)} className={`grid grid-cols-[6rem_1fr] items-center gap-2 rounded-lg border border-stone-200 p-2 sm:grid-cols-[6rem_1fr_auto] ${c.ativo ? "" : "opacity-50"}`}>
-                  <input className="campo col-span-full" name="nome" defaultValue={c.nome} aria-label={t("Nome")} />
-                  <input className="campo" name="valor" inputMode="decimal" defaultValue={centavosParaCampo(c.valorCent)} aria-label={t("Valor")} />
-                  <select className="campo" name="periodicidade" defaultValue={c.periodicidade} aria-label={t("Periodicidade")}>
-                    {Object.entries(PERIODICIDADES).map(([k, v]) => <option key={k} value={k}>{t(v)}</option>)}
-                  </select>
-                  <div className="flex items-center gap-2 text-sm">
-                    <label className="flex items-center gap-1"><input type="checkbox" name="ativo" defaultChecked={c.ativo} /> {t("ativo")}</label>
-                    <BotaoEnviar className="botao-secundario px-2 py-1 text-sm">{t("Salvar")}</BotaoEnviar>
-                  </div>
-                  <div className="col-span-full flex justify-between text-xs text-stone-500">
-                    <span>{t("= {valor} por mês", { valor: dinheiro(Math.round(valorMensal(c.valorCent, c.periodicidade))) })}</span>
-                    {c.origem && <span className="selo bg-sky-100 text-sky-800">{t("média real da planilha")}</span>}
-                  </div>
-                </Formulario>
-              ))}
-            </div>
-          )}
-          <h3 className="mb-2 mt-4 font-semibold">{t("Adicionar custo fixo")}</h3>
-          <Formulario acao={salvarCustoFixo.bind(null, null)} className="grid grid-cols-[6rem_1fr] gap-2 sm:grid-cols-[6rem_1fr_auto]">
-            <input className="campo col-span-full" name="nome" placeholder={t("Ex.: Seguro do galpão")} required />
-            <input className="campo" name="valor" inputMode="decimal" placeholder="0.00" required />
-            <select className="campo" name="periodicidade" defaultValue="MENSAL">
-              {Object.entries(PERIODICIDADES).map(([k, v]) => <option key={k} value={k}>{t(v)}</option>)}
-            </select>
-            <BotaoEnviar>{t("Adicionar")}</BotaoEnviar>
-          </Formulario>
-          {custos.length > 0 && (
-            <details className="mt-3 text-sm">
-              <summary className="cursor-pointer text-stone-500">{t("Excluir um custo fixo")}</summary>
-              <ul className="mt-2 space-y-1">
-                {custos.map((c) => (
-                  <li key={c.id} className="flex items-center justify-between">
-                    {c.nome}
-                    <form action={excluirCustoFixo.bind(null, c.id)}>
-                      <BotaoEnviar className="text-xs text-red-700 hover:underline" confirmar={t("Excluir \"{nome}\"? Para parar de contar só a partir de agora, desmarque \"ativo\".", { nome: c.nome })}>{t("Excluir")}</BotaoEnviar>
-                    </form>
-                  </li>
-                ))}
-              </ul>
-            </details>
-          )}
-          {medias && medias.itens.length > 0 && (
-            <div className="mt-4 rounded-lg border border-sky-200 bg-sky-50 p-3">
-              <h3 className="font-semibold">{t("Custos fixos reais da planilha")}</h3>
-              <p className="mb-2 text-sm text-stone-600">
-                {t("Média por mês dos últimos {n} meses do fluxo de caixa: {valor}. Use estes números reais no lugar das estimativas.", { n: medias.meses, valor: dinheiro(medias.totalCent) })}
-              </p>
-              <Formulario acao={importarCustosFixos} className="space-y-3">
-                <ul className="space-y-1 text-sm">
-                  {medias.itens.map((m) => (
-                    <li key={m.item}>
-                      <label className="flex items-center justify-between gap-2">
-                        <span className="flex items-center gap-2">
-                          <input type="checkbox" name="item" value={m.item} defaultChecked className="h-4 w-4" />
-                          {m.item}
-                        </span>
-                        <span className="tabular-nums">{t("{valor}/mês", { valor: dinheiro(m.mediaCent) })}</span>
-                      </label>
-                    </li>
-                  ))}
-                </ul>
-                {manuaisAtivos.length > 0 && (
-                  <div className="text-sm">
-                    <p className="mb-1 font-medium">{t("Parar de contar estes cadastrados à mão (já estão na planilha):")}</p>
-                    <ul className="space-y-1">
-                      {manuaisAtivos.map((c) => (
-                        <li key={c.id}>
-                          <label className="flex items-center gap-2">
-                            <input type="checkbox" name="desativar" value={c.id} defaultChecked={medias.itens.some((m) => mesmoCusto(c.nome, m.item))} className="h-4 w-4" />
-                            {c.nome} <span className="text-stone-500">({t("= {valor} por mês", { valor: dinheiro(Math.round(valorMensal(c.valorCent, c.periodicidade))) })})</span>
-                          </label>
+            <div className="space-y-4">
+              {([
+                ["SOCIOS", "Pró-labore (retiradas dos sócios)"],
+                ["FIXO", "Despesas fixas da empresa"],
+              ] as const).map(([grupo, titulo]) => {
+                const itens = fixos.itens.filter((c) => (grupo === "SOCIOS" ? c.grupo === "SOCIOS" : c.grupo !== "SOCIOS"));
+                if (!itens.length) return null;
+                return (
+                  <div key={grupo}>
+                    <h3 className="mb-1 flex justify-between text-sm font-semibold">
+                      <span>{t(titulo)}</span>
+                      <span className="tabular-nums">{t("{valor}/mês", { valor: dinheiro(itens.reduce((s, c) => s + c.mensalCent, 0)) })}</span>
+                    </h3>
+                    <ul className="divide-y divide-stone-100 text-sm">
+                      {itens.map((c) => (
+                        <li key={c.nome} className="flex justify-between gap-2 py-1.5">
+                          <span>{c.nome}</span>
+                          <span className="tabular-nums">{dinheiro(c.mensalCent)}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
-                )}
-                <p className="text-xs text-stone-500">
-                  {t("As retiradas dos sócios ficam de fora (o pró-labore continua no cadastro). Média real das retiradas: {valor}/mês.", { valor: dinheiro(retiradaMedia) })}
-                </p>
-                <BotaoEnviar>{t("Usar os números reais")}</BotaoEnviar>
-              </Formulario>
+                );
+              })}
+              <p className="flex justify-between border-t border-stone-200 pt-2 font-semibold">
+                <span>{t("Total por mês")}</span>
+                <span className="tabular-nums">{dinheiro(rateio.recorrenteMensal)}</span>
+              </p>
             </div>
           )}
         </div>
@@ -267,7 +210,9 @@ export default async function Empresa({ searchParams }: { searchParams: { mes?: 
         <div className="cartao overflow-x-auto">
           <h2 className="mb-1">{t("Gastos avulsos da empresa")}</h2>
           <p className="mb-3 text-sm text-stone-500">
-            {t("Ferramentas e outros gastos que não são de uma obra só. Entram no custo fixo do mês em que aconteceram.")}
+            {rateio.contaAvulsos
+              ? t("Ferramentas e outros gastos que não são de uma obra só. Entram no custo fixo do mês em que aconteceram.")
+              : t("Para guardar o recibo de ferramentas e outros gastos da empresa. O valor não soma de novo no custo fixo: ele já entra pela planilha.")}
           </p>
           <Formulario acao={lancarGastoEmpresa} className="mb-4 space-y-3">
             <div className="grid gap-2 sm:grid-cols-[1fr_7rem_10rem]">

@@ -35,7 +35,6 @@ export async function salvarObra(id: string | null, _e: EstadoForm, form: FormDa
     valorContratoCent: paraCentavos(form.get("valorContrato")),
     dataInicio: lerData(form.get("dataInicio")),
     dataPrevista: lerData(form.get("dataPrevista")),
-    progresso: Math.min(100, Math.max(0, Number(form.get("progresso")) || 0)),
     latitude: coordenada(form.get("latitude"), 90),
     longitude: coordenada(form.get("longitude"), 180),
     raioMetros: Math.min(5000, Math.max(20, Number(form.get("raioMetros")) || 200)),
@@ -48,13 +47,6 @@ export async function salvarObra(id: string | null, _e: EstadoForm, form: FormDa
   const obra = id ? await db.obra.update({ where: { id }, data: dados }) : await db.obra.create({ data: dados });
   atualizar(obra.id);
   redirect(`/obras/${obra.id}`);
-}
-
-export async function atualizarProgresso(obraId: string, form: FormData) {
-  await exigirAdmin();
-  const progresso = Math.min(100, Math.max(0, Number(form.get("progresso")) || 0));
-  await db.obra.update({ where: { id: obraId }, data: { progresso } });
-  atualizar(obraId);
 }
 
 export async function excluirObra(id: string) {
