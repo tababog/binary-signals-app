@@ -81,3 +81,8 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - **Nada de caixa/retângulo verde atrás do texto** em cima das imagens da casa: tapa a casa. Texto direto na imagem, com degradê escuro suave e sombra leve.
 - Números (lance, valor) em dourado, grandes, sobre o céu ou o chão; nunca em cima da casa nem do rosto.
 - Usar sempre o melhor ângulo da casa (fachada inteira) quando aparecerem os números.
+
+## Logo no final dos vídeos (pedido do Alessandro em 29/10)
+- A partir de 29/10, TODOS os vídeos terminam com o **logo-reveal novo**: `designer/logo-reveal/logo-reveal-discovery-novo.mp4` (1080x1920, 6,5 s, fundo branco, Montserrat, com @discoveryremodeling). Feito a partir do `discovery-logo-reveal.html` do Drive.
+- Link direto para baixar: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/designer/logo-reveal/logo-reveal-discovery-novo.mp4
+- O antigo `logo-reveal-discovery-original.mp4` não é mais usado.

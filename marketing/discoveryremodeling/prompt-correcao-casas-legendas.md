@@ -115,3 +115,24 @@ O Alessandro reviu o casa-1. O roteiro e o Bruno aparecendo estão ótimos: NÃO
 
 Salve como casa-N-nova-york-v2.mp4 (e casa-5-vendemos-v2.mp4). Prazo: sexta 30/10. Mostre 3 prints do casa-1-v2 primeiro (números, meio com legenda e final).
 ```
+
+## casa-5-vendemos: correções depois da análise de 29/10
+```
+CORREÇÕES DO casa-5-vendemos.mp4 (salvar como casa-5-vendemos-v2.mp4)
+
+A história está ótima (o Alessandro falando "Vendemos!", o tour e os valores). Mantenha as falas e a ordem. Corrija:
+
+1. FONTE: hoje está em Alumni Sans, caixa alta. Troque tudo por Montserrat (ExtraBold na legenda e nos títulos, Bold nas etiquetas), em letras normais. A legenda continua no estilo karaokê (palavra falada em dourado).
+2. GANCHO (0 a 2 s): "Vendemos! 🎉" está em cima do telhado da casa e repete a legenda. Suba o título para o céu, maior, e não mostre a legenda "VENDEMOS!" ao mesmo tempo.
+3. 14 a 16 s: o plano da rua vazia com a casa pequena lá no fundo é fraco. Troque por um plano da fachada de frente, mais perto.
+4. DECK (21 a 27 s): o tronco da árvore ocupa a tela e o deck quase não aparece. Use os planos em que o deck aparece de perto e inteiro.
+5. VALORES (48 a 52 s): tire as 3 caixas verdes, que ficam em cima da rua. Coloque os números SEM caixa (rótulo branco + valor dourado grande, com degradê suave e sombra leve), sobre a imagem mais bonita da casa pronta (sala com piso novo ou fachada), sem tapar a casa. Mantenha o aviso de risco junto.
+6. FINAL (52 a 55 s): tire o painel verde da metade de baixo. Texto direto na imagem, com degradê: "Só 2 vagas na assessoria" (etiqueta), "Quer fazer o mesmo com a gente?" e a pílula dourada "Comente ASSESSORIA 👇".
+7. LOGO NO FIM: troque pelo logo-reveal NOVO (6,5 s): https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/designer/logo-reveal/logo-reveal-discovery-novo.mp4
+8. Confira de novo: sem número da casa nem placa de rua (desfoque se aparecer).
+
+Prazo: sexta 30/10 às 18h (vai ao ar sexta 06/11 às 12h). Mostre 3 prints: gancho, valores e final.
+```
+
+## Logo no final: vale para TODOS os vídeos (casas 1 a 5, Elkland, episódios da casa de Elmira)
+Use o logo-reveal novo no lugar do antigo: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/designer/logo-reveal/logo-reveal-discovery-novo.mp4
