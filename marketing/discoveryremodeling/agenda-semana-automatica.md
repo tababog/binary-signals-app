@@ -1,4 +1,4 @@
-# Agenda automática da semana: 26/10 a 02/11 (horário de Brasília)
+# Agenda automática da semana: 26/10 a 02/11 (horário de Nova York / Connecticut)
 
 O Claude publica tudo pela conexão Windsor (conta 17841475103023266), sem pedir aprovação. O usuário autorizou todas as publicações desta semana em 25/10.
 

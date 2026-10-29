@@ -90,3 +90,8 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 ## Painel da semana (pedido de 29/10)
 - Cada item do painel tem, ao lado do status, um botão **"▶ Ver vídeo"** ou **"🖼 Ver foto"**, que abre o arquivo que vai ser publicado. Se o arquivo ainda está em edição, o botão é **"📁 Ver pasta (em edição)"**.
 - Quando um arquivo novo chegar (por exemplo, as v3 das casas ou os episódios 7 e 8), atualizar o link desse item no painel.
+
+## Fuso horário e país do perfil (29/10)
+- O perfil @discoveryremodeling é dos **Estados Unidos** (Alessandro mora em Connecticut). Assinaturas e preços (Meta Verified, Instagram Plus) são os dos EUA, em dólar.
+- **Todos os horários de publicação são no horário de Nova York** (America/New_York), não de Brasília. As rotinas usam CRON_TZ=America/New_York.
+- Público (29/10): ~79% Brasil (São Paulo à frente) e ~16% EUA (Connecticut). Meio-dia de NY = 13h/14h em Brasília, e 19h de NY = 20h/21h em Brasília: os dois horários continuam bons para o público brasileiro.
