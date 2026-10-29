@@ -69,3 +69,10 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - Organograma e ciclo semanal: `ORGANOGRAMA.md`.
 - Toda sexta, às 8h54, o agente de pesquisa analisa os concorrentes e salva o relatório em `inteligencia-concorrentes/`. A pauta da semana seguinte sempre parte do relatório mais recente.
 - Concorrentes acompanhados: @lucipuerari, @roavanzo, @bm_investiments, @minas__home, @ocacadordetitulos (Marcos Jacober), @wkleiloes.
+
+## Aprendizados da 1ª semana automática (análise de 29/10)
+- Reel com **vídeo real da casa e da família** (série 953 Erie St) alcança de 6 a 10 vezes mais que imagem ou carrossel. Prioridade: vídeo real; imagens só como apoio (para salvar e compartilhar).
+- **Série com episódios** segura o público: continuar a série da casa em todas as semanas.
+- **Gancho no 1º segundo** derrubou de ~60% para ~20% quem pula o vídeo. Manter em todo vídeo.
+- "Comente GUIA" sozinho não gera comentário: **toda legenda termina com uma pergunta fácil** antes do CTA.
+- Análise completa: `inteligencia-concorrentes/2026-10-29-analise-perfil-semana1.md`.

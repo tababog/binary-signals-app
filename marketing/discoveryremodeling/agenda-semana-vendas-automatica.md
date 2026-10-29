@@ -1,6 +1,6 @@
 # Agenda automática: semana de vendas, 02/11 a 08/11 (horário de Brasília)
 
-**APROVADA pelo Alessandro em 27/10.** Publicar sem pedir aprovação de novo. Oferta: conversa grátis de 20 min · sem preço · **Só 2 vagas** (se o Alessandro avisar que uma vaga foi preenchida, trocar o texto para "Só 1 vaga"; com as duas preenchidas, "Vagas encerradas. Comente ASSESSORIA para entrar na lista de espera").
+**APROVADA pelo Alessandro em 27/10. Ajustada em 29/10 pela análise do perfil:** os Reels com vídeo real da casa 953 Erie St alcançaram de 6 a 10 vezes mais que imagens e carrosséis, então a série continua na semana de vendas (ter e qui 19h). Publicar sem pedir aprovação de novo. Oferta: conversa grátis de 20 min · sem preço · **Só 2 vagas** (se o Alessandro avisar que uma vaga foi preenchida, trocar o texto para "Só 1 vaga"; com as duas preenchidas, "Vagas encerradas. Comente ASSESSORIA para entrar na lista de espera").
 
 ## Onde estão os arquivos
 - **Artes e vídeos do Claude** (link público, GitHub): `BASE = https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/`
@@ -18,10 +18,10 @@
 | Seg 02/11 | 12h | Reel do Ale "Você NÃO precisa morar nos EUA" | Drive `reel-segunda-assessoria` | create_video_post |
 | Seg 02/11 | 19h | Calendário de leilões (post para salvar) | `post-calendario-leiloes.jpg` | create_image_post |
 | Ter 03/11 | 12h | Casa 1: "A melhor casa do leilão" | Drive `casa-1-` | create_video_post |
-| Ter 03/11 | 19h | Frase 1 | `frase-01.jpg` | create_image_post |
+| Ter 03/11 | 19h | **Série 953 Erie St, episódio 7** (vídeo editado pelo Alessandro) | Drive `erie-ep7` (pasta "Reels 953 Erie St"); **se não existir até 19h, publique `frase-01.jpg`** | create_video_post (ou create_image_post na frase) |
 | Qua 04/11 | 12h | Casa 2: casa de 2 famílias | Drive `casa-2-` | create_video_post |
 | Qui 05/11 | 12h | Carrossel "Do leilão à venda" (Elkland) | Drive `elkland-carrossel-01..10` | create_carousel_post |
-| Qui 05/11 | 19h | Frase 2 | `frase-02.jpg` | create_image_post |
+| Qui 05/11 | 19h | **Série 953 Erie St, episódio 8** (vídeo editado pelo Alessandro) | Drive `erie-ep8` (pasta "Reels 953 Erie St"); **se não existir até 19h, publique `frase-02.jpg`** | create_video_post (ou create_image_post na frase) |
 | Sex 06/11 | 12h | "VENDEMOS! 35 dias no mercado" | Drive `casa-5-` | create_video_post |
 | Sex 06/11 | 19h | Casa 3: "Essa a gente NÃO compraria" | Drive `casa-3-` | create_video_post |
 | Sáb 07/11 | 10h | Casa 4: "A importância da visita presencial" | Drive `casa-4-` | create_video_post |
@@ -54,10 +54,11 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 - **Seg 12h, Reel do Ale:** "Você NÃO precisa morar nos Estados Unidos pra comprar casa em leilão aqui 🇺🇸🏠 A gente visita, analisa e acompanha tudo por você." + CTA
 - **Seg 19h, Calendário:** "📌 SALVE este post: leilões de casas em Nova York e na Pensilvânia em novembro e dezembro. Mande pra quem quer investir nos EUA! Datas conferidas nos sites oficiais em 27/10; confira sempre no site do condado antes de se inscrever." + CTA
 - **Ter 12h, Casa 1:** "Essa foi a melhor casa que a gente viu nesse leilão 👀 Olha o estado dela por dentro e por fora." + CTA
-- **Ter 19h, Frase 1:** "Quem espera o momento perfeito vê os outros comprando a casa. 💭" + CTA
+- **Ter 19h e Qui 19h, Série 953 Erie St (ep. 7 e 8):** use a legenda que o Alessandro deixar na pasta (arquivo `erie-ep7.txt` / `erie-ep8.txt`). Sem legenda: "Diário da reforma, episódio [7/8] 🔨 A casa que compramos em leilão em Elmira, NY. O que você faria primeiro nessa casa? 👇" + CTA. Termine SEMPRE com uma pergunta simples antes do CTA.
+- **Ter 19h, Frase 1 (só se o ep. 7 não chegar):** "Quem espera o momento perfeito vê os outros comprando a casa. 💭" + CTA
 - **Qua 12h, Casa 2:** "Casa de 2 famílias numa avenida principal: compraria? 🤔 Olha o tour por dentro." + CTA
 - **Qui 12h, Carrossel Elkland:** use a legenda do notebook; se não tiver: "Do leilão à venda: a transformação da casa de Elkland, PA, cômodo por cômodo 🔨➡️🏡 Arraste pro lado." + CTA
-- **Qui 19h, Frase 2:** "Casa barata não é oportunidade. Oportunidade é casa bem analisada. 🔍" + CTA
+- **Qui 19h, Frase 2 (só se o ep. 8 não chegar):** "Casa barata não é oportunidade. Oportunidade é casa bem analisada. 🔍" + CTA
 - **Sex 12h, VENDEMOS:** "VENDEMOS! 🎉 Compramos, reformamos e vendemos: 100% do processo concluído, 35 dias no mercado. Compra US$ 48.000 · Reforma US$ 38.000 · Venda US$ 135.000 (valores reais deste caso)." + CTA
 - **Sex 19h, Casa 3:** "Essa a gente NÃO compraria, e você precisa saber por quê 👇" + CTA
 - **Sáb 10h, Casa 4:** "No Google ela parecia bonita… olha o que a gente encontrou na visita 😳 Por isso a visita presencial é obrigatória." + CTA
