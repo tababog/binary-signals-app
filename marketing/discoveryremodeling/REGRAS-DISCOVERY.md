@@ -76,3 +76,8 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - **Gancho no 1º segundo** derrubou de ~60% para ~20% quem pula o vídeo. Manter em todo vídeo.
 - "Comente GUIA" sozinho não gera comentário: **toda legenda termina com uma pergunta fácil** antes do CTA.
 - Análise completa: `inteligencia-concorrentes/2026-10-29-analise-perfil-semana1.md`.
+
+## Textos sobre vídeo (pedido do Alessandro em 29/10)
+- **Nada de caixa/retângulo verde atrás do texto** em cima das imagens da casa: tapa a casa. Texto direto na imagem, com degradê escuro suave e sombra leve.
+- Números (lance, valor) em dourado, grandes, sobre o céu ou o chão; nunca em cima da casa nem do rosto.
+- Usar sempre o melhor ângulo da casa (fachada inteira) quando aparecerem os números.

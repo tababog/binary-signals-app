@@ -91,3 +91,27 @@ casa-5 – "VENDEMOS!" (C12: vídeos 20260521_140307.mp4 e 20260521_140338.mp4 d
 - Sem endereço, número da casa ou placa (desfoque).
 Salve como casa-5-vendemos.mp4 na pasta "Reels Semana Vendas" até sábado 31/10.
 ```
+
+## ATUALIZAÇÃO 29/10: pedido do Alessandro depois de rever o casa-1 (vale para as casas 1 a 5)
+```
+AJUSTES NOVOS NOS REELS casa-1 a casa-5 (substituem o que for diferente no prompt anterior)
+
+O Alessandro reviu o casa-1. O roteiro e o Bruno aparecendo estão ótimos: NÃO mude a história nem as falas. Mude só isto:
+
+1. SEM CAIXA VERDE: tire TODOS os retângulos verdes atrás dos textos ("Lance inicial", "Valor de mercado", "Vale a pena?", final). Eles tapam a casa.
+   Novo estilo: texto direto sobre a imagem, sem caixa. Para ler bem, use um degradê escuro suave só na faixa onde o texto fica (preto de 0% a 40%) e uma sombra leve (0 2px 12px preto 50%).
+   - Número em Montserrat ExtraBold, dourado #F2C14E, grande (~120 px); o rótulo ("Lance inicial", "Valor de mercado") em Montserrat Bold branco, ~44 px, logo acima.
+   - Coloque os números sobre o CÉU ou o CHÃO, nunca em cima da casa nem do rosto.
+
+2. IMAGENS MELHORES DA CASA: quando os números aparecerem, use o melhor ângulo da casa disponível nos vídeos dessa visita (fachada inteira, de frente, com a casa ocupando bem a tela). Procure outros ângulos no material bruto; troque os planos em que a casa aparece cortada ou de lado.
+
+3. FONTE: Montserrat em tudo (ExtraBold nos títulos e na legenda, Bold nas etiquetas). Nada de Arial ou da fonte atual.
+
+4. LEGENDA: estilo karaokê, até 3 palavras, palavra falada em dourado, sem caixa atrás.
+
+5. AVISO DE RISCO: só junto dos números e nos 5 s finais (hoje está o vídeo todo).
+
+6. FINAL ("Vale a pena?" e "Quer que a gente encontre…"): sem caixa verde e NUNCA em cima do rosto do Bruno. Hoje cobre o rosto dele de 34 s a 43 s. Coloque o texto na parte de baixo (acima de y=1560) com o degradê, e a pílula dourada "Comente ASSESSORIA 👇".
+
+Salve como casa-N-nova-york-v2.mp4 (e casa-5-vendemos-v2.mp4). Prazo: sexta 30/10. Mostre 3 prints do casa-1-v2 primeiro (números, meio com legenda e final).
+```
