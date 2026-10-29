@@ -6,7 +6,27 @@
       "mcp__Google_Drive__search_files",
       "mcp__Google_Drive__get_file_permissions",
       "mcp__Google_Drive__get_file_metadata",
-      "ArtifactData"
+      "mcp__Google_Drive__read_file_content",
+      "mcp__Google_Drive__download_file_content",
+      "ArtifactData",
+      "Artifact",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(git pull:*)",
+      "Bash(git fetch:*)",
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(cat:*)",
+      "Bash(grep:*)",
+      "Bash(sed -n:*)",
+      "Bash(date:*)",
+      "Bash(TZ=America/Sao_Paulo date:*)",
+      "mcp__claude-code-remote__list_triggers",
+      "mcp__claude-code-remote__get_trigger",
+      "mcp__claude-code-remote__update_trigger"
     ]
   }
 }
