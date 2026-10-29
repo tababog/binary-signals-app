@@ -9,30 +9,22 @@ O Claude publica tudo pela conexão Windsor (conta 17841475103023266), sem pedir
 - **Artes dos stories (GitHub):**
   `https://raw.githubusercontent.com/tababog/binary-signals-app/b15d99f198f1d5e8ae5b45e311665ffff70a7cab/marketing/discoveryremodeling/stories-auto/<arquivo>`
 
-### IDs no Drive
+### Arquivos que valem no Drive (pasta "Reels 953 Erie St", limpa em 29/10; as versões antigas foram para a lixeira)
 
-| Arquivo | ID |
-|---|---|
-| reel-1-nao-veio-a-chave.mp4 | 1hohy9fWuaNsf5bpgv1jihptoEkFMRDOH |
-| reel-2-abrindo-a-porta.mp4 | 126aHvwGkaouaayqq4WhS1TgxWENuqoR2 |
-| reel-3-o-que-deixaram.mp4 | 1sGuQTSQe7N4c8EINs_KoUSzfXa7a2SMi |
-| reel-4-descarte.mp4 | 1lurk3wS1VE7J2zg0emmFDQ9it-ZbX6_Z |
-| reel-5-antes-e-depois.mp4 | 1WRfrmFK_8cH-VfD8cq8j4qEO3CWlcV4H |
-| reel-6-assessoria.mp4 | 1MRUnmQ6mtorQ13NiuVitEFmmQ4TD_uv2 |
-| story-dia1.mp4 | 17wLn8QHpbmDwmp5MAKrY6CIRUvjXqpNC |
-| story-dia2.mp4 | 1RE2lmRaTFcyRIJ1NFy3nVDYdRNfwm3K4 |
-| story-dia3.mp4 | 1vTPlBFoaD2SxlmMatvQ3454XEN9Lsc0K |
-| story-dia4.mp4 | 11nM_IiyfIAdlQ1sV6bI1MT0NIo5QMUK_ |
-| story-dia5.mp4 | 1LXbAlNAry-IiFUOuP7Uoh4KHRLe3SAa2 |
-| story-dia6.mp4 | 1WPnZscXbNZmIXXDv2gNcPPVYzh4FWows |
-| story-dia7.mp4 | 13H4hm_s7Prb2zzsjvLO06svjsxkDsg0G |
+| Uso | Arquivo | ID |
+|---|---|---|
+| Reel 3 (qui 29/10, 12h) | reel-3-o-que-deixaram-v3.mp4 | 17pXfpcCV2oAl3pLwGpuCzcr5ZePkxkHw |
+| Reel 5 (sex 30/10, 19h) | reel-5-antes-e-depois-v2.mp4 | 1y3IiiVlIl6pX-w9FjbvPvXIa8syFa3Eq |
+| Reel 4 (sáb 31/10, 10h) | reel-4-descarte-v2.mp4 | 14KPYW_eap68RDNRKmzkTggr3zs7oJQ5Q |
+| Reel 6 (dom 01/11) | reel-6-assessoria-v2.mp4 | 1PH6SwlAlCPqt5B45m4SciRfDw4WjvJtw |
+| Story 8h dia 3 | diario-dia3-video.mp4 | 1FUQDoGyfleuXagtQR1BcITlpbNJtgUJN |
+| Story 8h dia 4 | diario-dia4-video.mp4 | 1NpolARrRMQUsOUt3G1K7mMj0TcA_d-J7 |
+| Story 8h dia 5 | diario-dia5-video.mp4 | 1fS4iSkyyee7uWwnCAk5Bql-bBGgMYNHM |
+| Story 8h dia 6 | diario-dia6-video.mp4 | 14XWTZjmcwq81nNFBdnx8-G-M_Isz1Mpu |
+| Story 8h dia 7 | diario-dia7-video.mp4 | 1uImb9OXa5vqjHUtG4MdnlLebXelCDlaB |
 
-**STORIES DO DIÁRIO (trocados em 27/10 a pedido do Alessandro):** os story-diaN do Drive NÃO são mais usados. Publique os vídeos animados novos: `https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/diario-diaN.mp4` (N = 1 a 7), com create_story video_url.
-**Prioridade:** se existir no Drive (pasta Reels 953 Erie St) o arquivo `diario-diaN-video.mp4` (versão em vídeo feita pelo notebook no padrão novo), publique ESSE (link de download do Drive com o ID dele). Se não existir, publique o diario-diaN.mp4 do GitHub. Nunca publique os antigos story-diaN.
-
-**Regra do v2 (só para os Reels):** na hora de cada Reel ou story-diaN, procure no Drive o mesmo nome com "-v2" (por exemplo, reel-1-nao-veio-a-chave-v2.mp4 ou story-dia1-v2.mp4). Se existir, publique o v2 (link de download com o ID dele). Se não, publique o original.
-
-**Exceção do Reel 3 (pedido do Alessandro em 28/10):** procure primeiro **reel-3-o-que-deixaram-v3.mp4** (título do começo tirado do rosto da Tiene). Se existir, publique o v3. Se não, publique o v2.
+**Use SÓ estes IDs.** Os antigos (reel-N sem v2, reel-3 v2, story-diaN e story-diaN-v2) foram apagados e não devem ser procurados. Se um ID acima falhar, procure no Drive pelo mesmo nome (o arquivo pode ter sido trocado por uma versão nova com o mesmo nome) e, se não achar, use o diario-diaN.mp4 do GitHub (stories) ou avise o Alessandro (Reels):
+`https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/diario-diaN.mp4`
 
 ## Programação
 
