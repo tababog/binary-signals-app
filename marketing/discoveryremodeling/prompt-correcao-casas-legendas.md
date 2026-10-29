@@ -164,3 +164,17 @@ CORREÇÕES DO casa-2-nova-york-v2.mp4 → salvar como casa-2-nova-york-v3.mp4
 
 Mostre 3 prints (números, meio com legenda e final). Prazo: sexta 30/10 às 18h.
 ```
+
+## Legenda sobreposta em TODAS as v2 (casas 1 a 5), 29/10
+```
+LEGENDA SOBREPOSTA NAS v2 DAS CASAS 1 A 5 → refazer todas como v3
+
+O Alessandro viu legenda sobreposta também no casa-3-v2 (e no casa-2-v2). Como as 5 v2 foram feitas juntas, o erro deve estar em todas.
+Refaça a legenda de casa-1, casa-2, casa-3, casa-4 e casa-5 com as regras do item 2 do prompt do casa-2 (um bloco por vez, sem sobreposição nem por 1 quadro, até 3 palavras, Montserrat ExtraBold, palavra falada em dourado) e aplique também:
+- sem caixa verde, números dourados sobre o céu ou o chão, valores certos (lista do item 7);
+- tela cheia 9:16 (sem faixa com fundo borrado);
+- logo-reveal NOVO no fim.
+Salve como casa-1-nova-york-v3.mp4 … casa-4-nova-york-v3.mp4 e casa-5-vendemos-v3.mp4. As v2 NÃO serão publicadas.
+Antes de salvar cada uma, confira 10 quadros aleatórios: nenhum pode ter duas legendas.
+Prazo: sexta 30/10 às 18h. Mostre 1 print com legenda de cada casa.
+```
