@@ -32,6 +32,8 @@ O Claude publica tudo pela conexão Windsor (conta 17841475103023266), sem pedir
 
 **Regra do v2 (só para os Reels):** na hora de cada Reel ou story-diaN, procure no Drive o mesmo nome com "-v2" (por exemplo, reel-1-nao-veio-a-chave-v2.mp4 ou story-dia1-v2.mp4). Se existir, publique o v2 (link de download com o ID dele). Se não, publique o original.
 
+**Exceção do Reel 3 (pedido do Alessandro em 28/10):** procure primeiro **reel-3-o-que-deixaram-v3.mp4** (título do começo tirado do rosto da Tiene). Se existir, publique o v3. Se não, publique o v2.
+
 ## Programação
 
 | Dia | 8h | 10h / 12h / 19h | 14h |
