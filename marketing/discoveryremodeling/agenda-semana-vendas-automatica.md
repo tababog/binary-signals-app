@@ -1,4 +1,4 @@
-# Agenda automática: semana de vendas, 02/11 a 08/11 (horário de Nova York / Connecticut)
+# Agenda automática: semana de vendas, 02/11 a 08/11 (horário de Brasília)
 
 **APROVADA pelo Alessandro em 27/10. Ajustada em 29/10 pela análise do perfil:** os Reels com vídeo real da casa 953 Erie St alcançaram de 6 a 10 vezes mais que imagens e carrosséis, então a série continua na semana de vendas (ter e qui 19h). Publicar sem pedir aprovação de novo. Oferta: conversa grátis de 20 min · sem preço · **Só 2 vagas** (se o Alessandro avisar que uma vaga foi preenchida, trocar o texto para "Só 1 vaga"; com as duas preenchidas, "Vagas encerradas. Comente ASSESSORIA para entrar na lista de espera").
 

@@ -93,5 +93,5 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 
 ## Fuso horário e país do perfil (29/10)
 - O perfil @discoveryremodeling é dos **Estados Unidos** (Alessandro mora em Connecticut). Assinaturas e preços (Meta Verified, Instagram Plus) são os dos EUA, em dólar.
-- **Todos os horários de publicação são no horário de Nova York** (America/New_York), não de Brasília. As rotinas usam CRON_TZ=America/New_York.
-- Público (29/10): ~79% Brasil (São Paulo à frente) e ~16% EUA (Connecticut). Meio-dia de NY = 13h/14h em Brasília, e 19h de NY = 20h/21h em Brasília: os dois horários continuam bons para o público brasileiro.
+- **Os horários de publicação continuam no horário de BRASÍLIA** (o público é ~79% Brasil). As rotinas usam CRON_TZ=America/Sao_Paulo.
+- Para o Alessandro, sempre mostrar também o horário de Connecticut: até 31/10, 1 h a menos (12h Brasília = 11h em Connecticut); a partir de 01/11 (fim do horário de verão nos EUA), 2 h a menos (12h Brasília = 10h em Connecticut).
