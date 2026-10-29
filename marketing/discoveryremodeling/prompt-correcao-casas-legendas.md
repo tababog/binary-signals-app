@@ -136,3 +136,31 @@ Prazo: sexta 30/10 às 18h (vai ao ar sexta 06/11 às 12h). Mostre 3 prints: gan
 
 ## Logo no final: vale para TODOS os vídeos (casas 1 a 5, Elkland, episódios da casa de Elmira)
 Use o logo-reveal novo no lugar do antigo: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/designer/logo-reveal/logo-reveal-discovery-novo.mp4
+
+## casa-2-nova-york-v2: correções depois da análise de 29/10 (salvar como casa-2-nova-york-v3.mp4)
+```
+CORREÇÕES DO casa-2-nova-york-v2.mp4 → salvar como casa-2-nova-york-v3.mp4
+
+1. VALORES ERRADOS (urgente): o vídeo mostra "Lance inicial US$ 60.000" e "~US$ 140.000". Os valores certos, passados pelo Alessandro, são:
+   Lance inicial: US$ 6.500
+   Valor de mercado na região: ~US$ 125.000
+   Confira os dois números letra por letra antes de salvar.
+
+2. LEGENDA SOBREPOSTA (quase o vídeo todo): dois blocos aparecem ao mesmo tempo, um em cima do outro (ex.: 10 s, "DEIXOU…" + "SEJA… VOCÊ"). Refaça a legenda do zero:
+   - transcreva de novo com o tempo de cada palavra (whisper com word timestamps);
+   - UM bloco por vez: o bloco seguinte só entra quando o anterior sai (sem sobreposição, nem por 1 quadro);
+   - até 3 palavras por bloco, Montserrat ExtraBold, palavra falada em dourado;
+   - antes de salvar, exporte 10 quadros aleatórios e confira que nenhum tem duas legendas.
+
+3. TELA CHEIA: hoje o vídeo fica numa faixa no meio, com fundo borrado em cima e embaixo. Recorte para a tela inteira (9:16), seguindo a casa e as pessoas. Se em algum trecho o recorte cortar demais, use 4:5 grande no centro, nunca a faixa fina.
+
+4. AVISO DE RISCO: hoje fica em cima da casa (2 a 6 s). Coloque embaixo, na área da legenda, só junto dos números e nos 5 s finais.
+
+5. "VALE A PENA?" (31 a 35 s): o texto fica em cima da casa e some sem dar para ler. Coloque no céu ou embaixo, com 2 s inteiros na tela.
+
+6. LOGO NO FIM: troque pelo logo-reveal NOVO: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/designer/logo-reveal/logo-reveal-discovery-novo.mp4
+
+7. VALE PARA AS OUTRAS CASAS: confira nas casas 1, 3, 4 e 5 a legenda sobreposta e os valores. Valores certos: casa-1 US$ 14.000 / ~US$ 320.000 · casa-2 US$ 6.500 / ~US$ 125.000 · casa-3 US$ 5.000 / ~US$ 110.000 · casa-4 US$ 3.500 / ~US$ 125.000 · casa-5 compra US$ 48.000, reforma US$ 38.000, venda US$ 135.000.
+
+Mostre 3 prints (números, meio com legenda e final). Prazo: sexta 30/10 às 18h.
+```
