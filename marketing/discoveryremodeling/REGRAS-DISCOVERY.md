@@ -5,7 +5,7 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 ## 1. Marca
 - Nome da marca: **"Discovery"** (nunca "Discovery Investiment", "Investment" ou "Investimento"). Instagram: **@discoveryremodeling**.
 - Cores: verde-escuro **#17361A** (principal), verde da logo #29721D, dourado **#F2C14E** (destaque), branco. Fonte: Inter (Black/Bold).
-- Logos: `marca/logo-discovery-branca.png` e `marca/logo-discovery-colorida.png`. Animação: `marca/logo-reveal-discovery-original.mp4` (fundo branco, globo desenhado do zero), usada no final de todo Reel.
+- Logos: `marca/logo-discovery-branca.png` e `marca/logo-discovery-colorida.png`. Animação do final de TODO vídeo: `designer/logo-reveal/logo-reveal-discovery-novo.mp4` (feita do `discovery-logo-reveal.html`, aprovada em 29/10). O logo-reveal antigo foi removido.
 - Toda arte e todo vídeo levam a logo (branca no canto de cima à direita, nos vídeos).
 - WhatsApp oficial: **+1 (475) 349-9986** (link `https://wa.me/14753499986`).
 - Guia grátis (PDF público): https://drive.google.com/file/d/1ulALUwXcDuyvy-1aK0RQ5Rf8V-tRbsnd/view (primeiro link da bio).
@@ -85,4 +85,4 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 ## Logo no final dos vídeos (pedido do Alessandro em 29/10)
 - A partir de 29/10, TODOS os vídeos terminam com o **logo-reveal novo**: `designer/logo-reveal/logo-reveal-discovery-novo.mp4` (1080x1920, 6,5 s, fundo branco, Montserrat, com @discoveryremodeling). Feito a partir do `discovery-logo-reveal.html` do Drive.
 - Link direto para baixar: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/designer/logo-reveal/logo-reveal-discovery-novo.mp4
-- O antigo `logo-reveal-discovery-original.mp4` não é mais usado.
+- O antigo `logo-reveal-discovery-original.mp4` foi REMOVIDO (29/10). Nunca usar. Se o arquivo antigo aparecer em alguma pasta do notebook, apagar.

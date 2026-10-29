@@ -12,7 +12,7 @@ EDIÇÃO:
 2. Gancho no 1º segundo, texto grande no terço de cima: "Você NÃO precisa morar nos EUA 🇺🇸 pra comprar casa em leilão".
 3. Enquanto eu falo "a gente visita, analisa e acompanha…", mostre por cima (corte J/L, meu áudio contínuo) cenas rápidas: visita de campo, casa antes, reforma, casa pronta (Elkland).
 4. Quando eu falar "só 2 vagas", mostre o selo dourado #F2C14E "SÓ 2 VAGAS".
-5. Final: texto "Comente ASSESSORIA 👇 · Conversa grátis de 20 min" e o logo-reveal-discovery-original.mp4.
+5. Final: texto "Comente ASSESSORIA 👇 · Conversa grátis de 20 min" e o logo-reveal-discovery-novo.mp4 (https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/designer/logo-reveal/logo-reveal-discovery-novo.mp4).
 6. Legendas sincronizadas no terço de baixo, logo branca no canto de cima à direita, cores #17361A e #F2C14E.
 7. Vertical 1080x1920, 30 fps, MP4, até 60 s + 4 s de logo. Sem endereço de casa, sem placa, sem rosto de terceiros.
 

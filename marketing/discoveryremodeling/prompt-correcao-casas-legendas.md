@@ -47,7 +47,7 @@ Novo padrão, estilo "karaokê":
   - botão em pílula dourada com "Comente ASSESSORIA 👇" em Work Sans Bold 46 px, verde-escuro, pulsando de leve (escala 100% → 104% → 100% a cada 1 s);
   - etiqueta "SÓ 2 VAGAS ABERTAS" acima do título, no estilo da etiqueta de local.
 - O painel não pode cobrir o rosto: se o rosto estiver na metade de baixo, coloque o painel na metade de cima.
-- Depois, o logo-reveal-discovery-original.mp4 (como já está).
+- Depois, o logo-reveal-discovery-novo.mp4 (https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/designer/logo-reveal/logo-reveal-discovery-novo.mp4) (como já está).
 
 === 5. AVISO DE RISCO ===
 Hoje ele fica o vídeo inteiro em cima da imagem. Novo padrão: mostre só junto com os cartões de número e nos 5 s finais, em Work Sans Regular 22 px, branco 80%, sem caixa, em y=1470. Ele também vai na legenda do post.

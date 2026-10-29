@@ -31,7 +31,7 @@ PASTA: C:\Users\aless\Videos\Discovery\Reels 953 Erie St (e os vídeos originais
 === O QUE CONTINUA IGUAL ===
 - Vertical 1080x1920, 30 fps, MP4, menos de 100 MB.
 - Logo branca como marca d'água no canto de cima à direita (cerca de 120 px, 80% de opacidade).
-- Final com o logo-reveal-discovery-original.mp4.
+- Final com o logo-reveal-discovery-novo.mp4 (https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/designer/logo-reveal/logo-reveal-discovery-novo.mp4).
 - Desfocar rostos de terceiros, placas de carro e documentos.
 - Mesma ordem, títulos e chamadas para ação (Reels 1 a 5: "Siga para ver a reforma 🔨"; Reel 6: "Comente ASSESSORIA 👇").
 - A marca se escreve só "Discovery".

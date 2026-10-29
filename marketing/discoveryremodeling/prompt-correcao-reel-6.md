@@ -31,7 +31,7 @@ No final (na parte da casa por fora, por volta de 30 a 35 s no vídeo atual), a 
 3. Confira na transcrição que não sobrou nenhuma fala sobre isso em nenhum outro ponto do vídeo.
 
 MANTER IGUAL:
-- Os textos na tela e a ordem: "Somos uma família brasileira…" → "A gente pesquisa, visita, compra e reforma" → "E ajuda você a fazer o mesmo, do Brasil ou daqui" → "Comente ASSESSORIA 👇" → logo-reveal-discovery-original.mp4.
+- Os textos na tela e a ordem: "Somos uma família brasileira…" → "A gente pesquisa, visita, compra e reforma" → "E ajuda você a fazer o mesmo, do Brasil ou daqui" → "Comente ASSESSORIA 👇" → logo-reveal-discovery-novo.mp4 (https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/designer/logo-reveal/logo-reveal-discovery-novo.mp4).
 - O "Comente ASSESSORIA 👇" bem visível nos últimos segundos antes da logo.
 - Logo branca no canto de cima à direita.
 - Vertical 1080x1920, 30 fps, MP4, menos de 100 MB.

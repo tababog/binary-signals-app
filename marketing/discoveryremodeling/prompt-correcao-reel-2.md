@@ -24,7 +24,7 @@ O QUE FAZER:
 MANTER IGUAL:
 - Texto do gancho no início: "Entramos na casa que compramos em leilão. Espera o final 😬"
 - Rótulos dos cômodos (Escada, Banheiro, Quartos) e "E aí… o teto 😳" logo antes da revelação do teto.
-- "Siga para ver a reforma 🔨" no final, seguido do logo-reveal-discovery-original.mp4.
+- "Siga para ver a reforma 🔨" no final, seguido do logo-reveal-discovery-novo.mp4 (https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/designer/logo-reveal/logo-reveal-discovery-novo.mp4).
 - Logo branca no canto de cima à direita, durante todo o vídeo.
 - Vertical 1080x1920, 30 fps, MP4, menos de 100 MB.
 

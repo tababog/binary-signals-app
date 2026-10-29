@@ -43,7 +43,7 @@ Formato de cada Reel:
 - FALAS INTEIRAS: transcreva com o tempo de cada palavra, corte só nas pausas entre frases (0,3 s antes da primeira palavra e 0,5 s depois da última). Nunca acelere fala. Partes sem fala podem ser rápidas e aceleradas.
 - Os números aparecem em destaque: faixa verde-escura #17361A com o valor em dourado #F2C14E, texto animado entrando de baixo para cima.
 - Legendas da fala sincronizadas no terço de baixo, no máximo 2 linhas.
-- Logo branca no canto de cima à direita e, no final, o logo-reveal-discovery-original.mp4.
+- Logo branca no canto de cima à direita e, no final, o logo-reveal-discovery-novo.mp4 (https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/designer/logo-reveal/logo-reveal-discovery-novo.mp4).
 - NUNCA mostrar endereço, número da casa ou placa de rua: desfoque. Só cidade e condado.
 - Desfocar rostos de terceiros e placas de carro.
 - NUNCA escrever "lucro garantido", "lucro de US$ ..." ou a conta "valor de mercado menos lance = lucro". Sempre deixar claro que a reforma e os custos mudam tudo.

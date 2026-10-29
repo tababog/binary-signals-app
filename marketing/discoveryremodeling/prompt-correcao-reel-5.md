@@ -32,7 +32,7 @@ Quem assiste pode achar que o "depois" já é a reforma pronta. Troque os textos
 Use o mesmo estilo de texto atual (branco com contorno preto, no terço de cima). Como "ANTES DA LIMPEZA" é mais longo, diminua um pouco a letra para caber sem encostar nas bordas e sem ficar atrás da logo do canto de cima à direita.
 
 MANTER IGUAL:
-- A ordem das cenas: cozinha → sala → porão → garagem → "Agora sim: hora da obra" → "Siga para ver a reforma" → logo-reveal-discovery-original.mp4.
+- A ordem das cenas: cozinha → sala → porão → garagem → "Agora sim: hora da obra" → "Siga para ver a reforma" → logo-reveal-discovery-novo.mp4 (https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/designer/logo-reveal/logo-reveal-discovery-novo.mp4).
 - Logo branca no canto de cima à direita durante todo o vídeo.
 - Vertical 1080x1920, 30 fps, MP4, menos de 100 MB.
 

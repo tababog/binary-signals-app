@@ -22,7 +22,7 @@ O QUE FAZER (sem mudar o estilo do vídeo):
 5. Se ficar mais longo, tudo bem: até 60 segundos de conteúdo, mais os 4 s da logo.
 
 MANTER IGUAL:
-- Todos os textos na tela e a ordem: "Tudo isso saiu de UMA casa de leilão 😳" → "Destino: centro de descarte" → "Check-in no descarte ✅" → "1ª carga" → "Basculando…" → "Vazia! Mas não acabou…" → "2ª carga: até um sofá rosa 🛋️" → "O que não sai sozinho, vai na mão 💪" → "Siga para ver a reforma 🔨" → logo-reveal-discovery-original.mp4.
+- Todos os textos na tela e a ordem: "Tudo isso saiu de UMA casa de leilão 😳" → "Destino: centro de descarte" → "Check-in no descarte ✅" → "1ª carga" → "Basculando…" → "Vazia! Mas não acabou…" → "2ª carga: até um sofá rosa 🛋️" → "O que não sai sozinho, vai na mão 💪" → "Siga para ver a reforma 🔨" → logo-reveal-discovery-novo.mp4 (https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/designer/logo-reveal/logo-reveal-discovery-novo.mp4).
 - O desfoque nos rostos dos funcionários do centro de descarte.
 - Logo branca no canto de cima à direita.
 - Vertical 1080x1920, 30 fps, MP4, menos de 100 MB.

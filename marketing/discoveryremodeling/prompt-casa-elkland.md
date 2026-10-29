@@ -22,7 +22,7 @@ A) CARROSSEL "Do leilão à venda" (8 a 10 imagens, 1080x1350):
    2 a 8. Pares ANTES × DEPOIS de cada cômodo, cada slide com a mesma foto dividida (antes em cima e depois embaixo, ou lado a lado), com os selos "ANTES" (verde #17361A) e "DEPOIS" (dourado #F2C14E).
    9. Linha do tempo: "Leilão → Escritura → Limpeza → Reforma → Venda" (os meses, se você souber pelas datas dos arquivos).
    10. "Quer fazer o mesmo com a gente? Só 2 vagas na assessoria · Comente ASSESSORIA 👇".
-B) REEL "Do leilão à venda" (40 a 60 s): começa com o DEPOIS da fachada e o texto "Essa casa foi a leilão…", volta para o ANTES e mostra a transformação cômodo por cômodo (cortes rápidos no ritmo), com falas minhas inteiras se houver. Termina com "Comente ASSESSORIA 👇" e o logo-reveal-discovery-original.mp4.
+B) REEL "Do leilão à venda" (40 a 60 s): começa com o DEPOIS da fachada e o texto "Essa casa foi a leilão…", volta para o ANTES e mostra a transformação cômodo por cômodo (cortes rápidos no ritmo), com falas minhas inteiras se houver. Termina com "Comente ASSESSORIA 👇" e o logo-reveal-discovery-novo.mp4 (https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/designer/logo-reveal/logo-reveal-discovery-novo.mp4).
 
 === ETAPA 3 – EDIÇÃO (depois que eu aprovar) ===
 - Logo branca no canto de cima à direita; cores da marca nos selos e textos.
