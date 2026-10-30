@@ -32,5 +32,10 @@
       "mcp__claude-code-remote__get_trigger",
       "mcp__claude-code-remote__update_trigger"
     ]
+  },
+  "autoMode": {
+    "allow": [
+      "The owner (Alessandro) pre-approved, in writing, every Instagram action on his own account @discoveryremodeling (account 17841475103023266) made with mcp__Windsor_ai__execute_action for the scheduled routine 'Semana automática Discovery': create_story, create_video_post, create_image_post, create_carousel_post and reply_to_comment, following the agenda files in marketing/discoveryremodeling/. These run without asking."
+    ]
   }
 }
