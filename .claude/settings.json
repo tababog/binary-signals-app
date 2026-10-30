@@ -3,6 +3,10 @@
     "allow": [
       "mcp__Windsor_ai",
       "mcp__Windsor_ai__*",
+      "mcp__Windsor_ai__execute_action",
+      "mcp__Windsor_ai__get_data",
+      "mcp__Windsor_ai__get_fields",
+      "mcp__Windsor_ai__list_actions",
       "mcp__Google_Drive__search_files",
       "mcp__Google_Drive__get_file_permissions",
       "mcp__Google_Drive__get_file_metadata",
