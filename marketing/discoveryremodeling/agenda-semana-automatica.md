@@ -16,7 +16,7 @@ O Claude publica tudo pela conexão Windsor (conta 17841475103023266), sem pedir
 | Reel 3 (qui 29/10, 12h) | reel-3-o-que-deixaram-v3.mp4 | 17pXfpcCV2oAl3pLwGpuCzcr5ZePkxkHw |
 | Reel 5 (sex 30/10, 19h) | reel-5-antes-e-depois-v2.mp4 | 1y3IiiVlIl6pX-w9FjbvPvXIa8syFa3Eq |
 | Reel 4 (sáb 31/10, 10h) | reel-4-descarte-v2.mp4 | 14KPYW_eap68RDNRKmzkTggr3zs7oJQ5Q |
-| Reel 6 (dom 01/11) | reel-6-assessoria-v2.mp4 | 1PH6SwlAlCPqt5B45m4SciRfDw4WjvJtw |
+| Reel 6 (dom 01/11) | reel-6-assessoria-v3.mp4 se existir (procure no Drive pelo nome; texto corrigido com "e vende"); se não, reel-6-assessoria-v2.mp4 | v2: 1PH6SwlAlCPqt5B45m4SciRfDw4WjvJtw |
 | Story 8h dia 3 | diario-dia3-video.mp4 | 1FUQDoGyfleuXagtQR1BcITlpbNJtgUJN |
 | Story 8h dia 4 | diario-dia4-video.mp4 | 1NpolARrRMQUsOUt3G1K7mMj0TcA_d-J7 |
 | Story 8h dia 5 | diario-dia5-video.mp4 | 1fS4iSkyyee7uWwnCAk5Bql-bBGgMYNHM |
@@ -116,7 +116,7 @@ Siga para ver a reforma 🔨
 ```
 Somos uma família brasileira que compra casas em leilão de Tax Deed nos EUA 🇧🇷🇺🇸
 
-A gente pesquisa, visita, compra e reforma. E ajuda você a fazer o mesmo, morando no Brasil ou aqui.
+A gente pesquisa, visita, compra, reforma e vende: o processo inteiro, do leilão à venda. E ajuda você a fazer o mesmo, morando no Brasil ou aqui.
 
 Quer comprar sua casa em leilão nos EUA com a gente? Comente ASSESSORIA 👇
 
