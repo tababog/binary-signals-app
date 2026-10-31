@@ -27,7 +27,7 @@ export default async function Ponto() {
       <Cabecalho titulo={t("Olá, {nome}", { nome: usuario.nome.split(" ")[0] })} subtitulo={t("Registre aqui a hora que chega e a hora que sai da obra")} />
       <div className="mx-auto max-w-md space-y-4">
         <div className="cartao">
-          <BaterPonto obras={obras} aberto={aberto ? { obra: aberto.obra.nome, desde: dataHora(aberto.entrada) } : null} />
+          <BaterPonto obras={obras} aberto={aberto ? { obraId: aberto.obraId, obra: aberto.obra.nome, desde: dataHora(aberto.entrada) } : null} />
         </div>
         <div className="grid grid-cols-2 gap-3">
           <Indicador rotulo={t("Hoje")} valor={horas(msHoje)} />

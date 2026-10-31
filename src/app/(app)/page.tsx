@@ -10,6 +10,8 @@ import { TextoUsuario } from "@/components/TextoUsuario";
 import { SeloLocal } from "@/components/SeloLocal";
 import { temAlertaLocal } from "@/lib/geo";
 import { getT } from "@/i18n/servidor";
+import { trocarObraRegistro } from "./registros/actions";
+import { BotaoEnviar } from "@/components/BotaoEnviar";
 
 export default async function Painel() {
   const usuario = await exigirUsuario();
@@ -77,10 +79,22 @@ export default async function Painel() {
             ) : (
               <ul className="space-y-1 text-sm">
                 {naObra.map((r) => (
-                  <li key={r.id}>
+                  <li key={r.id} className="border-b border-stone-100 pb-2 last:border-0">
                     <b>{r.usuario.nome}</b> {t("em")} {r.obra.nome}
                     <span className="text-stone-500"> {t("desde {hora}", { hora: hora(r.entrada) })}</span>{" "}
                     <SeloLocal lat={r.latEntrada} lng={r.lngEntrada} precisao={r.precisaoEntrada} obra={r.obra} />
+                    {/* Marcou a obra errada: o administrador troca aqui */}
+                    <details className="mt-1">
+                      <summary className="cursor-pointer text-xs font-medium text-marca-700">{t("Trocar obra")}</summary>
+                      <form action={trocarObraRegistro.bind(null, r.id)} className="mt-1 flex gap-2">
+                        <select className="campo py-1 text-sm" name="obraId" defaultValue={r.obraId} aria-label={t("Obra")}>
+                          {(obras.some((o) => o.id === r.obraId) ? obras : [r.obra, ...obras]).map((o) => (
+                            <option key={o.id} value={o.id}>{o.nome}</option>
+                          ))}
+                        </select>
+                        <BotaoEnviar className="botao-secundario px-3 py-1 text-sm">{t("Salvar")}</BotaoEnviar>
+                      </form>
+                    </details>
                   </li>
                 ))}
               </ul>

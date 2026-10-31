@@ -784,5 +784,11 @@ const en: Record<string, string> = {
   "lembretes criados ✓": "reminders created ✓",
   "agenda não compartilhada com o app": "calendar not shared with the app",
   "Quem vai: {nome}": "Who's going: {nome}",
+  "Trocar obra": "Change job",
+  "Você já está nesta obra.": "You are already at this job.",
+  "Vai para outra obra agora? Trocar de obra": "Going to another job now? Switch job",
+  "Fecha as horas desta obra agora e começa a contar na outra.": "Closes the hours at this job now and starts counting at the other one.",
+  "Trocar de obra": "Switch job",
+  "fornecedor": "supplier",
 };
 export default en;

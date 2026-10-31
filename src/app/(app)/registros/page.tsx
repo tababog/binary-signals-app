@@ -86,6 +86,11 @@ export default async function Registros({ searchParams }: { searchParams: Filtro
                     <td colSpan={8}>
                       <Formulario acao={corrigirRegistro.bind(null, r.id)} className="grid gap-3 bg-stone-50 p-3 sm:grid-cols-4 sm:items-end">
                         <div className="sm:col-span-4 text-sm font-semibold">{r.usuario.nome} · {r.obra.nome}</div>
+                        <Campo rotulo={t("Obra")}>
+                          <select className="campo" name="obraId" defaultValue={r.obraId}>
+                            {obras.map((o) => <option key={o.id} value={o.id}>{o.nome}</option>)}
+                          </select>
+                        </Campo>
                         <Campo rotulo={t("Entrada")}><input className="campo" type="datetime-local" name="entrada" defaultValue={campoDataHora(r.entrada)} required /></Campo>
                         <Campo rotulo={t("Saída")}><input className="campo" type="datetime-local" name="saida" defaultValue={campoDataHora(r.saida)} /></Campo>
                         <Campo rotulo={t("Observação")}><input className="campo" name="observacao" defaultValue={r.observacao ?? ""} placeholder={t("Motivo da correção")} /></Campo>

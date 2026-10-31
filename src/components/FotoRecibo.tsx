@@ -81,7 +81,9 @@ export function FotoRecibo({ rotulo, ler }: { rotulo?: string; ler?: "RECEBIMENT
     preencher("formaPagamento", r.formaPagamento);
     const descricao = campo("descricao");
     if (descricao && !descricao.value.trim() && r.descricao) descricao.value = r.descricao;
-    const achou = [r.valorCent !== null && t("valor"), r.data && t("data"), r.formaPagamento && t("forma de pagamento")].filter(Boolean);
+    // O campo de fornecedor (CampoFornecedor) escuta este aviso e escolhe o fornecedor lido
+    if (r.fornecedor) form.dispatchEvent(new CustomEvent("fornecedor-lido", { detail: { id: r.fornecedorId ?? null, nome: r.fornecedor } }));
+    const achou = [r.valorCent !== null && t("valor"), r.data && t("data"), r.formaPagamento && t("forma de pagamento"), r.fornecedor && t("fornecedor")].filter(Boolean);
     setLeitura({
       lendo: false,
       aviso: achou.length

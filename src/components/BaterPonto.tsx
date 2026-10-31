@@ -2,7 +2,7 @@
 
 import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
-import { registrarEntrada, registrarSaida } from "@/app/(app)/ponto/actions";
+import { registrarEntrada, registrarSaida, trocarObra } from "@/app/(app)/ponto/actions";
 import { useT } from "@/i18n/cliente";
 
 type Local = { lat: number; lng: number; precisao: number };
@@ -19,8 +19,12 @@ function pegarLocal(): Promise<Local | null> {
   });
 }
 
-export function BaterPonto({ obras, aberto }: { obras: { id: string; nome: string }[]; aberto: { obra: string; desde: string } | null }) {
+export function BaterPonto({ obras, aberto }: { obras: { id: string; nome: string }[]; aberto: { obraId: string; obra: string; desde: string } | null }) {
   const [obraId, setObraId] = useState(obras[0]?.id ?? "");
+  const outras = obras.filter((o) => o.id !== aberto?.obraId);
+  const [escolhida, setNovaObraId] = useState(outras[0]?.id ?? "");
+  // Depois de trocar, a obra escolhida vira a atual: volta para a primeira das outras
+  const novaObraId = outras.some((o) => o.id === escolhida) ? escolhida : (outras[0]?.id ?? "");
   const [erro, setErro] = useState<string | null>(null);
   const [pendente, iniciar] = useTransition();
   const router = useRouter();
@@ -45,6 +49,22 @@ export function BaterPonto({ obras, aberto }: { obras: { id: string; nome: strin
           {pendente ? t("Registrando...") : t("Registrar SAÍDA")}
         </button>
         {erro && <p className="text-sm text-red-700">{erro}</p>}
+        {outras.length > 0 && (
+          <details className="rounded-xl border border-stone-200 p-3 text-left">
+            <summary className="cursor-pointer text-sm font-semibold text-marca-700">{t("Vai para outra obra agora? Trocar de obra")}</summary>
+            <p className="mt-2 text-xs text-stone-500">{t("Fecha as horas desta obra agora e começa a contar na outra.")}</p>
+            <select className="campo mt-2" value={novaObraId} onChange={(e) => setNovaObraId(e.target.value)} aria-label={t("Nova obra")}>
+              {outras.map((o) => <option key={o.id} value={o.id}>{o.nome}</option>)}
+            </select>
+            <button
+              className="botao mt-2 w-full disabled:opacity-50"
+              disabled={pendente || !novaObraId}
+              onClick={() => executar((local) => trocarObra(novaObraId, local))}
+            >
+              {pendente ? t("Registrando...") : t("Trocar de obra")}
+            </button>
+          </details>
+        )}
       </div>
     );
   }
