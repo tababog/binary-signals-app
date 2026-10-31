@@ -34,6 +34,42 @@ export async function registrarEntrada(obraId: string, local: unknown): Promise<
   return {};
 }
 
+/**
+ * Trocar de obra no meio do dia (meio dia em um cliente, meio dia em outro): fecha a obra atual agora
+ * e abre a nova no mesmo instante, com a mesma localização. As horas de cada obra ficam separadas.
+ */
+export async function trocarObra(obraId: string, local: unknown): Promise<{ erro?: string }> {
+  const usuario = await exigirUsuario();
+  if (!localValido(local)) return { erro: getT()(SEM_GPS) };
+  const aberto = await db.registroPonto.findFirst({ where: { usuarioId: usuario.id, saida: null } });
+  if (!aberto) return { erro: getT()("Você não tem entrada aberta.") };
+  if (aberto.obraId === obraId) return { erro: getT()("Você já está nesta obra.") };
+  const obra = await db.obra.findUnique({ where: { id: obraId } });
+  if (!obra || obra.status === "CONCLUIDA") return { erro: getT()("Escolha uma obra ativa.") };
+
+  const agora = new Date();
+  await db.$transaction([
+    db.registroPonto.update({
+      where: { id: aberto.id },
+      data: { saida: agora, latSaida: local.lat, lngSaida: local.lng, precisaoSaida: local.precisao },
+    }),
+    db.registroPonto.create({
+      data: {
+        usuarioId: usuario.id,
+        obraId,
+        entrada: agora,
+        ...valoresDoRegistro(usuario),
+        latEntrada: local.lat,
+        lngEntrada: local.lng,
+        precisaoEntrada: local.precisao,
+      },
+    }),
+  ]);
+  await recalcularCustosDoDia(usuario.id, aberto.entrada);
+  revalidatePath("/ponto");
+  return {};
+}
+
 export async function registrarSaida(local: unknown): Promise<{ erro?: string }> {
   const usuario = await exigirUsuario();
   if (!localValido(local)) return { erro: getT()(SEM_GPS) };

@@ -3,7 +3,8 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { exigirAdmin } from "@/lib/auth";
 import { getT } from "@/i18n/servidor";
-import { lerComprovanteIA, type LeituraComprovante } from "@/lib/leitura-comprovante";
+import { db } from "@/lib/db";
+import { acharFornecedor, lerComprovanteIA, type LeituraComprovante } from "@/lib/leitura-comprovante";
 
 /**
  * Chamado pelo botão de foto/arquivo do comprovante: lê o documento e devolve os campos para preencher o formulário,
@@ -20,6 +21,11 @@ export async function lerComprovante(form: FormData): Promise<{ dados: LeituraCo
   try {
     const dados = await lerComprovanteIA(arquivo, tipo);
     if (!dados) return { erro: t("Formato de arquivo que a IA não lê ({tipo}). Use foto JPG/PNG ou PDF.", { tipo: arquivo.type || "?" }) };
+    // Despesa: o fornecedor lido vira o já cadastrado com esse nome, ou um fornecedor novo com o nome preenchido
+    if (dados.fornecedor) {
+      const fornecedores = await db.fornecedor.findMany({ select: { id: true, nome: true } });
+      dados.fornecedorId = acharFornecedor(dados.fornecedor, fornecedores);
+    }
     return { dados };
   } catch (e) {
     console.error("Leitura do comprovante falhou:", e);
