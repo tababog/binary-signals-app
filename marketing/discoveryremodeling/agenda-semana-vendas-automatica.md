@@ -1,5 +1,7 @@
 # Agenda automática: semana de vendas, 02/11 a 08/11 (horário de Brasília)
 
+> **MUDANÇA DE 31/10: O ALESSANDRO AGENDA TODOS OS POSTS DESTA SEMANA NO META BUSINESS SUITE** (pacote: https://claude.ai/artifact/XUcDSnLkMwStQDmtTBwES5 e `meta-business-suite/`). A rotina **NÃO publica nada desta agenda** (nem o diario-dia7 de segunda 02/11). Em cada horário ela só: (1) confere com get_data, ~5 min depois do horário, se o item saiu; se não saiu, avisa o Alessandro (não publica no lugar); (2) responde os comentários às 14h e 19h; (3) marca o painel.
+
 **APROVADA pelo Alessandro em 27/10. Ajustada em 29/10 pela análise do perfil:** os Reels com vídeo real da casa 953 Erie St alcançaram de 6 a 10 vezes mais que imagens e carrosséis, então a série continua na semana de vendas (ter e qui 19h). Publicar sem pedir aprovação de novo. Oferta: conversa grátis de 20 min · sem preço · **Só 2 vagas** (se o Alessandro avisar que uma vaga foi preenchida, trocar o texto para "Só 1 vaga"; com as duas preenchidas, "Vagas encerradas. Comente ASSESSORIA para entrar na lista de espera").
 
 ## Onde estão os arquivos

@@ -1,0 +1,132 @@
+<title>Pacote Meta Business Suite</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap">
+<style>
+/* Layout: phone-first checklist. Steps on top, then one block per day; each post is a row with time, type chip, download and copy actions. */
+:root {
+  --bg: #f4f6f1; --panel: #ffffff; --ink: #14231a; --muted: #5d6b60; --line: #dde3d8;
+  --green: #17361a; --green2: #29721d; --gold: #f2c14e; --gold-ink: #17361a; --warn-bg: #fff4d6; --warn-ink: #6b4a00;
+  --done: #e7efe2;
+  --font: "Montserrat", "Segoe UI", Roboto, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f1711; --panel: #17211a; --ink: #e6ece4; --muted: #a3afa5; --line: #2a372d;
+  --green: #a9d99a; --green2: #6cbf55; --gold: #f2c14e; --gold-ink: #17361a; --warn-bg: #3a3020; --warn-ink: #f5d68a;
+  --done: #1d2b20; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0f1711; --panel: #17211a; --ink: #e6ece4; --muted: #a3afa5; --line: #2a372d;
+  --green: #a9d99a; --green2: #6cbf55; --gold: #f2c14e; --gold-ink: #17361a; --warn-bg: #3a3020; --warn-ink: #f5d68a;
+  --done: #1d2b20; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font); font-size: 15px; line-height: 1.45;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 18px 48px; }
+.wrap { max-width: 760px; margin: 0 auto; display: grid; gap: 18px; }
+h1 { font-weight: 800; font-size: clamp(24px, 6vw, 32px); margin: 0; color: var(--green); text-wrap: balance; }
+.sub { margin: 4px 0 0; color: var(--muted); font-size: 14px; }
+h2 { font-weight: 800; font-size: 18px; margin: 0; }
+.box { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; display: grid; gap: 10px; }
+.steps { margin: 0; padding-left: 20px; display: grid; gap: 6px; font-size: 14px; }
+.steps b { font-weight: 700; }
+.progress { font-weight: 700; color: var(--green2); font-variant-numeric: tabular-nums; }
+.day { display: grid; gap: 8px; }
+.dayhead { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid var(--green2); padding-bottom: 4px; }
+.dayhead span { color: var(--muted); font-size: 13px; font-weight: 600; }
+.item { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px; display: grid; gap: 8px; }
+.item.done { background: var(--done); }
+.top { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.time { font-weight: 800; font-size: 18px; font-variant-numeric: tabular-nums; min-width: 58px; }
+.chip { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; background: var(--line); color: var(--ink); }
+.chip.reel { background: var(--green2); color: #fff; }
+.chip.story { background: var(--gold); color: var(--gold-ink); }
+.chip.live { background: #c0392b; color: #fff; }
+.title { font-weight: 700; min-width: 0; overflow-wrap: anywhere; }
+.note { background: var(--warn-bg); color: var(--warn-ink); border-radius: 8px; padding: 8px 10px; font-size: 13px; }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.btn { font: inherit; font-size: 13px; font-weight: 700; text-decoration: none; border-radius: 999px; padding: 7px 14px; border: 1px solid var(--line); background: var(--bg); color: var(--green); cursor: pointer; }
+.btn.primary { background: var(--green2); border-color: var(--green2); color: #fff; }
+.btn:focus-visible, .check input:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.check { display: inline-flex; gap: 6px; align-items: center; font-size: 13px; font-weight: 600; color: var(--muted); margin-left: auto; }
+.check input { width: 18px; height: 18px; accent-color: var(--green2); }
+details summary { cursor: pointer; font-size: 13px; font-weight: 700; color: var(--green2); }
+pre { white-space: pre-wrap; font-family: var(--font); font-size: 13px; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 10px; margin: 6px 0 0; overflow-wrap: anywhere; }
+.toast { min-height: 1.2em; font-size: 13px; color: var(--green2); font-weight: 600; }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Semana de vendas · 02 a 08/11</h1>
+    <p class="sub">@discoveryremodeling · horários já no seu fuso (Connecticut) · em Brasília são 2 horas a mais</p>
+  </header>
+
+  <section class="box">
+    <h2>Como agendar cada post no Meta Business Suite</h2>
+    <ol class="steps">
+      <li>Toque em <b>Baixar</b> no post abaixo. O vídeo ou a foto vai para a galeria do celular (no Drive, toque nos 3 pontinhos → <b>Download</b>).</li>
+      <li>Toque em <b>Copiar legenda</b> (só Reels e fotos têm legenda).</li>
+      <li>No Meta Business Suite, toque em <b>+ Create</b> e escolha <b>Reel</b>, <b>Post</b> ou <b>Story</b>, conforme a etiqueta do post.</li>
+      <li>Escolha o arquivo da galeria e cole a legenda. Marque só o <b>Instagram</b>.</li>
+      <li>Em vez de "Share now", toque em <b>Schedule</b> e escolha o dia e a hora mostrados aqui.</li>
+      <li>Marque <b>Agendado</b> aqui embaixo para não se perder.</li>
+    </ol>
+    <div class="progress" id="progress"></div>
+  </section>
+
+  <div id="days" class="wrap" style="gap:22px"></div>
+</div>
+
+<script>
+(() => {
+  const DATA = [{"id": "seg", "name": "Segunda", "date": "02/11", "items": [{"t": "06:00", "k": "story", "title": "Diário da casa · dia 7", "file": ["diario-dia7-video.mp4", "https://drive.usercontent.google.com/download?id=1uImb9OXa5vqjHUtG4MdnlLebXelCDlaB&export=download&confirm=t", "https://drive.google.com/file/d/1uImb9OXa5vqjHUtG4MdnlLebXelCDlaB/view"], "cap": null, "note": null}, {"t": "06:00", "k": "story", "title": "Essa semana é sobre você comprar sua casa nos EUA", "file": ["story-seg-08.mp4", "https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-seg-08.mp4", null], "cap": null, "note": null}, {"t": "10:00", "k": "reel", "title": "Você NÃO precisa morar nos EUA (Reel do Ale)", "file": null, "cap": "Você NÃO precisa morar nos Estados Unidos pra comprar casa em leilão aqui 🇺🇸🏠 A gente visita, analisa e acompanha tudo por você.\n\nVocê sabia disso? Conta aqui 👇\n\n📞 Conversa grátis de 20 minutos pra entender o seu objetivo. Estamos com só 2 vagas abertas na assessoria.\n👉 Comente ASSESSORIA ou chame no WhatsApp (link na bio).\n\nValores estimados. Resultados passados não garantem resultados futuros. Todo investimento envolve risco.\n#leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua", "note": "Você grava este vídeo. Sem ele, pule este post."}, {"t": "12:00", "k": "story", "title": "Você já pensou em comprar uma casa nos EUA?", "file": ["story-seg-14.mp4", "https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-seg-14.mp4", null], "cap": null, "note": null}, {"t": "17:00", "k": "foto", "title": "Calendário de leilões (para salvar)", "file": ["post-calendario-leiloes.jpg", "https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/post-calendario-leiloes.jpg", null], "cap": "📌 SALVE este post: leilões de casas em Nova York e na Pensilvânia em novembro e dezembro. Mande pra quem quer investir nos EUA! Datas conferidas nos sites oficiais em 27/10; confira sempre no site do condado antes de se inscrever.\n\nQual condado você quer acompanhar? 👇\n\n📞 Conversa grátis de 20 minutos pra entender o seu objetivo. Estamos com só 2 vagas abertas na assessoria.\n👉 Comente ASSESSORIA ou chame no WhatsApp (link na bio).\n\nValores estimados. Resultados passados não garantem resultados futuros. Todo investimento envolve risco.\n#leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua", "note": null}]}, {"id": "ter", "name": "Terça", "date": "03/11", "items": [{"t": "10:00", "k": "reel", "title": "Casa 1: a melhor casa do leilão", "file": ["casa-1-nova-york-v3.mp4", "https://drive.usercontent.google.com/download?id=16cI2dSqPUcFBcT8o3ADDcQvqjiTEVNoU&export=download&confirm=t", "https://drive.google.com/file/d/16cI2dSqPUcFBcT8o3ADDcQvqjiTEVNoU/view"], "cap": "Essa foi a melhor casa que a gente viu nesse leilão 👀 Olha o estado dela por dentro e por fora.\n\nVocê compraria essa casa? Sim ou não 👇\n\n📞 Conversa grátis de 20 minutos pra entender o seu objetivo. Estamos com só 2 vagas abertas na assessoria.\n👉 Comente ASSESSORIA ou chame no WhatsApp (link na bio).\n\nValores estimados. Resultados passados não garantem resultados futuros. Todo investimento envolve risco.\n#leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua", "note": null}, {"t": "12:00", "k": "story", "title": "Quiz: quanto vale essa casa?", "file": ["story-ter-14.mp4", "https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-ter-14.mp4", null], "cap": null, "note": null}, {"t": "17:00", "k": "reel", "title": "Série da casa · ep. 7: os vizinhos", "file": ["erie-ep7.mp4", "https://drive.usercontent.google.com/download?id=1-Oe6zVawhGe3OOfh-rsmbMj0_CqC6_IQ&export=download&confirm=t", "https://drive.google.com/file/d/1-Oe6zVawhGe3OOfh-rsmbMj0_CqC6_IQ/view"], "cap": "Na noite em que abrimos a casa, os vizinhos vieram ver o barulho 👀\nGente que mora na rua há mais de 30 anos: todo mundo se conhece.\nE dessa conversa saíram dois contatos para trabalhar na obra.\n\nVocê conhece seus vizinhos? 👇\n\n📞 Conversa grátis de 20 minutos pra entender o seu objetivo. Estamos com só 2 vagas abertas na assessoria.\n👉 Comente ASSESSORIA ou chame no WhatsApp (link na bio).\n\nValores estimados. Resultados passados não garantem resultados futuros. Todo investimento envolve risco.\n#leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua", "note": null}]}, {"id": "qua", "name": "Quarta", "date": "04/11", "items": [{"t": "06:00", "k": "story", "title": "Como é a avaliação da casa (destaque)", "file": ["story-destaque-avaliacao.mp4", "https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-destaque-avaliacao.mp4", null], "cap": null, "note": null}, {"t": "10:00", "k": "reel", "title": "Casa 2: casa de 2 famílias", "file": ["casa-2-nova-york-v3.mp4", "https://drive.usercontent.google.com/download?id=1DYh5euPHrVxI3jnyKJxurfpZqdsZ_GZJ&export=download&confirm=t", "https://drive.google.com/file/d/1DYh5euPHrVxI3jnyKJxurfpZqdsZ_GZJ/view"], "cap": "Casa de 2 famílias numa avenida principal: compraria? 🤔 Olha o tour por dentro.\n\nVocê moraria ou alugaria? 👇\n\n📞 Conversa grátis de 20 minutos pra entender o seu objetivo. Estamos com só 2 vagas abertas na assessoria.\n👉 Comente ASSESSORIA ou chame no WhatsApp (link na bio).\n\nValores estimados. Resultados passados não garantem resultados futuros. Todo investimento envolve risco.\n#leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua", "note": null}, {"t": "12:00", "k": "story", "title": "\"Preciso morar nos EUA pra comprar?\"", "file": ["story-qua-14.mp4", "https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-qua-14.mp4", null], "cap": null, "note": null}]}, {"id": "qui", "name": "Quinta", "date": "05/11", "items": [{"t": "06:00", "k": "story", "title": "2 vagas abertas na assessoria", "file": ["story-qui-08.mp4", "https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-qui-08.mp4", null], "cap": null, "note": null}, {"t": "10:00", "k": "carrossel", "title": "Do leilão à venda: Elkland, PA", "file": ["Pasta Reels Semana Vendas (elkland-carrossel-NN-v2.jpg)", null, "https://drive.google.com/drive/folders/1Zh2fVnfulNWJDsVt3Dpmmc9vntwqk-Kg"], "cap": "Do leilão à venda: a transformação da casa de Elkland, PA, cômodo por cômodo 🔨➡️🏡 Arraste pro lado.\n\nQual foi a maior transformação? 👇\n\n📞 Conversa grátis de 20 minutos pra entender o seu objetivo. Estamos com só 2 vagas abertas na assessoria.\n👉 Comente ASSESSORIA ou chame no WhatsApp (link na bio).\n\nValores estimados. Resultados passados não garantem resultados futuros. Todo investimento envolve risco.\n#leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua", "note": "A versão nova do carrossel ainda não chegou do notebook. Agende quando as imagens -v2 estiverem na pasta."}, {"t": "10:00", "k": "story", "title": "Convite da live de domingo", "file": ["story-live-convite.mp4", "https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-live-convite.mp4", null], "cap": null, "note": null}, {"t": "12:00", "k": "story", "title": "\"É seguro comprar casa em leilão?\"", "file": ["story-qui-14.mp4", "https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-qui-14.mp4", null], "cap": null, "note": null}, {"t": "17:00", "k": "reel", "title": "Série da casa · ep. 8: vida nova", "file": ["erie-ep8.mp4", "https://drive.usercontent.google.com/download?id=1-NJLfJBUCoIrRGrk2ISKlT_Rahitx-Fy&export=download&confirm=t", "https://drive.google.com/file/d/1-NJLfJBUCoIrRGrk2ISKlT_Rahitx-Fy/view"], "cap": "Depois da limpeza, começa a parte boa 🔨\nA casa está vazia e pronta pra reforma.\nO objetivo é um só: trazer vida nova pra ela, pra outra família ser feliz aqui.\n\nO que você mudaria primeiro nessa casa? 👇\n\n📞 Conversa grátis de 20 minutos pra entender o seu objetivo. Estamos com só 2 vagas abertas na assessoria.\n👉 Comente ASSESSORIA ou chame no WhatsApp (link na bio).\n\nValores estimados. Resultados passados não garantem resultados futuros. Todo investimento envolve risco.\n#leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua", "note": null}]}, {"id": "sex", "name": "Sexta", "date": "06/11", "items": [{"t": "10:00", "k": "reel", "title": "VENDEMOS! 35 dias no mercado", "file": ["casa-5-vendemos-v3.mp4", "https://drive.usercontent.google.com/download?id=1On_mECZdD7Q2S3YrXOGSfivbDdeKC8id&export=download&confirm=t", "https://drive.google.com/file/d/1On_mECZdD7Q2S3YrXOGSfivbDdeKC8id/view"], "cap": "VENDEMOS! 🎉 Compramos, reformamos e vendemos: 100% do processo concluído, 35 dias no mercado. Compra US$ 48.000 · Reforma US$ 38.000 · Venda US$ 135.000 (valores reais deste caso).\n\nQual parte você achou mais difícil: comprar, reformar ou vender? 👇\n\n📞 Conversa grátis de 20 minutos pra entender o seu objetivo. Estamos com só 2 vagas abertas na assessoria.\n👉 Comente ASSESSORIA ou chame no WhatsApp (link na bio).\n\nValores estimados. Resultados passados não garantem resultados futuros. Todo investimento envolve risco.\n#leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua", "note": null}, {"t": "10:00", "k": "story", "title": "Convite da live de domingo", "file": ["story-live-convite.mp4", "https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-live-convite.mp4", null], "cap": null, "note": null}, {"t": "12:00", "k": "story", "title": "Como é a conversa grátis de 20 min", "file": ["story-sex-14.mp4", "https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-sex-14.mp4", null], "cap": null, "note": null}, {"t": "17:00", "k": "reel", "title": "Casa 3: essa a gente NÃO compraria", "file": ["casa-3-nova-york-v3.mp4", "https://drive.usercontent.google.com/download?id=11O6adIVGIHa403RD-HBpnNvjnR8dl0Rh&export=download&confirm=t", "https://drive.google.com/file/d/11O6adIVGIHa403RD-HBpnNvjnR8dl0Rh/view"], "cap": "Essa a gente NÃO compraria, e você precisa saber por quê 👇\n\nVocê teria comprado? 👇\n\n📞 Conversa grátis de 20 minutos pra entender o seu objetivo. Estamos com só 2 vagas abertas na assessoria.\n👉 Comente ASSESSORIA ou chame no WhatsApp (link na bio).\n\nValores estimados. Resultados passados não garantem resultados futuros. Todo investimento envolve risco.\n#leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua", "note": null}]}, {"id": "sab", "name": "Sábado", "date": "07/11", "items": [{"t": "06:00", "k": "story", "title": "Bucks County, PA · leilão de 8/12", "file": ["story-sab-08.mp4", "https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-sab-08.mp4", null], "cap": null, "note": null}, {"t": "08:00", "k": "reel", "title": "Casa 4: a importância da visita", "file": ["casa-4-nova-york-v3.mp4", "https://drive.usercontent.google.com/download?id=1a-sp5IS9tznvK_WWDp-X-2EEqkAszvhc&export=download&confirm=t", "https://drive.google.com/file/d/1a-sp5IS9tznvK_WWDp-X-2EEqkAszvhc/view"], "cap": "No Google ela parecia bonita… olha o que a gente encontrou na visita 😳 Por isso a visita presencial é obrigatória.\n\nVocê entraria nesse leilão? 👇\n\n📞 Conversa grátis de 20 minutos pra entender o seu objetivo. Estamos com só 2 vagas abertas na assessoria.\n👉 Comente ASSESSORIA ou chame no WhatsApp (link na bio).\n\nValores estimados. Resultados passados não garantem resultados futuros. Todo investimento envolve risco.\n#leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua", "note": null}, {"t": "10:00", "k": "story", "title": "Convite da live de domingo", "file": ["story-live-convite.mp4", "https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-live-convite.mp4", null], "cap": null, "note": null}, {"t": "12:00", "k": "story", "title": "Caixinha: qual é a sua maior dúvida?", "file": ["story-sab-14.mp4", "https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-sab-14.mp4", null], "cap": null, "note": null}, {"t": "17:00", "k": "reel", "title": "Elkland: do leilão à casa pronta", "file": ["elkland-reel-v3.mp4", "https://drive.usercontent.google.com/download?id=16X_5_rW37vj6BCLa_Sq10cBx0SDNq97h&export=download&confirm=t", "https://drive.google.com/file/d/16X_5_rW37vj6BCLa_Sq10cBx0SDNq97h/view"], "cap": "Essa casa foi a leilão… olha como ela ficou depois da reforma 🏡✨\n\nVocê imaginava esse resultado? 👇\n\n📞 Conversa grátis de 20 minutos pra entender o seu objetivo. Estamos com só 2 vagas abertas na assessoria.\n👉 Comente ASSESSORIA ou chame no WhatsApp (link na bio).\n\nValores estimados. Resultados passados não garantem resultados futuros. Todo investimento envolve risco.\n#leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua", "note": null}]}, {"id": "dom", "name": "Domingo", "date": "08/11", "items": [{"t": "06:00", "k": "story", "title": "Últimos dias: 2 vagas este mês", "file": ["story-dom-08.mp4", "https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-dom-08.mp4", null], "cap": null, "note": null}, {"t": "10:00", "k": "story", "title": "É hoje: live às 18h (seu horário)", "file": ["story-live-hoje.mp4", "https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-live-hoje.mp4", null], "cap": null, "note": null}, {"t": "12:00", "k": "story", "title": "Hoje: como funciona a assessoria", "file": ["story-dom-14.mp4", "https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-dom-14.mp4", null], "cap": null, "note": null}, {"t": "17:00", "k": "reel", "title": "Como funciona a nossa assessoria", "file": ["reel-como-funciona.mp4", "https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/reel-como-funciona.mp4", null], "cap": "Como funciona a nossa assessoria, em 5 passos: da conversa grátis até a chave na mão, sem você precisar morar nos EUA 🇧🇷🇺🇸 Últimas vagas deste mês.\n\nQual é a sua maior dúvida? Pergunta aqui 👇\n\n📞 Conversa grátis de 20 minutos pra entender o seu objetivo. Estamos com só 2 vagas abertas na assessoria.\n👉 Comente ASSESSORIA ou chame no WhatsApp (link na bio).\n\nValores estimados. Resultados passados não garantem resultados futuros. Todo investimento envolve risco.\n#leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua", "note": null}, {"t": "17:00", "k": "story", "title": "É hoje: live daqui a 1 hora", "file": ["story-live-hoje.mp4", "https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-live-hoje.mp4", null], "cap": null, "note": null}, {"t": "18:00", "k": "live", "title": "LIVE de dúvidas (você entra ao vivo)", "file": null, "cap": null, "note": "Não se agenda: abra o Instagram e toque em + → Live. Roteiro: live-domingo-08-11.md no repositório."}]}];
+  const KIND = { reel: "Reel", story: "Story", foto: "Post (foto)", carrossel: "Post (carrossel)", live: "Live" };
+  const key = "mbs-agendado-v1";
+  let done = {};
+  try { done = JSON.parse(localStorage.getItem(key) || "{}"); } catch (e) { done = {}; }
+  const save = () => { try { localStorage.setItem(key, JSON.stringify(done)); } catch (e) {} };
+  const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+  const total = DATA.reduce((a, d) => a + d.items.filter((i) => i.k !== "live").length, 0);
+  function progress() {
+    const n = Object.keys(done).filter((k) => done[k]).length;
+    document.getElementById("progress").textContent = n + " de " + total + " posts agendados";
+  }
+  const root = document.getElementById("days");
+  DATA.forEach((d) => {
+    const day = el("section", "day");
+    const h = el("div", "dayhead"); h.append(el("h2", null, d.name), el("span", null, d.date)); day.append(h);
+    d.items.forEach((it, idx) => {
+      const id = d.id + "-" + idx;
+      const card = el("article", "item" + (done[id] ? " done" : ""));
+      const top = el("div", "top");
+      top.append(el("span", "time", it.t), el("span", "chip " + it.k, KIND[it.k] || it.k), el("span", "title", it.title));
+      card.append(top);
+      if (it.note) card.append(el("div", "note", it.note));
+      const act = el("div", "actions");
+      if (it.file && it.file[1]) { const a = el("a", "btn primary", "Baixar"); a.href = it.file[1]; a.target = "_blank"; a.rel = "noopener"; act.append(a); }
+      if (it.file && it.file[2]) { const a = el("a", "btn", it.file[1] ? "Ver no Drive" : "Abrir pasta"); a.href = it.file[2]; a.target = "_blank"; a.rel = "noopener"; act.append(a); }
+      const toast = el("span", "toast");
+      if (it.cap) {
+        const b = el("button", "btn", "Copiar legenda"); b.type = "button";
+        b.addEventListener("click", () => {
+          const ok = () => { toast.textContent = "Legenda copiada"; setTimeout(() => (toast.textContent = ""), 2500); };
+          if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(it.cap).then(ok, () => { det.open = true; toast.textContent = "Segure o texto abaixo e copie"; });
+          else { det.open = true; toast.textContent = "Segure o texto abaixo e copie"; }
+        });
+        act.append(b);
+      }
+      if (it.k !== "live") {
+        const lab = el("label", "check"); const cb = document.createElement("input"); cb.type = "checkbox"; cb.id = "cb-" + id; cb.checked = !!done[id];
+        cb.addEventListener("change", () => { done[id] = cb.checked; card.classList.toggle("done", cb.checked); save(); progress(); });
+        lab.append(cb, document.createTextNode("Agendado")); act.append(lab);
+      }
+      card.append(act, toast);
+      let det = null;
+      if (it.cap) { det = el("details"); det.append(el("summary", null, "Ver legenda"), el("pre", null, it.cap)); card.append(det); }
+      if (it.file && it.file[0] && it.k !== "carrossel") card.append(el("div", "sub", "Arquivo: " + it.file[0]));
+      day.append(card);
+    });
+    root.append(day);
+  });
+  progress();
+})();
+</script>
