@@ -42,6 +42,18 @@ Para os Reels do notebook, use a legenda do arquivo `legendas-visitas.txt` (ou a
 | Sáb 07/11 | `story-sab-08.mp4` | `story-sab-14.mp4` |
 | Dom 08/11 | `story-dom-08.mp4` | `story-dom-14.mp4` |
 
+## LIVE de dúvidas: domingo 08/11 às 20h de Brasília (confirmada pelo Alessandro em 31/10)
+Stories extras (vídeos animados, `BASE + animados/...`, action create_story com video_url):
+| Dia | Hora | Story |
+|---|---|---|
+| Qui 05/11 | 12h | `story-live-convite.mp4` |
+| Sex 06/11 | 12h | `story-live-convite.mp4` |
+| Sáb 07/11 | 12h | `story-live-convite.mp4` |
+| Dom 08/11 | 12h | `story-live-hoje.mp4` |
+| Dom 08/11 | 19h | `story-live-hoje.mp4` (de novo, 1 h antes da live) |
+- Comentário com **LIVE**: responder em público, uma vez só, variando: "Anotado! Te espero domingo às 20h de Brasília 🔔" e listar a pessoa no resumo.
+- Roteiro da live: `live-domingo-08-11.md`.
+
 ## Legendas
 **Regra (29/10):** toda legenda termina com uma PERGUNTA fácil (já incluída abaixo; `\n` = quebra de linha) e só depois o CTA de vendas. Nas legendas do notebook (Elkland, casas), se não houver pergunta no fim, acrescente uma no mesmo estilo antes do CTA.
 
@@ -70,6 +82,7 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 
 ## Comentários e direct (14h e 19h)
 - Comentário com **ASSESSORIA** (ou VAGA, CONVERSA, LEILÃO): responder em público, uma vez só, variando: "Que bom, [nome]! Te chamei no direct pra marcar uma conversa grátis de 20 min 📞" e listar a pessoa no resumo para o Alessandro chamar no direct (atalho **aassessoria**).
+- Comentário com **LIVE**: veja a seção da live acima.
 - Comentário com **GUIA**: "Te mandei o guia! Também está no primeiro link da bio 📘"
 - Perguntas, críticas, preço, retorno: não responder; listar para o Alessandro.
 

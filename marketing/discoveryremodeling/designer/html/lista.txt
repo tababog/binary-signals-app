@@ -19,5 +19,7 @@ story-sab-08
 story-sab-14
 story-dom-08
 story-dom-14
+story-live-convite
+story-live-hoje
 story-destaque-avaliacao
 post-calendario-leiloes

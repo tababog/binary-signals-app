@@ -163,6 +163,11 @@ pages.append(st_numero('story-dom-08', 'ÚLTIMOS DIAS', '2', 'vagas<br><span sty
     'Ainda tem vaga na assessoria. A conversa é grátis e sem compromisso.', 'Chame no WhatsApp', 'deck-estrutura.jpg', '50% 50%', 'link na bio · +1 (475) 349-9986'))
 pages.append(st_verde('story-dom-14', 'HOJE ÀS 19H', 'Como funciona a nossa assessoria, passo a passo',
     'No feed, às 19h. Fica de olho.', 'Ative as notificações', None, 'deck-obra.jpg'))
+# Live de dúvidas (domingo 08/11, 20h de Brasília)
+pages.append(st_cheia('story-live-convite', 'LIVE · DOMINGO 08/11 · 20H', 'Leilão de casas nos EUA: pergunte o que quiser',
+    'Ao vivo com o Alessandro. Traga suas dúvidas sobre Tax Deed, riscos e como começar.', 'Comente LIVE', 'elkland-ale-quintal.jpg', '50% 45%', 'que eu te aviso quando começar'))
+pages.append(st_verde('story-live-hoje', 'É HOJE · LIVE', 'Hoje, 20h de Brasília: tire suas dúvidas ao vivo',
+    'Leilão de casas nos EUA: pergunte o que quiser. Aqui no perfil (17h em Connecticut).', 'Ative as notificações', None, 'deck-pronto.jpg'))
 pages.append(page('story-destaque-avaliacao', W, H, CR, foto('deck-pronto.jpg', 0, 0, 1080, 760) +
     f'<div class="a" style="left:0;top:0;width:1080px;height:760px;background:rgba(23,54,26,.74)"></div>' + logo(y=230, W=W) +
     f'<div class="a tag" style="left:72px;top:250px;color:{AU}">DEPOIMENTOS DE CLIENTES</div>'
