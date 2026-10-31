@@ -790,5 +790,14 @@ const es: Record<string, string> = {
   "Fecha as horas desta obra agora e começa a contar na outra.": "Cierra las horas de esta obra ahora y empieza a contar en la otra.",
   "Trocar de obra": "Cambiar de obra",
   "fornecedor": "proveedor",
+  "Fechar ponto": "Cerrar registro",
+  "Hora da saída": "Hora de salida",
+  "Informe a hora da saída.": "Indica la hora de salida.",
+  "Este ponto já foi fechado.": "Este registro ya fue cerrado.",
+  "A saída não pode ser no futuro.": "La salida no puede ser en el futuro.",
+  "+ Lançar ponto": "+ Registrar horas",
+  "Saída (em branco = ainda trabalhando)": "Salida (en blanco = sigue trabajando)",
+  "O horário não pode ser no futuro.": "La hora no puede ser en el futuro.",
+  "Este funcionário já está com um ponto aberto. Feche esse primeiro.": "Este empleado ya tiene un registro abierto. Ciérralo primero.",
 };
 export default es;

@@ -2,15 +2,16 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { db } from "@/lib/db";
 import { exigirUsuario } from "@/lib/auth";
-import { campoData, data, dinheiro, hora, lerDataHora } from "@/lib/format";
+import { campoData, campoDataHora, data, dinheiro, hora, lerDataHora } from "@/lib/format";
 import { nomeStatus, nomeTipoServico } from "@/lib/constantes";
-import { Cabecalho, SeloStatus, Vazio } from "@/components/ui";
+import { Cabecalho, Campo, SeloStatus, Vazio } from "@/components/ui";
+import { Formulario } from "@/components/Formulario";
 import { ItemVisita } from "@/components/ItemVisita";
 import { TextoUsuario } from "@/components/TextoUsuario";
 import { SeloLocal } from "@/components/SeloLocal";
 import { temAlertaLocal } from "@/lib/geo";
 import { getT } from "@/i18n/servidor";
-import { trocarObraRegistro } from "./registros/actions";
+import { fecharPonto, lancarRegistroManual, trocarObraRegistro } from "./registros/actions";
 import { BotaoEnviar } from "@/components/BotaoEnviar";
 
 export default async function Painel() {
@@ -20,7 +21,7 @@ export default async function Painel() {
 
   const seteDias = new Date(Date.now() - 7 * 24 * 3600 * 1000);
   const fimDeHoje = new Date(lerDataHora(`${campoData(new Date())}T23:59`)!.getTime() + 60_000);
-  const [obras, naObra, ultimos, recentes, visitas, followUps] = await Promise.all([
+  const [obras, naObra, ultimos, recentes, visitas, followUps, equipe] = await Promise.all([
     db.obra.findMany({ where: { status: { not: "CONCLUIDA" } }, include: { cliente: true }, orderBy: { criadoEm: "desc" } }),
     db.registroPonto.findMany({ where: { saida: null }, include: { usuario: true, obra: true }, orderBy: { entrada: "asc" } }),
     db.lancamento.findMany({ include: { obra: true }, orderBy: { criadoEm: "desc" }, take: 8 }),
@@ -32,6 +33,7 @@ export default async function Painel() {
       include: { visita: { include: { cliente: true } } },
       orderBy: { dataPrevista: "asc" },
     }),
+    db.usuario.findMany({ where: { ativo: true }, orderBy: { nome: "asc" }, select: { id: true, nome: true } }),
   ]);
   const agora = new Date();
   const alertas = recentes.filter(temAlertaLocal);
@@ -83,6 +85,16 @@ export default async function Painel() {
                     <b>{r.usuario.nome}</b> {t("em")} {r.obra.nome}
                     <span className="text-stone-500"> {t("desde {hora}", { hora: hora(r.entrada) })}</span>{" "}
                     <SeloLocal lat={r.latEntrada} lng={r.lngEntrada} precisao={r.precisaoEntrada} obra={r.obra} />
+                    {/* Esqueceu de marcar a saída: o administrador fecha aqui com a hora que ele saiu */}
+                    <details className="mt-1">
+                      <summary className="cursor-pointer text-xs font-medium text-marca-700">{t("Fechar ponto")}</summary>
+                      <Formulario acao={fecharPonto.bind(null, r.id)} className="mt-1 flex flex-wrap items-end gap-2">
+                        <Campo rotulo={t("Hora da saída")}>
+                          <input className="campo py-1 text-sm" type="datetime-local" name="saida" defaultValue={campoDataHora(agora)} min={campoDataHora(r.entrada)} required />
+                        </Campo>
+                        <BotaoEnviar className="botao px-3 py-1 text-sm">{t("Fechar")}</BotaoEnviar>
+                      </Formulario>
+                    </details>
                     {/* Marcou a obra errada: o administrador troca aqui */}
                     <details className="mt-1">
                       <summary className="cursor-pointer text-xs font-medium text-marca-700">{t("Trocar obra")}</summary>
@@ -99,6 +111,29 @@ export default async function Painel() {
                 ))}
               </ul>
             )}
+            {/* Esqueceu de marcar a entrada: o administrador lança aqui (sem saída = ainda trabalhando) */}
+            <details className="mt-3 border-t border-stone-100 pt-2">
+              <summary className="cursor-pointer text-sm font-semibold text-marca-700">{t("+ Lançar ponto")}</summary>
+              <Formulario acao={lancarRegistroManual} className="mt-2 grid gap-2" limparAoSalvar>
+                <Campo rotulo={t("Funcionário")}>
+                  <select className="campo" name="usuarioId" required defaultValue="">
+                    <option value="" disabled>{t("Selecione...")}</option>
+                    {equipe.map((u) => <option key={u.id} value={u.id}>{u.nome}</option>)}
+                  </select>
+                </Campo>
+                <Campo rotulo={t("Obra")}>
+                  <select className="campo" name="obraId" required defaultValue="">
+                    <option value="" disabled>{t("Selecione...")}</option>
+                    {obras.map((o) => <option key={o.id} value={o.id}>{o.nome}</option>)}
+                  </select>
+                </Campo>
+                <div className="grid grid-cols-2 gap-2">
+                  <Campo rotulo={t("Entrada")}><input className="campo" type="datetime-local" name="entrada" required /></Campo>
+                  <Campo rotulo={t("Saída (em branco = ainda trabalhando)")}><input className="campo" type="datetime-local" name="saida" /></Campo>
+                </div>
+                <BotaoEnviar>{t("Lançar")}</BotaoEnviar>
+              </Formulario>
+            </details>
           </div>
           {alertas.length > 0 && (
             <div className="cartao border-red-200 bg-red-50">
