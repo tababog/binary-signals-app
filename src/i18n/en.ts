@@ -790,5 +790,14 @@ const en: Record<string, string> = {
   "Fecha as horas desta obra agora e começa a contar na outra.": "Closes the hours at this job now and starts counting at the other one.",
   "Trocar de obra": "Switch job",
   "fornecedor": "supplier",
+  "Fechar ponto": "Close time entry",
+  "Hora da saída": "Clock-out time",
+  "Informe a hora da saída.": "Enter the clock-out time.",
+  "Este ponto já foi fechado.": "This time entry is already closed.",
+  "A saída não pode ser no futuro.": "Clock-out can't be in the future.",
+  "+ Lançar ponto": "+ Add time entry",
+  "Saída (em branco = ainda trabalhando)": "Clock-out (blank = still working)",
+  "O horário não pode ser no futuro.": "The time can't be in the future.",
+  "Este funcionário já está com um ponto aberto. Feche esse primeiro.": "This employee already has an open time entry. Close it first.",
 };
 export default en;

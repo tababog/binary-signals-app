@@ -149,7 +149,7 @@ export default async function Registros({ searchParams }: { searchParams: Filtro
           </Campo>
           <Campo rotulo={t("Observação")}><input className="campo" name="observacao" /></Campo>
           <Campo rotulo={t("Entrada")}><input className="campo" type="datetime-local" name="entrada" required /></Campo>
-          <Campo rotulo={t("Saída")}><input className="campo" type="datetime-local" name="saida" required /></Campo>
+          <Campo rotulo={t("Saída (em branco = ainda trabalhando)")}><input className="campo" type="datetime-local" name="saida" /></Campo>
           <BotaoEnviar>{t("Lançar")}</BotaoEnviar>
         </Formulario>
       </div>

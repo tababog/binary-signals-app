@@ -38,15 +38,21 @@ export async function lancarRegistroManual(_e: EstadoForm, form: FormData): Prom
   const entrada = lerDataHora(form.get("entrada"));
   const saida = lerDataHora(form.get("saida"));
   if (!usuarioId || !obraId) return { erro: getT()("Escolha o funcionário e a obra.") };
-  if (!entrada || !saida) return { erro: getT()("Informe entrada e saída.") };
-  if (saida <= entrada) return { erro: getT()("A saída precisa ser depois da entrada.") };
+  if (!entrada) return { erro: getT()("Informe a entrada.") };
+  if (saida && saida <= entrada) return { erro: getT()("A saída precisa ser depois da entrada.") };
+  if (entrada.getTime() > Date.now() + 5 * 60_000 || (saida && saida.getTime() > Date.now() + 5 * 60_000)) return { erro: getT()("O horário não pode ser no futuro.") };
+  // Sem saída = ponto aberto (o funcionário esqueceu de marcar a entrada): só um aberto por pessoa
+  if (!saida && (await db.registroPonto.findFirst({ where: { usuarioId, saida: null } }))) {
+    return { erro: getT()("Este funcionário já está com um ponto aberto. Feche esse primeiro.") };
+  }
 
   const usuario = await db.usuario.findUniqueOrThrow({ where: { id: usuarioId } });
   await db.registroPonto.create({
     data: { usuarioId, obraId, entrada, saida, manual: true, ...valoresDoRegistro(usuario), observacao: texto(form.get("observacao")) ?? "Lançado pelo administrador" },
   });
-  await recalcularCustosDoDia(usuarioId, entrada);
+  if (saida) await recalcularCustosDoDia(usuarioId, entrada);
   atualizar();
+  revalidatePath("/");
   return {};
 }
 
@@ -61,6 +67,25 @@ export async function trocarObraRegistro(id: string, form: FormData) {
   if (r.saida) await recalcularCustosDoDia(r.usuarioId, r.entrada);
   atualizar();
   revalidatePath("/");
+}
+
+/** O funcionário esqueceu de marcar a saída: o administrador fecha o ponto no Painel com a hora que ele saiu. */
+export async function fecharPonto(id: string, _e: EstadoForm, form: FormData): Promise<EstadoForm> {
+  await exigirAdmin();
+  const saida = lerDataHora(form.get("saida"));
+  if (!saida) return { erro: getT()("Informe a hora da saída.") };
+  const r = await db.registroPonto.findUniqueOrThrow({ where: { id } });
+  if (r.saida) return { erro: getT()("Este ponto já foi fechado.") };
+  if (saida <= r.entrada) return { erro: getT()("A saída precisa ser depois da entrada.") };
+  if (saida.getTime() > Date.now() + 5 * 60_000) return { erro: getT()("A saída não pode ser no futuro.") };
+  await db.registroPonto.update({
+    where: { id },
+    data: { saida, observacao: [r.observacao, "Saída lançada pelo administrador"].filter(Boolean).join(" · ") },
+  });
+  await recalcularCustosDoDia(r.usuarioId, r.entrada);
+  atualizar();
+  revalidatePath("/");
+  return {};
 }
 
 export async function excluirRegistro(id: string) {
