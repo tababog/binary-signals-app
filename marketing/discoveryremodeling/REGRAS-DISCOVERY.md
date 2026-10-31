@@ -95,3 +95,8 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - O perfil @discoveryremodeling é dos **Estados Unidos** (Alessandro mora em Connecticut). Assinaturas e preços (Meta Verified, Instagram Plus) são os dos EUA, em dólar.
 - **Os horários de publicação continuam no horário de BRASÍLIA** (o público é ~79% Brasil). As rotinas usam CRON_TZ=America/Sao_Paulo.
 - Para o Alessandro, sempre mostrar também o horário de Connecticut: até 31/10, 1 h a menos (12h Brasília = 11h em Connecticut); a partir de 01/11 (fim do horário de verão nos EUA), 2 h a menos (12h Brasília = 10h em Connecticut).
+
+## Publicação pelo Meta Business Suite (31/10)
+- Postar pelo Claude (Windsor) sempre pede "Allow once" ao Alessandro: é uma trava da plataforma e não dá para tirar.
+- A partir da semana de vendas (02/11), **o Alessandro agenda os posts no Meta Business Suite** (grátis, publica sozinho no horário). O Claude prepara toda semana uma página-pacote com arquivo para baixar, legenda pronta e horário de Connecticut (modelo em `meta-business-suite/`), e a rotina só confere se saiu, responde comentários e marca o painel.
+- Horários do pacote: no fuso de Connecticut (o app usa o fuso do celular). Brasília = Connecticut + 2 h (a partir de 01/11).
