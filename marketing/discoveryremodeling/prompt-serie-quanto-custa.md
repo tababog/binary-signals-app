@@ -1,6 +1,6 @@
 # Prompt para o Claude do notebook: série "Quanto custa?" (casa de Elmira, 3ª semana)
 
-Valores reais passados pelo Alessandro em 31/10: **drywall US$ 2.800 · isolamento US$ 600 · gabinetes da cozinha US$ 3.600**.
+Valores reais passados pelo Alessandro em 31/10: **drywall US$ 2.800 · isolamento US$ 600 · gabinetes da cozinha US$ 3.600 · reforma inteira: estimativa de ~US$ 40.000**.
 
 ```
 SÉRIE "QUANTO CUSTA?" – CASA DE ELMIRA, NY (obra começou em 30/10)
@@ -25,4 +25,12 @@ PRIVACIDADE: sem número da casa, placa ou nome de rua; rosto de trabalhador só
 NÃO escreva "lucro" nem faça conta de retorno.
 
 ENTREGA: salve os 6 vídeos + um qc-legendas.txt (legenda curta de cada um, terminando com pergunta) na pasta "Reels 953 Erie St" até sábado 07/11. Mostre 1 print de cada parte 2 (com o número).
+```
+
+## Fechamento da série (acréscimo de 31/10)
+```
+4) REFORMA INTEIRA (fecha a série)
+   - qc-reforma-p1.mp4 (20 a 30 s): tour rápido pela casa demolida; gancho "E a reforma INTEIRA dessa casa: quanto você acha que vai custar? 🤔"; final "Chuta aí 👇".
+   - qc-reforma-p2.mp4 (20 a 30 s): "Nossa estimativa: ~US$ 40.000 🔨"; mostre em 3 cartões rápidos o que já foi revelado (drywall US$ 2.800 · isolamento US$ 600 · gabinetes US$ 3.600) e "e o resto: piso, pintura, banheiro, elétrica…"; aviso "Estimativa deste caso. Pode mudar durante a obra."; final "Siga para ver o antes e depois 🏡".
+   Mesmo padrão e prazo (sábado 07/11). Sem "lucro" e sem conta de retorno.
 ```
