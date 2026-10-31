@@ -43,6 +43,8 @@ Para os Reels do notebook, use a legenda do arquivo `legendas-visitas.txt` (ou a
 | Dom 08/11 | `story-dom-08.mp4` | `story-dom-14.mp4` |
 
 ## Legendas
+**Regra (29/10):** toda legenda termina com uma PERGUNTA fácil (já incluída abaixo; `\n` = quebra de linha) e só depois o CTA de vendas. Nas legendas do notebook (Elkland, casas), se não houver pergunta no fim, acrescente uma no mesmo estilo antes do CTA.
+
 **CTA de vendas** (fim de toda legenda desta semana):
 ```
 📞 Conversa grátis de 20 minutos pra entender o seu objetivo. Estamos com só 2 vagas abertas na assessoria.
@@ -52,19 +54,19 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 #leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua
 ```
 
-- **Seg 12h, Reel do Ale:** "Você NÃO precisa morar nos Estados Unidos pra comprar casa em leilão aqui 🇺🇸🏠 A gente visita, analisa e acompanha tudo por você." + CTA
-- **Seg 19h, Calendário:** "📌 SALVE este post: leilões de casas em Nova York e na Pensilvânia em novembro e dezembro. Mande pra quem quer investir nos EUA! Datas conferidas nos sites oficiais em 27/10; confira sempre no site do condado antes de se inscrever." + CTA
-- **Ter 12h, Casa 1:** "Essa foi a melhor casa que a gente viu nesse leilão 👀 Olha o estado dela por dentro e por fora." + CTA
+- **Seg 12h, Reel do Ale:** "Você NÃO precisa morar nos Estados Unidos pra comprar casa em leilão aqui 🇺🇸🏠 A gente visita, analisa e acompanha tudo por você.\n\nVocê sabia disso? Conta aqui 👇" + CTA
+- **Seg 19h, Calendário:** "📌 SALVE este post: leilões de casas em Nova York e na Pensilvânia em novembro e dezembro. Mande pra quem quer investir nos EUA! Datas conferidas nos sites oficiais em 27/10; confira sempre no site do condado antes de se inscrever.\n\nQual condado você quer acompanhar? 👇" + CTA
+- **Ter 12h, Casa 1:** "Essa foi a melhor casa que a gente viu nesse leilão 👀 Olha o estado dela por dentro e por fora.\n\nVocê compraria essa casa? Sim ou não 👇" + CTA
 - **Ter 19h e Qui 19h, Série 953 Erie St (ep. 7 e 8):** use a legenda que o Alessandro deixar na pasta (arquivo `erie-ep7.txt` / `erie-ep8.txt`). Sem legenda: "Diário da reforma, episódio [7/8] 🔨 A casa que compramos em leilão em Elmira, NY. O que você faria primeiro nessa casa? 👇" + CTA. Termine SEMPRE com uma pergunta simples antes do CTA.
-- **Ter 19h, Frase 1 (só se o ep. 7 não chegar):** "Quem espera o momento perfeito vê os outros comprando a casa. 💭" + CTA
-- **Qua 12h, Casa 2:** "Casa de 2 famílias numa avenida principal: compraria? 🤔 Olha o tour por dentro." + CTA
-- **Qui 12h, Carrossel Elkland:** use a legenda do notebook; se não tiver: "Do leilão à venda: a transformação da casa de Elkland, PA, cômodo por cômodo 🔨➡️🏡 Arraste pro lado." + CTA
-- **Qui 19h, Frase 2 (só se o ep. 8 não chegar):** "Casa barata não é oportunidade. Oportunidade é casa bem analisada. 🔍" + CTA
-- **Sex 12h, VENDEMOS:** "VENDEMOS! 🎉 Compramos, reformamos e vendemos: 100% do processo concluído, 35 dias no mercado. Compra US$ 48.000 · Reforma US$ 38.000 · Venda US$ 135.000 (valores reais deste caso)." + CTA
-- **Sex 19h, Casa 3:** "Essa a gente NÃO compraria, e você precisa saber por quê 👇" + CTA
-- **Sáb 10h, Casa 4:** "No Google ela parecia bonita… olha o que a gente encontrou na visita 😳 Por isso a visita presencial é obrigatória." + CTA
-- **Sáb 19h, Reel Elkland:** use a legenda do notebook; se não tiver: "Essa casa foi a leilão… olha como ela ficou depois da reforma 🏡✨" + CTA
-- **Dom 19h, Reel "Como funciona":** "Como funciona a nossa assessoria, em 5 passos: da conversa grátis até a chave na mão, sem você precisar morar nos EUA 🇧🇷🇺🇸 Últimas vagas deste mês." + CTA
+- **Ter 19h, Frase 1 (só se o ep. 7 não chegar):** "Quem espera o momento perfeito vê os outros comprando a casa. 💭\n\nConcorda? 👇" + CTA
+- **Qua 12h, Casa 2:** "Casa de 2 famílias numa avenida principal: compraria? 🤔 Olha o tour por dentro.\n\nVocê moraria ou alugaria? 👇" + CTA
+- **Qui 12h, Carrossel Elkland:** use a legenda do notebook; se não tiver: "Do leilão à venda: a transformação da casa de Elkland, PA, cômodo por cômodo 🔨➡️🏡 Arraste pro lado.\n\nQual foi a maior transformação? 👇" + CTA
+- **Qui 19h, Frase 2 (só se o ep. 8 não chegar):** "Casa barata não é oportunidade. Oportunidade é casa bem analisada. 🔍\n\nConcorda? 👇" + CTA
+- **Sex 12h, VENDEMOS:** "VENDEMOS! 🎉 Compramos, reformamos e vendemos: 100% do processo concluído, 35 dias no mercado. Compra US$ 48.000 · Reforma US$ 38.000 · Venda US$ 135.000 (valores reais deste caso).\n\nQual parte você achou mais difícil: comprar, reformar ou vender? 👇" + CTA
+- **Sex 19h, Casa 3:** "Essa a gente NÃO compraria, e você precisa saber por quê 👇\n\nVocê teria comprado? 👇" + CTA
+- **Sáb 10h, Casa 4:** "No Google ela parecia bonita… olha o que a gente encontrou na visita 😳 Por isso a visita presencial é obrigatória.\n\nVocê entraria nesse leilão? 👇" + CTA
+- **Sáb 19h, Reel Elkland:** use a legenda do notebook; se não tiver: "Essa casa foi a leilão… olha como ela ficou depois da reforma 🏡✨\n\nVocê imaginava esse resultado? 👇" + CTA
+- **Dom 19h, Reel "Como funciona":** "Como funciona a nossa assessoria, em 5 passos: da conversa grátis até a chave na mão, sem você precisar morar nos EUA 🇧🇷🇺🇸 Últimas vagas deste mês.\n\nQual é a sua maior dúvida? Pergunta aqui 👇" + CTA
 
 ## Comentários e direct (14h e 19h)
 - Comentário com **ASSESSORIA** (ou VAGA, CONVERSA, LEILÃO): responder em público, uma vez só, variando: "Que bom, [nome]! Te chamei no direct pra marcar uma conversa grátis de 20 min 📞" e listar a pessoa no resumo para o Alessandro chamar no direct (atalho **aassessoria**).
