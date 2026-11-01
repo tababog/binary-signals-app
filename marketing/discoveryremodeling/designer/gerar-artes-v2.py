@@ -174,7 +174,7 @@ pages.append(page('story-destaque-avaliacao', W, H, CR, foto('deck-pronto.jpg', 
     f'<div class="a d" style="left:72px;top:390px;width:936px;color:#fff;font-size:140px">Como é comprar casa em leilão com a gente?</div>'
     f'<div class="a w" style="left:72px;top:830px;width:936px;color:{TX};font-size:44px;line-height:1.35">Quem já fez a assessoria conta tudo no destaque:</div>'
     f'<div class="a" style="left:390px;top:990px;width:300px;height:300px;border-radius:50%;background:{G};border:10px solid {AU}"></div>'
-    f'<div class="a d" style="left:390px;top:1085px;width:300px;text-align:center;color:{AU};font-size:76px;letter-spacing:4px">★★★</div>'
+    f'<div class="a d" style="left:390px;top:1112px;width:300px;text-align:center;color:{AU};font-size:64px;letter-spacing:2px">★★★★★</div>'
     f'<div class="a d" style="left:72px;top:1320px;width:936px;text-align:center;color:{G};font-size:80px">Avaliação</div>'
     + cta('Veja no destaque AVALIAÇÃO', 1440, sub='Toque em @discoveryremodeling no topo')))
 
