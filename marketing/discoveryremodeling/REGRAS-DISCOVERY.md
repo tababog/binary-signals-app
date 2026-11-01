@@ -34,6 +34,7 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - Nunca acelerar trecho com fala. Partes sem fala podem ser rápidas ou aceleradas.
 - Corte J/L quando a imagem precisar trocar durante a fala.
 - **Legendas no padrão novo (27/10):** estilo karaokê, até 3 palavras por vez, Montserrat ExtraBold, palavra falada em dourado, sem contorno/caixa, degradê escuro suave embaixo. Detalhes em `prompt-correcao-casas-legendas.md`. Aviso de risco só junto dos números e no final.
+- **Frases inteiras e começo forte (01/11):** vídeo nunca começa com "mas", "e", "então" ou "porque" (sobra de corte não é gancho). O gancho é o texto na tela + uma frase completa. Nunca cortar no meio de frase nem juntar pedaços de frases: melhor um pouco mais longo e com sentido do que picado.
 - **Troca de legenda SECA (01/11):** um bloco de legenda nunca entra antes do anterior sair (sem fade/transição entre blocos). Cartões ("Vale a pena?", CTA) ficam no terço de cima e nunca colados na legenda da fala. Conferir isso em todo vídeo antes de aprovar.
 - **Casa 4 (casarão):** lance US$ 8.000 · valor de mercado ~US$ 180.000 (confirmado em 01/11).
 - **Casa 2 (C22):** lance inicial US$ 6.500 · valor de mercado ~US$ 125.000 (confirmado em 01/11; a v3 saiu com 60.000 × 140.000, errado).
