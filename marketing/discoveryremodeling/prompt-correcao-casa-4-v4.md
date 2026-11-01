@@ -1,7 +1,7 @@
 # Prompt para o Claude do notebook: casa-4 v4 (legenda sobreposta + cartões perto do rosto)
 
 Vídeo: casa-4-nova-york-v3.mp4 (pasta "Reels Semana Vendas"). Vai ao ar sábado 07/11, 10h. Conferido pelo Claude em 01/11.
-Valores no vídeo: lance US$ 8.000 · mercado ~US$ 180.000 (casarão). A anotação de 27/10 tinha US$ 3.500 × ~US$ 125.000 para a C08; Alessandro confirma qual vale para ESTE casarão.
+Valores no vídeo: lance US$ 8.000 · mercado ~US$ 180.000 (casarão). CONFIRMADO pelo Alessandro em 01/11: estes valores estão certos.
 
 ```
 CASA 4 – CORRIGIR LEGENDA SOBREPOSTA E CARTÕES (fazer a v4 a partir da v3)
