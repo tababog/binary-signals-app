@@ -1,10 +1,10 @@
-# Prompt para o Claude do notebook: casa-3 v4 (valores + legenda sobreposta)
+# Prompt para o Claude do notebook: casa-3 v4 (legenda sobreposta)
 
 Vídeo: casa-3-nova-york-v3.mp4 (pasta "Reels Semana Vendas"). Vai ao ar sexta 06/11 (story 8h e Reel 19h). Conferido pelo Claude em 01/11.
 Valores CONFIRMADOS pelo Alessandro em 01/11: lance US$ 5.500 · mercado ~US$ 130.000 (os do vídeo estão certos).
 
 ```
-CASA 3 – CORRIGIR VALORES E LEGENDA SOBREPOSTA (fazer a v4 a partir da v3)
+CASA 3 – CORRIGIR LEGENDA SOBREPOSTA (fazer a v4 a partir da v3)
 
 Arquivo: casa-3-nova-york-v3.mp4 (pasta "Reels Semana Vendas"). Mantenha cortes, áudio, valores (US$ 5.500 e ~US$ 130.000, confirmados) e logo-reveal. Corrija:
 
