@@ -36,7 +36,8 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - **Legendas no padrão novo (27/10):** estilo karaokê, até 3 palavras por vez, Montserrat ExtraBold, palavra falada em dourado, sem contorno/caixa, degradê escuro suave embaixo. Detalhes em `prompt-correcao-casas-legendas.md`. Aviso de risco só junto dos números e no final.
 - **Troca de legenda SECA (01/11):** um bloco de legenda nunca entra antes do anterior sair (sem fade/transição entre blocos). Cartões ("Vale a pena?", CTA) ficam no terço de cima e nunca colados na legenda da fala. Conferir isso em todo vídeo antes de aprovar.
 - **Casa 4 (casarão):** lance US$ 8.000 · valor de mercado ~US$ 180.000 (confirmado em 01/11).
-- **Casa 2 (C22):** lance inicial US$ 6.500 · valor de mercado ~US$ 125.000 (a v3 saiu com 60.000 × 140.000, errado).
+- **Casa 2 (C22):** lance inicial US$ 6.500 · valor de mercado ~US$ 125.000 (confirmado em 01/11; a v3 saiu com 60.000 × 140.000, errado).
+- **Casa 3 (C18):** lance US$ 5.500 · valor de mercado ~US$ 130.000 (confirmado em 01/11; substitui a anotação de 5.000 × 110.000).
 - Legendas sincronizadas em português no terço de baixo; gancho em texto no terço de cima; nada nos 15% de baixo nem nos 10% de cima.
 - Deixar claro o contexto: "ANTES DA LIMPEZA / DEPOIS DA LIMPEZA" (não confundir com reforma).
 - Stories: série "DIÁRIO DA CASA DE LEILÃO · DIA X/7", com texto de contexto e chamada para o post do dia, texto animado e a logo.
