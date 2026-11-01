@@ -145,9 +145,13 @@ pages.append(st_cheia('story-seg-08', 'SEMANA ESPECIAL', 'Essa semana é sobre v
     'Todo dia: casas reais, lances reais e como a gente te ajuda.', 'Ao meio-dia: vídeo novo', 'casa-frente.jpg', '50% 40%', 'com o Alessandro'))
 pages.append(st_verde('story-seg-14', 'PERGUNTA RÁPIDA', 'Você já pensou em comprar uma casa nos EUA?',
     'Me conta: pra morar, alugar ou revender?', 'Responda este story', 'A gente responde todo mundo', 'elkland-lateral.jpg'))
-pages.append(st_numero('story-ter-14', 'QUIZ', '?', '<span style="font-size:78px;line-height:1.08;display:block">Quanto vai valer esta casa depois da reforma?</span>',
-    'Esta é a nossa Casa do Lago, antes da reforma. Mande seu palpite em dólares.',
-    'Responda com seu palpite', 'casa-lago-fora.jpg', '50% 62%', 'Acompanhe a obra aqui no perfil'))
+pages.append(page('story-ter-14', W, H, G, foto('casa-lago-fora.jpg', 0, 0, W, H, pos='50% 50%') +
+    '<div class="a" style="left:0;top:0;width:1080px;height:1920px;background:linear-gradient(180deg,rgba(10,30,14,.85) 0%,rgba(10,30,14,.55) 30%,rgba(10,30,14,0) 45%,rgba(10,30,14,0) 68%,rgba(10,30,14,.85) 82%)"></div>'
+    + logo(y=230, W=W) +
+    f'<div class="a tag" style="left:72px;top:250px;color:{G};background:{AU};padding:12px 22px">QUIZ · CASA DO LAGO</div>'
+    f'<div class="a d" style="left:72px;top:350px;width:936px;color:#fff;font-size:115px">Quanto vai valer esta casa <span style="color:{AU}">depois da reforma?</span></div>'
+    f'<div class="a w" style="left:72px;top:1400px;width:936px;color:#fff;font-size:38px;line-height:1.3">Mande seu palpite em dólares 👇</div>'
+    + cta('Responda com seu palpite', 1500, bg=AU, fg=G, sub='Acompanhe a obra aqui no perfil', subcor='#fff')))
 pages.append(st_ouro('story-qua-14', 'PERGUNTA FREQUENTE', '“Preciso morar nos EUA pra comprar?”',
     'Não. Muitos dos nossos clientes moram no Brasil. A gente visita, analisa e acompanha tudo por você.', 'Responda ASSESSORIA', 'e eu te explico como funciona', 'elkland-ale-quintal.jpg', '50% 45%'))
 pages.append(st_numero('story-qui-08', 'ASSESSORIA · NOVEMBRO', '2', 'vagas<br><span style="color:#29721D">abertas</span>',
