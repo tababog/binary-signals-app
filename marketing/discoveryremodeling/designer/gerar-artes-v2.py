@@ -145,9 +145,9 @@ pages.append(st_cheia('story-seg-08', 'SEMANA ESPECIAL', 'Essa semana é sobre v
     'Todo dia: casas reais, lances reais e como a gente te ajuda.', 'Ao meio-dia: vídeo novo', 'casa-frente.jpg', '50% 40%', 'com o Alessandro'))
 pages.append(st_verde('story-seg-14', 'PERGUNTA RÁPIDA', 'Você já pensou em comprar uma casa nos EUA?',
     'Me conta: pra morar, alugar ou revender?', 'Responda este story', 'A gente responde todo mundo', 'elkland-lateral.jpg'))
-pages.append(page('story-ter-14', W, H, G, foto('casa-953-frente.jpg', 0, 420, W, 1500, pos='22% 55%') +
-    '<div class="a" style="left:0;top:0;width:1080px;height:1920px;background:linear-gradient(180deg,rgba(23,54,26,1) 0%,rgba(23,54,26,1) 22%,rgba(23,54,26,0) 34%,rgba(10,30,14,0) 68%,rgba(10,30,14,.85) 82%)"></div>'
-    + logo(y=230, W=W) +
+pages.append(page('story-ter-14', W, H, G, foto('casa-953-frente.jpg', 0, 250, W, 1600, pos='22% 55%') +
+    '<div class="a" style="left:0;top:0;width:1080px;height:1920px;background:linear-gradient(180deg,rgba(23,54,26,1) 0%,rgba(23,54,26,1) 17%,rgba(23,54,26,0) 29%,rgba(10,30,14,0) 68%,rgba(10,30,14,.85) 82%)"></div>'
+    + logo(y=140, w=120, W=W) +
     f'<div class="a tag" style="left:72px;top:250px;color:{G};background:{AU};padding:12px 22px">QUIZ · ELMIRA, NY</div>'
     f'<div class="a d" style="left:72px;top:350px;width:936px;color:#fff;font-size:115px">Quanto vai valer esta casa <span style="color:{AU}">depois da reforma?</span></div>'
     f'<div class="a w" style="left:72px;top:1400px;width:936px;color:#fff;font-size:38px;line-height:1.3">Mande seu palpite em dólares 👇</div>'
