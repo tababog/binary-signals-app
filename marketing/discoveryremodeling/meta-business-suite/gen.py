@@ -15,7 +15,7 @@ D=[
  ("17:00","foto","Calendário de leilões (para salvar)",("post-calendario-leiloes.jpg",GH("semana-vendas/post-calendario-leiloes.jpg"),None),cap("📌 SALVE este post: leilões de casas em Nova York e na Pensilvânia em novembro e dezembro. Mande pra quem quer investir nos EUA! Datas conferidas nos sites oficiais em 27/10; confira sempre no site do condado antes de se inscrever.\n\nQual condado você quer acompanhar? 👇"),None)]),
 ("ter","Terça","03/11",[
  ("10:00","reel","Casa 1: a melhor casa do leilão",("casa-1-nova-york-v3.mp4",DL("16cI2dSqPUcFBcT8o3ADDcQvqjiTEVNoU"),VW("16cI2dSqPUcFBcT8o3ADDcQvqjiTEVNoU")),cap("Essa foi a melhor casa que a gente viu nesse leilão 👀 Olha o estado dela por dentro e por fora.\n\nVocê compraria essa casa? Sim ou não 👇"),None),
- ("12:00","story","Quiz: quanto vale essa casa?",("story-ter-14.mp4",GH("semana-vendas/animados/story-ter-14.mp4"),None),None,None),
+ ("12:00","story","Quiz: quanto vai valer a Casa do Lago depois da reforma?",("story-ter-14.mp4",GH("semana-vendas/animados/story-ter-14.mp4"),None),None,None),
  ("17:00","reel","Série da casa · ep. 7: os vizinhos",("erie-ep7.mp4",DL("1-Oe6zVawhGe3OOfh-rsmbMj0_CqC6_IQ"),VW("1-Oe6zVawhGe3OOfh-rsmbMj0_CqC6_IQ")),cap("Na noite em que abrimos a casa, os vizinhos vieram ver o barulho 👀\nGente que mora na rua há mais de 30 anos: todo mundo se conhece.\nE dessa conversa saíram dois contatos para trabalhar na obra.\n\nVocê conhece seus vizinhos? 👇"),None)]),
 ("qua","Quarta","04/11",[
  ("06:00","story","Como é a avaliação da casa (destaque)",("story-destaque-avaliacao.mp4",GH("semana-vendas/animados/story-destaque-avaliacao.mp4"),None),None,None),
