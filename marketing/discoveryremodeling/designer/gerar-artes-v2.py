@@ -145,8 +145,9 @@ pages.append(st_cheia('story-seg-08', 'SEMANA ESPECIAL', 'Essa semana é sobre v
     'Todo dia: casas reais, lances reais e como a gente te ajuda.', 'Ao meio-dia: vídeo novo', 'casa-frente.jpg', '50% 40%', 'com o Alessandro'))
 pages.append(st_verde('story-seg-14', 'PERGUNTA RÁPIDA', 'Você já pensou em comprar uma casa nos EUA?',
     'Me conta: pra morar, alugar ou revender?', 'Responda este story', 'A gente responde todo mundo', 'elkland-lateral.jpg'))
-pages.append(st_numero('story-ter-14', 'QUIZ', '?', 'Quanto vale essa casa?', 'Quanto você acha que vale uma casa reformada aqui? Responda com seu palpite em dólares.',
-    'Responda com seu palpite', 'corredor-reformado.jpg', '50% 60%', 'No vídeo de amanhã tem o número real'))
+pages.append(st_numero('story-ter-14', 'QUIZ', '?', '<span style="font-size:78px;line-height:1.08;display:block">Quanto vai valer esta casa depois da reforma?</span>',
+    'Esta é a nossa Casa do Lago, antes da reforma. Mande seu palpite em dólares.',
+    'Responda com seu palpite', 'casa-lago-fora.jpg', '50% 62%', 'Acompanhe a obra aqui no perfil'))
 pages.append(st_ouro('story-qua-14', 'PERGUNTA FREQUENTE', '“Preciso morar nos EUA pra comprar?”',
     'Não. Muitos dos nossos clientes moram no Brasil. A gente visita, analisa e acompanha tudo por você.', 'Responda ASSESSORIA', 'e eu te explico como funciona', 'elkland-ale-quintal.jpg', '50% 45%'))
 pages.append(st_numero('story-qui-08', 'ASSESSORIA · NOVEMBRO', '2', 'vagas<br><span style="color:#29721D">abertas</span>',
