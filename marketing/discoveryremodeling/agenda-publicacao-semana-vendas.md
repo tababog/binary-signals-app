@@ -43,8 +43,10 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 ```
 
 ## Terça 03/11
+- **08:00** · story · Prévia da Casa 1 (hoje às 12h no feed) · doc `v-ter-s8`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/aprovados/previa-casa-1.mp4
 - **12:00** · reel · Casa 1: a melhor casa do leilão · doc `v-ter-f12`
-  - url: https://drive.usercontent.google.com/download?id=16cI2dSqPUcFBcT8o3ADDcQvqjiTEVNoU&export=download&confirm=t
+  - url: https://drive.usercontent.google.com/download?id=1prJvsOE59L7AP60qvUpgeINkmL8b7hdL&export=download&confirm=t
   - legenda:
 
 ```
