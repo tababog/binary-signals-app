@@ -4,6 +4,7 @@ VW=lambda i:f"https://drive.google.com/file/d/{i}/view"
 GH=lambda p:"https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/"+p
 FV="https://drive.google.com/drive/folders/1Zh2fVnfulNWJDsVt3Dpmmc9vntwqk-Kg"
 CTA="\n\n📞 Conversa grátis de 20 minutos pra entender o seu objetivo. Estamos com só 2 vagas abertas na assessoria.\n👉 Comente ASSESSORIA ou chame no WhatsApp (link na bio).\n\nValores estimados. Resultados passados não garantem resultados futuros. Todo investimento envolve risco.\n#leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua"
+CARROSSEL_ELK=[DL("1N-fUc3fEeMobbLp9T1JekiRCZqdcG9oL"),DL("1RV5m14N__hfTJe7R4An9aq8LjgdejDK1"),DL("1Vhwk9r_Fh1aTl4EhYGZe4QGJQ0voZSmb"),DL("1k6_AoJ_9hOoxFVSP8V4LGshPN1ZAqPFv"),DL("1pig4H8o94FVPEvXqUubhECUGFJXEl0_Q"),DL("1wuczZajIQ6Dii0ETxOc9jQ5IYjwj3Olx"),DL("19OsogV7V5oIMXsxP_hDn0kFm7ucWBT0B"),DL("1Q3_7YhPAqD2TZ8LbhkzuAIqmvsSuu65V"),DL("12H6Hx8gv_HhAPsHFDIAkZPhpUFxQKAZx")]
 def cap(t): return t+CTA
 # kind: reel, story, foto, carrossel ; file: (label, download, view) or None
 D=[
@@ -23,7 +24,7 @@ D=[
  ("12:00","story","\"Preciso morar nos EUA pra comprar?\"",("story-qua-14.mp4",GH("semana-vendas/animados/story-qua-14.mp4"),None),None,None)]),
 ("qui","Quinta","05/11",[
  ("06:00","story","2 vagas abertas na assessoria",("story-qui-08.mp4",GH("semana-vendas/animados/story-qui-08.mp4"),None),None,None),
- ("10:00","carrossel","Do leilão à venda: Elkland, PA",("Pasta Reels Semana Vendas (elkland-carrossel-NN-v2.jpg)",None,FV),cap("Do leilão à venda: a transformação da casa de Elkland, PA, cômodo por cômodo 🔨➡️🏡 Arraste pro lado.\n\nQual foi a maior transformação? 👇"),"A versão nova do carrossel ainda não chegou do notebook. Agende quando as imagens -v2 estiverem na pasta."),
+ ("10:00","carrossel","Do leilão à venda: Elkland, PA",("Pasta Reels Semana Vendas (elkland-carrossel-NN-v2.jpg)",None,FV),cap("Do leilão à venda: a transformação da casa de Elkland, PA, cômodo por cômodo 🔨➡️🏡 Arraste pro lado.\n\nQual foi a maior transformação? 👇"),"9 imagens elkland-carrossel-01-v2 a 09-v2 (pasta Reels Semana Vendas), nesta ordem."),
  ("10:00","story","Convite da live de domingo",("story-live-convite.mp4",GH("semana-vendas/animados/story-live-convite.mp4"),None),None,None),
  ("12:00","story","\"É seguro comprar casa em leilão?\"",("story-qui-14.mp4",GH("semana-vendas/animados/story-qui-14.mp4"),None),None,None),
  ("17:00","reel","Série da casa · ep. 8: vida nova",("erie-ep8.mp4",DL("1-NJLfJBUCoIrRGrk2ISKlT_Rahitx-Fy"),VW("1-NJLfJBUCoIrRGrk2ISKlT_Rahitx-Fy")),cap("Depois da limpeza, começa a parte boa 🔨\nA casa está vazia e pronta pra reforma.\nO objetivo é um só: trazer vida nova pra ela, pra outra família ser feliz aqui.\n\nO que você mudaria primeiro nessa casa? 👇"),None)]),

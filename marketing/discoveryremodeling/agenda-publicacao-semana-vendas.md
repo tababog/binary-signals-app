@@ -103,7 +103,7 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 - **08:00** · story · 2 vagas abertas na assessoria · doc `v-qui-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-qui-08.mp4
 - **12:00** · carrossel · Do leilão à venda: Elkland, PA · doc `v-qui-f12`
-  - url: (sem arquivo: não publicar)
+  - url: image_urls, nesta ordem: https://drive.usercontent.google.com/download?id=1N-fUc3fEeMobbLp9T1JekiRCZqdcG9oL&export=download&confirm=t , https://drive.usercontent.google.com/download?id=1RV5m14N__hfTJe7R4An9aq8LjgdejDK1&export=download&confirm=t , https://drive.usercontent.google.com/download?id=1Vhwk9r_Fh1aTl4EhYGZe4QGJQ0voZSmb&export=download&confirm=t , https://drive.usercontent.google.com/download?id=1k6_AoJ_9hOoxFVSP8V4LGshPN1ZAqPFv&export=download&confirm=t , https://drive.usercontent.google.com/download?id=1pig4H8o94FVPEvXqUubhECUGFJXEl0_Q&export=download&confirm=t , https://drive.usercontent.google.com/download?id=1wuczZajIQ6Dii0ETxOc9jQ5IYjwj3Olx&export=download&confirm=t , https://drive.usercontent.google.com/download?id=19OsogV7V5oIMXsxP_hDn0kFm7ucWBT0B&export=download&confirm=t , https://drive.usercontent.google.com/download?id=1Q3_7YhPAqD2TZ8LbhkzuAIqmvsSuu65V&export=download&confirm=t , https://drive.usercontent.google.com/download?id=12H6Hx8gv_HhAPsHFDIAkZPhpUFxQKAZx&export=download&confirm=t
   - legenda:
 
 ```

@@ -23,6 +23,7 @@ for day, name, date, items in D:
     for t, k, title, f, capt, note in items:
         if k == 'live': out.append(f"- **{brt(t)}** · LIVE (o Alessandro entra ao vivo; não publicar)"); continue
         url = (f[1] if f else None) or '(sem arquivo: não publicar)'
+        if k == 'carrossel': url = 'image_urls, nesta ordem: ' + ' , '.join(ns['CARROSSEL_ELK'])
         out.append(f"- **{brt(t)}** · {k} · {title} · doc `{doc(day, t, k, title)}`")
         out.append(f"  - url: {url}")
         if capt: out.append("  - legenda:\n\n```\n" + capt + "\n```")
