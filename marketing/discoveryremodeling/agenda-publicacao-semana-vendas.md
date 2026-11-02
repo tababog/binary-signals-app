@@ -10,7 +10,7 @@ Depois de publicar, marque o doc do painel como "publicado". Se create_video_pos
 - **08:00** · story · Essa semana é sobre você comprar sua casa nos EUA · doc `v-seg-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-seg-08.mp4
 - **12:00** · reel · Você NÃO precisa morar nos EUA (Reel do Ale) · doc `v-seg-f12`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/aprovados/reel-segunda-assessoria-v3.mp4
+  - url: https://drive.usercontent.google.com/download?id=1YZvTmQR3lsLr6gPblBLnRNDt3UBLiWmL&export=download&confirm=t
   - legenda:
 
 ```

@@ -10,7 +10,7 @@ D=[
 ("seg","Segunda","02/11",[
  ("06:00","story","Diário da casa · dia 7",("diario-dia7-video.mp4",DL("1uImb9OXa5vqjHUtG4MdnlLebXelCDlaB"),VW("1uImb9OXa5vqjHUtG4MdnlLebXelCDlaB")),None,None),
  ("06:00","story","Essa semana é sobre você comprar sua casa nos EUA",("story-seg-08.mp4",GH("semana-vendas/animados/story-seg-08.mp4"),None),None,None),
- ("10:00","reel","Você NÃO precisa morar nos EUA (Reel do Ale)",("reel-segunda-assessoria-v3.mp4",GH("semana-vendas/aprovados/reel-segunda-assessoria-v3.mp4"),None),cap("Você NÃO precisa morar nos Estados Unidos pra comprar casa em leilão aqui 🇺🇸🏠 A gente visita, analisa e acompanha tudo por você.\n\nVocê sabia disso? Conta aqui 👇"),None),
+ ("10:00","reel","Você NÃO precisa morar nos EUA (Reel do Ale)",("reel-segunda-assessoria-v4.mp4",DL("1YZvTmQR3lsLr6gPblBLnRNDt3UBLiWmL"),VW("1YZvTmQR3lsLr6gPblBLnRNDt3UBLiWmL")),cap("Você NÃO precisa morar nos Estados Unidos pra comprar casa em leilão aqui 🇺🇸🏠 A gente visita, analisa e acompanha tudo por você.\n\nVocê sabia disso? Conta aqui 👇"),None),
  ("12:00","story","Você já pensou em comprar uma casa nos EUA?",("story-seg-14.mp4",GH("semana-vendas/animados/story-seg-14.mp4"),None),None,None),
  ("17:00","foto","Calendário de leilões (para salvar)",("post-calendario-leiloes.jpg",GH("semana-vendas/post-calendario-leiloes.jpg"),None),cap("📌 SALVE este post: leilões de casas em Nova York e na Pensilvânia em novembro e dezembro. Mande pra quem quer investir nos EUA! Datas conferidas nos sites oficiais em 27/10; confira sempre no site do condado antes de se inscrever.\n\nQual condado você quer acompanhar? 👇"),None)]),
 ("ter","Terça","03/11",[
