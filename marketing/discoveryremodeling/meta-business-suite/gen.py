@@ -37,7 +37,7 @@ D=[
  ("08:00","reel","Casa 4: você compraria por US$ 8.000?",("casa-4-nova-york-v4.mp4",DL("1fmifcl9-g72e90rB7KI8lDb-pVLTt0tD"),VW("1fmifcl9-g72e90rB7KI8lDb-pVLTt0tD")),cap("Lance de US$ 8.000 num casarão em Nova York 😳 Valor de mercado estimado na região: ~US$ 180.000. Mas precisa de muita reforma, e no leilão de Tax Deed tem de tudo: do lixo ao luxo.\n\nVocê compraria? Responde aí: SIM ou NÃO 👇"),None),
  ("10:00","story","Convite da live de domingo",("story-live-convite.mp4",GH("semana-vendas/animados/story-live-convite.mp4"),None),None,None),
  ("12:00","story","Caixinha: qual é a sua maior dúvida?",("story-sab-14.mp4",GH("semana-vendas/animados/story-sab-14.mp4"),None),None,None),
- ("17:00","reel","Elkland: do leilão à casa pronta",("elkland-reel-v3.mp4",DL("16X_5_rW37vj6BCLa_Sq10cBx0SDNq97h"),VW("16X_5_rW37vj6BCLa_Sq10cBx0SDNq97h")),cap("Essa casa foi a leilão… olha como ela ficou depois da reforma 🏡✨\n\nVocê imaginava esse resultado? 👇"),None)]),
+ ("17:00","reel","Elkland: do leilão à casa pronta",("elkland-reel-v4.mp4",GH("semana-vendas/aprovados/elkland-reel-v4.mp4"),None),cap("Essa casa foi a leilão… olha como ela ficou depois da reforma 🏡✨\n\nVocê imaginava esse resultado? 👇"),None)]),
 ("dom","Domingo","08/11",[
  ("06:00","story","Últimos dias: 2 vagas este mês",("story-dom-08.mp4",GH("semana-vendas/animados/story-dom-08.mp4"),None),None,None),
  ("10:00","story","É hoje: live às 18h (seu horário)",("story-live-hoje.mp4",GH("semana-vendas/animados/story-live-hoje.mp4"),None),None,None),
