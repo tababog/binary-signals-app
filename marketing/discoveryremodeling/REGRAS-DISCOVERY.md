@@ -38,7 +38,7 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - **Troca de legenda SECA (01/11):** um bloco de legenda nunca entra antes do anterior sair (sem fade/transição entre blocos). Cartões ("Vale a pena?", CTA) ficam no terço de cima e nunca colados na legenda da fala. Conferir isso em todo vídeo antes de aprovar.
 - **Casa 4 (casarão):** lance US$ 8.000 · valor de mercado ~US$ 180.000 (confirmado em 01/11).
 - **Casa 2 (C22):** lance inicial US$ 6.500 · valor de mercado ~US$ 125.000 (confirmado em 01/11; a v3 saiu com 60.000 × 140.000, errado).
-- **Casa 3 (C18):** lance US$ 5.500 · valor de mercado ~US$ 130.000 (confirmado em 01/11; substitui a anotação de 5.000 × 110.000).
+- **Casa 3 (C18):** o vídeo aprovado em 02/11 (v4) mostra lance US$ 5.000 · mercado ~US$ 110.000 (o Alessandro aprovou assim; em 01/11 ele tinha dito 5.500 × 130.000). Use 5.000 × 110.000 nas legendas.
 - Legendas sincronizadas em português no terço de baixo; gancho em texto no terço de cima; nada nos 15% de baixo nem nos 10% de cima.
 - Deixar claro o contexto: "ANTES DA LIMPEZA / DEPOIS DA LIMPEZA" (não confundir com reforma).
 - Stories: série "DIÁRIO DA CASA DE LEILÃO · DIA X/7", com texto de contexto e chamada para o post do dia, texto animado e a logo.

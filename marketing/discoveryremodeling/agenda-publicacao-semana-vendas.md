@@ -160,7 +160,7 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 - **14:00** · story · Como é a conversa grátis de 20 min · doc `v-sex-s14`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-sex-14.mp4
 - **19:00** · reel · Casa 3: essa a gente NÃO compraria · doc `v-sex-f19`
-  - url: https://drive.usercontent.google.com/download?id=11O6adIVGIHa403RD-HBpnNvjnR8dl0Rh&export=download&confirm=t
+  - url: https://drive.usercontent.google.com/download?id=1X4oqKzn_tgNH7_ufs0aZLExOji_GW4UD&export=download&confirm=t
   - legenda:
 
 ```
