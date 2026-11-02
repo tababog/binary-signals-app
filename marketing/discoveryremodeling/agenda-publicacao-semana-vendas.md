@@ -122,7 +122,7 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 - **14:00** · story · "É seguro comprar casa em leilão?" · doc `v-qui-s14`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-qui-14.mp4
 - **19:00** · reel · Série da casa · ep. 8: vida nova · doc `v-qui-f19`
-  - url: https://drive.usercontent.google.com/download?id=1-NJLfJBUCoIrRGrk2ISKlT_Rahitx-Fy&export=download&confirm=t
+  - url: https://drive.usercontent.google.com/download?id=19nwVHK311JTjvTrvGemISar1DBxmLnnz&export=download&confirm=t
   - legenda:
 
 ```
