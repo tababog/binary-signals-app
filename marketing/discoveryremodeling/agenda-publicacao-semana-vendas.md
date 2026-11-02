@@ -140,6 +140,8 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 ```
 
 ## Sexta 06/11
+- **08:00** · story · Prévia da Casa 3 (hoje às 19h no feed) · doc `v-sex-s8`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/aprovados/previa-casa-3.mp4
 - **12:00** · reel · VENDEMOS! 35 dias no mercado · doc `v-sex-f12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/aprovados/casa-5-vendemos-v4.mp4
   - legenda:

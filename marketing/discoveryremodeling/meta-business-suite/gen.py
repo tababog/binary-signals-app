@@ -29,6 +29,7 @@ D=[
  ("12:00","story","\"É seguro comprar casa em leilão?\"",("story-qui-14.mp4",GH("semana-vendas/animados/story-qui-14.mp4"),None),None,None),
  ("17:00","reel","Série da casa · ep. 8: vida nova",("erie-ep8-v2.mp4",DL("19nwVHK311JTjvTrvGemISar1DBxmLnnz"),VW("19nwVHK311JTjvTrvGemISar1DBxmLnnz")),cap("Depois da limpeza, começa a parte boa 🔨\nA casa está vazia e pronta pra reforma.\nO objetivo é um só: trazer vida nova pra ela, pra outra família ser feliz aqui.\n\nO que você mudaria primeiro nessa casa? 👇"),None)]),
 ("sex","Sexta","06/11",[
+ ("06:00","story","Prévia da Casa 3 (hoje às 19h no feed)",("previa-casa-3.mp4",GH("semana-vendas/aprovados/previa-casa-3.mp4"),None),None,None),
  ("10:00","reel","VENDEMOS! 35 dias no mercado",("casa-5-vendemos-v4.mp4",GH("semana-vendas/aprovados/casa-5-vendemos-v4.mp4"),None),cap("VENDEMOS! 🎉 Compramos, reformamos e vendemos: 100% do processo concluído, 35 dias no mercado. Compra US$ 48.000 · Reforma US$ 38.000 · Venda US$ 135.000 (valores reais deste caso).\n\nQual parte você achou mais difícil: comprar, reformar ou vender? 👇"),None),
  ("10:00","story","Convite da live de domingo",("story-live-convite.mp4",GH("semana-vendas/animados/story-live-convite.mp4"),None),None,None),
  ("12:00","story","Como é a conversa grátis de 20 min",("story-sex-14.mp4",GH("semana-vendas/animados/story-sex-14.mp4"),None),None,None),
