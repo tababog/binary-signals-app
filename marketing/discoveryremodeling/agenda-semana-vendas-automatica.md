@@ -27,7 +27,7 @@
 | Qui 05/11 | 19h | **Série 953 Erie St, episódio 8** (vídeo editado pelo Alessandro) | Drive `erie-ep8` (pasta "Reels 953 Erie St"); **se não existir até 19h, publique `frase-02.jpg`** | create_video_post (ou create_image_post na frase) |
 | Sex 06/11 | 12h | "VENDEMOS! 35 dias no mercado" | casa-5-vendemos-v4 (aprovada 02/11; `semana-vendas/aprovados/`) | create_video_post |
 | Sex 06/11 | 19h | Casa 3: "Essa a gente NÃO compraria" | Drive `casa-3-` | create_video_post |
-| Sáb 07/11 | 10h | Casa 4: "Você compraria por US$ 8.000?" (casarão) | Drive `casa-4-nova-york-v4` (1fmifcl9-g72e90rB7KI8lDb-pVLTt0tD) | create_video_post |
+| Sáb 07/11 | 10h | Casa 4: "Você compraria por US$ 8.000?" (casarão) | Drive `casa-4-nova-york-v5` (1BhTkNhiE7T87KrdetjsJX6yzmEqQjfkN) | create_video_post |
 | Sáb 07/11 | 19h | Reel "Do leilão à venda" (Elkland) | Drive `elkland-reel` | create_video_post |
 | Dom 08/11 | 19h | Reel animado "Como funciona a nossa assessoria" | `animados/reel-como-funciona.mp4` | create_video_post |
 
