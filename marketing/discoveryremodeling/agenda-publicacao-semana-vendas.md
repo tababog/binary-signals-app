@@ -61,7 +61,7 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 #leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua
 ```
 - **14:00** · story · Quiz: quanto vai valer a casa de Elmira depois da reforma? · doc `v-ter-s14`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-ter-14.mp4
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-ter-14.mp4
 - **19:00** · reel · Série da casa · ep. 7: os vizinhos · doc `v-ter-f19`
   - url: https://drive.usercontent.google.com/download?id=1-Oe6zVawhGe3OOfh-rsmbMj0_CqC6_IQ&export=download&confirm=t
   - legenda:
@@ -82,7 +82,7 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 
 ## Quarta 04/11
 - **08:00** · story · Como é a avaliação da casa (destaque) · doc `v-qua-s8`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-destaque-avaliacao.mp4
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-destaque-avaliacao.mp4
 - **12:00** · reel · Casa 2: casa de 2 famílias · doc `v-qua-f12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/aprovados/casa-2-nova-york-v4.mp4
   - legenda:
@@ -99,11 +99,11 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 #leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua
 ```
 - **14:00** · story · "Preciso morar nos EUA pra comprar?" · doc `v-qua-s14`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-qua-14.mp4
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-qua-14.mp4
 
 ## Quinta 05/11
 - **08:00** · story · 2 vagas abertas na assessoria · doc `v-qui-s8`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-qui-08.mp4
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-qui-08.mp4
 - **12:00** · carrossel · Do leilão à venda: Elkland, PA · doc `v-qui-f12`
   - url: image_urls, nesta ordem: https://drive.usercontent.google.com/download?id=1N-fUc3fEeMobbLp9T1JekiRCZqdcG9oL&export=download&confirm=t , https://drive.usercontent.google.com/download?id=1RV5m14N__hfTJe7R4An9aq8LjgdejDK1&export=download&confirm=t , https://drive.usercontent.google.com/download?id=1Vhwk9r_Fh1aTl4EhYGZe4QGJQ0voZSmb&export=download&confirm=t , https://drive.usercontent.google.com/download?id=1k6_AoJ_9hOoxFVSP8V4LGshPN1ZAqPFv&export=download&confirm=t , https://drive.usercontent.google.com/download?id=1pig4H8o94FVPEvXqUubhECUGFJXEl0_Q&export=download&confirm=t , https://drive.usercontent.google.com/download?id=1wuczZajIQ6Dii0ETxOc9jQ5IYjwj3Olx&export=download&confirm=t , https://drive.usercontent.google.com/download?id=19OsogV7V5oIMXsxP_hDn0kFm7ucWBT0B&export=download&confirm=t , https://drive.usercontent.google.com/download?id=1Q3_7YhPAqD2TZ8LbhkzuAIqmvsSuu65V&export=download&confirm=t , https://drive.usercontent.google.com/download?id=12H6Hx8gv_HhAPsHFDIAkZPhpUFxQKAZx&export=download&confirm=t
   - legenda:
@@ -120,9 +120,9 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 #leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua
 ```
 - **12:00** · story · Convite da live de domingo · doc `v-qui-live12`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-live-convite.mp4
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-live-convite.mp4
 - **14:00** · story · "É seguro comprar casa em leilão?" · doc `v-qui-s14`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-qui-14.mp4
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-qui-14.mp4
 - **19:00** · reel · Série da casa · ep. 8: vida nova · doc `v-qui-f19`
   - url: https://drive.usercontent.google.com/download?id=19nwVHK311JTjvTrvGemISar1DBxmLnnz&export=download&confirm=t
   - legenda:
@@ -160,9 +160,9 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 #leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua
 ```
 - **12:00** · story · Convite da live de domingo · doc `v-sex-live12`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-live-convite.mp4
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-live-convite.mp4
 - **14:00** · story · Como é a conversa grátis de 20 min · doc `v-sex-s14`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-sex-14.mp4
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-sex-14.mp4
 - **19:00** · reel · Casa 3: essa a gente NÃO compraria · doc `v-sex-f19`
   - url: https://drive.usercontent.google.com/download?id=1X4oqKzn_tgNH7_ufs0aZLExOji_GW4UD&export=download&confirm=t
   - legenda:
@@ -181,7 +181,7 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 
 ## Sábado 07/11
 - **08:00** · story · Bucks County, PA · leilão de 8/12 · doc `v-sab-s8`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-sab-08.mp4
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-sab-08.mp4
 - **10:00** · reel · Casa 4: você compraria por US$ 8.000? · doc `v-sab-f10`
   - url: https://drive.usercontent.google.com/download?id=1BhTkNhiE7T87KrdetjsJX6yzmEqQjfkN&export=download&confirm=t
   - legenda:
@@ -198,9 +198,9 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 #leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua
 ```
 - **12:00** · story · Convite da live de domingo · doc `v-sab-live12`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-live-convite.mp4
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-live-convite.mp4
 - **14:00** · story · Caixinha: qual é a sua maior dúvida? · doc `v-sab-s14`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-sab-14.mp4
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-sab-14.mp4
 - **19:00** · reel · Elkland: do leilão à casa pronta · doc `v-sab-f19`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/aprovados/elkland-reel-v4.mp4
   - legenda:
@@ -219,11 +219,11 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 
 ## Domingo 08/11
 - **08:00** · story · Últimos dias: 2 vagas este mês · doc `v-dom-s8`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-dom-08.mp4
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-dom-08.mp4
 - **12:00** · story · É hoje: live às 18h (seu horário) · doc `v-dom-live12`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-live-hoje.mp4
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-live-hoje.mp4
 - **14:00** · story · Hoje: como funciona a assessoria · doc `v-dom-s14`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-dom-14.mp4
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-dom-14.mp4
 - **19:00** · reel · Como funciona a nossa assessoria · doc `v-dom-f19`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/reel-como-funciona.mp4
   - legenda:
@@ -240,5 +240,5 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 #leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua
 ```
 - **19:00** · story · É hoje: live daqui a 1 hora · doc `v-dom-live19`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-live-hoje.mp4
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-live-hoje.mp4
 - **20:00** · LIVE (o Alessandro entra ao vivo; não publicar)
