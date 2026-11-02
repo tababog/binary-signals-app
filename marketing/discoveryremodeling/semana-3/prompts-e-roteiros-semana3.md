@@ -6,6 +6,8 @@ Cada prompt vai numa conversa nova do Claude do notebook. Toda entrega vai para 
 
 ## 1) Copiar as artes dos stories para o Drive (fazer ATÉ DOMINGO 08/11)
 
+**STATUS: CONCLUÍDO em 02/11/2026.** 14 vídeos com música (11 da semana 3 + story-qui-08, story-sex-14, story-dom-08), .mp4 1080x1920, 7 s, mesma imagem das originais, em Drive › Reels Semana Vendas › Artes Semana 3 (09-15nov). Música aprovada pelo Alessandro (ver REGRAS: música padrão).
+
 ```
 COPIAR AS ARTES DA SEMANA 3 PARA O DRIVE
 
