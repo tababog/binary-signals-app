@@ -20,7 +20,7 @@ D=[
  ("17:00","reel","Série da casa · ep. 7: os vizinhos",("erie-ep7.mp4",DL("1-Oe6zVawhGe3OOfh-rsmbMj0_CqC6_IQ"),VW("1-Oe6zVawhGe3OOfh-rsmbMj0_CqC6_IQ")),cap("Na noite em que abrimos a casa, os vizinhos vieram ver o barulho 👀\nGente que mora na rua há mais de 30 anos: todo mundo se conhece.\nE dessa conversa saíram dois contatos para trabalhar na obra.\n\nVocê conhece seus vizinhos? 👇"),None)]),
 ("qua","Quarta","04/11",[
  ("06:00","story","Como é a avaliação da casa (destaque)",("story-destaque-avaliacao.mp4",GH("semana-vendas/animados/story-destaque-avaliacao.mp4"),None),None,None),
- ("10:00","reel","Casa 2: casa de 2 famílias",("casa-2-nova-york-v3.mp4",DL("1DYh5euPHrVxI3jnyKJxurfpZqdsZ_GZJ"),VW("1DYh5euPHrVxI3jnyKJxurfpZqdsZ_GZJ")),cap("Casa de 2 famílias numa avenida principal: compraria? 🤔 Olha o tour por dentro.\n\nVocê moraria ou alugaria? 👇"),None),
+ ("10:00","reel","Casa 2: casa de 2 famílias",("casa-2-nova-york-v4.mp4",GH("semana-vendas/aprovados/casa-2-nova-york-v4.mp4"),None),cap("Casa de 2 famílias numa avenida principal: compraria? 🤔 Olha o tour por dentro.\n\nVocê moraria ou alugaria? 👇"),None),
  ("12:00","story","\"Preciso morar nos EUA pra comprar?\"",("story-qua-14.mp4",GH("semana-vendas/animados/story-qua-14.mp4"),None),None,None)]),
 ("qui","Quinta","05/11",[
  ("06:00","story","2 vagas abertas na assessoria",("story-qui-08.mp4",GH("semana-vendas/animados/story-qui-08.mp4"),None),None,None),

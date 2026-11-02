@@ -82,7 +82,7 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 - **08:00** · story · Como é a avaliação da casa (destaque) · doc `v-qua-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados/story-destaque-avaliacao.mp4
 - **12:00** · reel · Casa 2: casa de 2 famílias · doc `v-qua-f12`
-  - url: https://drive.usercontent.google.com/download?id=1DYh5euPHrVxI3jnyKJxurfpZqdsZ_GZJ&export=download&confirm=t
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/aprovados/casa-2-nova-york-v4.mp4
   - legenda:
 
 ```
