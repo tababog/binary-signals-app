@@ -1,0 +1,11 @@
+s3-seg-08
+s3-seg-14
+s3-ter-08
+s3-ter-14
+s3-qua-14
+s3-qui-08
+s3-qui-14
+s3-sex-08
+s3-sab-08
+s3-sab-14
+s3-dom-14
