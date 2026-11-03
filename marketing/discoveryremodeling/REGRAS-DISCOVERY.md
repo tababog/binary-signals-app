@@ -119,4 +119,5 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - **Todo Reel tem capa padrão** (gerador `designer/gerar-capas-semana3.py`, saída `semana-N/capas/capa-sN-<dia>-<hora>.jpg`): foto do Ale ou da obra, etiqueta dourada no topo, título de 3 a 6 palavras em Montserrat ExtraBold com a palavra-chave em dourado, subtítulo curto. Texto dentro do recorte 3:4 do perfil (y 240 a 1680). Logo pequena no canto.
 - A rotina publica o Reel com `cover_url` apontando para a capa (Windsor create_video_post aceita).
 - **Logo nos Reels:** nada de logo nos 3 primeiros segundos (só gancho e rosto); depois, logo pequena e meio transparente no canto de cima, como marca d'água; logo-reveal no final continua. **Nos stories** a logo continua como está.
+- **Capas da semana 3 APROVADAS pelo Alessandro em 03/11.**
 - **Decisão (03/11):** o Alessandro deixou a escolha com o Claude ("você é o especialista, eu só quero crescer"). Capas e regra da logo entram na semana 3 como TESTE. No domingo 15/11, comparar com a semana 2 (visitas ao perfil, seguidores novos, alcance e retenção dos Reels). Se piorar, volta ao jeito antigo.

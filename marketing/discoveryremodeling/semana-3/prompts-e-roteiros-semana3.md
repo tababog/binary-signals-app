@@ -103,3 +103,25 @@ Grave de frente para a câmera, na frente de uma das casas, com calma:
 ## Roteiro B (você grava, 30 s): "Notícia da semana" (quinta 12/11, 19h)
 
 O texto sai na **quarta 11/11**, com a notícia mais importante da semana sobre o mercado de casas nos EUA, com fonte. O agente de pesquisa roda sexta 06/11, e eu confiro de novo na quarta. Você grava na quarta à noite ou na quinta de manhã.
+
+---
+
+## 7) Copiar as 14 capas para o Drive (até domingo 08/11) – capas APROVADAS em 03/11
+
+```
+COPIAR AS CAPAS DOS REELS DA SEMANA 3 PARA O DRIVE
+
+Crie a subpasta "Capas" dentro de G:\My Drive\Isaques - Discovery\Reels Semana Vendas\Artes Semana 3 (09-15nov)
+e salve nela, com o MESMO nome, os 14 arquivos .jpg da pasta semana-3/capas/ do GitHub:
+Base: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-3/capas/
+capa-s3-seg-12.jpg, capa-s3-seg-19.jpg, capa-s3-ter-12.jpg, capa-s3-ter-19.jpg, capa-s3-qua-12.jpg, capa-s3-qua-19.jpg,
+capa-s3-qui-12.jpg, capa-s3-qui-19.jpg, capa-s3-sex-12.jpg, capa-s3-sex-19.jpg, capa-s3-sab-10.jpg, capa-s3-sab-19.jpg,
+capa-s3-dom-12.jpg, capa-s3-dom-19.jpg
+Confira que são 14 imagens 1080x1920 e me diga quando terminar.
+```
+
+## REGRA NOVA PARA TODOS OS REELS DA SEMANA 3 EM DIANTE (cole no fim de cada prompt de edição)
+
+```
+LOGO: não coloque a logo da Discovery nos 3 primeiros segundos (só o gancho e o rosto). A partir dos 3 s, logo pequena (cerca de 110 px de largura) no canto superior direito, com 60% de opacidade, como marca d'água, sem cobrir rosto. O logo-reveal NOVO no final continua.
+```
