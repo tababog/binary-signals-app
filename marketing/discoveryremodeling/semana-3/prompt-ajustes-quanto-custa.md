@@ -1,17 +1,37 @@
-# Ajustes pedidos pelo Alessandro na série "Quanto custa?" (02/11)
+# Ajustes pedidos pelo Alessandro na série "Quanto custa?"
 
-## qc-drywall-p1 → v2
-```
-QUANTO CUSTA? DRYWALL PARTE 1 – FAZER A V2 (mais Alessandro, mais fala, menos texto)
+> **03/11 – CORREÇÃO DE VALOR:** o drywall é SÓ do **hallway da entrada**: **US$ 1.400, material e mão de obra**. O US$ 2.800 estava errado. Refazer as partes 1 e 2.
 
-Base: qc-drywall-p1.mp4 e o material bruto que você usou (vídeos da obra na pasta "Casa 953 Erie St" → "obra-01-11").
-O que o Alessandro pediu:
-1. MAIS ALESSANDRO NA TELA: ele aparece nos vídeos da obra. Use as cenas em que ELE aparece, de preferência falando para a câmera, e deixe o rosto dele nos primeiros segundos. Imagem de parede sozinha só como cobertura curta (1 a 2 s).
-2. MAIS FALA, MENOS TEXTO: hoje tem mais escrita que fala. Procure no bruto o trecho em que ele PERGUNTA quanto custa o drywall (algo como "quanto vocês acham que custa pra colocar só o drywall nessa casa?") e use como gancho, nos primeiros 3 s, com a voz dele. Se não existir essa pergunta no bruto, me avise que ele grava uma frase de 5 s.
-3. TEXTO NA TELA: só o gancho curto ("Quanto custa o drywall? 🤔") e o final ("Chuta aí 👇"). O resto é a fala dele com legenda karaokê (1 bloco por vez, troca SECA, Montserrat ExtraBold, palavra falada em dourado).
-4. TIRE a cena da pilha de entulho no quintal (não tem a ver com drywall).
-5. FINAL: "Chuta aí nos comentários 👇" curto (2 s) e o logo-reveal NOVO.
-REGRAS: 20 a 30 s; nada sobre o rosto; nada abaixo de y=1560; áudio -14 LUFS; nunca começar com "mas", "e" ou "então" soltos; sem número da casa ou placa.
-ANTES DE SALVAR: me mostre a transcrição do que ele fala e prints em 1 s, 5 s e 15 s.
-ENTREGA: qc-drywall-p1-v2.mp4 na pasta "Reels 953 Erie St" até domingo 08/11 (vai ao ar segunda 09/11, 12h de Brasília).
+## qc-drywall-p1 → v2 (pergunta, segunda 09/11, 12h de Brasília)
 ```
+QUANTO CUSTA? DRYWALL DO HALLWAY · PARTE 1 – FAZER A V2
+
+Base: os vídeos da obra (pasta "Casa 953 Erie St" → "obra-01-11", e a pasta "drywall-novo" se existir).
+1. ASSUNTO: SÓ o hallway da entrada, já demolido. NÃO mostre a cozinha nem outros cômodos. Nada de "casa inteira".
+2. MAIS ALESSANDRO: ele aparece DE FRENTE nos primeiros segundos, falando. Parede sozinha só como cobertura curta (1 a 2 s), com o áudio dele contínuo.
+3. FALA (gancho, primeiros 3 s): a pergunta dele sobre quanto custa o drywall desse hallway. Se não houver essa fala no material, me avise: ele grava "Quanto vocês acham que custa colocar drywall novo só nesse hallway, com material e mão de obra? Chuta aí!".
+4. TEXTO NA TELA: só o gancho curto "Quanto custa o drywall deste hallway? 🤔" e o final "Chuta aí 👇". O resto é a fala dele com legenda karaokê (Montserrat ExtraBold, 1 bloco por vez, troca SECA, palavra falada em dourado).
+5. TIRE a cena da pilha de entulho no quintal.
+6. FINAL: "Chuta aí nos comentários 👇" (2 s) + logo-reveal NOVO.
+REGRAS: 20 a 30 s; música padrão bem baixa por baixo da voz; voz -14 LUFS; nada sobre o rosto; nada abaixo de y=1560; nunca começar com "mas", "e" ou "então"; sem número da casa ou placa.
+ANTES DE SALVAR: me mostre a transcrição e prints em 1 s, 5 s e 15 s.
+ENTREGA: qc-drywall-p1-v2.mp4 na pasta "Reels 953 Erie St" até domingo 08/11.
+```
+
+## qc-drywall-p2 → v2 (resposta, terça 10/11, 12h de Brasília)
+```
+QUANTO CUSTA? DRYWALL DO HALLWAY · PARTE 2 – FAZER A V2 (VALOR CORRIGIDO: US$ 1.400)
+
+Base: qc-drywall-p2.mp4 e os vídeos novos do Alessandro (pasta "obra-01-11" ou "drywall-novo").
+1. IMAGENS: SOMENTE o hallway da entrada, onde já está demolido. NÃO mostre a cozinha nem outros cômodos.
+2. FALA: use a gravação nova do Alessandro dizendo o valor ("mil e quatrocentos dólares"). Ele aparece DE FRENTE no começo e no fim; no meio, cubra com o hallway (áudio contínuo). Se não houver essa fala, me avise antes de montar (ele grava: "Ontem eu perguntei quanto custava o drywall desse hallway. Material e mão de obra: mil e quatrocentos dólares. Valor real deste caso. Você chegou perto? Comenta aí.").
+3. VALOR NA TELA: "Resposta: US$ 1.400 💵" grande, dourado #F2C14E, terço de cima, fora do rosto, entrando quando ele fala o número. Embaixo, pequeno: "Drywall do hallway, material e mão de obra. Valor real deste caso. Cada obra é diferente." NÃO use US$ 2.800 em lugar nenhum.
+4. LEGENDA: karaokê da fala, Montserrat ExtraBold, 1 bloco por vez, troca SECA, palavra falada em dourado.
+5. FINAL: "Você chegou perto? 👇" (2 s) + logo-reveal NOVO.
+REGRAS: 20 a 25 s; música padrão bem baixa por baixo da voz; voz -14 LUFS; nada abaixo de y=1560; sem número da casa ou placa.
+ANTES DE SALVAR: me mostre a transcrição e prints em 1 s, 8 s e no valor.
+ENTREGA: qc-drywall-p2-v2.mp4 na pasta "Reels 953 Erie St" até domingo 08/11. Corrija também o qc-legendas.txt (drywall do hallway: US$ 1.400).
+```
+
+## Story de domingo 15/11 (resumo) – já corrigido pelo Claude
+s3-dom-14 agora diz "Drywall (hallway): US$ 1.400". Arquivo novo com música: semana-3/animados/s3-dom-14.mp4 no repositório. Copiar para o Drive (pasta "Artes Semana 3"), substituindo o antigo.

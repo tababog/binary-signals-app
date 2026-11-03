@@ -36,6 +36,7 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - **Legendas no padrão novo (27/10):** estilo karaokê, até 3 palavras por vez, Montserrat ExtraBold, palavra falada em dourado, sem contorno/caixa, degradê escuro suave embaixo. Detalhes em `prompt-correcao-casas-legendas.md`. Aviso de risco só junto dos números e no final.
 - **Frases inteiras e começo forte (01/11):** vídeo nunca começa com "mas", "e", "então" ou "porque" (sobra de corte não é gancho). O gancho é o texto na tela + uma frase completa. Nunca cortar no meio de frase nem juntar pedaços de frases: melhor um pouco mais longo e com sentido do que picado.
 - **Troca de legenda SECA (01/11):** um bloco de legenda nunca entra antes do anterior sair (sem fade/transição entre blocos). Cartões ("Vale a pena?", CTA) ficam no terço de cima e nunca colados na legenda da fala. Conferir isso em todo vídeo antes de aprovar.
+- **Drywall da casa de Elmira (corrigido em 03/11):** US$ 1.400, material e mão de obra, SÓ do hallway da entrada (não US$ 2.800 da casa inteira). Isolamento US$ 600 · gabinetes US$ 3.600 · reforma total ~US$ 40.000 (estimativa).
 - **Casa 4 (casarão):** lance US$ 8.000 · valor de mercado ~US$ 180.000 (confirmado em 01/11).
 - **Casa 2 (C22):** lance inicial US$ 6.500 · valor de mercado ~US$ 125.000 (confirmado em 01/11; a v3 saiu com 60.000 × 140.000, errado).
 - **Casa 3 (C18):** o vídeo aprovado em 02/11 (v4) mostra lance US$ 5.000 · mercado ~US$ 110.000 (o Alessandro aprovou assim; em 01/11 ele tinha dito 5.500 × 130.000). Use 5.000 × 110.000 nas legendas.

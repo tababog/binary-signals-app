@@ -18,6 +18,6 @@ P.append(st_verde('s3-qui-14', 'PERGUNTA FREQUENTE', '"Preciso abrir LLC para co
 P.append(st_ouro('s3-sex-08', 'ENQUETE', 'Cozinha nova: quanto você chuta?', 'A) US$ 2 mil · B) US$ 4 mil · C) US$ 8 mil. Responda com a letra.', 'Responda A, B ou C', 'a resposta sai sábado', 'cozinha-antes.jpg', '50% 50%'))
 P.append(st_lista('s3-sab-08', 'PARA SALVAR · PRÓXIMOS LEILÕES', 'Leilões até dezembro', ['Schuylkill, PA · 19/11', 'Bucks, PA · 08/12 (inscr. até 14/11)', 'Delaware, PA · 10/12 (inscr. 16-17/11)'], 'Salve e compartilhe', 'Datas de 27/10: confirme no site do condado'))
 P.append(st_verde('s3-sab-14', 'CAIXINHA', 'Pergunte o que quiser sobre a obra', 'Custo, prazo, equipe… eu respondo aqui nos stories.', 'Responda este story', None, 'deck-obra.jpg'))
-P.append(st_lista('s3-dom-14', 'RESUMO DA SEMANA', 'Quanto custou até agora', ['Drywall: US$ 2.800', 'Isolamento: US$ 600', 'Gabinetes: US$ 3.600'], 'Hoje às 19h: a reforma inteira', 'Valores reais deste caso. Cada obra é diferente.', 'casa-953-frente.jpg'))
+P.append(st_lista('s3-dom-14', 'RESUMO DA SEMANA', 'Quanto custou até agora', ['Drywall (hallway): US$ 1.400', 'Isolamento: US$ 600', 'Gabinetes: US$ 3.600'], 'Hoje às 19h: a reforma inteira', 'Valores reais deste caso. Cada obra é diferente.', 'casa-953-frente.jpg'))
 open(os.path.join(BASE, 'html', 'lista-semana3.txt'), 'w').write('\n'.join(P))
 print(len(P), 'stories')
