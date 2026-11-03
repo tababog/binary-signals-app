@@ -123,3 +123,9 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - **Decisão (03/11):** o Alessandro deixou a escolha com o Claude ("você é o especialista, eu só quero crescer"). Capas e regra da logo entram na semana 3 como TESTE. No domingo 15/11, comparar com a semana 2 (visitas ao perfil, seguidores novos, alcance e retenção dos Reels). Se piorar, volta ao jeito antigo.
 - **Windsor sem "Permitir" (03/11):** o Alessandro mudou em claude.ai/customize/connectors → Windsor: "Ferramentas somente leitura" = Sempre permitir; em "gravação/exclusão" só **Execute Action** = Sempre permitir (o resto continua pedindo aprovação). A rotina publica sozinha, mas só o que está "pronto" no painel.
 - **Facebook (03/11):** o Alessandro ativou no Instagram (Accounts Center → Sharing across profiles) o compartilhamento automático de Posts, Reels e Stories da @discoveryremodeling para a Page "Discovery Remodeling" (NÃO a Tababog). A testar se vale também para o que a rotina publica pela Windsor (primeiro teste: Reel das 19h BRT de 03/11).
+
+## Varredura semanal de leilões (definido em 03/11)
+- **Toda sexta-feira de manhã** o Claude faz a varredura dos leilões de **Pensilvânia e Nova York** (sites oficiais dos condados e plataformas: Bid4Assets, GovEase, NYSAuctions/AAR, Auctions International etc.) e compara com o calendário anterior (`calendario-leiloes/`).
+- Entrega: `calendario-leiloes/AAAA-MM-DD-varredura.md` com os leilões **NOVOS**, os que **mudaram** e os que **nos interessam** (prazo de inscrição, depósito, link oficial, distância de Connecticut e de Elmira), mais um resumo curto para a reunião de segunda.
+- **Nada de pesquisa de listas, documentos ou due diligence sem o OK do Alessandro.** Ele escolhe na reunião quais leilões seguem; só aí o Claude começa listas, documentação e análise de cada imóvel.
+- Só marcar CONFIRMADO o que aparecer com data no site oficial; o resto é A CONFERIR.
