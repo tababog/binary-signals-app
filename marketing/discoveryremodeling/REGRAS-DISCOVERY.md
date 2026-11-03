@@ -136,3 +136,4 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 ## Central Alessandro e planilha mãe (03/11)
 - **Página central:** https://claude.ai/artifact/Q2SicM1p2Xzt9jtsHEt8kb (decisões Sim/Não, checklists, agentes, níveis, 3 meses). As marcações ficam na coleção "checks" (ArtifactData). Ler antes de cada reunião de domingo e agir no que ele marcou SIM.
 - **Planilha mãe das casas:** PLANILHA-MAE-CASAS.xlsx (8 casas, 1.333 lançamentos das planilhas "DESPESAS COM REFORMA", que NÃO foram alteradas). Abas: LEIA-ME, PAINEL, CASAS, LANÇAMENTOS, INVESTIDORES, CONFERIR, CATEGORIAS. Dados financeiros NUNCA vão para o repositório (só no Drive dele).
+- **Fale comigo (03/11):** a Central tem campo de texto e botão de áudio; as mensagens ficam na coleção "mensagens" (áudio = id em assets). A cada disparo da rotina, ler as mensagens com lido=false, agir e marcar lido=true. A Central está fixada no menu lateral do claude.ai dele.
