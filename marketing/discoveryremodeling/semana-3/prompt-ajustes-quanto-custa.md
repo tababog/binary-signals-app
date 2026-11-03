@@ -1,5 +1,7 @@
 # Ajustes pedidos pelo Alessandro na série "Quanto custa?"
 
+> **03/11 – ÁUDIOS DO ALESSANDRO GRAVADOS (narração):** semana-3/audios/drywall-p1-pergunta.m4a ("Quanto você acha que custa para colocar drywall novo nesse hallway, somando material e mão de obra? Chuta aí pra mim", 13 s) e semana-3/audios/drywall-p2-resposta.m4a ("Ontem eu perguntei quanto custava o drywall desse hallway, material e mão de obra, e o valor foi mil e quatrocentos dólares. Valor real desse caso. Você chegou perto? Comenta aí", 17 s). Links: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-3/audios/drywall-p1-pergunta.m4a e …/drywall-p2-resposta.m4a. Usar como NARRAÇÃO (voz em off) sobre as imagens do hallway; se houver cena do Alessandro de frente no hallway, usar no começo e no fim.
+
 > **03/11 – CORREÇÃO DE VALOR:** o drywall é SÓ do **hallway da entrada**: **US$ 1.400, material e mão de obra**. O US$ 2.800 estava errado. Refazer as partes 1 e 2.
 
 ## qc-drywall-p1 → v2 (pergunta, segunda 09/11, 12h de Brasília)
