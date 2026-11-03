@@ -48,3 +48,45 @@ Qual era a SUA maior dúvida? 👇
 
 Todo investimento envolve risco. Resultados passados não garantem resultados futuros.
 #taxdeed #leilaodeimoveis #imoveisnoseua #brasileirosnoseua #investirnoseua
+
+---
+
+## PROMPT COMPLETO PARA O NOTEBOOK (com tomadas de câmera, máx. 50 s) – 03/11
+
+```
+REEL "ALE x ALE" – O DESCONFIADO CONTRA O INVESTIDOR
+Duração TOTAL: no máximo 50 s (incluindo o logo-reveal de ~4 s). Vertical 1080x1920, 30 fps.
+
+MATERIAL: pasta do Drive "ale-x-ale" (Reels Semana Vendas). O Alessandro gravou as falas em 2 visuais:
+- DESCONFIADO (😒): boné/camiseta comum, braços cruzados → sempre do lado ESQUERDO do quadro, olhando para a direita.
+- INVESTIDOR (😎): camisa branca da Discovery, calmo → sempre do lado DIREITO do quadro, olhando para a esquerda.
+(Se ele gravou centralizado, reenquadre com zoom/corte para cada um ficar no seu lado; espelhe se o olhar estiver invertido.)
+
+ROTEIRO E TOMADAS (tempos aproximados; corte seco entre falas, sem fade):
+
+| # | Tempo | Quem | Tomada de câmera | Fala |
+| 1 | 0:00–0:04 | 😒 | PLANO MÉDIO (cintura pra cima), entrada com leve zoom-in rápido; texto grande no terço de cima: "Casa por US$ 10 mil? É GOLPE?!" | "Casa nos Estados Unidos por 10 mil dólares? Isso é golpe!" |
+| 2 | 0:04–0:10 | 😎 | PLANO MÉDIO, câmera parada; etiqueta "😎 INVESTIDOR" no topo na 1ª aparição | "Não é golpe. É leilão de Tax Deed: o condado vende a casa de quem deixou de pagar o imposto por anos." |
+| 3 | 0:10–0:12 | 😒 | CLOSE (rosto e ombros), cara de desdém; etiqueta "😒 DESCONFIADO" | "Tá, mas aí a casa é um lixo." |
+| 4 | 0:12–0:19 | 😎 | PLANO MÉDIO; no meio da fala, CORTE de 2 s para imagem de visita de campo (B-roll: Ale entrando numa casa/olhando parede) com o áudio dele continuando | "Às vezes é mesmo! Por isso a gente visita, pesquisa e analisa ANTES de dar qualquer lance. Lance baixo não quer dizer negócio bom." |
+| 5 | 0:19–0:22 | 😒 | PLANO MÉDIO, gesto de avião com a mão | "E eu, que moro no Brasil? Vou pegar avião toda semana?" |
+| 6 | 0:22–0:28 | 😎 | PLANO MÉDIO; 2 s de B-roll da obra (reforma em Elmira) por cima, áudio contínuo | "Não precisa. A parte presencial — visitar, avaliar, acompanhar a reforma — a gente faz por você." |
+| 7 | 0:28–0:30 | 😒 | CLOSE, sobrancelha levantada | "E se der errado?" |
+| 8 | 0:30–0:35 | 😎 | PLANO MÉDIO, calmo | "Todo investimento tem risco. O nosso trabalho é diminuir esse risco com análise." |
+| 9 | 0:35–0:38 | 😒 + 😎 | TELA DIVIDIDA lado a lado (Desconfiado à esquerda, Investidor à direita); o Desconfiado descruza os braços | 😒 "…Tá. Faz sentido." |
+| 10 | 0:38–0:42 | 😎 | CLOSE olhando DIRETO para a câmera, leve zoom-in | "Quer entender se faz sentido pra você? Comenta ASSESSORIA." |
+| — | 0:42–0:46 | — | Cartão final: "Comente ASSESSORIA 👇 · Conversa grátis de 20 min" + aviso pequeno "Todo investimento envolve risco." | — |
+| — | 0:46–0:50 | — | Logo-reveal NOVO da Discovery | — |
+
+Se a soma passar de 50 s: corte pausas entre as frases (deixe 0,2 s) e encurte os B-rolls; NUNCA corte palavras nem acelere a voz.
+
+TEXTO E LEGENDA:
+- Legenda karaokê de TODAS as falas: Montserrat ExtraBold, 1 bloco por vez (até 6 palavras), troca SECA, palavra falada em dourado #F2C14E, faixa entre y=1250 e y=1520. Nunca sobre o rosto.
+- Etiquetas "😒 DESCONFIADO" (lado esquerdo) e "😎 INVESTIDOR" (lado direito) só na 1ª aparição de cada um, no topo (y≈250), Montserrat Bold.
+- Nada abaixo de y=1560. Sem endereço, número de casa ou placa nos B-rolls.
+
+ÁUDIO: voz a -14 LUFS (limpe ruído/vento). Música padrão da Discovery (musica-padrao-discovery.mp3, pasta "Artes Semana 3") bem baixa por baixo (~-26 LUFS), abaixando nas falas e subindo no cartão final/logo.
+
+ANTES DE SALVAR: me mostre a duração total e prints em 0:02 (gancho), 0:15 (B-roll), 0:36 (tela dividida) e 0:40 (CTA).
+ENTREGA: ale-x-ale.mp4 na pasta "Reels Semana Vendas".
+```
