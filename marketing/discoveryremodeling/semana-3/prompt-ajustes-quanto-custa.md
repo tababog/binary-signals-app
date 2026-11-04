@@ -37,3 +37,6 @@ ENTREGA: qc-drywall-p2-v2.mp4 na pasta "Reels 953 Erie St" até domingo 08/11. C
 
 ## Story de domingo 15/11 (resumo) – já corrigido pelo Claude
 s3-dom-14 agora diz "Drywall (hallway): US$ 1.400". Arquivo novo com música: semana-3/animados/s3-dom-14.mp4 no repositório. Copiar para o Drive (pasta "Artes Semana 3"), substituindo o antigo.
+
+## Story ter 10/11 14h – versão nova (04/11)
+Usar **s3-ter-14-v2.mp4** (Drive id 1LGdaj-mP7SkVFXstZL5jRGCscqPU-geJ, pasta "Artes Semana 3 (09-15nov)"): "Quanto custa o isolamento térmico?" / "De um ambiente (paredes e teto)…". O s3-ter-14.mp4 antigo (1_GmqZ1HSA4MbXtPVFTvVF0MqKlmQLTrg) NÃO deve ser publicado.
