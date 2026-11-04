@@ -4,7 +4,7 @@ Lixo e telhado estão em `prompt-obra-0211-lixo-telhado.md` (já enviado). Abaix
 
 | # | Reel | Dia de postar | Prazo de entrega | Depende de você? |
 |---|---|---|---|---|
-| A | Isolamento p1 e p2 | qua 11 e qui 12, 12h | seg 09/11 | Sim: gravar 2 áudios curtos (texto abaixo) |
+| A | Isolamento p1 e p2 | qua 11 e qui 12, 12h | seg 09/11 | Não: áudios já gravados (03/11) |
 | B | Trompete | ter 10, 19h | sáb 07/11 | Não |
 | C | Ep. 9 da série | qua 11, 19h | ter 10/11 | Não |
 | D | Terrenos p1 e p2 | sex 13 e sáb 14, 19h | qua 11/11 | Não |
@@ -26,7 +26,7 @@ Lixo e telhado estão em `prompt-obra-0211-lixo-telhado.md` (já enviado). Abaix
 ```
 DOIS REELS: "QUANTO CUSTA ISOLAR?" PARTE 1 (quarta 11/11, 12h) E PARTE 2 (quinta 12/11, 12h)
 
-Material: vídeos da obra nas pastas "Casa 953 Erie St" → "obra-01-11" e "Reels Semana Vendas" → "Obra 02-11" (paredes abertas nos studs, isolamento, teto). ÁUDIOS do Alessandro na pasta "Obra 02-11": isolamento-p1-pergunta e isolamento-p2-resposta (gravados no celular). Se os áudios ainda não estiverem lá, me avise e espere; não faça com texto na tela no lugar da voz.
+Material: vídeos da obra nas pastas "Casa 953 Erie St" → "obra-01-11" e "Reels Semana Vendas" → "Obra 02-11" (paredes abertas nos studs, isolamento, teto). ÁUDIOS do Alessandro (gravados em 03/11, já conferidos pelo Claude): baixe de https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-3/audios/isolamento-p1-pergunta.m4a (19 s) e .../isolamento-p2-resposta.m4a (14 s). No áudio 2, CORTE o "E" do começo: a fala começa em "A resposta é 600 dólares". Na legenda escreva "aqui em Elmira" (o áudio diz Elmira) e "mão de obra".
 
 PARTE 1 – qc-isolamento-p1.mp4 (15 a 25 s):
 - Gancho no 1º segundo, terço de cima: "Quanto custa isolar esse quartinho? 🤔".
