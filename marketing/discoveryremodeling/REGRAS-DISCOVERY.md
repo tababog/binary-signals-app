@@ -156,3 +156,5 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - Só leitura: não programa, não roda SQL, não mexe em senha/chave e não fala com as sessões dos apps sem o OK do Alessandro. Cada app continua com a sua própria conversa e as suas regras (não misturar projetos).
 - "Apps TN" = Obrik (Obrik e Obrik Limpeza). TN = Tiene, esposa do Alessandro.
 - **Versões antigas (04/11):** nunca vão para a lixeira. Sempre para a subpasta "antigos" da mesma pasta (ex.: "Reels Semana Vendas/antigos"). Vale para o notebook e para mim.
+- **Equipe da obra de Elmira autorizada (04/11):** os trabalhadores da obra da 953 Erie St (equipe do telhado e da reforma) autorizaram aparecer. NÃO desfocar o rosto deles; deixar natural. Outras pessoas (vizinhos, desconhecidos, quem aparece de fundo) continuam desfocadas.
+- **Prévias para o Alessandro:** todo vídeo para ele aprovar vai salvo como PRÉVIA no Drive (subpasta "previas" da pasta de destino), para ele assistir no celular. Só depois do OK vira a versão final.
