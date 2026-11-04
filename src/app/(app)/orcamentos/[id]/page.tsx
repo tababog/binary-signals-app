@@ -30,7 +30,7 @@ import { getT, type T } from "@/i18n/servidor";
 // A pesquisa de mercado com a IA pode levar 1 a 2 minutos
 export const maxDuration = 300;
 
-type Pergunta = { pergunta: string; opcoes: string[]; resposta?: string };
+type Pergunta = { pergunta: string; opcoes: string[]; multipla?: boolean; resposta?: string };
 type Opcao = OpcaoOrcamento & { itens: ItemOpcao[] };
 
 function Multiplicador({ valor }: { valor: number | null }) {
@@ -126,26 +126,35 @@ export default async function Orcamento({ params }: { params: { id: string } }) 
                   </Formulario>
                 ) : (
                   <Formulario acao={salvarRespostas.bind(null, orc.id)} className="space-y-3">
-                    {perguntas.map((p, i) => (
+                    {perguntas.map((p, i) => {
+                      const marcadas = p.multipla ? (p.resposta ?? "").split(", ") : [p.resposta ?? ""];
+                      const outra = p.multipla ? marcadas.filter((r) => r && !p.opcoes.includes(r)).join(", ") : p.resposta && !p.opcoes.includes(p.resposta) ? p.resposta : "";
+                      return (
                       <fieldset key={i} className="text-sm">
-                        <legend className="mb-1 font-medium">{p.pergunta}</legend>
+                        <legend className="mb-1 font-medium">
+                          {i + 1}. {p.pergunta}
+                          {p.multipla && <span className="ml-1 text-xs font-normal text-stone-500">{t("(pode marcar várias)")}</span>}
+                        </legend>
                         <div className="flex flex-wrap gap-2">
                           {p.opcoes.map((op) => (
                             <label key={op} className="cursor-pointer">
-                              <input type="radio" name={`resposta_${i}`} value={op} defaultChecked={p.resposta === op} className="peer sr-only" />
+                              <input type={p.multipla ? "checkbox" : "radio"} name={`resposta_${i}`} value={op} defaultChecked={marcadas.includes(op)} className="peer sr-only" />
                               <span className="inline-block rounded-full border border-stone-300 bg-white px-3 py-1 peer-checked:border-marca-600 peer-checked:bg-marca-600 peer-checked:text-white">{op}</span>
                             </label>
                           ))}
                         </div>
-                        <input
-                          className="campo mt-2 py-1.5 text-sm"
-                          name={`outra_${i}`}
-                          defaultValue={p.resposta && !p.opcoes.includes(p.resposta) ? p.resposta : ""}
-                          placeholder={t("Outra resposta")}
-                        />
+                        <input className="campo mt-2 py-1.5 text-sm" name={`outra_${i}`} defaultValue={outra} placeholder={t("Outra resposta")} />
                       </fieldset>
-                    ))}
+                      );
+                    })}
                     <BotaoEnviar className="botao-secundario">{t("Salvar respostas")}</BotaoEnviar>
+                  </Formulario>
+                )}
+                {perguntas.length > 0 && (
+                  <Formulario acao={prepararPerguntas.bind(null, orc.id)} className="mt-2">
+                    <BotaoEnviar className="text-xs font-medium text-marca-700" aguardando={t("Preparando perguntas...")} confirmar={t("Fazer as perguntas de novo? As respostas atuais se perdem.")}>
+                      {t("Refazer as perguntas")}
+                    </BotaoEnviar>
                   </Formulario>
                 )}
               </div>

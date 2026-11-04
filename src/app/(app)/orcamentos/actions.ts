@@ -13,7 +13,7 @@ import { gerarPerguntas, precosDeMaterial, sugerirOrcamento, type DadosPrecifica
 import { dinheiro } from "@/lib/format";
 import type { EstadoForm } from "@/components/Formulario";
 
-type Pergunta = { pergunta: string; opcoes: string[]; resposta?: string };
+type Pergunta = { pergunta: string; opcoes: string[]; multipla?: boolean; resposta?: string };
 
 function atualizar(id: string) {
   revalidatePath("/orcamentos");
@@ -234,7 +234,13 @@ export async function salvarRespostas(id: string, _e: EstadoForm, form: FormData
   const perguntas: Pergunta[] = orc.perguntas ? JSON.parse(orc.perguntas) : [];
   perguntas.forEach((p, i) => {
     const outra = String(form.get(`outra_${i}`) ?? "").trim();
-    p.resposta = outra || String(form.get(`resposta_${i}`) ?? "").trim() || undefined;
+    if (p.multipla) {
+      // Várias marcadas (ex.: paredes, teto, rodapés) mais o que foi escrito em "Outra resposta"
+      const marcadas = form.getAll(`resposta_${i}`).map(String).filter((r) => p.opcoes.includes(r));
+      p.resposta = [...marcadas, outra].filter(Boolean).join(", ") || undefined;
+    } else {
+      p.resposta = outra || String(form.get(`resposta_${i}`) ?? "").trim() || undefined;
+    }
   });
   await db.orcamento.update({ where: { id }, data: { perguntas: JSON.stringify(perguntas) } });
   atualizar(id);

@@ -100,13 +100,14 @@ function descreverTrabalho(d: DadosPrecificacao) {
     .join("\n");
 }
 
-const Perguntas = z.object({ perguntas: z.array(z.object({ pergunta: z.string(), opcoes: z.array(z.string()) })) });
+const Perguntas = z.object({ perguntas: z.array(z.object({ pergunta: z.string(), opcoes: z.array(z.string()), multipla: z.boolean() })) });
 
 const IDIOMA_PERGUNTAS = { pt: "Brazilian Portuguese", en: "American English", es: "Latin American Spanish" } as const;
 
 /**
- * Antes da pesquisa: perguntas sobre o trabalho que mudam o preço (material, tamanho, acesso, demolição, permit...),
- * cada uma com respostas prontas para tocar. No idioma de quem está montando o orçamento.
+ * Antes da pesquisa: o maior número de perguntas que mudam o preço, para ter certeza do escopo (o que entra e o que
+ * não entra, preparo, retirada do que existe, reparos, acabamentos, móveis, material, medidas, acesso...). Cada uma com
+ * respostas prontas para tocar; as de lista ("o que vai pintar?") aceitam várias. No idioma de quem monta o orçamento.
  */
 export async function gerarPerguntas(d: DadosPrecificacao, idioma: keyof typeof IDIOMA_PERGUNTAS) {
   const c = api();
@@ -117,15 +118,27 @@ export async function gerarPerguntas(d: DadosPrecificacao, idioma: keyof typeof 
       max_tokens: 8000,
       betas: ["server-side-fallback-2026-07-01"],
       fallbacks: "default",
-      output_config: { effort: "low", format: betaZodOutputFormat(Perguntas) },
-      system: `You help a Connecticut remodeling contractor price a job. Ask the questions whose answers change the
-cost or the price the most for this kind of job (materials and grade, exact dimensions, height/stories, access,
-demolition and disposal of what exists, railings/stairs/trim details, permits, who supplies fixtures, timeline...).
-Ask between 4 and 8 short questions, skip anything the job data already answers, and give 2 to 5 short typical
-answers for each so the contractor can tap one. Write in ${IDIOMA_PERGUNTAS[idioma]}.`,
+      output_config: { effort: "medium", format: betaZodOutputFormat(Perguntas) },
+      system: `You help a Connecticut remodeling contractor price a job. Before any price, make sure you know EXACTLY what
+is being quoted: ask as many questions as needed to pin down the full scope, between 10 and 20 short questions.
+Think like an experienced estimator walking the job and cover, for this specific trade:
+- what exactly is included and what is not (every surface, part or element of the job);
+- removal/demolition of what exists, haul-away and disposal;
+- surface preparation and repairs (patching, holes, cracks, leveling, rot, sanding, priming...);
+- trims, transitions and finishing details that are easy to forget;
+- protection, furniture to move, occupied home, access, stairs/height, parking;
+- condition of the existing work, materials and grade, who supplies them, colors/finish count;
+- exact measurements or counts, permits/inspections, timeline.
+Examples of the depth expected. Painting a room: walls? ceiling? trims? baseboards? doors and frames? closets? how many
+colors? much furniture to move? nail/screw holes and patches to fix? Laminate floor: remove the old floor (what type)?
+remove and reinstall baseboards or new ones? add shoe molding/quarter round? subfloor prep and leveling? underlayment?
+transitions and thresholds? stairs? move furniture and appliances?
+Skip anything the job data already answers. For each question give 2 to 6 short typical answers to tap. Set
+"multipla" to true when several answers can apply together (e.g. "What will be painted?" walls, ceiling, trims,
+doors), false when only one applies. Write in ${IDIOMA_PERGUNTAS[idioma]}.`,
       messages: [{ role: "user", content: descreverTrabalho(d) }],
     });
-    return r.parsed_output?.perguntas.slice(0, 8) ?? null;
+    return r.parsed_output?.perguntas.slice(0, 20) ?? null;
   } catch (e) {
     if (e instanceof Anthropic.APIError) throw new Error(`A API da Anthropic respondeu com erro (${e.status}). Tente de novo.`);
     throw e;

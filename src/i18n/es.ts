@@ -834,5 +834,8 @@ const es: Record<string, string> = {
   "Pronto: mercado pesquisado, sugestão de preço e material das duas opções. Agora coloque a mão de obra.": "Listo: mercado investigado, sugerencia de precio y material de las dos opciones. Ahora agrega la mano de obra.",
   "Busca Thumbtack, Angi/HomeAdvisor, HomeGuide, Homewyse e Home Depot/Lowe's para {cidade}: dá o preço que se cobra na região por cada opção (valor exato e faixa estreita) e lança o material de Essential e Premium, com as fontes. A mão de obra você coloca. Leva 1 a 2 minutos.": "Busca en Thumbtack, Angi/HomeAdvisor, HomeGuide, Homewyse y Home Depot/Lowe's para {cidade}: da el precio que se cobra en la región por cada opción (valor exacto y rango estrecho) y agrega el material de Essential y Premium, con las fuentes. La mano de obra la pones tú. Tarda 1 a 2 minutos.",
   "Trocar o material sugerido antes pela IA? A mão de obra e o que você lançou ficam.": "¿Reemplazar el material que sugirió la IA antes? La mano de obra y lo que tú agregaste se quedan.",
+  "(pode marcar várias)": "(puedes marcar varias)",
+  "Fazer as perguntas de novo? As respostas atuais se perdem.": "¿Hacer las preguntas de nuevo? Las respuestas actuales se pierden.",
+  "Refazer as perguntas": "Rehacer las preguntas",
 };
 export default es;
