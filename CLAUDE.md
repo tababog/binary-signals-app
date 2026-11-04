@@ -68,9 +68,12 @@ Conversa com o usuário em português; telas internas em português.
        mínimo para 2x, filtro Fairfield County x resto de CT; obra concluída vira referência com os números reais
        (`src/lib/referencia-obra.ts`). A etapa 6 deve consultar `resumirPorServico` antes do preço de mercado.
 - [x] 6. Precificação (página *Orçamentos*, `/orcamentos`): orçamento com duas opções (Essential/Premium), itens de
-       custo por categoria, dias × custo fixo/dia, preço sugerido 2x, preço final e multiplicador (`src/lib/orcamento.ts`);
+       custo por categoria, dias × custo fixo/dia, preço sugerido pelo mercado da região (valor exato + faixa estreita,
+       sem olhar o custo; o Alessandro decide), preço mínimo para 2x só como alerta, preço final e multiplicador
+       (`src/lib/orcamento.ts`);
        referências do histórico (`referenciaHistorico`) e do mercado. IA (`src/lib/precificacao-ia.ts`, Claude com busca
-       na web): perguntas sobre o trabalho, pesquisa de mercado com fontes e data + sugestão das duas opções, e preço da
+       na web): perguntas sobre o trabalho, pesquisa de mercado com fontes e data + preço de mercado e material das duas opções (a IA não lança mão
+       de obra: o Alessandro coloca), e preço da
        lista de material na Home Depot/Lowe's (usa o menor, guarda os dois e o link). Textos para o cliente em inglês.
 - [ ] 7. Portfólio da empresa: quem somos, Alessandro e Emmanuel, anos de mercado, fotos de trabalhos por categoria
        (cabinets, drywall, etc.).
