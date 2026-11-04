@@ -165,3 +165,6 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - Semanas por MÊS: "Novembro S1, S2, S3, S4", depois "Dezembro S1"... Semana = segunda a domingo; ela pertence ao mês em que tem mais dias (ex.: 30/11 a 06/12 = Dezembro S1).
 - Novembro 2026: **S1 = 02 a 08/11** (a antiga "semana 2", de vendas) · **S2 = 09 a 15/11** (antiga "semana 3") · **S3 = 16 a 22/11** (antiga "semana 4") · **S4 = 23 a 29/11** · Dezembro S1 = 30/11 a 06/12.
 - As pastas antigas do repositório (semana-vendas, semana-3, semana-4) ficam com o nome antigo para não quebrar links; as novas serão "2026-11-S4", "2026-12-S1" etc. Nas conversas, painéis e e-mails, usar só o nome novo.
+
+## Windsor instável (aprendido em 04/11)
+- Se a publicação der timeout E o get_data não mostrar nem posts que com certeza saíram (lista atrasada), NÃO reenviar: perguntar ao Alessandro o que aparece no perfil (resposta curta, ex.: "Casa 2: 1 · story: sim"). Em 04/11 o Reel saiu na 2ª tentativa e o story na 1ª, apesar dos timeouts.
