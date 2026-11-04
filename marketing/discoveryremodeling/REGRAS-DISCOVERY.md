@@ -154,4 +154,4 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 ## Agente dos Aplicativos (definido em 04/11)
 - Rotina toda segunda 7h37 (Connecticut): confere se PS Log (pslog.netlify.app), Duo Life (duo-life-rouge.vercel.app), Tababog Obras e Obrik/Obrik Limpeza estão no ar, lê o andamento nas conversas e painéis de cada app, atualiza a pasta "Aplicativos" da Central e manda o e-mail "Aplicativos · semana".
 - Só leitura: não programa, não roda SQL, não mexe em senha/chave e não fala com as sessões dos apps sem o OK do Alessandro. Cada app continua com a sua própria conversa e as suas regras (não misturar projetos).
-- "Apps TN": ainda não identificado (provável Obrik); pergunta na Central.
+- "Apps TN" = Obrik (Obrik e Obrik Limpeza). TN = Tiene, esposa do Alessandro.
