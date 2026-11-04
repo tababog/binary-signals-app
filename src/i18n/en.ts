@@ -834,5 +834,8 @@ const en: Record<string, string> = {
   "Pronto: mercado pesquisado, sugestão de preço e material das duas opções. Agora coloque a mão de obra.": "Done: market researched, price suggestion and materials for both options. Now add the labor.",
   "Busca Thumbtack, Angi/HomeAdvisor, HomeGuide, Homewyse e Home Depot/Lowe's para {cidade}: dá o preço que se cobra na região por cada opção (valor exato e faixa estreita) e lança o material de Essential e Premium, com as fontes. A mão de obra você coloca. Leva 1 a 2 minutos.": "Searches Thumbtack, Angi/HomeAdvisor, HomeGuide, Homewyse and Home Depot/Lowe's for {cidade}: gives the price charged in the area for each option (exact value and narrow range) and adds the materials for Essential and Premium, with sources. You add the labor. Takes 1 to 2 minutes.",
   "Trocar o material sugerido antes pela IA? A mão de obra e o que você lançou ficam.": "Replace the materials the AI suggested before? Labor and what you entered stay.",
+  "(pode marcar várias)": "(you can pick several)",
+  "Fazer as perguntas de novo? As respostas atuais se perdem.": "Ask the questions again? The current answers will be lost.",
+  "Refazer as perguntas": "Ask the questions again",
 };
 export default en;
