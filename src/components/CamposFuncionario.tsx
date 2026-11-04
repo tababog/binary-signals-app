@@ -17,6 +17,7 @@ type Funcionario = {
   idioma: string;
   tipoDocumento: string | null;
   documento: string | null;
+  podeEnviarRecibos?: boolean;
 };
 
 export function CamposFuncionario({ valor, novo, vinculoInicial }: { valor?: Funcionario; novo?: boolean; vinculoInicial?: string }) {
@@ -75,6 +76,13 @@ export function CamposFuncionario({ valor, novo, vinculoInicial }: { valor?: Fun
           <option value="ADMIN">{t("Administrador (acesso total)")}</option>
         </select>
       </Campo>
+      <label className="flex items-start gap-2 sm:col-span-2">
+        <input type="checkbox" name="podeEnviarRecibos" defaultChecked={valor?.podeEnviarRecibos ?? false} className="mt-1 h-5 w-5" />
+        <span>
+          <b>{t("Pode enviar recibos de material")}</b>
+          <span className="block text-sm text-stone-500">{t("Vê as obras em aberto e manda a foto do recibo do que comprou, sem ver nenhum valor. Você confere e lança a despesa.")}</span>
+        </span>
+      </label>
       <Campo rotulo={novo ? t("Senha inicial (opcional)") : t("Nova senha (deixe em branco para manter)")}>
         <input className="campo" name="senha" type="text" autoComplete="new-password" minLength={6} />
         {novo && (

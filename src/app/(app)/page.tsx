@@ -12,6 +12,7 @@ import { SeloLocal } from "@/components/SeloLocal";
 import { temAlertaLocal } from "@/lib/geo";
 import { getT } from "@/i18n/servidor";
 import { fecharPonto, lancarRegistroManual, trocarObraRegistro } from "./registros/actions";
+import { descartarRecibo } from "./recibos/actions";
 import { BotaoEnviar } from "@/components/BotaoEnviar";
 
 export default async function Painel() {
@@ -21,7 +22,7 @@ export default async function Painel() {
 
   const seteDias = new Date(Date.now() - 7 * 24 * 3600 * 1000);
   const fimDeHoje = new Date(lerDataHora(`${campoData(new Date())}T23:59`)!.getTime() + 60_000);
-  const [obras, naObra, ultimos, recentes, visitas, followUps, equipe] = await Promise.all([
+  const [obras, naObra, ultimos, recentes, visitas, followUps, equipe, recibos] = await Promise.all([
     db.obra.findMany({ where: { status: { not: "CONCLUIDA" } }, include: { cliente: true }, orderBy: { criadoEm: "desc" } }),
     db.registroPonto.findMany({ where: { saida: null }, include: { usuario: true, obra: true }, orderBy: { entrada: "asc" } }),
     db.lancamento.findMany({ include: { obra: true }, orderBy: { criadoEm: "desc" }, take: 8 }),
@@ -34,6 +35,8 @@ export default async function Painel() {
       orderBy: { dataPrevista: "asc" },
     }),
     db.usuario.findMany({ where: { ativo: true }, orderBy: { nome: "asc" }, select: { id: true, nome: true } }),
+    // Recibos de material que a equipe mandou e ainda não viraram despesa
+    db.reciboFuncionario.findMany({ where: { lancadoEm: null }, include: { usuario: { select: { nome: true } }, obra: { select: { nome: true } } }, orderBy: { criadoEm: "asc" } }),
   ]);
   const agora = new Date();
   const alertas = recentes.filter(temAlertaLocal);
@@ -135,6 +138,31 @@ export default async function Painel() {
               </Formulario>
             </details>
           </div>
+          {recibos.length > 0 && (
+            <div className="cartao border-amber-200 bg-amber-50">
+              <h2 className="mb-2">{t("🧾 Recibos da equipe para lançar ({n})", { n: recibos.length })}</h2>
+              <ul className="divide-y divide-amber-100 text-sm">
+                {recibos.map((r) => (
+                  <li key={r.id} className="flex items-center justify-between gap-2 py-2">
+                    <span className="min-w-0">
+                      <b>{r.usuario.nome}</b> · {r.obra.nome}
+                      <span className="block text-stone-600">
+                        {data(r.criadoEm)}
+                        {r.descricao ? ` · ${r.descricao}` : ""}
+                        {r.pagoDoBolso && <b className="text-amber-900"> · {t("reembolsar")}</b>}
+                      </span>
+                    </span>
+                    <span className="flex shrink-0 items-center gap-1">
+                      <Link href={`/obras/${r.obraId}/despesa?recibo=${r.id}`} className="botao px-3 py-1.5 text-sm">{t("Lançar")}</Link>
+                      <form action={descartarRecibo.bind(null, r.id)}>
+                        <BotaoEnviar className="px-2 py-1 text-xs text-stone-500" confirmar={t("Descartar este recibo?")}>{t("Descartar")}</BotaoEnviar>
+                      </form>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
           {alertas.length > 0 && (
             <div className="cartao border-red-200 bg-red-50">
               <h2 className="mb-2">{t("⚠ Ponto fora da obra (7 dias)")}</h2>

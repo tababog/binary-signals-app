@@ -32,6 +32,8 @@ model Usuario {
   tipoDocumento  String?
   documento      String?
   ativo          Boolean  @default(true)
+  // Funcionário que compra material: manda a foto do recibo da obra (sem ver valores); o administrador lança a despesa
+  podeEnviarRecibos Boolean @default(false)
   criadoEm       DateTime @default(now())
   // Link de convite / redefinição de senha: guarda só o hash SHA-256 do token enviado ao funcionário
   conviteHash    String?
@@ -40,6 +42,7 @@ model Usuario {
   registros      RegistroPonto[]
   lancamentos    Lancamento[]
   visitas        Visita[]
+  recibos        ReciboFuncionario[]
 
   @@index([conviteHash])
 }
@@ -104,6 +107,7 @@ model Obra {
   orcamento       ItemOrcamento[]
   lancamentos     Lancamento[]
   registros       RegistroPonto[]
+  recibos         ReciboFuncionario[]
   referencia      TrabalhoReferencia?
   orcamentos      Orcamento[]
 }
@@ -350,4 +354,22 @@ model ItemOpcao {
   // De onde veio o preço (ex.: "Home Depot $34.98 · Lowe's $36.48 · 2026-10-28") e o link do produto
   fonte         String?
   fonteUrl      String?
+}
+
+// Recibo de material que o funcionário comprou para a obra. Ele só manda a foto (e o que comprou); o administrador
+// confere e lança a despesa, que fica ligada aqui (lancamentoId). pagoDoBolso = o funcionário pagou e precisa de reembolso.
+model ReciboFuncionario {
+  id           String    @id @default(cuid())
+  obraId       String
+  obra         Obra      @relation(fields: [obraId], references: [id], onDelete: Cascade)
+  usuarioId    String
+  usuario      Usuario   @relation(fields: [usuarioId], references: [id])
+  arquivo      String
+  descricao    String?
+  pagoDoBolso  Boolean   @default(false)
+  criadoEm     DateTime  @default(now())
+  lancamentoId String?
+  lancadoEm    DateTime?
+
+  @@index([lancadoEm])
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { db } from "@/lib/db";
 import { exigirUsuario } from "@/lib/auth";
 import { data, dataHora, hora, horas, inicioDoMes } from "@/lib/format";
@@ -29,6 +30,9 @@ export default async function Ponto() {
         <div className="cartao">
           <BaterPonto obras={obras} aberto={aberto ? { obraId: aberto.obraId, obra: aberto.obra.nome, desde: dataHora(aberto.entrada) } : null} />
         </div>
+        {usuario.podeEnviarRecibos && (
+          <Link href="/recibos" className="botao-secundario block text-center">{t("🧾 Enviar recibo de material")}</Link>
+        )}
         <div className="grid grid-cols-2 gap-3">
           <Indicador rotulo={t("Hoje")} valor={horas(msHoje)} />
           <Indicador rotulo={t("Este mês")} valor={horas(msMes)} detalhe={t("{n} dia(s)", { n: new Set(fechados.map((r) => data(r.entrada))).size })} />

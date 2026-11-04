@@ -27,6 +27,7 @@ function dadosFuncionario(form: FormData) {
     vinculo: form.get("vinculo") === "HELPER" ? "HELPER" : "FIXO",
     papel: form.get("papel") === "ADMIN" ? "ADMIN" : "FUNCIONARIO",
     idioma: idiomaValido(form.get("idioma")) ? (form.get("idioma") as string) : "pt",
+    podeEnviarRecibos: form.get("podeEnviarRecibos") === "on",
     // Helper precisa do ITIN/SSN (ou EIN) para o 1099
     fiscal: documentoDoFormulario(form, form.get("vinculo") === "HELPER"),
   };

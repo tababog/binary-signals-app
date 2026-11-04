@@ -25,7 +25,7 @@ export default async function LayoutApp({ children }: { children: React.ReactNod
         { href: "/empresa", rotulo: t("Empresa") },
         { href: "/ponto", rotulo: t("Meu ponto") },
       ]
-    : [{ href: "/ponto", rotulo: t("Meu ponto") }];
+    : [{ href: "/ponto", rotulo: t("Meu ponto") }, ...(usuario.podeEnviarRecibos ? [{ href: "/recibos", rotulo: t("Enviar recibo") }] : [])];
 
   return (
     <div className="min-h-screen">
