@@ -837,5 +837,10 @@ const en: Record<string, string> = {
   "(pode marcar várias)": "(you can pick several)",
   "Fazer as perguntas de novo? As respostas atuais se perdem.": "Ask the questions again? The current answers will be lost.",
   "Refazer as perguntas": "Ask the questions again",
+  "Algo deu errado nesta tela": "Something went wrong on this screen",
+  "Pode ser o app aberto com a versão anterior depois de uma atualização. Recarregue para continuar.": "The app may still be open on the previous version after an update. Reload to continue.",
+  "Recarregar": "Reload",
+  "Tentar de novo": "Try again",
+  "Voltar ao início": "Back to start",
 };
 export default en;
