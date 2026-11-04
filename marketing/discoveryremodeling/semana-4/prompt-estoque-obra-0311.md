@@ -36,3 +36,12 @@ REGRAS DE SEMPRE (todos): 1080x1920, 30 fps; legenda karaokê Montserrat ExtraBo
 ANTES DE SALVAR: me mostre a duração e 1 print de cada.
 ENTREGA: os 4 arquivos em "Reels Semana Vendas" até sexta 13/11.
 ```
+
+## Finais aprovados (04/11) – Novembro S3 (16 a 22/11)
+Pasta "Reels Semana Vendas". Ajustes feitos: trabalhador do telhado sem desfoque (equipe de Elmira) e parede do t1 com 1 s dos studs do qc-isolamento-p1.
+| Reel | Drive id |
+|---|---|
+| t1-ninguem-conta.mp4 | 1ym3GhFuVEIrte8cAkUSKyebdclGTpdtf |
+| t2-dia-na-obra.mp4 | 1HdnsrCUEIhanO0mwepYj4VpH4CZ3FxF2 |
+| t4-quanto-tempo.mp4 | 1B04M3-YkZARHmO4BnzPkyHw4RrYa6ZOg |
+| t5-surpresa.mp4 | 1H9zZPocBy-m0vd0y5flVFLlKXLcGutlP |
