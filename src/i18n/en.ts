@@ -823,5 +823,16 @@ const en: Record<string, string> = {
   "reembolsar": "reimburse",
   "🧾 Enviar recibo de material": "🧾 Send material receipt",
   "🧾 Recibos da equipe para lançar ({n})": "🧾 Team receipts to record ({n})",
+  "Pode cobrar de {min} a {max}.": "You can charge from {min} to {max}.",
+  "Preço mínimo para 2x o custo": "Minimum price for 2x cost",
+  "Preço para o cliente (vazio = sugestão de mercado)": "Price for the client (blank = market suggestion)",
+  "Sem sugestão de preço ainda: use \"Pesquisar e sugerir\" para a pesquisa de mercado.": "No price suggestion yet: use \"Research and suggest\" for the market research.",
+  "Sugestão de mercado para esta opção: {valor}": "Market suggestion for this option: {valor}",
+  "Sugestão de mercado": "Market suggestion",
+  "faixa {min} – {max}": "range {min} – {max}",
+  "sugestão de mercado": "market suggestion",
+  "Pronto: mercado pesquisado, sugestão de preço e material das duas opções. Agora coloque a mão de obra.": "Done: market researched, price suggestion and materials for both options. Now add the labor.",
+  "Busca Thumbtack, Angi/HomeAdvisor, HomeGuide, Homewyse e Home Depot/Lowe's para {cidade}: dá o preço que se cobra na região por cada opção (valor exato e faixa estreita) e lança o material de Essential e Premium, com as fontes. A mão de obra você coloca. Leva 1 a 2 minutos.": "Searches Thumbtack, Angi/HomeAdvisor, HomeGuide, Homewyse and Home Depot/Lowe's for {cidade}: gives the price charged in the area for each option (exact value and narrow range) and adds the materials for Essential and Premium, with sources. You add the labor. Takes 1 to 2 minutes.",
+  "Trocar o material sugerido antes pela IA? A mão de obra e o que você lançou ficam.": "Replace the materials the AI suggested before? Labor and what you entered stay.",
 };
 export default en;

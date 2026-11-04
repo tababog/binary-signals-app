@@ -252,7 +252,8 @@ export async function sugerirOpcoes(id: string, _e: EstadoForm): Promise<EstadoF
     await db.$transaction([
       db.orcamento.update({ where: { id }, data: { mercado: JSON.stringify(s.mercado) } }),
       ...opcoes.slice(0, 2).flatMap((o, i) => [
-        db.itemOpcao.deleteMany({ where: { opcaoId: o.id } }),
+        // Troca só os itens que a IA tinha sugerido; a mão de obra e o que o Alessandro lançou ficam
+        db.itemOpcao.deleteMany({ where: { opcaoId: o.id, fonte: { in: ["Sugestão da IA", "AI suggestion", "Sugerencia de la IA"] } } }),
         db.opcaoOrcamento.update({
           where: { id: o.id },
           data: {
@@ -260,6 +261,9 @@ export async function sugerirOpcoes(id: string, _e: EstadoForm): Promise<EstadoF
             descricao: s.opcoes[i].descricao,
             diasPrevistos: s.opcoes[i].diasPrevistos,
             precoCent: 0,
+            precoMercadoCent: s.opcoes[i].precoMercadoCent,
+            precoMercadoMinCent: s.opcoes[i].precoMercadoMinCent,
+            precoMercadoMaxCent: s.opcoes[i].precoMercadoMaxCent,
             itens: { create: s.opcoes[i].itens.map((item, ordem) => ({ ...item, ordem, fonte: t("Sugestão da IA") })) },
           },
         }),
@@ -269,7 +273,7 @@ export async function sugerirOpcoes(id: string, _e: EstadoForm): Promise<EstadoF
     return { erro: t((e as Error).message) };
   }
   atualizar(id);
-  return { ok: t("Pronto: mercado pesquisado e as duas opções sugeridas. Confira os itens e os preços.") };
+  return { ok: t("Pronto: mercado pesquisado, sugestão de preço e material das duas opções. Agora coloque a mão de obra.") };
 }
 
 /** Busca na Home Depot e na Lowe's o preço da lista de material digitada e lança como itens de material. */

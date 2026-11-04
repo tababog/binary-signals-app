@@ -99,7 +99,8 @@ export default async function Orcamento({ params }: { params: { id: string } }) 
         {orc.opcoes.map((o, i) => (
           <a key={o.id} href={`#opcao-${o.id}`} className="cartao block">
             <div className="text-xs font-medium uppercase tracking-wide text-stone-500">{t("Opção {n}", { n: i + 1 })} · {o.nome}</div>
-            <div className="mt-1 text-xl font-bold tabular-nums">{calculos[i].custoTotal > 0 ? dinheiro(calculos[i].preco) : "—"}</div>
+            <div className="mt-1 text-xl font-bold tabular-nums">{calculos[i].preco > 0 ? dinheiro(calculos[i].preco) : "—"}</div>
+            {!calculos[i].precoDefinido && calculos[i].precoSugerido > 0 && <div className="text-xs text-stone-500">{t("sugestão de mercado")}</div>}
             <div className="mt-1 flex items-center gap-2 text-xs text-stone-500">
               <Multiplicador valor={calculos[i].multiplicador} />
               {calculos[i].custoTotal > 0 && t("custo {valor}", { valor: dinheiro(calculos[i].custoTotal) })}
@@ -151,12 +152,12 @@ export default async function Orcamento({ params }: { params: { id: string } }) 
               <div>
                 <h3 className="text-sm font-semibold">{t("2. Pesquisar o mercado e sugerir as duas opções")}</h3>
                 <p className="mb-2 text-xs text-stone-500">
-                  {t("Busca Thumbtack, Angi/HomeAdvisor, HomeGuide, Homewyse e Home Depot/Lowe's para {cidade}, monta Essential e Premium com itens de custo e dias, e guarda as fontes. Leva 1 a 2 minutos. Troca os itens atuais das duas opções.", { cidade: orc.cidade || "Connecticut" })}
+                  {t("Busca Thumbtack, Angi/HomeAdvisor, HomeGuide, Homewyse e Home Depot/Lowe's para {cidade}: dá o preço que se cobra na região por cada opção (valor exato e faixa estreita) e lança o material de Essential e Premium, com as fontes. A mão de obra você coloca. Leva 1 a 2 minutos.", { cidade: orc.cidade || "Connecticut" })}
                 </p>
                 <Formulario acao={sugerirOpcoes.bind(null, orc.id)} className="space-y-2">
                   <BotaoEnviar
                     aguardando={t("Pesquisando... (1 a 2 minutos)")}
-                    confirmar={orc.opcoes.some((o) => o.itens.length) ? t("Trocar os itens das duas opções pela sugestão da IA?") : undefined}
+                    confirmar={orc.opcoes.some((o) => o.itens.length) ? t("Trocar o material sugerido antes pela IA? A mão de obra e o que você lançou ficam.") : undefined}
                   >
                     {mercado ? t("Pesquisar de novo") : t("Pesquisar e sugerir")}
                   </BotaoEnviar>
@@ -221,12 +222,10 @@ function Referencias({
       {mercado ? (
         <div className="text-sm">
           <p className="text-xs text-stone-500">{t("Consulta de {data} · {cidade}", { data: mercado.consultadoEm.split("-").reverse().join("/"), cidade: mercado.cidade || "CT" })}</p>
-          <p className="mt-1">
-            {t("Faixa de preço: {baixa} – {alta}", { baixa: dinheiro(mercado.faixaBaixaCent), alta: dinheiro(mercado.faixaAltaCent) })}
-            {mercado.porUnidade && quantidade > 0 && (
-              <span className="text-stone-500"> · {t("{baixa} – {alta} por {unidade}", { baixa: dinheiro(mercado.porUnidade.baixaCent), alta: dinheiro(mercado.porUnidade.altaCent), unidade })}</span>
-            )}
-          </p>
+          {/* O preço sugerido de cada opção (valor exato e faixa estreita) fica no quadro da opção */}
+          {mercado.porUnidade && quantidade > 0 && (
+            <p className="mt-1 text-stone-500">{t("{baixa} – {alta} por {unidade}", { baixa: dinheiro(mercado.porUnidade.baixaCent), alta: dinheiro(mercado.porUnidade.altaCent), unidade })}</p>
+          )}
           <p className="mt-1 text-stone-600"><TextoUsuario texto={mercado.resumo} /></p>
           {mercado.fontes.length > 0 && (
             <ul className="mt-2 space-y-1 text-xs">
@@ -263,8 +262,16 @@ function OpcaoCard({ t, opcao, calc, numero, outra, custoDia, ia }: { t: T; opca
           </Campo>
         </div>
         <div className="col-span-2">
-          <Campo rotulo={t("Preço para o cliente (vazio = sugerido {valor})", { valor: dinheiro(calc.precoSugerido) })}>
-            <input className="campo" name="preco" inputMode="decimal" defaultValue={calc.precoDefinido ? centavosParaCampo(opcao.precoCent) : ""} placeholder={centavosParaCampo(calc.precoSugerido)} />
+          {calc.precoSugerido > 0 ? (
+            <p className="mb-2 rounded-lg bg-sky-50 p-2 text-sm text-sky-900">
+              {t("Sugestão de mercado para esta opção: {valor}", { valor: dinheiro(calc.precoSugerido) })}
+              {calc.faixaMercado && <span className="block text-xs">{t("Pode cobrar de {min} a {max}.", { min: dinheiro(calc.faixaMercado.min), max: dinheiro(calc.faixaMercado.max) })}</span>}
+            </p>
+          ) : (
+            <p className="mb-2 text-xs text-stone-500">{t("Sem sugestão de preço ainda: use \"Pesquisar e sugerir\" para a pesquisa de mercado.")}</p>
+          )}
+          <Campo rotulo={calc.precoSugerido > 0 ? t("Preço para o cliente (vazio = sugestão de mercado)") : t("Preço para o cliente")}>
+            <input className="campo" name="preco" inputMode="decimal" defaultValue={calc.precoDefinido ? centavosParaCampo(opcao.precoCent) : ""} placeholder={calc.precoSugerido > 0 ? centavosParaCampo(calc.precoSugerido) : "0.00"} />
           </Campo>
         </div>
         <div className="col-span-2"><BotaoEnviar className="botao-secundario">{t("Salvar opção")}</BotaoEnviar></div>
@@ -345,7 +352,16 @@ function OpcaoCard({ t, opcao, calc, numero, outra, custoDia, ia }: { t: T; opca
             <td className="text-right tabular-nums">{dinheiro(calc.custoFixo)}</td>
           </tr>
           <tr className="font-semibold"><td>{t("Custo total")}</td><td className="text-right tabular-nums">{dinheiro(calc.custoTotal)}</td></tr>
-          <tr><td>{t("Preço sugerido (2x o custo)")}</td><td className="text-right tabular-nums">{dinheiro(calc.precoSugerido)}</td></tr>
+          {calc.precoSugerido > 0 && (
+            <tr>
+              <td>
+                {t("Sugestão de mercado")}
+                {calc.faixaMercado && <span className="block text-xs text-stone-500">{t("faixa {min} – {max}", { min: dinheiro(calc.faixaMercado.min), max: dinheiro(calc.faixaMercado.max) })}</span>}
+              </td>
+              <td className="text-right tabular-nums">{dinheiro(calc.precoSugerido)}</td>
+            </tr>
+          )}
+          <tr className="text-stone-500"><td>{t("Preço mínimo para 2x o custo")}</td><td className="text-right tabular-nums">{dinheiro(calc.precoMinimo2x)}</td></tr>
           <tr className="text-base font-bold">
             <td>{t("Preço para o cliente")}</td>
             <td className="text-right tabular-nums">{dinheiro(calc.preco)}</td>

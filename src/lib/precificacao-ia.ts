@@ -28,7 +28,8 @@ export type DadosPrecificacao = {
   custoFixoPorDia: number;
 };
 
-const categorias = Object.keys(CATEGORIAS_DESPESA) as [keyof typeof CATEGORIAS_DESPESA, ...(keyof typeof CATEGORIAS_DESPESA)[]];
+// A IA lança só o material e o que vem com ele; a mão de obra (equipe, instalação, subempreiteiros) quem coloca é o Alessandro.
+const categorias = ["MATERIAL", "ENTREGA", "EQUIPAMENTO", "LICENCA", "DESCARTE"] as const satisfies readonly (keyof typeof CATEGORIAS_DESPESA)[];
 
 const Sugestao = z.object({
   mercado: z.object({
@@ -44,6 +45,9 @@ const Sugestao = z.object({
       nome: z.string(),
       descricao: z.string(),
       dias_previstos: z.number(),
+      preco_recomendado_usd: z.number(),
+      preco_minimo_usd: z.number(),
+      preco_maximo_usd: z.number(),
       itens: z.array(
         z.object({
           categoria: z.enum(categorias),
@@ -63,6 +67,9 @@ export type SugestaoPrecificacao = {
     nome: string;
     descricao: string;
     diasPrevistos: number;
+    precoMercadoCent: number;
+    precoMercadoMinCent: number;
+    precoMercadoMaxCent: number;
     itens: { categoria: string; descricao: string; quantidade: number; unidade: string; custoUnitCent: number }[];
   }[];
 };
@@ -171,7 +178,8 @@ ${descreverTrabalho(d)}
 Research the current market price for this job in this town/county using US cost guides (Thumbtack, Angi/HomeAdvisor,
 HomeGuide, Homewyse) and current material prices at Home Depot and Lowe's. Prices in Fairfield County are usually
 higher than in the rest of Connecticut, so prefer data for this area or adjust national figures and say how.
-Report: the typical total price range for this size, the price per unit when it applies, the main materials with
+Report: what contractors in this area CHARGE the client for this job and size (the selling price, for a budget version
+and for an upgraded version), the price per unit when it applies, the main materials with
 unit prices (budget and premium grades), typical labor cost and crew days, and permits/dumpster/delivery if usual.
 Cite each number with its source name and URL. Be concise.`,
     6,
@@ -189,14 +197,18 @@ async function organizar(c: Anthropic, d: DadosPrecificacao, pesquisa: string, p
     output_config: { effort: "medium", format: betaZodOutputFormat(Sugestao) },
     system: `You build job estimates for Tababog Construction LLC (Connecticut). Every estimate has exactly two options
 for the client: first "Essential" (good quality, budget-conscious materials) and then "Premium" (upgraded materials and
-finishes). For each option list the COST items Tababog will pay (not the selling price): materials with realistic
-quantities and unit prices, delivery, labor (crew of 2 at about $200 per worker per day, plus helpers or
-subcontractors if the trade needs them), equipment rental, permits/inspections, dumpster/disposal and other costs.
-Do not add overhead or profit: the app adds overhead per working day and targets a price of at least 2x cost.
-Estimate the working days for each option. Write option descriptions and item descriptions in clear American English
+finishes). For each option list the MATERIAL cost Tababog will pay (not the selling price): every material with
+realistic quantities and current Home Depot/Lowe's unit prices, plus material delivery, equipment rental,
+permits/inspections and dumpster/disposal when the job needs them. Do NOT include any labor, installation or
+subcontractor cost: the contractor adds labor himself. Do not add overhead or profit to the cost items.
+Estimate the working days for each option.
+For each option also give the SELLING PRICE a contractor can charge for it in this town/county, based only on the
+market research (what contractors charge clients here), never on Tababog's cost: preco_recomendado_usd = one exact
+suggested price, and preco_minimo_usd / preco_maximo_usd = a NARROW range around it (the maximum at most about 10%
+above the minimum, e.g. $14,500 to $15,900, never something wide like $10,000 to $20,000). Round to the nearest $50. Write option descriptions and item descriptions in clear American English
 for a client proposal. Use only facts from the research and the job data; when you estimate, keep it realistic for
-Connecticut. In "mercado", give the market price range for the whole job (what contractors charge), the per-unit
-range when it applies, a short summary in English and only sources whose URL appears in the research.`,
+Connecticut. In "mercado", give the market price range for the whole job (what contractors charge, as narrow as the data allows),
+the per-unit range when it applies, a short summary in English and only sources whose URL appears in the research.`,
     messages: [
       {
         role: "user",
@@ -217,6 +229,25 @@ Cost categories: ${categorias.join(", ")}.`,
   });
   if (r.stop_reason === "refusal" || !r.parsed_output) return null;
   return r.parsed_output;
+}
+
+const ARREDONDAR = 5000; // $50
+
+/**
+ * Sugestão de preço de mercado: o valor recomendado e uma faixa estreita (no máximo uns 10% entre o mínimo e o máximo).
+ * Se a IA devolver uma faixa larga ou um recomendado fora dela, a faixa vira o recomendado ± 5%.
+ */
+function faixaEstreita(recomendadoUsd: number, minimoUsd: number, maximoUsd: number) {
+  const arred = (c: number) => Math.round(c / ARREDONDAR) * ARREDONDAR;
+  const rec = arred(cents(recomendadoUsd));
+  let min = arred(cents(minimoUsd));
+  let max = arred(cents(maximoUsd));
+  if (rec <= 0) return { precoMercadoCent: 0, precoMercadoMinCent: 0, precoMercadoMaxCent: 0 };
+  if (!(min > 0 && max >= min && max <= min * 1.12 && rec >= min && rec <= max)) {
+    min = arred(rec * 0.95);
+    max = arred(rec * 1.05);
+  }
+  return { precoMercadoCent: rec, precoMercadoMinCent: min, precoMercadoMaxCent: max };
 }
 
 /**
@@ -250,6 +281,7 @@ export async function sugerirOrcamento(d: DadosPrecificacao): Promise<SugestaoPr
         nome: o.nome,
         descricao: o.descricao,
         diasPrevistos: Math.max(0, Math.round(o.dias_previstos)),
+        ...faixaEstreita(o.preco_recomendado_usd, o.preco_minimo_usd, o.preco_maximo_usd),
         itens: o.itens.map((i) => ({
           categoria: i.categoria,
           descricao: i.descricao,

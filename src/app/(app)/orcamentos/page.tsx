@@ -68,7 +68,7 @@ export default async function Orcamentos({ searchParams }: { searchParams: { sta
                   return (
                     <div key={op.id} className="rounded-lg bg-stone-50 p-2">
                       <div className="text-xs text-stone-500">{op.nome}</div>
-                      <div className="font-semibold tabular-nums">{c.custoTotal > 0 ? dinheiro(c.preco) : "—"}</div>
+                      <div className="font-semibold tabular-nums">{c.preco > 0 ? dinheiro(c.preco) : "—"}</div>
                       {c.multiplicador !== null && (
                         <div className={`text-xs tabular-nums ${abaixo ? "text-red-700" : "text-emerald-700"}`}>{c.multiplicador.toFixed(2)}x{abaixo && " ⚠"}</div>
                       )}

@@ -19,7 +19,7 @@ function arredondarPreco(centavos: number) {
 
 /**
  * Números de uma opção: custo por categoria, custo fixo (dias × custo fixo por dia da empresa), custo total,
- * preço sugerido (meta 2x), preço final, lucro e multiplicador.
+ * preço sugerido (pesquisa de mercado, sem olhar o custo), preço mínimo para a meta 2x, preço final, lucro e multiplicador.
  */
 export function calcularOpcao(opcao: OpcaoOrcamento & { itens: ItemOpcao[] }, custoFixoPorDia: number) {
   const porCategoria = Object.keys(CATEGORIAS_DESPESA)
@@ -31,7 +31,10 @@ export function calcularOpcao(opcao: OpcaoOrcamento & { itens: ItemOpcao[] }, cu
   const custoDireto = porCategoria.reduce((s, c) => s + c.valor, 0);
   const custoFixo = opcao.diasPrevistos * custoFixoPorDia;
   const custoTotal = custoDireto + custoFixo;
-  const precoSugerido = arredondarPreco(custoTotal * META_MULTIPLICADOR);
+  // O preço sugerido vem do mercado (o que se cobra na região por esse trabalho), não do custo.
+  // A meta 2x vira o preço mínimo: abaixo dele a tela avisa.
+  const precoSugerido = opcao.precoMercadoCent;
+  const precoMinimo2x = arredondarPreco(custoTotal * META_MULTIPLICADOR);
   const preco = opcao.precoCent > 0 ? opcao.precoCent : precoSugerido;
   return {
     porCategoria,
@@ -39,10 +42,12 @@ export function calcularOpcao(opcao: OpcaoOrcamento & { itens: ItemOpcao[] }, cu
     custoFixo,
     custoTotal,
     precoSugerido,
+    faixaMercado: opcao.precoMercadoMinCent > 0 ? { min: opcao.precoMercadoMinCent, max: opcao.precoMercadoMaxCent } : null,
+    precoMinimo2x,
     preco,
     precoDefinido: opcao.precoCent > 0,
     lucro: preco - custoTotal,
-    multiplicador: custoTotal > 0 ? preco / custoTotal : null,
+    multiplicador: custoTotal > 0 && preco > 0 ? preco / custoTotal : null,
   };
 }
 

@@ -335,8 +335,13 @@ model OpcaoOrcamento {
   nome          String
   descricao     String?
   diasPrevistos Int        @default(0)
-  // Preço final para o cliente; 0 = ainda não definido (a tela sugere 2x o custo)
+  // Preço final para o cliente; 0 = ainda não definido (a tela usa a sugestão de mercado)
   precoCent     Int        @default(0)
+  // Sugestão de preço pela pesquisa de mercado (o que se cobra na região por esta opção), sem olhar o custo:
+  // um valor recomendado e uma faixa estreita. 0 = ainda sem pesquisa.
+  precoMercadoCent    Int  @default(0)
+  precoMercadoMinCent Int  @default(0)
+  precoMercadoMaxCent Int  @default(0)
   itens         ItemOpcao[]
 }
 
