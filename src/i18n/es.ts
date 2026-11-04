@@ -837,5 +837,10 @@ const es: Record<string, string> = {
   "(pode marcar várias)": "(puedes marcar varias)",
   "Fazer as perguntas de novo? As respostas atuais se perdem.": "¿Hacer las preguntas de nuevo? Las respuestas actuales se pierden.",
   "Refazer as perguntas": "Rehacer las preguntas",
+  "Algo deu errado nesta tela": "Algo salió mal en esta pantalla",
+  "Pode ser o app aberto com a versão anterior depois de uma atualização. Recarregue para continuar.": "Puede ser la app abierta con la versión anterior después de una actualización. Recarga para continuar.",
+  "Recarregar": "Recargar",
+  "Tentar de novo": "Intentar de nuevo",
+  "Voltar ao início": "Volver al inicio",
 };
 export default es;
