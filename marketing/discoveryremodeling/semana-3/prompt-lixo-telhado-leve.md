@@ -11,6 +11,7 @@ BASE = https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beaut
 - BASE + lixo-p2-base-143354-0m07s.mp4   (69 s, trailer basculando)
 - BASE + telhado-equipe-165242.mp4       (1:52, equipe trocando o telhado, SEM áudio)
 - BASE + dicas-3-orcamento.mp4           (1:33, Ale de frente: 3 dicas + surpresa do plywood)
+Os 3 de lixo são verticais. telhado-equipe e dicas-3-orcamento são HORIZONTAIS (1920x1080): recorte em 9:16 mantendo o rosto do Ale / a casa no centro (pode usar fundo desfocado se o recorte cortar demais).
 
 Regras de sempre: legenda karaokê Montserrat ExtraBold, 1 bloco por vez com troca SECA, palavra falada em dourado #F2C14E; nada sobre o rosto; nada abaixo de y=1560; voz a -14 LUFS; música padrão bem baixa; nunca começar com "mas", "e", "então" ou "porém"; sem número da casa nem placa legível; a equipe da obra de Elmira pode aparecer sem desfoque; sem "lucro". LOGO: nada nos 3 primeiros segundos; depois pequena no canto superior direito, 60%; logo-reveal NOVO no final. Até 30 MB cada.
 
