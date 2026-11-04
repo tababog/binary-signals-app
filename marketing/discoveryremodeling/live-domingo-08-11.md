@@ -1,11 +1,11 @@
 # Live de dúvidas: "Leilão de casas nos EUA: pergunte o que quiser"
 
-**Quando:** domingo 08/11, 20h de Brasília = 18h em Connecticut (confirmado em 31/10). Duração: 30 a 40 min.
+**Quando:** domingo 08/11, **11h de Brasília = 9h em Connecticut** (mudado pelo Alessandro em 04/11; antes era 20h). Duração: 30 a 40 min.
 **Objetivo:** tirar dúvidas ao vivo e fechar as 2 vagas da assessoria (conversa grátis de 20 min).
 
 ## Divulgação (Claude publica)
 - Stories de convite de quinta a domingo: "Live domingo, [hora]: tire suas dúvidas sobre leilão de casas nos EUA. Comente LIVE para receber o lembrete".
-- No domingo, story às 8h e às 14h: "É hoje!".
+- No domingo, story às 8h ("É hoje") e às 10h ("daqui a 1 hora").
 - Comentários com LIVE: resposta pública "Anotado! Te espero domingo às [hora] 🔔".
 
 ## Roteiro (Alessandro)

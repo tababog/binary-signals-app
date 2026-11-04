@@ -218,10 +218,14 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 ```
 
 ## Domingo 08/11
+> LIVE MUDOU (04/11): agora é às 11h de Brasília (9h em Connecticut). Os stories "É hoje" saem às 8h e às 10h.
 - **08:00** · story · Últimos dias: 2 vagas este mês · doc `v-dom-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-dom-08.mp4
-- **12:00** · story · É hoje: live às 18h (seu horário) · doc `v-dom-live12`
+- **08:00** · story · É hoje: live às 11h de Brasília (9h em Connecticut) · doc `v-dom-live12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-live-hoje.mp4
+- **10:00** · story · É hoje: live daqui a 1 hora (11h de Brasília) · doc `v-dom-live19`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-live-hoje.mp4
+- **11:00** · LIVE (o Alessandro entra ao vivo às 11h de Brasília = 9h em Connecticut; não publicar)
 - **14:00** · story · Hoje: como funciona a assessoria · doc `v-dom-s14`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-dom-14.mp4
 - **19:00** · reel · Como funciona a nossa assessoria · doc `v-dom-f19`
@@ -239,6 +243,3 @@ Qual é a sua maior dúvida? Pergunta aqui 👇
 Valores estimados. Resultados passados não garantem resultados futuros. Todo investimento envolve risco.
 #leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua
 ```
-- **19:00** · story · É hoje: live daqui a 1 hora · doc `v-dom-live19`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-live-hoje.mp4
-- **20:00** · LIVE (o Alessandro entra ao vivo; não publicar)
