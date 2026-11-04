@@ -160,3 +160,8 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - **Prévias para o Alessandro:** todo vídeo para ele aprovar vai salvo como PRÉVIA no Drive (subpasta "previas" da pasta de destino), para ele assistir no celular. Só depois do OK vira a versão final.
 - **Live 08/11 mudou (04/11):** domingo 08/11 às **11h de Brasília = 9h em Connecticut** (não mais 20h). Stories de convite refeitos com o horário novo; no domingo os stories "É hoje" saem às 8h e às 10h (agenda editada à mão; se regenerar com gen_agenda.py, manter esses horários). Resposta a "LIVE": "Te espero domingo às 11h de Brasília".
 - **Agenda pessoal (04/11):** quando o Alessandro disser o que tem que fazer e quando (na conversa ou no 💬 da Central), o Claude registra na Central, coleção "agenda" ({quando ISO com fuso de Connecticut, hora, texto, obs, feito}), aparece em "Minha agenda" na Central e no topo do "Seu dia hoje". Se ele ligar o Google Agenda, também criar o evento lá.
+
+## Nome das semanas (definido em 04/11)
+- Semanas por MÊS: "Novembro S1, S2, S3, S4", depois "Dezembro S1"... Semana = segunda a domingo; ela pertence ao mês em que tem mais dias (ex.: 30/11 a 06/12 = Dezembro S1).
+- Novembro 2026: **S1 = 02 a 08/11** (a antiga "semana 2", de vendas) · **S2 = 09 a 15/11** (antiga "semana 3") · **S3 = 16 a 22/11** (antiga "semana 4") · **S4 = 23 a 29/11** · Dezembro S1 = 30/11 a 06/12.
+- As pastas antigas do repositório (semana-vendas, semana-3, semana-4) ficam com o nome antigo para não quebrar links; as novas serão "2026-11-S4", "2026-12-S1" etc. Nas conversas, painéis e e-mails, usar só o nome novo.
