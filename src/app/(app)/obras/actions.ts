@@ -98,6 +98,10 @@ export async function lancarDespesa(obraId: string, _e: EstadoForm, form: FormDa
   } catch (e) {
     return { erro: getT()((e as Error).message) };
   }
+  // Despesa lançada a partir do recibo que um funcionário mandou: usa a foto dele (se não tirou outra) e marca como lançado
+  const reciboId = texto(form.get("reciboId"));
+  const recibo = reciboId ? await db.reciboFuncionario.findUnique({ where: { id: reciboId } }) : null;
+  if (recibo && !comprovante) comprovante = recibo.arquivo;
 
   // Fornecedor/subcontratado novo cadastrado no próprio lançamento
   let fornecedorId = texto(form.get("fornecedorId"));
@@ -108,7 +112,7 @@ export async function lancarDespesa(obraId: string, _e: EstadoForm, form: FormDa
     fornecedorId = novo.id;
   }
 
-  await db.lancamento.create({
+  const lancamento = await db.lancamento.create({
     data: {
       obraId,
       tipo: "SAIDA",
@@ -122,6 +126,11 @@ export async function lancarDespesa(obraId: string, _e: EstadoForm, form: FormDa
       criadoPorId: usuario.id,
     },
   });
+  if (recibo) {
+    await db.reciboFuncionario.update({ where: { id: recibo.id }, data: { lancamentoId: lancamento.id, lancadoEm: new Date(), obraId } });
+    revalidatePath("/");
+    revalidatePath("/recibos");
+  }
   atualizar(obraId);
   redirect(`/obras/${obraId}?aba=caixa`);
 }
@@ -158,6 +167,9 @@ export async function lancarRecebimento(obraId: string, _e: EstadoForm, form: Fo
 export async function excluirLancamento(id: string) {
   await exigirAdmin();
   const lanc = await db.lancamento.delete({ where: { id } });
-  await apagarComprovante(lanc.comprovante);
+  // Despesa que veio do recibo de um funcionário: o recibo volta para "a lançar" e a foto fica guardada
+  const recibos = await db.reciboFuncionario.updateMany({ where: { lancamentoId: id }, data: { lancamentoId: null, lancadoEm: null } });
+  if (!recibos.count) await apagarComprovante(lanc.comprovante);
+  revalidatePath("/");
   atualizar(lanc.obraId);
 }

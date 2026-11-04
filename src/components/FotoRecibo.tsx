@@ -1,8 +1,9 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useT } from "@/i18n/cliente";
-import { lerComprovante } from "@/app/(app)/obras/leitura";
+import { lerComprovante, lerReciboSalvo } from "@/app/(app)/obras/leitura";
+import type { LeituraComprovante } from "@/lib/leitura-comprovante";
 import { ImagemAmpliavel } from "./ImagemAmpliavel";
 
 const LADO_MAXIMO = 1600;
@@ -30,13 +31,37 @@ async function comprimir(arquivo: File): Promise<File> {
  * Foto ou arquivo do comprovante. Com `ler`, a IA lê o documento e preenche no formulário o valor, a data, a forma
  * de pagamento e (se estiver vazia) a descrição; o que não encontrar fica em branco.
  */
-export function FotoRecibo({ rotulo, ler }: { rotulo?: string; ler?: "RECEBIMENTO" | "DESPESA" }) {
+export function FotoRecibo({
+  rotulo,
+  ler,
+  salvo,
+}: {
+  rotulo?: string;
+  ler?: "RECEBIMENTO" | "DESPESA";
+  /** Recibo que um funcionário já mandou: aparece aqui, é lido pela IA ao abrir e vai junto com a despesa. */
+  salvo?: { id: string; arquivo: string };
+}) {
   const t = useT();
   const [leitura, setLeitura] = useState<{ lendo: boolean; aviso: string | null }>({ lendo: false, aviso: null });
   const campoReal = useRef<HTMLInputElement>(null);
   const [previa, setPrevia] = useState<string | null>(null);
   const [nome, setNome] = useState<string | null>(null);
   const [processando, setProcessando] = useState(false);
+  const [usarSalvo, setUsarSalvo] = useState(Boolean(salvo));
+
+  useEffect(() => {
+    const form = campoReal.current?.form;
+    // Formulário esvaziado depois de salvar: a prévia também some
+    const aoLimpar = () => {
+      setPrevia(null);
+      setNome(null);
+      setLeitura({ lendo: false, aviso: null });
+    };
+    form?.addEventListener("reset", aoLimpar);
+    if (salvo && ler) lerDocumento(() => lerReciboSalvo(salvo.id));
+    return () => form?.removeEventListener("reset", aoLimpar);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   async function escolher(e: React.ChangeEvent<HTMLInputElement>) {
     const original = e.target.files?.[0];
@@ -55,17 +80,20 @@ export function FotoRecibo({ rotulo, ler }: { rotulo?: string; ler?: "RECEBIMENT
     setNome(arquivo.name);
     setPrevia(arquivo.type.startsWith("image/") && arquivo.type !== "image/heic" ? URL.createObjectURL(arquivo) : null);
     setProcessando(false);
-    if (ler) await lerDocumento(arquivo);
+    setUsarSalvo(false);
+    if (ler) {
+      const dados = new FormData();
+      dados.set("arquivo", arquivo);
+      dados.set("tipo", ler);
+      await lerDocumento(() => lerComprovante(dados));
+    }
   }
 
-  async function lerDocumento(arquivo: File) {
+  async function lerDocumento(pedir: () => Promise<{ dados: LeituraComprovante } | { erro: string }>) {
     const form = campoReal.current?.form;
     if (!form) return;
     setLeitura({ lendo: true, aviso: null });
-    const dados = new FormData();
-    dados.set("arquivo", arquivo);
-    dados.set("tipo", ler!);
-    const resposta = await lerComprovante(dados).catch((e: Error) => ({ erro: e.message || t("sem resposta do servidor") }));
+    const resposta = await pedir().catch((e: Error) => ({ erro: e.message || t("sem resposta do servidor") }));
     if ("erro" in resposta) {
       setLeitura({ lendo: false, aviso: t("Não consegui ler o comprovante ({motivo}). Preencha os campos à mão.", { motivo: resposta.erro }) });
       return;
@@ -102,6 +130,16 @@ export function FotoRecibo({ rotulo, ler }: { rotulo?: string; ler?: "RECEBIMENT
     <div>
       <span className="rotulo">{rotulo ?? t("Foto do recibo / nota fiscal")}</span>
       <input ref={campoReal} type="file" name="comprovante" className="hidden" />
+      {salvo && <input type="hidden" name="reciboId" value={salvo.id} />}
+      {salvo && usarSalvo && (
+        <div className="mb-3 rounded-lg border border-stone-200 p-2">
+          {salvo.arquivo.endsWith(".pdf") ? (
+            <a href={`/api/comprovantes/${salvo.arquivo}`} target="_blank" rel="noreferrer" className="link text-sm">{t("Abrir o recibo (PDF)")}</a>
+          ) : (
+            <ImagemAmpliavel src={`/api/comprovantes/${salvo.arquivo}`} alt={t("Recibo enviado pelo funcionário")} className="max-h-72 rounded" />
+          )}
+        </div>
+      )}
       <div className="flex flex-wrap gap-2">
         <label className="botao cursor-pointer">
           {t("📷 Tirar foto")}
