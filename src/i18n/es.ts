@@ -823,5 +823,16 @@ const es: Record<string, string> = {
   "reembolsar": "reembolsar",
   "🧾 Enviar recibo de material": "🧾 Enviar recibo de material",
   "🧾 Recibos da equipe para lançar ({n})": "🧾 Recibos del equipo para registrar ({n})",
+  "Pode cobrar de {min} a {max}.": "Puedes cobrar de {min} a {max}.",
+  "Preço mínimo para 2x o custo": "Precio mínimo para 2x el costo",
+  "Preço para o cliente (vazio = sugestão de mercado)": "Precio para el cliente (vacío = sugerencia de mercado)",
+  "Sem sugestão de preço ainda: use \"Pesquisar e sugerir\" para a pesquisa de mercado.": "Aún sin sugerencia de precio: usa \"Investigar y sugerir\" para la investigación de mercado.",
+  "Sugestão de mercado para esta opção: {valor}": "Sugerencia de mercado para esta opción: {valor}",
+  "Sugestão de mercado": "Sugerencia de mercado",
+  "faixa {min} – {max}": "rango {min} – {max}",
+  "sugestão de mercado": "sugerencia de mercado",
+  "Pronto: mercado pesquisado, sugestão de preço e material das duas opções. Agora coloque a mão de obra.": "Listo: mercado investigado, sugerencia de precio y material de las dos opciones. Ahora agrega la mano de obra.",
+  "Busca Thumbtack, Angi/HomeAdvisor, HomeGuide, Homewyse e Home Depot/Lowe's para {cidade}: dá o preço que se cobra na região por cada opção (valor exato e faixa estreita) e lança o material de Essential e Premium, com as fontes. A mão de obra você coloca. Leva 1 a 2 minutos.": "Busca en Thumbtack, Angi/HomeAdvisor, HomeGuide, Homewyse y Home Depot/Lowe's para {cidade}: da el precio que se cobra en la región por cada opción (valor exacto y rango estrecho) y agrega el material de Essential y Premium, con las fuentes. La mano de obra la pones tú. Tarda 1 a 2 minutos.",
+  "Trocar o material sugerido antes pela IA? A mão de obra e o que você lançou ficam.": "¿Reemplazar el material que sugirió la IA antes? La mano de obra y lo que tú agregaste se quedan.",
 };
 export default es;
