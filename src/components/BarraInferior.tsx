@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useT } from "@/i18n/cliente";
 import { acoesRapidas, type Atalho } from "@/lib/atalhos";
+import { Icone } from "./Icone";
 
 function ativo(caminho: string, href: string) {
   return href === "/" ? caminho === "/" : caminho.startsWith(href);
@@ -24,13 +25,13 @@ export function BarraInferior({ admin, podeEnviarRecibos }: { admin: boolean; po
 
   const itens: Atalho[] = admin
     ? [
-        { href: "/", rotulo: t("Início"), icone: "🏠" },
-        { href: "/obras", rotulo: t("Obras"), icone: "🏗️" },
-        { href: "+", rotulo: t("Lançar"), icone: "+" },
-        { href: "/visitas", rotulo: t("Visitas"), icone: "📅" },
-        { href: "/orcamentos", rotulo: t("Orçamentos"), icone: "📝" },
+        { href: "/", rotulo: t("Início"), icone: "inicio" },
+        { href: "/obras", rotulo: t("Obras"), icone: "obra" },
+        { href: "+", rotulo: t("Lançar"), icone: "inicio" },
+        { href: "/visitas", rotulo: t("Visitas"), icone: "calendario" },
+        { href: "/orcamentos", rotulo: t("Orçamentos"), icone: "lista" },
       ]
-    : [{ href: "/ponto", rotulo: t("Meu ponto"), icone: "⏱️" }, ...(podeEnviarRecibos ? [{ href: "/recibos", rotulo: t("Enviar recibo"), icone: "🧾" }] : [])];
+    : [{ href: "/ponto", rotulo: t("Meu ponto"), icone: "ponto" }, ...(podeEnviarRecibos ? [{ href: "/recibos", rotulo: t("Enviar recibo"), icone: "despesa" as const }] : [])];
 
   if (itens.length < 2) return null;
 
@@ -44,8 +45,8 @@ export function BarraInferior({ admin, podeEnviarRecibos }: { admin: boolean; po
           >
             <div className="grid grid-cols-3 gap-2">
               {acoesRapidas(t).map((a) => (
-                <Link key={a.href} href={a.href} onClick={() => setAberto(false)} className="flex flex-col items-center gap-1 rounded-xl bg-stone-50 p-3 text-center text-sm font-medium active:bg-marca-50">
-                  <span className="text-2xl" aria-hidden="true">{a.icone}</span>
+                <Link key={a.href} href={a.href} onClick={() => setAberto(false)} className="flex flex-col items-center gap-1.5 rounded-xl border-2 border-marca-600 bg-marca-100 p-3 text-center text-sm font-bold leading-tight text-logo active:bg-marca-50">
+                  <Icone nome={a.icone} tamanho={28} />
                   {a.rotulo}
                 </Link>
               ))}
@@ -63,7 +64,7 @@ export function BarraInferior({ admin, podeEnviarRecibos }: { admin: boolean; po
                   onClick={() => setAberto((a) => !a)}
                   aria-expanded={aberto}
                   aria-label={t("Lançar")}
-                  className="-mt-5 flex h-14 w-14 items-center justify-center rounded-full bg-marca-600 text-3xl font-light text-white shadow-lg"
+                  className="-mt-5 flex h-14 w-14 items-center justify-center rounded-full bg-logo text-3xl font-light text-white shadow-lg"
                 >
                   {aberto ? "×" : "+"}
                 </button>
@@ -72,9 +73,9 @@ export function BarraInferior({ admin, podeEnviarRecibos }: { admin: boolean; po
               <li key={i.href}>
                 <Link
                   href={i.href}
-                  className={`flex flex-col items-center gap-0.5 py-2 text-[11px] font-medium ${ativo(caminho, i.href) ? "text-marca-700" : "text-stone-500"}`}
+                  className={`flex flex-col items-center gap-0.5 py-2 text-[11px] ${ativo(caminho, i.href) ? "font-bold text-logo" : "font-medium text-stone-500"}`}
                 >
-                  <span className="text-xl leading-none" aria-hidden="true">{i.icone}</span>
+                  <Icone nome={i.icone} />
                   {i.rotulo}
                 </Link>
               </li>

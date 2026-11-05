@@ -5,6 +5,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Azul do logo da Tababog
+        logo: "#1b3f7d",
         marca: {
           50: "#fff7ed",
           100: "#ffedd5",
