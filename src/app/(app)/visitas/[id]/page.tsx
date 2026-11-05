@@ -30,6 +30,9 @@ import { getT } from "@/i18n/servidor";
 import { adminsDaVisita, agendaGoogleConfigurada, agendaTudoOk, traduzirStatusAgenda } from "@/lib/agenda-google";
 import { emailContaServico } from "@/lib/google";
 
+// A leitura do print da conversa do cliente pela IA (ação chamada desta página) leva de 10 a 30 segundos
+export const maxDuration = 60;
+
 export default async function Visita({ params, searchParams }: { params: { id: string }; searchParams: { lembrete?: string; erroFoto?: string } }) {
   const usuario = await exigirAdmin();
   const t = getT();

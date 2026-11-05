@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { CONDADOS_CT, UNIDADES, UNIDADE_PADRAO } from "@/lib/constantes";
 import { useT } from "@/i18n/cliente";
+import { LerPrintCliente } from "./LerPrintCliente";
 import { Campo } from "./ui";
 import { CampoEndereco } from "./CampoEndereco";
 import { ServicoPicker } from "./ServicoPicker";
@@ -95,6 +96,7 @@ export function CamposOrcamento({
         <Campo rotulo={t("O que o cliente quer")}>
           <textarea className="campo" name="descricao" rows={3} defaultValue={valor?.descricao ?? ""} placeholder={t("Ex.: deck de 12x16 nos fundos, com escada")} />
         </Campo>
+        <LerPrintCliente />
       </div>
       <div className="sm:col-span-2">
         <Campo rotulo={t("Endereço da obra")}>
