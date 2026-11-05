@@ -33,3 +33,14 @@ Regras de sempre: 1080x1920, 30 fps; legenda karaokê Montserrat ExtraBold, 1 bl
 ANTES DE SALVAR: me mostre a duração e 1 print de cada.
 ENTREGA: os 5 arquivos em "Reels Semana Vendas" (patrimonio-dolar até 12/11; os outros até 20/11). Não apague nada.
 ```
+
+## Extra: Reel "Meu escritório hoje" (Novembro S4)
+
+```
+REEL "MEU ESCRITÓRIO HOJE" – pasta "Estoque Obra 04-11", arquivo 20261103_142051.mp4 (40 s, o Alessandro na garagem da obra de Elmira com o notebook, a equipe trabalhando)
+Saída: escritorio-obra.mp4, 25 a 30 s. Regras de sempre (legenda karaokê, -14 LUFS, música baixa, logo depois de 3 s, reveal no fim, equipe de Elmira sem desfoque, número da casa e placas desfocados).
+- Use de 0:01 até "o importante é estar na obra olhando o que está acontecendo, tá certo? Bora pra cima" (~0:30). Comece em "Hoje esse aqui é o meu escritório" (corte o "e" inicial).
+- Corte o final "conta com a gente, manda aqui embaixo que eu irei te mandar um direct…" e troque por cartão final 3 s: "Comente ASSESSORIA 👇 e eu te mostro como funciona".
+- Gancho 1º segundo: "Hoje o meu escritório é aqui 👇". Etiqueta quando ele mostra a equipe: "Equipe trabalhando na casa".
+ANTES DE SALVAR: duração e 1 print. ENTREGA em "Reels Semana Vendas". Não apague nada.
+```
