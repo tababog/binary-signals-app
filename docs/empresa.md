@@ -20,6 +20,46 @@ Levantado em 27/10/2026 a partir de perfis públicos. Itens marcados **[confirma
 | Instagram | [@tababog_construction](https://www.instagram.com/tababog_construction/) | Alessandro |
 | Fotos | Cerca de 104 fotos de projetos no Thumbtack | Thumbtack |
 
+## Quem somos (aprovado pelo Alessandro em 05/11/2026)
+
+Texto do portfólio (etapa 7) e da proposta (etapa 8). O cliente recebe a versão em inglês.
+
+**EN — About us**
+
+Tababog Construction LLC was founded in 2017 in Bridgeport, Connecticut, by two craftsmen who came a long way to
+build a life in the United States and found their calling in construction.
+
+Alessandro, from Brazil, has lived in the U.S. for 10 years and has spent all of them in construction. Emmanuel,
+from Mexico, has lived in the U.S. for 20 years and has worked in construction for 16. Woodworking runs in his
+family: his father is a woodcarver in Mexico who hand-carves pieces like eagles and other figures, and it was from
+him that Emmanuel learned what quality work means.
+
+Together they bring more than 25 years of combined experience and have completed more than 500 projects, serving
+all of Connecticut with custom cabinets, drywall, basement remodeling, home additions, door and window
+installation, laminate flooring and decks.
+
+What sets us apart is our finish work: every detail is handled with the care of someone building for their own
+family.
+
+**PT — Quem somos**
+
+A Tababog Construction LLC nasceu em 2017, em Bridgeport, da parceria entre dois profissionais que vieram de longe
+para construir uma vida nos Estados Unidos e encontraram na construção a sua vocação.
+
+Alessandro é brasileiro e vive nos EUA há 10 anos, todos eles dedicados à construção. Emmanuel é mexicano, mora nos
+EUA há 20 anos e trabalha na construção há 16. A madeira está no sangue dele: o pai é entalhador no México e esculpe
+à mão peças como águias e outras figuras. Foi com ele que Emmanuel aprendeu o valor de um trabalho bem feito.
+
+Juntos, somam mais de 25 anos de experiência e mais de 500 projetos, atendendo todo o estado de Connecticut com
+gabinetes sob medida, drywall, reforma de basement, ampliação de casas, instalação de portas e janelas, piso
+laminado e decks.
+
+O que nos diferencia é o acabamento: cada detalhe é tratado com o cuidado de quem constrói como se fosse para a
+própria família.
+
+Dados: Alessandro, 50 anos, brasileiro, 10 anos nos EUA e na construção. Emmanuel, 40 anos, mexicano, 20 anos nos
+EUA, 16 na construção. Mais de 500 projetos desde 2017.
+
 ## Sócios (textos para o portfólio e as propostas)
 
 Rascunho para o Alessandro revisar. As propostas para clientes saem em inglês.
@@ -55,7 +95,8 @@ Prioridade para o portfólio (etapa 7), a precificação (etapa 6) e o banco de 
 - Papel de parede
 - Gabinetes (cabinet design / custom cabinets)
 - Decks
-- **[confirmar]** lista completa e quais serviços dão mais lucro
+- Confirmado pelo Alessandro (05/11/2026): gabinetes customizados, drywall, remodelação de basement, adição de casas,
+  instalação de portas e janelas, piso laminado e decks, em todo Connecticut
 
 ## O que os clientes elogiam (para usar nas propostas)
 
