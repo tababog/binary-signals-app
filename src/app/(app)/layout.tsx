@@ -2,6 +2,7 @@ import Link from "next/link";
 import { exigirUsuario } from "@/lib/auth";
 import { sair } from "@/app/login/actions";
 import { Menu } from "@/components/Menu";
+import { BarraInferior } from "@/components/BarraInferior";
 import { SeletorIdioma } from "@/components/SeletorIdioma";
 import { getT } from "@/i18n/servidor";
 
@@ -47,7 +48,9 @@ export default async function LayoutApp({ children }: { children: React.ReactNod
           </div>
         </div>
       </header>
-      <main className="mx-auto max-w-6xl p-4 pb-16">{children}</main>
+      {/* No celular a barra de baixo ocupa espaço: o conteúdo termina acima dela */}
+      <main className="mx-auto max-w-6xl p-4 pb-28 lg:pb-16">{children}</main>
+      <BarraInferior admin={admin} podeEnviarRecibos={usuario.podeEnviarRecibos} />
     </div>
   );
 }

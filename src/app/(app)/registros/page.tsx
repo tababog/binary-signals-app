@@ -131,7 +131,7 @@ export default async function Registros({ searchParams }: { searchParams: Filtro
         )}
       </div>
 
-      <div className="cartao">
+      <div id="lancar" className="cartao scroll-mt-20">
         <h2 className="mb-1">{t("Lançar horas manualmente")}</h2>
         <p className="mb-3 text-sm text-stone-500">{t("Para quando o funcionário esqueceu de registrar o ponto.")}</p>
         <Formulario acao={lancarRegistroManual} className="grid gap-3 sm:grid-cols-3 sm:items-end">
