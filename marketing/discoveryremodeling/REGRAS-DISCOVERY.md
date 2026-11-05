@@ -176,3 +176,6 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 
 ## Feedback semanal das gravações (pedido em 05/11)
 - Toda semana, antes da reunião de domingo, medir as gravações novas (feedback-gravacoes/medir-voz.py), comparar com a linha de base em feedback-gravacoes/historico.md e dar ao Alessandro: o que melhorou, o que ainda soa recitado e 2 ou 3 dicas práticas. Registrar no histórico.
+
+## Meta de seguidores (05/11)
+- Meta do Alessandro: 150 mil seguidores no @discoveryremodeling. Marcos: 10 mil → 50 mil → 150 mil. Na reunião de domingo, mostrar o ritmo da semana (seguidores/dia) e quanto falta.
