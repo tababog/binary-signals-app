@@ -842,5 +842,9 @@ const es: Record<string, string> = {
   "Recarregar": "Recargar",
   "Tentar de novo": "Intentar de nuevo",
   "Voltar ao início": "Volver al inicio",
+  "Em qual obra?": "¿En qué obra?",
+  "Lançar ponto": "Registrar horas",
+  "Navegação principal": "Navegación principal",
+  "Receber pagamento": "Recibir pago",
 };
 export default es;
