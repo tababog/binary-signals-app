@@ -4,6 +4,7 @@ Pesquisa feita em 05/11/2026 pelos agentes de leilão, direto nos sites oficiais
 Fontes: lista do sheriff (sheriffsales.starkcountyohio.gov), cadastro do Auditor (serviço de parcelas
 scgisa.starkcountyohio.gov) e mapa de enchente da FEMA (NFHL). Planilha completa: `lista-stark-2026-12-01.csv`.
 Sem promessa de lucro e sem conta de retorno.
+**Só fontes grátis (regra do Alessandro, 05/11):** nada de serviço pago (PropStream, Regrid pago, Tax Sale Resources, title search pago etc.).
 
 ## Resumo
 1. **Inscrição:** não há cadastro prévio. Basta ir no dia (**terça 01/12/2026**), ou seja, **faltam 26 dias**.
