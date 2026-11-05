@@ -846,5 +846,7 @@ const es: Record<string, string> = {
   "Lançar ponto": "Registrar horas",
   "Navegação principal": "Navegación principal",
   "Receber pagamento": "Recibir pago",
+  "📄 Contrato desta opção (PDF)": "📄 Contrato de esta opción (PDF)",
+  "Defina o preço desta opção para gerar o contrato.": "Define el precio de esta opción para generar el contrato.",
 };
 export default es;
