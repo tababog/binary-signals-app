@@ -8,6 +8,9 @@ import { CamposOrcamento } from "@/components/CamposOrcamento";
 import { excluirOrcamento, salvarDadosOrcamento } from "../../actions";
 import { getT } from "@/i18n/servidor";
 
+// A leitura do print da conversa do cliente pela IA (ação chamada desta página) leva de 10 a 30 segundos
+export const maxDuration = 60;
+
 export default async function EditarOrcamento({ params }: { params: { id: string } }) {
   await exigirAdmin();
   const t = getT();

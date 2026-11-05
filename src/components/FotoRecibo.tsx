@@ -9,7 +9,7 @@ import { ImagemAmpliavel } from "./ImagemAmpliavel";
 const LADO_MAXIMO = 1600;
 
 /** Reduz fotos grandes do celular para enviar mais rápido (mantém PDFs e HEIC como estão). */
-async function comprimir(arquivo: File): Promise<File> {
+export async function comprimir(arquivo: File): Promise<File> {
   if (!["image/jpeg", "image/png", "image/webp"].includes(arquivo.type)) return arquivo;
   try {
     const bitmap = await createImageBitmap(arquivo);

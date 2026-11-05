@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { PREFIXO_PERSONALIZADO, SUBSERVICOS, TIPOS_SERVICO } from "@/lib/constantes";
 import { useT } from "@/i18n/cliente";
+import { LerPrintCliente } from "./LerPrintCliente";
 import { Campo } from "./ui";
 import { CampoEndereco } from "./CampoEndereco";
 import { FotosTrabalho } from "./FotosTrabalho";
@@ -166,6 +167,7 @@ export function CamposVisita({
         <Campo rotulo={t("O que o cliente quer")}>
           <textarea className="campo" name="descricao" rows={3} defaultValue={valor?.descricao ?? ""} placeholder={t("Ex.: deck de 12x16 nos fundos, com escada")} />
         </Campo>
+        <LerPrintCliente />
       </div>
 
       {comFotos && (

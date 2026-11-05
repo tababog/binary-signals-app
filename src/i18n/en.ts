@@ -848,5 +848,11 @@ const en: Record<string, string> = {
   "Receber pagamento": "Receive payment",
   "📄 Contrato desta opção (PDF)": "📄 Contract for this option (PDF)",
   "Defina o preço desta opção para gerar o contrato.": "Set the price of this option to generate the contract.",
+  "Escolha o print da conversa.": "Choose the conversation screenshot.",
+  "Lendo o print...": "Reading the screenshot...",
+  "Li o print e escrevi o pedido do cliente. Confira e complete.": "I read the screenshot and wrote the client's request. Check and complete it.",
+  "Não consegui ler o print ({motivo}). Escreva à mão.": "I couldn't read the screenshot ({motivo}). Type it in.",
+  "Não consegui ler o print. Use uma imagem JPG ou PNG.": "I couldn't read the screenshot. Use a JPG or PNG image.",
+  "📷 Ler print da conversa do cliente": "📷 Read client conversation screenshot",
 };
 export default en;
