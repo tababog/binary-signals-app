@@ -173,3 +173,6 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - Reel com o Ale falando de frente + gancho forte: 2.489, 2.413 e 1.617 views. Tour de casa sem rosto: 284 (Casa 2). Episódios da série às 19h: 106 e 221.
 - Dois Reels no mesmo dia dividem o alcance (04/11: reel manual às 8h24 + Casa 2 às 12h52 = 183 + 284).
 - Regra: priorizar o Ale de frente nos primeiros 2 s; tour de casa só com o rosto dele no gancho; 1 Reel por horário nobre; se ele quiser postar algo à mão, me avisar para eu tirar o automático do dia.
+
+## Feedback semanal das gravações (pedido em 05/11)
+- Toda semana, antes da reunião de domingo, medir as gravações novas (feedback-gravacoes/medir-voz.py), comparar com a linha de base em feedback-gravacoes/historico.md e dar ao Alessandro: o que melhorou, o que ainda soa recitado e 2 ou 3 dicas práticas. Registrar no histórico.
