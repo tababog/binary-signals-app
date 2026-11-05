@@ -14,6 +14,7 @@ export type ValorOrcamento = {
   visitaId?: string | null;
   tipoServico?: string | null;
   subServicos?: string | null;
+  outrosServicos?: string | null;
   descricao?: string | null;
   endereco?: string | null;
   cidade?: string | null;
@@ -89,7 +90,9 @@ export function CamposOrcamento({
           personalizados={personalizados}
           tipoInicial={valor?.tipoServico}
           subsIniciais={valor?.subServicos}
+          outrosIniciais={valor?.outrosServicos}
           aoEscolher={(k) => UNIDADE_PADRAO[k] && setUnidade(UNIDADE_PADRAO[k])}
+          obrigatorio
         />
       </div>
       <div className="sm:col-span-2">

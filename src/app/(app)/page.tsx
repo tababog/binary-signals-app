@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import { db } from "@/lib/db";
 import { exigirUsuario } from "@/lib/auth";
 import { campoData, campoDataHora, data, dinheiro, hora, lerDataHora } from "@/lib/format";
-import { nomeStatus, nomeTipoServico } from "@/lib/constantes";
+import { nomeStatus, nomesServicos } from "@/lib/constantes";
 import { Cabecalho, Campo, SeloStatus, Vazio } from "@/components/ui";
 import { Formulario } from "@/components/Formulario";
 import { ItemVisita } from "@/components/ItemVisita";
@@ -217,7 +217,7 @@ export default async function Painel() {
                 <li key={f.id} className="flex items-center justify-between gap-2 py-2">
                   <span>
                     <b>{f.visita.cliente.nome}</b>
-                    {f.visita.tipoServico && ` · ${t(nomeTipoServico(f.visita.tipoServico))}`}
+                    {f.visita.tipoServico && ` · ${nomesServicos(f.visita, t)}`}
                     <span className="block text-xs text-stone-500">
                       {t("{n}º follow-up", { n: f.ordem })}{f.dataPrevista < lerDataHora(`${campoData(new Date())}T00:00`)! && ` · ${t("atrasado desde {data}", { data: data(f.dataPrevista) })}`}
                     </span>

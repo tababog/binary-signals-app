@@ -235,6 +235,8 @@ model Visita {
   tipoServico String?
   // Subserviços escolhidos, separados por vírgula (ex.: "INTERNA,INTERNA.TETO,EXTERNA")
   subServicos String?
+  // Mais serviços na mesma visita, além do principal: JSON [{ tipo, subServicos }] (ex.: deck + pintura)
+  outrosServicos String?
   descricao   String?
   status      String   @default("AGENDADA")
   // Depois da visita: null = em negociação, "FECHOU" ou "SEM_INTERESSE" (encerra os follow-ups)
@@ -308,6 +310,8 @@ model Orcamento {
   // tipoServico/subServicos: os mesmos códigos da visita (TIPOS_SERVICO, "P:<nome>", SUBSERVICOS)
   tipoServico String?
   subServicos String?
+  // Mais serviços no mesmo orçamento, além do principal: JSON [{ tipo, subServicos }]
+  outrosServicos String?
   descricao   String?
   endereco    String?
   cidade      String?

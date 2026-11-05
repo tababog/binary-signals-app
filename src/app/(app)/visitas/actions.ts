@@ -10,6 +10,7 @@ import { PREFIXO_PERSONALIZADO, STATUS_VISITA, SUBSERVICOS, TIPOS_SERVICO } from
 import { apagarComprovante, salvarComprovante } from "@/lib/uploads";
 import type { EstadoForm } from "@/components/Formulario";
 import { agendarFollowUps, CANAIS } from "@/lib/followup";
+import { lerServicosDoFormulario } from "@/lib/servicos-form";
 import { linkDaVisita, sincronizarAgenda } from "@/lib/agenda-google";
 
 function atualizar() {
@@ -21,16 +22,9 @@ export async function salvarVisita(id: string | null, _e: EstadoForm, form: Form
   await exigirAdmin();
   const dataHora = lerDataHora(form.get("dataHora"));
   if (!dataHora) return { erro: getT()("Informe a data e a hora da visita.") };
-  // Serviço: um da lista, um criado antes em "Outros" ("P:<nome>") ou um novo digitado agora em "Outros"
-  let tipo = String(form.get("tipoServico") ?? "");
-  if (tipo === "OUTRO") {
-    const nome = String(form.get("servicoOutro") ?? "").trim().slice(0, 60);
-    if (!nome) return { erro: getT()("Escreva qual é o serviço em \"Outros\".") };
-    await db.servicoPersonalizado.upsert({ where: { nome }, update: {}, create: { nome } });
-    tipo = `${PREFIXO_PERSONALIZADO}${nome}`;
-  } else if (!(tipo in TIPOS_SERVICO) && !tipo.startsWith(PREFIXO_PERSONALIZADO)) tipo = "";
-  const validos = new Set((SUBSERVICOS[tipo] ?? []).flatMap((s) => [s.k, ...(s.subs ?? []).map((f) => `${s.k}.${f.k}`)]));
-  const subServicos = form.getAll("subServicos").map(String).filter((c) => validos.has(c)).join(",");
+  // Serviços: da lista, criados antes em "Outros" ("P:<nome>") ou um novo digitado agora em "Outros"; pode ser mais de um
+  const servicos = await lerServicosDoFormulario(form);
+  if ("erro" in servicos) return { erro: getT()(servicos.erro) };
 
   // Cliente já cadastrado ou um novo, criado aqui mesmo com nome e telefone
   let clienteId = String(form.get("clienteId") ?? "");
@@ -52,8 +46,9 @@ export async function salvarVisita(id: string | null, _e: EstadoForm, form: Form
     clienteId,
     dataHora,
     endereco: texto(form.get("endereco")),
-    tipoServico: tipo || null,
-    subServicos: subServicos || null,
+    tipoServico: servicos.tipoServico,
+    subServicos: servicos.subServicos,
+    outrosServicos: servicos.outrosServicos,
     descricao: texto(form.get("descricao")),
     status: status in STATUS_VISITA ? status : "AGENDADA",
   };

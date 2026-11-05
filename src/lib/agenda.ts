@@ -1,10 +1,12 @@
-import { nomeTipoServico } from "./constantes";
+import { nomesServicos } from "./constantes";
 
 type Visita = {
   id: string;
   dataHora: Date;
   endereco: string | null;
   tipoServico: string | null;
+  subServicos?: string | null;
+  outrosServicos?: string | null;
   descricao: string | null;
   cliente: { nome: string; telefone: string | null };
 };
@@ -12,7 +14,7 @@ type Visita = {
 const DURACAO_MS = 60 * 60 * 1000;
 
 function titulo(v: Visita) {
-  return `Visita Tababog: ${v.cliente.nome}${v.tipoServico ? ` (${nomeTipoServico(v.tipoServico)})` : ""}`;
+  return `Visita Tababog: ${v.cliente.nome}${v.tipoServico ? ` (${nomesServicos(v)})` : ""}`;
 }
 
 function detalhes(v: Visita) {

@@ -1,6 +1,6 @@
 import { db } from "./db";
 import { contaServico, tokenGoogle } from "./google";
-import { nomeTipoServico } from "./constantes";
+import { nomesServicos } from "./constantes";
 import { getT } from "@/i18n/servidor";
 import { idiomaValido } from "@/i18n/idiomas";
 import { headers } from "next/headers";
@@ -93,7 +93,7 @@ export async function sincronizarAgenda(visitaId: string, linkApp: string): Prom
       }
       const t = getT(idiomaValido(admin.idioma) ? admin.idioma : "pt");
       const quem = visita.responsavel?.nome.split(" ")[0];
-      const servico = visita.tipoServico ? t(nomeTipoServico(visita.tipoServico)) : "";
+      const servico = visita.tipoServico ? nomesServicos(visita, t) : "";
       const corpo = {
         summary: `${t("Visita")}: ${visita.cliente.nome}${servico ? ` (${servico})` : ""}${quem ? ` - ${quem}` : ""}`,
         location: visita.endereco ?? undefined,
