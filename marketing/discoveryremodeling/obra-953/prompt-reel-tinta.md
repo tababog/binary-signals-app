@@ -13,7 +13,7 @@ Montagem:
 3) 3 s com a foto das 2 amostras (centralizada, fundo verde-escuro #17361A): etiqueta "1" grande sobre a da esquerda (Peppercorn, mais escura) e "2" sobre a da direita (Gauntlet Gray, mais clara).
 4) Final 3 s: "Comenta 1 ou 2 👇 · logo a gente mostra a escolhida" + reveal.
 Gancho 1º segundo: "Qual tom de cinza? 🎨". Não use o trecho em que ele diz "não sei se vai dar pra ter ideia" nem o "deixa eu só virar a câmera".
-ANTES DE SALVAR: duração e 2 prints (gancho e tela dividida). ENTREGA em "Reels Semana Vendas" até sexta 06/11 à noite. Não apague nada.
+ANTES DE SALVAR: duração e 2 prints (gancho e tela das amostras). ENTREGA em "Reels Semana Vendas" até sexta 06/11 à noite. Não apague nada.
 ```
 
 Legenda do post:
