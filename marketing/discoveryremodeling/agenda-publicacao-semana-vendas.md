@@ -182,20 +182,20 @@ Valores estimados. Resultados passados não garantem resultados futuros. Todo in
 ## Sábado 07/11
 - **08:00** · story · Bucks County, PA · leilão de 8/12 · doc `v-sab-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-sab-08.mp4
-- **10:00** · reel · Casa 4: você compraria por US$ 8.000? · doc `v-sab-f10`
-  - url: https://drive.usercontent.google.com/download?id=1BhTkNhiE7T87KrdetjsJX6yzmEqQjfkN&export=download&confirm=t
+- **10:00** · reel · Qual tom de cinza? (enquete da tinta, 953) · doc `v-sab-f10` (TROCADO em 05/11; o Casa 4 foi para depois)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/obra-953/tinta-enquete.mp4
   - legenda:
 
 ```
-Lance de US$ 8.000 num casarão em Nova York 😳 Valor de mercado estimado na região: ~US$ 180.000. Mas precisa de muita reforma, e no leilão de Tax Deed tem de tudo: do lixo ao luxo.
+Qual tom de cinza vai pra fachada? 🎨
 
-Você compraria? Responde aí: SIM ou NÃO 👇
+Vocês escolheram o cinza na enquete. Agora falta o tom:
+1️⃣ Peppercorn (mais escura)
+2️⃣ Gauntlet Gray (mais clara)
 
-📞 Conversa grátis de 20 minutos pra entender o seu objetivo. Estamos com só 2 vagas abertas na assessoria.
-👉 Comente ASSESSORIA ou chame no WhatsApp (link na bio).
+Comenta 1 ou 2 👇 Logo a gente mostra qual foi pra fachada da casa de Elmira.
 
-Valores estimados. Resultados passados não garantem resultados futuros. Todo investimento envolve risco.
-#leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #investirnoseua
+#reforma #antesedepois #casasnoseua #leilaodeimoveis #brasileirosnoseua
 ```
 - **12:00** · story · Convite da live de domingo · doc `v-sab-live12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-live-convite.mp4
