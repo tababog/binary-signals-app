@@ -168,3 +168,8 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 
 ## Windsor instável (aprendido em 04/11)
 - Se a publicação der timeout E o get_data não mostrar nem posts que com certeza saíram (lista atrasada), NÃO reenviar: perguntar ao Alessandro o que aparece no perfil (resposta curta, ex.: "Casa 2: 1 · story: sim"). Em 04/11 o Reel saiu na 2ª tentativa e o story na 1ª, apesar dos timeouts.
+
+## O que funciona no feed (números de 30/10 a 04/11)
+- Reel com o Ale falando de frente + gancho forte: 2.489, 2.413 e 1.617 views. Tour de casa sem rosto: 284 (Casa 2). Episódios da série às 19h: 106 e 221.
+- Dois Reels no mesmo dia dividem o alcance (04/11: reel manual às 8h24 + Casa 2 às 12h52 = 183 + 284).
+- Regra: priorizar o Ale de frente nos primeiros 2 s; tour de casa só com o rosto dele no gancho; 1 Reel por horário nobre; se ele quiser postar algo à mão, me avisar para eu tirar o automático do dia.
