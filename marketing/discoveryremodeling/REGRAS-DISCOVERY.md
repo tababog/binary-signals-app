@@ -179,3 +179,9 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 
 ## Meta de seguidores (05/11)
 - Meta do Alessandro: 150 mil seguidores no @discoveryremodeling. Marcos: 10 mil → 50 mil → 150 mil. Na reunião de domingo, mostrar o ritmo da semana (seguidores/dia) e quanto falta.
+
+## Agente do Drive (aprovado em 05/11)
+- Objetivo: tirar cópias duplicadas de fotos, vídeos e áudios para facilitar achar as coisas.
+- Duplicado = mesmo nome-base (sem " (1)", "Cópia de", "Copy of") E mesmo tamanho exato. Fica o mais antigo; as cópias vão para "_duplicados (apagar depois)" (id 1rtAUuPKwKzUJjzvW-IvH_OBIxU7UbyLr). Nunca apagar nem usar a lixeira: quem esvazia a pasta é o Alessandro.
+- Não mexe em: pastas "antigos", conta discoveryremodelingllc, documentos/planilhas do Google, arquivos de 0 bytes, ids usados nas rotinas/painel.
+- Roda todo sábado 22h17 (CT). Log em drive-limpeza/.
