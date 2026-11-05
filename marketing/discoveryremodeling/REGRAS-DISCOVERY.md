@@ -185,3 +185,8 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - Duplicado = mesmo nome-base (sem " (1)", "Cópia de", "Copy of") E mesmo tamanho exato. Fica o mais antigo; as cópias vão para "_duplicados (apagar depois)" (id 1rtAUuPKwKzUJjzvW-IvH_OBIxU7UbyLr). Nunca apagar nem usar a lixeira: quem esvazia a pasta é o Alessandro.
 - Não mexe em: pastas "antigos", conta discoveryremodelingllc, documentos/planilhas do Google, arquivos de 0 bytes, ids usados nas rotinas/painel.
 - Roda todo sábado 22h17 (CT). Log em drive-limpeza/.
+
+## Carrossel: formato certo (aprendido em 05/11)
+- O carrossel de Elkland foi feito em 9:16 (1080x1920) e o Instagram cortou para 4:5 no feed: sumiram o título de cima e as etiquetas ANTES/DEPOIS de baixo.
+- Regra: carrossel e post de foto SEMPRE em 1080x1350 (4:5). Textos e etiquetas dentro da área segura: 80 px das bordas, nada nos 100 px de cima e de baixo. Story e Reel continuam 1080x1920.
+- Antes de aprovar um carrossel, mostrar a prévia já no recorte 4:5.
