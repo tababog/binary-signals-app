@@ -190,3 +190,6 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - O carrossel de Elkland foi feito em 9:16 (1080x1920) e o Instagram cortou para 4:5 no feed: sumiram o título de cima e as etiquetas ANTES/DEPOIS de baixo.
 - Regra: carrossel e post de foto SEMPRE em 1080x1350 (4:5). Textos e etiquetas dentro da área segura: 80 px das bordas, nada nos 100 px de cima e de baixo. Story e Reel continuam 1080x1920.
 - Antes de aprovar um carrossel, mostrar a prévia já no recorte 4:5.
+
+## Pasta diária de vídeos (05/11)
+- Todo dia em que o Alessandro for gravar, criar no Drive a pasta "Estoque Obra DD-MM" (dentro da mesma pasta das anteriores, parent 1v3ofmnl8nKXelxI6RkGiJ4bIr3ThiUqe) já com link público (Anyone with the link · Viewer), autorizado por ele. Ele só sobe e avisa.
