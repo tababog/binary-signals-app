@@ -21,7 +21,7 @@ import {
   excluirFotoVisita,
 } from "../actions";
 import { FotosTrabalho } from "@/components/FotosTrabalho";
-import { descreverSubservicos, nomeTipoServico } from "@/lib/constantes";
+import { descreverServicos } from "@/lib/constantes";
 import { EnviarFollowUp } from "@/components/EnviarFollowUp";
 import { CANAIS, assuntoFollowUp, mensagemFollowUp, telefoneInternacional, type Idioma } from "@/lib/followup";
 import { LembreteVisita } from "@/components/LembreteVisita";
@@ -104,8 +104,7 @@ export default async function Visita({ params, searchParams }: { params: { id: s
         <h2 className="mb-1">{t("Fotos do trabalho")}</h2>
         {visita.tipoServico && (
           <p className="mb-3 text-sm text-stone-600">
-            <b>{t(nomeTipoServico(visita.tipoServico))}</b>
-            {visita.subServicos && ` · ${descreverSubservicos(visita.tipoServico, visita.subServicos, t)}`}
+            <b>{descreverServicos(visita, t)}</b>
           </p>
         )}
         {searchParams.erroFoto && <p className="mb-3 rounded-lg bg-amber-50 p-2 text-sm text-amber-900">{t("A visita foi salva, mas alguma foto não foi enviada. Adicione de novo abaixo.")}</p>}

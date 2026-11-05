@@ -854,5 +854,6 @@ const en: Record<string, string> = {
   "Não consegui ler o print ({motivo}). Escreva à mão.": "I couldn't read the screenshot ({motivo}). Type it in.",
   "Não consegui ler o print. Use uma imagem JPG ou PNG.": "I couldn't read the screenshot. Use a JPG or PNG image.",
   "📷 Ler print da conversa do cliente": "📷 Read client conversation screenshot",
+  "(pode marcar vários)": "(you can pick several)",
 };
 export default en;

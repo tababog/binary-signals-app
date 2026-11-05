@@ -4,7 +4,7 @@ import type { ItemOpcao, OpcaoOrcamento } from "@prisma/client";
 import { db } from "@/lib/db";
 import { exigirAdmin } from "@/lib/auth";
 import { centavosParaCampo, data, dinheiro } from "@/lib/format";
-import { CATEGORIAS_DESPESA, UNIDADES, descreverSubservicos, nomeCategoria, nomeTipoServico } from "@/lib/constantes";
+import { CATEGORIAS_DESPESA, UNIDADES, descreverServicos, nomeCategoria } from "@/lib/constantes";
 import { rateioCustosFixos } from "@/lib/custos-fixos";
 import { STATUS_ORCAMENTO, calcularOpcao, lerMercado, referenciaHistorico, type CalculoOpcao } from "@/lib/orcamento";
 import { META_MULTIPLICADOR } from "@/lib/precos";
@@ -67,8 +67,7 @@ export default async function Orcamento({ params }: { params: { id: string } }) 
         titulo={orc.cliente.nome}
         subtitulo={
           <span>
-            {orc.tipoServico ? t(nomeTipoServico(orc.tipoServico)) : "—"}
-            {orc.subServicos && ` (${descreverSubservicos(orc.tipoServico, orc.subServicos, t)})`}
+            {orc.tipoServico ? descreverServicos(orc, t) : "—"}
             {orc.quantidade > 0 && orc.unidade !== "SERVICO" && ` · ${orc.quantidade.toLocaleString("en-US")} ${unidade}`}
             {orc.cidade && ` · ${orc.cidade}`}
             {orc.condado && ` (${orc.condado} County)`}

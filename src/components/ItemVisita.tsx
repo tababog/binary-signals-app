@@ -2,7 +2,7 @@ import Link from "next/link";
 import { data, dataHora } from "@/lib/format";
 import { LembreteVisita } from "./LembreteVisita";
 import { MensagemCliente } from "./MensagemCliente";
-import { descreverSubservicos, nomeTipoServico } from "@/lib/constantes";
+import { descreverServicos } from "@/lib/constantes";
 import { getT } from "@/i18n/servidor";
 
 type Visita = {
@@ -31,8 +31,7 @@ export function ItemVisita({ v, agora }: { v: Visita; agora: Date }) {
         <Link href={`/visitas/${v.id}`} className="link">{v.cliente.nome}</Link>
         <div className="text-sm text-stone-600">
           {dataHora(v.dataHora)}
-          {v.tipoServico && ` · ${t(nomeTipoServico(v.tipoServico))}`}
-          {v.subServicos && ` (${descreverSubservicos(v.tipoServico, v.subServicos, t)})`}
+          {v.tipoServico && ` · ${descreverServicos(v, t)}`}
           {atrasada && <span className="selo ml-2 bg-amber-100 text-amber-800">{t("Passou do horário")}</span>}
           {hoje && <span className="selo ml-2 bg-marca-600 text-white">{t("Hoje")}</span>}
           {amanha && <span className="selo ml-2 bg-marca-100 text-marca-700">{t("Amanhã")}</span>}

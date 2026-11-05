@@ -2,7 +2,7 @@ import Link from "next/link";
 import { db } from "@/lib/db";
 import { exigirAdmin } from "@/lib/auth";
 import { data, dinheiro } from "@/lib/format";
-import { descreverSubservicos, nomeTipoServico } from "@/lib/constantes";
+import { descreverServicos } from "@/lib/constantes";
 import { rateioCustosFixos } from "@/lib/custos-fixos";
 import { STATUS_ORCAMENTO, calcularOpcao } from "@/lib/orcamento";
 import { META_MULTIPLICADOR } from "@/lib/precos";
@@ -54,8 +54,7 @@ export default async function Orcamentos({ searchParams }: { searchParams: { sta
                 <div className="min-w-0">
                   <div className="font-semibold">{o.cliente.nome}</div>
                   <div className="text-sm text-stone-500">
-                    {o.tipoServico ? t(nomeTipoServico(o.tipoServico)) : "—"}
-                    {o.subServicos && ` (${descreverSubservicos(o.tipoServico, o.subServicos, t)})`}
+                    {o.tipoServico ? descreverServicos(o, t) : "—"}
                     {o.cidade && ` · ${o.cidade}`}
                   </div>
                 </div>

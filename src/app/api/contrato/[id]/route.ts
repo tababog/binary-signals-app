@@ -1,7 +1,7 @@
 import { db } from "@/lib/db";
 import { usuarioAtual } from "@/lib/auth";
 import { getT } from "@/i18n/servidor";
-import { descreverSubservicos, nomeTipoServico } from "@/lib/constantes";
+import { descreverServicos, descreverSubservicos, nomesServicos, todosServicos } from "@/lib/constantes";
 import { rateioCustosFixos } from "@/lib/custos-fixos";
 import { calcularOpcao } from "@/lib/orcamento";
 import { dolaresPorExtenso } from "@/lib/contrato/extenso";
@@ -29,8 +29,8 @@ export async function GET(req: Request, { params }: { params: { id: string } }) 
   const preco = calcularOpcao(opcao, rateio.porDiaPadrao).preco;
   // Sem preço (nem definido, nem sugestão de mercado) o contrato sairia com $0
   if (preco <= 0) return new Response("Defina o preço desta opção antes de gerar o contrato.", { status: 400, headers: { "Content-Type": "text/plain; charset=utf-8" } });
-  const servico = orc.tipoServico ? en(nomeTipoServico(orc.tipoServico)) : "Home improvement";
-  const detalhes = descreverSubservicos(orc.tipoServico, orc.subServicos, en);
+  const servico = orc.tipoServico ? nomesServicos(orc, en) : "Home improvement";
+  const detalhes = todosServicos(orc).length > 1 ? descreverServicos(orc, en) : descreverSubservicos(orc.tipoServico, orc.subServicos, en);
 
   // Escopo: descrição da opção (em inglês, para o cliente) + materiais e serviços listados nela
   const itensEscopo = opcao.itens

@@ -104,6 +104,42 @@ export function descreverSubservicos(tipo: string | null, subServicos: string | 
     .join(" · ");
 }
 
+/** Um serviço marcado: o tipo e os subserviços dele (códigos separados por vírgula). */
+export type ServicoMarcado = { tipo: string; subServicos: string | null };
+
+/** Os serviços além do principal (campo `outrosServicos`, JSON). */
+export function lerOutrosServicos(json: string | null | undefined): ServicoMarcado[] {
+  if (!json) return [];
+  try {
+    const lista = JSON.parse(json);
+    return Array.isArray(lista) ? lista.filter((x) => x && typeof x.tipo === "string").map((x) => ({ tipo: x.tipo, subServicos: x.subServicos ?? null })) : [];
+  } catch {
+    return [];
+  }
+}
+
+/** Todos os serviços de uma visita ou orçamento: o principal primeiro. */
+export function todosServicos(v: { tipoServico: string | null; subServicos?: string | null; outrosServicos?: string | null }): ServicoMarcado[] {
+  return [...(v.tipoServico ? [{ tipo: v.tipoServico, subServicos: v.subServicos ?? null }] : []), ...lerOutrosServicos(v.outrosServicos)];
+}
+
+/** "Deck + Pintura" */
+export function nomesServicos(v: Parameters<typeof todosServicos>[0], t: (s: string) => string = (s) => s) {
+  return todosServicos(v)
+    .map((s) => t(nomeTipoServico(s.tipo)))
+    .join(" + ");
+}
+
+/** "Deck (Novo) + Pintura (Interna: Paredes, Teto)" */
+export function descreverServicos(v: Parameters<typeof todosServicos>[0], t: (s: string) => string = (s) => s) {
+  return todosServicos(v)
+    .map((s) => {
+      const detalhes = descreverSubservicos(s.tipo, s.subServicos, t);
+      return `${t(nomeTipoServico(s.tipo))}${detalhes ? ` (${detalhes})` : ""}`;
+    })
+    .join(" + ");
+}
+
 export const UNIDADES = {
   SQFT: "sq ft",
   LF: "ft linear",

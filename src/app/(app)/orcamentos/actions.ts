@@ -6,12 +6,13 @@ import { revalidatePath } from "next/cache";
 import { db } from "@/lib/db";
 import { exigirAdmin } from "@/lib/auth";
 import { paraCentavos, texto } from "@/lib/format";
-import { CATEGORIAS_DESPESA, CONDADOS_CT, PREFIXO_PERSONALIZADO, SUBSERVICOS, TIPOS_SERVICO, UNIDADES, descreverSubservicos, nomeTipoServico } from "@/lib/constantes";
+import { CATEGORIAS_DESPESA, CONDADOS_CT, PREFIXO_PERSONALIZADO, SUBSERVICOS, TIPOS_SERVICO, UNIDADES, descreverServicos, descreverSubservicos, nomesServicos, todosServicos } from "@/lib/constantes";
 import { rateioCustosFixos } from "@/lib/custos-fixos";
 import { OPCOES_PADRAO, STATUS_ORCAMENTO, referenciaHistorico } from "@/lib/orcamento";
 import { gerarPerguntas, precosDeMaterial, sugerirOrcamento, type DadosPrecificacao } from "@/lib/precificacao-ia";
 import { dinheiro } from "@/lib/format";
 import type { EstadoForm } from "@/components/Formulario";
+import { lerServicosDoFormulario } from "@/lib/servicos-form";
 
 type Pergunta = { pergunta: string; opcoes: string[]; multipla?: boolean; resposta?: string };
 
@@ -28,21 +29,17 @@ const numero = (v: FormDataEntryValue | null) => {
 /** Lê serviço, subserviços e dados do trabalho do formulário (os mesmos campos da visita). */
 async function lerTrabalho(form: FormData) {
   const t = getT();
-  let tipo = String(form.get("tipoServico") ?? "");
-  if (tipo === "OUTRO") {
-    const nome = String(form.get("servicoOutro") ?? "").trim().slice(0, 60);
-    if (!nome) return { erro: t("Escreva qual é o serviço em \"Outros\".") };
-    await db.servicoPersonalizado.upsert({ where: { nome }, update: {}, create: { nome } });
-    tipo = `${PREFIXO_PERSONALIZADO}${nome}`;
-  }
-  if (!(tipo in TIPOS_SERVICO) && !tipo.startsWith(PREFIXO_PERSONALIZADO)) return { erro: t("Escolha o tipo de serviço.") };
-  const validos = new Set((SUBSERVICOS[tipo] ?? []).flatMap((s) => [s.k, ...(s.subs ?? []).map((f) => `${s.k}.${f.k}`)]));
+  // Pode ser mais de um serviço (ex.: deck + pintura); o primeiro é o principal
+  const servicos = await lerServicosDoFormulario(form);
+  if ("erro" in servicos) return { erro: t(servicos.erro) };
+  if (!servicos.tipoServico) return { erro: t("Escolha o tipo de serviço.") };
   const condado = String(form.get("condado") ?? "");
   const unidade = String(form.get("unidade") ?? "");
   return {
     dados: {
-      tipoServico: tipo,
-      subServicos: form.getAll("subServicos").map(String).filter((c) => validos.has(c)).join(",") || null,
+      tipoServico: servicos.tipoServico,
+      subServicos: servicos.subServicos,
+      outrosServicos: servicos.outrosServicos,
       descricao: texto(form.get("descricao")),
       endereco: texto(form.get("endereco")),
       cidade: texto(form.get("cidade")),
@@ -197,8 +194,8 @@ async function dadosParaIA(id: string): Promise<DadosPrecificacao> {
   const perguntas: Pergunta[] = orc.perguntas ? JSON.parse(orc.perguntas) : [];
   const unidade = en((UNIDADES as Record<string, string>)[orc.unidade] ?? orc.unidade);
   return {
-    servico: orc.tipoServico ? en(nomeTipoServico(orc.tipoServico)) : "Remodeling",
-    detalhes: descreverSubservicos(orc.tipoServico, orc.subServicos, en),
+    servico: orc.tipoServico ? nomesServicos(orc, en) : "Remodeling",
+    detalhes: todosServicos(orc).length > 1 ? descreverServicos(orc, en) : descreverSubservicos(orc.tipoServico, orc.subServicos, en),
     descricao: orc.descricao ?? "",
     cidade: orc.cidade ?? orc.endereco ?? "",
     condado: orc.condado,

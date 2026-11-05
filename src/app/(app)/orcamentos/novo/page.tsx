@@ -33,7 +33,7 @@ export default async function NovoOrcamento({ searchParams }: { searchParams: { 
             personalizados={personalizados.map((p) => p.nome)}
             valor={
               visita
-                ? { clienteId: visita.clienteId, visitaId: visita.id, tipoServico: visita.tipoServico, subServicos: visita.subServicos, descricao: visita.descricao, endereco: visita.endereco }
+                ? { clienteId: visita.clienteId, visitaId: visita.id, tipoServico: visita.tipoServico, subServicos: visita.subServicos, outrosServicos: visita.outrosServicos, descricao: visita.descricao, endereco: visita.endereco }
                 : { clienteId: searchParams.cliente }
             }
           />
