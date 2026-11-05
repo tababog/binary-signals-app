@@ -12,6 +12,7 @@ import { SeloLocal } from "@/components/SeloLocal";
 import { temAlertaLocal } from "@/lib/geo";
 import { getT } from "@/i18n/servidor";
 import { acoesRapidas, areas } from "@/lib/atalhos";
+import { Icone } from "@/components/Icone";
 import { fecharPonto, lancarRegistroManual, trocarObraRegistro } from "./registros/actions";
 import { descartarRecibo } from "./recibos/actions";
 import { BotaoEnviar } from "@/components/BotaoEnviar";
@@ -50,16 +51,16 @@ export default async function Painel() {
       <section className="mb-4 space-y-3">
         <div className="grid grid-cols-3 gap-2 sm:grid-cols-6">
           {acoesRapidas(t).map((a) => (
-            <Link key={a.href} href={a.href} className="flex flex-col items-center gap-1 rounded-xl bg-marca-600 p-3 text-center text-sm font-semibold text-white shadow-sm active:bg-marca-700">
-              <span className="text-2xl" aria-hidden="true">{a.icone}</span>
+            <Link key={a.href} href={a.href} className="flex flex-col items-center gap-1.5 rounded-xl border-2 border-marca-600 bg-marca-100 p-3 text-center text-sm font-bold leading-tight text-logo shadow-sm active:bg-marca-50">
+              <Icone nome={a.icone} tamanho={30} />
               {a.rotulo}
             </Link>
           ))}
         </div>
         <div className="grid grid-cols-3 gap-2 sm:grid-cols-6 lg:grid-cols-11">
           {areas(t).map((a) => (
-            <Link key={a.href} href={a.href} className="flex min-w-0 flex-col items-center gap-1 rounded-xl border border-stone-200 bg-white p-2 text-center text-xs font-medium leading-tight text-stone-700 active:bg-marca-50">
-              <span className="text-xl" aria-hidden="true">{a.icone}</span>
+            <Link key={a.href} href={a.href} className="flex min-w-0 flex-col items-center gap-1 rounded-xl border border-stone-200 bg-white p-2 text-center text-xs font-medium leading-tight text-logo active:bg-marca-50">
+              <Icone nome={a.icone} />
               {a.rotulo}
             </Link>
           ))}
