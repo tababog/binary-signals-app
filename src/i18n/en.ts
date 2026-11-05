@@ -847,5 +847,6 @@ const en: Record<string, string> = {
   "Navegação principal": "Main navigation",
   "Receber pagamento": "Receive payment",
   "📄 Contrato desta opção (PDF)": "📄 Contract for this option (PDF)",
+  "Defina o preço desta opção para gerar o contrato.": "Set the price of this option to generate the contract.",
 };
 export default en;

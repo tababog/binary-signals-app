@@ -27,6 +27,8 @@ export async function GET(req: Request, { params }: { params: { id: string } }) 
   const en = getT("en");
   const rateio = await rateioCustosFixos();
   const preco = calcularOpcao(opcao, rateio.porDiaPadrao).preco;
+  // Sem preço (nem definido, nem sugestão de mercado) o contrato sairia com $0
+  if (preco <= 0) return new Response("Defina o preço desta opção antes de gerar o contrato.", { status: 400, headers: { "Content-Type": "text/plain; charset=utf-8" } });
   const servico = orc.tipoServico ? en(nomeTipoServico(orc.tipoServico)) : "Home improvement";
   const detalhes = descreverSubservicos(orc.tipoServico, orc.subServicos, en);
 
