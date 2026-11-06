@@ -193,3 +193,8 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 
 ## Pasta diária de vídeos (05/11)
 - Todo dia em que o Alessandro for gravar, criar no Drive a pasta "Estoque Obra DD-MM" (dentro da mesma pasta das anteriores, parent 1v3ofmnl8nKXelxI6RkGiJ4bIr3ThiUqe) já com link público (Anyone with the link · Viewer), autorizado por ele. Ele só sobe e avisa.
+
+## Semana mesclada (decidido em 06/11)
+- Nada de semana temática inteira (só quiz, só vendas). Toda semana mistura os tipos, 1 Reel por dia ao meio-dia:
+  2 informativos (ex.: Tax Deed em 30 s, 3 coisas antes do lance) · 2 alerta/medo com solução (roteiros-medo.md) · 1 bastidor/obra · 1 quiz/interação (quanto custa?, enquete) · 1 prova/venda (antes e depois, "vendemos", assessoria).
+- Medo sempre com verdade e com a solução que a Discovery oferece; sem exagero, sem promessa de lucro.
