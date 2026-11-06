@@ -61,3 +61,19 @@ Premissas: cozinha ~11,5 x 10 ft (CONFIRMAR medidas); pé-direito 8 ft; gabinete
 | **Total** | **US$ 5.920 a 9.740** | **US$ 4.090 a 6.980** |
 Total da cozinha: **US$ 10.000 a 16.700** (meio ~US$ 13.300). Não incluído (não citado): bancada (laminado US$ 600 a 900 / quartzo US$ 1.800 a 2.700 instalados), pia + torneira + encanador (US$ 550 a 1.000).
 Hallway sem o piso: US$ 2.300 a 3.900.
+
+## 953 – Dining room (estimativa de 06/11)
+| Item | Material | Mão de obra |
+|---|---|---|
+| Ventilador de teto novo (ponto já existe; caixa própria p/ ventilador se precisar) | US$ 140 a 270 | US$ 100 a 200 |
+| Reparo nas paredes (massa/remendo; CONFERIR no vídeo) | US$ 50 a 120 | US$ 300 a 700 |
+| Pintura (se for feita) | US$ 80 a 130 | US$ 300 a 450 |
+| **Total** | **US$ 270 a 520** | **US$ 700 a 1.350** |
+Dining room: **US$ 970 a 1.870**.
+
+## 953 – Janelas da casa inteira
+Premissa: ~15 janelas (CONFIRMAR a contagem) · vinil double-hung de reposição, tamanhos padrão.
+| Item | Material | Mão de obra |
+|---|---|---|
+| 15 janelas (US$ 250 a 450 cada) | US$ 3.750 a 6.750 | US$ 1.500 a 3.000 (US$ 100 a 200 cada) |
+Janelas: **US$ 5.250 a 9.750** (meio ~US$ 7.500).
