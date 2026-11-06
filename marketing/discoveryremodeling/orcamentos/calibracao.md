@@ -32,3 +32,17 @@ Objetivo: o Claude estima pela foto/medidas, o Alessandro informa o valor real, 
 - **06/11 – Telhado 953:** o telhadista mediu **12 squares**; eu estimei 16,5 pela foto (+37%). Mão de obra em Elmira: orçamentos de **US$ 180 a 250 por square**; fechado a **US$ 180/square = US$ 2.160**. Total real US$ 6.000 → material + plywood + dumpster ≈ US$ 3.840 (a detalhar).
   - Regra nova: para telhado, usar a medida em squares do telhadista; se estimar pela foto, descontar ~25%. Mão de obra regional: US$ 180 a 250/square.
   - Recalculando com 12 squares: material ~US$ 2.200 a 3.000 + mão de obra US$ 2.160 + dumpster US$ 450 a 650 → US$ 4.800 a 5.800 (real US$ 6.000).
+
+## 953 – Hallway 8x8 (estimativa de 06/11, antes do vídeo)
+Premissas: pé-direito 8 ft; paredes ~216 sq ft (já sem a porta); teto 64 sq ft; piso 64 sq ft; corrimão pequeno (~6–8 ft).
+| Item | Material | Mão de obra |
+|---|---|---|
+| Demolição das paredes (+ descarte) | US$ 50 a 100 | US$ 250 a 450 |
+| Elétrica: 1 interruptor + 1 luz + fiação | US$ 60 a 150 | US$ 250 a 450 |
+| Insulation das paredes (R-13/R-15) | US$ 150 a 220 | US$ 110 a 220 |
+| Drywall paredes + teto (~10 folhas, massa, fita) | US$ 220 a 260 | US$ 490 a 700 |
+| Pintura (primer + 2 demãos) | US$ 100 a 150 | US$ 280 a 420 |
+| Piso LVP 64 sq ft (+10%) + rodapé | US$ 200 a 320 | US$ 190 a 290 |
+| Railing pequeno | US$ 150 a 400 | US$ 200 a 400 |
+| **Total** | **US$ 930 a 1.600** | **US$ 1.770 a 2.930** |
+Total do hallway: **US$ 2.700 a 4.500** (meio ~US$ 3.600). Real: (aguardando)
