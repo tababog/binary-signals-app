@@ -206,3 +206,22 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - Pasta privada no Drive: "Recibos de Material - Casas Discovery" (id 105h2031X8rVnNs34-GYbR1x_z0SmjULW), uma subpasta por casa:
   953 Erie (1RygPmpYEJlpVn8L75d4C92JaW_Q8rDxI) · 8 Rumsey (1zZmaBOP9ssln4w42rZJz0_ADk9HSr8gd) · 348 Beckwith (1Cw9tj0oOhhAj3Kd2nKfdoko73IsC8zXo) · 1104 Agnew (1ixkbeDse0aqiBgLwdm0HqNMe6Z3xRneN) · 6955 State Route 51 (1qm1TJCFvq1eQhIldMUWgT_0sV0UPja_L).
 - O Alessandro escaneia direto na subpasta da casa (app Drive → + → Scan). A leitura das 7h47/12h47/18h47 lê os arquivos novos dessas pastas, lança na casa e na calibração. Pastas NÃO públicas (dados financeiros).
+
+## Separação dos recibos por departamento (06/11)
+Cada linha de cada recibo vai para um departamento. Mapa:
+- **Telhado:** shingles, plywood/OSB (padrão = telhado, salvo se a nota/obra indicar subfloor), underlayment/manta, ice & water, drip edge, ridge vent, flashing, prego de telhado, dumpster do telhado.
+- **Drywall:** sheetrock/drywall, joint compound ("compound"/massa), fita, parafuso de drywall, corner bead, lixa de drywall.
+- **Insulation:** lã de vidro/rockwool, espuma, barreira de vapor.
+- **Pintura interna:** tinta interior, primer interior/PVA, primer bloqueador, rolo/bandeja/fita/lona usados dentro, massa corrida.
+- **Pintura externa:** tinta exterior (ex.: Peppercorn), primer exterior, calafetação exterior, material de power wash.
+- **Elétrica:** fio, caixas, tomadas, GFCI, interruptores, recessed, luminárias, ventilador de teto, disjuntores.
+- **Encanamento:** PVC/ABS/PEX, conexões, registros, válvula de chuveiro, ralo, cano de esgoto.
+- **Banheiro:** banheira, vanity, vaso, cerâmica, argamassa, rejunte, painel de parede, exaustor, acessórios.
+- **Cozinha:** gabinetes, bancada, pia, torneira, fogão, exaustor, dishwasher.
+- **Piso:** laminado, manta do piso, shoe molding, stain e verniz de piso/escada.
+- **Janelas e portas:** janelas, portas, fechaduras.
+- **Trim/carpintaria:** rodapé, guarnição, madeira de acabamento, closet.
+- **Lavanderia:** lavadora, secadora, mangueiras, duto.
+- **Demolição/descarte:** dumpster de dentro, trailer, taxa do descarte, sacos.
+- **Consumíveis/ferramentas:** lâminas, luvas, brocas, itens gerais.
+Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha não der para saber o departamento, perguntar ao Alessandro em ✅/❌ e não chutar. Imposto (sales tax) é rateado proporcionalmente entre os departamentos da nota.
