@@ -201,3 +201,8 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 
 ## Calibração de orçamentos (06/11)
 - Estimativas e custos reais de obra NÃO vão para o GitHub. Ficam na Casas Discovery (privada), coleção "calibracao" (um documento por casa, ex.: "953-erie"). O Claude lança ali cada gasto real que o Alessandro mandar e, no fim, compara estimativa x real.
+
+## Recibos de material por casa (06/11)
+- Pasta privada no Drive: "Recibos de Material - Casas Discovery" (id 105h2031X8rVnNs34-GYbR1x_z0SmjULW), uma subpasta por casa:
+  953 Erie (1RygPmpYEJlpVn8L75d4C92JaW_Q8rDxI) · 8 Rumsey (1zZmaBOP9ssln4w42rZJz0_ADk9HSr8gd) · 348 Beckwith (1Cw9tj0oOhhAj3Kd2nKfdoko73IsC8zXo) · 1104 Agnew (1ixkbeDse0aqiBgLwdm0HqNMe6Z3xRneN) · 6955 State Route 51 (1qm1TJCFvq1eQhIldMUWgT_0sV0UPja_L).
+- O Alessandro escaneia direto na subpasta da casa (app Drive → + → Scan). A leitura das 7h47/12h47/18h47 lê os arquivos novos dessas pastas, lança na casa e na calibração. Pastas NÃO públicas (dados financeiros).
