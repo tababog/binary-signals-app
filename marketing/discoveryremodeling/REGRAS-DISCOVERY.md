@@ -227,3 +227,7 @@ Cada linha de cada recibo vai para um departamento. Mapa:
 Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha não der para saber o departamento, perguntar ao Alessandro em ✅/❌ e não chutar. Imposto (sales tax) é rateado proporcionalmente entre os departamentos da nota.
 - (06/11, Alessandro) Na dúvida, SEMPRE perguntar antes de lançar: o mesmo produto pode ir para áreas diferentes. A linha fica "pendente" até ele responder; depois vai para o departamento que ele disser. Guardar as respostas dele como exemplo para as próximas notas (lista "Respostas do Alessandro" no doc de calibração da casa).
 - (06/11) Base de preços de mão de obra definida pelo Alessandro fica na Casas Discovery, coleção "calibracao", doc "base-precos" (ex.: laminado = base fixa por sq ft). Para cada casa nova (próxima: 348 Beckwith), entregar dois números por cômodo e no total: "Preço Adin" (padrão da 953: total dele ≈ piso da minha faixa) e "Preço de mercado" (cotando fora). Material separado da mão de obra.
+
+## Painel da semana: data da última atualização (06/11)
+- Toda vez que eu atualizar o painel (https://claude.ai/artifact/J39wU8iVxtmEvYAZ1XBHhW), troco a faixa dourada no topo: "🕒 Última atualização: [dia da semana], DD/MM/AAAA, às XhYY (Connecticut) · XhYY (Brasília)".
+- Publique sempre com `url` = J39wU8iVxtmEvYAZ1XBHhW (o arquivo local é scratchpad/painel/painel-semana.html). Sem o url, a publicação cria outro link.
