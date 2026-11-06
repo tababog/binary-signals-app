@@ -225,3 +225,4 @@ Cada linha de cada recibo vai para um departamento. Mapa:
 - **Demolição/descarte:** dumpster de dentro, trailer, taxa do descarte, sacos.
 - **Consumíveis/ferramentas:** lâminas, luvas, brocas, itens gerais.
 Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha não der para saber o departamento, perguntar ao Alessandro em ✅/❌ e não chutar. Imposto (sales tax) é rateado proporcionalmente entre os departamentos da nota.
+- (06/11, Alessandro) Na dúvida, SEMPRE perguntar antes de lançar: o mesmo produto pode ir para áreas diferentes. A linha fica "pendente" até ele responder; depois vai para o departamento que ele disser. Guardar as respostas dele como exemplo para as próximas notas (lista "Respostas do Alessandro" no doc de calibração da casa).
