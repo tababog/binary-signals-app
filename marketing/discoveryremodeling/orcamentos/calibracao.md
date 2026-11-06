@@ -77,3 +77,38 @@ Premissa: ~15 janelas (CONFIRMAR a contagem) · vinil double-hung de reposição
 |---|---|---|
 | 15 janelas (US$ 250 a 450 cada) | US$ 3.750 a 6.750 | US$ 1.500 a 3.000 (US$ 100 a 200 cada) |
 Janelas: **US$ 5.250 a 9.750** (meio ~US$ 7.500).
+
+## 953 – Living room (06/11)
+Premissas: ~14 x 12 ft (CONFIRMAR); paredes ~360 sq ft, teto ~170 sq ft.
+| Item | Material | Mão de obra |
+|---|---|---|
+| Skin coat em todas as paredes (já feito) | US$ 60 a 120 | US$ 360 a 630 |
+| Luz de parede + interruptor (fiação nova) | US$ 60 a 150 | US$ 250 a 450 |
+| Pintura paredes + teto | US$ 120 a 180 | US$ 450 a 700 |
+| **Total** | **US$ 240 a 450** | **US$ 1.060 a 1.780** |
+Living room: **US$ 1.300 a 2.230**. (Pintura da cozinha e do dining room já está nos orçamentos deles.)
+
+## 953 – Escada e hallway de cima (06/11)
+Premissas: ~13 degraus; hallway de cima ~60 sq ft (CONFIRMAR).
+| Item | Material | Mão de obra |
+|---|---|---|
+| Lixar degraus + stain + verniz | US$ 60 a 120 | US$ 520 a 910 |
+| Corrimão: só pintar | US$ 30 a 50 | US$ 150 a 300 |
+| Hallway de cima: lixar + stain | US$ 40 a 80 | US$ 260 a 470 |
+| **Total** | **US$ 130 a 250** | **US$ 930 a 1.680** |
+Escada + hallway de cima: **US$ 1.060 a 1.930**.
+
+## 953 – Banheiro, remodelação total (06/11)
+Premissas: banheiro padrão ~5 x 8 ft (CONFIRMAR); cerâmica no chão (~40 sq ft) e nas 3 paredes da banheira até o teto (~90 sq ft); chuveiro muda do lado direito para o esquerdo (válvula e provavelmente o ralo da banheira mudam de lado).
+| Item | Material | Mão de obra |
+|---|---|---|
+| Demolição + descarte | US$ 100 | US$ 400 a 800 |
+| Banheira nova | US$ 250 a 600 | US$ 300 a 600 |
+| Válvula nova + mudança do chuveiro de lado (encanador) | US$ 150 a 300 | US$ 1.000 a 2.000 |
+| Cerâmica chão + paredes (~130 sq ft, com cimentícia, argamassa, rejunte) | US$ 450 a 850 | US$ 1.050 a 1.800 |
+| Vanity com tampo e torneira | US$ 250 a 600 | US$ 150 a 300 |
+| Vaso sanitário novo | US$ 150 a 300 | US$ 150 a 250 |
+| Luz com exaustor (ventilado para fora) | US$ 80 a 200 | US$ 250 a 450 |
+| Drywall verde/reparos + pintura | US$ 80 a 150 | US$ 300 a 500 |
+| **Total** | **US$ 1.510 a 3.100** | **US$ 3.600 a 6.700** |
+Banheiro: **US$ 5.100 a 9.800** (meio ~US$ 7.450).
