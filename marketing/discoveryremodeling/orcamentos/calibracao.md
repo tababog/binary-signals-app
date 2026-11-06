@@ -27,6 +27,7 @@ Objetivo: o Claude estima pela foto/medidas, o Alessandro informa o valor real, 
 ## Gastos reais lançados pelo Alessandro (953)
 | Data | Item | Quantidade | Valor | Categoria |
 |---|---|---|---|---|
+| 06/11/2026 | Tinta com primer (paint & primer) | 10 gal | (aguardando nota) | Pintura |
 
 ## Ajustes aprendidos
 - **06/11 – Telhado 953:** o telhadista mediu **12 squares**; eu estimei 16,5 pela foto (+37%). Mão de obra em Elmira: orçamentos de **US$ 180 a 250 por square**; fechado a **US$ 180/square = US$ 2.160**. Total real US$ 6.000 → material + plywood + dumpster ≈ US$ 3.840 (a detalhar).
