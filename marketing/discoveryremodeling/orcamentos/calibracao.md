@@ -112,3 +112,27 @@ Premissas: banheiro padrão ~5 x 8 ft (CONFIRMAR); cerâmica no chão (~40 sq ft
 | Drywall verde/reparos + pintura | US$ 80 a 150 | US$ 300 a 500 |
 | **Total** | **US$ 1.510 a 3.100** | **US$ 3.600 a 6.700** |
 Banheiro: **US$ 5.100 a 9.800** (meio ~US$ 7.450).
+
+## 953 – Quartos (06/11)
+Premissas: quartos ~11 x 11 ft (CONFIRMAR); janelas já estão no item "Janelas da casa inteira".
+| Quarto | Itens | Material | Mão de obra | Total |
+|---|---|---|---|---|
+| 1 | Closet novo com porta; recessed + interruptor; drywall no teto ruim; pintura | US$ 430 a 770 | US$ 1.300 a 2.250 | US$ 1.730 a 3.020 |
+| 2 | Drywall na parede com papel de parede; recessed + interruptor; pintura | US$ 190 a 320 | US$ 800 a 1.300 | US$ 990 a 1.620 |
+| 3 | Patch de drywall; recessed + interruptor; pintura | US$ 170 a 300 | US$ 750 a 1.250 | US$ 920 a 1.550 |
+| **Total** | | **US$ 790 a 1.390** | **US$ 2.850 a 4.800** | **US$ 3.640 a 6.190** |
+
+## 953 – RESUMO DA ESTIMATIVA (06/11)
+| Parte | Estimativa | Real |
+|---|---|---|
+| Pintura externa (power wash + siding + acabamentos) | US$ 8.200 a 13.000 | |
+| Telhado + dumpster | US$ 4.800 a 5.800 (recalculado c/ 12 squares) | US$ 6.000 |
+| Hallway 8x8 (sem piso) | US$ 2.300 a 3.900 | |
+| Cozinha (sem bancada/pia) | US$ 10.000 a 16.700 | |
+| Dining room | US$ 970 a 1.870 | |
+| Janelas (~15) | US$ 5.250 a 9.750 | |
+| Living room | US$ 1.300 a 2.230 | |
+| Escada + hallway de cima | US$ 1.060 a 1.930 | |
+| Banheiro | US$ 5.100 a 9.800 | |
+| Quartos 1, 2 e 3 | US$ 3.640 a 6.190 | |
+| **TOTAL** (com o telhado real) | **US$ 43.800 a 71.400** (meio ~US$ 57.600) | |
