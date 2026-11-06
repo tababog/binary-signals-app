@@ -166,3 +166,11 @@ Porão: **US$ 2.510 a 4.500**.
 | Quartos 1, 2 e 3 | US$ 3.640 a 6.190 | |
 | Porão (esgoto + lavanderia) | US$ 2.510 a 4.500 | |
 | **TOTAL** | **US$ 44.100 a 71.400** (meio ~US$ 57.800) | |
+
+## 953 – Pintura externa recalculada (06/11): tinta com primer embutido (paint & primer), 2 demãos
+- Siding ~2.100 sq ft, 2 demãos, rendimento ~250 sq ft/gal em shake → ~17 gal × US$ 60 a 80 = US$ 1.020 a 1.360.
+- Acabamentos brancos ~5 gal: US$ 300 a 400 · material de apoio (calafetação, fita, lona, rolos): US$ 150 a 250.
+- **Material: US$ 1.470 a 2.010** (antes US$ 2.200 a 2.800).
+- Mão de obra: power wash US$ 300 a 500 · siding 2 demãos US$ 3.800 a 6.200 · acabamentos US$ 1.000 a 2.000 → **US$ 5.100 a 8.700**.
+- **Pintura externa: US$ 6.570 a 10.710** (meio ~US$ 8.600).
+- Lição: com paint & primer economiza ~1 demão de material e ~20% de mão de obra.
