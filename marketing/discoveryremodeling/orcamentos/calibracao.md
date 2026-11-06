@@ -136,3 +136,33 @@ Premissas: quartos ~11 x 11 ft (CONFIRMAR); janelas já estão no item "Janelas 
 | Banheiro | US$ 5.100 a 9.800 | |
 | Quartos 1, 2 e 3 | US$ 3.640 a 6.190 | |
 | **TOTAL** (com o telhado real) | **US$ 43.800 a 71.400** (meio ~US$ 57.600) | |
+
+## 953 – Ajustes depois das respostas (06/11)
+- Medidas confirmadas pelo Alessandro (as premissas acima valem).
+- Janelas: **11** (preço padrão) → material US$ 2.750 a 4.950 + mão de obra US$ 1.100 a 2.200 = **US$ 3.850 a 7.150**.
+- Cozinha, tudo básico: geladeira SAI (usa a da casa); fogão + exaustor + dishwasher básicos US$ 1.050 a 1.500; gabinetes básicos US$ 1.800 a 2.800; ENTRA bancada laminada (material US$ 400 a 600 + instalação US$ 200 a 300) e pia + torneira (US$ 150 a 300) + encanador (US$ 300 a 500) → cozinha **US$ 9.160 a 14.870**.
+- Porão (novo):
+| Item | Material | Mão de obra |
+|---|---|---|
+| Esgoto: troca de 20 ft de cano de 4" quebrado | US$ 100 a 250 | US$ 600 a 1.200 |
+| Máquina de lavar + secar (básicas) | US$ 1.100 a 1.600 | – |
+| Ligação da lavadora (registros, caixa, ralo) | US$ 80 a 150 | US$ 250 a 500 |
+| Ligação da secadora (circuito 240 V ou gás + duto) | US$ 80 a 200 | US$ 300 a 600 |
+| **Total** | **US$ 1.360 a 2.200** | **US$ 1.150 a 2.300** |
+Porão: **US$ 2.510 a 4.500**.
+
+## 953 – RESUMO ATUALIZADO (06/11)
+| Parte | Estimativa | Real |
+|---|---|---|
+| Pintura externa | US$ 8.200 a 13.000 | |
+| Telhado + dumpster | – | US$ 6.000 |
+| Hallway de baixo | US$ 2.300 a 3.900 | |
+| Cozinha (básica, com bancada/pia, sem geladeira) | US$ 9.160 a 14.870 | |
+| Dining room | US$ 970 a 1.870 | |
+| Janelas (11) | US$ 3.850 a 7.150 | |
+| Living room | US$ 1.300 a 2.230 | |
+| Escada + hallway de cima | US$ 1.060 a 1.930 | |
+| Banheiro | US$ 5.100 a 9.800 | |
+| Quartos 1, 2 e 3 | US$ 3.640 a 6.190 | |
+| Porão (esgoto + lavanderia) | US$ 2.510 a 4.500 | |
+| **TOTAL** | **US$ 44.100 a 71.400** (meio ~US$ 57.800) | |
