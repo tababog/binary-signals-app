@@ -5,7 +5,7 @@ Objetivo: o Claude estima pela foto/medidas, o Alessandro informa o valor real, 
 | Data | Casa | Serviço | Estimativa do Claude | Valor real | Diferença | O que ajustar |
 |---|---|---|---|---|---|---|
 | 05/11/2026 | 953 Erie St (Elmira, NY) | Pintura externa: power wash + siding (shakes) + acabamentos | US$ 8.200 a 13.000 (central ~US$ 10.500). Material US$ 2.200 a 2.800 · Mão de obra US$ 6.000 a 10.200 | (aguardando) | | |
-| 06/11/2026 | 953 Erie St (Elmira, NY) | Telhado completo + dumpster | US$ 6.300 a 9.700 (central ~US$ 8.000). Material US$ 2.750 a 3.550 (com plywood) · Mão de obra US$ 2.500 a 4.100 · Dumpster US$ 450 a 650 | US$ 6.000 (valor já informado; detalhar material/mão de obra/dumpster) | estimativa ~33% acima | mão de obra local mais barata? dumpster incluso? |
+| 06/11/2026 | 953 Erie St (Elmira, NY) | Telhado completo + dumpster | US$ 6.300 a 9.700 (central ~US$ 8.000). Material US$ 2.750 a 3.550 (com plywood) · Mão de obra US$ 2.500 a 4.100 · Dumpster US$ 450 a 650 | US$ 6.000 (mão de obra US$ 2.160 = 12 squares × US$ 180; resto a detalhar) | estimativa ~33% acima | área: 12 squares (eu estimei 16,5) |
 
 ## Premissas usadas (953, pintura externa)
 - Casa de 2 andares + puxado de fundos. Área de parede estimada ~2.100 sq ft (sem janelas).
@@ -27,3 +27,8 @@ Objetivo: o Claude estima pela foto/medidas, o Alessandro informa o valor real, 
 ## Gastos reais lançados pelo Alessandro (953)
 | Data | Item | Quantidade | Valor | Categoria |
 |---|---|---|---|---|
+
+## Ajustes aprendidos
+- **06/11 – Telhado 953:** o telhadista mediu **12 squares**; eu estimei 16,5 pela foto (+37%). Mão de obra em Elmira: orçamentos de **US$ 180 a 250 por square**; fechado a **US$ 180/square = US$ 2.160**. Total real US$ 6.000 → material + plywood + dumpster ≈ US$ 3.840 (a detalhar).
+  - Regra nova: para telhado, usar a medida em squares do telhadista; se estimar pela foto, descontar ~25%. Mão de obra regional: US$ 180 a 250/square.
+  - Recalculando com 12 squares: material ~US$ 2.200 a 3.000 + mão de obra US$ 2.160 + dumpster US$ 450 a 650 → US$ 4.800 a 5.800 (real US$ 6.000).
