@@ -46,3 +46,18 @@ Premissas: pé-direito 8 ft; paredes ~216 sq ft (já sem a porta); teto 64 sq ft
 | Railing pequeno | US$ 150 a 400 | US$ 200 a 400 |
 | **Total** | **US$ 930 a 1.600** | **US$ 1.770 a 2.930** |
 Total do hallway: **US$ 2.700 a 4.500** (meio ~US$ 3.600). Real: (aguardando)
+
+## 953 – Cozinha (estimativa de 06/11)
+Premissas: cozinha ~11,5 x 10 ft (CONFIRMAR medidas); pé-direito 8 ft; gabinetes em L (11'6" + 6' = 17,5 pés lineares de base + aéreos); eletrodomésticos inox linha básica/média. O piso laminado do hallway passou para cá (sai do orçamento do hallway).
+| Item | Material | Mão de obra |
+|---|---|---|
+| Demolição teto + paredes (+ descarte) | US$ 100 a 200 | US$ 500 a 900 |
+| Drywall paredes + teto (~13–14 folhas) | US$ 300 a 380 | US$ 700 a 1.000 |
+| Pintura | US$ 120 a 180 | US$ 350 a 550 |
+| Piso laminado cozinha + hallway (~180 sq ft +10%) + rodapé | US$ 460 a 800 | US$ 440 a 680 |
+| Gabinetes em L (base + aéreos) | US$ 2.600 a 4.400 | US$ 1.000 a 1.800 |
+| Geladeira, fogão, exaustor, dishwasher | US$ 2.150 a 3.450 | US$ 300 a 550 (exaustor + dishwasher) |
+| Elétrica: 2 recessed, 1 GFCI, 3 tomadas novas, circuito da dishwasher | US$ 190 a 330 | US$ 800 a 1.500 |
+| **Total** | **US$ 5.920 a 9.740** | **US$ 4.090 a 6.980** |
+Total da cozinha: **US$ 10.000 a 16.700** (meio ~US$ 13.300). Não incluído (não citado): bancada (laminado US$ 600 a 900 / quartzo US$ 1.800 a 2.700 instalados), pia + torneira + encanador (US$ 550 a 1.000).
+Hallway sem o piso: US$ 2.300 a 3.900.
