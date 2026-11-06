@@ -198,3 +198,6 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - Nada de semana temática inteira (só quiz, só vendas). Toda semana mistura os tipos, 1 Reel por dia ao meio-dia:
   2 informativos (ex.: Tax Deed em 30 s, 3 coisas antes do lance) · 2 alerta/medo com solução (roteiros-medo.md) · 1 bastidor/obra · 1 quiz/interação (quanto custa?, enquete) · 1 prova/venda (antes e depois, "vendemos", assessoria).
 - Medo sempre com verdade e com a solução que a Discovery oferece; sem exagero, sem promessa de lucro.
+
+## Calibração de orçamentos (06/11)
+- Estimativas e custos reais de obra NÃO vão para o GitHub. Ficam na Casas Discovery (privada), coleção "calibracao" (um documento por casa, ex.: "953-erie"). O Claude lança ali cada gasto real que o Alessandro mandar e, no fim, compara estimativa x real.
