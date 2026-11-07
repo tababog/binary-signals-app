@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useFormState, useFormStatus } from "react-dom";
 import { responderProposta, type EstadoResposta } from "@/app/p/[token]/actions";
-import { FORMAS_PAGAMENTO_PROPOSTA } from "@/lib/pagamento-proposta";
+import { ACEITE_TRABALHO_EXTRA, FORMAS_PAGAMENTO_PROPOSTA } from "@/lib/pagamento-proposta";
 import type { OpcaoProposta } from "@/lib/proposta";
 
 const dolar = (c: number) => new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: c % 100 ? 2 : 0 }).format(c / 100);
@@ -93,6 +93,9 @@ export function RespostaProposta({ token, opcoes, hoje, previa }: { token: strin
         } else if (!assinou.current) {
           e.preventDefault();
           setErro("Please sign in the box.");
+        } else if (!(e.currentTarget.elements.namedItem("aceiteExtras") as HTMLInputElement).checked) {
+          e.preventDefault();
+          setErro("Please confirm that you understand the extra work terms.");
         }
       }}
       className="space-y-4"
@@ -184,6 +187,10 @@ export function RespostaProposta({ token, opcoes, hoje, previa }: { token: strin
           <span>Sign with your finger or mouse · Date: {hoje}</span>
           <button type="button" onClick={preparar} className="text-logo underline">Clear</button>
         </div>
+        <label className="flex items-start gap-3 rounded-lg border border-stone-300 bg-white p-3 text-sm">
+          <input type="checkbox" name="aceiteExtras" className="mt-0.5 h-5 w-5 flex-none accent-marca-600" />
+          <span>{ACEITE_TRABALHO_EXTRA}</span>
+        </label>
         <label className="text-sm font-semibold" htmlFor="mensagem">Message for us (optional)</label>
         <textarea id="mensagem" name="mensagem" rows={2} className="w-full rounded-lg border border-stone-300 bg-white p-3 text-base" placeholder="Questions, best time to call..." />
         <Botoes escolher={(a) => { if (acao.current) acao.current.value = a; }} />

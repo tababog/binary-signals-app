@@ -84,7 +84,8 @@ Conversa com o usuário em português; telas internas em português.
        `/p/[token]` mostra o portfólio inteiro e, no final, as duas opções, forma de pagamento (até 15 dias ou abaixo de
        $8,000: só 50/50; acima disso o cliente escolhe 1/3·1/3·1/3 ou 50/50, `src/lib/pagamento-proposta.ts`), nome + assinatura na tela
        e os botões **aprovar a opção 1 ou 2**, **recusar** ou **pedir para falar** (data, IP e navegador registrados).
-       Vale 30 dias; um link novo substitui o antigo. A resposta aparece no Painel; aprovada marca o orçamento como
+       Cláusula de trabalho extra (mudança no escopo pode ser cobrada à parte) nas condições, com aceite obrigatório
+       para aprovar (`aceitouExtras`). Vale 30 dias; um link novo substitui o antigo. A resposta aparece no Painel; aprovada marca o orçamento como
        Aprovado e a visita como "Fechou contrato" (encerra os follow-ups), e o contrato em PDF usa a forma de pagamento
        aprovada. Contrato seguindo o Home Improvement Act de CT (ver `docs/empresa.md`).
 - [ ] 9. Relatório final da obra: lucro ou prejuízo, multiplicador atingido x meta 2x, onde o custo estourou.

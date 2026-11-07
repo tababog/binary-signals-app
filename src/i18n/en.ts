@@ -891,5 +891,6 @@ const en: Record<string, string> = {
   " ou ": " or ",
   "50% antes de começar e 50% no final": "50% before starting and 50% at the end",
   "1/3 antes de começar, 1/3 no meio da obra e 1/3 no final": "1/3 before starting, 1/3 at the midpoint and 1/3 at the end",
+  "✓ Aceitou que mudança no escopo é trabalho extra e pode ser cobrada à parte": "✓ Agreed that scope changes are extra work and may be billed separately",
 };
 export default en;

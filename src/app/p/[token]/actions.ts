@@ -45,9 +45,10 @@ export async function responderProposta(token: string, _: EstadoResposta, form: 
     const assinatura = String(form.get("assinatura") ?? "");
     if (!assinatura.startsWith("data:image/png;base64,") || assinatura.length < 2000) return { erro: "Please sign in the box." };
     if (assinatura.length > ASSINATURA_MAX) return { erro: "The signature is too large. Please clear it and sign again." };
+    if (form.get("aceiteExtras") !== "on") return { erro: "Please confirm that you understand the extra work terms." };
 
     await db.$transaction([
-      db.proposta.update({ where: { id: proposta.id }, data: { ...registro, resposta: "APROVADA", opcaoOrdem: ordem, formaPagamento: forma, nomeAssinatura: nome, assinatura } }),
+      db.proposta.update({ where: { id: proposta.id }, data: { ...registro, resposta: "APROVADA", opcaoOrdem: ordem, formaPagamento: forma, aceitouExtras: true, nomeAssinatura: nome, assinatura } }),
       db.orcamento.update({ where: { id: proposta.orcamentoId }, data: { status: "APROVADO" } }),
       ...(proposta.orcamento.visitaId ? [db.visita.update({ where: { id: proposta.orcamento.visitaId }, data: { resultado: "FECHOU" } })] : []),
     ]);

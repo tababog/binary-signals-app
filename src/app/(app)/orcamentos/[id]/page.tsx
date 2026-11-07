@@ -483,6 +483,7 @@ function PropostaCliente({
                     {p.resposta === "APROVADA" && opcao && (
                       <p>{t("Opção aprovada: {opcao} · {valor}", { opcao: opcao.nome, valor: dinheiro(opcao.precoCent) })}</p>
                     )}
+                    {p.aceitouExtras && <p>{t("✓ Aceitou que mudança no escopo é trabalho extra e pode ser cobrada à parte")}</p>}
                     {p.formaPagamento && (
                       <p>{t("Pagamento escolhido: {forma}", { forma: t(FORMAS_PAGAMENTO_PROPOSTA[p.formaPagamento as FormaPagamentoProposta]?.pt ?? p.formaPagamento) })}</p>
                     )}
