@@ -201,7 +201,7 @@ Comenta 1 ou 2 👇 Logo a gente mostra qual foi pra fachada da casa de Elmira.
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-live-convite.mp4
 - **14:00** · story · Caixinha: qual é a sua maior dúvida? · doc `v-sab-s14`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/animados-musica/story-sab-14.mp4
-- **19:00** · reel · Elkland: do leilão à casa pronta · doc `v-sab-f19`
+- **19:00** · ~~reel · Elkland: do leilão à casa pronta~~ · doc `v-sab-f19` · ADIADO em 06/11 (1 Reel por dia: o sábado já tem a tinta às 10h). NÃO publicar.
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/aprovados/elkland-reel-v4.mp4
   - legenda:
 
