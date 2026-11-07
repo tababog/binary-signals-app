@@ -887,7 +887,7 @@ const es: Record<string, string> = {
   "Recusada": "Rechazada",
   "Quer conversar": "Quiere conversar",
   "Pagamento escolhido: {forma}": "Pago elegido: {forma}",
-  "Até {dias} dias de trabalho ou abaixo de {valor}: só 50% antes de começar e 50% no final. Acima disso, o cliente escolhe entre 1/3 · 1/3 · 1/3 e 50/50.": "Hasta {dias} días de trabajo o menos de {valor}: solo 50% antes de empezar y 50% al final. Por encima de eso, el cliente elige entre 1/3 · 1/3 · 1/3 y 50/50.",
+  "Abaixo de {valor}: só 50% antes de começar e 50% no final. A partir de {valor}, o cliente escolhe entre 1/3 · 1/3 · 1/3 e 50/50.": "Menos de {valor}: solo 50% antes de empezar y 50% al final. Desde {valor}, el cliente elige entre 1/3 · 1/3 · 1/3 y 50/50.",
   " ou ": " o ",
   "50% antes de começar e 50% no final": "50% antes de empezar y 50% al final",
   "1/3 antes de começar, 1/3 no meio da obra e 1/3 no final": "1/3 antes de empezar, 1/3 a mitad de la obra y 1/3 al final",

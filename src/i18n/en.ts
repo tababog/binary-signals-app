@@ -887,7 +887,7 @@ const en: Record<string, string> = {
   "Recusada": "Declined",
   "Quer conversar": "Wants to talk",
   "Pagamento escolhido: {forma}": "Payment chosen: {forma}",
-  "Até {dias} dias de trabalho ou abaixo de {valor}: só 50% antes de começar e 50% no final. Acima disso, o cliente escolhe entre 1/3 · 1/3 · 1/3 e 50/50.": "Up to {dias} working days or under {valor}: only 50% before starting and 50% at the end. Above that, the client chooses between 1/3 · 1/3 · 1/3 and 50/50.",
+  "Abaixo de {valor}: só 50% antes de começar e 50% no final. A partir de {valor}, o cliente escolhe entre 1/3 · 1/3 · 1/3 e 50/50.": "Under {valor}: only 50% before starting and 50% at the end. From {valor} up, the client chooses between 1/3 · 1/3 · 1/3 and 50/50.",
   " ou ": " or ",
   "50% antes de começar e 50% no final": "50% before starting and 50% at the end",
   "1/3 antes de começar, 1/3 no meio da obra e 1/3 no final": "1/3 before starting, 1/3 at the midpoint and 1/3 at the end",

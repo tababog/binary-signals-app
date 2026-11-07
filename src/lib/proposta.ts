@@ -81,7 +81,7 @@ export async function montarConteudo(
     dias: o.diasPrevistos,
     precoCent: o.precoCent,
     itens: o.itens.filter((i) => CATEGORIAS_ESCOPO.includes(i.categoria)).map(itemEscopo),
-    pagamentos: formasDaOpcao(o.precoCent, o.diasPrevistos),
+    pagamentos: formasDaOpcao(o.precoCent),
   }));
 
   const textos = opcoes.flatMap((o) => [o.descricao ?? "", ...o.itens]);
