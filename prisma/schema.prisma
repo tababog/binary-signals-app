@@ -372,6 +372,8 @@ model OpcaoOrcamento {
   ordem               Int
   nome                String
   descricao           String?
+  // Escopo do trabalho para o cliente: o que está incluído, um item por linha (vai em inglês para a proposta)
+  escopo              String?
   diasPrevistos       Int         @default(0)
   // Preço final para o cliente; 0 = ainda não definido (a tela usa a sugestão de mercado)
   precoCent           Int         @default(0)

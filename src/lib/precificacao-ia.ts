@@ -145,6 +145,55 @@ doors), false when only one applies. Write in ${IDIOMA_PERGUNTAS[idioma]}.`,
   }
 }
 
+const Escopo = z.object({ escopo: z.array(z.string()) });
+
+/**
+ * Rascunho do escopo do trabalho de uma opção para a proposta (em inglês, regra 9): o que a Tababog vai fazer, item por
+ * item, a partir do serviço, do pedido do cliente, das respostas às perguntas e dos itens da opção. Sem preços.
+ * O administrador confere e corrige antes de enviar.
+ */
+export async function gerarEscopo(d: DadosPrecificacao, opcao: { nome: string; descricao: string | null; itens: string[] }) {
+  const c = api();
+  if (!c) return null;
+  const itens = opcao.itens.length > 0 ? opcao.itens.map((i) => `- ${i}`).join("\n") : "- (none listed)";
+  try {
+    const r = await c.beta.messages.parse({
+      model: MODELO,
+      max_tokens: 4000,
+      betas: ["server-side-fallback-2026-07-01"],
+      fallbacks: "default",
+      output_config: { effort: "medium", format: betaZodOutputFormat(Escopo) },
+      system: `You write the scope of work for a client proposal of Tababog Construction LLC, a remodeling contractor in
+Connecticut. The client reads it before seeing the price, so it must say clearly what will be done and what is
+included in this option. Write 6 to 15 short lines in plain American English, one task or deliverable per line, in the
+order the work happens (protection and demolition, preparation, construction/installation, finishing, cleanup).
+Use the job data and the option's items (materials, labor, permits, dumpster) to be specific: sizes, quantities,
+materials and finishes. Do not include prices, costs or internal notes. Do not invent work that is not supported by
+the data. No bullets or numbering characters: just the text of each line.`,
+      messages: [
+        {
+          role: "user",
+          content: `${descreverTrabalho(d)}\n\nOption: ${opcao.nome}${opcao.descricao ? `\nOption description: ${opcao.descricao}` : ""}\nItems in this option:\n${itens}`,
+        },
+      ],
+    });
+    const linhas = r.parsed_output?.escopo ?? null;
+    return linhas ? limparLinhasEscopo(linhas.join("\n")) : null;
+  } catch (e) {
+    if (e instanceof Anthropic.APIError) throw new Error(`A API da Anthropic respondeu com erro (${e.status}). Tente de novo.`);
+    throw e;
+  }
+}
+
+/** Uma linha por item, sem marcadores ("-", "•", "1.") no começo e sem linhas vazias. */
+export function limparLinhasEscopo(texto: string) {
+  return texto
+    .split(/\r?\n/)
+    .map((l) => l.replace(/^\s*(?:[-•*]|\d+[.)])\s*/, "").trim())
+    .filter(Boolean)
+    .slice(0, 30);
+}
+
 const LOCAL_CT = { type: "approximate" as const, region: "Connecticut", country: "US", timezone: "America/New_York" };
 
 /** Pergunta com busca na web. Devolve o texto da resposta e as páginas que a busca abriu (url → título). */

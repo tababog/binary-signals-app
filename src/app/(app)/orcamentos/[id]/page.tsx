@@ -25,6 +25,7 @@ import {
   salvarRespostas,
   sugerirOpcoes,
   criarProposta,
+  escreverEscopo,
 } from "../actions";
 import { getT, type T } from "@/i18n/servidor";
 import { headers } from "next/headers";
@@ -123,7 +124,7 @@ export default async function Orcamento({ params }: { params: { id: string } }) 
         orcamentoId={orc.id}
         propostas={orc.propostas}
         cliente={orc.cliente}
-        prontas={orc.opcoes.length > 0 && orc.opcoes.every((o) => o.precoCent > 0)}
+        prontas={orc.opcoes.length > 0 && orc.opcoes.every((o) => o.precoCent > 0 && !!o.escopo?.trim())}
         pagamentos={orc.opcoes.map((o) => ({ nome: o.nome, formas: o.precoCent > 0 ? formasDaOpcao(o.precoCent) : [] }))}
       />
 
@@ -289,6 +290,18 @@ function OpcaoCard({ t, opcao, calc, numero, outra, custoDia, ia }: { t: T; opca
           </Campo>
         </div>
         <div className="col-span-2">
+          <Campo rotulo={t("Escopo do trabalho (o cliente vê antes do preço; um item por linha)")}>
+            <textarea
+              className="campo text-sm"
+              name="escopo"
+              rows={Math.min(14, Math.max(4, (opcao.escopo ?? "").split("\n").length + 1))}
+              defaultValue={opcao.escopo ?? ""}
+              placeholder={"Remove and dispose of the existing deck\nInstall new footings and pressure-treated framing\nInstall composite decking and railing\nFinal cleanup"}
+            />
+          </Campo>
+          <p className="mt-1 text-xs text-stone-500">{t("Pode escrever em português: na proposta o cliente recebe em inglês.")}</p>
+        </div>
+        <div className="col-span-2">
           {calc.precoSugerido > 0 ? (
             <p className="mb-2 rounded-lg bg-sky-50 p-2 text-sm text-sky-900">
               {t("Sugestão de mercado para esta opção: {valor}", { valor: dinheiro(calc.precoSugerido) })}
@@ -303,6 +316,13 @@ function OpcaoCard({ t, opcao, calc, numero, outra, custoDia, ia }: { t: T; opca
         </div>
         <div className="col-span-2"><BotaoEnviar className="botao-secundario">{t("Salvar opção")}</BotaoEnviar></div>
       </Formulario>
+      {ia && (
+        <Formulario acao={escreverEscopo.bind(null, opcao.id)} className="-mt-2 mb-4 space-y-2">
+          <BotaoEnviar className="botao-secundario w-full" aguardando={t("Escrevendo o escopo...")}>
+            {opcao.escopo ? t("Reescrever o escopo com IA") : t("Escrever o escopo com IA")}
+          </BotaoEnviar>
+        </Formulario>
+      )}
 
       <h3 className="mb-1 font-semibold">{t("Itens de custo")}</h3>
       {opcao.itens.length === 0 ? (
@@ -526,7 +546,7 @@ function PropostaCliente({
               </ul>
             )}
           </div>
-          {!prontas && <p className="text-sm text-amber-800">{t("Defina o preço final das duas opções antes de enviar para o cliente.")}</p>}
+          {!prontas && <p className="text-sm text-amber-800">{t("Antes de enviar: escreva o escopo do trabalho e defina o preço final das duas opções.")}</p>}
           <BotaoEnviar className={ultima ? "botao-secundario w-full" : "botao w-full"} aguardando={t("Preparando a proposta...")}>
             {ultima ? t("Criar novo link com o orçamento atual") : t("Criar link da proposta")}
           </BotaoEnviar>
