@@ -29,7 +29,7 @@ import {
 import { getT, type T } from "@/i18n/servidor";
 import { headers } from "next/headers";
 import type { Proposta } from "@prisma/client";
-import { FORMAS_PAGAMENTO_PROPOSTA, LIMITE_CURTO_DIAS, LIMITE_VALOR_CENT, RESPOSTAS_PROPOSTA, formasDaOpcao, lerConteudo, mensagemProposta, vencida, type FormaPagamentoProposta } from "@/lib/proposta";
+import { FORMAS_PAGAMENTO_PROPOSTA, LIMITE_VALOR_CENT, RESPOSTAS_PROPOSTA, formasDaOpcao, lerConteudo, mensagemProposta, vencida, type FormaPagamentoProposta } from "@/lib/proposta";
 import { EnviarProposta } from "@/components/EnviarProposta";
 
 // A pesquisa de mercado com a IA pode levar 1 a 2 minutos
@@ -124,7 +124,7 @@ export default async function Orcamento({ params }: { params: { id: string } }) 
         propostas={orc.propostas}
         cliente={orc.cliente}
         prontas={orc.opcoes.length > 0 && orc.opcoes.every((o) => o.precoCent > 0)}
-        pagamentos={orc.opcoes.map((o) => ({ nome: o.nome, formas: o.precoCent > 0 ? formasDaOpcao(o.precoCent, o.diasPrevistos) : [] }))}
+        pagamentos={orc.opcoes.map((o) => ({ nome: o.nome, formas: o.precoCent > 0 ? formasDaOpcao(o.precoCent) : [] }))}
       />
 
       <div className="mb-4 grid gap-4 lg:grid-cols-2">
@@ -514,7 +514,7 @@ function PropostaCliente({
           <div className="rounded-lg bg-stone-50 p-3 text-sm">
             <p className="font-semibold">{t("Forma de pagamento")}</p>
             <p className="text-stone-600">
-              {t("Até {dias} dias de trabalho ou abaixo de {valor}: só 50% antes de começar e 50% no final. Acima disso, o cliente escolhe entre 1/3 · 1/3 · 1/3 e 50/50.", { dias: LIMITE_CURTO_DIAS, valor: dinheiro(LIMITE_VALOR_CENT) })}
+              {t("Abaixo de {valor}: só 50% antes de começar e 50% no final. A partir de {valor}, o cliente escolhe entre 1/3 · 1/3 · 1/3 e 50/50.", { valor: dinheiro(LIMITE_VALOR_CENT) })}
             </p>
             {pagamentos.some((o) => o.formas.length > 0) && (
               <ul className="mt-1 text-stone-700">
