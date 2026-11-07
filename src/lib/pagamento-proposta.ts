@@ -25,3 +25,11 @@ export function formasDaOpcao(precoCent: number, dias: number): FormaPagamentoPr
   const curto = (dias > 0 && dias <= LIMITE_CURTO_DIAS) || precoCent < LIMITE_VALOR_CENT;
   return curto ? ["METADE"] : ["TERCOS", "METADE"];
 }
+
+/**
+ * Cláusula de trabalho extra (pedido do Alessandro, 07/11/2026): qualquer mudança no escopo é trabalho extra e pode
+ * ser cobrada à parte. Aparece nas condições da proposta e o cliente marca que entendeu antes de aprovar.
+ */
+export const CLAUSULA_TRABALHO_EXTRA =
+  "Any change to the scope of work described in this proposal, including additions, changes or items not listed above, will be considered extra work and may be billed separately, as agreed in a written change order.";
+export const ACEITE_TRABALHO_EXTRA = "I understand that any change to the scope of work will be considered extra work and may be billed separately.";

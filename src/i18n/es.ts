@@ -891,5 +891,6 @@ const es: Record<string, string> = {
   " ou ": " o ",
   "50% antes de começar e 50% no final": "50% antes de empezar y 50% al final",
   "1/3 antes de começar, 1/3 no meio da obra e 1/3 no final": "1/3 antes de empezar, 1/3 a mitad de la obra y 1/3 al final",
+  "✓ Aceitou que mudança no escopo é trabalho extra e pode ser cobrada à parte": "✓ Aceptó que un cambio en el alcance es trabajo extra y puede cobrarse aparte",
 };
 export default es;
