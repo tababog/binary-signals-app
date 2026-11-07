@@ -6,6 +6,8 @@ export async function middleware(req: NextRequest) {
   const naLogin = req.nextUrl.pathname.startsWith("/login");
   // O link de convite é aberto por quem ainda não tem senha
   if (req.nextUrl.pathname.startsWith("/convite/")) return NextResponse.next();
+  // Proposta para o cliente (link público) e as fotos do portfólio que ela mostra
+  if (req.nextUrl.pathname.startsWith("/p/") || req.nextUrl.pathname.startsWith("/fotos-portfolio/")) return NextResponse.next();
 
   if (!sessao && !naLogin) return NextResponse.redirect(new URL("/login", req.url));
   if (sessao && naLogin) return NextResponse.redirect(new URL("/", req.url));

@@ -75,13 +75,17 @@ Conversa com o usuário em português; telas internas em português.
        na web): perguntas sobre o trabalho, pesquisa de mercado com fontes e data + preço de mercado e material das duas opções (a IA não lança mão
        de obra: o Alessandro coloca), e preço da
        lista de material na Home Depot/Lowe's (usa o menor, guarda os dois e o link). Textos para o cliente em inglês.
-- [ ] 7. Portfólio da empresa: quem somos, Alessandro e Emmanuel, anos de mercado, fotos de trabalhos por categoria
-       (cabinets, drywall, etc.).
-- [ ] 8. Proposta para o cliente (sempre em inglês, regra 9): apresentação profissional (portfólio da categoria +
-       escopo item a item + duas opções + valores) enviada como **link** (WhatsApp/SMS/e-mail). Na página o cliente
-       responde com botões: **aprovar a opção 1 ou 2** (nome, assinatura na tela, data e IP registrados), **recusar**
-       ou **pedir para falar**. A resposta aparece no Painel e, se aprovada, marca a visita como "Fechou contrato"
-       e encerra os follow-ups. Contrato seguindo o Home Improvement Act de CT (ver `docs/empresa.md`).
+- [x] 7. Portfólio da empresa (`src/lib/portfolio.ts`, `src/components/Portfolio.tsx`, página `/portfolio`): quem somos
+       (texto aprovado em `docs/empresa.md`), Alessandro e Emmanuel, números, serviços, fotos só de trabalho acabado por
+       categoria (`public/fotos-portfolio`) e avaliações 5 estrelas do Thumbtack sem data. Faltam fotos dos sócios e de
+       drywall, cozinha, ampliações e portas/janelas prontos.
+- [x] 8. Proposta para o cliente (sempre em inglês, regra 9): no orçamento, "Criar link da proposta" guarda uma cópia
+       em inglês (`Proposta`, `src/lib/proposta.ts`) e abre e-mail/WhatsApp/SMS do celular com o link. A página pública
+       `/p/[token]` mostra o portfólio inteiro e, no final, as duas opções, forma de pagamento, nome + assinatura na tela
+       e os botões **aprovar a opção 1 ou 2**, **recusar** ou **pedir para falar** (data, IP e navegador registrados).
+       Vale 30 dias; um link novo substitui o antigo. A resposta aparece no Painel; aprovada marca o orçamento como
+       Aprovado e a visita como "Fechou contrato" (encerra os follow-ups), e o contrato em PDF usa a forma de pagamento
+       aprovada. Contrato seguindo o Home Improvement Act de CT (ver `docs/empresa.md`).
 - [ ] 9. Relatório final da obra: lucro ou prejuízo, multiplicador atingido x meta 2x, onde o custo estourou.
 - [x] 10. Custos fixos e diagnóstico (página *Empresa*): custos recorrentes + gastos avulsos, rateio por dia trabalhado
        (`src/lib/custos-fixos.ts`), custo fixo entra no custo de cada obra e no orçado (dias previstos × custo/dia),

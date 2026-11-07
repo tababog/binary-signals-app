@@ -13,6 +13,7 @@ import { gerarPerguntas, precosDeMaterial, sugerirOrcamento, type DadosPrecifica
 import { dinheiro } from "@/lib/format";
 import type { EstadoForm } from "@/components/Formulario";
 import { lerServicosDoFormulario } from "@/lib/servicos-form";
+import { PAGAMENTO_PADRAO, montarConteudo, novoToken } from "@/lib/proposta";
 
 type Pergunta = { pergunta: string; opcoes: string[]; multipla?: boolean; resposta?: string };
 
@@ -321,4 +322,34 @@ export async function precificarMaterial(opcaoId: string, _e: EstadoForm, form: 
   }
   atualizar(opcao.orcamentoId);
   return { ok: t("Preços do material lançados. Confira cada item.") };
+}
+
+/**
+ * Cria o link da proposta para o cliente (etapa 8): guarda uma cópia do orçamento em inglês e a forma de pagamento.
+ * As duas opções precisam ter o preço final definido (a sugestão de mercado não vai para o cliente sem decisão).
+ */
+export async function criarProposta(orcamentoId: string, _e: EstadoForm, form: FormData): Promise<EstadoForm> {
+  await exigirAdmin();
+  const t = getT();
+  const orc = await db.orcamento.findUnique({
+    where: { id: orcamentoId },
+    include: { cliente: true, opcoes: { include: { itens: { orderBy: { ordem: "asc" } } }, orderBy: { ordem: "asc" } } },
+  });
+  if (!orc) return { erro: t("Orçamento não encontrado.") };
+  if (orc.opcoes.length === 0) return { erro: t("O orçamento ainda não tem opções.") };
+  if (orc.opcoes.some((o) => o.precoCent <= 0)) return { erro: t("Defina o preço final das duas opções antes de enviar para o cliente.") };
+  const pagamento = String(form.get("pagamento") ?? "").trim().slice(0, 600) || PAGAMENTO_PADRAO;
+
+  const conteudo = await montarConteudo(orc);
+  await db.proposta.create({ data: { orcamentoId, token: novoToken(), conteudo: JSON.stringify(conteudo), pagamento } });
+  if (orc.status === "RASCUNHO") await db.orcamento.update({ where: { id: orcamentoId }, data: { status: "ENVIADO" } });
+  atualizar(orcamentoId);
+  return { ok: t("Link da proposta criado. Agora envie para o cliente.") };
+}
+
+/** O administrador viu a resposta do cliente no Painel. */
+export async function marcarRespostaVista(propostaId: string) {
+  await exigirAdmin();
+  await db.proposta.update({ where: { id: propostaId }, data: { respostaVista: true } });
+  revalidatePath("/");
 }

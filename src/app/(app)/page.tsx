@@ -1,3 +1,5 @@
+import { lerConteudo, RESPOSTAS_PROPOSTA } from "@/lib/proposta";
+import { marcarRespostaVista } from "./orcamentos/actions";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { db } from "@/lib/db";
@@ -24,7 +26,7 @@ export default async function Painel() {
 
   const seteDias = new Date(Date.now() - 7 * 24 * 3600 * 1000);
   const fimDeHoje = new Date(lerDataHora(`${campoData(new Date())}T23:59`)!.getTime() + 60_000);
-  const [obras, naObra, ultimos, recentes, visitas, followUps, equipe, recibos] = await Promise.all([
+  const [obras, naObra, ultimos, recentes, visitas, followUps, equipe, recibos, respostas] = await Promise.all([
     db.obra.findMany({ where: { status: { not: "CONCLUIDA" } }, include: { cliente: true }, orderBy: { criadoEm: "desc" } }),
     db.registroPonto.findMany({ where: { saida: null }, include: { usuario: true, obra: true }, orderBy: { entrada: "asc" } }),
     db.lancamento.findMany({ include: { obra: true }, orderBy: { criadoEm: "desc" }, take: 8 }),
@@ -39,6 +41,12 @@ export default async function Painel() {
     db.usuario.findMany({ where: { ativo: true }, orderBy: { nome: "asc" }, select: { id: true, nome: true } }),
     // Recibos de material que a equipe mandou e ainda não viraram despesa
     db.reciboFuncionario.findMany({ where: { lancadoEm: null }, include: { usuario: { select: { nome: true } }, obra: { select: { nome: true } } }, orderBy: { criadoEm: "asc" } }),
+    // Respostas dos clientes às propostas (aprovou, recusou ou quer conversar) que o administrador ainda não viu
+    db.proposta.findMany({
+      where: { respondidaEm: { not: null }, respostaVista: false },
+      include: { orcamento: { select: { id: true, cliente: { select: { nome: true } } } } },
+      orderBy: { respondidaEm: "desc" },
+    }),
   ]);
   const agora = new Date();
   const alertas = recentes.filter(temAlertaLocal);
@@ -158,6 +166,37 @@ export default async function Painel() {
               </Formulario>
             </details>
           </div>
+          {respostas.length > 0 && (
+            <div className="cartao border-emerald-200 bg-emerald-50">
+              <h2 className="mb-2">{t("✍ Respostas das propostas ({n})", { n: respostas.length })}</h2>
+              <ul className="divide-y divide-emerald-100 text-sm">
+                {respostas.map((r) => {
+                  const opcao = lerConteudo(r.conteudo).opcoes.find((o) => o.ordem === r.opcaoOrdem);
+                  return (
+                    <li key={r.id} className="flex items-center justify-between gap-2 py-2">
+                      <span className="min-w-0">
+                        <b>{r.orcamento.cliente.nome}</b> ·{" "}
+                        <b className={r.resposta === "APROVADA" ? "text-emerald-800" : r.resposta === "RECUSADA" ? "text-red-800" : "text-amber-900"}>
+                          {t(RESPOSTAS_PROPOSTA[r.resposta as keyof typeof RESPOSTAS_PROPOSTA] ?? r.resposta ?? "")}
+                        </b>
+                        <span className="block text-stone-600">
+                          {r.respondidaEm && `${data(r.respondidaEm)} ${hora(r.respondidaEm)}`}
+                          {r.resposta === "APROVADA" && opcao && ` · ${opcao.nome} ${dinheiro(opcao.precoCent)}`}
+                          {r.mensagem && ` · “${r.mensagem}”`}
+                        </span>
+                      </span>
+                      <span className="flex shrink-0 items-center gap-1">
+                        <Link href={`/orcamentos/${r.orcamento.id}`} className="botao px-3 py-1.5 text-sm">{t("Abrir")}</Link>
+                        <form action={marcarRespostaVista.bind(null, r.id)}>
+                          <BotaoEnviar className="px-2 py-1 text-xs text-stone-500">{t("Ok, vi")}</BotaoEnviar>
+                        </form>
+                      </span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          )}
           {recibos.length > 0 && (
             <div className="cartao border-amber-200 bg-amber-50">
               <h2 className="mb-2">{t("🧾 Recibos da equipe para lançar ({n})", { n: recibos.length })}</h2>

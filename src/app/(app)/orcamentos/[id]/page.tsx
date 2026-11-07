@@ -24,8 +24,13 @@ import {
   salvarOpcao,
   salvarRespostas,
   sugerirOpcoes,
+  criarProposta,
 } from "../actions";
 import { getT, type T } from "@/i18n/servidor";
+import { headers } from "next/headers";
+import type { Proposta } from "@prisma/client";
+import { PAGAMENTO_PADRAO, RESPOSTAS_PROPOSTA, lerConteudo, mensagemProposta, vencida } from "@/lib/proposta";
+import { EnviarProposta } from "@/components/EnviarProposta";
 
 // A pesquisa de mercado com a IA pode levar 1 a 2 minutos
 export const maxDuration = 300;
@@ -45,7 +50,12 @@ export default async function Orcamento({ params }: { params: { id: string } }) 
   const [orc, trabalhos, rateio] = await Promise.all([
     db.orcamento.findUnique({
       where: { id: params.id },
-      include: { cliente: true, visita: true, opcoes: { include: { itens: { orderBy: { ordem: "asc" } } }, orderBy: { ordem: "asc" } } },
+      include: {
+        cliente: true,
+        visita: true,
+        opcoes: { include: { itens: { orderBy: { ordem: "asc" } } }, orderBy: { ordem: "asc" } },
+        propostas: { orderBy: { criadaEm: "desc" } },
+      },
     }),
     db.trabalhoReferencia.findMany(),
     rateioCustosFixos(),
@@ -107,6 +117,8 @@ export default async function Orcamento({ params }: { params: { id: string } }) 
           </a>
         ))}
       </div>
+
+      <PropostaCliente t={t} orcamentoId={orc.id} propostas={orc.propostas} cliente={orc.cliente} prontas={orc.opcoes.length > 0 && orc.opcoes.every((o) => o.precoCent > 0)} />
 
       <div className="mb-4 grid gap-4 lg:grid-cols-2">
         <Referencias t={t} historico={historico} mercado={mercado} unidade={unidade} quantidade={orc.quantidade} />
@@ -409,5 +421,92 @@ function CamposItem({ t, item }: { t: T; item?: ItemOpcao }) {
       <input className="campo text-sm" name="quantidade" inputMode="decimal" defaultValue={item ? String(item.quantidade) : "1"} aria-label={t("Quantidade")} placeholder={t("Quantidade")} />
       <input className="campo text-sm" name="custo" inputMode="decimal" defaultValue={item ? centavosParaCampo(item.custoUnitCent) : ""} aria-label={t("Custo unitário")} placeholder={t("Custo unitário")} />
     </>
+  );
+}
+
+function PropostaCliente({
+  t,
+  orcamentoId,
+  propostas,
+  cliente,
+  prontas,
+}: {
+  t: T;
+  orcamentoId: string;
+  propostas: Proposta[];
+  cliente: { nome: string; telefone: string | null; email: string | null };
+  prontas: boolean;
+}) {
+  const h = headers();
+  const base = `${h.get("x-forwarded-proto") ?? "https"}://${h.get("x-forwarded-host") ?? h.get("host")}`;
+  const ultima = propostas[0];
+  const quando = (d: Date) => d.toLocaleString("pt-BR", { timeZone: "America/New_York", dateStyle: "short", timeStyle: "short" });
+  return (
+    <div className="cartao mb-4">
+      <h2 className="mb-1">{t("Proposta para o cliente")}</h2>
+      <p className="mb-3 text-sm text-stone-600">
+        {t("O cliente recebe um link com o portfólio inteiro e, no final, as duas opções com assinatura e os botões aprovar, recusar ou conversar. Tudo em inglês.")}{" "}
+        <a href="/portfolio" className="link">{t("Ver portfólio")}</a>
+      </p>
+
+      {ultima && (
+        <div className="mb-4 space-y-3">
+          {propostas.map((p, i) => {
+            const c = lerConteudo(p.conteudo);
+            const opcao = c.opcoes.find((o) => o.ordem === p.opcaoOrdem);
+            const link = `${base}/p/${p.token}`;
+            const aberta = i === 0 && p.resposta !== "APROVADA" && p.resposta !== "RECUSADA" && !vencida(p.criadaEm);
+            return (
+              <div key={p.id} className={`rounded-lg border p-3 text-sm ${i === 0 ? "border-stone-300" : "border-stone-200 opacity-80"}`}>
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="font-semibold">{t("Link criado em {data}", { data: quando(p.criadaEm) })}</span>
+                  {p.resposta ? (
+                    <span className={`selo ${p.resposta === "APROVADA" ? "bg-emerald-100 text-emerald-800" : p.resposta === "RECUSADA" ? "bg-red-100 text-red-800" : "bg-amber-100 text-amber-900"}`}>
+                      {t(RESPOSTAS_PROPOSTA[p.resposta as keyof typeof RESPOSTAS_PROPOSTA] ?? p.resposta)}
+                    </span>
+                  ) : (
+                    <span className="selo bg-stone-100 text-stone-700">{p.vistaEm ? t("Cliente abriu em {data}", { data: quando(p.vistaEm) }) : t("Cliente ainda não abriu")}</span>
+                  )}
+                  {!p.resposta && vencida(p.criadaEm) && <span className="selo bg-stone-100 text-stone-700">{t("Vencida (30 dias)")}</span>}
+                </div>
+                {p.respondidaEm && (
+                  <div className="mt-2 space-y-1">
+                    {p.resposta === "APROVADA" && opcao && (
+                      <p>{t("Opção aprovada: {opcao} · {valor}", { opcao: opcao.nome, valor: dinheiro(opcao.precoCent) })}</p>
+                    )}
+                    <p className="text-stone-600">
+                      {p.nomeAssinatura && `${p.nomeAssinatura} · `}
+                      {quando(p.respondidaEm)}
+                      {p.ip && ` · IP ${p.ip}`}
+                    </p>
+                    {p.mensagem && <p className="rounded bg-stone-50 p-2 italic">“{p.mensagem}”</p>}
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    {p.assinatura && <img src={p.assinatura} alt={t("Assinatura do cliente")} className="h-16 rounded border border-stone-200 bg-white" />}
+                  </div>
+                )}
+                {aberta && (
+                  <div className="mt-3">
+                    <EnviarProposta link={link} mensagem={mensagemProposta(cliente.nome, link)} telefone={cliente.telefone} email={cliente.email} />
+                  </div>
+                )}
+                {i > 0 && !p.resposta && <p className="mt-1 text-xs text-stone-500">{t("Link antigo: substituído pelo novo, o cliente vê um aviso para usar o último link.")}</p>}
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {ultima?.resposta !== "APROVADA" && (
+        <Formulario acao={criarProposta.bind(null, orcamentoId)} className="space-y-2">
+          <Campo rotulo={t("Forma de pagamento (em inglês, aparece na proposta)")}>
+            <textarea className="campo text-sm" name="pagamento" rows={2} defaultValue={ultima?.pagamento ?? PAGAMENTO_PADRAO} />
+          </Campo>
+          {!prontas && <p className="text-sm text-amber-800">{t("Defina o preço final das duas opções antes de enviar para o cliente.")}</p>}
+          <BotaoEnviar className={ultima ? "botao-secundario w-full" : "botao w-full"} aguardando={t("Preparando a proposta...")}>
+            {ultima ? t("Criar novo link com o orçamento atual") : t("Criar link da proposta")}
+          </BotaoEnviar>
+        </Formulario>
+      )}
+    </div>
   );
 }

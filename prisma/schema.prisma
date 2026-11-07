@@ -13,133 +13,133 @@ datasource db {
 
 // papel: "ADMIN" (acesso total) ou "FUNCIONARIO" (apenas ponto e próprio histórico)
 model Usuario {
-  id             String   @id @default(cuid())
-  nome           String
+  id                String    @id @default(cuid())
+  nome              String
   // Login por e-mail ou telefone: pelo menos um dos dois é obrigatório
-  email          String?  @unique
-  senhaHash      String
-  papel          String   @default("FUNCIONARIO")
-  telefone       String?
-  funcao         String?
-  valorHoraCent  Int      @default(0)
+  email             String?   @unique
+  senhaHash         String
+  papel             String    @default("FUNCIONARIO")
+  telefone          String?
+  funcao            String?
+  valorHoraCent     Int       @default(0)
   // tipoPagamento: "HORA" ou "DIARIA"; vinculo: "FIXO" (funcionário) ou "HELPER" (temporário)
-  tipoPagamento  String   @default("HORA")
-  valorDiariaCent Int     @default(0)
-  vinculo        String   @default("FIXO")
+  tipoPagamento     String    @default("HORA")
+  valorDiariaCent   Int       @default(0)
+  vinculo           String    @default("FIXO")
   // Idioma das telas: "pt", "en" ou "es"
-  idioma         String   @default("pt")
+  idioma            String    @default("pt")
   // Documento fiscal (obrigatório para helpers): tipoDocumento "EIN", "ITIN" ou "SSN"; documento formatado
-  tipoDocumento  String?
-  documento      String?
-  ativo          Boolean  @default(true)
+  tipoDocumento     String?
+  documento         String?
+  ativo             Boolean   @default(true)
   // Funcionário que compra material: manda a foto do recibo da obra (sem ver valores); o administrador lança a despesa
-  podeEnviarRecibos Boolean @default(false)
-  criadoEm       DateTime @default(now())
+  podeEnviarRecibos Boolean   @default(false)
+  criadoEm          DateTime  @default(now())
   // Link de convite / redefinição de senha: guarda só o hash SHA-256 do token enviado ao funcionário
-  conviteHash    String?
-  conviteExpira  DateTime?
+  conviteHash       String?
+  conviteExpira     DateTime?
 
-  registros      RegistroPonto[]
-  lancamentos    Lancamento[]
-  visitas        Visita[]
-  recibos        ReciboFuncionario[]
+  registros   RegistroPonto[]
+  lancamentos Lancamento[]
+  visitas     Visita[]
+  recibos     ReciboFuncionario[]
 
   @@index([conviteHash])
 }
 
 model Cliente {
-  id        String   @id @default(cuid())
-  nome      String
-  documento String?
-  telefone  String?
-  email     String?
-  endereco  String?
+  id          String   @id @default(cuid())
+  nome        String
+  documento   String?
+  telefone    String?
+  email       String?
+  endereco    String?
   observacoes String?
-  criadoEm  DateTime @default(now())
+  criadoEm    DateTime @default(now())
 
-  obras     Obra[]
-  visitas   Visita[]
+  obras      Obra[]
+  visitas    Visita[]
   orcamentos Orcamento[]
 }
 
 // tipo: "FORNECEDOR" (material) ou "SUBCONTRATADO" (subcontractor que recebe por serviço)
 model Fornecedor {
-  id        String   @id @default(cuid())
-  tipo      String   @default("FORNECEDOR")
-  licenca   String?
+  id             String    @id @default(cuid())
+  tipo           String    @default("FORNECEDOR")
+  licenca        String?
   seguroValidade DateTime?
-  nome      String
+  nome           String
   // Documento fiscal (1099/W-9): tipoDocumento "EIN" (empresa), "ITIN" ou "SSN" (pessoa física); documento formatado
-  tipoDocumento String?
-  documento String?
-  telefone  String?
-  email     String?
-  endereco  String?
-  categoria String?
-  observacoes String?
-  criadoEm  DateTime @default(now())
+  tipoDocumento  String?
+  documento      String?
+  telefone       String?
+  email          String?
+  endereco       String?
+  categoria      String?
+  observacoes    String?
+  criadoEm       DateTime  @default(now())
 
   lancamentos Lancamento[]
 }
 
 // status: "PLANEJADA", "EM_ANDAMENTO", "PAUSADA", "CONCLUIDA"
 model Obra {
-  id              String    @id @default(cuid())
-  nome            String
-  endereco        String?
-  descricao       String?
-  status          String    @default("PLANEJADA")
-  valorContratoCent Int     @default(0)
-  dataInicio      DateTime?
-  dataPrevista    DateTime?
-  progresso       Int       @default(0)
+  id                String    @id @default(cuid())
+  nome              String
+  endereco          String?
+  descricao         String?
+  status            String    @default("PLANEJADA")
+  valorContratoCent Int       @default(0)
+  dataInicio        DateTime?
+  dataPrevista      DateTime?
+  progresso         Int       @default(0)
   // Ponto central da obra e distância máxima aceita para o ponto da equipe
-  latitude        Float?
-  longitude       Float?
-  raioMetros      Int       @default(200)
+  latitude          Float?
+  longitude         Float?
+  raioMetros        Int       @default(200)
   // Dias de trabalho previstos: usados para orçar a parte da obra nos custos fixos da empresa
-  diasPrevistos   Int       @default(0)
-  criadoEm        DateTime  @default(now())
+  diasPrevistos     Int       @default(0)
+  criadoEm          DateTime  @default(now())
 
-  clienteId       String
-  cliente         Cliente   @relation(fields: [clienteId], references: [id])
+  clienteId String
+  cliente   Cliente @relation(fields: [clienteId], references: [id])
 
-  orcamento       ItemOrcamento[]
-  lancamentos     Lancamento[]
-  registros       RegistroPonto[]
-  recibos         ReciboFuncionario[]
-  referencia      TrabalhoReferencia?
-  orcamentos      Orcamento[]
+  orcamento   ItemOrcamento[]
+  lancamentos Lancamento[]
+  registros   RegistroPonto[]
+  recibos     ReciboFuncionario[]
+  referencia  TrabalhoReferencia?
+  orcamentos  Orcamento[]
 }
 
 // categoria: "MATERIAL", "MAO_DE_OBRA", "SERVICO", "EQUIPAMENTO", "OUTROS"
 model ItemOrcamento {
-  id          String @id @default(cuid())
-  obraId      String
-  obra        Obra   @relation(fields: [obraId], references: [id], onDelete: Cascade)
-  categoria   String
-  descricao   String
-  valorCent   Int
+  id        String @id @default(cuid())
+  obraId    String
+  obra      Obra   @relation(fields: [obraId], references: [id], onDelete: Cascade)
+  categoria String
+  descricao String
+  valorCent Int
 }
 
 // Fluxo de caixa de cada obra (conta do cliente).
 // tipo: "ENTRADA" (pagamento do cliente) ou "SAIDA" (despesa da obra)
 model Lancamento {
-  id            String      @id @default(cuid())
-  obraId        String
-  obra          Obra        @relation(fields: [obraId], references: [id], onDelete: Cascade)
-  tipo          String
-  categoria     String
-  descricao     String
-  valorCent     Int
-  data          DateTime
+  id             String      @id @default(cuid())
+  obraId         String
+  obra           Obra        @relation(fields: [obraId], references: [id], onDelete: Cascade)
+  tipo           String
+  categoria      String
+  descricao      String
+  valorCent      Int
+  data           DateTime
   formaPagamento String?
-  comprovante   String?
-  fornecedorId  String?
-  fornecedor    Fornecedor? @relation(fields: [fornecedorId], references: [id])
-  criadoPorId   String
-  criadoPor     Usuario     @relation(fields: [criadoPorId], references: [id])
-  criadoEm      DateTime    @default(now())
+  comprovante    String?
+  fornecedorId   String?
+  fornecedor     Fornecedor? @relation(fields: [fornecedorId], references: [id])
+  criadoPorId    String
+  criadoPor      Usuario     @relation(fields: [criadoPorId], references: [id])
+  criadoEm       DateTime    @default(now())
 
   @@index([obraId, data])
 }
@@ -147,26 +147,26 @@ model Lancamento {
 // valorHoraCent é copiado do funcionário no momento da entrada,
 // assim aumentos de salário não alteram o custo de obras passadas.
 model RegistroPonto {
-  id            String    @id @default(cuid())
-  usuarioId     String
-  usuario       Usuario   @relation(fields: [usuarioId], references: [id])
-  obraId        String
-  obra          Obra      @relation(fields: [obraId], references: [id], onDelete: Cascade)
-  entrada       DateTime
-  saida         DateTime?
-  valorHoraCent Int
+  id              String    @id @default(cuid())
+  usuarioId       String
+  usuario         Usuario   @relation(fields: [usuarioId], references: [id])
+  obraId          String
+  obra            Obra      @relation(fields: [obraId], references: [id], onDelete: Cascade)
+  entrada         DateTime
+  saida           DateTime?
+  valorHoraCent   Int
   // Diarista: diária do dia (dividida entre as obras do dia pelas horas). custoCent é calculado ao fechar o ponto.
-  valorDiariaCent Int     @default(0)
-  custoCent     Int?
-  latEntrada    Float?
-  lngEntrada    Float?
+  valorDiariaCent Int       @default(0)
+  custoCent       Int?
+  latEntrada      Float?
+  lngEntrada      Float?
   precisaoEntrada Float?
-  latSaida      Float?
-  lngSaida      Float?
-  precisaoSaida Float?
-  observacao    String?
+  latSaida        Float?
+  lngSaida        Float?
+  precisaoSaida   Float?
+  observacao      String?
   // true quando o administrador lançou as horas (sem GPS do funcionário)
-  manual        Boolean   @default(false)
+  manual          Boolean   @default(false)
 
   @@index([usuarioId, entrada])
   @@index([obraId])
@@ -198,7 +198,7 @@ model GastoEmpresa {
 // Banco de preços: trabalhos já feitos (antigos ou obras concluídas no app), base para precificar novos.
 // tipoServico: chave de TIPOS_SERVICO; unidade: chave de UNIDADES (src/lib/constantes.ts)
 model TrabalhoReferencia {
-  id                String   @id @default(cuid())
+  id                String    @id @default(cuid())
   tipoServico       String
   // Subserviços (mesmos códigos da visita, ex.: "NOVO" ou "INTERNA,INTERNA.TETO")
   subServicos       String?
@@ -208,17 +208,17 @@ model TrabalhoReferencia {
   quantidade        Float
   unidade           String
   data              DateTime?
-  custoMaterialCent Int      @default(0)
-  custoMaoObraCent  Int      @default(0)
-  custoOutrosCent   Int      @default(0)
-  dias              Int      @default(0)
+  custoMaterialCent Int       @default(0)
+  custoMaoObraCent  Int       @default(0)
+  custoOutrosCent   Int       @default(0)
+  dias              Int       @default(0)
   // Horas de mão de obra (equipe própria) gastas no trabalho
-  horas             Float    @default(0)
+  horas             Float     @default(0)
   precoCobradoCent  Int
   observacoes       String?
-  obraId            String?  @unique
-  obra              Obra?    @relation(fields: [obraId], references: [id], onDelete: SetNull)
-  criadoEm          DateTime @default(now())
+  obraId            String?   @unique
+  obra              Obra?     @relation(fields: [obraId], references: [id], onDelete: SetNull)
+  criadoEm          DateTime  @default(now())
 
   @@index([tipoServico])
 }
@@ -226,32 +226,32 @@ model TrabalhoReferencia {
 // Visita ao cliente para levantamento e orçamento, antes de virar obra.
 // status: "AGENDADA", "REALIZADA" ou "CANCELADA"; tipoServico: chave de TIPOS_SERVICO
 model Visita {
-  id          String   @id @default(cuid())
-  clienteId   String
-  cliente     Cliente  @relation(fields: [clienteId], references: [id])
-  dataHora    DateTime
-  endereco    String?
+  id             String   @id @default(cuid())
+  clienteId      String
+  cliente        Cliente  @relation(fields: [clienteId], references: [id])
+  dataHora       DateTime
+  endereco       String?
   // tipoServico: chave de TIPOS_SERVICO ou "P:<nome>" para um serviço criado em "Outros"
-  tipoServico String?
+  tipoServico    String?
   // Subserviços escolhidos, separados por vírgula (ex.: "INTERNA,INTERNA.TETO,EXTERNA")
-  subServicos String?
+  subServicos    String?
   // Mais serviços na mesma visita, além do principal: JSON [{ tipo, subServicos }] (ex.: deck + pintura)
   outrosServicos String?
-  descricao   String?
-  status      String   @default("AGENDADA")
+  descricao      String?
+  status         String   @default("AGENDADA")
   // Depois da visita: null = em negociação, "FECHOU" ou "SEM_INTERESSE" (encerra os follow-ups)
-  resultado   String?
+  resultado      String?
   // Quem vai à visita (Alessandro ou Emmanuel)
-  responsavelId String?
-  responsavel Usuario? @relation(fields: [responsavelId], references: [id], onDelete: SetNull)
+  responsavelId  String?
+  responsavel    Usuario? @relation(fields: [responsavelId], references: [id], onDelete: SetNull)
   // Lembretes na Google Agenda dos sócios: JSON { usuarioId: eventId } e o resultado do último envio
-  eventosAgenda String?
-  agendaStatus  String?
-  criadoEm    DateTime @default(now())
+  eventosAgenda  String?
+  agendaStatus   String?
+  criadoEm       DateTime @default(now())
 
-  followUps   FollowUp[]
-  orcamentos  Orcamento[]
-  fotos       FotoVisita[]
+  followUps  FollowUp[]
+  orcamentos Orcamento[]
+  fotos      FotoVisita[]
 
   @@index([dataHora])
 }
@@ -300,53 +300,83 @@ model ServicoPersonalizado {
 // Orçamento para o cliente (etapa 6): sempre duas opções (ex.: Essencial e Premium), cada uma com itens de custo,
 // dias previstos (custo fixo) e preço. status: "RASCUNHO", "ENVIADO", "APROVADO" ou "RECUSADO".
 model Orcamento {
-  id          String   @id @default(cuid())
-  clienteId   String
-  cliente     Cliente  @relation(fields: [clienteId], references: [id])
-  visitaId    String?
-  visita      Visita?  @relation(fields: [visitaId], references: [id], onDelete: SetNull)
-  obraId      String?
-  obra        Obra?    @relation(fields: [obraId], references: [id], onDelete: SetNull)
+  id             String   @id @default(cuid())
+  clienteId      String
+  cliente        Cliente  @relation(fields: [clienteId], references: [id])
+  visitaId       String?
+  visita         Visita?  @relation(fields: [visitaId], references: [id], onDelete: SetNull)
+  obraId         String?
+  obra           Obra?    @relation(fields: [obraId], references: [id], onDelete: SetNull)
   // tipoServico/subServicos: os mesmos códigos da visita (TIPOS_SERVICO, "P:<nome>", SUBSERVICOS)
-  tipoServico String?
-  subServicos String?
+  tipoServico    String?
+  subServicos    String?
   // Mais serviços no mesmo orçamento, além do principal: JSON [{ tipo, subServicos }]
   outrosServicos String?
-  descricao   String?
-  endereco    String?
-  cidade      String?
-  condado     String?
-  quantidade  Float    @default(0)
-  unidade     String   @default("SQFT")
-  status      String   @default("RASCUNHO")
+  descricao      String?
+  endereco       String?
+  cidade         String?
+  condado        String?
+  quantidade     Float    @default(0)
+  unidade        String   @default("SQFT")
+  status         String   @default("RASCUNHO")
   // Perguntas da IA sobre o trabalho e as respostas do administrador (JSON: [{ pergunta, opcoes, resposta }])
-  perguntas   String?
+  perguntas      String?
   // Pesquisa de preço de mercado (JSON: faixa, preço por unidade, fontes com link, resumo e data da consulta)
-  mercado     String?
-  criadoEm    DateTime @default(now())
-  atualizadoEm DateTime @updatedAt
+  mercado        String?
+  criadoEm       DateTime @default(now())
+  atualizadoEm   DateTime @updatedAt
 
-  opcoes      OpcaoOrcamento[]
+  opcoes    OpcaoOrcamento[]
+  propostas Proposta[]
 
   @@index([clienteId])
 }
 
+// Proposta enviada ao cliente como link (etapa 8): portfólio + orçamento com as duas opções, em inglês.
+// conteudo guarda uma cópia do que o cliente viu (JSON, ver src/lib/proposta.ts), para a resposta valer
+// sobre aquele texto e preço mesmo se o orçamento mudar depois.
+// resposta: null (sem resposta), "APROVADA", "RECUSADA" ou "FALAR" (quer conversar; ainda pode aprovar depois).
+model Proposta {
+  id             String    @id @default(cuid())
+  orcamentoId    String
+  orcamento      Orcamento @relation(fields: [orcamentoId], references: [id], onDelete: Cascade)
+  token          String    @unique
+  conteudo       String
+  pagamento      String
+  criadaEm       DateTime  @default(now())
+  // Primeira vez que o cliente abriu o link (visitas dos administradores não contam)
+  vistaEm        DateTime?
+  resposta       String?
+  opcaoOrdem     Int?
+  nomeAssinatura String?
+  // Assinatura desenhada na tela (PNG em data URL)
+  assinatura     String?
+  mensagem       String?
+  respondidaEm   DateTime?
+  ip             String?
+  navegador      String?
+  // O administrador já viu a resposta no Painel
+  respostaVista  Boolean   @default(false)
+
+  @@index([orcamentoId])
+}
+
 model OpcaoOrcamento {
-  id            String     @id @default(cuid())
-  orcamentoId   String
-  orcamento     Orcamento  @relation(fields: [orcamentoId], references: [id], onDelete: Cascade)
-  ordem         Int
-  nome          String
-  descricao     String?
-  diasPrevistos Int        @default(0)
+  id                  String      @id @default(cuid())
+  orcamentoId         String
+  orcamento           Orcamento   @relation(fields: [orcamentoId], references: [id], onDelete: Cascade)
+  ordem               Int
+  nome                String
+  descricao           String?
+  diasPrevistos       Int         @default(0)
   // Preço final para o cliente; 0 = ainda não definido (a tela usa a sugestão de mercado)
-  precoCent     Int        @default(0)
+  precoCent           Int         @default(0)
   // Sugestão de preço pela pesquisa de mercado (o que se cobra na região por esta opção), sem olhar o custo:
   // um valor recomendado e uma faixa estreita. 0 = ainda sem pesquisa.
-  precoMercadoCent    Int  @default(0)
-  precoMercadoMinCent Int  @default(0)
-  precoMercadoMaxCent Int  @default(0)
-  itens         ItemOpcao[]
+  precoMercadoCent    Int         @default(0)
+  precoMercadoMinCent Int         @default(0)
+  precoMercadoMaxCent Int         @default(0)
+  itens               ItemOpcao[]
 }
 
 // categoria: chave de CATEGORIAS_DESPESA (material, mão de obra, delivery, permit...)
