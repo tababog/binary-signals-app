@@ -1,4 +1,4 @@
-import { lerConteudo, RESPOSTAS_PROPOSTA } from "@/lib/proposta";
+import { FORMAS_PAGAMENTO_PROPOSTA, lerConteudo, RESPOSTAS_PROPOSTA, type FormaPagamentoProposta } from "@/lib/proposta";
 import { marcarRespostaVista } from "./orcamentos/actions";
 import Link from "next/link";
 import { redirect } from "next/navigation";
@@ -182,6 +182,7 @@ export default async function Painel() {
                         <span className="block text-stone-600">
                           {r.respondidaEm && `${data(r.respondidaEm)} ${hora(r.respondidaEm)}`}
                           {r.resposta === "APROVADA" && opcao && ` · ${opcao.nome} ${dinheiro(opcao.precoCent)}`}
+                          {r.formaPagamento && ` · ${t(FORMAS_PAGAMENTO_PROPOSTA[r.formaPagamento as FormaPagamentoProposta]?.pt ?? r.formaPagamento)}`}
                           {r.mensagem && ` · “${r.mensagem}”`}
                         </span>
                       </span>

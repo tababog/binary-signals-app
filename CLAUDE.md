@@ -81,7 +81,8 @@ Conversa com o usuário em português; telas internas em português.
        drywall, cozinha, ampliações e portas/janelas prontos.
 - [x] 8. Proposta para o cliente (sempre em inglês, regra 9): no orçamento, "Criar link da proposta" guarda uma cópia
        em inglês (`Proposta`, `src/lib/proposta.ts`) e abre e-mail/WhatsApp/SMS do celular com o link. A página pública
-       `/p/[token]` mostra o portfólio inteiro e, no final, as duas opções, forma de pagamento, nome + assinatura na tela
+       `/p/[token]` mostra o portfólio inteiro e, no final, as duas opções, forma de pagamento (até 15 dias ou abaixo de
+       $8,000: só 50/50; acima disso o cliente escolhe 1/3·1/3·1/3 ou 50/50, `src/lib/pagamento-proposta.ts`), nome + assinatura na tela
        e os botões **aprovar a opção 1 ou 2**, **recusar** ou **pedir para falar** (data, IP e navegador registrados).
        Vale 30 dias; um link novo substitui o antigo. A resposta aparece no Painel; aprovada marca o orçamento como
        Aprovado e a visita como "Fechou contrato" (encerra os follow-ups), e o contrato em PDF usa a forma de pagamento

@@ -865,7 +865,6 @@ const es: Record<string, string> = {
   "Opção aprovada: {opcao} · {valor}": "Opción aprobada: {opcao} · {valor}",
   "Assinatura do cliente": "Firma del cliente",
   "Link antigo: substituído pelo novo, o cliente vê um aviso para usar o último link.": "Enlace antiguo: reemplazado por el nuevo, el cliente ve un aviso para usar el último enlace.",
-  "Forma de pagamento (em inglês, aparece na proposta)": "Forma de pago (en inglés, aparece en la propuesta)",
   "Defina o preço final das duas opções antes de enviar para o cliente.": "Defina el precio final de las dos opciones antes de enviar al cliente.",
   "Preparando a proposta...": "Preparando la propuesta...",
   "Criar novo link com o orçamento atual": "Crear un nuevo enlace con el presupuesto actual",
@@ -887,5 +886,10 @@ const es: Record<string, string> = {
   "Aprovada": "Aprobada",
   "Recusada": "Rechazada",
   "Quer conversar": "Quiere conversar",
+  "Pagamento escolhido: {forma}": "Pago elegido: {forma}",
+  "Até {dias} dias de trabalho ou abaixo de {valor}: só 50% antes de começar e 50% no final. Acima disso, o cliente escolhe entre 1/3 · 1/3 · 1/3 e 50/50.": "Hasta {dias} días de trabajo o menos de {valor}: solo 50% antes de empezar y 50% al final. Por encima de eso, el cliente elige entre 1/3 · 1/3 · 1/3 y 50/50.",
+  " ou ": " o ",
+  "50% antes de começar e 50% no final": "50% antes de empezar y 50% al final",
+  "1/3 antes de começar, 1/3 no meio da obra e 1/3 no final": "1/3 antes de empezar, 1/3 a mitad de la obra y 1/3 al final",
 };
 export default es;

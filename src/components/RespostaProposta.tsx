@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useFormState, useFormStatus } from "react-dom";
 import { responderProposta, type EstadoResposta } from "@/app/p/[token]/actions";
+import { FORMAS_PAGAMENTO_PROPOSTA } from "@/lib/pagamento-proposta";
 import type { OpcaoProposta } from "@/lib/proposta";
 
 const dolar = (c: number) => new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: c % 100 ? 2 : 0 }).format(c / 100);
@@ -34,6 +35,8 @@ function Botoes({ escolher }: { escolher: (acao: string) => void }) {
 export function RespostaProposta({ token, opcoes, hoje, previa }: { token: string; opcoes: OpcaoProposta[]; hoje: string; previa: boolean }) {
   const [estado, despachar] = useFormState<EstadoResposta, FormData>(responderProposta.bind(null, token), undefined);
   const [escolhida, setEscolhida] = useState<number | null>(null);
+  const [forma, setForma] = useState<string | null>(null);
+  const opcaoEscolhida = opcoes.find((o) => o.ordem === escolhida);
   const [erro, setErro] = useState<string | null>(null);
   const acao = useRef<HTMLInputElement>(null);
   const assinaturaCampo = useRef<HTMLInputElement>(null);
@@ -81,6 +84,9 @@ export function RespostaProposta({ token, opcoes, hoje, previa }: { token: strin
         if (escolhida === null) {
           e.preventDefault();
           setErro("Please choose Option 1 or Option 2 above.");
+        } else if (opcaoEscolhida && opcaoEscolhida.pagamentos.length > 1 && !forma) {
+          e.preventDefault();
+          setErro("Please choose how you would like to pay.");
         } else if (!(e.currentTarget.elements.namedItem("nome") as HTMLInputElement).value.trim()) {
           e.preventDefault();
           setErro("Please type your full name.");
@@ -103,18 +109,49 @@ export function RespostaProposta({ token, opcoes, hoje, previa }: { token: strin
             <span className="text-3xl font-extrabold tabular-nums text-logo">{dolar(o.precoCent)}</span>
             {o.dias > 0 && <span className="text-sm text-stone-600">About {o.dias} working {o.dias === 1 ? "day" : "days"}</span>}
             {o.descricao && <span className="whitespace-pre-line text-sm">{o.descricao}</span>}
+            <span className="rounded-lg bg-stone-50 px-3 py-2 text-sm">
+              <b>Payment:</b>{" "}
+              {o.pagamentos.length === 1 ? FORMAS_PAGAMENTO_PROPOSTA[o.pagamentos[0]].texto : `your choice of ${o.pagamentos.map((f) => FORMAS_PAGAMENTO_PROPOSTA[f].nome).join(" or ")}`}
+            </span>
             {o.itens.length > 0 && (
               <ul className="list-disc space-y-1 pl-5 text-sm">
                 {o.itens.map((it, k) => <li key={k}>{it}</li>)}
               </ul>
             )}
             <span className="mt-auto flex items-center gap-2 pt-2 font-bold text-logo">
-              <input type="radio" name="opcao" value={o.ordem} checked={escolhida === o.ordem} onChange={() => setEscolhida(o.ordem)} className="h-5 w-5 accent-marca-600" />
+              <input
+                type="radio"
+                name="opcao"
+                value={o.ordem}
+                checked={escolhida === o.ordem}
+                onChange={() => {
+                  setEscolhida(o.ordem);
+                  setForma(null);
+                }}
+                className="h-5 w-5 accent-marca-600"
+              />
               Choose Option {i + 1}
             </span>
           </label>
         ))}
       </div>
+
+      {opcaoEscolhida && opcaoEscolhida.pagamentos.length > 1 && (
+        <fieldset className="rounded-2xl border-2 border-marca-600 p-4">
+          <legend className="px-1 font-bold text-logo">How would you like to pay?</legend>
+          <div className="grid gap-2 sm:grid-cols-2">
+            {opcaoEscolhida.pagamentos.map((f) => (
+              <label key={f} className={`flex cursor-pointer gap-3 rounded-xl border-2 p-3 ${forma === f ? "border-marca-600 bg-marca-50" : "border-stone-200"}`}>
+                <input type="radio" name="pagamento" value={f} checked={forma === f} onChange={() => setForma(f)} className="mt-1 h-5 w-5 accent-marca-600" />
+                <span>
+                  <b className="block text-logo">{FORMAS_PAGAMENTO_PROPOSTA[f].nome}</b>
+                  <span className="text-sm text-stone-600">{FORMAS_PAGAMENTO_PROPOSTA[f].texto}</span>
+                </span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+      )}
 
       <div className="grid gap-3 rounded-2xl border border-stone-200 bg-stone-50 p-4">
         <label className="text-sm font-semibold" htmlFor="nome">Full name</label>

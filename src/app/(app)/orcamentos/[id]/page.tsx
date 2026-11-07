@@ -29,7 +29,7 @@ import {
 import { getT, type T } from "@/i18n/servidor";
 import { headers } from "next/headers";
 import type { Proposta } from "@prisma/client";
-import { PAGAMENTO_PADRAO, RESPOSTAS_PROPOSTA, lerConteudo, mensagemProposta, vencida } from "@/lib/proposta";
+import { FORMAS_PAGAMENTO_PROPOSTA, LIMITE_CURTO_DIAS, LIMITE_VALOR_CENT, RESPOSTAS_PROPOSTA, formasDaOpcao, lerConteudo, mensagemProposta, vencida, type FormaPagamentoProposta } from "@/lib/proposta";
 import { EnviarProposta } from "@/components/EnviarProposta";
 
 // A pesquisa de mercado com a IA pode levar 1 a 2 minutos
@@ -118,7 +118,14 @@ export default async function Orcamento({ params }: { params: { id: string } }) 
         ))}
       </div>
 
-      <PropostaCliente t={t} orcamentoId={orc.id} propostas={orc.propostas} cliente={orc.cliente} prontas={orc.opcoes.length > 0 && orc.opcoes.every((o) => o.precoCent > 0)} />
+      <PropostaCliente
+        t={t}
+        orcamentoId={orc.id}
+        propostas={orc.propostas}
+        cliente={orc.cliente}
+        prontas={orc.opcoes.length > 0 && orc.opcoes.every((o) => o.precoCent > 0)}
+        pagamentos={orc.opcoes.map((o) => ({ nome: o.nome, formas: o.precoCent > 0 ? formasDaOpcao(o.precoCent, o.diasPrevistos) : [] }))}
+      />
 
       <div className="mb-4 grid gap-4 lg:grid-cols-2">
         <Referencias t={t} historico={historico} mercado={mercado} unidade={unidade} quantidade={orc.quantidade} />
@@ -430,8 +437,10 @@ function PropostaCliente({
   propostas,
   cliente,
   prontas,
+  pagamentos,
 }: {
   t: T;
+  pagamentos: { nome: string; formas: FormaPagamentoProposta[] }[];
   orcamentoId: string;
   propostas: Proposta[];
   cliente: { nome: string; telefone: string | null; email: string | null };
@@ -474,6 +483,9 @@ function PropostaCliente({
                     {p.resposta === "APROVADA" && opcao && (
                       <p>{t("Opção aprovada: {opcao} · {valor}", { opcao: opcao.nome, valor: dinheiro(opcao.precoCent) })}</p>
                     )}
+                    {p.formaPagamento && (
+                      <p>{t("Pagamento escolhido: {forma}", { forma: t(FORMAS_PAGAMENTO_PROPOSTA[p.formaPagamento as FormaPagamentoProposta]?.pt ?? p.formaPagamento) })}</p>
+                    )}
                     <p className="text-stone-600">
                       {p.nomeAssinatura && `${p.nomeAssinatura} · `}
                       {quando(p.respondidaEm)}
@@ -498,9 +510,21 @@ function PropostaCliente({
 
       {ultima?.resposta !== "APROVADA" && (
         <Formulario acao={criarProposta.bind(null, orcamentoId)} className="space-y-2">
-          <Campo rotulo={t("Forma de pagamento (em inglês, aparece na proposta)")}>
-            <textarea className="campo text-sm" name="pagamento" rows={2} defaultValue={ultima?.pagamento ?? PAGAMENTO_PADRAO} />
-          </Campo>
+          <div className="rounded-lg bg-stone-50 p-3 text-sm">
+            <p className="font-semibold">{t("Forma de pagamento")}</p>
+            <p className="text-stone-600">
+              {t("Até {dias} dias de trabalho ou abaixo de {valor}: só 50% antes de começar e 50% no final. Acima disso, o cliente escolhe entre 1/3 · 1/3 · 1/3 e 50/50.", { dias: LIMITE_CURTO_DIAS, valor: dinheiro(LIMITE_VALOR_CENT) })}
+            </p>
+            {pagamentos.some((o) => o.formas.length > 0) && (
+              <ul className="mt-1 text-stone-700">
+                {pagamentos.filter((o) => o.formas.length > 0).map((o) => (
+                  <li key={o.nome}>
+                    <b>{o.nome}:</b> {o.formas.map((f) => t(FORMAS_PAGAMENTO_PROPOSTA[f].pt)).join(t(" ou "))}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
           {!prontas && <p className="text-sm text-amber-800">{t("Defina o preço final das duas opções antes de enviar para o cliente.")}</p>}
           <BotaoEnviar className={ultima ? "botao-secundario w-full" : "botao w-full"} aguardando={t("Preparando a proposta...")}>
             {ultima ? t("Criar novo link com o orçamento atual") : t("Criar link da proposta")}

@@ -5,7 +5,7 @@ import { descreverServicos, descreverSubservicos, nomesServicos, todosServicos }
 import { rateioCustosFixos } from "@/lib/custos-fixos";
 import { calcularOpcao } from "@/lib/orcamento";
 import { dolaresPorExtenso } from "@/lib/contrato/extenso";
-import { CATEGORIAS_ESCOPO, PAGAMENTO_PADRAO, itemEscopo } from "@/lib/proposta";
+import { CATEGORIAS_ESCOPO, FORMAS_PAGAMENTO_PROPOSTA, PAGAMENTO_PADRAO, itemEscopo, type FormaPagamentoProposta } from "@/lib/proposta";
 import { dataEUA, gerarContratoPDF, maisDiasUteis } from "@/lib/contrato/gerar";
 
 /**
@@ -54,7 +54,7 @@ export async function GET(req: Request, { params }: { params: { id: string } }) 
     precoCent: preco,
     precoExtenso: dolaresPorExtenso(preco),
     // A forma de pagamento que o cliente aprovou na proposta; sem proposta aprovada, a padrão
-    pagamento: orc.propostas[0]?.pagamento ?? PAGAMENTO_PADRAO,
+    pagamento: FORMAS_PAGAMENTO_PROPOSTA[orc.propostas[0]?.formaPagamento as FormaPagamentoProposta]?.texto ?? PAGAMENTO_PADRAO,
     inicio: dataEUA(orc.obra?.dataInicio),
     termino: dataEUA(orc.obra?.dataPrevista),
   });

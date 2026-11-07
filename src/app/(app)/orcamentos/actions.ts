@@ -13,7 +13,7 @@ import { gerarPerguntas, precosDeMaterial, sugerirOrcamento, type DadosPrecifica
 import { dinheiro } from "@/lib/format";
 import type { EstadoForm } from "@/components/Formulario";
 import { lerServicosDoFormulario } from "@/lib/servicos-form";
-import { PAGAMENTO_PADRAO, montarConteudo, novoToken } from "@/lib/proposta";
+import { montarConteudo, novoToken } from "@/lib/proposta";
 
 type Pergunta = { pergunta: string; opcoes: string[]; multipla?: boolean; resposta?: string };
 
@@ -325,10 +325,11 @@ export async function precificarMaterial(opcaoId: string, _e: EstadoForm, form: 
 }
 
 /**
- * Cria o link da proposta para o cliente (etapa 8): guarda uma cópia do orçamento em inglês e a forma de pagamento.
+ * Cria o link da proposta para o cliente (etapa 8): guarda uma cópia do orçamento em inglês, com as formas de
+ * pagamento que cada opção oferece (formasDaOpcao).
  * As duas opções precisam ter o preço final definido (a sugestão de mercado não vai para o cliente sem decisão).
  */
-export async function criarProposta(orcamentoId: string, _e: EstadoForm, form: FormData): Promise<EstadoForm> {
+export async function criarProposta(orcamentoId: string, _e: EstadoForm): Promise<EstadoForm> {
   await exigirAdmin();
   const t = getT();
   const orc = await db.orcamento.findUnique({
@@ -338,10 +339,9 @@ export async function criarProposta(orcamentoId: string, _e: EstadoForm, form: F
   if (!orc) return { erro: t("Orçamento não encontrado.") };
   if (orc.opcoes.length === 0) return { erro: t("O orçamento ainda não tem opções.") };
   if (orc.opcoes.some((o) => o.precoCent <= 0)) return { erro: t("Defina o preço final das duas opções antes de enviar para o cliente.") };
-  const pagamento = String(form.get("pagamento") ?? "").trim().slice(0, 600) || PAGAMENTO_PADRAO;
 
   const conteudo = await montarConteudo(orc);
-  await db.proposta.create({ data: { orcamentoId, token: novoToken(), conteudo: JSON.stringify(conteudo), pagamento } });
+  await db.proposta.create({ data: { orcamentoId, token: novoToken(), conteudo: JSON.stringify(conteudo) } });
   if (orc.status === "RASCUNHO") await db.orcamento.update({ where: { id: orcamentoId }, data: { status: "ENVIADO" } });
   atualizar(orcamentoId);
   return { ok: t("Link da proposta criado. Agora envie para o cliente.") };

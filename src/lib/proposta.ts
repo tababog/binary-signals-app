@@ -4,17 +4,28 @@ import { getT } from "@/i18n/servidor";
 import { descreverServicos, descreverSubservicos, nomesServicos, todosServicos } from "./constantes";
 import { traduzirTextos } from "./traducao";
 import { db } from "./db";
+import { formasDaOpcao, type FormaPagamentoProposta } from "./pagamento-proposta";
+
+export * from "./pagamento-proposta";
 
 /** Categorias de item que aparecem para o cliente no escopo (mão de obra, frete, seguro e custos internos ficam de fora). */
 export const CATEGORIAS_ESCOPO = ["MATERIAL", "INSTALACAO", "SERVICO", "EQUIPAMENTO", "DESCARTE", "LICENCA"];
 
-/** Forma de pagamento padrão da Tababog (a mesma do contrato). */
+/** Forma de pagamento do contrato quando não há proposta aprovada (texto original do contrato da Tababog). */
 export const PAGAMENTO_PADRAO = "50% payable at the beginning of the work (at the end of the first day worked) and 50% upon completion of the work.";
 
 /** A proposta vale por 30 dias; depois o link mostra o aviso e não aceita mais aprovação. */
 export const VALIDADE_DIAS = 30;
 
-export type OpcaoProposta = { ordem: number; nome: string; descricao: string | null; dias: number; precoCent: number; itens: string[] };
+export type OpcaoProposta = {
+  ordem: number;
+  nome: string;
+  descricao: string | null;
+  dias: number;
+  precoCent: number;
+  itens: string[];
+  pagamentos: FormaPagamentoProposta[];
+};
 export type ConteudoProposta = {
   cliente: string;
   endereco: string;
@@ -70,6 +81,7 @@ export async function montarConteudo(
     dias: o.diasPrevistos,
     precoCent: o.precoCent,
     itens: o.itens.filter((i) => CATEGORIAS_ESCOPO.includes(i.categoria)).map(itemEscopo),
+    pagamentos: formasDaOpcao(o.precoCent, o.diasPrevistos),
   }));
 
   const textos = opcoes.flatMap((o) => [o.descricao ?? "", ...o.itens]);

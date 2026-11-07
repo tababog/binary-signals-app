@@ -865,7 +865,6 @@ const en: Record<string, string> = {
   "Opção aprovada: {opcao} · {valor}": "Approved option: {opcao} · {valor}",
   "Assinatura do cliente": "Client signature",
   "Link antigo: substituído pelo novo, o cliente vê um aviso para usar o último link.": "Old link: replaced by the new one, the client sees a note to use the latest link.",
-  "Forma de pagamento (em inglês, aparece na proposta)": "Payment terms (in English, shown in the proposal)",
   "Defina o preço final das duas opções antes de enviar para o cliente.": "Set the final price of both options before sending to the client.",
   "Preparando a proposta...": "Preparing the proposal...",
   "Criar novo link com o orçamento atual": "Create a new link with the current estimate",
@@ -887,5 +886,10 @@ const en: Record<string, string> = {
   "Aprovada": "Approved",
   "Recusada": "Declined",
   "Quer conversar": "Wants to talk",
+  "Pagamento escolhido: {forma}": "Payment chosen: {forma}",
+  "Até {dias} dias de trabalho ou abaixo de {valor}: só 50% antes de começar e 50% no final. Acima disso, o cliente escolhe entre 1/3 · 1/3 · 1/3 e 50/50.": "Up to {dias} working days or under {valor}: only 50% before starting and 50% at the end. Above that, the client chooses between 1/3 · 1/3 · 1/3 and 50/50.",
+  " ou ": " or ",
+  "50% antes de começar e 50% no final": "50% before starting and 50% at the end",
+  "1/3 antes de começar, 1/3 no meio da obra e 1/3 no final": "1/3 before starting, 1/3 at the midpoint and 1/3 at the end",
 };
 export default en;

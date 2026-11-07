@@ -342,7 +342,9 @@ model Proposta {
   orcamento      Orcamento @relation(fields: [orcamentoId], references: [id], onDelete: Cascade)
   token          String    @unique
   conteudo       String
-  pagamento      String
+  // Forma de pagamento escolhida pelo cliente ao aprovar: "METADE" (50/50) ou "TERCOS" (1/3 · 1/3 · 1/3);
+  // as que cada opção oferece ficam em conteudo (src/lib/proposta.ts, formasDaOpcao)
+  formaPagamento String?
   criadaEm       DateTime  @default(now())
   // Primeira vez que o cliente abriu o link (visitas dos administradores não contam)
   vistaEm        DateTime?

@@ -39,13 +39,15 @@ export async function responderProposta(token: string, _: EstadoResposta, form: 
     const ordem = Number(form.get("opcao"));
     const opcao = lerConteudo(proposta.conteudo).opcoes.find((o) => o.ordem === ordem);
     if (!opcao) return { erro: "Please choose one of the options above." };
+    const forma = opcao.pagamentos.length === 1 ? opcao.pagamentos[0] : String(form.get("pagamento") ?? "");
+    if (!(opcao.pagamentos as string[]).includes(forma)) return { erro: "Please choose how you would like to pay." };
     if (nome.length < 3) return { erro: "Please type your full name." };
     const assinatura = String(form.get("assinatura") ?? "");
     if (!assinatura.startsWith("data:image/png;base64,") || assinatura.length < 2000) return { erro: "Please sign in the box." };
     if (assinatura.length > ASSINATURA_MAX) return { erro: "The signature is too large. Please clear it and sign again." };
 
     await db.$transaction([
-      db.proposta.update({ where: { id: proposta.id }, data: { ...registro, resposta: "APROVADA", opcaoOrdem: ordem, nomeAssinatura: nome, assinatura } }),
+      db.proposta.update({ where: { id: proposta.id }, data: { ...registro, resposta: "APROVADA", opcaoOrdem: ordem, formaPagamento: forma, nomeAssinatura: nome, assinatura } }),
       db.orcamento.update({ where: { id: proposta.orcamentoId }, data: { status: "APROVADO" } }),
       ...(proposta.orcamento.visitaId ? [db.visita.update({ where: { id: proposta.orcamento.visitaId }, data: { resultado: "FECHOU" } })] : []),
     ]);

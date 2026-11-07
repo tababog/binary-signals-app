@@ -6,7 +6,7 @@ import { usuarioAtual } from "@/lib/auth";
 import { getT } from "@/i18n/servidor";
 import { Portfolio, RodapeEmpresa } from "@/components/Portfolio";
 import { RespostaProposta } from "@/components/RespostaProposta";
-import { VALIDADE_DIAS, lerConteudo, substituida, vencida } from "@/lib/proposta";
+import { FORMAS_PAGAMENTO_PROPOSTA, VALIDADE_DIAS, lerConteudo, substituida, vencida, type FormaPagamentoProposta } from "@/lib/proposta";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "Your proposal · Tababog Construction", robots: { index: false, follow: false } };
@@ -57,6 +57,9 @@ export default async function PaginaProposta({ params }: { params: { token: stri
                   Approved: {escolhida.nome} option, {dolar(escolhida.precoCent)}. Signed by {proposta.nomeAssinatura} on {dataLonga(proposta.respondidaEm!)}.
                 </p>
                 {proposta.assinatura && <img src={proposta.assinatura} alt="Signature" className="mt-3 h-20 rounded bg-white" />}
+                {proposta.formaPagamento && (
+                  <p className="mt-2 text-sm">Payment: {FORMAS_PAGAMENTO_PROPOSTA[proposta.formaPagamento as FormaPagamentoProposta]?.texto}</p>
+                )}
                 <p className="mt-2 text-sm">We will contact you shortly with the contract and the start date.</p>
               </>
             ) : (
@@ -66,7 +69,6 @@ export default async function PaginaProposta({ params }: { params: { token: stri
         ) : (
           <>
             <ul className="mb-4 list-disc space-y-1 pl-5 text-sm text-stone-600">
-              <li>Payment: {proposta.pagamento}</li>
               <li>This estimate is valid for {VALIDADE_DIAS} days.</li>
               <li>After you approve, you will receive the home improvement contract to sign. Under Connecticut law you may cancel within three business days.</li>
             </ul>
