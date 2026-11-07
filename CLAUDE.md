@@ -81,7 +81,8 @@ Conversa com o usuário em português; telas internas em português.
        drywall, cozinha, ampliações e portas/janelas prontos.
 - [x] 8. Proposta para o cliente (sempre em inglês, regra 9): no orçamento, "Criar link da proposta" guarda uma cópia
        em inglês (`Proposta`, `src/lib/proposta.ts`) e abre e-mail/WhatsApp/SMS do celular com o link. A página pública
-       `/p/[token]` mostra o portfólio inteiro e, no final, as duas opções, forma de pagamento (só pelo valor: abaixo
+       `/p/[token]` mostra o portfólio inteiro e, no final, as duas opções (escopo do trabalho antes do preço:
+       `OpcaoOrcamento.escopo`, escrito à mão ou com IA, `gerarEscopo`; obrigatório para enviar), forma de pagamento (só pelo valor: abaixo
        de $8,000 só 50/50; a partir de $8,000 o cliente escolhe 1/3·1/3·1/3 ou 50/50, `src/lib/pagamento-proposta.ts`), nome + assinatura na tela
        e os botões **aprovar a opção 1 ou 2**, **recusar** ou **pedir para falar** (data, IP e navegador registrados).
        Cláusula de trabalho extra (mudança no escopo pode ser cobrada à parte) nas condições, com aceite obrigatório

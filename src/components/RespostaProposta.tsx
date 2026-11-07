@@ -109,19 +109,38 @@ export function RespostaProposta({ token, opcoes, hoje, previa }: { token: strin
             className={`flex cursor-pointer flex-col gap-2 rounded-2xl border-2 p-4 ${escolhida === o.ordem ? "border-marca-600 ring-4 ring-marca-100" : "border-stone-200"}`}
           >
             <span className="text-xl font-bold text-logo">Option {i + 1} · {o.nome}</span>
-            <span className="text-3xl font-extrabold tabular-nums text-logo">{dolar(o.precoCent)}</span>
-            {o.dias > 0 && <span className="text-sm text-stone-600">About {o.dias} working {o.dias === 1 ? "day" : "days"}</span>}
             {o.descricao && <span className="whitespace-pre-line text-sm">{o.descricao}</span>}
+            {(o.escopo?.length ?? 0) > 0 && (
+              <span className="block">
+                <span className="block text-xs font-bold uppercase tracking-wide text-stone-500">Scope of work</span>
+                <ul className="mt-1 space-y-1 text-sm">
+                  {o.escopo!.map((l, k) => (
+                    <li key={k} className="flex gap-2">
+                      <span className="text-emerald-700" aria-hidden="true">✓</span>
+                      <span>{l}</span>
+                    </li>
+                  ))}
+                </ul>
+              </span>
+            )}
+            {o.itens.length > 0 && (
+              <span className="block">
+                <span className="block text-xs font-bold uppercase tracking-wide text-stone-500">Materials and items included</span>
+                <ul className="mt-1 list-disc space-y-1 pl-5 text-sm">
+                  {o.itens.map((it, k) => <li key={k}>{it}</li>)}
+                </ul>
+              </span>
+            )}
+            {o.dias > 0 && <span className="text-sm text-stone-600">About {o.dias} working {o.dias === 1 ? "day" : "days"}</span>}
+            <span className="mt-auto block border-t border-stone-200 pt-3">
+              <span className="block text-xs font-bold uppercase tracking-wide text-stone-500">Price for this option</span>
+              <span className="block text-3xl font-extrabold tabular-nums text-logo">{dolar(o.precoCent)}</span>
+            </span>
             <span className="rounded-lg bg-stone-50 px-3 py-2 text-sm">
               <b>Payment:</b>{" "}
               {o.pagamentos.length === 1 ? FORMAS_PAGAMENTO_PROPOSTA[o.pagamentos[0]].texto : `your choice of ${o.pagamentos.map((f) => FORMAS_PAGAMENTO_PROPOSTA[f].nome).join(" or ")}`}
             </span>
-            {o.itens.length > 0 && (
-              <ul className="list-disc space-y-1 pl-5 text-sm">
-                {o.itens.map((it, k) => <li key={k}>{it}</li>)}
-              </ul>
-            )}
-            <span className="mt-auto flex items-center gap-2 pt-2 font-bold text-logo">
+            <span className="flex items-center gap-2 pt-1 font-bold text-logo">
               <input
                 type="radio"
                 name="opcao"

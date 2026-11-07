@@ -3,6 +3,7 @@ import type { Cliente, ItemOpcao, OpcaoOrcamento, Orcamento } from "@prisma/clie
 import { getT } from "@/i18n/servidor";
 import { descreverServicos, descreverSubservicos, nomesServicos, todosServicos } from "./constantes";
 import { traduzirTextos } from "./traducao";
+import { limparLinhasEscopo } from "./precificacao-ia";
 import { db } from "./db";
 import { formasDaOpcao, type FormaPagamentoProposta } from "./pagamento-proposta";
 
@@ -24,6 +25,8 @@ export type OpcaoProposta = {
   dias: number;
   precoCent: number;
   itens: string[];
+  /** Escopo do trabalho (o que está incluído), uma linha por item; propostas antigas não têm. */
+  escopo?: string[];
   pagamentos: FormaPagamentoProposta[];
 };
 export type ConteudoProposta = {
@@ -82,15 +85,17 @@ export async function montarConteudo(
     precoCent: o.precoCent,
     itens: o.itens.filter((i) => CATEGORIAS_ESCOPO.includes(i.categoria)).map(itemEscopo),
     pagamentos: formasDaOpcao(o.precoCent),
+    escopo: limparLinhasEscopo(o.escopo ?? ""),
   }));
 
-  const textos = opcoes.flatMap((o) => [o.descricao ?? "", ...o.itens]);
+  const textos = opcoes.flatMap((o) => [o.descricao ?? "", ...o.itens, ...o.escopo]);
   const traduzidos = await traduzirTextos(textos, "en").catch(() => textos);
   let k = 0;
   for (const o of opcoes) {
     o.descricao = o.descricao ? traduzidos[k] : null;
     k++;
     o.itens = o.itens.map(() => traduzidos[k++]);
+    o.escopo = o.escopo.map(() => traduzidos[k++]);
   }
 
   return {

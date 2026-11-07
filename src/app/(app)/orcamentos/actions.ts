@@ -9,7 +9,7 @@ import { paraCentavos, texto } from "@/lib/format";
 import { CATEGORIAS_DESPESA, CONDADOS_CT, PREFIXO_PERSONALIZADO, SUBSERVICOS, TIPOS_SERVICO, UNIDADES, descreverServicos, descreverSubservicos, nomesServicos, todosServicos } from "@/lib/constantes";
 import { rateioCustosFixos } from "@/lib/custos-fixos";
 import { OPCOES_PADRAO, STATUS_ORCAMENTO, referenciaHistorico } from "@/lib/orcamento";
-import { gerarPerguntas, precosDeMaterial, sugerirOrcamento, type DadosPrecificacao } from "@/lib/precificacao-ia";
+import { gerarEscopo, gerarPerguntas, limparLinhasEscopo, precosDeMaterial, sugerirOrcamento, type DadosPrecificacao } from "@/lib/precificacao-ia";
 import { dinheiro } from "@/lib/format";
 import type { EstadoForm } from "@/components/Formulario";
 import { lerServicosDoFormulario } from "@/lib/servicos-form";
@@ -117,6 +117,7 @@ export async function salvarOpcao(opcaoId: string, _e: EstadoForm, form: FormDat
     data: {
       nome,
       descricao: texto(form.get("descricao")),
+      escopo: limparLinhasEscopo(String(form.get("escopo") ?? "")).join("\n") || null,
       diasPrevistos: Math.max(0, Math.round(numero(form.get("dias")))),
       precoCent: paraCentavos(form.get("preco")),
     },
@@ -339,6 +340,7 @@ export async function criarProposta(orcamentoId: string, _e: EstadoForm): Promis
   if (!orc) return { erro: t("Orçamento não encontrado.") };
   if (orc.opcoes.length === 0) return { erro: t("O orçamento ainda não tem opções.") };
   if (orc.opcoes.some((o) => o.precoCent <= 0)) return { erro: t("Defina o preço final das duas opções antes de enviar para o cliente.") };
+  if (orc.opcoes.some((o) => !o.escopo?.trim())) return { erro: t("Escreva o escopo do trabalho das duas opções antes de enviar para o cliente.") };
 
   const conteudo = await montarConteudo(orc);
   await db.proposta.create({ data: { orcamentoId, token: novoToken(), conteudo: JSON.stringify(conteudo) } });
@@ -352,4 +354,26 @@ export async function marcarRespostaVista(propostaId: string) {
   await exigirAdmin();
   await db.proposta.update({ where: { id: propostaId }, data: { respostaVista: true } });
   revalidatePath("/");
+}
+
+/** Rascunho do escopo do trabalho da opção com a IA (em inglês); o administrador confere e corrige. */
+export async function escreverEscopo(opcaoId: string, _e: EstadoForm): Promise<EstadoForm> {
+  await exigirAdmin();
+  const t = getT();
+  const opcao = await db.opcaoOrcamento.findUnique({ where: { id: opcaoId }, include: { itens: { orderBy: { ordem: "asc" } } } });
+  if (!opcao) return { erro: t("Orçamento não encontrado.") };
+  try {
+    const linhas = await gerarEscopo(await dadosParaIA(opcao.orcamentoId), {
+      nome: opcao.nome,
+      descricao: opcao.descricao,
+      itens: opcao.itens.map((i) => `${i.descricao}${i.quantidade && i.unidade ? ` (${i.quantidade} ${i.unidade})` : ""} [${i.categoria}]`),
+    });
+    if (!linhas) return { erro: t("A IA não está ligada: falta a chave ANTHROPIC_API_KEY na Vercel.") };
+    if (linhas.length === 0) return { erro: t("A IA não conseguiu escrever o escopo. Tente de novo ou escreva à mão.") };
+    await db.opcaoOrcamento.update({ where: { id: opcaoId }, data: { escopo: linhas.join("\n") } });
+  } catch (e) {
+    return { erro: t((e as Error).message) };
+  }
+  atualizar(opcao.orcamentoId);
+  return { ok: t("Escopo escrito. Confira, corrija se precisar e salve a opção.") };
 }

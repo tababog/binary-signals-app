@@ -892,5 +892,14 @@ const es: Record<string, string> = {
   "50% antes de começar e 50% no final": "50% antes de empezar y 50% al final",
   "1/3 antes de começar, 1/3 no meio da obra e 1/3 no final": "1/3 antes de empezar, 1/3 a mitad de la obra y 1/3 al final",
   "✓ Aceitou que mudança no escopo é trabalho extra e pode ser cobrada à parte": "✓ Aceptó que un cambio en el alcance es trabajo extra y puede cobrarse aparte",
+  "Escopo do trabalho (o cliente vê antes do preço; um item por linha)": "Alcance del trabajo (el cliente lo ve antes del precio; un ítem por línea)",
+  "Pode escrever em português: na proposta o cliente recebe em inglês.": "Puede escribir en portugués: en la propuesta el cliente lo recibe en inglés.",
+  "Escrevendo o escopo...": "Escribiendo el alcance...",
+  "Reescrever o escopo com IA": "Reescribir el alcance con IA",
+  "Escrever o escopo com IA": "Escribir el alcance con IA",
+  "Antes de enviar: escreva o escopo do trabalho e defina o preço final das duas opções.": "Antes de enviar: escriba el alcance del trabajo y defina el precio final de las dos opciones.",
+  "Escreva o escopo do trabalho das duas opções antes de enviar para o cliente.": "Escriba el alcance del trabajo de las dos opciones antes de enviar al cliente.",
+  "A IA não conseguiu escrever o escopo. Tente de novo ou escreva à mão.": "La IA no pudo escribir el alcance. Intente de nuevo o escríbalo a mano.",
+  "Escopo escrito. Confira, corrija se precisar e salve a opção.": "Alcance escrito. Revíselo, corríjalo si hace falta y guarde la opción.",
 };
 export default es;

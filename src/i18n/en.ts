@@ -892,5 +892,14 @@ const en: Record<string, string> = {
   "50% antes de começar e 50% no final": "50% before starting and 50% at the end",
   "1/3 antes de começar, 1/3 no meio da obra e 1/3 no final": "1/3 before starting, 1/3 at the midpoint and 1/3 at the end",
   "✓ Aceitou que mudança no escopo é trabalho extra e pode ser cobrada à parte": "✓ Agreed that scope changes are extra work and may be billed separately",
+  "Escopo do trabalho (o cliente vê antes do preço; um item por linha)": "Scope of work (the client sees it before the price; one item per line)",
+  "Pode escrever em português: na proposta o cliente recebe em inglês.": "You can write in Portuguese: the client gets it in English in the proposal.",
+  "Escrevendo o escopo...": "Writing the scope...",
+  "Reescrever o escopo com IA": "Rewrite the scope with AI",
+  "Escrever o escopo com IA": "Write the scope with AI",
+  "Antes de enviar: escreva o escopo do trabalho e defina o preço final das duas opções.": "Before sending: write the scope of work and set the final price of both options.",
+  "Escreva o escopo do trabalho das duas opções antes de enviar para o cliente.": "Write the scope of work of both options before sending to the client.",
+  "A IA não conseguiu escrever o escopo. Tente de novo ou escreva à mão.": "The AI couldn't write the scope. Try again or write it by hand.",
+  "Escopo escrito. Confira, corrija se precisar e salve a opção.": "Scope written. Review it, fix it if needed and save the option.",
 };
 export default en;
