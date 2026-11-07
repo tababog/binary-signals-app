@@ -235,6 +235,6 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Publique sempre com `url` = J39wU8iVxtmEvYAZ1XBHhW (o arquivo local é scratchpad/painel/painel-semana.html). Sem o url, a publicação cria outro link.
 
 ## Casas Discovery: cartão de cada casa (07/11)
-- O cartão de cada casa e os números do topo mostram só: **Valor pago na casa** (Aquisição) · **Despesas com material** (Reforma, exceto mão de obra) · **Mão de obra** (Pessoas, MAO DE OBRA, labor/Zelle de contractor) · **Outros** (lixo e permit, separados do material em 07/11) · **Total** (soma dos quatro). Tirados a pedido do Alessandro: "Aportes", "Caixa hoje", "Falta aportar".
-- Viagem, custos fixos e "Outros" não entram nesse total (continuam na tabela de lançamentos).
+- O cartão de cada casa e os números do topo mostram só: **Valor pago na casa** (Aquisição) · **Despesas com material** (Reforma, exceto mão de obra) · **Mão de obra** (Pessoas, MAO DE OBRA, labor/Zelle de contractor) · **Outros** (lixo e permit + todo o restante: viagem, seguro, água, luz, "Outros") · **Total** (soma dos quatro = tudo o que a casa já gastou). Tirados a pedido do Alessandro: "Aportes", "Caixa hoje", "Falta aportar".
+- (07/11) Viagem, custos fixos e "Outros" entram no item Outros, então o Total = todos os lançamentos da casa.
 - Cada recibo lançado entra também nos lançamentos da Casas Discovery, para os totais ficarem em dia.
