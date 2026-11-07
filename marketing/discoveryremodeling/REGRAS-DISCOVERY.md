@@ -207,6 +207,8 @@ Atualize este arquivo sempre que uma regra nova for combinada.
   953 Erie (1RygPmpYEJlpVn8L75d4C92JaW_Q8rDxI) · 8 Rumsey (1zZmaBOP9ssln4w42rZJz0_ADk9HSr8gd) · 348 Beckwith (1Cw9tj0oOhhAj3Kd2nKfdoko73IsC8zXo) · 1104 Agnew (1ixkbeDse0aqiBgLwdm0HqNMe6Z3xRneN) · 6955 State Route 51 (1qm1TJCFvq1eQhIldMUWgT_0sV0UPja_L).
 - O Alessandro escaneia direto na subpasta da casa (app Drive → + → Scan). A leitura das 7h47/12h47/18h47 lê os arquivos novos dessas pastas, lança na casa e na calibração. Pastas NÃO públicas (dados financeiros).
 
+- (07/11) O Alessandro também manda recibos pela página **Caixa** de cada casa (botão Câmera/Galeria/PDF no topo; ex.: Caixa 953 Erie = https://claude.ai/artifact/BMn8c1jTMV28aYoJbehiDt, coleção "recibos", status "novo"). A leitura confere também essas páginas. Na dúvida, marcar status "duvida" com a pergunta em "duvida" e "sugestoes" (categorias da Caixa): aparece para ele escolher na própria página.
+
 ## Separação dos recibos por departamento (06/11)
 Cada linha de cada recibo vai para um departamento. Mapa:
 - **Telhado:** shingles, plywood/OSB (padrão = telhado, salvo se a nota/obra indicar subfloor), underlayment/manta, ice & water, drip edge, ridge vent, flashing, prego de telhado, dumpster do telhado.
