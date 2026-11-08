@@ -250,6 +250,7 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Legenda termina com pergunta + "siga para ver a resposta amanhã". Stories só com enquete/quiz/bastidor.
 - Os comentários com ASSESSORIA continuam sendo respondidos pela rotina (responder não é vender).
 - Meta: +100 seguidores na semana, comparar no domingo 15/11.
+- Agenda: `agenda-publicacao-semana-crescimento.md` (docs `s2-*` no painel). Rotina "Semana de crescimento" (trig_01NR1H8coPYEoYD3sm1SJQz3) publica às 8h, 12h e 14h de Brasília e desliga sozinha no domingo 15/11. As 3 respostas (parte 2) foram reeditadas sem "Comente ASSESSORIA" (pasta `semana-crescimento/`). O estoque (drywall, gabinetes) ainda tem chamada de venda gravada: reeditar antes de usar.
 
 ## Ajuste no meio do caminho (regra do Alessandro, 08/11)
 - O plano da semana NÃO é para seguir até o fim se não estiver dando certo. Todo dia, antes da publicação das 12h, o Claude compara o Reel do dia anterior (alcance, comentários, seguidores novos) com a média da semana.
