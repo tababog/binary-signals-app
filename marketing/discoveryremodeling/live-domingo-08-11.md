@@ -40,4 +40,5 @@
 - Duração: 1h23min
 - 37 espectadores; pico de 11 ao mesmo tempo
 - 46 comentários, 3 compartilhamentos (49 interações)
-- Para a reunião: quem pediu ASSESSORIA e quais perguntas vieram (falta o Alessandro contar)
+- 2 pessoas pediram ASSESSORIA na live (chamar no Direct hoje)
+- Perguntas que vieram: falta o Alessandro contar
