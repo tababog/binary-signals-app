@@ -9,7 +9,7 @@
 - Comentários com LIVE: resposta pública "Anotado! Te espero domingo às [hora] 🔔".
 
 ## Roteiro (Alessandro)
-**Abertura (2 min):** "Boa noite, pessoal! Eu sou o Alessandro, da Discovery. Somos uma família brasileira que compra casas em leilão de Tax Deed aqui nos Estados Unidos. Hoje a live é de vocês: mandem as perguntas no chat."
+**Abertura (2 min):** "Bom dia, pessoal! Eu sou o Alessandro, da Discovery. Somos uma família brasileira que compra casas em leilão de Tax Deed aqui nos Estados Unidos. Hoje a live é de vocês: mandem as perguntas no chat."
 
 **Enquanto as pessoas entram, responda estas 10 perguntas (as mais comuns):**
 1. O que é um leilão de Tax Deed?
@@ -22,6 +22,13 @@
 8. Preciso abrir empresa (LLC) nos EUA?
 9. Como funciona a assessoria de vocês?
 10. Quais os próximos leilões? (calendário do post de segunda)
+
+**Se sobrar tempo (material desta semana; diga "uma pergunta que sempre me fazem é…"):**
+11. Quanto custa reformar uma casa dessas? (953: telhado de 12 squares, drywall, cozinha; só "valores reais deste caso")
+12. Qual cor vocês escolheram para a fachada? (enquete Peppercorn x Gauntlet: peça para votarem ao vivo)
+13. Dá para alugar em vez de vender? (Section 8; cada caso tem regras)
+14. Agora é uma boa hora para comprar nos EUA? (mercado mais a favor de quem compra, sem promessa)
+15. Qual foi a maior surpresa numa obra? (telhado sem plywood; por isso a reserva de 15%)
 
 **Regras na live:** nada de prometer lucro ou retorno; valores só como "valores reais deste caso"; sem endereço das casas.
 
