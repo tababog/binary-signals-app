@@ -41,4 +41,4 @@
 - 37 espectadores; pico de 11 ao mesmo tempo
 - 46 comentários, 3 compartilhamentos (49 interações)
 - 2 pessoas pediram ASSESSORIA na live (chamar no Direct hoje)
-- Perguntas que vieram: falta o Alessandro contar
+- Pergunta mais comum: custo da reforma (virar Reel na semana que vem)
