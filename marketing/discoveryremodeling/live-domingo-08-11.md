@@ -35,3 +35,9 @@
 **Fechamento (3 min):** "Quem quiser ajuda para começar: estamos com só 2 vagas na assessoria este mês. Comenta ASSESSORIA aqui ou me chama no direct que eu marco uma conversa grátis de 20 minutos com você. Obrigado, pessoal!"
 
 **Dica:** salve a live no perfil depois (opção "Compartilhar replay").
+
+## Resultado (insights do Instagram, 08/11)
+- Duração: 1h23min
+- 37 espectadores; pico de 11 ao mesmo tempo
+- 46 comentários, 3 compartilhamentos (49 interações)
+- Para a reunião: quem pediu ASSESSORIA e quais perguntas vieram (falta o Alessandro contar)
