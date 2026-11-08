@@ -901,5 +901,6 @@ const es: Record<string, string> = {
   "Escreva o escopo do trabalho das duas opções antes de enviar para o cliente.": "Escriba el alcance del trabajo de las dos opciones antes de enviar al cliente.",
   "A IA não conseguiu escrever o escopo. Tente de novo ou escreva à mão.": "La IA no pudo escribir el alcance. Intente de nuevo o escríbalo a mano.",
   "Escopo escrito. Confira, corrija se precisar e salve a opção.": "Alcance escrito. Revíselo, corríjalo si hace falta y guarde la opción.",
+  "O cliente ainda não vê o escopo de: {opcoes}. Preencha o escopo dessas opções e salve: o link mostra sozinho quando o cliente abrir.": "El cliente aún no ve el alcance de: {opcoes}. Complete el alcance de esas opciones y guarde: el enlace lo muestra solo cuando el cliente lo abra.",
 };
 export default es;
