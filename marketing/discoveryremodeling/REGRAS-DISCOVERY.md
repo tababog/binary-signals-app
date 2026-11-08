@@ -243,3 +243,10 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 ## Lives (08/11)
 - O vídeo das lives (ou o .zip do "Export your information" do Instagram) vai para o Google Drive: Isaques - Discovery > Instagram > **Lives** (https://drive.google.com/drive/folders/1D4zhJRTtNRFXvnhy8KA2E_QKfuJjN3_2). Dali o Claude faz os cortes (30–60 s, com legenda) e põe no painel como "a fazer" para aprovação.
 - O app dele não baixa a live direto do Live Archive (abre "Live video ended"); o caminho é Accounts Center > Your information and permissions > Export your information > só Media, última semana.
+
+## Semana 09 a 15/11: 100% crescimento, SEM vendas (decisão 08/11)
+- Objetivo único: seguidores novos. Nada de "vagas", "assessoria", "conversa grátis" ou WhatsApp em Reels, legendas e stories desta semana.
+- Formatos que trazem seguidor (análise dos concorrentes 08/11): jogo de chute ("quanto custou?"), antes/depois com história, "você conhecia…?" (termo americano), quebra de mito, suspense até o fim (@roavanzo).
+- Legenda termina com pergunta + "siga para ver a resposta amanhã". Stories só com enquete/quiz/bastidor.
+- Os comentários com ASSESSORIA continuam sendo respondidos pela rotina (responder não é vender).
+- Meta: +100 seguidores na semana, comparar no domingo 15/11.
