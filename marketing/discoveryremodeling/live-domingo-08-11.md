@@ -42,3 +42,4 @@
 - 46 comentários, 3 compartilhamentos (49 interações)
 - 2 pessoas pediram ASSESSORIA na live (chamar no Direct hoje)
 - Pergunta mais comum: custo da reforma (virar Reel na semana que vem)
+- Section 8 NÃO foi falado na live (pergunta reserva não usada): segue disponível como Reel "Você conhecia o Section 8?"
