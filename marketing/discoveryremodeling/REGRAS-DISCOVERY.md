@@ -250,3 +250,8 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Legenda termina com pergunta + "siga para ver a resposta amanhã". Stories só com enquete/quiz/bastidor.
 - Os comentários com ASSESSORIA continuam sendo respondidos pela rotina (responder não é vender).
 - Meta: +100 seguidores na semana, comparar no domingo 15/11.
+
+## Ajuste no meio do caminho (regra do Alessandro, 08/11)
+- O plano da semana NÃO é para seguir até o fim se não estiver dando certo. Todo dia, antes da publicação das 12h, o Claude compara o Reel do dia anterior (alcance, comentários, seguidores novos) com a média da semana.
+- Se cair mais de ~30% (ou 2 dias seguidos de queda), o Claude TROCA o Reel do dia seguinte (ou o resto da semana) por outro formato do estoque e avisa o Alessandro em 1 linha (o que trocou e por quê). Não precisa pedir licença para trocar dentro do estoque já aprovado; conteúdo novo continua precisando de aprovação no painel.
+- Continua valendo: máximo 1 Reel por dia, sem vendas na semana de crescimento.
