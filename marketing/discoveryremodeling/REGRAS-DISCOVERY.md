@@ -239,3 +239,7 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - (07/11) Viagem, custos fixos e "Outros" entram no item Outros, então o Total = todos os lançamentos da casa.
 - Cada recibo lançado entra também nos lançamentos da Casas Discovery, para os totais ficarem em dia.
 - (07/11) Ao lançar recibos de uma casa, atualizar também a página **Caixa** dela (ex.: Caixa 953 = https://claude.ai/artifact/BMn8c1jTMV28aYoJbehiDt): lançamentos, totais por categoria, meses e projeção. A Caixa é compartilhada com os investidores pelo link, então só entram valores da casa (nada pessoal). Não existe mais rotina automática às 22h; quem lança é a leitura das 7h47, 12h47 e 18h47.
+
+## Lives (08/11)
+- O vídeo das lives (ou o .zip do "Export your information" do Instagram) vai para o Google Drive: Isaques - Discovery > Instagram > **Lives** (https://drive.google.com/drive/folders/1D4zhJRTtNRFXvnhy8KA2E_QKfuJjN3_2). Dali o Claude faz os cortes (30–60 s, com legenda) e põe no painel como "a fazer" para aprovação.
+- O app dele não baixa a live direto do Live Archive (abre "Live video ended"); o caminho é Accounts Center > Your information and permissions > Export your information > só Media, última semana.
