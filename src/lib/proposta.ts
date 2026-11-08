@@ -123,3 +123,30 @@ export function mensagemProposta(nomeCliente: string, link: string) {
     "Tababog Construction LLC",
   ].join("\n");
 }
+
+/**
+ * Link criado sem o escopo (antes de o escopo existir, ou opção sem escopo): enquanto o cliente não respondeu, a
+ * proposta pega o escopo atual das opções do orçamento, em inglês, e guarda na cópia, para a aprovação valer sobre o
+ * que o cliente viu. Devolve o conteúdo (atualizado ou não).
+ */
+export async function completarEscopo(proposta: { id: string; orcamentoId: string; conteudo: string; resposta: string | null }) {
+  const c = lerConteudo(proposta.conteudo);
+  if (proposta.resposta === "APROVADA" || proposta.resposta === "RECUSADA") return c;
+  const faltando = c.opcoes.filter((o) => !o.escopo?.length);
+  if (faltando.length === 0) return c;
+  const atuais = await db.opcaoOrcamento.findMany({ where: { orcamentoId: proposta.orcamentoId }, select: { ordem: true, escopo: true } });
+  let mudou = false;
+  for (const o of faltando) {
+    const linhas = limparLinhasEscopo(atuais.find((a) => a.ordem === o.ordem)?.escopo ?? "");
+    if (linhas.length === 0) continue;
+    o.escopo = await traduzirTextos(linhas, "en").catch(() => linhas);
+    mudou = true;
+  }
+  if (mudou) await db.proposta.update({ where: { id: proposta.id }, data: { conteudo: JSON.stringify(c) } });
+  return c;
+}
+
+/** Opções da proposta que o cliente vê sem escopo. */
+export function opcoesSemEscopo(conteudo: ConteudoProposta) {
+  return conteudo.opcoes.filter((o) => !o.escopo?.length).map((o) => o.nome);
+}

@@ -901,5 +901,6 @@ const en: Record<string, string> = {
   "Escreva o escopo do trabalho das duas opções antes de enviar para o cliente.": "Write the scope of work of both options before sending to the client.",
   "A IA não conseguiu escrever o escopo. Tente de novo ou escreva à mão.": "The AI couldn't write the scope. Try again or write it by hand.",
   "Escopo escrito. Confira, corrija se precisar e salve a opção.": "Scope written. Review it, fix it if needed and save the option.",
+  "O cliente ainda não vê o escopo de: {opcoes}. Preencha o escopo dessas opções e salve: o link mostra sozinho quando o cliente abrir.": "The client doesn't see the scope of: {opcoes} yet. Fill in the scope of these options and save: the link shows it on its own when the client opens it.",
 };
 export default en;

@@ -30,7 +30,7 @@ import {
 import { getT, type T } from "@/i18n/servidor";
 import { headers } from "next/headers";
 import type { Proposta } from "@prisma/client";
-import { FORMAS_PAGAMENTO_PROPOSTA, LIMITE_VALOR_CENT, RESPOSTAS_PROPOSTA, formasDaOpcao, lerConteudo, mensagemProposta, vencida, type FormaPagamentoProposta } from "@/lib/proposta";
+import { FORMAS_PAGAMENTO_PROPOSTA, LIMITE_VALOR_CENT, RESPOSTAS_PROPOSTA, formasDaOpcao, lerConteudo, mensagemProposta, opcoesSemEscopo, vencida, type FormaPagamentoProposta } from "@/lib/proposta";
 import { EnviarProposta } from "@/components/EnviarProposta";
 
 // A pesquisa de mercado com a IA pode levar 1 a 2 minutos
@@ -516,6 +516,11 @@ function PropostaCliente({
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     {p.assinatura && <img src={p.assinatura} alt={t("Assinatura do cliente")} className="h-16 rounded border border-stone-200 bg-white" />}
                   </div>
+                )}
+                {aberta && opcoesSemEscopo(c).length > 0 && (
+                  <p className="mt-2 rounded-lg bg-amber-50 p-2 text-sm text-amber-900">
+                    {t("O cliente ainda não vê o escopo de: {opcoes}. Preencha o escopo dessas opções e salve: o link mostra sozinho quando o cliente abrir.", { opcoes: opcoesSemEscopo(c).join(", ") })}
+                  </p>
                 )}
                 {aberta && (
                   <div className="mt-3">

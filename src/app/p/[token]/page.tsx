@@ -6,7 +6,7 @@ import { usuarioAtual } from "@/lib/auth";
 import { getT } from "@/i18n/servidor";
 import { Portfolio, RodapeEmpresa } from "@/components/Portfolio";
 import { RespostaProposta } from "@/components/RespostaProposta";
-import { CLAUSULA_TRABALHO_EXTRA, FORMAS_PAGAMENTO_PROPOSTA, VALIDADE_DIAS, lerConteudo, substituida, vencida, type FormaPagamentoProposta } from "@/lib/proposta";
+import { CLAUSULA_TRABALHO_EXTRA, FORMAS_PAGAMENTO_PROPOSTA, completarEscopo, VALIDADE_DIAS, lerConteudo, substituida, vencida, type FormaPagamentoProposta } from "@/lib/proposta";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "Your proposal · Tababog Construction", robots: { index: false, follow: false } };
@@ -24,7 +24,7 @@ export default async function PaginaProposta({ params }: { params: { token: stri
   const previa = usuario?.papel === "ADMIN";
   if (!previa && !proposta.vistaEm) await db.proposta.update({ where: { id: proposta.id }, data: { vistaEm: new Date() } });
 
-  const c = lerConteudo(proposta.conteudo);
+  const c = await completarEscopo(proposta);
   const expirou = vencida(proposta.criadaEm);
   const trocada = await substituida(proposta.id, proposta.orcamentoId);
   const fechada = proposta.resposta === "APROVADA" || proposta.resposta === "RECUSADA";
