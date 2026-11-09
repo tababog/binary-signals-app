@@ -1,12 +1,12 @@
 # Agenda de PUBLICAÇÃO: semana de CRESCIMENTO (09 a 15/11), horário de BRASÍLIA
 
-Regras: 100% crescimento, SEM vendas (nada de assessoria/vagas/WhatsApp). Máximo 1 Reel por dia (12h de Brasília = 10h em Connecticut). Publica só o que estiver "pronto" no painel. Se o público cair (regra de 08/11), o Claude troca o Reel seguinte por outro do estoque e avisa.
+Regras: 100% crescimento, SEM vendas (nada de assessoria/vagas/WhatsApp). Máximo 1 Reel por dia (14h de Brasília = 12h em Connecticut; mudou em 09/11). Publica só o que estiver "pronto" no painel. Se o público cair (regra de 08/11), o Claude troca o Reel seguinte por outro do estoque e avisa.
 Stories: só enquete/quiz/bastidor (vídeos animados já prontos). Sem venda.
 
 ## Segunda 09/11
 - **08:00** · story · Enquete: reforma nos EUA é cara? · doc `s2-seg-s8`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1txxOtF5FhVvh8p_Sqym9s6hcDSukYrTH
-- **12:00** · reel · Quanto pesa esse lixo? (parte 1) · doc `s2-seg-f12`
+- **14:00** · reel · Quanto pesa esse lixo? (parte 1) · doc `s2-seg-f12`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1AzH9oFbxs9u4AC1Q4Gyrl87tg6jyS1o0
   - legenda:
 
@@ -15,7 +15,7 @@ O trailer mais pesado que eu já carreguei: telhas de asfalto (shingles) de uma 
 
 Na balança deu 15.400 libras: caminhonete + trailer + lixo.
 
-Quanto você acha que pesou SÓ o lixo? Chuta aí 👇 Amanhã ao meio-dia eu mostro o peso e quanto paguei.
+Quanto você acha que pesou SÓ o lixo? Chuta aí 👇 Amanhã eu mostro o peso e quanto paguei.
 
 Siga @discoveryremodeling para ver a resposta 👀
 
@@ -26,7 +26,7 @@ Valores reais deste caso; cada obra é diferente.
 ## Terça 10/11
 - **08:00** · story · Bastidor: mais uma viagem pro descarte · doc `s2-ter-s8`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1iPWNDou6_PylsDDT-XlPmBsV10FUX-ho
-- **12:00** · reel · Lixo (parte 2): 2 toneladas, US$ 157,44 · doc `s2-ter-f12`
+- **14:00** · reel · Lixo (parte 2): 2 toneladas, US$ 157,44 · doc `s2-ter-f12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s2-lixo-p2.mp4
   - legenda:
 
@@ -46,7 +46,7 @@ Valores reais deste caso; cada obra é diferente.
 ## Quarta 11/11
 - **08:00** · story · Leilões de dezembro (para salvar) · doc `s2-qua-s8`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1uCWgmurpcuHAHW2Nk7b2ZEFAWXY6nDvU
-- **12:00** · reel · Quanto custa isolar esse quartinho? (parte 1) · doc `s2-qua-f12`
+- **14:00** · reel · Quanto custa isolar esse quartinho? (parte 1) · doc `s2-qua-f12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s2-isolamento-p1-ale.mp4
   - (09/11: 2ª gravação do Alessandro, no canto, quartinho atrás; 1ª fala cortada, mancha e ombro corrigidos)
   - legenda:
@@ -54,7 +54,7 @@ Valores reais deste caso; cada obra é diferente.
 ```
 Paredes abertas, prontas para o isolamento (paredes e teto deste quartinho) 🧱
 
-Quanto custa isolar, com material e mão de obra? Chuta aí nos comentários 👇 A resposta sai amanhã ao meio-dia.
+Quanto custa isolar, com material e mão de obra? Chuta aí nos comentários 👇 A resposta sai amanhã.
 
 Siga @discoveryremodeling para ver 👀
 
@@ -67,7 +67,7 @@ Valores reais deste caso; cada obra é diferente.
 ## Quinta 12/11
 - **08:00** · story · Bastidor: paredes abertas, ao meio-dia o custo · doc `s2-qui-s8`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1_ouB8Q_IQXzNymxNNLEX9In8OdhVCfwa
-- **12:00** · reel · Isolamento (parte 2): US$ 600 · doc `s2-qui-f12`
+- **14:00** · reel · Isolamento (parte 2): US$ 600 · doc `s2-qui-f12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s2-isolamento-p2-ale.mp4
   - (09/11: V2 sem travadas, Alessandro no lado direito, aprovada por ele no chat)
   - legenda:
@@ -84,7 +84,7 @@ Valor real deste caso. Cada obra é diferente.
 ```
 
 ## Sexta 13/11
-- **12:00** · reel · Elkland: antes e depois · doc `s2-sex-f12`
+- **14:00** · reel · Elkland: antes e depois · doc `s2-sex-f12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/aprovados/elkland-reel-v4.mp4
   - legenda:
 
@@ -104,7 +104,7 @@ Valores estimados deste caso. Resultados passados não garantem resultados futur
 ## Sábado 14/11
 - **08:00** · story · Enquete: telhado novo, quanto você chuta? · doc `s2-sab-s8`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=15-YFDDo8NHM6MeT85Kg26mm1PUpfDE9A
-- **12:00** · reel · Quanto custou o telhado? (parte 1) · doc `s2-sab-f12`
+- **14:00** · reel · Quanto custou o telhado? (parte 1) · doc `s2-sab-f12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s2-telhado-p1-ale.mp4
   - (09/11: versão com o Alessandro no canto + telhado em tela cheia com A/B/C, aprovada por ele)
   - legenda:
@@ -121,7 +121,7 @@ Valores reais deste caso; cada obra é diferente.
 ```
 
 ## Domingo 15/11
-- **12:00** · reel · Telhado (parte 2): US$ 6.000 + 3 dicas · doc `s2-dom-f12`
+- **14:00** · reel · Telhado (parte 2): US$ 6.000 + 3 dicas · doc `s2-dom-f12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s2-telhado-p2.mp4
   - legenda:
 

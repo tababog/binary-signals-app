@@ -1,11 +1,12 @@
 # Agenda de PUBLICAÇÃO: Novembro S4 (23 a 29/11), horário de BRASÍLIA — SEMANA DA CASA DO LAGO
 
-Decisão do Alessandro (09/11): semana da Casa do Lago, sem a 953 (ela volta em dezembro misturada). Crescimento, sem vendas. 1 Reel por dia às 12h de Brasília (10h em Connecticut). Publica só o que estiver "pronto".
+Decisão do Alessandro (09/11): semana da Casa do Lago, sem a 953 (ela volta em dezembro misturada). Crescimento, sem vendas. 1 Reel por dia às 14h de Brasília (12h em Connecticut; mudou em 09/11 pelo horário ativo do público). Publica só o que estiver "pronto".
 REGRA: nenhum valor em dinheiro da Casa do Lago (investidores).
 Reels da Casa do Lago: o Claude edita a partir das cópias em "Estoque Obra 09-11 (equipe 953) › Casa do Lago (para Instagram)" até 21/11. 3 Reels dependem de gravação do Alessandro (roteiros-s4.md).
+2º REEL DIÁRIO (decisão 09/11): às 20h de Brasília (18h em Connecticut), Reel com o Alessandro falando. Os itens das 20h entram aqui assim que as falas forem gravadas.
 
 ## Segunda 23/11
-- **12:00** · reel · No dia em que pegamos a chave: tour da Casa do Lago · doc `s4-seg-f12`
+- **14:00** · reel · No dia em que pegamos a chave: tour da Casa do Lago · doc `s4-seg-f12`
   - url: (em produção pelo Claude)
   - legenda:
 
@@ -19,7 +20,7 @@ Siga @discoveryremodeling para acompanhar a transformação 👀
 ```
 
 ## Terça 24/11
-- **12:00** · reel · Você conhecia o Section 8? (GRAVAR) · doc `s4-ter-f12`
+- **14:00** · reel · Você conhecia o Section 8? (GRAVAR) · doc `s4-ter-f12`
   - url: (a definir quando o Alessandro gravar)
   - legenda:
 
@@ -33,7 +34,7 @@ Você conhecia? 👇 Siga para mais coisas dos EUA que ninguém explica.
 ```
 
 ## Quarta 25/11
-- **12:00** · reel · Quantas cargas de lixo saíram dessa casa? (pergunta) · doc `s4-qua-f12`
+- **14:00** · reel · Quantas cargas de lixo saíram dessa casa? (pergunta) · doc `s4-qua-f12`
   - url: (em produção pelo Claude)
   - legenda:
 
@@ -47,7 +48,7 @@ Siga para ver 👀
 ```
 
 ## Quinta 26/11 (Thanksgiving nos EUA)
-- **12:00** · reel · Resposta: 6 cargas + antes e depois da limpeza · doc `s4-qui-f12`
+- **14:00** · reel · Resposta: 6 cargas + antes e depois da limpeza · doc `s4-qui-f12`
   - url: (em produção pelo Claude)
   - legenda:
 
@@ -59,7 +60,7 @@ E olha o antes e depois da primeira limpeza na Casa do Lago 🧹 Você acertou? 
 ```
 
 ## Sexta 27/11
-- **12:00** · reel · Essa casa a gente NÃO compraria (GRAVAR) · doc `s4-sex-f12`
+- **14:00** · reel · Essa casa a gente NÃO compraria (GRAVAR) · doc `s4-sex-f12`
   - url: (a definir quando o Alessandro gravar)
   - legenda:
 
@@ -71,7 +72,7 @@ Você teria dado lance? 👇 Siga para aprender a olhar antes de comprar.
 ```
 
 ## Sábado 28/11
-- **12:00** · reel · Casa do Lago: o quintal e os próximos passos (telhado novo) · doc `s4-sab-f12`
+- **14:00** · reel · Casa do Lago: o quintal e os próximos passos (telhado novo) · doc `s4-sab-f12`
   - url: (em produção pelo Claude; se a equipe mandar vídeo do telhado, entra o telhado)
   - legenda:
 
@@ -83,7 +84,7 @@ O que você faria primeiro nessa casa? 👇 Siga para acompanhar.
 ```
 
 ## Domingo 29/11
-- **12:00** · reel · Comprar barato não é lucro (GRAVAR EM CASA; Casa do Lago no fundo) · doc `s4-dom-f12`
+- **14:00** · reel · Comprar barato não é lucro (GRAVAR EM CASA; Casa do Lago no fundo) · doc `s4-dom-f12`
   - url: (a definir quando o Alessandro gravar)
   - legenda:
 

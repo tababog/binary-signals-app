@@ -267,3 +267,9 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - NUNCA mostrar valores (custos, preço de compra, gastos) da Casa do Lago (348 Beckwith) no Instagram, por causa dos investidores. Quizzes da Casa do Lago sem número de dinheiro.
 - Não concentrar o conteúdo numa casa só. S3: Reels da 953 (fecham a fase) + stories da Casa do Lago. S4 (23-29/11): semana da Casa do Lago, sem a 953. Dezembro: a 953 volta misturada com a Casa do Lago (e casas antigas, como Elkland).
 - Vídeos da Casa do Lago para edição: cópias em Drive › Estoque Obra 09-11 (equipe 953) › "Casa do Lago (para Instagram)" (a pasta original da casa é privada e tem planilha de caixa; não tornar pública).
+
+## Horários e 2 Reels por dia (decisão 09/11, com base nos insights do app)
+- Público: 80,5% Brasil, 15,5% EUA; 55% mulheres; 35-54 anos. Pico de atividade: 18h EST = 20h de Brasília.
+- Reel 1 (descoberta na casa, traz alcance): **14h de Brasília** (12h em Connecticut). Reel 2 (Alessandro falando, traz seguidor): **20h de Brasília** (18h em Connecticut), a partir da S3 (16/11).
+- A regra antiga de "no máximo 1 Reel por dia" foi trocada por 2 Reels por dia (teste de 3 semanas; mantém se o alcance médio por Reel não cair mais de 20%).
+- O Claude manda toda semana na Central os roteiros de ~4 falas curtas para o Reel das 20h.

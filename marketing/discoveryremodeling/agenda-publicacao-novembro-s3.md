@@ -1,12 +1,13 @@
 # Agenda de PUBLICAÇÃO: Novembro S3 (16 a 22/11), horário de BRASÍLIA
 
-Continua o foco em CRESCIMENTO (sem vendas), a confirmar no balanço de 15/11. 1 Reel por dia às 12h de Brasília (10h em Connecticut). Publica só o que estiver "pronto" no painel. Stories da S3: 1 por dia às 8h de Brasília, vídeo da obra no fundo + música padrão, minissérie da Casa do Lago para diversificar (feitos em 09/11, pedido do Alessandro).
+Continua o foco em CRESCIMENTO (sem vendas), a confirmar no balanço de 15/11. 1 Reel por dia às 14h de Brasília (12h em Connecticut; mudou em 09/11 pelo horário ativo do público). Publica só o que estiver "pronto" no painel. Stories da S3: 1 por dia às 8h de Brasília, vídeo da obra no fundo + música padrão, minissérie da Casa do Lago para diversificar (feitos em 09/11, pedido do Alessandro).
 Repositório público até 29/11 (decisão 09/11): as urls do GitHub valem até lá.
+2º REEL DIÁRIO (decisão 09/11): às 20h de Brasília (18h em Connecticut), Reel com o Alessandro falando. Os itens das 20h entram aqui assim que as falas forem gravadas.
 
 ## Segunda 16/11
 - **08:00** · story · Casa do Lago: conheça a nossa outra casa · doc `s3-seg-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-seg.mp4
-- **12:00** · reel · Quanto vale esse trompete? · doc `s3-seg-f12`
+- **14:00** · reel · Quanto vale esse trompete? · doc `s3-seg-f12`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1y2BAR2tnRvgeYcoRQN-O7n9XyYdUZupl
   - legenda:
 
@@ -22,7 +23,7 @@ Siga @discoveryremodeling: toda casa de leilão guarda alguma surpresa 👀
 ## Terça 17/11
 - **08:00** · story · Casa do Lago: assim ela estava quando pegamos a chave · doc `s3-ter-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-ter.mp4
-- **12:00** · reel · 3 terrenos por US$ 50 cada · doc `s3-ter-f12`
+- **14:00** · reel · 3 terrenos por US$ 50 cada · doc `s3-ter-f12`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1pupoZR1Ypju5gs_l0kGnpFkXu1fDFbcZ
   - legenda:
 
@@ -39,7 +40,7 @@ Valores deste caso; cada terreno é diferente.
 ## Quarta 18/11
 - **08:00** · story · Casa do Lago: quanto lixo saiu daqui? · doc `s3-qua-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-qua.mp4
-- **12:00** · reel · Lance baixo não é negócio bom: 4 coisas que eu confiro · doc `s3-qua-f12`
+- **14:00** · reel · Lance baixo não é negócio bom: 4 coisas que eu confiro · doc `s3-qua-f12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-terrenos-p2.mp4
   - legenda:
 
@@ -59,7 +60,7 @@ Qual desses 4 você não conferia? 👇 Salve para lembrar no próximo leilão.
 ## Quinta 19/11
 - **08:00** · story · Casa do Lago: dia de mutirão · doc `s3-qui-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-qui.mp4
-- **12:00** · reel · Quanto custa o drywall desse hallway? (pergunta) · doc `s3-qui-f12`
+- **14:00** · reel · Quanto custa o drywall desse hallway? (pergunta) · doc `s3-qui-f12`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1s1AKCrdqRhhtSuUbirrVWz-RsgnNA434
   - legenda:
 
@@ -75,7 +76,7 @@ Siga @discoveryremodeling para ver 👀
 ## Sexta 20/11
 - **08:00** · story · Casa do Lago: depois da primeira limpeza · doc `s3-sex-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-sex.mp4
-- **12:00** · reel · Drywall (resposta): US$ 1.400 · doc `s3-sex-f12`
+- **14:00** · reel · Drywall (resposta): US$ 1.400 · doc `s3-sex-f12`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1O2WsH66N7j8dikyquqhmHjlxbJJBY2X1
   - legenda:
 
@@ -91,7 +92,7 @@ Valor real deste caso. Cada obra é diferente.
 ## Sábado 21/11
 - **08:00** · story · Casa do Lago: e o quintal? · doc `s3-sab-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-sab.mp4
-- **12:00** · reel · Drywall pronto (tour) · doc `s3-sab-f12`
+- **14:00** · reel · Drywall pronto (tour) · doc `s3-sab-f12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-paredes-prontas.mp4
   - legenda:
 
@@ -105,7 +106,7 @@ Qual cômodo você quer ver pronto primeiro? 👇 Siga para acompanhar até o fi
 ## Domingo 22/11
 - **08:00** · story · Casa do Lago: próximo passo, telhado novo · doc `s3-dom-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-dom.mp4
-- **12:00** · reel · Telhado novo: antes e depois · doc `s3-dom-f12`
+- **14:00** · reel · Telhado novo: antes e depois · doc `s3-dom-f12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-telhado-pronto.mp4
   - legenda:
 
