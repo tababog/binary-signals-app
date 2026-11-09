@@ -1,7 +1,7 @@
 # Agenda de PUBLICAÇÃO: Novembro S3 (16 a 22/11), horário de BRASÍLIA
 
 Continua o foco em CRESCIMENTO (sem vendas), a confirmar no balanço de 15/11. 1 Reel por dia às 12h de Brasília (10h em Connecticut). Publica só o que estiver "pronto" no painel. Stories da S3: feitos durante a semana, com vídeo da obra no fundo + música padrão.
-ATENÇÃO: o repositório fica privado em 16/11. Antes disso, os 2 vídeos que estão em semana-crescimento/ (s3-terrenos-p2 e s3-ep9) precisam estar no Drive; até lá a url abaixo vale.
+Repositório público até 29/11 (decisão 09/11): as urls do GitHub valem até lá.
 
 ## Segunda 16/11
 - **12:00** · reel · Quanto vale esse trompete? · doc `s3-seg-f12`
