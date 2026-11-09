@@ -79,32 +79,32 @@ Valor real deste caso. Cada obra é diferente.
 ```
 
 ## Sábado 21/11
-- **12:00** · reel · O que ninguém te conta sobre casa de leilão · doc `s3-sab-f12`
-  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1ym3GhFuVEIrte8cAkUSKyebdclGTpdtf
+- **12:00** · reel · Drywall pronto (tour) · doc `s3-sab-f12`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-paredes-prontas.mp4
   - legenda:
 
 ```
-Todo mundo vê a casa barata no leilão. Ninguém mostra isso aqui: telhado para trocar, parede aberta, lixo para tirar 🏚️
+Lembra das paredes abertas da nossa casa de leilão? 🧱 Olha agora: drywall pronto em toda a casa ✅
 
-Casa de leilão quase sempre vem com obra. Por isso a gente calcula a reforma ANTES de dar o lance.
-
-Você sabia disso? 👇 Siga para ver a obra até o fim.
+Qual cômodo você quer ver pronto primeiro? 👇 Siga para acompanhar até o fim.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
 ## Domingo 22/11
-- **12:00** · reel · Um dia na obra · doc `s3-dom-f12`
-  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1HdnsrCUEIhanO0mwepYj4VpH4CZ3FxF2
+- **12:00** · reel · Telhado novo: antes e depois · doc `s3-dom-f12`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-telhado-pronto.mp4
   - legenda:
 
 ```
-Fui ver como está a obra da nossa casa de leilão em Elmira, NY 🔨 Telhado novo quase pronto, paredes abertas esperando o isolamento.
+Antes: telhado velho saindo. Depois: telhado novo pronto 🏠✨
 
-Toda semana eu venho conferir de perto. Você quer ver o antes e depois quando terminar? 👇
+Essa é a casa que compramos em leilão em Elmira, NY. Qual você prefere: antes ou depois? 👇
+
+Siga para ver a casa pronta 👀
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
 ## Estoque (para trocar se o público cair)
-- NOVOS (09/11, material da equipe): semana-crescimento/reel-telhado-pronto.mp4 (antes e depois do telhado) e reel-paredes-prontas.mp4 (tour do drywall pronto).
+- Trocados em 09/11 (foram para o estoque da S4): t1 "O que ninguém te conta" (1ym3GhFuVEIrte8cAkUSKyebdclGTpdtf) e t2 "Um dia na obra" (1HdnsrCUEIhanO0mwepYj4VpH4CZ3FxF2).
 - qc-gabinetes-p1 / p2 · t4 "Quanto tempo leva?" · episódio 9 reeditado (semana-crescimento/s3-ep9.mp4) · vídeos novos da equipe da 953 (pasta "Estoque Obra 09-11 (equipe 953)").
 - t5 "A surpresa" repete a história do plywood do telhado (já contada no domingo 15/11): só usar em dezembro.

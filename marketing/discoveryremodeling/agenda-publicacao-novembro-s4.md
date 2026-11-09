@@ -1,7 +1,7 @@
 # Agenda de PUBLICAÇÃO: Novembro S4 (23 a 29/11), horário de BRASÍLIA
 
 Crescimento (a confirmar no balanço de 15/11). 1 Reel por dia às 12h de Brasília (10h em Connecticut). Publica só o que estiver "pronto".
-3 Reels dependem de gravação do Alessandro (Section 8, "não compraria", "barato não é lucro"); roteiros em roteiros-s4.md. Se não chegarem até 21/11, entram os vídeos da equipe da 953 ou um corte da live.
+3 Reels dependem de gravação do Alessandro (Section 8, "não compraria", "barato não é lucro"); roteiros em roteiros-s4.md. Se não chegarem até 21/11, entram do estoque: "O que ninguém te conta" (drive id 1ym3GhFuVEIrte8cAkUSKyebdclGTpdtf) e "Um dia na obra" (1HdnsrCUEIhanO0mwepYj4VpH4CZ3FxF2), legendas na agenda da S3 de 08/11 (git), ou um corte da live.
 
 ## Segunda 23/11
 - **12:00** · reel · Quanto custa uma cozinha nova aqui? (pergunta) · doc `s4-seg-f12`
