@@ -308,3 +308,6 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Fonte principal: os vídeos em que ele já fala na obra (pasta Casa do Lago e da 953). Montagem padrão: **começa com ele de frente, em tela cheia, dizendo o gancho** → depois a casa entra como fundo/meia tela (com degradê) **e ele continua falando do mesmo assunto** (voz contínua), voltando ao rosto dele nas frases mais fortes e no final.
 - Variar os formatos entre os Reels: meia tela com degradê, Ale recortado no canto com a casa atrás, Ale em tela cheia com janelas da casa entrando (picture-in-picture), corte seco rosto ↔ casa no ritmo da fala.
 - Inventário dos assuntos que ele fala em cada vídeo: `semana-crescimento/inventario-falas-lago.md` (cada assunto vira um Reel).
+
+## Cortes da live (decisão 09/11)
+- Os 5 cortes da live de 08/11 (semana-crescimento/cortes-live/) entram como 2º Reel do dia, às 20h de Brasília, de segunda a sexta da S2 (09 a 13/11): ex-dono, preço, casa barata, telhado, permit. Formato: Ale em tela cheia, etiqueta "CORTE DA LIVE", legenda karaokê na altura do peito (nunca sobre o rosto), etiquetas animadas fora do rosto, pergunta final e "+ Seguir". Toda live nova vira cortes nesse formato.
