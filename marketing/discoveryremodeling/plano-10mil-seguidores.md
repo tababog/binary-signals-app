@@ -109,3 +109,8 @@ Meta semanal de controle: pulo médio < 30%, ≥ 1 Reel acima de 3.000 de alcanc
 - Reels que mais trouxeram seguidores: Família brasileira (**+54**, ~2.000 de alcance → 2,7%), Você NÃO precisa morar nos EUA (**+50**, ~2.200 → 2,2%), "...começamos" (+24), A melhor casa do leilão (+14).
 - **Achado principal:** o ALCANCE vem dos Reels de descoberta na casa (o teto: 2.525), mas os SEGUIDORES vêm dos Reels com o **Alessandro falando de frente** (identidade e quebra de mito): convertem 4 a 6 vezes mais. Decisão: todo dia 1 Reel de descoberta (alcance) + 1 Reel com o Alessandro falando (conversão). O formato "Alessandro no canto + obra atrás" junta os dois.
 - Público: 55,5% mulheres; 35-44 anos = 36,6%, 45-54 = 24,4%, 25-34 = 20%. Linguagem para família/patrimônio, não para "trader". Ainda falta: país (Brasil x EUA) e horários ativos.
+- **Países:** Brasil 80,5%, EUA 15,5%. O conteúdo fala para o brasileiro que mora no Brasil (patrimônio em dólar, "dá para fazer daí").
+- **Horários ativos (EST):** sobe a partir das 9h, forte de 12h a 18h, **pico às 18h EST = 20h de Brasília**; cai depois das 21h EST. Hoje o Reel sai às 12h de Brasília (10h EST), ainda fora do pico.
+- **Visualizações por tipo (30 dias):** Reels 26,3 mil (a maioria de NÃO seguidores), Stories 4,7 mil (quase só seguidores) → confirma: Reel traz gente nova, story só aquece.
+- **Gráfico diário:** picos de 5,1 mil (28/10, o teto) e ~4,7 mil (02/11, "não precisa morar"); nos dias de Reel fraco o perfil cai para 300 a 1.000.
+- **Decisão de horário proposta:** Reel 1 (descoberta) às **14h de Brasília** (12h EST) e Reel 2 (você falando) às **20h de Brasília** (18h EST, o pico).
