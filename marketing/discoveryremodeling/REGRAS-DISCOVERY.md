@@ -283,6 +283,7 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Conta da meta (dados de 26/10 a 08/11): ~5 seguidores a cada 1.000 views. 50/dia ≈ 10 mil views por dia ≈ 5 mil por Reel com 2 Reels/dia. Nosso melhor Reel até hoje: 2.852 views. Ou seja: precisamos de Reels 2x melhores que o nosso recorde, e de pelo menos 1 que "estoure" (10 mil+) por semana.
 - Linha de base: melhor dia 69 seguidores (02/11, "Você NÃO precisa morar nos EUA"); média de 02 a 08/11 ≈ 17/dia; de 05 a 08/11 ≈ 3/dia (semana de vendas derrubou o alcance).
 - A partir da S3 (16/11): **2 Reels por dia** (14h e 20h de Brasília) e **teste 953 × Casa do Lago**: uma casa em cada horário, invertendo os horários no meio da semana para o horário não decidir o resultado. Medir em 24 h: views, alcance, % que pula (skip), tempo médio, compartilhamentos e seguidores do dia. A casa que ganhar ganha mais espaço na semana seguinte.
+- Calendário: S3 = 953 às 14h e Casa do Lago às 20h; S4 = Casa do Lago às 14h e 953 às 20h. Gravações 10, 11 e 12/11 (cronograma-gravacoes-s3-s4.md).
 - A ideia é "hypar": a história da transformação de uma casa e da outra, em série, com gancho forte, pergunta e "siga para ver a próxima parte".
 
 ## O que dá alcance (números reais do perfil, 26/10 a 08/11)

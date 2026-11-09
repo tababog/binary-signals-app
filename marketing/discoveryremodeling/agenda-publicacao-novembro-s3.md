@@ -2,7 +2,7 @@
 
 Continua o foco em CRESCIMENTO (sem vendas), a confirmar no balanço de 15/11. 1 Reel por dia às 14h de Brasília (12h em Connecticut; mudou em 09/11 pelo horário ativo do público). Publica só o que estiver "pronto" no painel. Stories da S3: 1 por dia às 8h de Brasília, vídeo da obra no fundo + música padrão, minissérie da Casa do Lago para diversificar (feitos em 09/11, pedido do Alessandro).
 Repositório público até 29/11 (decisão 09/11): as urls do GitHub valem até lá.
-2º REEL DIÁRIO (decisão 09/11): às 20h de Brasília (18h em Connecticut), Reel com o Alessandro falando. Os itens das 20h entram aqui assim que as falas forem gravadas.
+2º REEL DIÁRIO (decisão 09/11): às 20h de Brasília (18h em Connecticut), Reel com o Alessandro falando. Itens das 20h: cronograma-gravacoes-s3-s4.md (S3 = Casa do Lago às 20h; S4 = 953 às 20h).
 
 ## Segunda 16/11
 - **08:00** · story · Casa do Lago: conheça a nossa outra casa · doc `s3-seg-s8`
@@ -20,6 +20,9 @@ Siga @discoveryremodeling: toda casa de leilão guarda alguma surpresa 👀
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
+- **20:00** · reel · O pior dessa casa era o CHEIRO (Casa do Lago) · doc `s3-seg-f20`
+  - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
+
 ## Terça 17/11
 - **08:00** · story · Casa do Lago: assim ela estava quando pegamos a chave · doc `s3-ter-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-ter.mp4
@@ -36,6 +39,9 @@ Siga para ver 👀
 Valores deste caso; cada terreno é diferente.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
+
+- **20:00** · reel · Descobri por que abandonaram tudo (Casa do Lago) · doc `s3-ter-f20`
+  - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
 
 ## Quarta 18/11
 - **08:00** · story · Casa do Lago: quanto lixo saiu daqui? · doc `s3-qua-s8`
@@ -57,6 +63,9 @@ Qual desses 4 você não conferia? 👇 Salve para lembrar no próximo leilão.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
+- **20:00** · reel · Você sabia? Sofá cortado no meio (Casa do Lago) · doc `s3-qua-f20`
+  - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
+
 ## Quinta 19/11
 - **08:00** · story · Casa do Lago: dia de mutirão · doc `s3-qui-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-qui.mp4
@@ -72,6 +81,9 @@ Quanto você acha que custa colocar drywall novo aqui, com material e mão de ob
 Siga @discoveryremodeling para ver 👀
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
+
+- **20:00** · reel · Olha o que achamos numa casa de leilão (Casa do Lago) · doc `s3-qui-f20`
+  - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
 
 ## Sexta 20/11
 - **08:00** · story · Casa do Lago: depois da primeira limpeza · doc `s3-sex-s8`
@@ -89,6 +101,9 @@ Valor real deste caso. Cada obra é diferente.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
+- **20:00** · reel · Essa parede eu NÃO vou derrubar (Casa do Lago) · doc `s3-sex-f20`
+  - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
+
 ## Sábado 21/11
 - **08:00** · story · Casa do Lago: e o quintal? · doc `s3-sab-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-sab.mp4
@@ -102,6 +117,9 @@ Lembra das paredes abertas da nossa casa de leilão? 🧱 Olha agora: drywall pr
 Qual cômodo você quer ver pronto primeiro? 👇 Siga para acompanhar até o fim.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
+
+- **20:00** · reel · Você sabe o que é um mudroom? (Casa do Lago) · doc `s3-sab-f20`
+  - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
 
 ## Domingo 22/11
 - **08:00** · story · Casa do Lago: próximo passo, telhado novo · doc `s3-dom-s8`
@@ -118,6 +136,9 @@ Essa é a casa que compramos em leilão em Elmira, NY. Qual você prefere: antes
 Siga para ver a casa pronta 👀
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
+
+- **20:00** · reel · Esse deck vai virar o lugar mais bonito (Casa do Lago) · doc `s3-dom-f20`
+  - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
 
 ## Estoque (para trocar se o público cair)
 - Trocados em 09/11 (foram para o estoque da S4): t1 "O que ninguém te conta" (1ym3GhFuVEIrte8cAkUSKyebdclGTpdtf) e t2 "Um dia na obra" (1HdnsrCUEIhanO0mwepYj4VpH4CZ3FxF2).
