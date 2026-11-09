@@ -51,3 +51,13 @@
 
 ## Designer (desde 27/10)
 Cuida de todas as artes estáticas (carrosséis, frases e stories) no padrão visual do manual (seção 1): layouts alternados, fotos reais nítidas, Alumni Sans + Work Sans. Ferramentas: gerador HTML em `designer/` e Adobe Express para edição.
+
+## Time de crescimento (desde 09/11, meta 50 seguidores/dia)
+| Agente | O que faz | Quando |
+|---|---|---|
+| analista-crescimento | Placar diário (seguidores x meta, Reel campeão, skip), teste 953 × Casa do Lago, sugere troca de Reel | Todo dia 10h23 (CT), antes do Reel das 14h de Brasília |
+| cacador-de-ganchos | Ganchos, roteiros curtos de fala do Ale e legendas | Ao planejar a semana e os Reels das 20h |
+| editor-reels | Edição com o checklist de alcance (Ale em todo vídeo, meia tela com degradê, HyperFrames) | Toda edição |
+| ouvidor-seguidores | Lê os comentários e transforma pedidos e dúvidas em pauta | Toda quarta 15h37 (CT) |
+| espiao-concorrentes | O que os concorrentes fazem e como fazer melhor | Toda sexta 8h54 (já existia) |
+Definições: `.claude/agents/` na raiz do repositório.

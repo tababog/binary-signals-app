@@ -277,3 +277,33 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 ## Animação nos vídeos (pedido do Alessandro, 09/11)
 - Ele gostou do teste com HyperFrames ("No dia em que pegamos a chave") e quer MAIS animação em todos os próximos Reels: texto entrando palavra por palavra, impacto/tremor nas revelações, etiquetas deslizando, barra de progresso, números subindo, botão "Seguir" animado no fim, transições. Usar imaginação e variar os efeitos de um Reel para outro.
 - Ferramenta: HyperFrames (CLI `hyperframes`, render com `--sdr`; GSAP local em vez de CDN, porque a rede bloqueia jsdelivr). Projeto de referência: scratchpad hf-lago/.
+
+## Meta de 50 seguidores por dia e teste 953 × Casa do Lago (decisão 09/11)
+- META DIÁRIA: **50 seguidores novos por dia** (350 por semana). Todo conteúdo, a partir de agora, é pensado para ALCANCE e ENGAJAMENTO (chegar no maior número de pessoas). Placar diário no arquivo `metricas-crescimento.md`.
+- Conta da meta (dados de 26/10 a 08/11): ~5 seguidores a cada 1.000 views. 50/dia ≈ 10 mil views por dia ≈ 5 mil por Reel com 2 Reels/dia. Nosso melhor Reel até hoje: 2.852 views. Ou seja: precisamos de Reels 2x melhores que o nosso recorde, e de pelo menos 1 que "estoure" (10 mil+) por semana.
+- Linha de base: melhor dia 69 seguidores (02/11, "Você NÃO precisa morar nos EUA"); média de 02 a 08/11 ≈ 17/dia; de 05 a 08/11 ≈ 3/dia (semana de vendas derrubou o alcance).
+- A partir da S3 (16/11): **2 Reels por dia** (14h e 20h de Brasília) e **teste 953 × Casa do Lago**: uma casa em cada horário, invertendo os horários no meio da semana para o horário não decidir o resultado. Medir em 24 h: views, alcance, % que pula (skip), tempo médio, compartilhamentos e seguidores do dia. A casa que ganhar ganha mais espaço na semana seguinte.
+- A ideia é "hypar": a história da transformação de uma casa e da outra, em série, com gancho forte, pergunta e "siga para ver a próxima parte".
+
+## O que dá alcance (números reais do perfil, 26/10 a 08/11)
+- MELHORES: casa do jeito que encontramos + bagunça ("Primeira visita": 2.852 views, só 19,6% pulam); descarte/caçambas com pergunta (2.051 views, 18% pulam); Ale falando de frente sobre a família (2.463) e "não precisa morar nos EUA" (2.531 views, 18 compartilhamentos, dia de 69 seguidores).
+- PIORES: texto institucional ("A reforma continua", 41% pulam), bloco de venda "2 vagas/assessoria" (40–60% pulam, alcance caiu para 30–250), carrossel de datas, post de live, tour sem gancho.
+- REGRA: menos de 30% de skip = alcance acima de 1.300. Mais de 45% = abaixo de 400. O primeiro 1 segundo decide: começar com a imagem mais forte (bagunça, revelação, rosto do Ale com a frase-gancho), nunca com logo, fachada parada ou texto longo.
+
+## Regras de edição para alcance (pedidos do Alessandro, 09/11)
+- Cenas com bagunça: plano mais ABERTO (afastado) e com MUITA bagunça visível. Nada de close vago (o story de terça da S3 foi refeito por isso).
+- Cozinha: cenas mais LONGAS, para ver a pia inteira cheia de louça suja. Quartos: usar as cenas com muita roupa suja e sujeira; banheiro sujo quando houver vídeo.
+- Formato aprovado "MEIA TELA": casa em cima, Ale embaixo, com DEGRADÊ suave entre as duas telas (sem linha dura). Legenda karaokê na emenda, etiquetas animadas dos cômodos sincronizadas com a fala, "HORRÍVEL"/revelações com carimbo e tremor, enquete SIM/NÃO, botão "+ Seguir" pulsando, logo no fim. Referência: semana-crescimento/s4-lago-meia-tela.mp4 (projeto scratchpad hf-tour/).
+- Cortar repetições da gravação e deixar só a melhor fala de cada parte; CTA uma vez só, no fim.
+- Reel de pergunta NÃO entrega a resposta (ex.: número de cargas de lixo fica para o Reel-resposta).
+- HyperFrames não desenha emoji: usar só texto/SVG nas animações.
+
+## Agentes de crescimento (criados em 09/11)
+- Definições em `.claude/agents/` (na raiz do repositório): **analista-crescimento** (placar diário e teste 953 × Lago), **cacador-de-ganchos** (ganchos e roteiros a partir dos dados e dos concorrentes), **editor-reels** (checklist de edição para alcance), **ouvidor-seguidores** (o que o público pergunta e pede), **espiao-concorrentes** (o que os concorrentes fazem e como fazer melhor).
+- Rotinas: "Analista de crescimento (placar diário)" todo dia; "Ouvidor dos seguidores" toda quarta; "Agente de pesquisa de concorrentes" toda sexta (já existia). Tudo vira pauta na Central e no painel para o Alessandro aprovar.
+
+## O Alessandro aparece em TODOS os vídeos (regra de 09/11)
+- Nenhum Reel ou story sai sem o Alessandro aparecendo. Tour de casa sem ele não é mais usado sozinho.
+- Fonte principal: os vídeos em que ele já fala na obra (pasta Casa do Lago e da 953). Montagem padrão: **começa com ele de frente, em tela cheia, dizendo o gancho** → depois a casa entra como fundo/meia tela (com degradê) **e ele continua falando do mesmo assunto** (voz contínua), voltando ao rosto dele nas frases mais fortes e no final.
+- Variar os formatos entre os Reels: meia tela com degradê, Ale recortado no canto com a casa atrás, Ale em tela cheia com janelas da casa entrando (picture-in-picture), corte seco rosto ↔ casa no ritmo da fala.
+- Inventário dos assuntos que ele fala em cada vídeo: `semana-crescimento/inventario-falas-lago.md` (cada assunto vira um Reel).
