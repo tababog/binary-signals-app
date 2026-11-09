@@ -103,7 +103,8 @@ Valores estimados deste caso. Resultados passados não garantem resultados futur
 - **08:00** · story · Enquete: telhado novo, quanto você chuta? · doc `s2-sab-s8`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=15-YFDDo8NHM6MeT85Kg26mm1PUpfDE9A
 - **12:00** · reel · Quanto custou o telhado? (parte 1) · doc `s2-sab-f12`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s2-telhado-p1.mp4  (reeditado 09/11: sem silêncio, opções logo após a fala, música padrão)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s2-telhado-p1.mp4
+  - (reeditado 09/11: sem silêncio, opções logo após a fala, música padrão)
   - legenda:
 
 ```
