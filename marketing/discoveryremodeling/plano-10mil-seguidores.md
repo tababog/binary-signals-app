@@ -103,3 +103,9 @@ Meta semanal de controle: pulo médio < 30%, ≥ 1 Reel acima de 3.000 de alcanc
 3. **% de não seguidores** que viu cada Reel (Insights do Reel → Alcance).
 4. **Horários em que seus seguidores estão ativos** (Painel → Seguidores → Horários mais ativos).
 5. **Origem das visualizações** (aba Reels, Explorar, Feed, Perfil) dos 3 melhores Reels.
+
+## Atualização 09/11 — dados do app (Painel profissional, 09/10 a 07/11)
+- 46,6 mil visualizações → **228 seguidores novos = 4,9 seguidores por 1.000 visualizações**.
+- Reels que mais trouxeram seguidores: Família brasileira (**+54**, ~2.000 de alcance → 2,7%), Você NÃO precisa morar nos EUA (**+50**, ~2.200 → 2,2%), "...começamos" (+24), A melhor casa do leilão (+14).
+- **Achado principal:** o ALCANCE vem dos Reels de descoberta na casa (o teto: 2.525), mas os SEGUIDORES vêm dos Reels com o **Alessandro falando de frente** (identidade e quebra de mito): convertem 4 a 6 vezes mais. Decisão: todo dia 1 Reel de descoberta (alcance) + 1 Reel com o Alessandro falando (conversão). O formato "Alessandro no canto + obra atrás" junta os dois.
+- Público: 55,5% mulheres; 35-44 anos = 36,6%, 45-54 = 24,4%, 25-34 = 20%. Linguagem para família/patrimônio, não para "trader". Ainda falta: país (Brasil x EUA) e horários ativos.
