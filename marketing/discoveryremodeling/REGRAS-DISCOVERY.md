@@ -262,3 +262,8 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - O Alessandro grava em casa, de frente para uma parede lisa e clara (1 m da parede, luz de frente, roupa escura ou colorida, nunca branca). O Claude recorta e coloca atrás um vídeo da obra (equipe trabalhando), levemente desfocado, voz original.
 - Ferramenta: segmentação (modelo selfie_multiclass, ai-edge-litert) + recorte da parede clara + preenchimento de buracos (óculos). Script de referência: scratchpad teste/seg-padrao.py (pessoa ~66% da largura, canto inferior esquerdo, parede aprendida por cor a cada quadro). Para gravar: dar 1 passo para trás para os ombros caberem inteiros na imagem.
 - Primeiro uso real: Reel "Comprar barato não é lucro" (dom 29/11). Se ficar bom, vira padrão das falas.
+
+## Casa do Lago e rodízio de casas (decisão 09/11)
+- NUNCA mostrar valores (custos, preço de compra, gastos) da Casa do Lago (348 Beckwith) no Instagram, por causa dos investidores. Quizzes da Casa do Lago sem número de dinheiro.
+- Não concentrar o conteúdo numa casa só. S3: Reels da 953 (fecham a fase) + stories da Casa do Lago. S4 (23-29/11): semana da Casa do Lago, sem a 953. Dezembro: a 953 volta misturada com a Casa do Lago (e casas antigas, como Elkland).
+- Vídeos da Casa do Lago para edição: cópias em Drive › Estoque Obra 09-11 (equipe 953) › "Casa do Lago (para Instagram)" (a pasta original da casa é privada e tem planilha de caixa; não tornar pública).

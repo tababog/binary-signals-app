@@ -1,38 +1,25 @@
-# Agenda de PUBLICAÇÃO: Novembro S4 (23 a 29/11), horário de BRASÍLIA
+# Agenda de PUBLICAÇÃO: Novembro S4 (23 a 29/11), horário de BRASÍLIA — SEMANA DA CASA DO LAGO
 
-Crescimento (a confirmar no balanço de 15/11). 1 Reel por dia às 12h de Brasília (10h em Connecticut). Publica só o que estiver "pronto".
-3 Reels dependem de gravação do Alessandro (Section 8, "não compraria", "barato não é lucro"); roteiros em roteiros-s4.md. Se não chegarem até 21/11, entram do estoque: "O que ninguém te conta" (drive id 1ym3GhFuVEIrte8cAkUSKyebdclGTpdtf) e "Um dia na obra" (1HdnsrCUEIhanO0mwepYj4VpH4CZ3FxF2), legendas na agenda da S3 de 08/11 (git), ou um corte da live.
+Decisão do Alessandro (09/11): semana da Casa do Lago, sem a 953 (ela volta em dezembro misturada). Crescimento, sem vendas. 1 Reel por dia às 12h de Brasília (10h em Connecticut). Publica só o que estiver "pronto".
+REGRA: nenhum valor em dinheiro da Casa do Lago (investidores).
+Reels da Casa do Lago: o Claude edita a partir das cópias em "Estoque Obra 09-11 (equipe 953) › Casa do Lago (para Instagram)" até 21/11. 3 Reels dependem de gravação do Alessandro (roteiros-s4.md).
 
 ## Segunda 23/11
-- **12:00** · reel · Quanto custa uma cozinha nova aqui? (pergunta) · doc `s4-seg-f12`
-  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1FoAPRpqYTyOuuBypfAcj87CtmDdzyowe
+- **12:00** · reel · No dia em que pegamos a chave: tour da Casa do Lago · doc `s4-seg-f12`
+  - url: (em produção pelo Claude)
   - legenda:
 
 ```
-Aqui era a cozinha. Tiramos todos os gabinetes 🔨
+No dia em que pegamos a chave dessa casa de leilão, ela estava assim 😳 Cheia de coisas, do chão ao teto.
 
-Quanto você acha que custa colocar gabinetes novos nessa cozinha? Chuta aí 👇 A resposta sai amanhã.
+Essa é a Casa do Lago, nossa outra obra em Nova York. Você encararia? 👇
 
-Siga @discoveryremodeling para ver 👀
+Siga @discoveryremodeling para acompanhar a transformação 👀
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
 ## Terça 24/11
-- **12:00** · reel · Gabinetes (resposta): US$ 3.600 · doc `s4-ter-f12`
-  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1OfpmFKbpmdQsCzJadeDSjzTpZE9ByEbF
-  - legenda:
-
-```
-Resposta: US$ 3.600 nos gabinetes da cozinha 💵
-
-Você chegou perto? 👇 Qual vai ser o próximo?
-
-Valor real deste caso. Cada obra é diferente.
-#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
-```
-
-## Quarta 25/11
-- **12:00** · reel · Você conhecia o Section 8? (GRAVAR) · doc `s4-qua-f12`
+- **12:00** · reel · Você conhecia o Section 8? (GRAVAR) · doc `s4-ter-f12`
   - url: (a definir quando o Alessandro gravar)
   - legenda:
 
@@ -45,34 +32,34 @@ Você conhecia? 👇 Siga para mais coisas dos EUA que ninguém explica.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
-## Quinta 26/11 (Thanksgiving nos EUA)
-- **12:00** · reel · Quanto tempo leva uma reforma dessas? · doc `s4-qui-f12`
-  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1B04M3-YkZARHmO4BnzPkyHw4RrYa6ZOg
+## Quarta 25/11
+- **12:00** · reel · Dia de mutirão na Casa do Lago (caçamba, garagem, quintal) · doc `s4-qua-f12`
+  - url: (em produção pelo Claude)
   - legenda:
 
 ```
-Essa casa a gente comprou num leilão de tax deed e a obra começou no fim de outubro 🏠
+Dia de mutirão na Casa do Lago 💪 Caçamba no quintal, garagem, cômodos… tudo saindo.
 
-Quanto tempo você acha que leva para deixar ela pronta? Chuta aí 👇 Eu te conto.
+Quanto tempo você acha que leva para esvaziar uma casa dessas? Chuta aí 👇
 
-Siga para acompanhar 👀
+Siga para ver o depois 👀
+#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
+```
+
+## Quinta 26/11 (Thanksgiving nos EUA)
+- **12:00** · reel · Casa do Lago: antes e depois da primeira limpeza · doc `s4-qui-f12`
+  - url: (em produção pelo Claude)
+  - legenda:
+
+```
+Antes e depois da primeira limpeza na Casa do Lago 🧹 Agora dá para ver a casa de verdade.
+
+Qual cômodo você quer ver reformado primeiro? 👇
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
 ## Sexta 27/11
-- **12:00** · reel · Série da casa · episódio 9 · doc `s4-sex-f12`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-ep9.mp4
-  - legenda:
-
-```
-Série da casa, episódio 9 🔨 Telhado em andamento, demolição por dentro, cozinha sem gabinetes. A obra tá andando.
-
-O que você quer ver pronto primeiro? 👇 Siga para o próximo episódio.
-#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
-```
-
-## Sábado 28/11
-- **12:00** · reel · Essa casa a gente NÃO compraria (GRAVAR) · doc `s4-sab-f12`
+- **12:00** · reel · Essa casa a gente NÃO compraria (GRAVAR) · doc `s4-sex-f12`
   - url: (a definir quando o Alessandro gravar)
   - legenda:
 
@@ -83,8 +70,20 @@ Você teria dado lance? 👇 Siga para aprender a olhar antes de comprar.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
+## Sábado 28/11
+- **12:00** · reel · Casa do Lago: o quintal e os próximos passos (telhado novo) · doc `s4-sab-f12`
+  - url: (em produção pelo Claude; se a equipe mandar vídeo do telhado, entra o telhado)
+  - legenda:
+
+```
+E o quintal da Casa do Lago? 🌲 Tem muito trabalho por aqui também. Próximo passo: telhado novo.
+
+O que você faria primeiro nessa casa? 👇 Siga para acompanhar.
+#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
+```
+
 ## Domingo 29/11
-- **12:00** · reel · Comprar barato não é lucro (GRAVAR EM CASA, parede clara; obra no fundo na edição) · doc `s4-dom-f12`
+- **12:00** · reel · Comprar barato não é lucro (GRAVAR EM CASA; Casa do Lago no fundo) · doc `s4-dom-f12`
   - url: (a definir quando o Alessandro gravar)
   - legenda:
 
@@ -94,3 +93,6 @@ Comprar casa barata não significa fazer dinheiro 💡 O que decide é a conta q
 Concorda? 👇 Siga para mais lições reais de leilão.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
+
+## Estoque (para trocar se o público cair)
+- "O que ninguém te conta" (drive 1ym3GhFuVEIrte8cAkUSKyebdclGTpdtf) e "Um dia na obra" (1HdnsrCUEIhanO0mwepYj4VpH4CZ3FxF2). Gabinetes da 953 ficam para dezembro.
