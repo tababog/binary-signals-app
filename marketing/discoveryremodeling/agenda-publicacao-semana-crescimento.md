@@ -69,7 +69,7 @@ Valores reais deste caso; cada obra é diferente.
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1_ouB8Q_IQXzNymxNNLEX9In8OdhVCfwa
 - **12:00** · reel · Isolamento (parte 2): US$ 600 · doc `s2-qui-f12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s2-isolamento-p2-ale.mp4
-  - (09/11: versão com o Alessandro no lado direito, aprovada por ele no chat)
+  - (09/11: V2 sem travadas, Alessandro no lado direito, aprovada por ele no chat)
   - legenda:
 
 ```
