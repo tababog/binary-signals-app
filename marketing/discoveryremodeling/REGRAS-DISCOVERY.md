@@ -257,3 +257,8 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - O plano da semana NÃO é para seguir até o fim se não estiver dando certo. Todo dia, antes da publicação das 12h, o Claude compara o Reel do dia anterior (alcance, comentários, seguidores novos) com a média da semana.
 - Se cair mais de ~30% (ou 2 dias seguidos de queda), o Claude TROCA o Reel do dia seguinte (ou o resto da semana) por outro formato do estoque e avisa o Alessandro em 1 linha (o que trocou e por quê). Não precisa pedir licença para trocar dentro do estoque já aprovado; conteúdo novo continua precisando de aprovação no painel.
 - Continua valendo: máximo 1 Reel por dia, sem vendas na semana de crescimento.
+
+## Formato "fala em casa + obra no fundo" (teste aprovado em 09/11)
+- O Alessandro grava em casa, de frente para uma parede lisa e clara (1 m da parede, luz de frente, roupa escura ou colorida, nunca branca). O Claude recorta e coloca atrás um vídeo da obra (equipe trabalhando), levemente desfocado, voz original.
+- Ferramenta: segmentação (modelo selfie_multiclass, ai-edge-litert) + recorte da parede clara + preenchimento de buracos (óculos). Script de referência: scratchpad teste/seg3.py.
+- Primeiro uso real: Reel "Comprar barato não é lucro" (dom 29/11). Se ficar bom, vira padrão das falas.

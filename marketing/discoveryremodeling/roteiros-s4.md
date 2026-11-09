@@ -13,7 +13,7 @@
 - Fim: "Você teria dado lance?"
 - Sem endereço, placa ou número da casa.
 
-## 3. Comprar barato não é lucro (dom 29/11)
+## 3. Comprar barato não é lucro (dom 29/11) — GRAVAR EM CASA, parede lisa e clara (eu coloco a obra atrás)
 - Gancho: "Comprar casa barata não significa fazer dinheiro."
 - Meio: "O que decide é a conta antes do lance: reforma, imposto, tempo da obra e uma reserva para surpresa. A gente sempre separa uns 15%."
 - Fim: "Concorda?"

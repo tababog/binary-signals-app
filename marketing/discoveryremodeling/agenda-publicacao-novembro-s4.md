@@ -84,7 +84,7 @@ Você teria dado lance? 👇 Siga para aprender a olhar antes de comprar.
 ```
 
 ## Domingo 29/11
-- **12:00** · reel · Comprar barato não é lucro (GRAVAR) · doc `s4-dom-f12`
+- **12:00** · reel · Comprar barato não é lucro (GRAVAR EM CASA, parede clara; obra no fundo na edição) · doc `s4-dom-f12`
   - url: (a definir quando o Alessandro gravar)
   - legenda:
 
