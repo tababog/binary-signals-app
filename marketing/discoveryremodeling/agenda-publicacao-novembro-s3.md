@@ -105,5 +105,6 @@ Toda semana eu venho conferir de perto. Você quer ver o antes e depois quando t
 ```
 
 ## Estoque (para trocar se o público cair)
+- NOVOS (09/11, material da equipe): semana-crescimento/reel-telhado-pronto.mp4 (antes e depois do telhado) e reel-paredes-prontas.mp4 (tour do drywall pronto).
 - qc-gabinetes-p1 / p2 · t4 "Quanto tempo leva?" · episódio 9 reeditado (semana-crescimento/s3-ep9.mp4) · vídeos novos da equipe da 953 (pasta "Estoque Obra 09-11 (equipe 953)").
 - t5 "A surpresa" repete a história do plywood do telhado (já contada no domingo 15/11): só usar em dezembro.
