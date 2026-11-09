@@ -33,28 +33,28 @@ Você conhecia? 👇 Siga para mais coisas dos EUA que ninguém explica.
 ```
 
 ## Quarta 25/11
-- **12:00** · reel · Dia de mutirão na Casa do Lago (caçamba, garagem, quintal) · doc `s4-qua-f12`
+- **12:00** · reel · Quantas cargas de lixo saíram dessa casa? (pergunta) · doc `s4-qua-f12`
   - url: (em produção pelo Claude)
   - legenda:
 
 ```
-Dia de mutirão na Casa do Lago 💪 Caçamba no quintal, garagem, cômodos… tudo saindo.
+Dia de mutirão na Casa do Lago 💪 Cômodos, garagem, quintal… tudo saindo.
 
-Quanto tempo você acha que leva para esvaziar uma casa dessas? Chuta aí 👇
+Quantas cargas de lixo você acha que saíram dessa casa? Chuta aí 👇 A resposta sai amanhã.
 
-Siga para ver o depois 👀
+Siga para ver 👀
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
 ## Quinta 26/11 (Thanksgiving nos EUA)
-- **12:00** · reel · Casa do Lago: antes e depois da primeira limpeza · doc `s4-qui-f12`
+- **12:00** · reel · Resposta: 6 cargas + antes e depois da limpeza · doc `s4-qui-f12`
   - url: (em produção pelo Claude)
   - legenda:
 
 ```
-Antes e depois da primeira limpeza na Casa do Lago 🧹 Agora dá para ver a casa de verdade.
+Resposta: 6 cargas de lixo 🚛 Foram 2 do nosso trailer e 4 caminhões cheios.
 
-Qual cômodo você quer ver reformado primeiro? 👇
+E olha o antes e depois da primeira limpeza na Casa do Lago 🧹 Você acertou? Qual cômodo você quer ver reformado primeiro? 👇
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
