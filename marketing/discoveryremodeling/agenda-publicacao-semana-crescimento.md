@@ -47,7 +47,8 @@ Valores reais deste caso; cada obra é diferente.
 - **08:00** · story · Leilões de dezembro (para salvar) · doc `s2-qua-s8`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1uCWgmurpcuHAHW2Nk7b2ZEFAWXY6nDvU
 - **12:00** · reel · Quanto custa isolar esse quartinho? (parte 1) · doc `s2-qua-f12`
-  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1gBar_OOC7sEdKL7dne5mdbMHcfn71pl9
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s2-isolamento-p1-ale.mp4
+  - (09/11: nova versão com o Alessandro falando no canto e o quartinho atrás)
   - legenda:
 
 ```
