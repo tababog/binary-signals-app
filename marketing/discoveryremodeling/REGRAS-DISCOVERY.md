@@ -273,3 +273,7 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Reel 1 (descoberta na casa, traz alcance): **14h de Brasília** (12h em Connecticut). Reel 2 (Alessandro falando, traz seguidor): **20h de Brasília** (18h em Connecticut), a partir da S3 (16/11).
 - A regra antiga de "no máximo 1 Reel por dia" foi trocada por 2 Reels por dia (teste de 3 semanas; mantém se o alcance médio por Reel não cair mais de 20%).
 - O Claude manda toda semana na Central os roteiros de ~4 falas curtas para o Reel das 20h.
+
+## Animação nos vídeos (pedido do Alessandro, 09/11)
+- Ele gostou do teste com HyperFrames ("No dia em que pegamos a chave") e quer MAIS animação em todos os próximos Reels: texto entrando palavra por palavra, impacto/tremor nas revelações, etiquetas deslizando, barra de progresso, números subindo, botão "Seguir" animado no fim, transições. Usar imaginação e variar os efeitos de um Reel para outro.
+- Ferramenta: HyperFrames (CLI `hyperframes`, render com `--sdr`; GSAP local em vez de CDN, porque a rede bloqueia jsdelivr). Projeto de referência: scratchpad hf-lago/.
