@@ -7,7 +7,7 @@ Reels da Casa do Lago: o Claude edita a partir das cópias em "Estoque Obra 09-1
 
 ## Segunda 23/11
 - **14:00** · reel · No dia em que pegamos a chave: tour da Casa do Lago · doc `s4-seg-f12`
-  - url: (em produção pelo Claude)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-lago-chave.mp4
   - legenda:
 
 ```
