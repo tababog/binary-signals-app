@@ -18,6 +18,21 @@ Essa é a Casa do Lago, nossa outra obra em Nova York. Você encararia? 👇
 Siga @discoveryremodeling para acompanhar a transformação 👀
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
+- **20:00** · reel · Tour da bagunça, meia tela (casa em cima, Ale embaixo, degradê) · doc `s4-seg-f20` · PRONTO (aprovado 09/11)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-lago-meia-tela.mp4
+  - legenda:
+
+```
+Cozinha, sala, quartos… tudo assim 😳 Esse foi o primeiro dia na Casa do Lago, a casa que compramos em leilão em Nova York.
+
+Louça e panela por todo lado, móveis velhos, lixo, roupa do chão ao teto. Foi preciso um mutirão para esvaziar tudo.
+
+E você, compraria uma casa nessas condições? Comenta SIM ou NÃO 👇
+
+Me segue para ver a transformação dessa casa 🏡
+
+#leilaodeimoveis #casasnosestadosunidos #brasileirosnoseua #taxdeed #reforma #antesedepois #investimentoimobiliario #discoveryremodeling
+```
 
 ## Terça 24/11
 - **14:00** · reel · Você conhecia o Section 8? (GRAVAR) · doc `s4-ter-f12`
