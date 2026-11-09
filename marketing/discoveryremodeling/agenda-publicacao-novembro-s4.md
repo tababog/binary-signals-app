@@ -6,6 +6,8 @@ Reels da Casa do Lago: o Claude edita a partir das cópias em "Estoque Obra 09-1
 2º REEL DIÁRIO (decisão 09/11): às 20h de Brasília (18h em Connecticut), Reel com o Alessandro falando. Itens das 20h: cronograma-gravacoes-s3-s4.md (S3 = Casa do Lago às 20h; S4 = 953 às 20h).
 
 ## Segunda 23/11
+- **08:00** · story · No dia que pegamos a chave (cozinha) · hoje 14h o tour · doc `s4-seg-s8`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-seg.mp4
 - **14:00** · reel · No dia em que pegamos a chave: tour da Casa do Lago · doc `s4-seg-f12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-lago-chave.mp4
   - legenda:
@@ -35,6 +37,8 @@ Me segue para ver a transformação dessa casa 🏡
 ```
 
 ## Terça 24/11
+- **08:00** · story · A sala + Você conhece o Section 8? · doc `s4-ter-s8`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-ter.mp4
 - **14:00** · reel · Você conhecia o Section 8? (GRAVAR) · doc `s4-ter-f12`
   - url: (a definir quando o Alessandro gravar)
   - legenda:
@@ -52,6 +56,8 @@ Você conhecia? 👇 Siga para mais coisas dos EUA que ninguém explica.
   - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
 
 ## Quarta 25/11
+- **08:00** · story · Quartos + quantas cargas? (2·4·6) · doc `s4-qua-s8`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-qua.mp4
 - **14:00** · reel · Quantas cargas de lixo saíram dessa casa? (pergunta) · doc `s4-qua-f12`
   - url: (em produção pelo Claude)
   - legenda:
@@ -69,6 +75,8 @@ Siga para ver 👀
   - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
 
 ## Quinta 26/11 (Thanksgiving nos EUA)
+- **08:00** · story · Saindo roupa + hoje a resposta · doc `s4-qui-s8`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-qui.mp4
 - **14:00** · reel · Resposta: 6 cargas + antes e depois da limpeza · doc `s4-qui-f12`
   - url: (em produção pelo Claude)
   - legenda:
@@ -84,6 +92,8 @@ E olha o antes e depois da primeira limpeza na Casa do Lago 🧹 Você acertou? 
   - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
 
 ## Sexta 27/11
+- **08:00** · story · Atualização da 953 por dentro · 20h a equipe · doc `s4-sex-s8`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-sex.mp4
 - **14:00** · reel · Essa casa a gente NÃO compraria (GRAVAR) · doc `s4-sex-f12`
   - url: (a definir quando o Alessandro gravar)
   - legenda:
@@ -99,6 +109,8 @@ Você teria dado lance? 👇 Siga para aprender a olhar antes de comprar.
   - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
 
 ## Sábado 28/11
+- **08:00** · story · Checklist do quintal (Casa do Lago) · doc `s4-sab-s8`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-sab.mp4
 - **14:00** · reel · Casa do Lago: o quintal e os próximos passos (telhado novo) · doc `s4-sab-f12`
   - url: (em produção pelo Claude; se a equipe mandar vídeo do telhado, entra o telhado)
   - legenda:
@@ -114,6 +126,8 @@ O que você faria primeiro nessa casa? 👇 Siga para acompanhar.
   - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
 
 ## Domingo 29/11
+- **08:00** · story · Como está a 953 (etapas) · hoje 14h e 20h · doc `s4-dom-s8`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-dom.mp4
 - **14:00** · reel · Comprar barato não é lucro (GRAVAR EM CASA; Casa do Lago no fundo) · doc `s4-dom-f12`
   - url: (a definir quando o Alessandro gravar)
   - legenda:
