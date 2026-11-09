@@ -23,6 +23,21 @@ Valores reais deste caso; cada obra é diferente.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
+- **20:00** · reel · Corte da live: o ex-dono arrancou tudo · doc `s2-seg-f20`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/cortes-live/live-c2-exdono.mp4
+  - legenda:
+
+```
+O ex-dono arrancou o revestimento da casa inteira antes de sair 😳 E teve outro que jogou concreto na privada.
+
+Por isso, a primeira coisa que a gente faz depois do leilão é o seguro da casa.
+
+Você faria o seguro? Comenta aqui 👇
+
+Siga @discoveryremodeling para ver mais da vida real dos leilões nos EUA 🏠
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
+```
+
 ## Terça 10/11
 - **08:00** · story · Bastidor: mais uma viagem pro descarte · doc `s2-ter-s8`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1iPWNDou6_PylsDDT-XlPmBsV10FUX-ho
@@ -42,6 +57,22 @@ Valores reais deste caso; cada obra é diferente.
 ```
 - **14:00** · story · Quiz: quanto custa o isolamento? · doc `s2-ter-s14`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1LGdaj-mP7SkVFXstZL5jRGCscqPU-geJ
+
+- **20:00** · reel · Corte da live: quanto custa uma casa em leilão · doc `s2-ter-f20`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/cortes-live/live-c1-preco.mp4
+  - legenda:
+
+```
+Quanto custa uma casa em leilão nos EUA? 🇺🇸🏠
+
+Na nossa experiência: na Pensilvânia, de 10 a 15 mil dólares compra uma casa que precisa de reforma. Em Nova York, de 20 a 30 mil. Não é regra: cada leilão é diferente.
+
+Qual estado você escolheria? Comenta 👇
+
+Siga @discoveryremodeling para mais 🏠
+Valores aproximados, sem garantia de resultado.
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
+```
 
 ## Quarta 11/11
 - **08:00** · story · Leilões de dezembro (para salvar) · doc `s2-qua-s8`
@@ -64,6 +95,21 @@ Valores reais deste caso; cada obra é diferente.
 - **14:00** · story · Caixinha: qual sua maior dúvida sobre leilão? · doc `s2-qua-s14`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1EKlAYMQ512fdJo0bB45qWsFV7HHpFaj4
 
+- **20:00** · reel · Corte da live: casa barata sai cara · doc `s2-qua-f20`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/cortes-live/live-c3-barato.mp4
+  - legenda:
+
+```
+Casa barata no leilão pode sair cara 💸
+
+O ponto mais importante do negócio é a reforma. Casa muito danificada = obra cara. E é quase impossível achar casa em ótimo estado por 3 ou 5 mil dólares.
+
+Você compraria a mais barata? Comenta 👇
+
+Siga @discoveryremodeling para mais 🏠
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
+```
+
 ## Quinta 12/11
 - **08:00** · story · Bastidor: paredes abertas, ao meio-dia o custo · doc `s2-qui-s8`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1_ouB8Q_IQXzNymxNNLEX9In8OdhVCfwa
@@ -83,6 +129,21 @@ Valor real deste caso. Cada obra é diferente.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
+- **20:00** · reel · Corte da live: a surpresa no telhado · doc `s2-qui-f20`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/cortes-live/live-c4-telhado.mp4
+  - legenda:
+
+```
+O orçamento era só trocar o shingle… até abrir o telhado 😬
+
+Por baixo, o plywood estava podre. E com o telhado aberto, você não para a obra: o gasto sai do previsto.
+
+Já passou por isso? Conta aqui 👇
+
+Siga @discoveryremodeling para mais 🏠
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
+```
+
 ## Sexta 13/11
 - **14:00** · reel · Elkland: antes e depois · doc `s2-sex-f12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/aprovados/elkland-reel-v4.mp4
@@ -100,6 +161,21 @@ Valores estimados deste caso. Resultados passados não garantem resultados futur
 ```
 - **14:00** · story · Caixinha: pergunte o que quiser sobre a obra · doc `s2-sex-s14`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=11JpvqREkF00Fv2pG5HaMdxQt_yFK0tlF
+
+- **20:00** · reel · Corte da live: reformar sem permit · doc `s2-sex-f20`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/cortes-live/live-c5-permit.mp4
+  - legenda:
+
+```
+Reformar sem permit nos EUA? Má ideia 🚫
+
+O fiscal passa na frente, vê a obra e para tudo. E na venda, a inspeção pergunta pelo permit de cada serviço.
+
+No Brasil é assim também? Comenta 👇
+
+Siga @discoveryremodeling para mais 🏠
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
+```
 
 ## Sábado 14/11
 - **08:00** · story · Enquete: telhado novo, quanto você chuta? · doc `s2-sab-s8`
