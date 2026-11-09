@@ -260,5 +260,5 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 
 ## Formato "fala em casa + obra no fundo" (teste aprovado em 09/11)
 - O Alessandro grava em casa, de frente para uma parede lisa e clara (1 m da parede, luz de frente, roupa escura ou colorida, nunca branca). O Claude recorta e coloca atrás um vídeo da obra (equipe trabalhando), levemente desfocado, voz original.
-- Ferramenta: segmentação (modelo selfie_multiclass, ai-edge-litert) + recorte da parede clara + preenchimento de buracos (óculos). Script de referência: scratchpad teste/seg3.py.
+- Ferramenta: segmentação (modelo selfie_multiclass, ai-edge-litert) + recorte da parede clara + preenchimento de buracos (óculos). Script de referência: scratchpad teste/seg-padrao.py (pessoa ~66% da largura, canto inferior esquerdo, parede aprendida por cor a cada quadro). Para gravar: dar 1 passo para trás para os ombros caberem inteiros na imagem.
 - Primeiro uso real: Reel "Comprar barato não é lucro" (dom 29/11). Se ficar bom, vira padrão das falas.
