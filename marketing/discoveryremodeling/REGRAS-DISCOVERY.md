@@ -6,7 +6,7 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 - Nome da marca: **"Discovery"** (nunca "Discovery Investiment", "Investment" ou "Investimento"). Instagram: **@discoveryremodeling**.
 - Cores: verde-escuro **#17361A** (principal), verde da logo #29721D, dourado **#F2C14E** (destaque), branco. Fonte: Inter (Black/Bold).
 - Logos: `marca/logo-discovery-branca.png` e `marca/logo-discovery-colorida.png`. Animação do final de TODO vídeo: `designer/logo-reveal/logo-reveal-discovery-novo.mp4` (feita do `discovery-logo-reveal.html`, aprovada em 29/10). O logo-reveal antigo foi removido.
-- Toda arte e todo vídeo levam a logo (branca no canto de cima à direita, nos vídeos).
+- Artes (imagens) levam a logo. **Vídeos: SEM logo durante o vídeo (regra de 10/11); só o logo-reveal branco de 1,5 s no final.**
 - WhatsApp oficial: **+1 (475) 349-9986** (link `https://wa.me/14753499986`).
 - Guia grátis (PDF público): https://drive.google.com/file/d/1ulALUwXcDuyvy-1aK0RQ5Rf8V-tRbsnd/view (primeiro link da bio).
 - Perfil: nome "Alessandro | Leilão Casas EUA"; links da bio: Guia grátis, WhatsApp e site; destaques verdes, com "Assessoria" em primeiro e "Avaliação" para os depoimentos.
@@ -118,7 +118,7 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 ## Capas dos Reels e logo (definido em 03/11)
 - **Todo Reel tem capa padrão** (gerador `designer/gerar-capas-semana3.py`, saída `semana-N/capas/capa-sN-<dia>-<hora>.jpg`): foto do Ale ou da obra, etiqueta dourada no topo, título de 3 a 6 palavras em Montserrat ExtraBold com a palavra-chave em dourado, subtítulo curto. Texto dentro do recorte 3:4 do perfil (y 240 a 1680). Logo pequena no canto.
 - A rotina publica o Reel com `cover_url` apontando para a capa (Windsor create_video_post aceita).
-- **Logo nos Reels:** nada de logo nos 3 primeiros segundos (só gancho e rosto); depois, logo pequena e meio transparente no canto de cima, como marca d'água; logo-reveal no final continua. **Nos stories** a logo continua como está.
+- **Logo nos Reels (SUBSTITUÍDO em 10/11: sem logo durante o vídeo, só no final):** antes era: nada de logo nos 3 primeiros segundos (só gancho e rosto); depois, logo pequena e meio transparente no canto de cima, como marca d'água; logo-reveal no final continua. **Nos stories** a logo continua como está.
 - **Capas da semana 3 APROVADAS pelo Alessandro em 03/11.**
 - **Decisão (03/11):** o Alessandro deixou a escolha com o Claude ("você é o especialista, eu só quero crescer"). Capas e regra da logo entram na semana 3 como TESTE. No domingo 15/11, comparar com a semana 2 (visitas ao perfil, seguidores novos, alcance e retenção dos Reels). Se piorar, volta ao jeito antigo.
 - **Windsor sem "Permitir" (03/11):** o Alessandro mudou em claude.ai/customize/connectors → Windsor: "Ferramentas somente leitura" = Sempre permitir; em "gravação/exclusão" só **Execute Action** = Sempre permitir (o resto continua pedindo aprovação). A rotina publica sozinha, mas só o que está "pronto" no painel.
@@ -333,3 +333,4 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Banco de fundos (cópias em Drive › Estoque Obra 09-11; scratchpad casasbg/ e c506/): 506 Elmira (fachada, quartos com lixo, banheiro), 501 Elmira (fachada, deck novo), 8 Rumsey (fachada, telhado sendo trocado), 107 Elkland (interior em reforma, fachada), além da 953 e da Casa do Lago. Faltam vídeos da 1104 Agnew e da 6955 Rote nas pastas (só há documentos); pedir ao Alessandro.
 - Logo final: SEMPRE o original de fundo BRANCO (logo-reveal-discovery-novo.mp4), 1,5 s. Não trocar a cor do fundo (corrige a regra anterior do verde).
 - Recorte APROVADO (10/11, exemplo "risco-menor"): Ale com 72% da largura, centralizado, apoiado embaixo. Método: segmentação em alta resolução por blocos (selfie_multiclass no quadro inteiro para achar a pessoa, depois em quadrados sobrepostos a partir do topo da cabeça), SEM recorte por cor (o recorte por cor comia a orelha e deixava mancha em cima da cabeça por causa da parede bege). Script: scratchpad s3l/new/pa/segc.py, montagem em s3l/modelo.py. Sempre conferir cabeça e orelhas em 5 quadros antes de mandar a prévia.
+- **SEM LOGO DURANTE O VÍDEO (10/11, pedido do Alessandro):** a partir de agora nenhum vídeo leva logomarca no canto durante a fala. Só o logo-reveal branco de 1,5 s no final. Vale para Reels e para tudo que for editado daqui para frente.
