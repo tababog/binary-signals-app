@@ -311,3 +311,7 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 
 ## Cortes da live (decisão 09/11)
 - Os 5 cortes da live de 08/11 (semana-crescimento/cortes-live/) entram como 2º Reel do dia, às 20h de Brasília, de segunda a sexta da S2 (09 a 13/11): ex-dono, preço, casa barata, telhado, permit. Formato: Ale em tela cheia, etiqueta "CORTE DA LIVE", legenda karaokê na altura do peito (nunca sobre o rosto), etiquetas animadas fora do rosto, pergunta final e "+ Seguir". Toda live nova vira cortes nesse formato.
+
+## Recorte do Ale x meia tela (10/11)
+- O Alessandro reprovou o "Comprar barato não é lucro" feito com ele RECORTADO na frente da casa (parecia colado). Padrão para falas gravadas em casa: MEIA TELA com degradê (casa em cima, ele embaixo com o fundo real dele). Recorte só se ele pedir. Script: scratchpad s3l/split.py + gen.py.
+- Gravações cortadas: tirar pausas, repetições e frases recomeçadas; conferir na legenda que nenhuma palavra sumiu (ex.: "a reforma", "separa").
