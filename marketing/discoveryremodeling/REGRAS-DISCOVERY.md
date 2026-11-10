@@ -314,4 +314,4 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 
 ## Recorte do Ale x meia tela (10/11)
 - O Alessandro reprovou o "Comprar barato não é lucro" feito com ele RECORTADO na frente da casa (parecia colado). Padrão para falas gravadas em casa: MEIA TELA com degradê (casa em cima, ele embaixo com o fundo real dele). Recorte só se ele pedir. Script: scratchpad s3l/split.py + gen.py.
-- Gravações cortadas: tirar pausas, repetições e frases recomeçadas; conferir na legenda que nenhuma palavra sumiu (ex.: "a reforma", "separa").
+- Gravações: NÃO picotar a fala (o Alessandro reprovou em 10/11). Só encurtar pausas longas (>0,75 s) para ~0,5 s, mantendo o respiro entre frases, e tirar frases repetidas/recomeçadas. Script: scratchpad s3l/autocut2.py. Conferir na legenda que nenhuma palavra sumiu.
