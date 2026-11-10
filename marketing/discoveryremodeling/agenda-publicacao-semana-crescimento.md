@@ -41,7 +41,7 @@ Siga @discoveryremodeling para ver mais da vida real dos leilões nos EUA 🏠
 ## Terça 10/11
 - **08:00** · story · Bastidor: mais uma viagem pro descarte · doc `s2-ter-s8`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1iPWNDou6_PylsDDT-XlPmBsV10FUX-ho
-- **14:00** · reel · Lixo (parte 2): 2 toneladas, US$ 157,44 · doc `s2-ter-f12`
+- **20:00** · reel · Lixo (parte 2): 2 toneladas, US$ 157,44 (invertido com o "É golpe?" em 10/11: teste de horário) · doc `s2-ter-f12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s2-lixo-p2.mp4
   - legenda:
 
@@ -58,7 +58,7 @@ Valores reais deste caso; cada obra é diferente.
 - **14:00** · story · Quiz: quanto custa o isolamento? · doc `s2-ter-s14`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1LGdaj-mP7SkVFXstZL5jRGCscqPU-geJ
 
-- **20:00** · reel · É golpe? Casa em leilão nos EUA (Ale recortado + casa ao fundo; trocado em 10/11 no lugar do corte da live) · doc `s2-ter-f20`
+- **14:00** · reel · É golpe? Casa em leilão nos EUA (Ale recortado + casa ao fundo; invertido para as 14h em 10/11: teste de horário) · doc `s2-ter-f20`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-e-golpe.mp4
   - legenda:
 
