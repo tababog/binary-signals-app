@@ -319,3 +319,10 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 ## Casas Discovery (10/11)
 - 107 Elkland, 501 Elmira e 517 E. Moody já foram VENDIDAS: saíram da página Casas Discovery (cartões, lançamentos e perguntas). Ficam 5 casas: 953 Erie, 8 Rumsey, 348 Beckwith (Casa do Lago), 1104 Agnew e 6955 Rote.
 - Sim/Não e status da página: corrigido o erro que travava os cliques (valor vazio gravado). Cada clique mostra "Salvo ✅".
+
+## Fundo dos vídeos de fala (regra do Alessandro, 10/11) — SUBSTITUI a regra de meia tela
+- NENHUM vídeo de fala sai com fundo branco/parede. Sempre RECORTAR o Alessandro (tela cheia, centralizado, ~85% da largura) e colocar atrás um VÍDEO de uma casa. Não dividir a tela.
+- Variar as casas do fundo: preferir as que o público ainda não viu (506 Elmira "casa da boneca", 8 Rumsey, 501, Elkland), para sair da 953 e da Casa do Lago. Vídeos da 506 copiados em Estoque Obra 09-11 (506-a..d.mp4); scratchpad c506/.
+- Sem número da casa, rua ou placa no fundo (escolher trechos sem a porta da frente/caixa de correio).
+- Logo final: 1,5 s (não 6,5 s) quando o vídeo passar de 20 s. Fundo verde #17361A.
+- Script: scratchpad s3l/new/pa/segc.py (cutout centralizado) + blocos de texto um por vez + legenda karaokê y=1400.
