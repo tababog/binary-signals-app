@@ -130,18 +130,19 @@ Valor real deste caso. Cada obra é diferente.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
-- **20:00** · reel · Corte da live: a surpresa no telhado · doc `s2-qui-f20`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/cortes-live/live-c4-telhado.mp4
+- **20:00** · reel · Quem somos: família brasileira nos leilões dos EUA (Ale recortado + casa ao fundo; trocado em 10/11 no lugar do corte da live) · doc `s2-qui-f20`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-quem-somos.mp4
   - legenda:
 
 ```
-O orçamento era só trocar o shingle… até abrir o telhado 😬
+Prazer, eu sou o Alessandro 👋🇺🇸
 
-Por baixo, o plywood estava podre. E com o telhado aberto, você não para a obra: o gasto sai do previsto.
+Somos uma família brasileira que começou a comprar casas de leilão aqui nos Estados Unidos. Errei, aprendi e hoje mostro tudo aqui, com os pés no chão.
 
-Já passou por isso? Conta aqui 👇
+Você também pensa em ter uma casa aqui? Comenta 👇
 
 Siga @discoveryremodeling para mais 🏠
+
 #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
 
@@ -163,18 +164,19 @@ Valores estimados deste caso. Resultados passados não garantem resultados futur
 - **14:00** · story · Caixinha: pergunte o que quiser sobre a obra · doc `s2-sex-s14`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=11JpvqREkF00Fv2pG5HaMdxQt_yFK0tlF
 
-- **20:00** · reel · Corte da live: reformar sem permit · doc `s2-sex-f20`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/cortes-live/live-c5-permit.mp4
+- **20:00** · reel · O conselho que eu daria pra mim no começo (Ale recortado + casa ao fundo; trocado em 10/11 no lugar do corte da live) · doc `s2-sex-f20`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-conselho-reforma.mp4
   - legenda:
 
 ```
-Reformar sem permit nos EUA? Má ideia 🚫
+O conselho que eu daria pra mim mesmo no começo 🏠
 
-O fiscal passa na frente, vê a obra e para tudo. E na venda, a inspeção pergunta pelo permit de cada serviço.
+Nunca dar um lance sem ter visto o tamanho da reforma. Foto não mostra telhado, porão nem encanamento. Eu aprendi isso do jeito caro.
 
-No Brasil é assim também? Comenta 👇
+Você daria um lance só olhando foto? Comenta 👇
 
-Siga @discoveryremodeling para mais 🏠
+Siga @discoveryremodeling: no próximo vídeo eu mostro o que olhar antes do lance.
+
 #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
 
