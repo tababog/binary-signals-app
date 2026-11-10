@@ -58,19 +58,19 @@ Valores reais deste caso; cada obra é diferente.
 - **14:00** · story · Quiz: quanto custa o isolamento? · doc `s2-ter-s14`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1LGdaj-mP7SkVFXstZL5jRGCscqPU-geJ
 
-- **20:00** · reel · Corte da live: quanto custa uma casa em leilão · doc `s2-ter-f20`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/cortes-live/live-c1-preco.mp4
+- **20:00** · reel · É golpe? Casa em leilão nos EUA (Ale recortado + casa ao fundo; trocado em 10/11 no lugar do corte da live) · doc `s2-ter-f20`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-e-golpe.mp4
   - legenda:
 
 ```
-Quanto custa uma casa em leilão nos EUA? 🇺🇸🏠
+Casa em leilão nos EUA é golpe? 🇺🇸🏠
 
-Na nossa experiência: na Pensilvânia, de 10 a 15 mil dólares compra uma casa que precisa de reforma. Em Nova York, de 20 a 30 mil. Não é regra: cada leilão é diferente.
+Não é golpe. É um leilão público, feito pelo próprio condado, com regras e datas no site oficial. O risco não é o leilão: é comprar sem analisar.
 
-Qual estado você escolheria? Comenta 👇
+Qual é a sua maior dúvida sobre isso? Comenta 👇
 
 Siga @discoveryremodeling para mais 🏠
-Valores aproximados, sem garantia de resultado.
+
 #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
 
@@ -95,18 +95,19 @@ Valores reais deste caso; cada obra é diferente.
 - **14:00** · story · Caixinha: qual sua maior dúvida sobre leilão? · doc `s2-qua-s14`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1EKlAYMQ512fdJo0bB45qWsFV7HHpFaj4
 
-- **20:00** · reel · Corte da live: casa barata sai cara · doc `s2-qua-f20`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/cortes-live/live-c3-barato.mp4
+- **20:00** · reel · Você não precisa morar nos EUA (Ale recortado + casa ao fundo; trocado em 10/11 no lugar do corte da live) · doc `s2-qua-f20`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-nao-precisa-morar.mp4
   - legenda:
 
 ```
-Casa barata no leilão pode sair cara 💸
+Precisa morar nos EUA para ter uma casa aqui? 🇺🇸🏠
 
-O ponto mais importante do negócio é a reforma. Casa muito danificada = obra cara. E é quase impossível achar casa em ótimo estado por 3 ou 5 mil dólares.
+Não precisa. Dá para acompanhar tudo de longe: visita, avaliação e reforma.
 
-Você compraria a mais barata? Comenta 👇
+Onde você mora hoje? Comenta 👇
 
 Siga @discoveryremodeling para mais 🏠
+
 #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
 
