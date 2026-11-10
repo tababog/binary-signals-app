@@ -321,7 +321,7 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Sim/Não e status da página: corrigido o erro que travava os cliques (valor vazio gravado). Cada clique mostra "Salvo ✅".
 
 ## Fundo dos vídeos de fala (regra do Alessandro, 10/11) — SUBSTITUI a regra de meia tela
-- NENHUM vídeo de fala sai com fundo branco/parede. Sempre RECORTAR o Alessandro (tela cheia, centralizado, ~85% da largura) e colocar atrás um VÍDEO de uma casa. Não dividir a tela.
+- NENHUM vídeo de fala sai com fundo branco/parede. Sempre RECORTAR o Alessandro (centralizado, **72% da largura**: tamanho aprovado em 10/11, para aparecer mais da casa) e colocar atrás um VÍDEO de uma casa. Não dividir a tela.
 - Variar as casas do fundo: preferir as que o público ainda não viu (506 Elmira "casa da boneca", 8 Rumsey, 501, Elkland), para sair da 953 e da Casa do Lago. Vídeos da 506 copiados em Estoque Obra 09-11 (506-a..d.mp4); scratchpad c506/.
 - Sem número da casa, rua ou placa no fundo (escolher trechos sem a porta da frente/caixa de correio).
 - Logo final: 1,5 s, fundo BRANCO original.
@@ -332,3 +332,4 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Antes de editar um lote, montar a tabela "Reel → casa → trechos" e conferir que não há repetição. Registro: `semana-crescimento/fundos-usados.md`.
 - Banco de fundos (cópias em Drive › Estoque Obra 09-11; scratchpad casasbg/ e c506/): 506 Elmira (fachada, quartos com lixo, banheiro), 501 Elmira (fachada, deck novo), 8 Rumsey (fachada, telhado sendo trocado), 107 Elkland (interior em reforma, fachada), além da 953 e da Casa do Lago. Faltam vídeos da 1104 Agnew e da 6955 Rote nas pastas (só há documentos); pedir ao Alessandro.
 - Logo final: SEMPRE o original de fundo BRANCO (logo-reveal-discovery-novo.mp4), 1,5 s. Não trocar a cor do fundo (corrige a regra anterior do verde).
+- Recorte (10/11): a parede bege tem cor parecida com a pele e o recorte comia a orelha/lateral da cabeça. Script corrigido (s3l/new/pa/segc.py): protege os pixels com alta confiança de "pessoa" abaixo do topo da cabeça. Sempre conferir cabeça e orelhas em 5 quadros antes de mandar a prévia.
