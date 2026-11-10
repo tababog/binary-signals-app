@@ -128,8 +128,8 @@ O que você faria primeiro nessa casa? 👇 Siga para acompanhar.
 ## Domingo 29/11
 - **08:00** · story · Como está a 953 (etapas) · hoje 14h e 20h · doc `s4-dom-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-dom.mp4
-- **14:00** · reel · Comprar barato não é lucro (GRAVAR EM CASA; Casa do Lago no fundo) · doc `s4-dom-f12`
-  - url: (a definir quando o Alessandro gravar)
+- **14:00** · reel · Comprar barato não é lucro (gravado; Casa do Lago no fundo) · doc `s4-dom-f12`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-barato-nao-e-lucro.mp4
   - legenda:
 
 ```
