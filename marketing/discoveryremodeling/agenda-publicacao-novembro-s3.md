@@ -26,8 +26,20 @@ Resumo geral: cada condado tem as suas regras. Confira sempre no site oficial.
 #taxdeed #leilaodeimoveis #imoveisnoseua #casasnoseua #brasileirosnoseua #discoveryremodeling
 ```
 
-- **20:00** · reel · O pior dessa casa era o CHEIRO (Casa do Lago) · doc `s3-seg-f20`
-  - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
+- **20:00** · reel · O pior dessa casa era o CHEIRO (Casa do Lago) · doc `s3-seg-f20` · PRONTO (aprovado 10/11)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-1-cheiro.mp4
+  - legenda:
+
+```
+O pior dessa casa de leilão não era a bagunça. Era o cheiro 🤢
+
+Num dos quartos, embaixo das roupas, tinha comida estragada.
+
+Você teria coragem de entrar? Comenta 👇
+
+Siga @discoveryremodeling para ver a transformação 🏠
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
+```
 
 ## Terça 17/11
 - **08:00** · story · Casa do Lago: assim ela estava quando pegamos a chave · doc `s3-ter-s8`
@@ -46,8 +58,20 @@ Valores deste caso; cada terreno é diferente.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
-- **20:00** · reel · Descobri por que abandonaram tudo (Casa do Lago) · doc `s3-ter-f20`
-  - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
+- **20:00** · reel · Descobri por que abandonaram tudo (Casa do Lago) · doc `s3-ter-f20` · PRONTO (aprovado 10/11)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-2-historia.mp4
+  - legenda:
+
+```
+Descobri por que essa casa estava cheia de coisa 👀
+
+Um inspetor me contou: os antigos moradores se separaram, abandonaram tudo e foram embora.
+
+Você imaginava isso? Comenta 👇
+
+Siga @discoveryremodeling para ver a transformação 🏠
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
+```
 
 ## Quarta 18/11
 - **08:00** · story · Casa do Lago: quanto lixo saiu daqui? · doc `s3-qua-s8`
@@ -88,8 +112,20 @@ Siga @discoveryremodeling para ver 👀
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
-- **20:00** · reel · Olha o que achamos numa casa de leilão (Casa do Lago) · doc `s3-qui-f20`
-  - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
+- **20:00** · reel · Olha o que achamos numa casa de leilão (Casa do Lago) · doc `s3-qui-f20` · PRONTO (aprovado 10/11)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-4-achados.mp4
+  - legenda:
+
+```
+Olha o que a gente encontrou dentro de uma casa de leilão 📦
+
+Iogurteira e pipoqueira novas, na caixa. Uma corneta. E uma bicicleta novinha que ia para o lixo 🚲
+
+O que você faria com isso? Comenta 👇
+
+Siga @discoveryremodeling para ver a transformação 🏠
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
+```
 
 ## Sexta 20/11
 - **08:00** · story · Casa do Lago: depois da primeira limpeza · doc `s3-sex-s8`
@@ -107,8 +143,20 @@ Valor real deste caso. Cada obra é diferente.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
-- **20:00** · reel · Essa parede eu NÃO vou derrubar (Casa do Lago) · doc `s3-sex-f20`
-  - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
+- **20:00** · reel · Essa parede eu NÃO vou derrubar (Casa do Lago) · doc `s3-sex-f20` · PRONTO (aprovado 10/11)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-5-parede.mp4
+  - legenda:
+
+```
+Essa parede eu NÃO vou derrubar 🪵
+
+Madeira rústica de verdade: é só lixar. E as portas também ficam.
+
+Você manteria ou trocaria? Comenta 👇
+
+Siga @discoveryremodeling para ver a transformação 🏠
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
+```
 
 ## Sábado 21/11
 - **08:00** · story · Casa do Lago: e o quintal? · doc `s3-sab-s8`
