@@ -213,7 +213,7 @@ Siga @discoveryremodeling: toda casa de leilão guarda alguma surpresa 👀
 ```
 
 ## Domingo 15/11
-- **14:00** · reel · Telhado (parte 2): US$ 6.000 + 3 dicas · doc `s2-dom-f12`
+- **20:00** · reel · Telhado (parte 2): US$ 6.000 + 3 dicas (invertido com o Lago animado em 11/11, para o teste de formato ficar justo) · doc `s2-dom-f12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s2-telhado-p2.mp4
   - legenda:
 
@@ -234,7 +234,7 @@ Valores reais deste caso; cada obra é diferente.
 ```
 - Domingo à tarde: balanço da semana (seguidores, alcance) na reunião.
 
-- **20:00** · reel · Casa do Lago: abrimos mais uma casa de leilão (andando na obra, textos ANIMADOS) · doc `s2-dom-f20` · PRONTO (aprovado 11/11)
+- **14:00** · reel · TESTE DE FORMATO · ANDANDO NA OBRA + ANIMADO · Casa do Lago: abrimos mais uma casa de leilão · doc `s2-dom-f20` · PRONTO (aprovado 11/11)
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/lago-0-abrimos-a-casa.mp4
   - legenda:
 
