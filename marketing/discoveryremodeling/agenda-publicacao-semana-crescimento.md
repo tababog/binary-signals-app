@@ -234,5 +234,20 @@ Valores reais deste caso; cada obra é diferente.
 ```
 - Domingo à tarde: balanço da semana (seguidores, alcance) na reunião.
 
+- **20:00** · reel · Casa do Lago: abrimos mais uma casa de leilão (andando na obra, textos ANIMADOS) · doc `s2-dom-f20` · PRONTO (aprovado 11/11)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/lago-0-abrimos-a-casa.mp4
+  - legenda:
+
+```
+Abrimos mais uma casa de leilão 🔑
+
+Primeira olhada lá dentro: bastante sujeira (mas é sujeira leve) e um cheiro forte de umidade.
+
+Você encararia essa casa? SIM ou NÃO 👇
+
+Siga @discoveryremodeling: essa semana tem a história dela, parte por parte 🏠
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
+```
+
 ## Estoque (para trocar se o público cair)
 - qc-drywall-p1-v2 / p2-v2 (pergunta/resposta) · qc-gabinetes-p1 / p2 · casa-4-nova-york-v5

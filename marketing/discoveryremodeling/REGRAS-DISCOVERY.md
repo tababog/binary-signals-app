@@ -352,3 +352,10 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Fonte: pesquisa do espião de concorrentes em 11/11 (indicação qualitativa; o dado mais firme é o histórico do próprio perfil).
 - Recorte (ajuste de 11/11, script s3l/new/pa/segc.py, função fill_holes): os buracos que encostam na borda de baixo só viram "pessoa" nos pixels que NÃO têm cor de parede (comparação de cor a/b com a parede do topo). Assim não sobra parede debaixo dos cotovelos nem abre buraco na camiseta embaixo das mãos. Conferir sempre com zoom nos braços e nas mãos, além de cabeça e orelhas.
 - Corte de fala: conferir a ÚLTIMA palavra pela energia do áudio, não só pela transcrição (erro de 11/11: "casa" foi cortada no meio porque a transcrição inventou um "valeu" depois). Deixar 0,3 s de respiro depois da última sílaba.
+
+## Textos animados (aprovado pelo Alessandro em 11/11)
+- Ele pediu "animação diferente com as informações de texto: balões, informação entrando pela parede". Aprovou o estilo no Reel "Casa do Lago: abrimos mais uma casa" e escolheu a versão ANIMADA para ir ao ar.
+- Estilo aprovado (HyperFrames + GSAP, projeto de referência no scratchpad hf-lg8/index.html): etiqueta dourada caindo do topo; título entrando palavra por palavra; BALÃO de fala que estoura; CARIMBO que bate e treme; FAIXA escura com borda dourada entrando pela lateral (alternar esquerda e direita) com o nome do cômodo; etiquetas que estouram sobre os objetos; enquete SIM/NÃO pulsando no final; barra dourada de progresso no topo; flash branco na troca de cena.
+- Regras: um elemento principal por vez; nada sobre o rosto; nada abaixo de y=1560; sem emoji (a ferramenta não desenha); animar só os textos, sem mexer na imagem (o vídeo continua "cru"); sumir tudo antes da logo final.
+- Fluxo: montar a base com legenda karaokê e sem blocos (modelo.py com "blocks": []), renderizar a animação por cima (hyperframes render --sdr -w 2), recomprimir em crf 21. Cortar trechos de vídeo 4K um por vez (vários trims de uma vez estouram a memória).
+- Legendas: a palavra não fica na tela mais de 0,8 s depois de falada (ajuste no cap_low.py).
