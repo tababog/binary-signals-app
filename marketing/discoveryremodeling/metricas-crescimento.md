@@ -12,7 +12,8 @@ Atualizado pelo agente analista-crescimento todo dia. Sem valores em dinheiro.
 ## Diário (a partir de 09/11)
 | Data | Seguidores | Alcance | Reel 14h (casa · views · skip) | Reel 20h (casa · views · skip) | Nota |
 |---|---|---|---|---|---|
-| 09/11 | 0 | 700 | 953 · "Quanto pesa esse lixo? (p1)" · 239 views · 38% pulam | corte da live "ex-dono arrancou tudo" · 255 views · 59% pulam | 1º dia de 2 Reels; corte da live começa fraco ("eu tenho um outro caso…") e com parede lisa |
+| 10/11 | 0 (pode subir; a Windsor corrige depois) | 1.503 | recorte · "É golpe?" · 1.625 views · alcance 1.387 · 28% pulam · 24 curtidas · 3 compart. | 953 · "Lixo parte 2: 2 toneladas" · 1.083 views · alcance 937 · 25% pulam · 27,7 s assistidos em média | Melhor dia desde 03/11. "É golpe?" às 14h bateu todos os Reels de fala; a resposta do lixo às 20h foi o melhor Reel NOTURNO do período |
+| 09/11 | 2 (corrigido pela Windsor) | 700 | 953 · "Quanto pesa esse lixo? (p1)" · 239 views · 38% pulam | corte da live "ex-dono arrancou tudo" · 255 views · 59% pulam | 1º dia de 2 Reels; corte da live começa fraco ("eu tenho um outro caso…") e com parede lisa |
 | 08/11 | 7 (corrigido pela Windsor) | 387 | (sem Reel às 14h) | 22h: "Assessoria em 5 passos" (venda) · 41 views · 53% pulam | último dia da semana de vendas; live às 11h |
 
 ## Teste 953 × Casa do Lago (S3 em diante)
@@ -25,7 +26,8 @@ Preencher com 24 h e atualizar com 72 h. Skip = % que pulam nos primeiros segund
 
 | Data e hora | Reel | Formato | Views | Alcance | Skip | Tempo médio | Compart. | Salvos | Coment. | Seguidores do dia |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 10/11 14h | É golpe? | recorte | | | | | | | | |
+| 10/11 14h | É golpe? | recorte | 1.625 | 1.387 | 28% | 10,2 s | 3 | 1 | 1 | 0 (parcial) |
+| 10/11 20h | Lixo parte 2 (resposta) | obra + voz, resposta de pergunta | 1.083 | 937 | 25% | 27,7 s | 1 | 1 | 0 | 0 (parcial) |
 | 11/11 14h | Não precisa morar nos EUA | recorte | | | | | | | | |
 | 15/11 14h | Lago: abrimos a casa | andando na obra + textos animados | | | | | | | | |
 | 16/11 14h | PA: 3 tipos de leilão | recorte | | | | | | | | |
