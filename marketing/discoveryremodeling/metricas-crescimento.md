@@ -39,3 +39,20 @@ Preencher com 24 h e atualizar com 72 h. Skip = % que pulam nos primeiros segund
 ### Resumo por formato (para a reunião)
 | Formato | Nº de Reels | Skip médio | Alcance médio | Seguidores (média do dia) | Decisão |
 |---|---|---|---|---|---|
+
+## Teste da logo no final (regra de 11/11; resultado na reunião de 22/11)
+| Data e hora | Reel | Logo no fim? | Views | Skip | Tempo médio | Duração | Compart. | Seguidores do dia |
+|---|---|---|---|---|---|---|---|---|
+| 10/11 14h | É golpe? | COM | 1.625 | 28% | 10,2 s | 24,3 s | 3 | 0 (parcial) |
+| 11/11 14h | Não precisa morar | SEM | | | | 15,1 s | | |
+| 12/11 20h | Quem somos | COM | | | | 19,2 s | | |
+| 13/11 20h | Conselho da reforma | SEM | | | | 21,6 s | | |
+| 16/11 20h | Lago 1 cheiro | SEM | | | | 17,9 s | | |
+| 17/11 20h | Lago 2 história | COM | | | | 22,2 s | | |
+| 18/11 20h | Lago 3 tambores | SEM | | | | 17,5 s | | |
+| 19/11 20h | Lago 4 achados | COM | | | | 24,3 s | | |
+| 20/11 20h | Lago 5 parede | SEM | | | | 20,1 s | | |
+| 21/11 20h | Lago 6 mudroom | COM | | | | 19,7 s | | |
+| 22/11 20h | Lago 7 deck | SEM | | | | 15,0 s | | |
+
+Comparar pelo % do vídeo assistido (tempo médio ÷ duração), porque as durações são diferentes.

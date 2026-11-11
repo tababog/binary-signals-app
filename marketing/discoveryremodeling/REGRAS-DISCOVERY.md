@@ -376,3 +376,11 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - A pergunta para comentar continua; a ordem no fecho é: pergunta → motivo para seguir.
 - Nos roteiros novos, a última fala já vem com o motivo. Nos vídeos JÁ gravados sem essa fala, colocar o motivo como texto animado no final e na legenda, e pedir a ele um fecho de 3 s quando valer a pena.
 - Séries pergunta → resposta (dia 1 pergunta, dia 2 resposta) são o melhor motivo para seguir: a resposta do lixo teve 27,7 s de tempo médio e 25% de skip, mesmo às 20h.
+
+## Teste: logo no final x sem logo (aprovado pelo Alessandro em 11/11)
+- Hipótese: a tela branca da logo no fim avisa "acabou", atrapalha a repetição do Reel e dá cara de anúncio. Sem ela, o último quadro é o rosto dele com a pergunta ou o motivo para seguir.
+- Teste (metade com, metade sem), só cortando os 1,5 s finais; nada mais muda no vídeo:
+  - SEM logo: Não precisa morar (qua 11/11 14h) · Conselho da reforma (sex 13/11 20h) · Lago 1 cheiro (seg 16) · Lago 3 tambores (qua 18) · Lago 5 parede (sex 20) · Lago 7 deck (dom 22).
+  - COM logo: Quem somos (qui 12/11 20h) · Lago 2 história (ter 17) · Lago 4 achados (qui 19) · Lago 6 mudroom (sáb 21). Os 4 do teste de formato (dom 15, ter 17, qua 18, sáb 21, às 14h) ficam COM logo, para não misturar os dois testes.
+- A série do Lago é a comparação mais limpa: mesmo formato, mesmo horário (20h), dias alternados.
+- Medir: tempo médio assistido, skip, compartilhamentos e seguidores do dia. Resultado na reunião de domingo 22/11. Enquanto o teste roda, a regra de 29/10 ("todo vídeo termina com o logo-reveal") fica suspensa para os vídeos do grupo SEM logo.
