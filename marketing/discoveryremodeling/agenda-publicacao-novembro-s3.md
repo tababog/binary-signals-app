@@ -77,8 +77,8 @@ Siga @discoveryremodeling para ver a transformação 🏠
 ## Quarta 18/11
 - **08:00** · story · Casa do Lago: quanto lixo saiu daqui? · doc `s3-qua-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-qua.mp4
-- **14:00** · reel · TESTE DE FORMATO 2/3 · BOLINHA · A equipe da 953 · doc `s3-qua-f12`
-  - url: (em produção) prévia: previas/s4-953-11-equipe-bolinha-previa.mp4, aguardando aprovação
+- **14:00** · reel · TESTE DE FORMATO 2/3 · BOLINHA · A equipe da 953 · doc `s3-qua-f12` · PRONTO (aprovado 11/11)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-953-11-equipe-bolinha.mp4
   - legenda:
 
 ```
