@@ -11,3 +11,4 @@
 | Meia tela "tour da bagunça" | Casa do Lago | cozinha, sala, quartos |
 | Conselho da reforma | 953 | interior em obra (cozinha, sala, escada) |
 | Quem somos | 107 Elkland | quintal e lateral (vídeo c) |
+| 953 · Reel 9 (quanto tempo leva) | 953 | fundos da casa e quintal em obra (vídeo f953, 19 a 36 s) |
