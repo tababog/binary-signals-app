@@ -18,3 +18,22 @@ Atualizado pelo agente analista-crescimento todo dia. Sem valores em dinheiro.
 ## Teste 953 × Casa do Lago (S3 em diante)
 | Semana | 953: média views / skip / seguidores | Lago: média views / skip / seguidores | Vencedor |
 |---|---|---|---|
+
+
+## Teste de formatos (regra de 11/11: levar para a reunião de domingo)
+Preencher com 24 h e atualizar com 72 h. Skip = % que pulam nos primeiros segundos (menor é melhor).
+
+| Data e hora | Reel | Formato | Views | Alcance | Skip | Tempo médio | Compart. | Salvos | Coment. | Seguidores do dia |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 10/11 14h | É golpe? | recorte | | | | | | | | |
+| 11/11 14h | Não precisa morar nos EUA | recorte | | | | | | | | |
+| 15/11 20h | Lago: abrimos a casa | andando na obra + textos animados | | | | | | | | |
+| 16/11 14h | PA: 3 tipos de leilão | recorte | | | | | | | | |
+| 16 a 22/11 20h | Lago 1 a 7 | voz + rosto nas pontas | | | | | | | | |
+| 17/11 14h | 953: quanto tempo leva (Reel 9) | recorte | | | | | | | | |
+| 18/11 14h | 953: a equipe (Reel 11) | bolinha | | | | | | | | |
+| 21/11 14h | 953: próxima etapa (Reel 13) | tela dividida | | | | | | | | |
+
+### Resumo por formato (para a reunião)
+| Formato | Nº de Reels | Skip médio | Alcance médio | Seguidores (média do dia) | Decisão |
+|---|---|---|---|---|---|

@@ -359,3 +359,11 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Regras: um elemento principal por vez; nada sobre o rosto; nada abaixo de y=1560; sem emoji (a ferramenta não desenha); animar só os textos, sem mexer na imagem (o vídeo continua "cru"); sumir tudo antes da logo final.
 - Fluxo: montar a base com legenda karaokê e sem blocos (modelo.py com "blocks": []), renderizar a animação por cima (hyperframes render --sdr -w 2), recomprimir em crf 21. Cortar trechos de vídeo 4K um por vez (vários trims de uma vez estouram a memória).
 - Legendas: a palavra não fica na tela mais de 0,8 s depois de falada (ajuste no cap_low.py).
+
+## Teste de formatos e feedback na reunião (regra do Alessandro, 11/11)
+- Pedido dele: testar os formatos, medir "o que mais deu retenção, que tipo de vídeo", e levar o resultado para a reunião da semana, "para a gente manter e fazer mais vezes da mesma forma".
+- Todo Reel publicado ganha a etiqueta do FORMATO no placar (`metricas-crescimento.md`, tabela "Teste de formatos"): recorte · bolinha · tela dividida · andando na obra com textos animados · voz + rosto nas pontas (Lago) · tour/obra sem fala · outro.
+- Números por Reel: views, alcance, % que pulam (skip), tempo médio assistido, compartilhamentos, salvos, comentários e seguidores do dia. Ler com 24 h e de novo com 72 h.
+- Rodada 1 do teste: dom 15/11 20h andando na obra + animado (Lago "abrimos a casa") · ter 17/11 14h recorte (Reel 9) · qua 18/11 14h bolinha (Reel 11) · sáb 21/11 14h tela dividida (Reel 13). Aviso honesto a manter no relatório: assuntos e horários diferentes também pesam; por isso repetir cada formato pelo menos 2 vezes antes de concluir.
+- NA REUNIÃO DA SEMANA (domingo): levar 1 tabela "formato x resultado" (média de skip, alcance e seguidores por formato), dizer qual formato ganhou, qual perdeu, e a decisão proposta: manter e repetir o vencedor, ajustar ou cortar o pior. Máximo 8 linhas, com ✅/❌ para ele decidir.
+- Depois da decisão dele, a agenda da semana seguinte usa mais vezes o formato vencedor (sem deixar de variar).

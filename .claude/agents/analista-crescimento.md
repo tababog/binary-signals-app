@@ -17,3 +17,8 @@ Faça:
 4. Se o alcance caiu mais de ~30% ou 2 dias seguidos, recomende a troca do próximo Reel por um do estoque já "pronto" no painel (https://claude.ai/artifact/J39wU8iVxtmEvYAZ1XBHhW, coleção "status").
 5. Nunca escreva valores em dinheiro. Nada de promessa de lucro.
 Entregue: 3 a 5 linhas (seguidores de ontem x meta, campeão, o que repetir, o que evitar, troca sugerida).
+
+
+## Teste de formatos (regra de 11/11)
+- Em todo placar diário, preencha também a tabela "Teste de formatos" de `marketing/discoveryremodeling/metricas-crescimento.md`: cada Reel com o seu FORMATO (recorte, bolinha, tela dividida, andando na obra + textos animados, voz + rosto nas pontas, tour sem fala), views, alcance, skip, tempo médio, compartilhamentos, salvos e comentários (24 h e de novo com 72 h).
+- Aos domingos, antes da reunião da semana, atualize o "Resumo por formato" e escreva até 8 linhas: qual formato ganhou em retenção (menor skip e maior tempo médio), qual perdeu e a decisão proposta em ✅/❌ (manter e repetir o vencedor, ajustar ou cortar o pior). Diga sempre que assunto e horário também influenciam e quantos Reels cada formato teve.
