@@ -93,8 +93,20 @@ Qual desses 4 você não conferia? 👇 Salve para lembrar no próximo leilão.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
-- **20:00** · reel · Você sabia? Sofá cortado no meio (Casa do Lago) · doc `s3-qua-f20`
-  - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
+- **20:00** · reel · Nos EUA você paga para jogar lixo fora (tambores) (Casa do Lago) · doc `s3-qua-f20` · PRONTO (aprovado 10/11)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-3-tambores.mp4
+  - legenda:
+
+```
+Aqui nos Estados Unidos você PAGA para jogar lixo fora 🗑️
+
+E tem mais: não aceitaram os tambores inteiros. Tive que cortar na metade para poder descartar.
+
+No Brasil é assim também? Me conta 👇
+
+Siga @discoveryremodeling para ver a transformação 🏠
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
+```
 
 ## Quinta 19/11
 - **08:00** · story · Casa do Lago: dia de mutirão · doc `s3-qui-s8`
@@ -172,8 +184,20 @@ Qual cômodo você quer ver pronto primeiro? 👇 Siga para acompanhar até o fi
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
-- **20:00** · reel · Você sabe o que é um mudroom? (Casa do Lago) · doc `s3-sab-f20`
-  - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
+- **20:00** · reel · Você sabe o que é um mudroom? (Casa do Lago) · doc `s3-sab-f20` · PRONTO (aprovado 10/11)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-6-mudroom.mp4
+  - legenda:
+
+```
+Você sabe o que é um mudroom? 🚪
+
+É a entrada da casa onde se tira o sapato e o casaco. Toda casa americana quer um, e essa vai ganhar o dela.
+
+Você colocaria um na sua casa? Comenta 👇
+
+Siga @discoveryremodeling para ver a transformação 🏠
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
+```
 
 ## Domingo 22/11
 - **08:00** · story · Casa do Lago: próximo passo, telhado novo · doc `s3-dom-s8`
@@ -191,8 +215,20 @@ Siga para ver a casa pronta 👀
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
-- **20:00** · reel · Esse deck vai virar o lugar mais bonito (Casa do Lago) · doc `s3-dom-f20`
-  - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
+- **20:00** · reel · Esse deck vai virar o lugar mais bonito (Casa do Lago) · doc `s3-dom-f20` · PRONTO (aprovado 10/11)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-7-deck.mp4
+  - legenda:
+
+```
+Esse deck vai virar o lugar mais bonito da casa 🌅
+
+O piso vai ser trocado, mas o banco e o poste ficam.
+
+O que você faria nesse deck? Comenta 👇
+
+Siga @discoveryremodeling para ver a transformação 🏠
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
+```
 
 ## Estoque (para trocar se o público cair)
 - Trocados em 09/11 (foram para o estoque da S4): t1 "O que ninguém te conta" (1ym3GhFuVEIrte8cAkUSKyebdclGTpdtf) e t2 "Um dia na obra" (1HdnsrCUEIhanO0mwepYj4VpH4CZ3FxF2).
