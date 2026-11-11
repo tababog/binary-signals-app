@@ -199,6 +199,19 @@ Valores reais deste caso; cada obra é diferente.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
+- **20:00** · reel · Quanto vale esse trompete? (veio da segunda 16/11, que ficou com o PA) · doc `s2-sab-f20`
+  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1y2BAR2tnRvgeYcoRQN-O7n9XyYdUZupl
+  - legenda:
+
+```
+Achamos isso numa casa que compramos em leilão nos EUA 🎺 Novinho, dentro da caixa.
+
+Quanto você acha que vale esse trompete? Chuta aí 👇
+
+Siga @discoveryremodeling: toda casa de leilão guarda alguma surpresa 👀
+#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
+```
+
 ## Domingo 15/11
 - **14:00** · reel · Telhado (parte 2): US$ 6.000 + 3 dicas · doc `s2-dom-f12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s2-telhado-p2.mp4

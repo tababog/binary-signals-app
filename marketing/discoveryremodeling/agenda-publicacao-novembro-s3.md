@@ -7,17 +7,23 @@ Repositório público até 29/11 (decisão 09/11): as urls do GitHub valem até 
 ## Segunda 16/11
 - **08:00** · story · Casa do Lago: conheça a nossa outra casa · doc `s3-seg-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-seg.mp4
-- **14:00** · reel · Quanto vale esse trompete? · doc `s3-seg-f12`
-  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1y2BAR2tnRvgeYcoRQN-O7n9XyYdUZupl
+- **14:00** · reel · PA: os 3 tipos de leilão (Ale recortado, 506 ao fundo) · doc `s3-seg-f12` · PRONTO (aprovado 10/11; agendado aqui a pedido do Alessandro: melhor dia/horário)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-pa-3-leiloes.mp4
   - legenda:
 
 ```
-Achamos isso numa casa que compramos em leilão nos EUA 🎺 Novinho, dentro da caixa.
+📌 SALVE este post: os 3 tipos de leilão de casas na Pensilvânia 🇺🇸
 
-Quanto você acha que vale esse trompete? Chuta aí 👇
+1️⃣ Upset sale: mais barato, mas as dívidas antigas vêm junto com a casa, inclusive a hipoteca.
+2️⃣ Judicial sale: o tribunal limpa a maior parte das dívidas. Paga-se mais.
+3️⃣ Repository: as sobras que ninguém quis. Dá para fazer oferta direto ao condado.
 
-Siga @discoveryremodeling: toda casa de leilão guarda alguma surpresa 👀
-#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
+Qual dos três você compraria? Comenta 👇
+
+Manda para quem pensa em investir nos EUA. Siga @discoveryremodeling para mais 🏠
+
+Resumo geral: cada condado tem as suas regras. Confira sempre no site oficial.
+#taxdeed #leilaodeimoveis #imoveisnoseua #casasnoseua #brasileirosnoseua #discoveryremodeling
 ```
 
 - **20:00** · reel · O pior dessa casa era o CHEIRO (Casa do Lago) · doc `s3-seg-f20`
