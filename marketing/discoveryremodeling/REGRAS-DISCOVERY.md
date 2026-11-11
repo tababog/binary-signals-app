@@ -334,3 +334,11 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Logo final: SEMPRE o original de fundo BRANCO (logo-reveal-discovery-novo.mp4), 1,5 s. Não trocar a cor do fundo (corrige a regra anterior do verde).
 - Recorte APROVADO (10/11, exemplo "risco-menor"): Ale com 72% da largura, centralizado, apoiado embaixo. Método: segmentação em alta resolução por blocos (selfie_multiclass no quadro inteiro para achar a pessoa, depois em quadrados sobrepostos a partir do topo da cabeça), SEM recorte por cor (o recorte por cor comia a orelha e deixava mancha em cima da cabeça por causa da parede bege). Script: scratchpad s3l/new/pa/segc.py, montagem em s3l/modelo.py. Sempre conferir cabeça e orelhas em 5 quadros antes de mandar a prévia.
 - **SEM LOGO DURANTE O VÍDEO (10/11, pedido do Alessandro):** a partir de agora nenhum vídeo leva logomarca no canto durante a fala. Só o logo-reveal branco de 1,5 s no final. Vale para Reels e para tudo que for editado daqui para frente.
+
+## Avaliar TODA gravação do Alessandro (regra de 10/11)
+- Pedido dele: "avaliar todos os meus vídeos, porque eu quero entender qual é o ponto que eu tenho que chegar". Vale para toda gravação nova que ele subir (ganchos, falas, Reels), sem ele precisar pedir.
+- Formato: tabela por vídeo com nota de 0 a 10 e 1 linha de comentário; depois "o que está bom", "o que melhorar para chegar em 9 ou 10" e "precisa regravar?" (sim/não, e qual).
+- Critérios: 1) primeiro segundo (começa falando na hora, sem respirar antes); 2) ritmo (gancho de 2 a 4 s, sem pausa no meio da frase); 3) energia e variação da voz; 4) rosto e mãos acompanham a frase (nojo, surpresa, indignação; não sorrir em tudo); 5) texto (curto, concreto, com pergunta no fim, sem "mas/e/então" no começo); 6) técnica (1920p, parede clara, luz de frente, 1 passo para trás com um palmo de parede de cada lado dos ombros, som limpo).
+- Referência de 9,5: gancho do Reel 5 da S3 ("Essa parede eu não vou derrubar não, sabe por quê?"), gravado em 10/11.
+- Ser honesto: dizer que a avaliação é por transcrição, ritmo, variação de tom medida no áudio e quadros do vídeo (não por ouvido); nota baixa quando for o caso, sempre com o que fazer para subir.
+- Conferir o roteiro contra a IMAGEM antes de mandar para ele gravar (erro de 10/11: roteiro dizia "sofá" e o vídeo mostrava tambores).
