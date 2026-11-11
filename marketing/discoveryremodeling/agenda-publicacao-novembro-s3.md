@@ -44,18 +44,19 @@ Siga @discoveryremodeling para ver a transformação 🏠
 ## Terça 17/11
 - **08:00** · story · Casa do Lago: assim ela estava quando pegamos a chave · doc `s3-ter-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-ter.mp4
-- **14:00** · reel · 3 terrenos por US$ 50 cada · doc `s3-ter-f12`
-  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1pupoZR1Ypju5gs_l0kGnpFkXu1fDFbcZ
+- **14:00** · reel · TESTE DE FORMATO 1/3 · RECORTE · Quanto tempo leva reformar uma casa de leilão? (953) · doc `s3-ter-f12` · PRONTO (aprovado 11/11)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-953-9-tempo.mp4
   - legenda:
 
 ```
-3 terrenos por US$ 50 cada no leilão 😳 O da esquina hoje vale cerca de US$ 8 mil e os outros dois uns US$ 5 mil cada.
+Quanto tempo leva reformar uma casa de leilão? ⏳
 
-Você teria coragem de dar o lance? 👇 Amanhã eu conto o que eu confiro antes de qualquer lance.
+Do leilão até hoje já foram 5 meses. E o que mais demorou não foi a obra: foi a saída do antigo dono, negociada de forma amigável. Bom para os dois lados.
 
-Siga para ver 👀
-Valores deste caso; cada terreno é diferente.
-#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
+Você saberia como negociar? Comenta 👇
+
+Siga @discoveryremodeling para ver o resultado dessa casa 🏠
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
 
 - **20:00** · reel · Descobri por que abandonaram tudo (Casa do Lago) · doc `s3-ter-f20` · PRONTO (aprovado 10/11)
@@ -76,21 +77,19 @@ Siga @discoveryremodeling para ver a transformação 🏠
 ## Quarta 18/11
 - **08:00** · story · Casa do Lago: quanto lixo saiu daqui? · doc `s3-qua-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-qua.mp4
-- **14:00** · reel · Lance baixo não é negócio bom: 4 coisas que eu confiro · doc `s3-qua-f12`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-terrenos-p2.mp4
+- **14:00** · reel · TESTE DE FORMATO 2/3 · BOLINHA · A equipe da 953 · doc `s3-qua-f12`
+  - url: (em produção) prévia: previas/s4-953-11-equipe-bolinha-previa.mp4, aguardando aprovação
   - legenda:
 
 ```
-Terreno de US$ 50 me ensinou: lance baixo não quer dizer negócio bom.
+Ninguém reforma uma casa sozinho 👷
 
-Antes de qualquer lance eu confiro 4 coisas:
-1️⃣ Tem acesso pela rua?
-2️⃣ A prefeitura deixa construir?
-3️⃣ Fica em área de alagamento?
-4️⃣ Quanto de imposto e taxa vai ficar para você?
+Telhado, drywall, elétrica, encanador, gabinete, pintor, carpinteiro... E a equipe veio por indicação de amigos. Indicação vale ouro.
 
-Qual desses 4 você não conferia? 👇 Salve para lembrar no próximo leilão.
-#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
+Você já contratou alguém por indicação? Comenta 👇
+
+Siga @discoveryremodeling para ver a equipe em ação 🏠
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
 
 - **20:00** · reel · Nos EUA você paga para jogar lixo fora (tambores) (Casa do Lago) · doc `s3-qua-f20` · PRONTO (aprovado 10/11)
@@ -173,16 +172,9 @@ Siga @discoveryremodeling para ver a transformação 🏠
 ## Sábado 21/11
 - **08:00** · story · Casa do Lago: e o quintal? · doc `s3-sab-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-sab.mp4
-- **14:00** · reel · Drywall pronto (tour) · doc `s3-sab-f12`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-paredes-prontas.mp4
-  - legenda:
+- **14:00** · reel · TESTE DE FORMATO 3/3 · TELA DIVIDIDA · Próxima etapa da 953 · doc `s3-sab-f12`
+  - url: (em produção)
 
-```
-Lembra das paredes abertas da nossa casa de leilão? 🧱 Olha agora: drywall pronto em toda a casa ✅
-
-Qual cômodo você quer ver pronto primeiro? 👇 Siga para acompanhar até o fim.
-#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
-```
 
 - **20:00** · reel · Você sabe o que é um mudroom? (Casa do Lago) · doc `s3-sab-f20` · PRONTO (aprovado 10/11)
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-6-mudroom.mp4

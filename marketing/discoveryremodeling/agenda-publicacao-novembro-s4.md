@@ -71,9 +71,19 @@ Siga para ver 👀
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
-- **20:00** · reel · Quanto tempo leva reformar uma casa de leilão? (953) · doc `s4-qua-f20`
-  - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
+- **20:00** · reel · 3 terrenos por US$ 50 cada (veio da S3) · doc `s4-qua-f20`
+  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1pupoZR1Ypju5gs_l0kGnpFkXu1fDFbcZ
+  - legenda:
 
+```
+3 terrenos por US$ 50 cada no leilão 😳 O da esquina hoje vale cerca de US$ 8 mil e os outros dois uns US$ 5 mil cada.
+
+Você teria coragem de dar o lance? 👇 Amanhã eu conto o que eu confiro antes de qualquer lance.
+
+Siga para ver 👀
+Valores deste caso; cada terreno é diferente.
+#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
+```
 ## Quinta 26/11 (Thanksgiving nos EUA)
 - **08:00** · story · Saindo roupa + hoje a resposta · doc `s4-qui-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-qui.mp4
@@ -88,9 +98,22 @@ E olha o antes e depois da primeira limpeza na Casa do Lago 🧹 Você acertou? 
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
-- **20:00** · reel · O que mais encareceu a reforma da 953 · doc `s4-qui-f20`
-  - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
+- **20:00** · reel · Lance baixo não é negócio bom: 4 coisas que eu confiro (veio da S3) · doc `s4-qui-f20`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-terrenos-p2.mp4
+  - legenda:
 
+```
+Terreno de US$ 50 me ensinou: lance baixo não quer dizer negócio bom.
+
+Antes de qualquer lance eu confiro 4 coisas:
+1️⃣ Tem acesso pela rua?
+2️⃣ A prefeitura deixa construir?
+3️⃣ Fica em área de alagamento?
+4️⃣ Quanto de imposto e taxa vai ficar para você?
+
+Qual desses 4 você não conferia? 👇 Salve para lembrar no próximo leilão.
+#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
+```
 ## Sexta 27/11
 - **08:00** · story · Atualização da 953 por dentro · 20h a equipe · doc `s4-sex-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-sex.mp4
@@ -105,7 +128,7 @@ Você teria dado lance? 👇 Siga para aprender a olhar antes de comprar.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
-- **20:00** · reel · A equipe da 953 · doc `s4-sex-f20`
+- **20:00** · reel · O que mais encareceu a reforma da 953 · doc `s4-sex-f20`
   - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
 
 ## Sábado 28/11
@@ -139,8 +162,15 @@ Concorda? 👇 Siga para mais lições reais de leilão.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
-- **20:00** · reel · Próxima etapa da 953 · doc `s4-dom-f20`
-  - url: (em produção: gravação conforme cronograma-gravacoes-s3-s4.md)
+- **20:00** · reel · Drywall pronto (tour) (veio da S3) · doc `s4-dom-f20`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-paredes-prontas.mp4
+  - legenda:
 
+```
+Lembra das paredes abertas da nossa casa de leilão? 🧱 Olha agora: drywall pronto em toda a casa ✅
+
+Qual cômodo você quer ver pronto primeiro? 👇 Siga para acompanhar até o fim.
+#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
+```
 ## Estoque (para trocar se o público cair)
 - "O que ninguém te conta" (drive 1ym3GhFuVEIrte8cAkUSKyebdclGTpdtf) e "Um dia na obra" (1HdnsrCUEIhanO0mwepYj4VpH4CZ3FxF2). Gabinetes da 953 ficam para dezembro.
