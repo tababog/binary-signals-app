@@ -39,8 +39,8 @@ Me segue para ver a transformação dessa casa 🏡
 ## Terça 24/11
 - **08:00** · story · A sala + Você conhece o Section 8? · doc `s4-ter-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-ter.mp4
-- **14:00** · reel · Você conhecia o Section 8? (GRAVAR) · doc `s4-ter-f12`
-  - url: (a definir quando o Alessandro gravar)
+- **14:00** · reel · Você conhecia o Section 8? (Ale recortado, casa 501 ao fundo) · doc `s4-ter-f12` · PRONTO (aprovado 10/11)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-section8.mp4
   - legenda:
 
 ```
