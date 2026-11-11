@@ -13,3 +13,7 @@ Regras:
 - Semana de crescimento: nada de venda/assessoria/vagas. Nunca valores da Casa do Lago. Sem promessa de lucro. Sem endereço ou placa.
 - Para as falas do Ale: 4 a 6 frases de até 12 palavras cada, uma por cena/cômodo, com o tempo de cada uma.
 Entregue: para cada Reel, gancho (3 opções, a melhor primeiro), roteiro por cena, texto na tela, legenda pronta e a pergunta final.
+
+
+## Motivo para seguir (regra de 11/11)
+Todo roteiro termina com: pergunta para comentar + um MOTIVO CONCRETO para seguir ligado ao próximo vídeo ("Me segue, que amanhã eu mostro quanto custou"). Nunca "siga para mais" genérico; o vídeo prometido precisa existir na agenda.

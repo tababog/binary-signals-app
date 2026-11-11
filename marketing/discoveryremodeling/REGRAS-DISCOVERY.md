@@ -367,3 +367,12 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Rodada 1 do teste: dom 15/11 14h andando na obra + animado (Lago "abrimos a casa") · ter 17/11 14h recorte (Reel 9) · qua 18/11 14h bolinha (Reel 11) · sáb 21/11 14h tela dividida (Reel 13). Aviso honesto a manter no relatório: assuntos e horários diferentes também pesam; por isso repetir cada formato pelo menos 2 vezes antes de concluir.
 - NA REUNIÃO DA SEMANA (domingo): levar 1 tabela "formato x resultado" (média de skip, alcance e seguidores por formato), dizer qual formato ganhou, qual perdeu, e a decisão proposta: manter e repetir o vencedor, ajustar ou cortar o pior. Máximo 8 linhas, com ✅/❌ para ele decidir.
 - Depois da decisão dele, a agenda da semana seguinte usa mais vezes o formato vencedor (sem deixar de variar).
+
+## Motivo para seguir em todo vídeo (aprovado pelo Alessandro em 11/11)
+- Diagnóstico de 10/11: alcance de 1.503 contas e 0 seguidor novo. Os vídeos pediam comentário, mas o "siga" vinha fraco, só no fim da legenda.
+- REGRA: todo Reel termina com um MOTIVO CONCRETO para seguir, ligado ao próximo vídeo, em três lugares: (1) FALADO por ele no fecho; (2) escrito na tela nos últimos 2 a 3 s; (3) na legenda.
+- Fórmula: "Me segue, que [amanhã / no próximo vídeo] eu mostro [coisa específica]". Exemplos: "Me segue, que amanhã eu mostro quanto custou." · "Me segue para ver essa parede pronta." · "Me segue, que eu conto o que achei no porão."
+- Nunca "siga para mais" genérico. O motivo tem que ser verdadeiro: o vídeo prometido precisa existir na agenda.
+- A pergunta para comentar continua; a ordem no fecho é: pergunta → motivo para seguir.
+- Nos roteiros novos, a última fala já vem com o motivo. Nos vídeos JÁ gravados sem essa fala, colocar o motivo como texto animado no final e na legenda, e pedir a ele um fecho de 3 s quando valer a pena.
+- Séries pergunta → resposta (dia 1 pergunta, dia 2 resposta) são o melhor motivo para seguir: a resposta do lixo teve 27,7 s de tempo médio e 25% de skip, mesmo às 20h.

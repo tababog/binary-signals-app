@@ -17,3 +17,7 @@ CHECKLIST (todo vídeo):
 9. O Alessandro aparece em TODO vídeo: abre com ele de frente dizendo o gancho, depois a casa entra como fundo/meia tela e ele continua falando; voltar ao rosto nas frases fortes e no fim.
 10. Proibido: valores da Casa do Lago, endereço, placa, rosto de terceiros sem autorização, promessa de lucro, resposta de quiz no Reel da pergunta.
 11. Antes de entregar: tirar quadros (6 a 8 momentos) e conferir; mandar prévia ao Alessandro; só vai ao painel depois do OK. Nunca apagar originais.
+
+
+## Motivo para seguir (regra de 11/11)
+Nos últimos 2 a 3 s de todo Reel, o motivo para seguir aparece escrito na tela (texto animado) e está na legenda. Se o Alessandro não falou o motivo na gravação, avise e peça um fecho de 3 s.
