@@ -342,3 +342,11 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Referência de 9,5: gancho do Reel 5 da S3 ("Essa parede eu não vou derrubar não, sabe por quê?"), gravado em 10/11.
 - Ser honesto: dizer que a avaliação é por transcrição, ritmo, variação de tom medida no áudio e quadros do vídeo (não por ouvido); nota baixa quando for o caso, sempre com o que fazer para subir.
 - Conferir o roteiro contra a IMAGEM antes de mandar para ele gravar (erro de 10/11: roteiro dizia "sofá" e o vídeo mostrava tambores).
+
+## Variar o formato dos Reels (aprovado pelo Alessandro em 10/11 à noite)
+- Motivo: "senão daqui a pouco vai ficar muito igual". Não repetir o mesmo formato dois dias seguidos no mesmo horário. Ele continua aparecendo em TODO vídeo (rosto, bolinha, ou voz + mãos com rosto no gancho).
+- Formatos liberados: (1) recorte + casa de fundo (o atual); (2) ANDANDO E FALANDO NA OBRA, cru, selfie em tela cheia, SEM recorte (liberado em 10/11: o fundo é a casa de verdade; é o tipo do recorde do perfil); (3) BOLINHA: casa em tela cheia e ele num círculo no canto, com rosto cheio nos 2 primeiros segundos; (4) voz + rosto nas pontas (formato do Lago: gancho e fecho com ele, meio com a casa e a narração dele); (5) tela verde: ele pequeno embaixo apontando para foto, recibo ou site do condado; (6) resultado primeiro (1 s do "depois", volta para o "antes"); (7) resposta a comentário (comentário real no topo); (8) voto A ou B; (9) série numerada "Dia X".
+- Meia tela continua FORA dos vídeos de fala (pedido dele em 10/11); só em tour, se ele pedir.
+- Não fazer: tour sem rosto, texto institucional, anúncio de assessoria, mais de 1,5 s antes do gancho, abrir com logo ou fachada parada, fala parada por mais de 15 s sem trocar a imagem, acabamento com cara de IA.
+- Teste da S4 (953, 20h): Reel 10 telhado = tela verde sobre foto do telhado; Reel 11 equipe = bolinha; Reel 12 antes e agora = resultado primeiro; Reel 13 = recorte atual. Comparar no placar por formato.
+- Fonte: pesquisa do espião de concorrentes em 11/11 (indicação qualitativa; o dado mais firme é o histórico do próprio perfil).
