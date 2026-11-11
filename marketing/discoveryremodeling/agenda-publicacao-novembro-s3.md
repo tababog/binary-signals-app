@@ -20,7 +20,7 @@ Repositório público até 29/11 (decisão 09/11): as urls do GitHub valem até 
 
 Qual dos três você compraria? Comenta 👇
 
-Manda para quem pensa em investir nos EUA. Siga @discoveryremodeling para mais 🏠
+Manda para quem pensa em investir nos EUA. Me segue @discoveryremodeling: hoje às 20h eu mostro por dentro uma casa de leilão 👀
 
 Resumo geral: cada condado tem as suas regras. Confira sempre no site oficial.
 #taxdeed #leilaodeimoveis #imoveisnoseua #casasnoseua #brasileirosnoseua #discoveryremodeling
@@ -37,7 +37,7 @@ Num dos quartos, embaixo das roupas, tinha comida estragada.
 
 Você teria coragem de entrar? Comenta 👇
 
-Siga @discoveryremodeling para ver a transformação 🏠
+Me segue @discoveryremodeling: amanhã eu conto por que abandonaram tudo lá dentro 👀
 #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
 
@@ -70,7 +70,7 @@ Um inspetor me contou: os antigos moradores se separaram, abandonaram tudo e for
 
 Você imaginava isso? Comenta 👇
 
-Siga @discoveryremodeling para ver a transformação 🏠
+Me segue @discoveryremodeling: amanhã eu mostro o que NÃO deixaram a gente jogar fora 👀
 #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
 
@@ -103,7 +103,7 @@ E tem mais: não aceitaram os tambores inteiros. Tive que cortar na metade para 
 
 No Brasil é assim também? Me conta 👇
 
-Siga @discoveryremodeling para ver a transformação 🏠
+Me segue @discoveryremodeling: amanhã eu mostro o que a gente achou lá dentro 👀
 #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
 
@@ -134,7 +134,7 @@ Iogurteira e pipoqueira novas, na caixa. Uma corneta. E uma bicicleta novinha qu
 
 O que você faria com isso? Comenta 👇
 
-Siga @discoveryremodeling para ver a transformação 🏠
+Me segue @discoveryremodeling: amanhã tem a parede que eu NÃO vou derrubar 👀
 #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
 
@@ -165,7 +165,7 @@ Madeira rústica de verdade: é só lixar. E as portas também ficam.
 
 Você manteria ou trocaria? Comenta 👇
 
-Siga @discoveryremodeling para ver a transformação 🏠
+Me segue @discoveryremodeling: amanhã eu explico o que é um mudroom 👀
 #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
 
@@ -187,7 +187,7 @@ Você sabe o que é um mudroom? 🚪
 
 Você colocaria um na sua casa? Comenta 👇
 
-Siga @discoveryremodeling para ver a transformação 🏠
+Me segue @discoveryremodeling: amanhã tem o deck que vai virar o lugar mais bonito da casa 👀
 #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
 
@@ -218,7 +218,7 @@ O piso vai ser trocado, mas o banco e o poste ficam.
 
 O que você faria nesse deck? Comenta 👇
 
-Siga @discoveryremodeling para ver a transformação 🏠
+Me segue @discoveryremodeling para ver esse deck pronto 🏠
 #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
 

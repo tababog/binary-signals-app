@@ -106,7 +106,7 @@ Não precisa. Dá para acompanhar tudo de longe: visita, avaliação e reforma.
 
 Onde você mora hoje? Comenta 👇
 
-Siga @discoveryremodeling para mais 🏠
+Me segue @discoveryremodeling: hoje às 20h tem pergunta valendo. Quanto custa isolar um quartinho? 👀
 
 #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
@@ -141,7 +141,7 @@ Somos uma família brasileira que começou a comprar casas de leilão aqui nos E
 
 Você também pensa em ter uma casa aqui? Comenta 👇
 
-Siga @discoveryremodeling para mais 🏠
+Me segue @discoveryremodeling: amanhã eu conto o conselho que eu daria pra mim no começo 👀
 
 #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
