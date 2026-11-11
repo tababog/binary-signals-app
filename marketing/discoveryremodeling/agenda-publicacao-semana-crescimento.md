@@ -77,7 +77,7 @@ Siga @discoveryremodeling para mais 🏠
 ## Quarta 11/11
 - **08:00** · story · Leilões de dezembro (para salvar) · doc `s2-qua-s8`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1uCWgmurpcuHAHW2Nk7b2ZEFAWXY6nDvU
-- **14:00** · reel · Quanto custa isolar esse quartinho? (parte 1) · doc `s2-qua-f12`
+- **20:00** · reel · Quanto custa isolar esse quartinho? (parte 1) (invertido com o "Não precisa morar" a pedido do Alessandro, 10/11) · doc `s2-qua-f12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s2-isolamento-p1-ale.mp4
   - (09/11: 2ª gravação do Alessandro, no canto, quartinho atrás; 1ª fala cortada, mancha e ombro corrigidos)
   - legenda:
@@ -95,7 +95,7 @@ Valores reais deste caso; cada obra é diferente.
 - **14:00** · story · Caixinha: qual sua maior dúvida sobre leilão? · doc `s2-qua-s14`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1EKlAYMQ512fdJo0bB45qWsFV7HHpFaj4
 
-- **20:00** · reel · Você não precisa morar nos EUA (Ale recortado + casa ao fundo; trocado em 10/11 no lugar do corte da live) · doc `s2-qua-f20`
+- **14:00** · reel · Você não precisa morar nos EUA (Ale recortado + casa ao fundo; invertido para as 14h a pedido do Alessandro, 10/11) · doc `s2-qua-f20`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-nao-precisa-morar.mp4
   - legenda:
 
