@@ -12,7 +12,8 @@ Atualizado pelo agente analista-crescimento todo dia. Sem valores em dinheiro.
 ## Diário (a partir de 09/11)
 | Data | Seguidores | Alcance | Reel 14h (casa · views · skip) | Reel 20h (casa · views · skip) | Nota |
 |---|---|---|---|---|---|
-| 10/11 | 0 (pode subir; a Windsor corrige depois) | 1.503 | recorte · "É golpe?" · 1.625 views · alcance 1.387 · 28% pulam · 24 curtidas · 3 compart. | 953 · "Lixo parte 2: 2 toneladas" · 1.083 views · alcance 937 · 25% pulam · 27,7 s assistidos em média | Melhor dia desde 03/11. "É golpe?" às 14h bateu todos os Reels de fala; a resposta do lixo às 20h foi o melhor Reel NOTURNO do período |
+| 11/11 | 0 (pode subir; a Windsor corrige depois) | 1.842 | recorte · "Não precisa morar" · 209 views · alcance 167 · 61% pulam · 4,8 s | 953 · "Isolamento parte 1" (Ale no canto) · 184 views · alcance 151 · 73% pulam · 4,3 s | Os dois Reels do dia floparam; o alcance do perfil veio dos Reels de 10/11, que seguiram crescendo ("É golpe?" 1.695, "Lixo p2" 1.463). Aberturas fracas: afirmação que acalma e "paredes abertas" sem pergunta no 1º segundo |
+| 10/11 | 7 (corrigido pela Windsor) | 1.503 | recorte · "É golpe?" · 1.625 views · alcance 1.387 · 28% pulam · 24 curtidas · 3 compart. | 953 · "Lixo parte 2: 2 toneladas" · 1.083 views · alcance 937 · 25% pulam · 27,7 s assistidos em média | Melhor dia desde 03/11. "É golpe?" às 14h bateu todos os Reels de fala; a resposta do lixo às 20h foi o melhor Reel NOTURNO do período |
 | 09/11 | 2 (corrigido pela Windsor) | 700 | 953 · "Quanto pesa esse lixo? (p1)" · 239 views · 38% pulam | corte da live "ex-dono arrancou tudo" · 255 views · 59% pulam | 1º dia de 2 Reels; corte da live começa fraco ("eu tenho um outro caso…") e com parede lisa |
 | 08/11 | 7 (corrigido pela Windsor) | 387 | (sem Reel às 14h) | 22h: "Assessoria em 5 passos" (venda) · 41 views · 53% pulam | último dia da semana de vendas; live às 11h |
 
@@ -30,7 +31,8 @@ Preencher com 24 h e atualizar com 72 h. Skip = % que pulam nos primeiros segund
 |---|---|---|---|---|---|---|---|---|---|---|
 | 10/11 14h | É golpe? | recorte | 1.625 | 1.387 | 28% | 10,2 s | 3 | 1 | 1 | 0 (parcial) |
 | 10/11 20h | Lixo parte 2 (resposta) | obra + voz, resposta de pergunta | 1.083 | 937 | 25% | 27,7 s | 1 | 1 | 0 | 0 (parcial) |
-| 11/11 14h | Não precisa morar nos EUA | recorte | 177 | 141 | 59% | 4,6 s | 0 | 0 | 0 | 0 (parcial, 7 h no ar) |
+| 11/11 14h | Não precisa morar nos EUA | recorte | 209 | 167 | 61% | 4,8 s | 1 | 0 | 0 | 0 (parcial) |
+| 11/11 20h | Isolamento parte 1 (pergunta) | Ale no canto + obra | 184 | 151 | 73% | 4,3 s | 1 | 0 | 0 | 0 (parcial) |
 | 15/11 14h | Lago: abrimos a casa | andando na obra + textos animados | | | | | | | | |
 | 12/11 14h | PA: 3 tipos de leilão | recorte | | | | | | | | |
 | 16/11 14h | Comprar barato não é lucro | recorte | | | | | | | | |
@@ -47,7 +49,7 @@ Preencher com 24 h e atualizar com 72 h. Skip = % que pulam nos primeiros segund
 | Data e hora | Reel | Logo no fim? | Views | Skip | Tempo médio | Duração | Compart. | Seguidores do dia |
 |---|---|---|---|---|---|---|---|---|
 | 10/11 14h | É golpe? | COM | 1.625 | 28% | 10,2 s | 24,3 s | 3 | 0 (parcial) |
-| 11/11 14h | Não precisa morar | SEM | 177 | 59% | 4,6 s | 15,1 s | 0 | 0 (parcial) |
+| 11/11 14h | Não precisa morar | SEM | 209 | 61% | 4,8 s | 15,1 s | 1 | 0 (parcial) |
 | 12/11 14h | PA: 3 leilões (entrou no lugar do Quem somos) | COM | | | | 41,1 s | | |
 | 13/11 20h | Conselho da reforma | SEM | | | | 21,6 s | | |
 | 16/11 20h | Lago 1 cheiro | SEM | | | | 17,9 s | | |
