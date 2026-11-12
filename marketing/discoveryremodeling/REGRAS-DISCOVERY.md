@@ -392,3 +392,12 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Não repetir o mesmo assunto em menos de 3 semanas (o "não precisa morar" já tinha saído em 02/11).
 - Não tirar conclusão de 1 dia: ontem eu disse que "fala + recorte + tarde" era o caminho e o dia seguinte desmentiu. No relatório, separar sempre formato, horário e ABERTURA.
 - Perguntas para comentar: dar opções prontas (1, 2 ou 3; SIM ou NÃO; A, B ou C). Voto fácil trouxe 6 comentários; pergunta aberta, zero (ouvidor de 11/11).
+
+## 1 Reel por dia e meta realista (decisão do Alessandro em 12/11)
+- Substitui "2 Reels por dia" e "50 seguidores por dia". Motivo: dobrar os posts não dobrou o crescimento; os da noite quase sempre foram mal; e 50/dia exigiria ~10 mil views por dia (a taxa do perfil é ~5 seguidores por 1.000 views).
+- AGORA: 1 Reel forte por dia, às 14h de Brasília, os melhores primeiro. Story das 8h continua. Sem Reel às 20h (a rotina só publica o que estiver na agenda).
+- Meta até 29/11: média de 10 seguidores novos por dia e pelo menos 1 vídeo acima de 3 mil views por semana.
+- Só entra na agenda vídeo com abertura forte (regra "A primeira frase decide"). Vídeo fraco NÃO é apagado: vai para `fila-e-estoque-reels.md` (fila de dezembro ou estoque).
+- Pergunta num dia, resposta no dia seguinte, sempre às 14h.
+- Balanço em 29/11 com três números: seguidores novos por dia (média), quantas pessoas chamaram no Direct ou fizeram pergunta séria, e horas por semana que isso custa a ele. Se a média for de 2 ou 3 por dia e ninguém chamar, dizer com honestidade que não está valendo nesse formato e propor outro caminho.
+- Gravações: prioridade só para "Essa casa a gente NÃO compraria" e para vídeos andando na obra mostrando um problema real. O resto pode esperar; há conteúdo pronto até ~9/12.

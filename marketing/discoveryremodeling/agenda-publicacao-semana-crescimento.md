@@ -150,45 +150,8 @@ Resumo geral: cada condado tem as suas regras. Confira sempre no site oficial.
 ```
 
 ## Sexta 13/11
-- **14:00** · reel · Elkland: antes e depois · doc `s2-sex-f12`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-vendas/aprovados/elkland-reel-v4.mp4
-  - legenda:
-
-```
-Essa casa foi a leilão… olha como ela ficou depois da reforma 🏡✨
-
-Qual foi a parte que mais mudou? 👇
-
-Siga @discoveryremodeling para ver as próximas obras 👀
-
-Valores estimados deste caso. Resultados passados não garantem resultados futuros. Todo investimento envolve risco.
-#leilaodeimoveis #taxdeed #imoveisnoseua #brasileirosnoseua #casasnoseua #antesedepois
-```
-- **14:00** · story · Caixinha: pergunte o que quiser sobre a obra · doc `s2-sex-s14`
-  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=11JpvqREkF00Fv2pG5HaMdxQt_yFK0tlF
-
-- **20:00** · reel · O conselho que eu daria pra mim no começo (Ale recortado + casa ao fundo; trocado em 10/11 no lugar do corte da live) · doc `s2-sex-f20`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-conselho-reforma.mp4
-  - legenda:
-
-```
-O conselho que eu daria pra mim mesmo no começo 🏠
-
-Nunca dar um lance sem ter visto o tamanho da reforma. Foto não mostra telhado, porão nem encanamento. Eu aprendi isso do jeito caro.
-
-Você daria um lance só olhando foto? Comenta 👇
-
-Siga @discoveryremodeling: no próximo vídeo eu mostro o que olhar antes do lance.
-
-#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
-```
-
-## Sábado 14/11
-- **08:00** · story · Enquete: telhado novo, quanto você chuta? · doc `s2-sab-s8`
-  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=15-YFDDo8NHM6MeT85Kg26mm1PUpfDE9A
-- **14:00** · reel · Quanto custou o telhado? (parte 1) · doc `s2-sab-f12`
+- **14:00** · reel · Quanto custou o telhado? (parte 1) [pergunta com A/B/C] · doc `s2-sex-f12` · PRONTO
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s2-telhado-p1-ale.mp4
-  - (09/11: versão com o Alessandro no canto + telhado em tela cheia com A/B/C, aprovada por ele)
   - legenda:
 
 ```
@@ -202,21 +165,13 @@ Valores reais deste caso; cada obra é diferente.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
-- **20:00** · reel · Quanto vale esse trompete? (veio da segunda 16/11, que ficou com o PA) · doc `s2-sab-f20`
-  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1y2BAR2tnRvgeYcoRQN-O7n9XyYdUZupl
-  - legenda:
+- **14:00** · story · Caixinha: pergunte o que quiser sobre a obra · doc `s2-sex-s14`
+  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=11JpvqREkF00Fv2pG5HaMdxQt_yFK0tlF
 
-```
-Achamos isso numa casa que compramos em leilão nos EUA 🎺 Novinho, dentro da caixa.
-
-Quanto você acha que vale esse trompete? Chuta aí 👇
-
-Siga @discoveryremodeling: toda casa de leilão guarda alguma surpresa 👀
-#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
-```
-
-## Domingo 15/11
-- **20:00** · reel · Telhado (parte 2): US$ 6.000 + 3 dicas (invertido com o Lago animado em 11/11, para o teste de formato ficar justo) · doc `s2-dom-f12`
+## Sábado 14/11
+- **08:00** · story · Enquete: telhado novo, quanto você chuta? · doc `s2-sab-s8`
+  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=15-YFDDo8NHM6MeT85Kg26mm1PUpfDE9A
+- **14:00** · reel · Telhado (parte 2): US$ 6.000 + 3 dicas [resposta] · doc `s2-sab-f12` · PRONTO
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s2-telhado-p2.mp4
   - legenda:
 
@@ -235,9 +190,9 @@ Qual dessas você não fazia? 👇 Siga para mais obras reais 👀
 Valores reais deste caso; cada obra é diferente.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
-- Domingo à tarde: balanço da semana (seguidores, alcance) na reunião.
 
-- **14:00** · reel · TESTE DE FORMATO · ANDANDO NA OBRA + ANIMADO · Casa do Lago: abrimos mais uma casa de leilão · doc `s2-dom-f20` · PRONTO (aprovado 11/11)
+## Domingo 15/11
+- **14:00** · reel · TESTE DE FORMATO · ANDANDO NA OBRA + ANIMADO · Casa do Lago: abrimos mais uma casa de leilão [TESTE formato: andando na obra + animado] · doc `s2-dom-f12` · PRONTO
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/lago-0-abrimos-a-casa.mp4
   - legenda:
 

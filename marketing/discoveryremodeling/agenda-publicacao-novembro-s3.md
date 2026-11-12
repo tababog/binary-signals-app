@@ -7,22 +7,7 @@ Repositório público até 29/11 (decisão 09/11): as urls do GitHub valem até 
 ## Segunda 16/11
 - **08:00** · story · Casa do Lago: conheça a nossa outra casa · doc `s3-seg-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-seg.mp4
-- **14:00** · reel · Comprar barato não é lucro (Ale recortado, obra de Elkland ao fundo; veio do dom 29/11) · doc `s3-seg-f12` · PRONTO (aprovado 10/11)
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-barato-nao-e-lucro.mp4
-  - legenda:
-
-```
-Comprar casa barata no leilão NÃO é lucro 💸
-
-O que decide é a conta antes do lance: reforma, impostos, tempo de obra e uma reserva para as surpresas.
-
-Você concorda? Comenta SIM ou NÃO 👇
-
-Me segue @discoveryremodeling: hoje às 20h eu mostro por dentro uma casa de leilão 👀
-#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
-```
-
-- **20:00** · reel · O pior dessa casa era o CHEIRO (Casa do Lago) · doc `s3-seg-f20` · PRONTO (aprovado 10/11)
+- **14:00** · reel · O pior dessa casa era o CHEIRO (Casa do Lago) [Lago 1 · sem logo] · doc `s3-seg-f12` · PRONTO
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-1-cheiro.mp4
   - legenda:
 
@@ -40,22 +25,7 @@ Me segue @discoveryremodeling: amanhã eu conto por que abandonaram tudo lá den
 ## Terça 17/11
 - **08:00** · story · Casa do Lago: assim ela estava quando pegamos a chave · doc `s3-ter-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-ter.mp4
-- **14:00** · reel · TESTE DE FORMATO 1/3 · RECORTE · Quanto tempo leva reformar uma casa de leilão? (953) · doc `s3-ter-f12` · PRONTO (aprovado 11/11)
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-953-9-tempo.mp4
-  - legenda:
-
-```
-Quanto tempo leva reformar uma casa de leilão? ⏳
-
-Do leilão até hoje já foram 5 meses. E o que mais demorou não foi a obra: foi a saída do antigo dono, negociada de forma amigável. Bom para os dois lados.
-
-Você saberia como negociar? Comenta 👇
-
-Siga @discoveryremodeling para ver o resultado dessa casa 🏠
-#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
-```
-
-- **20:00** · reel · Descobri por que abandonaram tudo (Casa do Lago) · doc `s3-ter-f20` · PRONTO (aprovado 10/11)
+- **14:00** · reel · Descobri por que abandonaram tudo (Casa do Lago) [Lago 2 · com logo] · doc `s3-ter-f12` · PRONTO
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-2-historia.mp4
   - legenda:
 
@@ -73,22 +43,7 @@ Me segue @discoveryremodeling: amanhã eu mostro o que NÃO deixaram a gente jog
 ## Quarta 18/11
 - **08:00** · story · Casa do Lago: quanto lixo saiu daqui? · doc `s3-qua-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-qua.mp4
-- **14:00** · reel · TESTE DE FORMATO 2/3 · BOLINHA · A equipe da 953 · doc `s3-qua-f12` · PRONTO (aprovado 11/11)
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-953-11-equipe-bolinha.mp4
-  - legenda:
-
-```
-Ninguém reforma uma casa sozinho 👷
-
-Telhado, drywall, elétrica, encanador, gabinete, pintor, carpinteiro... E a equipe veio por indicação de amigos. Indicação vale ouro.
-
-Você já contratou alguém por indicação? Comenta 👇
-
-Siga @discoveryremodeling para ver a equipe em ação 🏠
-#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
-```
-
-- **20:00** · reel · Nos EUA você paga para jogar lixo fora (tambores) (Casa do Lago) · doc `s3-qua-f20` · PRONTO (aprovado 10/11)
+- **14:00** · reel · Nos EUA você paga para jogar lixo fora (tambores) (Casa do Lago) [Lago 3 · sem logo] · doc `s3-qua-f12` · PRONTO
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-3-tambores.mp4
   - legenda:
 
@@ -106,20 +61,7 @@ Me segue @discoveryremodeling: amanhã eu mostro o que a gente achou lá dentro 
 ## Quinta 19/11
 - **08:00** · story · Casa do Lago: dia de mutirão · doc `s3-qui-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-qui.mp4
-- **14:00** · reel · Quanto custa o drywall desse hallway? (pergunta) · doc `s3-qui-f12`
-  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1s1AKCrdqRhhtSuUbirrVWz-RsgnNA434
-  - legenda:
-
-```
-Tiramos todo o drywall desse hallway por causa de infiltração de água 💧
-
-Quanto você acha que custa colocar drywall novo aqui, com material e mão de obra? Chuta aí 👇 A resposta sai amanhã.
-
-Siga @discoveryremodeling para ver 👀
-#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
-```
-
-- **20:00** · reel · Olha o que achamos numa casa de leilão (Casa do Lago) · doc `s3-qui-f20` · PRONTO (aprovado 10/11)
+- **14:00** · reel · Olha o que achamos numa casa de leilão (Casa do Lago) [Lago 4 · com logo] · doc `s3-qui-f12` · PRONTO
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-4-achados.mp4
   - legenda:
 
@@ -137,20 +79,7 @@ Me segue @discoveryremodeling: amanhã tem a parede que eu NÃO vou derrubar �
 ## Sexta 20/11
 - **08:00** · story · Casa do Lago: depois da primeira limpeza · doc `s3-sex-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-sex.mp4
-- **14:00** · reel · Drywall (resposta): US$ 1.400 · doc `s3-sex-f12`
-  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1O2WsH66N7j8dikyquqhmHjlxbJJBY2X1
-  - legenda:
-
-```
-Resposta: US$ 1.400 para o drywall do hallway, material e mão de obra 💵
-
-Você chegou perto? 👇 Qual cômodo você quer ver o custo depois?
-
-Valor real deste caso. Cada obra é diferente.
-#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
-```
-
-- **20:00** · reel · Essa parede eu NÃO vou derrubar (Casa do Lago) · doc `s3-sex-f20` · PRONTO (aprovado 10/11)
+- **14:00** · reel · Essa parede eu NÃO vou derrubar (Casa do Lago) [Lago 5 · sem logo] · doc `s3-sex-f12` · PRONTO
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-5-parede.mp4
   - legenda:
 
@@ -161,61 +90,45 @@ Madeira rústica de verdade: é só lixar. E as portas também ficam.
 
 Você manteria ou trocaria? Comenta 👇
 
-Me segue @discoveryremodeling: amanhã eu explico o que é um mudroom 👀
+Me segue @discoveryremodeling: amanhã tem 3 terrenos por US$ 50 cada no leilão 👀
 #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
 
 ## Sábado 21/11
 - **08:00** · story · Casa do Lago: e o quintal? · doc `s3-sab-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-sab.mp4
-- **14:00** · reel · TESTE DE FORMATO 3/3 · TELA DIVIDIDA · Próxima etapa da 953 · doc `s3-sab-f12`
-  - url: (em produção)
-
-
-- **20:00** · reel · Você sabe o que é um mudroom? (Casa do Lago) · doc `s3-sab-f20` · PRONTO (aprovado 10/11)
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-6-mudroom.mp4
+- **14:00** · reel · 3 terrenos por US$ 50 cada [pergunta] · doc `s3-sab-f12` · PRONTO
+  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1pupoZR1Ypju5gs_l0kGnpFkXu1fDFbcZ
   - legenda:
 
 ```
-Você sabe o que é um mudroom? 🚪
+3 terrenos por US$ 50 cada no leilão 😳 O da esquina hoje vale cerca de US$ 8 mil e os outros dois uns US$ 5 mil cada.
 
-É a entrada da casa onde se tira o sapato e o casaco. Toda casa americana quer um, e essa vai ganhar o dela.
+Você teria coragem de dar o lance? 👇 Amanhã eu conto o que eu confiro antes de qualquer lance.
 
-Você colocaria um na sua casa? Comenta 👇
-
-Me segue @discoveryremodeling: amanhã tem o deck que vai virar o lugar mais bonito da casa 👀
-#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
+Siga para ver 👀
+Valores deste caso; cada terreno é diferente.
+#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
 ## Domingo 22/11
 - **08:00** · story · Casa do Lago: próximo passo, telhado novo · doc `s3-dom-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-dom.mp4
-- **14:00** · reel · Telhado novo: antes e depois · doc `s3-dom-f12`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-telhado-pronto.mp4
+- **14:00** · reel · Lance baixo não é negócio bom: 4 coisas que eu confiro [resposta] · doc `s3-dom-f12` · PRONTO
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-terrenos-p2.mp4
   - legenda:
 
 ```
-Antes: telhado velho saindo. Depois: telhado novo pronto 🏠✨
+Terreno de US$ 50 me ensinou: lance baixo não quer dizer negócio bom.
 
-Essa é a casa que compramos em leilão em Elmira, NY. Qual você prefere: antes ou depois? 👇
+Antes de qualquer lance eu confiro 4 coisas:
+1️⃣ Tem acesso pela rua?
+2️⃣ A prefeitura deixa construir?
+3️⃣ Fica em área de alagamento?
+4️⃣ Quanto de imposto e taxa vai ficar para você?
 
-Siga para ver a casa pronta 👀
+Qual desses 4 você não conferia? 👇 Salve para lembrar no próximo leilão.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
-```
-
-- **20:00** · reel · Esse deck vai virar o lugar mais bonito (Casa do Lago) · doc `s3-dom-f20` · PRONTO (aprovado 10/11)
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-7-deck.mp4
-  - legenda:
-
-```
-Esse deck vai virar o lugar mais bonito da casa 🌅
-
-O piso vai ser trocado, mas o banco e o poste ficam.
-
-O que você faria nesse deck? Comenta 👇
-
-Me segue @discoveryremodeling para ver esse deck pronto 🏠
-#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
 
 ## Estoque (para trocar se o público cair)
