@@ -21,6 +21,8 @@ Atualizado pelo agente analista-crescimento todo dia. Sem valores em dinheiro.
 |---|---|---|---|
 
 
+> **Atualização de 12/11 (agenda de 1 Reel por dia às 14h):** as datas das duas tabelas de teste mudaram. Formatos: animado dom 15/11 · recorte (Reel 9) sáb 28/11 · bolinha (Reel 11) dom 29/11 · tela dividida (Reel 13) em dezembro. Logo no final, série do Lago agora às 14h: SEM logo seg 16 (cheiro), qua 18 (tambores), sex 20 (parede); COM logo ter 17 (história), qui 19 (achados). Preencher as linhas pelo nome do Reel, não pela data antiga. Meta nova: média de 10 seguidores por dia até 29/11.
+
 ## Teste de formatos (regra de 11/11: levar para a reunião de domingo)
 Preencher com 24 h e atualizar com 72 h. Skip = % que pulam nos primeiros segundos (menor é melhor).
 
