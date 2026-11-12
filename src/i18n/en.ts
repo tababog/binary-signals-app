@@ -902,5 +902,17 @@ const en: Record<string, string> = {
   "A IA não conseguiu escrever o escopo. Tente de novo ou escreva à mão.": "The AI couldn't write the scope. Try again or write it by hand.",
   "Escopo escrito. Confira, corrija se precisar e salve a opção.": "Scope written. Review it, fix it if needed and save the option.",
   "O cliente ainda não vê o escopo de: {opcoes}. Preencha o escopo dessas opções e salve: o link mostra sozinho quando o cliente abrir.": "The client doesn't see the scope of: {opcoes} yet. Fill in the scope of these options and save: the link shows it on its own when the client opens it.",
+  "Lançamento não encontrado.": "Entry not found.",
+  "Editar despesa": "Edit expense",
+  "Editar pagamento do cliente": "Edit client payment",
+  "Lançado por {nome} em {data} · {valor}": "Entered by {nome} on {data} · {valor}",
+  "Ver a foto do recibo salva": "See the saved receipt photo",
+  "Tirar a foto deste lançamento": "Remove the photo from this entry",
+  "Este lançamento não tem foto do recibo.": "This entry has no receipt photo.",
+  "Trocar a foto (opcional)": "Replace the photo (optional)",
+  "Colocar a foto do recibo (opcional)": "Add the receipt photo (optional)",
+  "Excluir lançamento": "Delete entry",
+  "Use quando o lançamento foi feito por engano ou em duplicidade. O valor sai do caixa da obra.": "Use it when the entry was made by mistake or twice. The amount leaves the job's cash flow.",
+  "Ver recibo": "View receipt",
 };
 export default en;

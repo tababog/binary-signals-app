@@ -164,12 +164,62 @@ export async function lancarRecebimento(obraId: string, _e: EstadoForm, form: Fo
   redirect(`/obras/${obraId}?aba=caixa`);
 }
 
-export async function excluirLancamento(id: string) {
+/** Corrige um lançamento do caixa da obra (despesa ou pagamento do cliente): valor, data, descrição, categoria,
+ * fornecedor, forma de pagamento e a foto do recibo (trocar ou tirar). */
+export async function editarLancamento(id: string, _e: EstadoForm, form: FormData): Promise<EstadoForm> {
+  await exigirAdmin();
+  const t = getT();
+  const lanc = await db.lancamento.findUnique({ where: { id } });
+  if (!lanc) return { erro: t("Lançamento não encontrado.") };
+  const valorCent = paraCentavos(form.get("valor"));
+  if (valorCent <= 0) return { erro: t("Informe o valor.") };
+  const dataLanc = lerData(form.get("data")) ?? lanc.data;
+  const despesa = lanc.tipo === "SAIDA";
+  const descricao = String(form.get("descricao") ?? "").trim() || (despesa ? "" : "Pagamento do cliente");
+  if (!descricao) return { erro: t("Descreva a despesa (ex.: 20 sacos de cimento).") };
+  const categoria = despesa ? String(form.get("categoria") ?? "") : lanc.categoria;
+  if (despesa && !(categoria in CATEGORIAS_DESPESA)) return { erro: t("Escolha a categoria.") };
+
+  let fornecedorId = despesa ? texto(form.get("fornecedorId")) : null;
+  if (fornecedorId === "NOVO_FORNECEDOR" || fornecedorId === "NOVO_SUBCONTRATADO") {
+    const nome = String(form.get("fornecedorNome") ?? "").trim();
+    if (!nome) return { erro: t("Informe o nome do fornecedor ou subcontratado novo.") };
+    const novo = await db.fornecedor.create({ data: { nome, tipo: fornecedorId === "NOVO_SUBCONTRATADO" ? "SUBCONTRATADO" : "FORNECEDOR" } });
+    fornecedorId = novo.id;
+  }
+
+  // Foto: uma nova substitui a antiga; "tirar a foto" deixa sem. A foto de um recibo de funcionário não é apagada.
+  let comprovante = lanc.comprovante;
+  let novaFoto: string | null = null;
+  try {
+    novaFoto = await salvarComprovante(form.get("comprovante"));
+  } catch (e) {
+    return { erro: t((e as Error).message) };
+  }
+  if (novaFoto) comprovante = novaFoto;
+  else if (form.get("tirarFoto") === "on") comprovante = null;
+
+  await db.lancamento.update({
+    where: { id },
+    data: { valorCent, data: dataLanc, descricao, categoria, fornecedorId, formaPagamento: texto(form.get("formaPagamento")), comprovante },
+  });
+  if (lanc.comprovante && comprovante !== lanc.comprovante) {
+    const deRecibo = await db.reciboFuncionario.count({ where: { arquivo: lanc.comprovante } });
+    if (!deRecibo) await apagarComprovante(lanc.comprovante);
+  }
+  revalidatePath("/fornecedores");
+  atualizar(lanc.obraId);
+  redirect(`/obras/${lanc.obraId}?aba=caixa`);
+}
+
+export async function excluirLancamento(id: string, voltarParaCaixa = false) {
   await exigirAdmin();
   const lanc = await db.lancamento.delete({ where: { id } });
   // Despesa que veio do recibo de um funcionário: o recibo volta para "a lançar" e a foto fica guardada
   const recibos = await db.reciboFuncionario.updateMany({ where: { lancamentoId: id }, data: { lancamentoId: null, lancadoEm: null } });
   if (!recibos.count) await apagarComprovante(lanc.comprovante);
   revalidatePath("/");
+  revalidatePath("/fornecedores");
   atualizar(lanc.obraId);
+  if (voltarParaCaixa) redirect(`/obras/${lanc.obraId}?aba=caixa`);
 }
