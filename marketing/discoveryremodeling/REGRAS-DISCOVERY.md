@@ -384,3 +384,11 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
   - COM logo: Quem somos (qui 12/11 20h) · Lago 2 história (ter 17) · Lago 4 achados (qui 19) · Lago 6 mudroom (sáb 21). Os 4 do teste de formato (dom 15, ter 17, qua 18, sáb 21, às 14h) ficam COM logo, para não misturar os dois testes.
 - A série do Lago é a comparação mais limpa: mesmo formato, mesmo horário (20h), dias alternados.
 - Medir: tempo médio assistido, skip, compartilhamentos e seguidores do dia. Resultado na reunião de domingo 22/11. Enquanto o teste roda, a regra de 29/10 ("todo vídeo termina com o logo-reveal") fica suspensa para os vídeos do grupo SEM logo.
+
+## A primeira frase decide (lição de 11/11, aprovada pelo Alessandro em 12/11)
+- Fato: "É golpe?" (10/11, 14h, recorte) teve 28% de skip e 1.678 views. "Você não precisa morar aqui e nem ter green card" (11/11, 14h, mesmo formato e horário) teve 59% de skip e 177 views. O formato não explica a diferença; a ABERTURA explica.
+- REGRA: todo vídeo abre com PERGUNTA ou ALERTA que deixa a resposta para depois. Nunca com afirmação que tranquiliza e já entrega a resposta, nem com apresentação ("Eu sou o Alessandro e nós da Discovery...").
+- Antes de qualquer Reel ir para o painel, conferir a primeira frase: (1) é pergunta ou alerta? (2) a resposta só vem depois? (3) tem medo, curiosidade ou surpresa? Se não, reordenar as falas ou pedir regravação.
+- Não repetir o mesmo assunto em menos de 3 semanas (o "não precisa morar" já tinha saído em 02/11).
+- Não tirar conclusão de 1 dia: ontem eu disse que "fala + recorte + tarde" era o caminho e o dia seguinte desmentiu. No relatório, separar sempre formato, horário e ABERTURA.
+- Perguntas para comentar: dar opções prontas (1, 2 ou 3; SIM ou NÃO; A, B ou C). Voto fácil trouxe 6 comentários; pergunta aberta, zero (ouvidor de 11/11).

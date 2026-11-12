@@ -7,23 +7,19 @@ Repositório público até 29/11 (decisão 09/11): as urls do GitHub valem até 
 ## Segunda 16/11
 - **08:00** · story · Casa do Lago: conheça a nossa outra casa · doc `s3-seg-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-seg.mp4
-- **14:00** · reel · PA: os 3 tipos de leilão (Ale recortado, 506 ao fundo) · doc `s3-seg-f12` · PRONTO (aprovado 10/11; agendado aqui a pedido do Alessandro: melhor dia/horário)
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-pa-3-leiloes.mp4
+- **14:00** · reel · Comprar barato não é lucro (Ale recortado, obra de Elkland ao fundo; veio do dom 29/11) · doc `s3-seg-f12` · PRONTO (aprovado 10/11)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-barato-nao-e-lucro.mp4
   - legenda:
 
 ```
-📌 SALVE este post: os 3 tipos de leilão de casas na Pensilvânia 🇺🇸
+Comprar casa barata no leilão NÃO é lucro 💸
 
-1️⃣ Upset sale: mais barato, mas as dívidas antigas vêm junto com a casa, inclusive a hipoteca.
-2️⃣ Judicial sale: o tribunal limpa a maior parte das dívidas. Paga-se mais.
-3️⃣ Repository: as sobras que ninguém quis. Dá para fazer oferta direto ao condado.
+O que decide é a conta antes do lance: reforma, impostos, tempo de obra e uma reserva para as surpresas.
 
-Qual dos três você compraria? Comenta 👇
+Você concorda? Comenta SIM ou NÃO 👇
 
-Manda para quem pensa em investir nos EUA. Me segue @discoveryremodeling: hoje às 20h eu mostro por dentro uma casa de leilão 👀
-
-Resumo geral: cada condado tem as suas regras. Confira sempre no site oficial.
-#taxdeed #leilaodeimoveis #imoveisnoseua #casasnoseua #brasileirosnoseua #discoveryremodeling
+Me segue @discoveryremodeling: hoje às 20h eu mostro por dentro uma casa de leilão 👀
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
 
 - **20:00** · reel · O pior dessa casa era o CHEIRO (Casa do Lago) · doc `s3-seg-f20` · PRONTO (aprovado 10/11)

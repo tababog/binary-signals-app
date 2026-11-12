@@ -130,20 +130,23 @@ Valor real deste caso. Cada obra é diferente.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
-- **20:00** · reel · Quem somos: família brasileira nos leilões dos EUA (Ale recortado + casa ao fundo; trocado em 10/11 no lugar do corte da live) · doc `s2-qui-f20`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-quem-somos.mp4
+- **20:00** · reel · PA: os 3 tipos de leilão (Ale recortado, 506 ao fundo; entrou em 12/11 no lugar do "Quem somos", que abre fraco) · doc `s2-qui-f20` · PRONTO (aprovado 10/11)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-pa-3-leiloes.mp4
   - legenda:
 
 ```
-Prazer, eu sou o Alessandro 👋🇺🇸
+📌 SALVE este post: os 3 tipos de leilão de casas na Pensilvânia 🇺🇸
 
-Somos uma família brasileira que começou a comprar casas de leilão aqui nos Estados Unidos. Errei, aprendi e hoje mostro tudo aqui, com os pés no chão.
+1️⃣ Upset sale: mais barato, mas as dívidas antigas vêm junto com a casa, inclusive a hipoteca.
+2️⃣ Judicial sale: o tribunal limpa a maior parte das dívidas. Paga-se mais.
+3️⃣ Repository: as sobras que ninguém quis. Dá para fazer oferta direto ao condado.
 
-Você também pensa em ter uma casa aqui? Comenta 👇
+Qual dos três você compraria? Comenta 1, 2 ou 3 👇
 
 Me segue @discoveryremodeling: amanhã eu conto o conselho que eu daria pra mim no começo 👀
 
-#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
+Resumo geral: cada condado tem as suas regras. Confira sempre no site oficial.
+#taxdeed #leilaodeimoveis #imoveisnoseua #casasnoseua #brasileirosnoseua #discoveryremodeling
 ```
 
 ## Sexta 13/11
