@@ -902,5 +902,17 @@ const es: Record<string, string> = {
   "A IA não conseguiu escrever o escopo. Tente de novo ou escreva à mão.": "La IA no pudo escribir el alcance. Intente de nuevo o escríbalo a mano.",
   "Escopo escrito. Confira, corrija se precisar e salve a opção.": "Alcance escrito. Revíselo, corríjalo si hace falta y guarde la opción.",
   "O cliente ainda não vê o escopo de: {opcoes}. Preencha o escopo dessas opções e salve: o link mostra sozinho quando o cliente abrir.": "El cliente aún no ve el alcance de: {opcoes}. Complete el alcance de esas opciones y guarde: el enlace lo muestra solo cuando el cliente lo abra.",
+  "Lançamento não encontrado.": "Registro no encontrado.",
+  "Editar despesa": "Editar gasto",
+  "Editar pagamento do cliente": "Editar pago del cliente",
+  "Lançado por {nome} em {data} · {valor}": "Registrado por {nome} el {data} · {valor}",
+  "Ver a foto do recibo salva": "Ver la foto del recibo guardada",
+  "Tirar a foto deste lançamento": "Quitar la foto de este registro",
+  "Este lançamento não tem foto do recibo.": "Este registro no tiene foto del recibo.",
+  "Trocar a foto (opcional)": "Cambiar la foto (opcional)",
+  "Colocar a foto do recibo (opcional)": "Agregar la foto del recibo (opcional)",
+  "Excluir lançamento": "Eliminar registro",
+  "Use quando o lançamento foi feito por engano ou em duplicidade. O valor sai do caixa da obra.": "Úselo cuando el registro se hizo por error o duplicado. El valor sale de la caja de la obra.",
+  "Ver recibo": "Ver recibo",
 };
 export default es;

@@ -10,9 +10,9 @@ type Fornecedor = { id: string; nome: string; tipo: string };
  * Fornecedor ou subcontratado da despesa. Dá para cadastrar um novo ali mesmo
  * ("+ Fornecedor novo" / "+ Subcontratado novo"), sem sair do lançamento.
  */
-export function CampoFornecedor({ fornecedores }: { fornecedores: Fornecedor[] }) {
+export function CampoFornecedor({ fornecedores, inicial }: { fornecedores: Fornecedor[]; inicial?: string | null }) {
   const t = useT();
-  const [valor, setValor] = useState("");
+  const [valor, setValor] = useState(inicial ?? "");
   const [nomeNovo, setNomeNovo] = useState("");
   const select = useRef<HTMLSelectElement>(null);
 

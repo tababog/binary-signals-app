@@ -207,42 +207,35 @@ async function AbaCaixa({ obraId }: { obraId: string }) {
         <Indicador compacto rotulo={t("Saídas")} valor={dinheiro(saidas)} tom="ruim" />
         <Indicador compacto rotulo={t("Saldo")} valor={dinheiro(entradas - saidas)} tom={entradas - saidas < 0 ? "ruim" : "bom"} detalhe={t("Sem contar horas da equipe")} />
       </div>
-      <div className="cartao overflow-x-auto">
+      <div className="cartao">
         {lancamentos.length === 0 ? (
           <Vazio>{t("Nenhum lançamento ainda. Use “Lançar Despesa” ou “Pagamento do cliente”.")}</Vazio>
         ) : (
-          <table className="tabela">
-            <thead>
-              <tr><th>{t("Data")}</th><th>{t("Descrição")}</th><th className="hidden md:table-cell">{t("Categoria")}</th><th className="text-right">{t("Valor")}</th><th>{t("Recibo")}</th><th /></tr>
-            </thead>
-            <tbody>
-              {lancamentos.map((l) => (
-                <tr key={l.id}>
-                  <td className="whitespace-nowrap">{data(l.data)}</td>
-                  <td>
-                    <TextoUsuario texto={l.descricao} />
-                    <div className="text-xs text-stone-500">
+          <ul className="divide-y divide-stone-100">
+            {lancamentos.map((l) => (
+              <li key={l.id} className="py-3">
+                <div className="flex items-start justify-between gap-3">
+                  <Link href={`/obras/${obraId}/lancamento/${l.id}`} className="min-w-0">
+                    <span className="block text-xs text-stone-500">{data(l.data)} · {t(nomeCategoria(l.categoria))}</span>
+                    <span className="block font-medium"><TextoUsuario texto={l.descricao} /></span>
+                    <span className="block text-xs text-stone-500">
                       {[l.fornecedor?.nome, l.formaPagamento && t(l.formaPagamento), t("por {nome}", { nome: l.criadoPor.nome })].filter(Boolean).join(" · ")}
-                    </div>
-                  </td>
-                  <td className="hidden md:table-cell">{t(nomeCategoria(l.categoria))}</td>
-                  <td className={`whitespace-nowrap text-right tabular-nums font-medium ${l.tipo === "ENTRADA" ? "text-emerald-700" : "text-red-700"}`}>
+                    </span>
+                  </Link>
+                  <span className={`whitespace-nowrap text-right font-medium tabular-nums ${l.tipo === "ENTRADA" ? "text-emerald-700" : "text-red-700"}`}>
                     {l.tipo === "ENTRADA" ? "+" : "−"} {dinheiro(l.valorCent)}
-                  </td>
-                  <td>
-                    {l.comprovante ? (
-                      <a href={`/api/comprovantes/${l.comprovante}`} target="_blank" className="link">{t("Ver")}</a>
-                    ) : "—"}
-                  </td>
-                  <td>
-                    <form action={excluirLancamento.bind(null, l.id)}>
-                      <BotaoEnviar className="text-xs text-red-700 hover:underline" confirmar={t("Excluir este lançamento?")}>{t("Excluir")}</BotaoEnviar>
-                    </form>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+                  </span>
+                </div>
+                <div className="mt-1.5 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm">
+                  <Link href={`/obras/${obraId}/lancamento/${l.id}`} className="link font-semibold">{t("Editar")}</Link>
+                  {l.comprovante && <a href={`/api/comprovantes/${l.comprovante}`} target="_blank" className="link">{t("Ver recibo")}</a>}
+                  <form action={excluirLancamento.bind(null, l.id, false)}>
+                    <BotaoEnviar className="text-sm font-semibold text-red-700 hover:underline" confirmar={t("Excluir este lançamento?")}>{t("Excluir")}</BotaoEnviar>
+                  </form>
+                </div>
+              </li>
+            ))}
+          </ul>
         )}
       </div>
     </div>
