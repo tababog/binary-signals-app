@@ -114,7 +114,7 @@ Me segue @discoveryremodeling: hoje às 20h tem pergunta valendo. Quanto custa i
 ## Quinta 12/11
 - **08:00** · story · Bastidor: paredes abertas, ao meio-dia o custo · doc `s2-qui-s8`
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1_ouB8Q_IQXzNymxNNLEX9In8OdhVCfwa
-- **14:00** · reel · Isolamento (parte 2): US$ 600 · doc `s2-qui-f12`
+- **20:00** · reel · Isolamento (parte 2): US$ 600 (invertido com o PA em 12/11, a pedido do Alessandro) · doc `s2-qui-f12`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s2-isolamento-p2-ale.mp4
   - (09/11: V2 sem travadas, Alessandro no lado direito, aprovada por ele no chat)
   - legenda:
@@ -130,7 +130,7 @@ Valor real deste caso. Cada obra é diferente.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
-- **20:00** · reel · PA: os 3 tipos de leilão (Ale recortado, 506 ao fundo; entrou em 12/11 no lugar do "Quem somos", que abre fraco) · doc `s2-qui-f20` · PRONTO (aprovado 10/11)
+- **14:00** · reel · PA: os 3 tipos de leilão (Ale recortado, 506 ao fundo; entrou em 12/11 no lugar do "Quem somos", que abre fraco) · doc `s2-qui-f20` · PRONTO (aprovado 10/11)
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-pa-3-leiloes.mp4
   - legenda:
 
@@ -143,7 +143,7 @@ Valor real deste caso. Cada obra é diferente.
 
 Qual dos três você compraria? Comenta 1, 2 ou 3 👇
 
-Me segue @discoveryremodeling: amanhã eu conto o conselho que eu daria pra mim no começo 👀
+Me segue @discoveryremodeling: hoje às 20h eu conto quanto custou isolar o quartinho 👀
 
 Resumo geral: cada condado tem as suas regras. Confira sempre no site oficial.
 #taxdeed #leilaodeimoveis #imoveisnoseua #casasnoseua #brasileirosnoseua #discoveryremodeling
