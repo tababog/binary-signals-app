@@ -68,4 +68,4 @@ Sem nomes de seguidores neste arquivo. Um contato sério = pessoa que pede ajuda
 | Data | De qual Reel veio | O que disse (resumo) | Situação |
 |---|---|---|---|
 | 09/11 | Corte da live "ex-dono" | Pergunta sobre seguro para casa com morador e sem o deed; pediu DM | Aguardando o Direct do Alessandro |
-| 12/11 | PA: 3 tipos de leilão + Não precisa morar | Chega aos EUA dia 25 para comprar imóvel; investidor de imóveis de aluguel no Brasil; quer montar carteira de renda | Alessandro já falou com ele (12/11) |
+| 12/11 | PA: 3 tipos de leilão + Não precisa morar | Chega aos EUA dia 25 para comprar imóvel; investidor de imóveis de aluguel no Brasil; quer montar carteira de renda | Interessado: reunião feita em 12/11; vai visitar o Alessandro em breve |
