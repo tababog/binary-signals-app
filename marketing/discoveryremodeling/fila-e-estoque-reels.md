@@ -16,11 +16,11 @@ Ver `agenda-publicacao-semana-crescimento.md`, `agenda-publicacao-novembro-s3.md
 | Qua 18 | Lago 3: tambores (paga para jogar lixo fora) |
 | Qui 19 | Lago 4: o que achamos lá dentro |
 | Sex 20 | Lago 5: a parede que eu não vou derrubar |
-| Sáb 21 | 3 terrenos por US$ 50 (pergunta) |
-| Dom 22 | Lance baixo não é negócio bom: 4 coisas (resposta) |
+| Sáb 21 | Piso laminado parte 1 (pergunta 1 · 2 · 4 dias) · adiantado em 13/11 |
+| Dom 22 | Piso laminado parte 2 (resposta: 2 dias) |
 | Seg 23 | Lago: tour do dia em que pegamos a chave |
-| Ter 24 | Piso laminado parte 1 (pergunta 1 · 2 · 4 dias) · obra de cliente, aprovado em 13/11 |
-| Qua 25 | Piso laminado parte 2 (resposta: 2 dias) · regravada com o ambiente limpo, aprovada em 13/11 |
+| Ter 24 | 3 terrenos por US$ 50 (pergunta) |
+| Qua 25 | Lance baixo não é negócio bom: 4 coisas (resposta) |
 | Qui 26 | Drywall (pergunta) |
 | Sex 27 | Drywall (resposta) |
 | Sáb 28 | 953: quanto tempo leva (Reel 9, recorte) |

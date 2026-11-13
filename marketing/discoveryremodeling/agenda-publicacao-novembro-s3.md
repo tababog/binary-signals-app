@@ -97,38 +97,33 @@ Me segue @discoveryremodeling: amanhã tem 3 terrenos por US$ 50 cada no leilão
 ## Sábado 21/11
 - **08:00** · story · Casa do Lago: e o quintal? · doc `s3-sab-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-sab.mp4
-- **14:00** · reel · 3 terrenos por US$ 50 cada [pergunta] · doc `s3-sab-f12` · PRONTO
-  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1pupoZR1Ypju5gs_l0kGnpFkXu1fDFbcZ
+- **14:00** · reel · Quanto tempo leva para colocar esse piso? (pergunta 1 · 2 · 4 dias) [pergunta · obra de cliente] · doc `s3-sab-f12` · PRONTO
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/piso-p1-pergunta.mp4
   - legenda:
 
 ```
-3 terrenos por US$ 50 cada no leilão 😳 O da esquina hoje vale cerca de US$ 8 mil e os outros dois uns US$ 5 mil cada.
+Estamos colocando piso laminado neste ambiente inteiro, na casa de um cliente 🔨
 
-Você teria coragem de dar o lance? 👇 Amanhã eu conto o que eu confiro antes de qualquer lance.
+Quanto tempo você acha que leva? 1 dia, 2 dias ou 4 dias? Responde com o número 👇 A resposta sai amanhã.
 
-Siga para ver 👀
-Valores deste caso; cada terreno é diferente.
-#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
+Me segue @discoveryremodeling para ver 👀
+#reformanoseua #pisolaminado #obranoseua #brasileirosnoseua #taxdeed
 ```
 
 ## Domingo 22/11
 - **08:00** · story · Casa do Lago: próximo passo, telhado novo · doc `s3-dom-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-dom.mp4
-- **14:00** · reel · Lance baixo não é negócio bom: 4 coisas que eu confiro [resposta] · doc `s3-dom-f12` · PRONTO
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-terrenos-p2.mp4
+- **14:00** · reel · Piso (resposta): 2 dias [resposta] · doc `s3-dom-f12` · PRONTO
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/piso-p2-resposta.mp4
   - legenda:
 
 ```
-Terreno de US$ 50 me ensinou: lance baixo não quer dizer negócio bom.
+Resposta: 2 dias para colocar o piso laminado neste ambiente inteiro ⏱️
 
-Antes de qualquer lance eu confiro 4 coisas:
-1️⃣ Tem acesso pela rua?
-2️⃣ A prefeitura deixa construir?
-3️⃣ Fica em área de alagamento?
-4️⃣ Quanto de imposto e taxa vai ficar para você?
+Acertou? Me diz aí nos comentários 👇
 
-Qual desses 4 você não conferia? 👇 Salve para lembrar no próximo leilão.
-#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
+Me segue @discoveryremodeling: amanhã eu mostro o dia em que pegamos a chave de mais uma casa de leilão 👀
+#reformanoseua #pisolaminado #obranoseua #brasileirosnoseua #taxdeed
 ```
 
 ## Estoque (para trocar se o público cair)

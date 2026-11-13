@@ -22,35 +22,42 @@ Siga @discoveryremodeling para acompanhar a transformação 👀
 ```
 
 ## Terça 24/11
-- **08:00** · story · A sala + Você conhece o Section 8? · doc `s4-ter-s8` · REFAZER (o Reel do dia agora é o piso; não publicar sem nova aprovação)
+- **08:00** · story · A sala + Você conhece o Section 8? · doc `s4-ter-s8` · REFAZER (o Reel do dia agora é 3 terrenos por US$ 50; não publicar sem nova aprovação)
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-ter.mp4
-- **14:00** · reel · Quanto tempo leva para colocar esse piso? (pergunta 1 · 2 · 4 dias) [pergunta · obra de cliente] · doc `s4-ter-f12` · PRONTO
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/piso-p1-pergunta.mp4
+- **14:00** · reel · 3 terrenos por US$ 50 cada [pergunta] · doc `s4-ter-f12` · PRONTO
+  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1pupoZR1Ypju5gs_l0kGnpFkXu1fDFbcZ
   - legenda:
 
 ```
-Estamos colocando piso laminado neste ambiente inteiro, na casa de um cliente 🔨
+3 terrenos por US$ 50 cada no leilão 😳 O da esquina hoje vale cerca de US$ 8 mil e os outros dois uns US$ 5 mil cada.
 
-Quanto tempo você acha que leva? 1 dia, 2 dias ou 4 dias? Responde com o número 👇 A resposta sai amanhã.
+Você teria coragem de dar o lance? 👇 Amanhã eu conto o que eu confiro antes de qualquer lance.
 
-Me segue @discoveryremodeling para ver 👀
-#reformanoseua #pisolaminado #obranoseua #brasileirosnoseua #taxdeed
+Siga para ver 👀
+Valores deste caso; cada terreno é diferente.
+#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
 ## Quarta 25/11
 - **08:00** · story · Quartos + quantas cargas? (2·4·6) · doc `s4-qua-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-qua.mp4
-- **14:00** · reel · Piso (resposta): 2 dias [resposta] · doc `s4-qua-f12` · PRONTO
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/piso-p2-resposta.mp4
+- **14:00** · reel · Lance baixo não é negócio bom: 4 coisas que eu confiro [resposta] · doc `s4-qua-f12` · PRONTO
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-terrenos-p2.mp4
   - legenda:
 
 ```
-Resposta: 2 dias para colocar o piso laminado neste ambiente inteiro ⏱️
+Terreno de US$ 50 me ensinou: lance baixo não quer dizer negócio bom.
 
-Acertou? Me diz aí nos comentários 👇
+Antes de qualquer lance eu confiro 4 coisas:
+1️⃣ Tem acesso pela rua?
+2️⃣ A prefeitura deixa construir?
+3️⃣ Fica em área de alagamento?
+4️⃣ Quanto de imposto e taxa vai ficar para você?
+
+Qual desses 4 você não conferia? 👇 Salve para lembrar no próximo leilão.
 
 Me segue @discoveryremodeling: amanhã tem pergunta valendo. Quanto custa o drywall de um corredor? 👀
-#reformanoseua #pisolaminado #obranoseua #brasileirosnoseua #taxdeed
+#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
 ## Quinta 26/11 (Thanksgiving nos EUA)
