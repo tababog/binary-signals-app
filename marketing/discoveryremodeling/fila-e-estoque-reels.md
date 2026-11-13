@@ -19,16 +19,18 @@ Ver `agenda-publicacao-semana-crescimento.md`, `agenda-publicacao-novembro-s3.md
 | Sáb 21 | 3 terrenos por US$ 50 (pergunta) |
 | Dom 22 | Lance baixo não é negócio bom: 4 coisas (resposta) |
 | Seg 23 | Lago: tour do dia em que pegamos a chave |
-| Ter 24 | Section 8 |
-| Qua 25 | Drywall (pergunta) |
-| Qui 26 | Drywall (resposta) |
-| Sex 27 | Comprar barato não é lucro |
+| Ter 24 | Piso laminado parte 1 (pergunta 1 · 2 · 4 dias) · obra de cliente, aprovado em 13/11 |
+| Qua 25 | Piso laminado parte 2 (resposta: 2 dias) |
+| Qui 26 | Drywall (pergunta) |
+| Sex 27 | Drywall (resposta) |
 | Sáb 28 | 953: quanto tempo leva (Reel 9, recorte) |
 | Dom 29 | 953: a equipe (Reel 11, bolinha) · depende de reabrir com pergunta e de nova aprovação |
 
 ## 2. Fila de dezembro (fortes ou quase; entram a partir de 30/11, nesta ordem)
 | Reel | O que falta | Arquivo |
 |---|---|---|
+| Você conhecia o Section 8? | pronto e aprovado; saiu de 24/11 para entrar o piso | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-section8.mp4 |
+| Comprar barato não é lucro | pronto e aprovado; saiu de 27/11 para entrar o piso | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-barato-nao-e-lucro.mp4 |
 | O conselho que eu daria pra mim no começo | pronto e aprovado | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-conselho-reforma.mp4 |
 | Quanto vale esse trompete? | pronto e aprovado | https://drive.usercontent.google.com/download?export=download&confirm=t&id=1y2BAR2tnRvgeYcoRQN-O7n9XyYdUZupl |
 | Tour da bagunça, meia tela (casa em cima, Ale embaixo, degradê) | pronto e aprovado (tour meia tela) | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-lago-meia-tela.mp4 |

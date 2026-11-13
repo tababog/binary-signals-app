@@ -22,25 +22,41 @@ Siga @discoveryremodeling para acompanhar a transformação 👀
 ```
 
 ## Terça 24/11
-- **08:00** · story · A sala + Você conhece o Section 8? · doc `s4-ter-s8`
+- **08:00** · story · A sala + Você conhece o Section 8? · doc `s4-ter-s8` · REFAZER (o Reel do dia agora é o piso; não publicar sem nova aprovação)
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-ter.mp4
-- **14:00** · reel · Você conhecia o Section 8? [alerta/curiosidade] · doc `s4-ter-f12` · PRONTO
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-section8.mp4
+- **14:00** · reel · Quanto tempo leva para colocar esse piso? (pergunta 1 · 2 · 4 dias) [pergunta · obra de cliente] · doc `s4-ter-f12` · PRONTO
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/piso-p1-pergunta.mp4
   - legenda:
 
 ```
-Section 8: um programa do governo americano que ajuda a pagar o aluguel de famílias de baixa renda 🇺🇸
+Estamos colocando piso laminado neste ambiente inteiro, na casa de um cliente 🔨
 
-É uma das formas de alugar uma casa aqui. Cada caso tem regras e nada é garantido.
+Quanto tempo você acha que leva? 1 dia, 2 dias ou 4 dias? Responde com o número 👇 A resposta sai amanhã.
 
-Você conhecia? 👇 Me segue @discoveryremodeling: amanhã tem pergunta valendo. Quanto custa o drywall de um corredor? 👀
-#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
+Me segue @discoveryremodeling para ver 👀
+#reformanoseua #pisolaminado #obranoseua #brasileirosnoseua #taxdeed
 ```
 
 ## Quarta 25/11
 - **08:00** · story · Quartos + quantas cargas? (2·4·6) · doc `s4-qua-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-qua.mp4
-- **14:00** · reel · Quanto custa o drywall desse hallway? (pergunta) [pergunta] · doc `s4-qua-f12` · PRONTO
+- **14:00** · reel · Piso (resposta): 2 dias [resposta] · doc `s4-qua-f12` · PRONTO
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/piso-p2-resposta.mp4
+  - legenda:
+
+```
+Resposta: 2 dias para colocar o piso laminado neste ambiente inteiro ⏱️
+
+Acertou? 👇 Qual serviço de obra você quer ver aqui depois?
+
+Me segue @discoveryremodeling: amanhã tem pergunta valendo. Quanto custa o drywall de um corredor? 👀
+#reformanoseua #pisolaminado #obranoseua #brasileirosnoseua #taxdeed
+```
+
+## Quinta 26/11 (Thanksgiving nos EUA)
+- **08:00** · story · Saindo roupa + hoje a resposta · doc `s4-qui-s8` · REFAZER (hoje é a pergunta do drywall)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-qui.mp4
+- **14:00** · reel · Quanto custa o drywall desse hallway? (pergunta) [pergunta] · doc `s4-qui-f12` · PRONTO
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1s1AKCrdqRhhtSuUbirrVWz-RsgnNA434
   - legenda:
 
@@ -53,10 +69,10 @@ Siga @discoveryremodeling para ver 👀
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
-## Quinta 26/11 (Thanksgiving nos EUA)
-- **08:00** · story · Saindo roupa + hoje a resposta · doc `s4-qui-s8`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-qui.mp4
-- **14:00** · reel · Drywall (resposta): US$ 1.400 [resposta] · doc `s4-qui-f12` · PRONTO
+## Sexta 27/11
+- **08:00** · story · Atualização da 953 por dentro · 20h a equipe · doc `s4-sex-s8`
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-sex.mp4
+- **14:00** · reel · Drywall (resposta): US$ 1.400 [resposta] · doc `s4-sex-f12` · PRONTO
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1O2WsH66N7j8dikyquqhmHjlxbJJBY2X1
   - legenda:
 
@@ -67,24 +83,6 @@ Você chegou perto? 👇 Qual cômodo você quer ver o custo depois?
 
 Valor real deste caso. Cada obra é diferente.
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
-```
-
-## Sexta 27/11
-- **08:00** · story · Atualização da 953 por dentro · 20h a equipe · doc `s4-sex-s8`
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-sex.mp4
-- **14:00** · reel · Comprar barato não é lucro [alerta] · doc `s4-sex-f12` · PRONTO
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-barato-nao-e-lucro.mp4
-  - legenda:
-
-```
-Comprar casa barata no leilão NÃO é lucro 💸
-
-O que decide é a conta antes do lance: reforma, impostos, tempo de obra e uma reserva para as surpresas.
-
-Você concorda? Comenta SIM ou NÃO 👇
-
-Me segue @discoveryremodeling: amanhã eu conto quanto tempo leva reformar uma casa de leilão 👀
-#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
 
 ## Sábado 28/11
