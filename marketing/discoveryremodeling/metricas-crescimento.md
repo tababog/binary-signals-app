@@ -71,3 +71,11 @@ Sem nomes de seguidores neste arquivo. Um contato sério = pessoa que pede ajuda
 |---|---|---|---|
 | 09/11 | Corte da live "ex-dono" | Pergunta sobre seguro para casa com morador e sem o deed; pediu DM | Aguardando o Direct do Alessandro |
 | 12/11 | PA: 3 tipos de leilão + Não precisa morar | Chega aos EUA dia 25 para comprar imóvel; investidor de imóveis de aluguel no Brasil; quer montar carteira de renda | Interessado: reunião feita em 12/11; vai visitar o Alessandro em breve |
+
+
+## Trial Reels (a partir de 14/11; o Alessandro posta pelo app)
+Números de ~24 h, informados pelo Alessandro (a Windsor pode não mostrar Reel de teste).
+
+| Data | Reel | Tipo | Views (não seguidores) | Curtidas | Compart. | Seguidores ganhos | Compartilhou com todos? |
+|---|---|---|---|---|---|---|---|
+| 14/11 | Comprar barato não é lucro | alerta, recorte | | | | | |

@@ -30,7 +30,7 @@ Ver `agenda-publicacao-semana-crescimento.md`, `agenda-publicacao-novembro-s3.md
 | Reel | O que falta | Arquivo |
 |---|---|---|
 | Você conhecia o Section 8? | pronto e aprovado; saiu de 24/11 para entrar o piso | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-section8.mp4 |
-| Comprar barato não é lucro | pronto e aprovado; saiu de 27/11 para entrar o piso | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-barato-nao-e-lucro.mp4 |
+| Comprar barato não é lucro | pronto e aprovado; **Trial Reel de 14/11** | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-barato-nao-e-lucro.mp4 |
 | O conselho que eu daria pra mim no começo | pronto e aprovado | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-conselho-reforma.mp4 |
 | Quanto vale esse trompete? | pronto e aprovado | https://drive.usercontent.google.com/download?export=download&confirm=t&id=1y2BAR2tnRvgeYcoRQN-O7n9XyYdUZupl |
 | Tour da bagunça, meia tela (casa em cima, Ale embaixo, degradê) | pronto e aprovado (tour meia tela) | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-lago-meia-tela.mp4 |

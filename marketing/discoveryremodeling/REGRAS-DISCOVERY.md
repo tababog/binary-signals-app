@@ -411,3 +411,11 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Formato aprovado em 13/11 (piso, partes 1 e 2): pergunta com 3 opções faladas, resposta no dia seguinte, acelerado do serviço e giro do resultado.
 - **Alternativas de voto animadas**: as opções entram na tela na hora em que ele fala, com um elemento ligado ao assunto do vídeo (no piso: réguas de madeira saindo do chão e empilhando). Não usar opção parada no topo.
 - Gravação: preferir a câmera TRASEIRA (o vídeo da frente veio em 720p; o de trás em 4K). Câmera parada para acelerado: na altura do peito e longe de quina de parede.
+
+
+## Trial Reels (Reel de teste) · começa em 14/11
+- Decisão do Alessandro em 13/11: além do Reel das 14h (automático), postar **1 Trial Reel por dia**, para alcançar quem ainda não segue e testar formato e abertura sem ocupar o perfil.
+- A conexão (Windsor) NÃO publica Trial Reel. Quem posta é o Alessandro, pelo app: + → Reel → vídeo → legenda → ligar a chave "Teste" → Compartilhar.
+- Toda manhã o Claude manda no chat o vídeo e a legenda do Trial do dia, tirados da fila ou do estoque (`fila-e-estoque-reels.md`). Só vídeos já aprovados. Nunca o mesmo vídeo que está na agenda das 14h.
+- Depois de ~24 h o Alessandro manda os números (ou print) e decide: "compartilhar com todos" se foi bem. O Claude anota em `metricas-crescimento.md`, tabela "Trial Reels", e puxa para a agenda mais vídeos do tipo que passar.
+- Um Reel já publicado não vira trial; e Trial compartilhado com todos conta como o Reel daquele dia só se ainda não saiu o das 14h.
