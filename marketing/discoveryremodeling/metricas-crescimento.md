@@ -35,7 +35,7 @@ Preencher com 24 h e atualizar com 72 h. Skip = % que pulam nos primeiros segund
 | 11/11 14h | Não precisa morar nos EUA | recorte | 209 | 167 | 61% | 4,8 s | 1 | 0 | 0 | 0 (parcial) |
 | 11/11 20h | Isolamento parte 1 (pergunta) | Ale no canto + obra | 184 | 151 | 73% | 4,3 s | 1 | 0 | 0 | 0 (parcial) |
 | 15/11 14h | Lago: abrimos a casa | andando na obra + textos animados | | | | | | | | |
-| 12/11 14h | PA: 3 tipos de leilão | recorte | 620 | 479 | 39% | 15,2 s | 1 | 7 | 2 | 0 (parcial) |
+| 12/11 14h | PA: 3 tipos de leilão | recorte | 620 | 479 | 39% | 15,2 s | 1 | 7 | 1 | 0 (parcial) |
 | 12/11 20h | Isolamento parte 2 (resposta) | obra + voz, resposta de pergunta | 185 | 151 | 61% | 5,6 s | 0 | 0 | 0 | 0 (parcial) |
 | 16/11 14h | Comprar barato não é lucro | recorte | | | | | | | | |
 | 16 a 22/11 20h | Lago 1 a 7 | voz + rosto nas pontas | | | | | | | | |
