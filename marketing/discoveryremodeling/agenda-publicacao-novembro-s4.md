@@ -40,7 +40,7 @@ Me segue @discoveryremodeling para ver 👀
 ## Quarta 25/11
 - **08:00** · story · Quartos + quantas cargas? (2·4·6) · doc `s4-qua-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-qua.mp4
-- **14:00** · reel · Piso (resposta): 2 dias [resposta] · doc `s4-qua-f12` · PRONTO
+- **14:00** · reel · Piso (resposta): 2 dias [resposta] · doc `s4-qua-f12` · EM EDIÇÃO (13/11: o Alessandro não gostou da edição; vai limpar o ambiente e regravar. Não publicar sem nova aprovação)
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/piso-p2-resposta.mp4
   - legenda:
 

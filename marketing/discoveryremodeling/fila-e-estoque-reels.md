@@ -20,7 +20,7 @@ Ver `agenda-publicacao-semana-crescimento.md`, `agenda-publicacao-novembro-s3.md
 | Dom 22 | Lance baixo não é negócio bom: 4 coisas (resposta) |
 | Seg 23 | Lago: tour do dia em que pegamos a chave |
 | Ter 24 | Piso laminado parte 1 (pergunta 1 · 2 · 4 dias) · obra de cliente, aprovado em 13/11 |
-| Qua 25 | Piso laminado parte 2 (resposta: 2 dias) |
+| Qua 25 | Piso laminado parte 2 (resposta: 2 dias) · AGUARDA regravação com o ambiente limpo e nova aprovação |
 | Qui 26 | Drywall (pergunta) |
 | Sex 27 | Drywall (resposta) |
 | Sáb 28 | 953: quanto tempo leva (Reel 9, recorte) |
