@@ -431,3 +431,9 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Os recortes já prontos não se perdem: viram Trial Reel (fila 2B em `fila-e-estoque-reels.md`). A fila 2A é só de vídeos na obra.
 - Ao pedir gravação nova, o roteiro já vem pensado para a obra (o que mostrar com a mão, onde ficar), não para a parede de casa.
 - **13/11, pedido do Alessandro: "os vídeos que você considera fracos vão para Trial".** Critério do Claude para "fraco": recorte ou fala parada sem obra, e formatos que já tiveram mais de 55% de pulos. Aplicado: Reel 9 (recorte) e Reel 11 (bolinha) saíram de 28 e 29/11 e foram para a fila de Trial; no lugar entraram Trompete (28) e Mudroom (29). O teste de formatos (recorte, bolinha, tela dividida) passa a ser feito nos Trial Reels, não no perfil. Antes de pôr um vídeo novo na agenda das 14h, o Claude classifica: forte (agenda) ou fraco (Trial) e diz por quê.
+
+## Personagem 3D do Alessandro (aprovado em 14/11)
+- O Alessandro aprovou ("vamos usar esse") a caricatura em animação 3D gerada em 14/11: careca, barba grisalha curta, camiseta cinza com manchas de tinta, cinto de ferramentas, pincel na mão. Imagem no Canva dele: https://www.canva.com/M/MAHa6kI4qZo (id MAHa6kI4qZo). Miniatura em `marca/personagem-ale-3d-miniatura.png`.
+- Foi gerada por descrição em texto, não pela foto: o envio da foto ao Canva é bloqueado pela rede do ambiente e ele recusou liberar o canva.com em 14/11 (não pedir de novo sem ele falar).
+- O arquivo em tamanho grande só existe no Canva dele; daqui eu só tenho a miniatura. Para usar em vídeo ou capa, ele precisa baixar e subir no Drive.
+- Uso: complemento (capa, abertura, selo, story). NÃO substitui o Alessandro de verdade nos Reels (regra "nenhum Reel sem ele aparecendo").
