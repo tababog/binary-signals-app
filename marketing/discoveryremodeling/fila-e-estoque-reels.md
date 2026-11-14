@@ -16,7 +16,7 @@ Ver `agenda-publicacao-semana-crescimento.md`, `agenda-publicacao-novembro-s3.md
 | Qua 18 | Lago 3: tambores (paga para jogar lixo fora) |
 | Qui 19 | Lago 4: o que achamos lá dentro |
 | Sex 20 | Lago 5: a parede que eu não vou derrubar |
-| Sáb 21 | Piso laminado parte 1 (pergunta 1 · 2 · 4 dias) · adiantado em 13/11 |
+| Sáb 21 | Piso laminado parte 1 · **postado como TRIAL em 14/11 18h CT** (ideia do Alessandro). Se ele compartilhar com todos, este dia recebe o Trompete e a parte 2 sai no dia seguinte ao compartilhamento; se o Trial for mal, decidir se ainda sai aqui |
 | Dom 22 | Piso laminado parte 2 (resposta: 2 dias) |
 | Seg 23 | Lago: tour do dia em que pegamos a chave |
 | Ter 24 | 3 terrenos por US$ 50 (pergunta) |
