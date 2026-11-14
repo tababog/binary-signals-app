@@ -80,4 +80,4 @@ Números de ~24 h, informados pelo Alessandro (a Windsor pode não mostrar Reel 
 
 | Data | Reel | Tipo | Views (não seguidores) | Curtidas | Compart. | Seguidores ganhos | Compartilhou com todos? |
 |---|---|---|---|---|---|---|---|
-| 13/11 22h20 CT (postado pelo Alessandro; a Windsor ENXERGA o Trial) | Comprar barato não é lucro | alerta, recorte | 120 em ~12 h (alcance 107) · 72% pulam · 3,8 s | | 0 | | não (leitura de 14/11 10h CT) |
+| 13/11 22h20 CT (postado pelo Alessandro) | Comprar barato não é lucro | alerta, recorte | **575 em ~19 h** (print do app, 14/11 16h58 CT; a Windsor está atrasada e mostra 130) · 72% pulam · 4,0 s | 0 | 0 | sem leitura | não: alcance bom, mas quase ninguém fica |
