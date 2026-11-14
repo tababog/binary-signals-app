@@ -22,7 +22,7 @@ Siga @discoveryremodeling para acompanhar a transformação 👀
 ```
 
 ## Terça 24/11
-- **08:00** · story · A sala + Você conhece o Section 8? · doc `s4-ter-s8` · REFAZER (o Reel do dia agora é 3 terrenos por US$ 50; não publicar sem nova aprovação)
+- **08:00** · story · A sala + Você conhece o Section 8? · doc `s4-ter-s8` · refeito e aprovado em 13/11
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-ter.mp4
 - **14:00** · reel · 3 terrenos por US$ 50 cada [pergunta] · doc `s4-ter-f12` · PRONTO
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1pupoZR1Ypju5gs_l0kGnpFkXu1fDFbcZ
@@ -61,7 +61,7 @@ Me segue @discoveryremodeling: amanhã tem pergunta valendo. Quanto custa o dryw
 ```
 
 ## Quinta 26/11 (Thanksgiving nos EUA)
-- **08:00** · story · Saindo roupa + hoje a resposta · doc `s4-qui-s8` · REFAZER (hoje é a pergunta do drywall)
+- **08:00** · story · Saindo roupa + hoje a resposta · doc `s4-qui-s8` · refeito e aprovado em 13/11
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-qui.mp4
 - **14:00** · reel · Quanto custa o drywall desse hallway? (pergunta) [pergunta] · doc `s4-qui-f12` · PRONTO
   - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1s1AKCrdqRhhtSuUbirrVWz-RsgnNA434
