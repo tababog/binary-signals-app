@@ -78,4 +78,4 @@ Números de ~24 h, informados pelo Alessandro (a Windsor pode não mostrar Reel 
 
 | Data | Reel | Tipo | Views (não seguidores) | Curtidas | Compart. | Seguidores ganhos | Compartilhou com todos? |
 |---|---|---|---|---|---|---|---|
-| 14/11 | Comprar barato não é lucro | alerta, recorte | | | | | |
+| 13/11 22h20 CT (postado pelo Alessandro; aparece na aba Reels como "Trial reels") | Comprar barato não é lucro | alerta, recorte | | | | | |
