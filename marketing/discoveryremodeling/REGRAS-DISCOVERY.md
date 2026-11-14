@@ -422,3 +422,11 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - **Pesquisa de 13/11 (ele não quer pagar):** a API do Instagram aceita Trial Reel desde 12/2025, mas a Windsor não expõe. Pedido de recurso aberto na Windsor em 13/11 (referência 46259770); conferir de tempos em tempos com `list_actions` se `create_video_post` ganhou a opção. Opções grátis para agendar Trial sem postar todo dia: Publer (plano grátis: até 10 posts agendados por conta, chave "Post as Trial Reel") e Metricool (plano grátis: cerca de 20 posts por mês). Nas duas quem agenda é o Alessandro, no site ou app delas (a API é só dos planos pagos). Later e PostEverywhere não têm plano grátis. Nada foi assinado nem conectado.
 - **Confirmado em 13/11:** a chave "Teste" (Trial) EXISTE na conta. O 1º Trial foi postado pelo Alessandro às 22h20 de Connecticut. No perfil dele, o Trial aparece só para ele, na aba Reels, com a etiqueta "Trial reels".
 - **Capa dos Reels (visto no print de 13/11):** na aba Reels a capa é o 1º quadro, e em alguns vídeos ele cai no meio de uma animação (texto cortado ou espelhado). Nos próximos, publicar com `thumb_offset` num quadro em que o título esteja inteiro e legível.
+
+
+## Na obra primeiro; recorte só quando não tiver jeito (13/11)
+- Pergunta do Alessandro em 13/11: faz diferença o vídeo editado com ele recortado x ele dentro da obra? Resposta combinada: faz. Os dados da semana (skip: Lixo p2 na obra 24%; recortes entre 28% e 62%; ele no cantinho 72%) e a avaliação dos vídeos do piso apontam para a obra real. São poucos vídeos: confirmar com o piso (21 e 22/11) e com os Trial Reels.
+- **Reel das 14h:** sempre que der, gravado NA OBRA de verdade: câmera de trás, ele andando ou mostrando algo com a mão, pergunta na primeira frase, ação acontecendo.
+- **Recorte** (ele colado sobre uma imagem): só para assunto de leilão ou regra em que não existe obra para mostrar. De preferência como Trial Reel.
+- Os recortes já prontos não se perdem: viram Trial Reel (fila 2B em `fila-e-estoque-reels.md`). A fila 2A é só de vídeos na obra.
+- Ao pedir gravação nova, o roteiro já vem pensado para a obra (o que mostrar com a mão, onde ficar), não para a parede de casa.

@@ -26,23 +26,35 @@ Ver `agenda-publicacao-semana-crescimento.md`, `agenda-publicacao-novembro-s3.md
 | Sáb 28 | 953: quanto tempo leva (Reel 9, recorte) |
 | Dom 29 | 953: a equipe (Reel 11, bolinha) · depende de reabrir com pergunta e de nova aprovação |
 
-## 2. Fila de dezembro (fortes ou quase; entram a partir de 30/11, nesta ordem)
-| Reel | O que falta | Arquivo |
-|---|---|---|
-| Você conhecia o Section 8? | pronto e aprovado; saiu de 24/11 para entrar o piso | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-section8.mp4 |
-| Comprar barato não é lucro | pronto e aprovado; **Trial Reel de 14/11** | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-barato-nao-e-lucro.mp4 |
-| O conselho que eu daria pra mim no começo | pronto e aprovado | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-conselho-reforma.mp4 |
-| Quanto vale esse trompete? | pronto e aprovado | https://drive.usercontent.google.com/download?export=download&confirm=t&id=1y2BAR2tnRvgeYcoRQN-O7n9XyYdUZupl |
-| Tour da bagunça, meia tela (casa em cima, Ale embaixo, degradê) | pronto e aprovado (tour meia tela) | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-lago-meia-tela.mp4 |
-| Você sabe o que é um mudroom? (Casa do Lago) | pronto e aprovado (imagem escura) | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-6-mudroom.mp4 |
-| Esse deck vai virar o lugar mais bonito (Casa do Lago) | pronto; colocar pergunta na tela no 1º segundo | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-7-deck.mp4 |
-| 953: próxima etapa (Reel 13) | editar em tela dividida (teste de formato) | gravado em 10/11 (pasta Estoque Obra 09-11) |
-| 953: o que mais encareceu, telhado (Reel 10) | editar (tela verde sobre a foto do telhado) | gravado em 10/11 |
-| 953: antes e agora (Reel 12) | editar; precisa de imagens do hall antes e agora | gravado em 10/11 |
-| Quem somos | refazer a abertura (começar por "Errei, aprendi") | semana-crescimento/reel-quem-somos.mp4 |
-| Essa casa a gente NÃO compraria | Alessandro gravar (prioridade) | roteiro na Central |
-| 3 erros / 3 coisas que eu faria diferente (Reel 8) | Alessandro gravar (sem pressa) | roteiro no chat de 10/11 |
-| Casa do Lago: quantas cargas (pergunta) e resposta; o quintal | editar | vídeos na pasta da Casa do Lago |
+## 2. Fila de dezembro (reorganizada em 13/11: primeiro os gravados NA OBRA)
+Regra de 13/11: o Reel das 14h é, sempre que der, vídeo com o Alessandro dentro da obra de verdade. Recorte (ele colado sobre uma imagem) só para assunto de leilão ou regra, e de preferência como Trial Reel.
+
+### 2A. Para o Reel das 14h (na obra; entram a partir de 30/11, nesta ordem)
+| # | Reel | Tipo | O que falta | Arquivo |
+|---|---|---|---|---|
+| 1 | Essa casa a gente NÃO compraria | na obra, alerta | Alessandro gravar na frente da casa (prioridade, até 21/11) | roteiro na Central |
+| 2 | Andando na 953 (roteiros de `roteiros-andando-na-obra.md`) | na obra, cru | Alessandro gravar; 1 por visita à obra | a gravar |
+| 3 | Quanto vale esse trompete? | na obra, pergunta | pronto e aprovado | https://drive.usercontent.google.com/download?export=download&confirm=t&id=1y2BAR2tnRvgeYcoRQN-O7n9XyYdUZupl |
+| 4 | Casa do Lago: quantas cargas (pergunta) e resposta | na obra, pergunta e resposta | editar (o story de 25/11 já faz a pergunta) | vídeos na pasta da Casa do Lago |
+| 5 | Você sabe o que é um mudroom? (Casa do Lago) | casa real + voz dele | pronto e aprovado (imagem escura) | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-6-mudroom.mp4 |
+| 6 | Esse deck vai virar o lugar mais bonito (Casa do Lago) | casa real + voz dele | pronto; colocar pergunta na tela no 1º segundo | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-7-deck.mp4 |
+| 7 | Tour da bagunça, meia tela (casa em cima, Ale embaixo) | casa real + ele embaixo | pronto e aprovado | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-lago-meia-tela.mp4 |
+| 8 | Casa do Lago: o quintal | na obra | editar | vídeos na pasta da Casa do Lago |
+| 9 | 3 erros / 3 coisas que eu faria diferente (Reel 8) | gravar NA 953, mostrando cada erro | Alessandro gravar (sem pressa) | roteiro no chat de 10/11 |
+| 10 | Novas obras de cliente (como o piso) | na obra, pergunta e resposta | gravar quando aparecer serviço bom de mostrar | a gravar |
+
+### 2B. Para Trial Reel (recorte ou fala parada; 1 por dia, o Alessandro posta pelo app)
+| # | Reel | O que falta | Arquivo |
+|---|---|---|---|
+| ✔ | Comprar barato não é lucro | **Trial postado em 13/11** | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-barato-nao-e-lucro.mp4 |
+| 1 | Você conhecia o Section 8? | pronto e aprovado | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-section8.mp4 |
+| 2 | O conselho que eu daria pra mim no começo | pronto e aprovado | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-conselho-reforma.mp4 |
+| 3 | Todo investimento tem risco | trocar o final ("comenta ASSESSORIA" é venda) antes de usar | semana-crescimento/reel-todo-investimento-risco.mp4 |
+| 4 | Quem somos | refazer a abertura (começar por "Errei, aprendi") | semana-crescimento/reel-quem-somos.mp4 |
+| 5 | 953: o que mais encareceu, telhado (Reel 10) | editar (tela verde sobre a foto do telhado) | gravado em 10/11 |
+| 6 | 953: próxima etapa (Reel 13) | editar em tela dividida | gravado em 10/11 |
+| 7 | 953: antes e agora (Reel 12) | editar; precisa de imagens do hall antes e agora | gravado em 10/11 |
+O Trial que for bem (decisão pelos insights de 24 h) é compartilhado com todos e o tipo dele sobe para a 2A.
 
 ## 3. Estoque (guardado; usar só se faltar conteúdo)
 | Reel | Por que saiu da agenda | Arquivo |
