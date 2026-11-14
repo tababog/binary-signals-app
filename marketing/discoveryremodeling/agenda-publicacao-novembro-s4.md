@@ -95,36 +95,34 @@ Valor real deste caso. Cada obra é diferente.
 ## Sábado 28/11
 - **08:00** · story · Checklist do quintal (Casa do Lago) · doc `s4-sab-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-sab.mp4
-- **14:00** · reel · TESTE DE FORMATO 1/3 · RECORTE · Quanto tempo leva reformar uma casa de leilão? (953) [TESTE formato: recorte] · doc `s4-sab-f12` · PRONTO
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-953-9-tempo.mp4
+- **14:00** · reel · Quanto vale esse trompete? [na obra · pergunta] · doc `s4-sab-f12` · PRONTO
+  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1y2BAR2tnRvgeYcoRQN-O7n9XyYdUZupl
   - legenda:
 
 ```
-Quanto tempo leva reformar uma casa de leilão? ⏳
+Achamos isso numa casa que compramos em leilão nos EUA 🎺 Novinho, dentro da caixa.
 
-Do leilão até hoje já foram 5 meses. E o que mais demorou não foi a obra: foi a saída do antigo dono, negociada de forma amigável. Bom para os dois lados.
+Quanto você acha que vale esse trompete? Chuta aí 👇
 
-Você saberia como negociar? Comenta 👇
-
-Me segue @discoveryremodeling: amanhã eu mostro a equipe dessa obra 👀
-#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
+Siga @discoveryremodeling: toda casa de leilão guarda alguma surpresa 👀
+#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
 ## Domingo 29/11
-- **08:00** · story · Como está a 953 (etapas) · hoje 14h e 20h · doc `s4-dom-s8`
+- **08:00** · story · Como está a 953 (etapas) · final "HOJE 14h tem Reel novo" · doc `s4-dom-s8` · AGUARDA OK do texto novo
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-dom.mp4
-- **14:00** · reel · TESTE DE FORMATO 2/3 · BOLINHA · A equipe da 953 [TESTE formato: bolinha (abertura nova, AGUARDA aprovação)] · doc `s4-dom-f12` · EM EDIÇÃO (não publicar sem aprovação)
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-953-11-equipe-bolinha.mp4
+- **14:00** · reel · Você sabe o que é um mudroom? (Casa do Lago) [casa real + voz dele] · doc `s4-dom-f12` · PRONTO
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-6-mudroom.mp4
   - legenda:
 
 ```
-Ninguém reforma uma casa sozinho 👷
+Você sabe o que é um mudroom? 🚪
 
-Telhado, drywall, elétrica, encanador, gabinete, pintor, carpinteiro... E a equipe veio por indicação de amigos. Indicação vale ouro.
+É a entrada da casa onde se tira o sapato e o casaco. Toda casa americana quer um, e essa vai ganhar o dela.
 
-Você já contratou alguém por indicação? Comenta 👇
+Você colocaria um na sua casa? Comenta 👇
 
-Siga @discoveryremodeling para ver a equipe em ação 🏠
+Siga @discoveryremodeling para ver a transformação 🏠
 #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
 

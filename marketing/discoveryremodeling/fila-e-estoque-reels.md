@@ -23,8 +23,8 @@ Ver `agenda-publicacao-semana-crescimento.md`, `agenda-publicacao-novembro-s3.md
 | Qua 25 | Lance baixo não é negócio bom: 4 coisas (resposta) |
 | Qui 26 | Drywall (pergunta) |
 | Sex 27 | Drywall (resposta) |
-| Sáb 28 | 953: quanto tempo leva (Reel 9, recorte) |
-| Dom 29 | 953: a equipe (Reel 11, bolinha) · depende de reabrir com pergunta e de nova aprovação |
+| Sáb 28 | Quanto vale esse trompete? (na obra) · o Reel 9 (recorte) foi para Trial em 13/11 |
+| Dom 29 | Você sabe o que é um mudroom? (Casa do Lago) · o Reel 11 (bolinha) foi para Trial em 13/11 |
 
 ## 2. Fila de dezembro (reorganizada em 13/11: primeiro os gravados NA OBRA)
 Regra de 13/11: o Reel das 14h é, sempre que der, vídeo com o Alessandro dentro da obra de verdade. Recorte (ele colado sobre uma imagem) só para assunto de leilão ou regra, e de preferência como Trial Reel.
@@ -34,9 +34,7 @@ Regra de 13/11: o Reel das 14h é, sempre que der, vídeo com o Alessandro dentr
 |---|---|---|---|---|
 | 1 | Essa casa a gente NÃO compraria | na obra, alerta | Alessandro gravar na frente da casa (prioridade, até 21/11) | roteiro na Central |
 | 2 | Andando na 953 (roteiros de `roteiros-andando-na-obra.md`) | na obra, cru | Alessandro gravar; 1 por visita à obra | a gravar |
-| 3 | Quanto vale esse trompete? | na obra, pergunta | pronto e aprovado | https://drive.usercontent.google.com/download?export=download&confirm=t&id=1y2BAR2tnRvgeYcoRQN-O7n9XyYdUZupl |
 | 4 | Casa do Lago: quantas cargas (pergunta) e resposta | na obra, pergunta e resposta | editar (o story de 25/11 já faz a pergunta) | vídeos na pasta da Casa do Lago |
-| 5 | Você sabe o que é um mudroom? (Casa do Lago) | casa real + voz dele | pronto e aprovado (imagem escura) | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-6-mudroom.mp4 |
 | 6 | Esse deck vai virar o lugar mais bonito (Casa do Lago) | casa real + voz dele | pronto; colocar pergunta na tela no 1º segundo | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-lago-7-deck.mp4 |
 | 7 | Tour da bagunça, meia tela (casa em cima, Ale embaixo) | casa real + ele embaixo | pronto e aprovado | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-lago-meia-tela.mp4 |
 | 8 | Casa do Lago: o quintal | na obra | editar | vídeos na pasta da Casa do Lago |
@@ -48,6 +46,8 @@ Regra de 13/11: o Reel das 14h é, sempre que der, vídeo com o Alessandro dentr
 |---|---|---|---|
 | ✔ | Comprar barato não é lucro | **Trial postado em 13/11** | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-barato-nao-e-lucro.mp4 |
 | 1 | Você conhecia o Section 8? | pronto e aprovado | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-section8.mp4 |
+| 1b | 953: quanto tempo leva reformar (Reel 9, recorte) | pronto e aprovado; saiu de 28/11 (considerado fraco para o perfil) | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-953-9-tempo.mp4 |
+| 1c | 953: a equipe (Reel 11, bolinha) | versão aprovada em 11/11; saiu de 29/11 | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-953-11-equipe-bolinha.mp4 |
 | 2 | O conselho que eu daria pra mim no começo | pronto e aprovado | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-conselho-reforma.mp4 |
 | 3 | Todo investimento tem risco | trocar o final ("comenta ASSESSORIA" é venda) antes de usar | semana-crescimento/reel-todo-investimento-risco.mp4 |
 | 4 | Quem somos | refazer a abertura (começar por "Errei, aprendi") | semana-crescimento/reel-quem-somos.mp4 |
