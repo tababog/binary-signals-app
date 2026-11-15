@@ -77,6 +77,9 @@ PERSONAGENS:
 - Visual que saiu (manter nos próximos): vendedor de terno escuro, gravata, óculos escuros, cabelo escuro para trás; marido de camiseta cinza, cabelo curto escuro, barba rala; esposa de vestido marrom justo, cabelo escuro longo e ondulado; mesinha dourada com maleta dourada brilhando; rua residencial arborizada, fim de tarde.
 - Referência de cena para anexar nos próximos clipes: `clipes/cap1-referencia-cena.jpg`.
 
+### Roupa do Ale na novela (definida pelo Alessandro em 15/11)
+Calça jeans e camisa polo branca com a logomarca da Discovery no peito (lado esquerdo). Nos clipes: anexar o arquivo da logo como referência e pedir "small logo on the left chest, exactly as in the logo reference image"; se a IA deformar a logo, gerar com a polo lisa.
+
 ## Capítulo 2 · "Onde fica a casa?"
 Lição: **olhe o lugar antes do preço.**
 
