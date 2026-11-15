@@ -85,6 +85,22 @@ ATUALIZADO em 15/11: calça jeans e polo branca LISA, sem logomarca (a logo fico
 - "Ele te deu uma solução para esse ponto?"
 Ênfase pedida: a reforma, o ponto de que ninguém fala. Clipes já aprovados: 1, 2 e 3A (usar 0 a 4 s). Pendentes: 3B (caminhonete chegando, sem ele descer) e 4 (falas finais + dúvida do casal).
 
+### Capítulo 1 FINAL · APROVADO pelo Alessandro em 15/11 para Trial Reel
+- Arquivo: `novela-leilao/novela-cap1-casa-5-mil.mp4` (36 s, 1080x1920).
+- Abertura "VOCÊ COMPRARIA?"; final "VOCÊ COMPRARIA? · SIM (entra da esquerda) OU NÃO (entra da direita) · COMENTE AÍ!"; cartão "No próximo capítulo: Visitando a casa de leilão · Me segue para não perder"; música estendida com fade.
+- Polo branca lisa, sem logomarca.
+- Legenda do post:
+```
+Casa nos Estados Unidos por 5 mil dólares 😳 O guru só não contou onde fica, quanto vale e quanto custa a reforma.
+
+Você compraria? SIM ou NÃO 👇
+
+Me segue @discoveryremodeling para ver o capítulo 2: visitando a casa de leilão.
+
+História fictícia, baseada em situações reais. Cada leilão e cada casa são diferentes.
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua
+```
+
 ## Capítulo 2 · "Onde fica a casa?"
 Lição: **olhe o lugar antes do preço.**
 
