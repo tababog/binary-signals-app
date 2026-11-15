@@ -442,3 +442,8 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Palavras dele: "o conteúdo em si tá muito fraco, muito pobre. A gente não tem nada impactante... precisa de um pouco mais de conteúdo sério... a gente tá enrolando muito."
 - Leitura do Claude (não é regra dele ainda): o problema não é só formato (recorte x obra), é o ASSUNTO. Enquete de custo e de tempo ("quanto custou?", "quantos dias?") tem pouco em jogo para quem assiste. O que teve resultado sério até aqui foi conteúdo com risco real: "É golpe?" (melhor do mês) e "3 tipos de leilão" (8 salvos e o único contato sério).
 - Direção proposta em 15/11, a confirmar na reunião: cada vídeo precisa ter algo em jogo (dinheiro perdido, erro, risco, decisão difícil) e um fato concreto na primeira frase. Três linhas: (1) caso real com consequência, (2) o que conferir antes do lance, (3) bastidor de verdade do leilão. Enquetes leves viram story, não Reel. A novela em desenho é entretenimento: fica só como Trial e não é prioridade.
+
+## Prompts de vídeo/imagem: primeiro em português (15/11)
+- Todo prompt para IA (Gemini/Veo, Nano Banana) vai PRIMEIRO em português, para o Alessandro ler e corrigir a cena. Só depois do OK dele o Claude entrega a versão em inglês para colar.
+- Uma ação por clipe: clipes com muita coisa (fala + carro + susto + porta) saem errados.
+- Novela: o Ale usa jeans e polo branca com a logo da Discovery; a caminhonete é uma GMC Sierra 2021 branca, para na guia do lado da calçada, e ele desce pela porta do motorista (esquerda).
