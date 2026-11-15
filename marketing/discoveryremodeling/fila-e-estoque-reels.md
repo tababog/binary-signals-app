@@ -54,7 +54,7 @@ Regra de 13/11: o Reel das 14h é, sempre que der, vídeo com o Alessandro dentr
 | 5 | 953: o que mais encareceu, telhado (Reel 10) | editar (tela verde sobre a foto do telhado) | gravado em 10/11 |
 | 6 | 953: próxima etapa (Reel 13) | editar em tela dividida | gravado em 10/11 |
 | 7 | 953: antes e agora (Reel 12) | editar; precisa de imagens do hall antes e agora | gravado em 10/11 |
-| N1 | Novela, capítulo 1: "A casa de 5 mil dólares" (desenho 3D, 36 s) | **aprovado em 15/11; Trial de 15/11** | novela-leilao/novela-cap1-casa-5-mil.mp4 |
+| N1 | Novela, capítulo 1: "A casa de 5 mil dólares" (desenho 3D, 40 s) | **aprovado em 15/11; Trial de 15/11** | novela-leilao/novela-cap1-casa-5-mil.mp4 |
 O Trial que for bem (decisão pelos insights de 24 h) é compartilhado com todos e o tipo dele sobe para a 2A.
 
 ## 3. Estoque (guardado; usar só se faltar conteúdo)

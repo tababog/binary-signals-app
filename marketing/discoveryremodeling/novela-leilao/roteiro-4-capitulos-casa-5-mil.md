@@ -86,7 +86,7 @@ ATUALIZADO em 15/11: calça jeans e polo branca LISA, sem logomarca (a logo fico
 Ênfase pedida: a reforma, o ponto de que ninguém fala. Clipes já aprovados: 1, 2 e 3A (usar 0 a 4 s). Pendentes: 3B (caminhonete chegando, sem ele descer) e 4 (falas finais + dúvida do casal).
 
 ### Capítulo 1 FINAL · APROVADO pelo Alessandro em 15/11 para Trial Reel
-- Arquivo: `novela-leilao/novela-cap1-casa-5-mil.mp4` (36 s, 1080x1920).
+- Arquivo: `novela-leilao/novela-cap1-casa-5-mil.mp4` (40 s, 1080x1920; sem aceleração: a aceleração de 10% descartava quadros e deixava a imagem tremida).
 - Abertura "VOCÊ COMPRARIA?"; final "VOCÊ COMPRARIA? · SIM (entra da esquerda) OU NÃO (entra da direita) · COMENTE AÍ!"; cartão "No próximo capítulo: Visitando a casa de leilão · Me segue para não perder"; música estendida com fade.
 - Polo branca lisa, sem logomarca.
 - Legenda do post:
