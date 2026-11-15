@@ -71,6 +71,12 @@ PERSONAGENS:
 6. (20–27 s) `ALE walks up and faces the couple, serious and calm. ALE says: "Vocês vão colocar o dinheiro suado de vocês num lugar que nem conhecem?" Close-up on ALE, the GURU blurred behind him: "Ele respondeu alguma pergunta?"`
 7. (27–30 s) `Slow push-in on MARCOS and LUCIA holding the cash, looking at each other, then at the GURU, full of doubt. Nobody speaks. Hold the last frame.`
 
+### Clipe 1 gerado e APROVADO (15/11)
+- Arquivo: `clipes/cap1-clipe1.mp4` (10 s, 720x1280, Gemini/Veo). Falas conferidas: promessa, "5 mil?", "Onde fica?", "Nos Estados Unidos", "Em qual cidade?", "Detalhe".
+- O Gemini recusou o primeiro prompt ("real people"). Funcionou com: "Fully fictional cartoon... invented cartoon characters, not real people", papéis no lugar de nomes (the salesman, the husband, the wife), sem "full of cash", sem "man from the reference image" e sem anexar foto real.
+- Visual que saiu (manter nos próximos): vendedor de terno escuro, gravata, óculos escuros, cabelo escuro para trás; marido de camiseta cinza, cabelo curto escuro, barba rala; esposa de vestido marrom justo, cabelo escuro longo e ondulado; mesinha dourada com maleta dourada brilhando; rua residencial arborizada, fim de tarde.
+- Referência de cena para anexar nos próximos clipes: `clipes/cap1-referencia-cena.jpg`.
+
 ## Capítulo 2 · "Onde fica a casa?"
 Lição: **olhe o lugar antes do preço.**
 
