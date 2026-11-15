@@ -8,9 +8,16 @@ Ajustes do Alessandro em 15/11:
 - O Ale entra de caminhonete e mostra para o casal que a casa que compraram é uma porcaria.
 
 ## Personagens
-- **Marcos e Lúcia:** casal brasileiro, os investidores. Pagaram a assessoria do Guru.
-- **Guru da Casa Fácil:** terno branco, sorriso de vendedor. Ganha a taxa da assessoria na hora; a casa não é problema dele. Inventado, sem parecer com ninguém real.
-- **Ale (personagem 3D do Alessandro):** chega de caminhonete de obra (sem logo e sem placa na imagem), careca, roupa de trabalho. É quem fala a verdade.
+Visual definido pelo Alessandro em 15/11:
+- **Guru da Casa Fácil:** bem vestido, de terno, corpo atlético e forte, cabelo penteado para trás, óculos escuros, sorriso de vendedor. Ganha a taxa da assessoria na hora; a casa não é problema dele. Inventado, sem parecer com ninguém real.
+- **Marcos:** investidor, 35 a 40 anos, camiseta e calça.
+- **Lúcia:** esposa do Marcos, mulher bonita e chamativa, roupa casual e elegante (sem exagero, para não derrubar o alcance do Reel).
+- **Ale (personagem 3D do Alessandro):** a caricatura dele (ele envia a imagem). Chega de caminhonete de obra (sem logo e sem placa na imagem), careca, roupa de trabalho. É quem fala a verdade.
+
+### Prompts das imagens-base (Nano Banana, mandar junto a imagem do Ale como referência de estilo)
+- Guru: `Same 3D animated film style as the reference image. Full body character sheet of a confident salesman in his 40s, athletic muscular build, sharp tailored suit, slicked-back dark hair, dark sunglasses, big salesman smile, holding a golden briefcase. Plain light gray background, soft studio light. No text, no logos, no numbers. Original character, does not resemble any real person.`
+- Marcos: `Same 3D animated film style as the reference image. Full body character sheet of a Brazilian man, 35 to 40 years old, short dark hair, light stubble, plain t-shirt and jeans, sneakers, friendly but slightly naive expression. Plain light gray background, soft studio light. No text, no logos, no numbers. Original character.`
+- Lúcia: `Same 3D animated film style as the reference image. Full body character sheet of a beautiful Brazilian woman in her mid 30s, long wavy dark hair, fitted casual blouse and jeans, confident posture, expressive eyes. Plain light gray background, soft studio light. No text, no logos, no numbers. Original character.`
 
 ## Regras que valem aqui
 - Cada capítulo ensina UMA coisa, dita pelo Ale em uma frase.
