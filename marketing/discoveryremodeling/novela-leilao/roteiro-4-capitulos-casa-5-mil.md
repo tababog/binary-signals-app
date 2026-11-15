@@ -32,13 +32,17 @@ Neste capítulo o casal NÃO compra e NÃO desiste: termina em aberto.
 1. GURU (abrindo uma maleta dourada cheia de dinheiro): "Vocês vão comprar uma casa com cinco mil dólares!"
 2. LÚCIA: "Cinco mil dólares?!" · MARCOS (feliz): "Vamos gastar pouco!"
 3. MARCOS: "Onde fica a casa?" · GURU: "Nos Estados Unidos!"
-4. MARCOS: "Mas em qual cidade? Qual lugar?" · GURU: "Isso é detalhe. Não importa."
-5. O casal se olha, preocupado. GURU (batendo no relógio): "É a última chance! Vamos decidir logo, vamos comprar!"
-6. Barulho de motor: uma caminhonete branca freia na frente. O ALE desce.
-7. ALE: "Vocês vão colocar o dinheiro suado de vocês num lugar que nem conhecem?"
-8. ALE: "E a reforma? Alguém falou da reforma?"
-9. Silêncio. O casal olha para o Guru. O GURU empurra a maleta: "Última chance!"
-10. Close no rosto do casal, em dúvida, com o dinheiro na mão. Corta. Na tela: **E você? Sabe onde está colocando o seu dinheiro?**
+4. MARCOS: "Mas em qual cidade?" · GURU: "Isso é detalhe."
+5. LÚCIA: "E a reforma?" · GURU: "Depois a gente vê isso."
+6. LÚCIA: "E quanto vale a casa para vender?" · GURU: "O importante é quanto vocês estão pagando agora. Pouco!"
+7. O casal se olha, cheio de dúvida, mas com vontade de comprar. GURU (batendo no relógio): "É a última chance! Vamos decidir logo!"
+8. Barulho de motor: uma caminhonete branca freia na frente. O ALE desce.
+9. ALE: "Vocês vão colocar o dinheiro suado de vocês num lugar que nem conhecem?"
+10. ALE: "Ele respondeu alguma pergunta de vocês?"
+11. Silêncio. O casal olha para o Guru. O GURU empurra a maleta: "Última chance!"
+12. Close no rosto do casal, em dúvida, com o dinheiro na mão. Corta. Na tela: **E você? Sabe onde está colocando o seu dinheiro?**
+
+Duração: com 12 planos, o capítulo deve ficar entre 35 e 40 s. Se precisar caber em 30 s, o corte é a fala 2.
 
 Sem desfecho (pedido do Alessandro em 15/11): o capítulo termina na dúvida, para deixar insegurança em quem assiste. Ninguém decide nada e o Ale não dá a solução.
 
