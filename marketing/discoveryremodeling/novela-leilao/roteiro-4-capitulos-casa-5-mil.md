@@ -29,20 +29,28 @@ Visual definido pelo Alessandro em 15/11:
 Objetivo: **deixar a dúvida. Você sabe onde está colocando o seu dinheiro? E a reforma?**
 Neste capítulo o casal NÃO compra e NÃO desiste: termina em aberto.
 
-1. GURU (abrindo uma maleta dourada cheia de dinheiro): "Vocês vão comprar uma casa com cinco mil dólares!"
-2. LÚCIA: "Cinco mil dólares?!" · MARCOS (feliz): "Vamos gastar pouco!"
-3. MARCOS: "Onde fica a casa?" · GURU: "Nos Estados Unidos!"
-4. MARCOS: "Mas em qual cidade?" · GURU: "Isso é detalhe."
-5. LÚCIA: "E a reforma?" · GURU: "Depois a gente vê isso."
-6. LÚCIA: "E quanto vale a casa para vender?" · GURU: "O importante é quanto vocês estão pagando agora. Pouco!"
-7. O casal se olha, cheio de dúvida, mas com vontade de comprar. GURU (batendo no relógio): "É a última chance! Vamos decidir logo!"
-8. Barulho de motor: uma caminhonete branca freia na frente. O ALE desce.
-9. ALE: "Vocês vão colocar o dinheiro suado de vocês num lugar que nem conhecem?"
-10. ALE: "Ele respondeu alguma pergunta de vocês?"
-11. Silêncio. O casal olha para o Guru. O GURU empurra a maleta: "Última chance!"
-12. Close no rosto do casal, em dúvida, com o dinheiro na mão. Corta. Na tela: **E você? Sabe onde está colocando o seu dinheiro?**
+Roteiro fechado em 30 s, com gancho, escalada, quebra, dúvida aberta e CTA:
 
-Duração: com 12 planos, o capítulo deve ficar entre 35 e 40 s. Se precisar caber em 30 s, o corte é a fala 2.
+| Tempo | Função | Imagem | Fala / texto na tela |
+|---|---|---|---|
+| 0–2 s | GANCHO | Guru abre a maleta dourada, o dinheiro brilha no rosto do casal | GURU: "Casa nos Estados Unidos por cinco mil dólares!" · Tela: **Você pagaria?** |
+| 2–4 s | Desejo | Lúcia de boca aberta, Marcos sorrindo | LÚCIA: "Cinco mil?!" |
+| 4–8 s | Dúvida 1 | Close em Marcos, depois no Guru | MARCOS: "Onde fica?" · GURU: "Nos Estados Unidos!" · MARCOS: "Em qual cidade?" · GURU: "Detalhe." |
+| 8–12 s | Dúvida 2 | Close na Lúcia, Guru desvia o olhar | LÚCIA: "E a reforma?" · GURU: "Depois a gente vê." |
+| 12–16 s | Dúvida 3 | Lúcia insiste, Guru sua | LÚCIA: "E quanto ela vale?" · GURU: "O importante é que vocês pagam pouco!" |
+| 16–18 s | Pressão | Guru bate no relógio, empurra a maleta | GURU: "Última chance!" |
+| 18–20 s | QUEBRA | Freada: a caminhonete branca para na frente; o Ale desce | (som de freio, sem fala) |
+| 20–25 s | Virada | Ale encara o casal | ALE: "Vocês vão colocar o dinheiro suado de vocês num lugar que nem conhecem?" |
+| 25–27 s | Golpe final | Close no Ale, Guru ao fundo | ALE: "Ele respondeu alguma pergunta?" |
+| 27–30 s | DÚVIDA ABERTA + CTA | Close no casal com o dinheiro na mão; congela | Tela: **E você, pagaria? Comenta SIM ou NÃO** · **Capítulo 2: a casa. Me segue.** |
+
+Por que prende:
+- Gancho no primeiro segundo: objeto exagerado (maleta dourada), promessa absurda e pergunta para quem assiste.
+- Escalada: três perguntas, cada resposta do Guru pior que a anterior. Quem assiste percebe o golpe antes do casal.
+- Quebra no segundo 18: som e personagem novo, bem no ponto em que a atenção costuma cair.
+- Final em aberto: ninguém decide. A pessoa fica com a dúvida e só resolve no capítulo 2.
+- CTA duplo e fácil: comentar uma palavra (SIM ou NÃO) e seguir para ver a continuação. Sem venda.
+- Legenda palavra a palavra embaixo, para quem assiste sem som.
 
 Sem desfecho (pedido do Alessandro em 15/11): o capítulo termina na dúvida, para deixar insegurança em quem assiste. Ninguém decide nada e o Ale não dá a solução.
 
