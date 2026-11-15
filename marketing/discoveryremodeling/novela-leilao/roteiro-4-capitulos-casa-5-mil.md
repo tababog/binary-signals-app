@@ -80,6 +80,11 @@ PERSONAGENS:
 ### Roupa do Ale na novela (definida pelo Alessandro em 15/11)
 Calça jeans e camisa polo branca com a logomarca da Discovery no peito (lado esquerdo). Nos clipes: anexar o arquivo da logo como referência e pedir "small logo on the left chest, exactly as in the logo reference image"; se a IA deformar a logo, gerar com a polo lisa.
 
+### Falas finais do Ale no capítulo 1 (ditadas pelo Alessandro em 15/11, substituem as anteriores)
+- "Comprar é a parte fácil. A parte mais importante do processo é a reforma."
+- "Ele te deu uma solução para esse ponto?"
+Ênfase pedida: a reforma, o ponto de que ninguém fala. Clipes já aprovados: 1, 2 e 3A (usar 0 a 4 s). Pendentes: 3B (caminhonete chegando, sem ele descer) e 4 (falas finais + dúvida do casal).
+
 ## Capítulo 2 · "Onde fica a casa?"
 Lição: **olhe o lugar antes do preço.**
 
