@@ -1,70 +1,80 @@
 # Novela "A casa de 5 mil dólares" · 4 capítulos de 30 s (pedido do Alessandro em 15/11)
 
-História fictícia, baseada em situações reais de leilão. Status: **roteiro v2 para aprovação** (ajuste do Alessandro em 15/11: o Guru não liga para o preço final da casa nem para onde ela fica; só quer pegar o dinheiro do investidor).
+História fictícia, baseada em situações reais de leilão. Status: **roteiro v3 para aprovação**.
+
+Ajustes do Alessandro em 15/11:
+- O Guru não liga para o preço final da casa nem para onde ela fica; só quer pegar o dinheiro da assessoria.
+- Formato igual ao vídeo de referência de 14/11: esquete em desenho ilustrado, diálogo curto, planos de 1,5 a 2 s.
+- O Ale entra de caminhonete e mostra para o casal que a casa que compraram é uma porcaria.
 
 ## Personagens
-- **Marcos e Lúcia:** casal brasileiro, os investidores. Mandam o dinheiro para o Guru comprar a casa por eles.
-- **Guru da Casa Fácil:** vende milagre na internet. Ganha na hora em que o investidor paga; o que acontece com a casa depois não é problema dele. Personagem inventado, sem parecer com ninguém real.
-- **Ale (personagem 3D do Alessandro):** aparece no fim de cada capítulo com a lição e conduz o capítulo 4. Careca, roupa de acordo com a cena.
+- **Marcos e Lúcia:** casal brasileiro, os investidores. Pagaram a assessoria do Guru.
+- **Guru da Casa Fácil:** terno branco, sorriso de vendedor. Ganha a taxa da assessoria na hora; a casa não é problema dele. Inventado, sem parecer com ninguém real.
+- **Ale (personagem 3D do Alessandro):** chega de caminhonete de obra (sem logo e sem placa na imagem), careca, roupa de trabalho. É quem fala a verdade.
 
 ## Regras que valem aqui
-- Cada capítulo ensina UMA coisa.
-- Sem promessa de lucro, sem venda (só "me segue") até 29/11.
-- Nas imagens: sem texto, número, placa ou endereço. Os números entram na edição.
-- Valores da história são de exemplo e o Alessandro ajusta para ficarem realistas.
+- Cada capítulo ensina UMA coisa, dita pelo Ale em uma frase.
+- Sem promessa de lucro (quem promete é o Guru, e a promessa é a piada). Sem venda até 29/11: só "me segue".
+- Sem citar pessoa, curso ou empresa real. Nas imagens: sem texto, número, placa, logo ou endereço.
+- Cada capítulo abre com 2 s de "no capítulo anterior" e fecha com o Alessandro DE VERDADE, 3 s, na obra.
 
-## Capítulo 1 · "Casa nos EUA por 5 mil dólares"
-Lição: **pergunte como a pessoa ganha. Quem ganha na hora em que você paga não precisa que a casa dê certo.**
+## Capítulo 1 · "Casa por 5 mil dólares"
+Lição: **quem ganha na hora em que você paga não precisa que a casa seja boa.**
 
-| Tempo | Cena | Fala |
-|---|---|---|
-| 0–3 s | Guru na tela do celular, sorrindo, apontando para a câmera | GURU: "Casa nos Estados Unidos por 5 mil dólares. Manda o dinheiro que eu compro para você!" |
-| 3–10 s | Marcos e Lúcia no sofá, olhos arregalados | LÚCIA: "Cinco mil? A gente tem isso!" · MARCOS: "Onde fica a casa?" · GURU (áudio): "Relaxa, é nos Estados Unidos." |
-| 10–17 s | Marcos faz a transferência; do outro lado, o Guru vê o dinheiro cair e já atende o próximo | NARRAÇÃO: "O dinheiro saiu. O guru já estava falando com o próximo investidor." |
-| 17–25 s | Ale na frente de uma casa | ALE: "Antes de mandar dinheiro, pergunte: como essa pessoa ganha? Se ela ganha na hora em que você paga, ela não precisa que a casa dê certo." |
-| 25–30 s | Celular do casal: chega uma mensagem com a localização | NARRAÇÃO: "Dias depois, chegou o endereço." Na tela: **Capítulo 2: onde fica a casa** |
+1. GURU (abrindo uma maleta dourada): "Casa nos Estados Unidos por cinco mil dólares!"
+2. LÚCIA: "Cinco mil?!" · MARCOS: "Onde fica?"
+3. GURU: "Nos Estados Unidos!" · MARCOS: "Mas em que cidade?"
+4. GURU: "Detalhe! Primeiro a taxa da assessoria." (estende a mão)
+5. O casal paga. O Guru conta o dinheiro e já vira para o próximo: "Próximo!"
+6. Barulho de motor: a caminhonete do Ale freia na frente. ALE (pela janela): "Vocês já viram a casa?"
+7. CASAL: "Não..." · ALE: "Então entra aí."
+8. ALESSANDRO REAL: "Ele já ganhou a parte dele. Se a casa é boa ou ruim, tanto faz para ele. Me segue para ver o capítulo 2."
 
 ## Capítulo 2 · "Onde fica a casa?"
-Lição: **o lugar pesa mais que o preço. Casa barata em lugar ruim continua sendo problema.**
+Lição: **olhe o lugar antes do preço.**
 
-| Tempo | Cena | Fala |
-|---|---|---|
-| 0–4 s | Casal olha o mapa no celular | LÚCIA: "Que cidade é essa? Eu nunca ouvi falar." |
-| 4–13 s | Rua vazia, casas fechadas com tábua nas janelas, mato alto | MARCOS: "A rua inteira está abandonada." · NARRAÇÃO: "O guru nunca tinha pisado ali. Ele comprou a mais barata da lista." |
-| 13–18 s | Marcos liga para o Guru; chama e ninguém atende | NARRAÇÃO: "O guru não atendeu." |
-| 18–26 s | Ale andando numa rua de bairro bom | ALE: "Antes do lance, olhe o lugar: a cidade está crescendo ou esvaziando? Tem gente morando na rua? Casa barata em lugar ruim continua sendo problema." |
-| 26–30 s | Envelope na caixa de correio | NARRAÇÃO: "E ainda chegou uma carta." Na tela: **Capítulo 3: o preço de verdade** |
+1. (Anterior, 2 s) O casal sobe na caminhonete.
+2. A caminhonete entra numa rua vazia: casas com tábua nas janelas, mato alto.
+3. LÚCIA: "É aqui?" · ALE: "É aqui."
+4. MARCOS: "Mas cadê os vizinhos?" · ALE: "Foram embora faz tempo."
+5. LÚCIA (no celular): "Guru, a rua está abandonada!" · GURU (na praia, de óculos escuros): "Vista livre! Valoriza!"
+6. ALE (olhando para a câmera): "Ele nunca pisou aqui."
+7. ALESSANDRO REAL: "Antes do preço, olhe o lugar: tem gente morando na rua? A cidade cresce ou esvazia? Me segue para ver o capítulo 3."
 
-## Capítulo 3 · "O preço de verdade"
-Lição: **o preço final da casa é lance + dívidas + reforma.**
+## Capítulo 3 · "A conta de verdade"
+Lição: **o preço da casa é lance + dívidas + reforma.**
 
-| Tempo | Cena | Fala |
-|---|---|---|
-| 0–5 s | Lúcia abre a carta | LÚCIA: "Marcos... a casa veio com dívida." · NARRAÇÃO: "Era um leilão que não limpa as dívidas. Ninguém avisou." |
-| 5–14 s | Porta abre; teto pingando, mofo, piso estufado | MARCOS: "O telhado está vazando." · LÚCIA: "E não tem aquecimento." |
-| 14–19 s | Na tela, a conta subindo: lance + dívida + reforma | NARRAÇÃO: "Os 5 mil viraram só o começo da conta." |
-| 19–27 s | Ale dentro de uma obra de verdade | ALE: "O preço de uma casa de leilão é o lance, mais as dívidas, mais a reforma. Faça essa conta antes, com 15% de reserva." |
-| 27–30 s | Casal sentado na escada, calado | NARRAÇÃO: "E agora, o que fazer?" Na tela: **Capítulo 4: as 4 perguntas** |
+1. (Anterior, 2 s) "Ele nunca pisou aqui."
+2. ALE empurra a porta; ela cai no chão.
+3. LÚCIA: "Cadê o telhado?" · ALE: "Ali no chão da sala."
+4. MARCOS acha um papel grudado na parede: "O que é isso?" · ALE: "A dívida da casa. Esse leilão não limpa dívida."
+5. LÚCIA (no celular): "Guru, tem dívida e não tem telhado!" · GURU: "Isso está no módulo sete." (desliga)
+6. ALE puxa uma trena e uma calculadora: "Lance, mais dívida, mais reforma." A conta sobe na tela e o casal senta no chão.
+7. ALESSANDRO REAL: "Os 5 mil eram só o começo. Faça a conta inteira antes, com 15% de reserva. Me segue para ver o final."
 
-## Capítulo 4 · "As 4 perguntas antes de mandar dinheiro"
-Lição: **as 4 perguntas que evitam tudo isso.**
+## Capítulo 4 · "As 4 perguntas"
+Lição: **as 4 perguntas antes de mandar dinheiro.**
 
-| Tempo | Cena | Fala |
-|---|---|---|
-| 0–3 s | Ale chega na casa, aperta a mão do casal | ALE: "Vocês pularam 4 perguntas." |
-| 3–20 s | Ale anda pela casa; cada pergunta aparece na tela | ALE: "Um: como quem está te vendendo ganha dinheiro? Dois: onde fica a casa, e como é a rua? Três: que tipo de leilão é, e a casa tem dívida? Quatro: quanto custa a reforma, mais 15% de reserva?" |
-| 20–26 s | Celular toca: é o Guru, "nova oportunidade". Lúcia recusa a chamada | LÚCIA: "Dessa vez a gente pergunta primeiro." |
-| 26–30 s | Ale olhando para a câmera | ALE: "Qual dessas 4 você não faria? Comenta aí e me segue." |
+1. (Anterior, 2 s) O casal sentado no chão.
+2. ALE (na caçamba da caminhonete, contando nos dedos): "Vocês pularam 4 perguntas."
+3. ALE: "Um: como quem te vende ganha dinheiro?" (corte: Guru contando dinheiro)
+4. ALE: "Dois: onde fica a casa e como é a rua?" (corte: rua vazia)
+5. ALE: "Três: que leilão é, e tem dívida?" (corte: papel na parede)
+6. ALE: "Quatro: quanto custa a reforma, mais 15%?" (corte: telhado no chão)
+7. Celular toca: GURU: "Tenho outra casa, dez mil!" · LÚCIA recusa a chamada: "Agora a gente pergunta primeiro."
+8. ALESSANDRO REAL: "Qual dessas 4 você não faria? Comenta aí e me segue."
 
 ## Legendas (rascunho)
-1. "Casa nos EUA por 5 mil dólares 😳 Eles mandaram o dinheiro sem saber onde ficava a casa. Você mandaria? 👇 Me segue @discoveryremodeling para ver o capítulo 2."
-2. "Chegou o endereço 📍 Você olharia a rua antes de comprar? 👇 Me segue @discoveryremodeling para ver o capítulo 3."
-3. "Os 5 mil eram só o começo da conta 📩 Lance + dívidas + reforma: você faz essa conta antes? 👇 Me segue @discoveryremodeling para ver o final."
+1. "Casa nos EUA por 5 mil dólares 😳 Eles pagaram sem saber onde ficava a casa. Você pagaria? 👇 Me segue @discoveryremodeling para ver o capítulo 2."
+2. "Chegaram na rua da casa 📍 Você olharia a rua antes de comprar? 👇 Me segue @discoveryremodeling para ver o capítulo 3."
+3. "Os 5 mil eram só o começo da conta 🧮 Lance + dívidas + reforma: você faz essa conta antes? 👇 Me segue @discoveryremodeling para ver o final."
 4. "As 4 perguntas antes de mandar dinheiro para qualquer leilão ✅ Qual delas você não faria? 👇 Salve para não esquecer. Me segue @discoveryremodeling."
 
 Rodapé de todas: "História fictícia, baseada em situações reais. Cada leilão e cada casa são diferentes."
 
 ## Produção
-- Movimento, não fotos (pedido de 14/11): cada cena é um clipe de 4 a 8 s gerado a partir das imagens do personagem.
-- Voz: o Alessandro grava as falas do Ale e a narração; as vozes do casal e do Guru podem ser dele mudando o tom, ou de alguém da família.
+- Clipes com fala gerados pelo Alessandro no Google Flow (Veo), a partir das imagens dos personagens; o Claude monta, legenda (palavra a palavra, embaixo) e equaliza. Daqui não há gerador de vídeo sem pagar.
+- Imagens-base que faltam: Guru, Marcos, Lúcia, a caminhonete, a rua abandonada, a casa por fora e por dentro.
+- Fecho de cada capítulo: o Alessandro grava 4 frases de verdade na obra (3 a 5 s cada).
+- Publicação: Trial Reel primeiro (regra da novela).
 - Depois do OK no roteiro: lista de clipes por cena com o prompt de cada um.
