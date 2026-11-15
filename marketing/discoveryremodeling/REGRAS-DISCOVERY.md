@@ -437,3 +437,8 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Foi gerada por descrição em texto, não pela foto: o envio da foto ao Canva é bloqueado pela rede do ambiente e ele recusou liberar o canva.com em 14/11 (não pedir de novo sem ele falar).
 - O arquivo em tamanho grande só existe no Canva dele; daqui eu só tenho a miniatura. Para usar em vídeo ou capa, ele precisa baixar e subir no Drive.
 - Uso: complemento (capa, abertura, selo, story). NÃO substitui o Alessandro de verdade nos Reels (regra "nenhum Reel sem ele aparecendo").
+
+## Crítica do Alessandro em 15/11: conteúdo fraco, falta impacto e seriedade
+- Palavras dele: "o conteúdo em si tá muito fraco, muito pobre. A gente não tem nada impactante... precisa de um pouco mais de conteúdo sério... a gente tá enrolando muito."
+- Leitura do Claude (não é regra dele ainda): o problema não é só formato (recorte x obra), é o ASSUNTO. Enquete de custo e de tempo ("quanto custou?", "quantos dias?") tem pouco em jogo para quem assiste. O que teve resultado sério até aqui foi conteúdo com risco real: "É golpe?" (melhor do mês) e "3 tipos de leilão" (8 salvos e o único contato sério).
+- Direção proposta em 15/11, a confirmar na reunião: cada vídeo precisa ter algo em jogo (dinheiro perdido, erro, risco, decisão difícil) e um fato concreto na primeira frase. Três linhas: (1) caso real com consequência, (2) o que conferir antes do lance, (3) bastidor de verdade do leilão. Enquetes leves viram story, não Reel. A novela em desenho é entretenimento: fica só como Trial e não é prioridade.
