@@ -12,7 +12,8 @@ Atualizado pelo agente analista-crescimento todo dia. Sem valores em dinheiro.
 ## Diário (a partir de 09/11)
 | Data | Seguidores | Alcance | Reel 14h (casa · views · skip) | Reel 20h (casa · views · skip) | Nota |
 |---|---|---|---|---|---|
-| 13/11 | 0 (pode subir; a Windsor corrige depois) | 757 | recorte na frente da casa · "Telhado parte 1 (pergunta A/B/C)" · 211 views · alcance 176 · 49% pulam · 7,0 s | (sem Reel às 20h; 1º dia de 1 Reel por dia) | Alcance caiu mais 7% (2º dia seguido de queda). Telhado p1 fraco: metade pula no começo. À noite o Alessandro postou o 1º Trial Reel |
+| 14/11 | 0 (pode subir; a Windsor corrige depois) | 540 | recorte na frente da casa · "Telhado parte 2 (resposta + 3 dicas)" · 275 views · alcance 235 · 49% pulam · 14,2 s · 1 salvo | (sem Reel às 20h) | Alcance caiu 29% contra 13/11 (3º dia seguido de queda). A resposta do telhado segurou o dobro do tempo da pergunta (14,2 s contra 7,1 s), mas metade ainda pula. À noite o Alessandro postou o Trial do piso parte 1 |
+| 13/11 | 7 (corrigido pela Windsor) | 757 | recorte na frente da casa · "Telhado parte 1 (pergunta A/B/C)" · 211 views · alcance 176 · 49% pulam · 7,0 s | (sem Reel às 20h; 1º dia de 1 Reel por dia) | Alcance caiu mais 7% (2º dia seguido de queda). Telhado p1 fraco: metade pula no começo. À noite o Alessandro postou o 1º Trial Reel |
 | 12/11 | 5 (corrigido pela Windsor) | 813 | recorte · "PA: 3 tipos de leilão" · 620 views · alcance 479 · 39% pulam · 15,2 s · 7 salvos | 953 · "Isolamento parte 2 (resposta)" · 185 views · alcance 151 · 61% pulam · 5,6 s | Alcance caiu 56% contra 11/11 (os Reels de 10/11 pararam de render). PA foi o mais salvo do período e trouxe o contato sério; a série do isolamento falhou nas duas partes. Último dia com Reel às 20h |
 | 11/11 | 3 (corrigido pela Windsor) | 1.842 | recorte · "Não precisa morar" · 209 views · alcance 167 · 61% pulam · 4,8 s | 953 · "Isolamento parte 1" (Ale no canto) · 184 views · alcance 151 · 73% pulam · 4,3 s | Os dois Reels do dia floparam; o alcance do perfil veio dos Reels de 10/11, que seguiram crescendo ("É golpe?" 1.695, "Lixo p2" 1.463). Aberturas fracas: afirmação que acalma e "paredes abertas" sem pergunta no 1º segundo |
 | 10/11 | 7 (corrigido pela Windsor) | 1.503 | recorte · "É golpe?" · 1.625 views · alcance 1.387 · 28% pulam · 24 curtidas · 3 compart. | 953 · "Lixo parte 2: 2 toneladas" · 1.083 views · alcance 937 · 25% pulam · 27,7 s assistidos em média | Melhor dia desde 03/11. "É golpe?" às 14h bateu todos os Reels de fala; a resposta do lixo às 20h foi o melhor Reel NOTURNO do período |
@@ -38,7 +39,8 @@ Preencher com 24 h e atualizar com 72 h. Skip = % que pulam nos primeiros segund
 | 15/11 14h | Lago: abrimos a casa | andando na obra + textos animados | | | | | | | | |
 | 12/11 14h | PA: 3 tipos de leilão | recorte | 731 | 563 | 40% | 15,5 s | 3 | 8 | 1 | 5 |
 | 12/11 20h | Isolamento parte 2 (resposta) | obra + voz, resposta de pergunta | 201 | 164 | 61% | 5,8 s | 0 | 0 | 0 | 5 |
-| 13/11 14h | Telhado parte 1 (pergunta A/B/C) | recorte na frente da casa | 211 | 176 | 49% | 7,0 s | 0 | 0 | 0 | 0 (parcial) |
+| 13/11 14h | Telhado parte 1 (pergunta A/B/C) | recorte na frente da casa | 219 | 184 | 48% | 7,1 s | 0 | 0 | 0 | 7 |
+| 14/11 14h | Telhado parte 2 (resposta + 3 dicas) | recorte na frente da casa, resposta de pergunta | 275 | 235 | 49% | 14,2 s | 0 | 1 | 0 | 0 (parcial) |
 | 16/11 14h | Comprar barato não é lucro | recorte | | | | | | | | |
 | 16 a 22/11 20h | Lago 1 a 7 | voz + rosto nas pontas | | | | | | | | |
 | 17/11 14h | 953: quanto tempo leva (Reel 9) | recorte | | | | | | | | |
