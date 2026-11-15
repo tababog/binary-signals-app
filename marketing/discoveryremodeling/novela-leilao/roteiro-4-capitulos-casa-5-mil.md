@@ -26,8 +26,8 @@ Visual definido pelo Alessandro em 15/11:
 - Cada capítulo abre com 2 s de "no capítulo anterior" e fecha com o Alessandro DE VERDADE, 3 s, na obra.
 
 ## Capítulo 1 · "Casa por 5 mil dólares" (falas do Alessandro, 15/11)
-Lição: **não coloque seu dinheiro num lugar que você não conhece. E o mais importante é a reforma.**
-Neste capítulo o casal NÃO compra: o Ale chega antes do pagamento.
+Objetivo: **deixar a dúvida. Você sabe onde está colocando o seu dinheiro? E a reforma?**
+Neste capítulo o casal NÃO compra e NÃO desiste: termina em aberto.
 
 1. GURU (abrindo uma maleta dourada cheia de dinheiro): "Vocês vão comprar uma casa com cinco mil dólares!"
 2. LÚCIA: "Cinco mil dólares?!" · MARCOS (feliz): "Vamos gastar pouco!"
@@ -35,10 +35,12 @@ Neste capítulo o casal NÃO compra: o Ale chega antes do pagamento.
 4. MARCOS: "Mas em qual cidade? Qual lugar?" · GURU: "Isso é detalhe. Não importa."
 5. O casal se olha, preocupado. GURU (batendo no relógio): "É a última chance! Vamos decidir logo, vamos comprar!"
 6. Barulho de motor: uma caminhonete branca freia na frente. O ALE desce.
-7. ALE: "Pessoal, vocês vão investir num lugar que vocês não conhecem?"
-8. ALE: "A parte mais importante de tudo isso é a reforma. Não coloquem o dinheiro suado de vocês onde vocês não conhecem. Estudem melhor o caso."
-9. O Guru fecha a maleta, sem graça. ALE (abrindo a porta da caminhonete): "Querem ver a casa? Entra aí."
-10. ALESSANDRO REAL (3 s): "Me segue para ver o capítulo 2: a casa."
+7. ALE: "Vocês vão colocar o dinheiro suado de vocês num lugar que nem conhecem?"
+8. ALE: "E a reforma? Alguém falou da reforma?"
+9. Silêncio. O casal olha para o Guru. O GURU empurra a maleta: "Última chance!"
+10. Close no rosto do casal, em dúvida, com o dinheiro na mão. Corta. Na tela: **E você? Sabe onde está colocando o seu dinheiro?**
+
+Sem desfecho (pedido do Alessandro em 15/11): o capítulo termina na dúvida, para deixar insegurança em quem assiste. Ninguém decide nada e o Ale não dá a solução.
 
 Caminhonete do Ale: GMC Sierra 2021 branca (no desenho, sem logo e sem placa).
 Prompt: `Same 3D animated film style as the reference image. A white 2021 full-size crew cab pickup truck, clean, parked on a suburban street, three-quarter front view. No logos, no badges, no license plate text, no numbers.`
