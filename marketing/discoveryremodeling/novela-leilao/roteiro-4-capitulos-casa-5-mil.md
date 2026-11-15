@@ -1,6 +1,6 @@
 # Novela "A casa de 5 mil dólares" · 4 capítulos de 30 s (pedido do Alessandro em 15/11)
 
-História fictícia, baseada em situações reais de leilão. Status: **roteiro v4 para aprovação** (capítulo 1 com as falas ditadas pelo Alessandro; capítulos 2 a 4 aguardam a revisão dele).
+História fictícia, baseada em situações reais de leilão. Status: **capítulo 1 APROVADO em 15/11**; capítulos 2 a 4 aguardam a revisão do Alessandro.
 
 Ajustes do Alessandro em 15/11:
 - O Guru não liga para o preço final da casa nem para onde ela fica; só quer pegar o dinheiro da assessoria.
@@ -11,13 +11,13 @@ Ajustes do Alessandro em 15/11:
 Visual definido pelo Alessandro em 15/11:
 - **Guru da Casa Fácil:** bem vestido, de terno, corpo atlético e forte, cabelo penteado para trás, óculos escuros, sorriso de vendedor. Ganha a taxa da assessoria na hora; a casa não é problema dele. Inventado, sem parecer com ninguém real.
 - **Marcos:** investidor, 35 a 40 anos, camiseta e calça.
-- **Lúcia:** esposa do Marcos, mulher bonita e chamativa, roupa casual e elegante (sem exagero, para não derrubar o alcance do Reel).
+- **Lúcia:** esposa do Marcos, mulher muito bonita e chamativa, corpo curvilíneo, vestido justo (como o Alessandro definiu; sem decote exagerado, para o Instagram não cortar o alcance).
 - **Ale (personagem 3D do Alessandro):** a caricatura dele (ele envia a imagem). Chega de caminhonete de obra (sem logo e sem placa na imagem), careca, roupa de trabalho. É quem fala a verdade.
 
 ### Prompts das imagens-base (Nano Banana, mandar junto a imagem do Ale como referência de estilo)
 - Guru: `Same 3D animated film style as the reference image. Full body character sheet of a confident salesman in his 40s, athletic muscular build, sharp tailored suit, slicked-back dark hair, dark sunglasses, big salesman smile, holding a golden briefcase. Plain light gray background, soft studio light. No text, no logos, no numbers. Original character, does not resemble any real person.`
 - Marcos: `Same 3D animated film style as the reference image. Full body character sheet of a Brazilian man, 35 to 40 years old, short dark hair, light stubble, plain t-shirt and jeans, sneakers, friendly but slightly naive expression. Plain light gray background, soft studio light. No text, no logos, no numbers. Original character.`
-- Lúcia: `Same 3D animated film style as the reference image. Full body character sheet of a beautiful Brazilian woman in her mid 30s, long wavy dark hair, fitted casual blouse and jeans, confident posture, expressive eyes. Plain light gray background, soft studio light. No text, no logos, no numbers. Original character.`
+- Lúcia: `Same 3D animated film style as the reference image. Full body character sheet of a very beautiful, eye-catching Brazilian woman in her mid 30s, curvy figure, long wavy dark hair, fitted dress, confident posture, expressive eyes. Plain light gray background, soft studio light. No text, no logos, no numbers. Original character.`
 
 ## Regras que valem aqui
 - Cada capítulo ensina UMA coisa, dita pelo Ale em uma frase.
@@ -56,6 +56,20 @@ Sem desfecho (pedido do Alessandro em 15/11): o capítulo termina na dúvida, pa
 
 Caminhonete do Ale: GMC Sierra 2021 branca (no desenho, sem logo e sem placa).
 Prompt: `Same 3D animated film style as the reference image. A white 2021 full-size crew cab pickup truck, clean, parked on a suburban street, three-quarter front view. No logos, no badges, no license plate text, no numbers.`
+
+### Capítulo 1 APROVADO em 15/11 · prompts dos clipes (Google Flow / Veo, vertical 9:16)
+Em todos: anexar as 4 imagens dos personagens como referência e colar o bloco PERSONAGENS antes do prompt da cena.
+
+PERSONAGENS:
+`3D animated film style, vertical 9:16. Characters, always the same: GURU, a man in his 40s, athletic strong build, elegant tailored suit, slicked-back hair, dark sunglasses, salesman smile. MARCOS, Brazilian man, 35 to 40 years old, t-shirt and pants. LUCIA, his wife, very beautiful and eye-catching, curvy, fitted dress, long wavy dark hair. ALE, the bald man from the reference image, work jacket and jeans. Setting: daytime, a sidewalk on a quiet suburban American street, the Guru behind a small golden table. Characters speak Brazilian Portuguese with lip sync. No on-screen text, no subtitles, no logos, no numbers, no license plates.`
+
+1. (0–4 s) `The GURU snaps open a golden briefcase full of cash on the table; golden light shines on the faces of MARCOS and LUCIA. GURU says: "Casa nos Estados Unidos por cinco mil dólares!" Cut to LUCIA, jaw dropped, saying: "Cinco mil?!" MARCOS smiles wide.`
+2. (4–8 s) `Fast back-and-forth close-ups. MARCOS asks: "Onde fica?" GURU, grinning: "Nos Estados Unidos!" MARCOS, confused: "Em qual cidade?" GURU waves his hand: "Detalhe."`
+3. (8–12 s) `Close-up of LUCIA, suspicious, asking: "E a reforma?" Cut to GURU looking away, adjusting his sunglasses: "Depois a gente vê."`
+4. (12–18 s) `LUCIA insists, leaning forward: "E quanto ela vale?" GURU, a drop of sweat on his forehead: "O importante é que vocês pagam pouco!" Then he taps his wristwatch and pushes the briefcase toward them: "Última chance!"`
+5. (18–20 s) `A white 2021 full-size crew cab pickup truck brakes hard at the curb right behind them, tires screeching, dust rising. Everyone turns. ALE steps out and shuts the door. No dialogue.`
+6. (20–27 s) `ALE walks up and faces the couple, serious and calm. ALE says: "Vocês vão colocar o dinheiro suado de vocês num lugar que nem conhecem?" Close-up on ALE, the GURU blurred behind him: "Ele respondeu alguma pergunta?"`
+7. (27–30 s) `Slow push-in on MARCOS and LUCIA holding the cash, looking at each other, then at the GURU, full of doubt. Nobody speaks. Hold the last frame.`
 
 ## Capítulo 2 · "Onde fica a casa?"
 Lição: **olhe o lugar antes do preço.**
