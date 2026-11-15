@@ -24,3 +24,16 @@ Dicas dadas: entender a ideia em vez de decorar; pausa de 1 s depois da pergunta
 
 Melhorou: perguntas curtas ao público em vez de texto decorado; tom subiu de 3,5–3,7 (recitados) para 5,3–7,5. Ponto a ajustar: repete a mesma frase 2–3 vezes seguidas (retakes) — ótimo para edição, mas deixar 1 s de silêncio antes de repetir.
 Dicas: 1) gravar sempre no formato pergunta ("quanto você acha que…?"); 2) pausa de 1 s antes de cada nova tentativa; 3) na próxima live, abrir com uma pergunta para o chat nos primeiros 10 s.
+
+## Semana de 15/11 (gravações na obra de cliente: piso laminado, 13/11)
+| Vídeo | Variação de tom (dp) | Fala/tempo | Leitura |
+|---|---|---|---|
+| Piso, pergunta (1º vídeo, câmera frontal) | 4,23 | 0,25 | Natural; repete a pergunta 2 vezes antes das opções |
+| Piso, processo (vídeo longo, 2 primeiros minutos) | 5,12 | 0,22 | Natural, fala de quem está trabalhando |
+| Piso, resposta (1ª tentativa, ambiente bagunçado) | 1,99 | 0,18 | Fala baixa e corrida, quase sem variação; descartado |
+| Piso, resposta (regravado depois de limpar) | 4,87 | 0,12 | Natural e com energia ("Levou dois dias!") |
+
+Observação: gravação em obra tem eco e ruído, então o número de fala/tempo não compara com os vídeos gravados em casa.
+Melhorou: gravou na obra de verdade, em formato pergunta e resposta, e regravou por conta própria quando a 1ª resposta ficou fraca (tom subiu de 2,0 para 4,9).
+A ajustar: (1) a pergunta do gancho sai duas vezes e demora 9 s para chegar nas opções; (2) o final repete "nos siga" 3 vezes; (3) a resposta ainda não ensina nada (só "levou dois dias").
+Dicas: 1) pergunta uma vez só, já com as opções ("um, dois ou quatro dias?") em até 4 s; 2) na resposta, dizer o número e UM motivo ("dois dias, porque o piso precisa de um dia para acostumar com o ambiente"); 3) um pedido só no final.
