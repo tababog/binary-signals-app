@@ -80,5 +80,5 @@ Números de ~24 h, informados pelo Alessandro (a Windsor pode não mostrar Reel 
 
 | Data | Reel | Tipo | Views (não seguidores) | Curtidas | Compart. | Seguidores ganhos | Compartilhou com todos? |
 |---|---|---|---|---|---|---|---|
-| 13/11 22h20 CT (postado pelo Alessandro) | Comprar barato não é lucro | alerta, recorte | **575 em ~19 h** (print do app, 14/11 16h58 CT; a Windsor está atrasada e mostra 130) · 72% pulam · 4,0 s | 0 | 0 | sem leitura | não: alcance bom, mas quase ninguém fica |
-| 14/11 18h CT (o Alessandro posta) | Piso laminado parte 1 (pergunta 1 · 2 · 4 dias) | NA OBRA, pergunta, réguas animadas | | | | | decidir pelos insights: se menos de 50% pularem, compartilhar com todos e publicar a parte 2 no dia seguinte |
+| 13/11 22h20 CT (postado pelo Alessandro) | Comprar barato não é lucro | alerta, recorte | **575 em ~19 h; 593 em ~27 h** (prints do app; a Windsor atrasa e mostra 131) · 72% pulam · 4,0 s | 0 | 0 | sem leitura | não: alcance bom, mas quase ninguém fica |
+| 14/11 19h09 CT (postado pelo Alessandro) | Piso laminado parte 1 (pergunta 1 · 2 · 4 dias) | NA OBRA, pergunta, réguas animadas | **450 em ~6 h** (print do app, 15/11 1h01 CT) · 57% pulam · 4,4 s (Windsor com 135 views) | 0 | 0 | sem leitura | decidir com 24 h (15/11 ~19h CT): se menos de 50% pularem, compartilhar com todos e publicar a parte 2 no dia seguinte |
