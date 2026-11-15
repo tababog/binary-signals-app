@@ -78,7 +78,7 @@ PERSONAGENS:
 - Referência de cena para anexar nos próximos clipes: `clipes/cap1-referencia-cena.jpg`.
 
 ### Roupa do Ale na novela (definida pelo Alessandro em 15/11)
-Calça jeans e camisa polo branca com a logomarca da Discovery no peito (lado esquerdo). Nos clipes: anexar o arquivo da logo como referência e pedir "small logo on the left chest, exactly as in the logo reference image"; se a IA deformar a logo, gerar com a polo lisa.
+ATUALIZADO em 15/11: calça jeans e polo branca LISA, sem logomarca (a logo ficou ruim nos testes). Texto antigo, só para histórico: polo com a logomarca da Discovery no peito (lado esquerdo). Nos clipes: anexar o arquivo da logo como referência e pedir "small logo on the left chest, exactly as in the logo reference image"; se a IA deformar a logo, gerar com a polo lisa.
 
 ### Falas finais do Ale no capítulo 1 (ditadas pelo Alessandro em 15/11, substituem as anteriores)
 - "Comprar é a parte fácil. A parte mais importante do processo é a reforma."

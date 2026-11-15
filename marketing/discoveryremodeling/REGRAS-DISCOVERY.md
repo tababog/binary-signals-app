@@ -446,4 +446,4 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 ## Prompts de vídeo/imagem: primeiro em português (15/11)
 - Todo prompt para IA (Gemini/Veo, Nano Banana) vai PRIMEIRO em português, para o Alessandro ler e corrigir a cena. Só depois do OK dele o Claude entrega a versão em inglês para colar.
 - Uma ação por clipe: clipes com muita coisa (fala + carro + susto + porta) saem errados.
-- Novela: o Ale usa jeans e polo branca com a logo da Discovery; a caminhonete é uma GMC Sierra 2021 branca, para na guia do lado da calçada, e ele desce pela porta do motorista (esquerda).
+- Novela: o Ale usa jeans e polo branca LISA, sem logomarca (15/11: a logo gerada pela IA e a logo colada na edição ficaram ruins; ele mandou tirar). Nos prompts: `plain white polo shirt, no logo, no text`; a caminhonete é uma GMC Sierra 2021 branca, para na guia do lado da calçada, e ele desce pela porta do motorista (esquerda).
