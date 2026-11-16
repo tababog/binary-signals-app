@@ -447,3 +447,9 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Todo prompt para IA (Gemini/Veo, Nano Banana) vai PRIMEIRO em português, para o Alessandro ler e corrigir a cena. Só depois do OK dele o Claude entrega a versão em inglês para colar.
 - Uma ação por clipe: clipes com muita coisa (fala + carro + susto + porta) saem errados.
 - Novela: o Ale usa jeans e polo branca LISA, sem logomarca (15/11: a logo gerada pela IA e a logo colada na edição ficaram ruins; ele mandou tirar). Nos prompts: `plain white polo shirt, no logo, no text`; a caminhonete é uma GMC Sierra 2021 branca, para na guia do lado da calçada, e ele desce pela porta do motorista (esquerda).
+
+## Aporte de investidor é ENTRADA, nunca reforma (15/11)
+- Print de Zelle/wire RECEBIDO de investidor = aporte = **entrada de caixa**. Na página Caixa da casa vai na categoria "Entrada de Investidores", grupo "Entradas", tipo Entrada. Nunca em Reforma, Pessoas ou qualquer saída.
+- O formulário de dúvida da Caixa não oferecia essa opção (o código tira "Entrada de Investidores" e o grupo "Entradas" da lista), por isso o Alessandro criou "ENTRADA DE INVESTIDOR" dentro de Reforma. Ao regerar as páginas Caixa, incluir a opção de entrada no formulário, em todas as casas.
+- Antes de somar um aporte: confirmar a data, de qual investidor é (ex.: empresa que paga em nome do cotista) e se ele já não está no total de aportes da página. Sem isso, perguntar; não lançar.
+- Detalhe por investidor continua só na aba Investidores, com senha. Valores nunca vão para o GitHub.
