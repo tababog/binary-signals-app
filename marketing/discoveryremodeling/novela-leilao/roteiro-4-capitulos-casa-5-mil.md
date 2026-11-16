@@ -117,6 +117,12 @@ Lição: **olhe o lugar antes do preço.**
 - Referência de cena (fachada + os três): `clipes/cap2-referencia-casa.jpg`.
 - Sequência combinada: 2) o Ale entra em cena e abre a porta; 3) dentro, telhado pingando; 4) mofo e piso, "nada disso estava nos cinco mil"; 5) Lúcia pergunta quanto custa, silêncio. Final em aberto, com "Quanto você acha que custa? Comente um valor".
 
+### Capítulo 2 montado (16/11) · prévia para aprovação
+- Arquivo: `previas/novela-cap2-previa.mp4` (40 s). Clipes: cap2-clipe1 (Guru: "Só precisa de uma reforma básica"), 2a (Ale: "Reforma básica? Vamos ver por dentro"), 2b (Marcos abre: maçaneta, poeira e pombos; usar 3,1 a 6,95 s), 2c (casal bravo, Guru sem graça), 3 (Lúcia: "Que cheiro é esse?" · Ale: "Isso é telhado. Tinta não resolve."), 4 (Lúcia: "Cinco mil dólares era só o arremate? E quanto custa arrumar tudo isso?" · Guru sai de fininho).
+- Mudanças pedidas pelo Alessandro: quem abre a porta é o marido e o Guru fica para trás assustado; saiu a fala do Ale na parede com mofo; a Lúcia reclama dos 5 mil do arremate.
+- Telas: abertura "VOCÊ ENTRARIA?"; final "QUANTO VOCÊ ACHA QUE CUSTA? · COMENTE UM VALOR"; cartão "No próximo capítulo: A conta da reforma".
+- Legenda do post (rascunho): "Eles foram ver a casa de 5 mil dólares 😳 Maçaneta na mão, telhado pingando e o guru saindo de fininho. Quanto você acha que custa arrumar tudo isso? Comente um valor 👇 Me segue @discoveryremodeling para ver o capítulo 3: a conta da reforma. História fictícia, baseada em situações reais. Cada leilão e cada casa são diferentes. #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua"
+
 ## Capítulo 3 · "A conta de verdade"
 Lição: **o preço da casa é lance + dívidas + reforma.**
 
