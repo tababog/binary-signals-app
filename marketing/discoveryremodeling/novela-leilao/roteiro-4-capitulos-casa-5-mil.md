@@ -112,6 +112,11 @@ Lição: **olhe o lugar antes do preço.**
 6. ALE (olhando para a câmera): "Ele nunca pisou aqui."
 7. ALESSANDRO REAL: "Antes do preço, olhe o lugar: tem gente morando na rua? A cidade cresce ou esvazia? Me segue para ver o capítulo 3."
 
+### Capítulo 2 em produção (16/11)
+- Clipe 1 gerado pelo Alessandro: `clipes/cap2-clipe1.mp4` (10 s). O Guru, o Marcos e a Lúcia chegam na frente de uma casa velha de madeira; GURU: "Só precisa de uma reforma básica." O Ale ainda não aparece.
+- Referência de cena (fachada + os três): `clipes/cap2-referencia-casa.jpg`.
+- Sequência combinada: 2) o Ale entra em cena e abre a porta; 3) dentro, telhado pingando; 4) mofo e piso, "nada disso estava nos cinco mil"; 5) Lúcia pergunta quanto custa, silêncio. Final em aberto, com "Quanto você acha que custa? Comente um valor".
+
 ## Capítulo 3 · "A conta de verdade"
 Lição: **o preço da casa é lance + dívidas + reforma.**
 
