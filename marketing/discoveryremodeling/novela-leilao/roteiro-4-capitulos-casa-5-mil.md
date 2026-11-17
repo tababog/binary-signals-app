@@ -160,3 +160,16 @@ Rodapé de todas: "História fictícia, baseada em situações reais. Cada leil�
 - Fecho de cada capítulo: o Alessandro grava 4 frases de verdade na obra (3 a 5 s cada).
 - Publicação: Trial Reel primeiro (regra da novela).
 - Depois do OK no roteiro: lista de clipes por cena com o prompt de cada um.
+
+## Capítulo 3 · "A conta da reforma" · PROPOSTA de 17/11 (prompts em português, aguardando OK do Alessandro)
+Lição: a reforma custa mais que o arremate. Sem desfecho: termina na dúvida ("E agora?").
+Os valores da conta NÃO são falados nos clipes: entram como texto animado na edição (a IA erra número escrito).
+Em todos os clipes: formato vertical 9:16, referência vertical, mesmos personagens e mesma casa do capítulo 2, por dentro. Ale de jeans e polo branca lisa, sem logomarca.
+
+1. GANCHO (sala velha). Marcos e Lúcia de frente para o Ale, bravos e preocupados. MARCOS: "Quanto custa arrumar tudo isso?" · ALE puxa uma trena do bolso e levanta uma prancheta: "Vamos fazer a conta."
+2. TELHADO E ELÉTRICA. Ale aponta para o teto, cai uma gota no balde: "Telhado novo." Vira e aponta para fios soltos na parede: "Elétrica inteira." Marcos engole seco a cada item.
+3. COZINHA E BANHEIRO. Ale abre a torneira da cozinha, sai água marrom: "Encanamento. Cozinha. Banheiro." Lúcia põe a mão na testa e fecha os olhos.
+4. O GURU. Guru na porta, de costas, andando na ponta dos pés para sair. LÚCIA: "Você sabia disso?" · GURU vira, sorri sem graça: "Reforma é detalhe. O importante é que foi barato!" e sai rápido.
+5. FINAL SEM DESFECHO. Ale vira a prancheta para o casal: "A reforma custa mais que a casa." MARCOS olha a prancheta, pálido: "E a gente já pagou os cinco mil..." LÚCIA olha para o Ale: "E agora?" Corta.
+
+Fecho na edição: "VOCÊ CONTINUARIA OU DESISTIRIA? · COMENTE AÍ" e cartão "No último capítulo: COMPRAR OU DESISTIR?".
