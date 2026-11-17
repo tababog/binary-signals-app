@@ -89,3 +89,5 @@ Números de ~24 h, informados pelo Alessandro (a Windsor pode não mostrar Reel 
 
 
 **Leitura de 16/11 13h58 CT (print da tela "Trial reels" do app):** novela cap. 1 = 760 views em ~22 h · piso parte 1 = 643 em ~43 h · comprar barato = 611 em ~64 h. A novela é o Trial que mais rápido juntou views; pulos na última leitura da Windsor: 60% (acima da meta de 50%, então não compartilhar com todos). Próximo Trial: novela cap. 2.
+
+**Novela cap. 2 "Visitando a casa de leilão"** (Trial postado pelo Alessandro em 16/11 14h36 CT): leitura parcial da Windsor em 17/11 7h30 CT (~17 h, a Windsor atrasa nos Trials): 125 views · alcance 110 · **42% pulam** · 11,1 s de tempo médio · 0 compart. Retenção bem melhor que a do cap. 1 (60% pulam, 8,5 s). Falta o print de 24 h do app.

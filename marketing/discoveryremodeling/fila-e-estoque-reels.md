@@ -45,7 +45,7 @@ Regra de 13/11: o Reel das 14h é, sempre que der, vídeo com o Alessandro dentr
 | # | Reel | O que falta | Arquivo |
 |---|---|---|---|
 | ✔ | Comprar barato não é lucro | **Trial postado em 13/11** | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-barato-nao-e-lucro.mp4 |
-| 1 | Você conhecia o Section 8? | pronto e aprovado | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-section8.mp4 |
+| 1 | Você conhecia o Section 8? | pronto e aprovado · **indicado como Trial em 17/11** | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s4-section8.mp4 |
 | 1b | 953: quanto tempo leva reformar (Reel 9, recorte) | pronto e aprovado; saiu de 28/11 (considerado fraco para o perfil) | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-953-9-tempo.mp4 |
 | 1c | 953: a equipe (Reel 11, bolinha) | versão aprovada em 11/11; saiu de 29/11 | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-953-11-equipe-bolinha.mp4 |
 | 2 | O conselho que eu daria pra mim no começo | pronto e aprovado | https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-conselho-reforma.mp4 |
