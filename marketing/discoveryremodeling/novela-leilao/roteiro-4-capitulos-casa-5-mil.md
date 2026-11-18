@@ -207,3 +207,7 @@ O Alessandro não quis valores na tela. Saíram os números; a cada item (telhad
 
 ### Capítulo 3 · versão 4 (17/11)
 Ideia do Claude para a conta sem números: barra "DINHEIRO DO CASAL" no alto, cheia e verde no começo. A cada item do Ale a barra perde um pedaço, muda de cor (verde, amarelo, vermelho), treme, solta cédulas e toca um "plim" de caixa. No último item fica vazia com "ACABOU!" piscando, e continua na tela enquanto o guru diz "o importante é que foi barato!".
+
+### Capítulo 3 · versão 5 (17/11)
+Pedido do Alessandro: cédulas menos artificiais e caindo POR TRÁS dos personagens. Feito com recorte automático dos personagens (modelo selfie_multiclass da MediaPipe rodando em tflite): as cédulas saem da barra, caem atrás de quem está em cena, com luz, sombra, leve desfoque e tom quente do ambiente. A barra "DINHEIRO DO CASAL" fica por cima.
+Lição para os próximos: efeito em cima de desenho 3D precisa de luz, sombra e profundidade, e nunca passa na frente do rosto.
