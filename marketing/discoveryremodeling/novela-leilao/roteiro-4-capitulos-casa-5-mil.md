@@ -217,3 +217,15 @@ Cédulas redesenhadas em 3D (curvadas, frente e verso, luz e sombra, girando no 
 Tentativas que não serviram: imagem do Canva (só devolve miniatura pequena para esta sessão) e o plugin ai-video-editor (ManyMotions), que não conectou (rede bloqueou).
 
 **Capítulo 3 APROVADO pelo Alessandro em 17/11 (versão 6). Ele posta como Trial.** Falta o capítulo 4 (último): "Comprar ou desistir?".
+
+## Capítulo 4 (último) · "Comprar ou desistir?" · PROPOSTA de 17/11 (prompts em português, aguardando OK)
+Pedido do Alessandro: fechamento forte, impactante e polêmico. Sem promessa de lucro, sem venda, sem citar pessoa ou empresa real.
+Em todos: vertical 9:16, tomada única sem cortes, personagem andando, câmera em movimento. Cenário: calçada na frente da casa velha do capítulo 2.
+
+1. GANCHO. Marcos e Lúcia saem pela porta da casa andando rápido, bravos. O guru está encostado no carro, contando um maço de dinheiro. MARCOS aponta para ele: "Queremos nosso dinheiro de volta!" · GURU guarda o maço no paletó, sorrindo: "De volta? A minha parte eu já fiz."
+2. O GURU VAI EMBORA. Guru abre a porta do carro, entra e fala pela janela: "Eu vendo a oportunidade. A reforma é problema de vocês!" O carro arranca e some na rua; o casal fica parado, olhando.
+3. AS DUAS ESCOLHAS. Lúcia anda até o Ale, aflita: "A gente perdeu tudo?" · ALE balança a cabeça: "Ainda não. Dá para comprar sabendo a conta inteira... ou desistir."
+4. A DECISÃO. Marcos e Lúcia se olham. MARCOS respira fundo: "A gente desiste." · ALE põe a mão no ombro dele: "Às vezes, o melhor negócio é o que você não fecha."
+5. FECHAMENTO POLÊMICO. Ale anda sozinho em direção à câmera, a casa velha ao fundo, e fala olhando para a lente, sério: "Quem te vende casa barata e esconde a reforma não quer o seu sucesso. Quer o seu dinheiro."
+
+Na edição: tela final preta com "O GURU GANHA QUANDO VOCÊ PAGA. NÃO QUANDO DÁ CERTO." · "CONCORDA? COMENTE AÍ" · "Me segue @discoveryremodeling".
