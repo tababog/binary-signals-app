@@ -57,7 +57,7 @@ No Brasil é assim também? Me conta 👇
 Me segue @discoveryremodeling: amanhã eu mostro o que a gente achou lá dentro 👀
 #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
-- **20:00** · reel · NOVELA cap. 1 "A casa de 5 mil dólares" (versão Reels, verde limão) · doc `s3-qua-n1` · PRONTO
+- **20:00** · reel · NOVELA cap. 1 "A casa de 5 mil dólares" (versão Reels, verde limão) · doc `s3-qua-n1` · sai só com o OK do Alessandro · capa: thumb_offset 1000 (faixa verde limão)
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/novela-leilao/novela-cap1-reels-verde.mp4
   - legenda:
 

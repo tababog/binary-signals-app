@@ -484,3 +484,4 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - O Alessandro decidiu postar a novela no Reels do perfil, um capítulo por dia às 20h de Brasília (18h CT), como 2º Reel do dia; o Reel das 14h continua. Cap. 1 em 18/11, cap. 2 em 19/11, cap. 3 em 20/11, cap. 4 quando ficar pronto.
 - Cor de destaque da novela: VERDE LIMÃO (#BFFF00; em ASS `&H00FFBF&`) no lugar do amarelo, em tudo que era amarelo (palavra destacada da legenda, faixa do gancho, cartão final).
 - Na versão do Reels, o gancho do cap. 1 virou pergunta no primeiro instante: "CASA POR 5 MIL DÓLARES: VOCÊ COMPRARIA?".
+- Capa dos Reels da novela (18/11): a capa tem que mostrar algo no mesmo verde limão. A faixa do gancho fica dentro da área que aparece na grade do perfil (recorte 4:5) e o "CAPÍTULO N" vai em verde; publicar com `thumb_offset` no 1º segundo, onde a faixa está inteira.
