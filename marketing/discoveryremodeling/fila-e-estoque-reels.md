@@ -68,3 +68,11 @@ O Trial que for bem (decisão pelos insights de 24 h) é compartilhado com todos
 | Todo investimento tem risco | termina em "comenta ASSESSORIA" (venda); usar em dezembro | semana-crescimento/reel-todo-investimento-risco.mp4 |
 | Não precisa morar nos EUA | já publicado em 11/11 (59% pularam); não repetir antes de dezembro | semana-crescimento/reel-nao-precisa-morar.mp4 |
 | Cortes da live: preço, casa barata, telhado, permit | começo fraco e fundo de parede (o 1º teve 60% de pulos) | semana-crescimento/cortes-live/ |
+
+## Duplex antigo, recorte para Trial (aprovado em 18/11)
+- Arquivo: `semana-crescimento/duplex-recorte-trial.mp4` (versão 3, 31 s). Recorte do Reel de 17/02 (o que mais trouxe seguidores), sem valores, sem taxa, sem número da casa.
+- Gancho "VOCÊ ENTRARIA NUMA CASA ASSIM?"; final "VOCÊ COMPRARIA ESTA CASA?" com botões SIM (verde) e NÃO (vermelho) animados (pedido do Alessandro).
+- Nitidez recuperada por IA (original em 480p). Scripts: `duplex-recorte-nitidez.py` e `duplex-recorte-montagem.py`.
+- Plano: Trial na quinta 19/11 às 14h30 de Connecticut (o Alessandro posta). Leitura de 24 h na sexta; se for bem, "Compartilhar com todos".
+- Teste de cores do capítulo 2 passa para sexta 20/11 (verde) e sábado 21/11 (vermelho).
+- Pendente: confirmar que as pessoas que aparecem autorizam aparecer de novo.
