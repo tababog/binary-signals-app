@@ -240,3 +240,6 @@ O guru sai logo no clipe 1; os outros 4 clipes são do Ale ensinando e fechando 
 5. MENSAGEM FINAL (para a câmera). Ale anda sozinho até a câmera, casa ao fundo, sério: "Eu vivo de casa de leilão. Quem te esconde a reforma não quer o seu sucesso. Quer o seu dinheiro."
 
 Tela final: "O GURU GANHA QUANDO VOCÊ PAGA. NÃO QUANDO DÁ CERTO." · "CONCORDA? COMENTE AÍ" · "Me segue @discoveryremodeling".
+
+### Capítulo 3 · versão 7 (17/11, pedido do Alessandro)
+Saiu a chuva de cédulas. Agora, a cada item, um bando de cédulas com asinhas brancas passa voando da esquerda para a direita, atrás dos personagens, batendo as asas. A barra "DINHEIRO DO CASAL" continua. Script: `edicao/meter4.py`.
