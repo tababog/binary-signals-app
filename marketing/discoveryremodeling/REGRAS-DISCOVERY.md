@@ -469,3 +469,8 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - A página confere cada senha no navegador e grava os dados abertos na coleção `senhas` (só administrador), com `tipo: "liberar"`. O Claude lê, atualiza aportes e saldos (aporte menos 10% quando for reforma), recriptografa com as mesmas senhas, republica e APAGA o documento.
 - Senha nunca vai no chat nem no GitHub. Investidor sem senha digitada fica como está.
 - Aporte pago por empresa ou terceiro: guardar no comprovante quem pagou e lançar no cotista que o Alessandro indicar.
+
+### Novela: mais movimento (pedido do Alessandro em 17/11)
+- Nos prompts de vídeo: pedir sempre "one single continuous shot, no cuts", personagem andando ou gesticulando e câmera em movimento (push-in). Corte dentro do clipe faz personagem "pular" de lugar e ele não aceita.
+- Na edição: câmera aproximando devagar em cada clipe e tranco de zoom nos números ou palavras fortes.
+- Conta de reforma na novela: números pulando na tela, um por item, sem total.

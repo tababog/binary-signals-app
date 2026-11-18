@@ -196,3 +196,8 @@ Por isso o clipe 3 mudou: sai "Encanamento" e a torneira; o Ale conta nos dedos 
 Arquivo: `novela-leilao/novela-cap3-a-conta-da-reforma.mp4` (43,6 s, vertical, sem acelerar). Clipes: `clipes/cap3-clipe1.mp4` a `cap3-clipe5.mp4`, todos 720x1280.
 Cortes: 1 1,4–9,1 · 2 1,2–8,4 · 3 1,5–8,5 · 4 0,9–9,7 · 5 0,0–9,6. Números pulam no alto da tela (sem total). Fecho "VOCÊ CONTINUARIA OU DESISTIRIA? · COMENTE AÍ"; cartão "No último capítulo: COMPRAR OU DESISTIR?".
 Legenda do post (rascunho): "Fizeram a conta da reforma da casa de 5 mil dólares 😳 Telhado, elétrica, cozinha, banheiro, piso e pintura. Você continuaria ou desistiria? Comente aí 👇 Me segue @discoveryremodeling para ver o último capítulo. História fictícia, baseada em situações reais. Os valores são exemplos; cada casa e cada reforma são diferentes. #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua"
+
+### Capítulo 3 · versão 2 (17/11, a pedido do Alessandro)
+- Clipe 1 trocado: no primeiro o Marcos "pulava" de lugar (corte dentro do clipe). O novo é tomada única, com ele andando até o Ale. Corte usado: 1,6–9,0.
+- Movimento na edição: câmera aproximando devagar em cada clipe (zoom de 1,00 a 1,075) e tranco de zoom a cada número.
+- Duração: 43,4 s.
