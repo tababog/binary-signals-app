@@ -89,7 +89,7 @@ O que você faria com isso? Comenta 👇
 Me segue @discoveryremodeling: amanhã tem a parede que eu NÃO vou derrubar 👀
 #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
-- **20:00** · reel · NOVELA cap. 2 "Visitando a casa de leilão" (versão Reels, verde limão) · doc `s3-qui-n2` · sai só com o OK do Alessandro · capa: thumb_offset 1000 (faixa verde limão)
+- **20:00** · reel · NOVELA cap. 2 "Visitando a casa de leilão" (versão Reels, verde limão) · doc `s3-qui-n2` · SEGURADO em 18/11: NÃO publicar. O Alessandro quer ver primeiro o resultado do cap. 1 em verde antes de decidir a cor e a data do cap. 2
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/novela-leilao/novela-cap2-reels-verde.mp4
   - legenda:
 

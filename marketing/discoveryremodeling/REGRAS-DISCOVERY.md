@@ -481,7 +481,7 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - O final tem que MOTIVAR quem quer investir: a mensagem é "faça a conta antes" (lance, dívidas, reforma, tempo de obra), não "não invista".
 
 ### Novela no Reels do perfil e cor verde limão (18/11)
-- O Alessandro decidiu postar a novela no Reels do perfil, um capítulo por dia às 20h de Brasília (18h CT), como 2º Reel do dia; o Reel das 14h continua. Cap. 1 em 18/11, cap. 2 em 19/11, cap. 3 em 20/11, cap. 4 quando ficar pronto.
-- Cor de destaque da novela: VERDE LIMÃO (#BFFF00; em ASS `&H00FFBF&`) no lugar do amarelo, em tudo que era amarelo (palavra destacada da legenda, faixa do gancho, cartão final).
+- O Alessandro decidiu postar a novela no Reels do perfil, começando pelo cap. 1 em 18/11 às 20h de Brasília (18h CT), como 2º Reel do dia; o Reel das 14h continua. Os capítulos seguintes só entram quando ele decidir, depois de ver o resultado do cap. 1.
+- Cor verde limão (#BFFF00; em ASS `&H00FFBF&`) é um TESTE, só no cap. 1 do Reels (18/11). Correção do Alessandro no mesmo dia: "Não mude o capítulo 2 ainda. Quero ver o andamento do 1, se a cor muda alguma coisa." Não trocar a cor dos outros capítulos nem agendar os próximos sem ele pedir; primeiro comparar o cap. 1 verde (Reels) com o cap. 1 amarelo (Trial).
 - Na versão do Reels, o gancho do cap. 1 virou pergunta no primeiro instante: "CASA POR 5 MIL DÓLARES: VOCÊ COMPRARIA?".
 - Capa dos Reels da novela (18/11): a capa tem que mostrar algo no mesmo verde limão. A faixa do gancho fica dentro da área que aparece na grade do perfil (recorte 4:5) e o "CAPÍTULO N" vai em verde; publicar com `thumb_offset` no 1º segundo, onde a faixa está inteira.
