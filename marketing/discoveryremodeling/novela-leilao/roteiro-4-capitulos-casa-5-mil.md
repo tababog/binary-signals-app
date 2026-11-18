@@ -184,3 +184,6 @@ BASE (colar no começo de cada prompt): `Vertical 9:16. Fully fictional 3D carto
 3. `[BASE] Old kitchen. The contractor opens the kitchen faucet and brown water comes out. He counts on his fingers while saying: "Encanamento. Cozinha. Banheiro." Next to him the wife puts her hand on her forehead and closes her eyes.`
 4. `[BASE] Living room near the front door. The real estate agent tiptoes toward the exit with his back to the others. The wife points at him and asks: "Você sabia disso?" He turns around, gives an awkward smile, opens his arms and says: "Reforma é detalhe. O importante é que foi barato!" Then he turns back and slowly sneaks out through the door on his tiptoes, very quietly, with exaggerated careful steps, looking over his shoulder.`
 5. `[BASE] Living room. The contractor turns his clipboard toward the couple and says: "A reforma custa mais que a casa." The husband looks at the clipboard, shakes his head and says: "Cheguei à conclusão que essa casa não vale a pena!" The wife looks at the contractor and asks: "E agora?" Everyone stays still, looking at each other.`
+
+### Capítulo 3 · conta na tela (pedido do Alessandro em 17/11)
+Números na casa dos milhares pulando na tela, um por item citado pelo Ale, SEM mostrar total. Valores de exemplo (história fictícia), sem soma no fim.
