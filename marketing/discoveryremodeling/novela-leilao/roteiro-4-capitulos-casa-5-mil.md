@@ -215,3 +215,5 @@ Lição para os próximos: efeito em cima de desenho 3D precisa de luz, sombra e
 ### Capítulo 3 · versão 6 (17/11)
 Cédulas redesenhadas em 3D (curvadas, frente e verso, luz e sombra, girando no ar), caindo atrás dos personagens com recorte automático. Scripts guardados em `novela-leilao/edicao/` (build.py = legendas e cortes; sprites.py = cédulas 3D; meter3.py = barra, cédulas e recorte).
 Tentativas que não serviram: imagem do Canva (só devolve miniatura pequena para esta sessão) e o plugin ai-video-editor (ManyMotions), que não conectou (rede bloqueou).
+
+**Capítulo 3 APROVADO pelo Alessandro em 17/11 (versão 6). Ele posta como Trial.** Falta o capítulo 4 (último): "Comprar ou desistir?".
