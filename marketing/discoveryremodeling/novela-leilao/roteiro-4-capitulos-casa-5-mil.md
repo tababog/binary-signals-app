@@ -243,3 +243,14 @@ Tela final: "O GURU GANHA QUANDO VOCÊ PAGA. NÃO QUANDO DÁ CERTO." · "CONCORD
 
 ### Capítulo 3 · versão 7 (17/11, pedido do Alessandro)
 Saiu a chuva de cédulas. Agora, a cada item, um bando de cédulas com asinhas brancas passa voando da esquerda para a direita, atrás dos personagens, batendo as asas. A barra "DINHEIRO DO CASAL" continua. Script: `edicao/meter4.py`.
+
+### Capítulo 4 · APROVADO em 17/11 com 1 ajuste (proposta 2)
+Fala do Ale no clipe 4, escrita pelo Alessandro: "Essa eu não compraria. Às vezes, o melhor negócio é não fazer negócio."
+
+Prompts em inglês (9:16, referência vertical; tomada única, câmera em movimento):
+BASE: `Vertical 9:16. Fully fictional 3D cartoon, lighthearted comedy, same animated film style as the reference. Invented cartoon characters, not real people. Outside, on the sidewalk in front of a run-down fixer-upper house with an overgrown yard, daytime. Characters: a friendly bald contractor with a short gray beard and glasses, white polo shirt, blue jeans; a home-buying couple (husband around 38 in a gray t-shirt, wife in a brown casual dress); a real estate agent in a dark suit with slicked-back hair and sunglasses. All dialogue in Brazilian Portuguese. One single continuous shot, no cuts.`
+1. `[BASE] Camera follows the couple as they walk quickly out of the house toward the street, upset. The real estate agent leans on a shiny black car, tucking a thick stack of cash into his jacket. The husband points at him and says: "Queremos nosso dinheiro de volta!" The agent smiles and answers: "A minha parte eu já fiz." He gets into the car and drives away down the street while the couple watches.`
+2. `[BASE] Camera slowly pushes in. The wife walks up to the contractor, worried, and asks: "A gente perdeu tudo?" The contractor, calm and confident, shakes his head and answers: "Não. Vocês só pularam a parte mais importante: a conta."`
+3. `[BASE] Camera tracks sideways. The contractor walks slowly along the front of the house, counting on his fingers, one finger per word, while the couple follows him: "Lance. Dívidas. Reforma. Tempo de obra." He stops, turns to them and says: "Sem essa conta, não existe casa barata."`
+4. `[BASE] Camera slowly pushes in. The husband points at the old house and asks: "E essa aqui?" The contractor looks the house up and down, shakes his head and says: "Essa eu não compraria. Às vezes, o melhor negócio é não fazer negócio." The couple looks at each other.`
+5. `[BASE] Only the contractor in frame, the old house behind him. He walks straight toward the camera, serious, looking directly into the lens, and says firmly: "Eu vivo de casa de leilão. Quem te esconde a reforma não quer o seu sucesso. Quer o seu dinheiro." He stops close to the camera and keeps looking at the lens.`
