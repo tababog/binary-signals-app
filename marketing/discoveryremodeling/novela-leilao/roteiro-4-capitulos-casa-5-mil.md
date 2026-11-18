@@ -181,9 +181,13 @@ BASE (colar no começo de cada prompt): `Vertical 9:16. Fully fictional 3D carto
 
 1. `[BASE] Living room. The couple faces the contractor, worried and upset. The husband crosses his arms and asks: "Quanto custa arrumar tudo isso?" The contractor pulls a tape measure from his pocket, raises a clipboard and answers calmly: "Vamos fazer a conta."`
 2. `[BASE] Living room. The contractor points up at the ceiling; a drop of water falls into a bucket. He says: "Telhado novo." He turns and points at loose wires hanging on the wall: "Elétrica inteira." Behind him the husband swallows hard and his eyes go wide at each item.`
-3. `[BASE] Old kitchen. The contractor opens the kitchen faucet and brown water comes out. He counts on his fingers while saying: "Encanamento. Cozinha. Banheiro." Next to him the wife puts her hand on her forehead and closes her eyes.`
+3. `[BASE] Old kitchen with broken cabinets, peeling paint and a worn floor. The contractor looks around and counts on his fingers, one finger per word, saying slowly: "Cozinha. Banheiro. Piso. Pintura." Next to him the wife puts her hand on her forehead and closes her eyes.`
 4. `[BASE] Living room near the front door. The real estate agent tiptoes toward the exit with his back to the others. The wife points at him and asks: "Você sabia disso?" He turns around, gives an awkward smile, opens his arms and says: "Reforma é detalhe. O importante é que foi barato!" Then he turns back and slowly sneaks out through the door on his tiptoes, very quietly, with exaggerated careful steps, looking over his shoulder.`
 5. `[BASE] Living room. The contractor turns his clipboard toward the couple and says: "A reforma custa mais que a casa." The husband looks at the clipboard, shakes his head and says: "Cheguei à conclusão que essa casa não vale a pena!" The wife looks at the contractor and asks: "E agora?" Everyone stays still, looking at each other.`
 
 ### Capítulo 3 · conta na tela (pedido do Alessandro em 17/11)
 Números na casa dos milhares pulando na tela, um por item citado pelo Ale, SEM mostrar total. Valores de exemplo (história fictícia), sem soma no fim.
+
+### Capítulo 3 · valores dados pelo Alessandro em 17/11 (pulam na tela, sem total)
+Telhado 8.000 · Elétrica 4.000 · Cozinha 6.000 · Banheiro 6.000 · Piso 3.000 · Pintura 5.000 (dólares, história fictícia).
+Por isso o clipe 3 mudou: sai "Encanamento" e a torneira; o Ale conta nos dedos "Cozinha. Banheiro. Piso. Pintura."
