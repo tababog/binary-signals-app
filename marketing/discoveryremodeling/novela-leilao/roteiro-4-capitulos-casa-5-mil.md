@@ -201,3 +201,6 @@ Legenda do post (rascunho): "Fizeram a conta da reforma da casa de 5 mil dólare
 - Clipe 1 trocado: no primeiro o Marcos "pulava" de lugar (corte dentro do clipe). O novo é tomada única, com ele andando até o Ale. Corte usado: 1,6–9,0.
 - Movimento na edição: câmera aproximando devagar em cada clipe (zoom de 1,00 a 1,075) e tranco de zoom a cada número.
 - Duração: 43,4 s.
+
+### Capítulo 3 · versão 3 (17/11)
+O Alessandro não quis valores na tela. Saíram os números; a cada item (telhado, elétrica, cozinha, banheiro, piso, pintura) cai uma chuva de cédulas de dólar de desenho, sem valor. O tranco de zoom nos itens continua. Legenda do post: tirar a frase "Os valores são exemplos".
