@@ -107,3 +107,8 @@ Números de ~24 h, informados pelo Alessandro (a Windsor pode não mostrar Reel 
 - Riscos do original: título "oportunidade de investimento" e valor de aluguel na tela (promessa financeira); duas pessoas em cena (pedir autorização).
 - Plano proposto: cortar o melhor trecho em 30 a 40 s, pergunta no 1º segundo, título novo sem "oportunidade de investimento", sem valor fixo de aluguel, e testar como Trial (sem pagar). Aguardando o vídeo original.
 - Hipótese do Alessandro (18/11): o que prendeu foi o CONTRASTE, uma mulher elegante, com roupa de marca, entrando numa casa destruída; isso teria chamado principalmente o público feminino. Ideia de formato a testar em Trial: "elegante na casa destruída" (ela mostrando a casa, 30 a 40 s, pergunta no 1º segundo). O público 100% feminino dos insights combina com a hipótese, mas também pode ser o público escolhido no anúncio.
+
+### Teste de cor, leitura parcial (18/11, 16h16 CT, print do Alessandro)
+- Trial novela cap. 2 VERDE LIMÃO: 161 views, 72 viewers, 12 s de tempo médio, skip 34,3%, 2 curtidas, 1 salvo, 0 follows. Fonte: 96,3% aba Reels. Hora da postagem ainda não informada.
+- Referência cap. 2 AMARELO (27 h): 624 views, skip 42%, 11,1 s.
+- Leitura: skip e tempo um pouco melhores no verde, mas amostra pequena (72 pessoas). Comparar só com 24 h.
