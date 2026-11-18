@@ -229,3 +229,14 @@ Em todos: vertical 9:16, tomada única sem cortes, personagem andando, câmera e
 5. FECHAMENTO POLÊMICO. Ale anda sozinho em direção à câmera, a casa velha ao fundo, e fala olhando para a lente, sério: "Quem te vende casa barata e esconde a reforma não quer o seu sucesso. Quer o seu dinheiro."
 
 Na edição: tela final preta com "O GURU GANHA QUANDO VOCÊ PAGA. NÃO QUANDO DÁ CERTO." · "CONCORDA? COMENTE AÍ" · "Me segue @discoveryremodeling".
+
+### Capítulo 4 · PROPOSTA 2 de 17/11 (pedido: Ale como quem entende do negócio, com mensagem muito forte para quem assiste)
+O guru sai logo no clipe 1; os outros 4 clipes são do Ale ensinando e fechando olhando para a câmera.
+
+1. O GURU FOGE. Marcos e Lúcia saem da casa andando rápido. MARCOS aponta: "Queremos nosso dinheiro de volta!" · GURU, encostado no carro, guarda um maço de dinheiro no paletó: "A minha parte eu já fiz." Entra no carro e vai embora.
+2. O ALE ACALMA. Lúcia anda até o Ale, aflita: "A gente perdeu tudo?" · ALE, calmo e firme: "Não. Vocês só pularam a parte mais importante: a conta."
+3. O ALE ENSINA. Ale anda pela frente da casa contando nos dedos, o casal acompanha: "Lance. Dívidas. Reforma. Tempo de obra. Sem essa conta, não existe casa barata."
+4. O VEREDITO. MARCOS aponta a casa: "E essa aqui?" · ALE olha a casa de cima a baixo e balança a cabeça: "Essa eu não compraria. Às vezes, o melhor negócio é o que você não fecha."
+5. MENSAGEM FINAL (para a câmera). Ale anda sozinho até a câmera, casa ao fundo, sério: "Eu vivo de casa de leilão. Quem te esconde a reforma não quer o seu sucesso. Quer o seu dinheiro."
+
+Tela final: "O GURU GANHA QUANDO VOCÊ PAGA. NÃO QUANDO DÁ CERTO." · "CONCORDA? COMENTE AÍ" · "Me segue @discoveryremodeling".
