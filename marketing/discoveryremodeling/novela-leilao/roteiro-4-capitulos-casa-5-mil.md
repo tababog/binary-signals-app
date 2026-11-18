@@ -211,3 +211,7 @@ Ideia do Claude para a conta sem números: barra "DINHEIRO DO CASAL" no alto, ch
 ### Capítulo 3 · versão 5 (17/11)
 Pedido do Alessandro: cédulas menos artificiais e caindo POR TRÁS dos personagens. Feito com recorte automático dos personagens (modelo selfie_multiclass da MediaPipe rodando em tflite): as cédulas saem da barra, caem atrás de quem está em cena, com luz, sombra, leve desfoque e tom quente do ambiente. A barra "DINHEIRO DO CASAL" fica por cima.
 Lição para os próximos: efeito em cima de desenho 3D precisa de luz, sombra e profundidade, e nunca passa na frente do rosto.
+
+### Capítulo 3 · versão 6 (17/11)
+Cédulas redesenhadas em 3D (curvadas, frente e verso, luz e sombra, girando no ar), caindo atrás dos personagens com recorte automático. Scripts guardados em `novela-leilao/edicao/` (build.py = legendas e cortes; sprites.py = cédulas 3D; meter3.py = barra, cédulas e recorte).
+Tentativas que não serviram: imagem do Canva (só devolve miniatura pequena para esta sessão) e o plugin ai-video-editor (ManyMotions), que não conectou (rede bloqueou).
