@@ -161,7 +161,7 @@ Rodapé de todas: "História fictícia, baseada em situações reais. Cada leil�
 - Publicação: Trial Reel primeiro (regra da novela).
 - Depois do OK no roteiro: lista de clipes por cena com o prompt de cada um.
 
-## Capítulo 3 · "A conta da reforma" · PROPOSTA de 17/11 (prompts em português, aguardando OK do Alessandro)
+## Capítulo 3 · "A conta da reforma" · APROVADO em 17/11 com 1 ajuste (fala do Marcos no clipe 5)
 Lição: a reforma custa mais que o arremate. Sem desfecho: termina na dúvida ("E agora?").
 Os valores da conta NÃO são falados nos clipes: entram como texto animado na edição (a IA erra número escrito).
 Em todos os clipes: formato vertical 9:16, referência vertical, mesmos personagens e mesma casa do capítulo 2, por dentro. Ale de jeans e polo branca lisa, sem logomarca.
@@ -170,6 +170,17 @@ Em todos os clipes: formato vertical 9:16, referência vertical, mesmos personag
 2. TELHADO E ELÉTRICA. Ale aponta para o teto, cai uma gota no balde: "Telhado novo." Vira e aponta para fios soltos na parede: "Elétrica inteira." Marcos engole seco a cada item.
 3. COZINHA E BANHEIRO. Ale abre a torneira da cozinha, sai água marrom: "Encanamento. Cozinha. Banheiro." Lúcia põe a mão na testa e fecha os olhos.
 4. O GURU. Guru na porta, de costas, andando na ponta dos pés para sair. LÚCIA: "Você sabia disso?" · GURU vira, sorri sem graça: "Reforma é detalhe. O importante é que foi barato!" e sai rápido.
-5. FINAL SEM DESFECHO. Ale vira a prancheta para o casal: "A reforma custa mais que a casa." MARCOS olha a prancheta, pálido: "E a gente já pagou os cinco mil..." LÚCIA olha para o Ale: "E agora?" Corta.
+5. FINAL SEM DESFECHO. Ale vira a prancheta para o casal: "A reforma custa mais que a casa." MARCOS olha a prancheta, balança a cabeça: "Cheguei à conclusão que essa casa não vale a pena!" LÚCIA olha para o Ale: "E agora?" Corta.
 
 Fecho na edição: "VOCÊ CONTINUARIA OU DESISTIRIA? · COMENTE AÍ" e cartão "No último capítulo: COMPRAR OU DESISTIR?".
+
+### Capítulo 3 · prompts em inglês (enviados em 17/11)
+Em todos: escolher 9:16 no seletor, anexar a referência vertical dos personagens e da casa. Falas em português do Brasil.
+
+BASE (colar no começo de cada prompt): `Vertical 9:16. Fully fictional 3D cartoon, lighthearted comedy, same animated film style as the reference. Invented cartoon characters, not real people. Inside a run-down fixer-upper house: stained walls, old wooden floor. Characters: a friendly bald contractor with a short gray beard, plain white polo shirt (no logo), blue jeans; a home-buying couple (husband around 38 in a t-shirt, wife in a casual dress); a real estate agent in a dark suit with slicked-back hair and sunglasses. All dialogue in Brazilian Portuguese.`
+
+1. `[BASE] Living room. The couple faces the contractor, worried and upset. The husband crosses his arms and asks: "Quanto custa arrumar tudo isso?" The contractor pulls a tape measure from his pocket, raises a clipboard and answers calmly: "Vamos fazer a conta."`
+2. `[BASE] Living room. The contractor points up at the ceiling; a drop of water falls into a bucket. He says: "Telhado novo." He turns and points at loose wires hanging on the wall: "Elétrica inteira." Behind him the husband swallows hard and his eyes go wide at each item.`
+3. `[BASE] Old kitchen. The contractor opens the kitchen faucet and brown water comes out. He counts on his fingers while saying: "Encanamento. Cozinha. Banheiro." Next to him the wife puts her hand on her forehead and closes her eyes.`
+4. `[BASE] Living room near the front door. The real estate agent tiptoes toward the exit with his back to the others. The wife points at him and asks: "Você sabia disso?" He turns around, gives an awkward smile, opens his arms and says: "Reforma é detalhe. O importante é que foi barato!" Then he quickly walks out.`
+5. `[BASE] Living room. The contractor turns his clipboard toward the couple and says: "A reforma custa mais que a casa." The husband looks at the clipboard, shakes his head and says: "Cheguei à conclusão que essa casa não vale a pena!" The wife looks at the contractor and asks: "E agora?" Everyone stays still, looking at each other.`
