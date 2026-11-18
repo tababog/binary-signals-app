@@ -12,7 +12,8 @@ Atualizado pelo agente analista-crescimento todo dia. Sem valores em dinheiro.
 ## Diário (a partir de 09/11)
 | Data | Seguidores | Alcance | Reel 14h (casa · views · skip) | Reel 20h (casa · views · skip) | Nota |
 |---|---|---|---|---|---|
-| 16/11 | 0 (pode subir; a Windsor corrige depois) | 676 | Lago · voz + rosto nas pontas · "Lago 1: o pior era o CHEIRO" · 233 views · alcance 190 · 41% pulam · 6,5 s · 0 compart. (leitura de ~22 h) | (sem Reel às 20h) | 1º dia fechado da S3. Alcance caiu 23% contra 15/11 e ficou 33% abaixo da média dos 7 dias anteriores (1.004, média puxada para cima por 10 e 11/11). O Reel teve o melhor skip desde 12/11 (41% contra 67% do dia anterior), mas pouca gente viu e o tempo médio é curto (6,5 s de 17,9 s). O Trial da novela cap. 2 (14h36 CT) ainda soma pouco na Windsor (125 views) |
+| 17/11 | 0 (pode subir; a Windsor corrige depois) | 852 | Lago · voz + rosto nas pontas · "Lago 2: descobri por que abandonaram tudo" (com logo) · 269 views · alcance 200 · 45% pulam · 12,0 s · 1 compart. (leitura de ~22 h) | (sem Reel às 20h) | Alcance subiu 26% contra 16/11, mas ficou 15% abaixo da média dos 7 dias anteriores (1.001); sem 2 quedas seguidas, então não há troca. O Lago 2 teve as mesmas views do Lago 1, mas quase o dobro do tempo médio (12,0 s de 22,2 s = 54% do vídeo, contra 36% do Lago 1): a revelação prometida na véspera segurou quem ficou. Os pulos seguem em 45%, no limite da faixa de alcance baixo. Às 22h20 CT o Alessandro postou o Trial da novela cap. 3 (399 views em ~12 h na Windsor), que deve ter ajudado no alcance do fim do dia |
+| 16/11 | 2 (corrigido pela Windsor) | 676 | Lago · voz + rosto nas pontas · "Lago 1: o pior era o CHEIRO" · 233 views · alcance 190 · 41% pulam · 6,5 s · 0 compart. (leitura de ~22 h) | (sem Reel às 20h) | 1º dia fechado da S3. Alcance caiu 23% contra 15/11 e ficou 33% abaixo da média dos 7 dias anteriores (1.004, média puxada para cima por 10 e 11/11). O Reel teve o melhor skip desde 12/11 (41% contra 67% do dia anterior), mas pouca gente viu e o tempo médio é curto (6,5 s de 17,9 s). O Trial da novela cap. 2 (14h36 CT) ainda soma pouco na Windsor (125 views) |
 | 15/11 | 2 (corrigido pela Windsor) | 873 | Lago · andando na obra + textos animados · "Lago: abrimos a casa" · 268 views · alcance 204 · 67% pulam · 6,4 s · 1 compart. | (sem Reel às 20h) | Alcance subiu 62% contra 14/11 (parou a sequência de 3 quedas), mas ficou 7% abaixo da média dos 7 dias anteriores (935). Quem puxou foi o Trial da novela cap. 1 (535 views, alcance 457 na Windsor), não o Reel das 14h, que teve o pior skip desde 11/11: dois em cada três saem no começo. Dia de reunião |
 | 14/11 | 5 (corrigido pela Windsor) | 540 | recorte na frente da casa · "Telhado parte 2 (resposta + 3 dicas)" · 275 views · alcance 235 · 49% pulam · 14,2 s · 1 salvo | (sem Reel às 20h) | Alcance caiu 29% contra 13/11 (3º dia seguido de queda). A resposta do telhado segurou o dobro do tempo da pergunta (14,2 s contra 7,1 s), mas metade ainda pula. À noite o Alessandro postou o Trial do piso parte 1 |
 | 13/11 | 7 (corrigido pela Windsor) | 757 | recorte na frente da casa · "Telhado parte 1 (pergunta A/B/C)" · 211 views · alcance 176 · 49% pulam · 7,0 s | (sem Reel às 20h; 1º dia de 1 Reel por dia) | Alcance caiu mais 7% (2º dia seguido de queda). Telhado p1 fraco: metade pula no começo. À noite o Alessandro postou o 1º Trial Reel |
@@ -25,7 +26,7 @@ Atualizado pelo agente analista-crescimento todo dia. Sem valores em dinheiro.
 ## Teste 953 × Casa do Lago (S3 em diante)
 | Semana | 953: média views / skip / seguidores | Lago: média views / skip / seguidores | Vencedor |
 |---|---|---|---|
-| S3 (16 a 22/11), parcial até 16/11 | sem Reel da 953 até agora (a agenda de 1 Reel por dia desta semana é toda da Casa do Lago) | 1 Reel (16/11, Lago 1 cheiro): 233 views (~22 h) / 41% pulam / 0 seguidores no dia (parcial, a Windsor corrige) | em aberto: sem Reel da 953 na semana não há comparação direta |
+| S3 (16 a 22/11), parcial até 17/11 | sem Reel da 953 até agora (a agenda de 1 Reel por dia desta semana é toda da Casa do Lago) | 2 Reels (16/11 Lago 1 cheiro, 17/11 Lago 2 história): média de 271 views (273 com ~46 h e 269 com ~22 h) / 45% pulam / 1 seguidor por dia (2 em 16/11 e 0 em 17/11, este ainda parcial) | em aberto: sem Reel da 953 na semana não há comparação direta |
 
 
 > **Atualização de 12/11 (agenda de 1 Reel por dia às 14h):** as datas das duas tabelas de teste mudaram. Formatos: animado dom 15/11 · recorte (Reel 9) sáb 28/11 · bolinha (Reel 11) dom 29/11 · tela dividida (Reel 13) em dezembro. Logo no final, série do Lago agora às 14h: SEM logo seg 16 (cheiro), qua 18 (tambores), sex 20 (parede); COM logo ter 17 (história), qui 19 (achados). Preencher as linhas pelo nome do Reel, não pela data antiga. Meta nova: média de 10 seguidores por dia até 29/11.
@@ -39,13 +40,14 @@ Preencher com 24 h e atualizar com 72 h. Skip = % que pulam nos primeiros segund
 | 10/11 20h | Lixo parte 2 (resposta) | obra + voz, resposta de pergunta | 1.083 | 937 | 25% | 27,7 s | 1 | 1 | 0 | 0 (parcial) |
 | 11/11 14h | Não precisa morar nos EUA | recorte | 209 | 167 | 61% | 4,8 s | 1 | 0 | 0 | 0 (parcial) |
 | 11/11 20h | Isolamento parte 1 (pergunta) | Ale no canto + obra | 184 | 151 | 73% | 4,3 s | 1 | 0 | 0 | 0 (parcial) |
-| 15/11 14h | Lago: abrimos a casa | andando na obra + textos animados | 289 (~46 h) | 222 | 67% | 6,7 s | 1 | 0 | 2 | 2 |
+| 15/11 14h | Lago: abrimos a casa | andando na obra + textos animados | 304 (~70 h) | 229 | 65% | 7,3 s | 1 | 0 | 2 (leitura de 16/11) | 2 |
 | 12/11 14h | PA: 3 tipos de leilão | recorte | 731 | 563 | 40% | 15,5 s | 3 | 8 | 1 | 5 |
 | 12/11 20h | Isolamento parte 2 (resposta) | obra + voz, resposta de pergunta | 201 | 164 | 61% | 5,8 s | 0 | 0 | 0 | 5 |
 | 13/11 14h | Telhado parte 1 (pergunta A/B/C) | recorte na frente da casa | 223 (72 h) | 186 | 49% | 7,0 s | 0 | 0 | 0 | 7 |
 | 14/11 14h | Telhado parte 2 (resposta + 3 dicas) | recorte na frente da casa, resposta de pergunta | 297 (~70 h) | 256 | 49% | 14,2 s | 0 | 1 | 0 | 5 |
-| 16/11 14h | Lago 1: o pior era o cheiro (entrou no lugar do "Comprar barato", que virou Trial em 13/11) | voz + rosto nas pontas | 233 (~22 h) | 190 | 41% | 6,5 s | 0 | 0 | 0 | 0 (parcial) |
-| 17 a 22/11 14h | Lago 2 a 7 | voz + rosto nas pontas | | | | | | | | |
+| 16/11 14h | Lago 1: o pior era o cheiro (entrou no lugar do "Comprar barato", que virou Trial em 13/11) | voz + rosto nas pontas | 273 (~46 h; com ~22 h eram 233) | 220 | 45% | 6,4 s | 1 | 0 | sem leitura em 18/11 (0 com ~22 h) | 2 |
+| 17/11 14h | Lago 2: descobri por que abandonaram tudo | voz + rosto nas pontas | 269 (~22 h) | 200 | 45% | 12,0 s | 1 | 0 | sem leitura | 0 (parcial) |
+| 18 a 22/11 14h | Lago 3 a 7 | voz + rosto nas pontas | | | | | | | | |
 | 17/11 14h | 953: quanto tempo leva (Reel 9) | recorte | | | | | | | | |
 | 18/11 14h | 953: a equipe (Reel 11) | bolinha | | | | | | | | |
 | 21/11 14h | 953: próxima etapa (Reel 13) | tela dividida | | | | | | | | |
@@ -61,8 +63,8 @@ Preencher com 24 h e atualizar com 72 h. Skip = % que pulam nos primeiros segund
 | 11/11 14h | Não precisa morar | SEM | 209 | 61% | 4,8 s | 15,1 s | 1 | 0 (parcial) |
 | 12/11 14h | PA: 3 leilões (entrou no lugar do Quem somos) | COM | 620 | 39% | 15,2 s | 41,1 s | 1 | 0 (parcial) |
 | 13/11 20h | Conselho da reforma | SEM | | | | 21,6 s | | |
-| 16/11 14h | Lago 1 cheiro | SEM | 233 (~22 h) | 41% | 6,5 s | 17,9 s | 0 | 0 (parcial) |
-| 17/11 20h | Lago 2 história | COM | | | | 22,2 s | | |
+| 16/11 14h | Lago 1 cheiro | SEM | 233 (~22 h); 273 com ~46 h | 41% (45% com ~46 h) | 6,5 s (6,4 s com ~46 h) | 17,9 s | 0 (1 com ~46 h) | 2 |
+| 17/11 14h | Lago 2 história | COM | 269 (~22 h) | 45% | 12,0 s | 22,2 s | 1 | 0 (parcial) |
 | 18/11 20h | Lago 3 tambores | SEM | | | | 17,5 s | | |
 | 19/11 20h | Lago 4 achados | COM | | | | 24,3 s | | |
 | 20/11 20h | Lago 5 parede | SEM | | | | 20,1 s | | |
@@ -96,4 +98,4 @@ Números de ~24 h, informados pelo Alessandro (a Windsor pode não mostrar Reel 
 
 **Leitura de 17/11 17h17 CT (print da tela "Trial reels" do app):** novela cap. 2 = 624 views em ~27 h · novela cap. 1 = 772 em ~49 h (estava em 760 com 22 h: parou) · piso parte 1 = 692 · comprar barato = 623. O Section 8 ainda não aparece como Trial. O cap. 2 teve um pouco menos de views que o cap. 1 no mesmo tempo, mas segurou melhor (42% pulam na Windsor). Falta o print dos insights do cap. 2 (pulos e seguidores) para decidir se compartilha com todos.
 
-**Novela cap. 3 "A conta da reforma"**: o Alessandro avisou em 17/11 ~22h21 CT que postou como Trial (versão 7: barra "Dinheiro do casal" e cédulas com asinhas voando atrás dos personagens). Leitura de 24 h no dia seguinte, no mesmo horário. Leitura da Windsor em 18/11 7h30 CT (~9 h): 389 views · alcance 348 · **43% pulam** · 11,5 s de tempo médio · 0 compart. Segundo Trial seguido abaixo de 50% (cap. 2: 42%).
+**Novela cap. 3 "A conta da reforma"**: o Alessandro avisou em 17/11 ~22h21 CT que postou como Trial (versão 7: barra "Dinheiro do casal" e cédulas com asinhas voando atrás dos personagens). Leitura de 24 h no dia seguinte, no mesmo horário. Leitura da Windsor em 18/11 7h30 CT (~9 h): 389 views · alcance 348 · **43% pulam** · 11,5 s de tempo médio · 0 compart. Segundo Trial seguido abaixo de 50% (cap. 2: 42%). **Releitura da Windsor em 18/11 10h25 CT (~12 h):** 399 views · alcance 362 · 43,5% pulam · 11,3 s · 0 compart. · 0 salvos. O cap. 2 continua parado na Windsor (125 views), sem atualização.
