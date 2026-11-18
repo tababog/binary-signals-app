@@ -96,4 +96,4 @@ Números de ~24 h, informados pelo Alessandro (a Windsor pode não mostrar Reel 
 
 **Leitura de 17/11 17h17 CT (print da tela "Trial reels" do app):** novela cap. 2 = 624 views em ~27 h · novela cap. 1 = 772 em ~49 h (estava em 760 com 22 h: parou) · piso parte 1 = 692 · comprar barato = 623. O Section 8 ainda não aparece como Trial. O cap. 2 teve um pouco menos de views que o cap. 1 no mesmo tempo, mas segurou melhor (42% pulam na Windsor). Falta o print dos insights do cap. 2 (pulos e seguidores) para decidir se compartilha com todos.
 
-**Novela cap. 3 "A conta da reforma"**: o Alessandro avisou em 17/11 ~22h21 CT que postou como Trial (falta confirmar qual versão: a 6, com cédulas caindo, ou a 7, com asinhas). Leitura de 24 h no dia seguinte, no mesmo horário.
+**Novela cap. 3 "A conta da reforma"**: o Alessandro avisou em 17/11 ~22h21 CT que postou como Trial (versão 7: barra "Dinheiro do casal" e cédulas com asinhas voando atrás dos personagens). Leitura de 24 h no dia seguinte, no mesmo horário.
