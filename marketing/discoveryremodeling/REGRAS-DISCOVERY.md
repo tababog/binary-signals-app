@@ -473,4 +473,5 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 ### Novela: mais movimento (pedido do Alessandro em 17/11)
 - Nos prompts de vídeo: pedir sempre "one single continuous shot, no cuts", personagem andando ou gesticulando e câmera em movimento (push-in). Corte dentro do clipe faz personagem "pular" de lugar e ele não aceita.
 - Na edição: câmera aproximando devagar em cada clipe e tranco de zoom nos números ou palavras fortes.
-- Conta de reforma na novela: SEM valores na tela (ele não quer número inteiro). A cada item citado, cédulas de dólar de desenho caem do teto, sem valor escrito e sem total.
+- Conta de reforma na novela: SEM valores na tela (ele não quer número inteiro). Mostrar o custo com imagem, não com número (ex.: barra "DINHEIRO DO CASAL" que esvazia a cada item, com cédulas saindo dela, até "ACABOU!").
+- A criatividade é do Claude (17/11: "A criatividade tem que ser sua, não minha"): quando ele não gostar de um efeito, propor e ENTREGAR uma ideia nova já montada, em vez de pedir que ele invente ou escolha entre opções.

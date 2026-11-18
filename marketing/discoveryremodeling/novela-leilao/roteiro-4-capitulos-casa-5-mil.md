@@ -204,3 +204,6 @@ Legenda do post (rascunho): "Fizeram a conta da reforma da casa de 5 mil dólare
 
 ### Capítulo 3 · versão 3 (17/11)
 O Alessandro não quis valores na tela. Saíram os números; a cada item (telhado, elétrica, cozinha, banheiro, piso, pintura) cai uma chuva de cédulas de dólar de desenho, sem valor. O tranco de zoom nos itens continua. Legenda do post: tirar a frase "Os valores são exemplos".
+
+### Capítulo 3 · versão 4 (17/11)
+Ideia do Claude para a conta sem números: barra "DINHEIRO DO CASAL" no alto, cheia e verde no começo. A cada item do Ale a barra perde um pedaço, muda de cor (verde, amarelo, vermelho), treme, solta cédulas e toca um "plim" de caixa. No último item fica vazia com "ACABOU!" piscando, e continua na tela enquanto o guru diz "o importante é que foi barato!".
