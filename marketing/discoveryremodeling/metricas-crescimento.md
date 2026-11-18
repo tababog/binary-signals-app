@@ -112,3 +112,4 @@ Números de ~24 h, informados pelo Alessandro (a Windsor pode não mostrar Reel 
 - Trial novela cap. 2 VERDE LIMÃO: 161 views, 72 viewers, 12 s de tempo médio, skip 34,3%, 2 curtidas, 1 salvo, 0 follows. Fonte: 96,3% aba Reels. Hora da postagem ainda não informada.
 - Referência cap. 2 AMARELO (27 h): 624 views, skip 42%, 11,1 s.
 - Leitura: skip e tempo um pouco melhores no verde, mas amostra pequena (72 pessoas). Comparar só com 24 h.
+- Correção (18/11, confirmado pelo Alessandro): o cap. 1 verde está no REELS (perfil), não em Trial. O Trial verde de hoje é o cap. 2 (comparação direta com o cap. 2 amarelo). Calendário de Trials: qui 19/11 duplex, sex 20/11 cap. 2 vermelho, 14h30 CT.
