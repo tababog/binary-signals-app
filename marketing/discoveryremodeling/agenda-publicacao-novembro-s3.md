@@ -89,6 +89,20 @@ O que você faria com isso? Comenta 👇
 Me segue @discoveryremodeling: amanhã tem a parede que eu NÃO vou derrubar 👀
 #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
+- **20:00** · reel · NOVELA cap. 2 "Visitando a casa de leilão" (versão Reels, verde limão) · doc `s3-qui-n2` · sai só com o OK do Alessandro · capa: thumb_offset 1000 (faixa verde limão)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/novela-leilao/novela-cap2-reels-verde.mp4
+  - legenda:
+
+```
+Eles foram ver a casa de 5 mil dólares 😳 Maçaneta na mão, telhado pingando e o guru saindo de fininho.
+
+Quanto você acha que custa arrumar tudo isso? Comente um valor 👇
+
+Me segue @discoveryremodeling para ver o capítulo 3: a conta da reforma.
+
+História fictícia, baseada em situações reais. Cada leilão e cada casa são diferentes.
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua
+```
 
 ## Sexta 20/11
 - **08:00** · story · Casa do Lago: depois da primeira limpeza · doc `s3-sex-s8`
