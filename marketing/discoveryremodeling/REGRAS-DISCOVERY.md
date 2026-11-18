@@ -485,3 +485,9 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Cor verde limão (#BFFF00; em ASS `&H00FFBF&`) é um TESTE, só no cap. 1 do Reels (18/11). Correção do Alessandro no mesmo dia: "Não mude o capítulo 2 ainda. Quero ver o andamento do 1, se a cor muda alguma coisa." Não trocar a cor dos outros capítulos nem agendar os próximos sem ele pedir; primeiro comparar o cap. 1 verde (Reels) com o cap. 1 amarelo (Trial).
 - Na versão do Reels, o gancho do cap. 1 virou pergunta no primeiro instante: "CASA POR 5 MIL DÓLARES: VOCÊ COMPRARIA?".
 - Capa dos Reels da novela (18/11): a capa tem que mostrar algo no mesmo verde limão. A faixa do gancho fica dentro da área que aparece na grade do perfil (recorte 4:5) e o "CAPÍTULO N" vai em verde; publicar com `thumb_offset` no 1º segundo, onde a faixa está inteira.
+
+### Teste de cor da legenda com Trial Reels (pedido do Alessandro em 18/11)
+- Mesmo vídeo (novela cap. 2), três cores, tudo o mais igual: AMARELO = Trial de 16/11 (já postado), VERDE LIMÃO e VERMELHO = `novela-leilao/teste-cor/novela-cap2-trial-verde.mp4` e `...-vermelho.mp4`. Mesma legenda do post.
+- Postar um por dia como Trial, de preferência no mesmo horário do amarelo (por volta das 14h30 CT). Ler em 24 h: views, % que pula, tempo médio.
+- Diferença pequena (menos de ~8 pontos no % que pula) é ruído: cada Trial alcança só umas 600 a 800 pessoas.
+- Opinião do Claude registrada: a cor quase não muda views; vale pela identidade da marca.
