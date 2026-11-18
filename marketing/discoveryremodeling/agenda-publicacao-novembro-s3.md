@@ -57,6 +57,20 @@ No Brasil é assim também? Me conta 👇
 Me segue @discoveryremodeling: amanhã eu mostro o que a gente achou lá dentro 👀
 #leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua #discoveryremodeling
 ```
+- **20:00** · reel · NOVELA cap. 1 "A casa de 5 mil dólares" (versão Reels, verde limão) · doc `s3-qua-n1` · PRONTO
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/novela-leilao/novela-cap1-reels-verde.mp4
+  - legenda:
+
+```
+Casa nos Estados Unidos por 5 mil dólares 😳 O guru só não contou onde fica, quanto vale e quanto custa a reforma.
+
+Você compraria? SIM ou NÃO 👇
+
+Me segue @discoveryremodeling para ver o capítulo 2: visitando a casa de leilão.
+
+História fictícia, baseada em situações reais. Cada leilão e cada casa são diferentes.
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua
+```
 
 ## Quinta 19/11
 - **08:00** · story · Casa do Lago: dia de mutirão · doc `s3-qui-s8`

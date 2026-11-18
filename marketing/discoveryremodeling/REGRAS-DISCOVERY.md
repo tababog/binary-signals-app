@@ -479,3 +479,8 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 ### Novela "A casa de 5 mil dólares": continuidade (17/11)
 - O casal NUNCA chegou a comprar nem a pagar: o guru tentou enganar, mas o Ale apareceu antes. Nenhuma fala pode dizer que eles já pagaram ou perderam o dinheiro.
 - O final tem que MOTIVAR quem quer investir: a mensagem é "faça a conta antes" (lance, dívidas, reforma, tempo de obra), não "não invista".
+
+### Novela no Reels do perfil e cor verde limão (18/11)
+- O Alessandro decidiu postar a novela no Reels do perfil, um capítulo por dia às 20h de Brasília (18h CT), como 2º Reel do dia; o Reel das 14h continua. Cap. 1 em 18/11, cap. 2 em 19/11, cap. 3 em 20/11, cap. 4 quando ficar pronto.
+- Cor de destaque da novela: VERDE LIMÃO (#BFFF00; em ASS `&H00FFBF&`) no lugar do amarelo, em tudo que era amarelo (palavra destacada da legenda, faixa do gancho, cartão final).
+- Na versão do Reels, o gancho do cap. 1 virou pergunta no primeiro instante: "CASA POR 5 MIL DÓLARES: VOCÊ COMPRARIA?".
