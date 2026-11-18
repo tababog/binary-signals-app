@@ -49,6 +49,8 @@ Style: Nar,Inter,70,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100
 Style: Top,Inter,74,&H00000000,&H00000000,&H0000D7FF,&H0000D7FF,-1,0,0,0,100,100,0,0,3,18,0,8,50,50,345,1
 Style: Box,Inter,60,&H00000000,&H00000000,&H0000D7FF,&H0000D7FF,-1,0,0,0,100,100,0,0,3,16,0,8,60,60,520,1
 Style: Big,Inter,84,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,7,2,8,60,60,330,1
+Style: Sim,Inter,104,&H00FFFFFF,&H00FFFFFF,&H0046B41E,&H0046B41E,-1,0,0,0,100,100,0,0,3,30,0,5,0,0,0,1
+Style: Nao,Inter,104,&H00FFFFFF,&H00FFFFFF,&H002D2DE6,&H002D2DE6,-1,0,0,0,100,100,0,0,3,30,0,5,0,0,0,1
 Style: Sm,Inter,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,5,1,5,60,60,0,1
 
 [Events]
@@ -62,8 +64,15 @@ L.append(f"Dialogue: 1,{ts(starts[1]+0.05)},{ts(starts[2])},Nar,,0,0,0,,{pop}ELA
 L.append(f"Dialogue: 1,{ts(starts[2])},{ts(starts[3])},Nar,,0,0,0,,{pop}PARA VER UMA\\N{Y}CASA DE LEILÃO")
 L.append(f"Dialogue: 1,{ts(starts[3]+0.05)},{ts(starts[3]+2.1)},Nar,,0,0,0,,{pop}E POR DENTRO\\NERA {Y}ASSIM")
 c=starts[7]
-L.append(f"Dialogue: 2,{ts(c+0.1)},{ts(T+END)},Big,,0,0,0,,{{\\fad(150,0)}}E VOCÊ, {Y}ENTRARIA?")
-L.append(f"Dialogue: 2,{ts(c+0.7)},{ts(T+END)},Box,,0,0,0,,{{\\fad(150,0)}}COMENTE SIM OU NÃO")
+L.append(f"Dialogue: 2,{ts(c+0.1)},{ts(T+END)},Big,,0,0,0,,{{\\fad(120,0)\\fscx80\\fscy80\\t(0,160,\\fscx100\\fscy100)}}VOCÊ {Y}COMPRARIA{Wt}\\NESTA CASA?")
+def btn(style,x,t0,txt,ph):
+    dur=int((T+END-t0)*1000);tg='{\\pos(%d,640)\\fscx0\\fscy0\\frz%d\\t(0,180,\\fscx125\\fscy125)\\t(180,300,\\fscx100\\fscy100\\frz0)'%(x,-8 if x<540 else 8)
+    k=300+ph
+    while k+500<dur:
+        tg+='\\t(%d,%d,\\fscx122\\fscy122\\frz%d)\\t(%d,%d,\\fscx100\\fscy100\\frz0)'%(k,k+170,-5 if x<540 else 5,k+170,k+420);k+=1000
+    return f"Dialogue: 3,{ts(t0)},{ts(T+END)},{style},,0,0,0,,"+tg+'}'+txt
+L.append(btn('Sim',310,c+0.8,'SIM',200))
+L.append(btn('Nao',770,c+1.15,'NÃO',350))
 L.append(f"Dialogue: 2,{ts(T+0.1)},{ts(T+END)},Sm,,0,0,0,,{{\\pos(540,1380)\\fad(150,0)}}Me segue {Y}@discoveryremodeling")
 open('s2.ass','w').write(hdr+'\n'.join(L)+'\n')
 run('ffmpeg -v error -y -sseof -0.05 -i q7.mp4 -frames:v 1 last2.png')
