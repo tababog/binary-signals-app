@@ -254,3 +254,12 @@ BASE: `Vertical 9:16. Fully fictional 3D cartoon, lighthearted comedy, same anim
 3. `[BASE] Camera tracks sideways. The contractor walks slowly along the front of the house, counting on his fingers, one finger per word, while the couple follows him: "Lance. Dívidas. Reforma. Tempo de obra." He stops, turns to them and says: "Sem essa conta, não existe casa barata."`
 4. `[BASE] Camera slowly pushes in. The husband points at the old house and asks: "E essa aqui?" The contractor looks the house up and down, shakes his head and says: "Essa eu não compraria. Às vezes, o melhor negócio é não fazer negócio." The couple looks at each other.`
 5. `[BASE] Only the contractor in frame, the old house behind him. He walks straight toward the camera, serious, looking directly into the lens, and says firmly: "Eu vivo de casa de leilão. Quem te esconde a reforma não quer o seu sucesso. Quer o seu dinheiro." He stops close to the camera and keeps looking at the lens.`
+
+### Capítulo 4 · correção de 17/11 (Alessandro): o casal AINDA NÃO COMPROU nem pagou
+O guru tentou enganar, mas não chegou a fechar porque o Ale apareceu antes. O final tem que motivar quem quer investir (fazer a conta, não desistir de investir). Clipes 3, 4 e 5 ficam como estão; mudam o 1 e o 2:
+
+1. A ÚLTIMA TENTATIVA DO GURU. Marcos e Lúcia saem da casa andando. O guru, encostado no carro com um maço de dinheiro aparecendo no bolso do paletó, estende um contrato e uma caneta: "Última chance! Assina agora e a casa é de vocês!" · MARCOS empurra o contrato de volta: "A gente não vai assinar." O guru dá de ombros, entra no carro e vai embora.
+2. O ALE ACALMA. Lúcia anda até o Ale, aliviada e assustada: "A gente quase perdeu tudo!" · ALE, calmo e firme: "Quase. Vocês iam pular a parte mais importante: a conta."
+
+EN 1: `[BASE] Camera follows the couple as they walk out of the house toward the street. The real estate agent leans on a shiny black car, a thick stack of cash sticking out of his jacket pocket. He holds out a contract and a pen and says: "Última chance! Assina agora e a casa é de vocês!" The husband pushes the contract back and says: "A gente não vai assinar." The agent shrugs, gets into the car and drives away down the street while the couple watches.`
+EN 2: `[BASE] Camera slowly pushes in. The wife walks up to the contractor, relieved and still shaken, and says: "A gente quase perdeu tudo!" The contractor, calm and confident, answers: "Quase. Vocês iam pular a parte mais importante: a conta."`

@@ -475,3 +475,7 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Na edição: câmera aproximando devagar em cada clipe e tranco de zoom nos números ou palavras fortes.
 - Conta de reforma na novela: SEM valores na tela (ele não quer número inteiro). Mostrar o custo com imagem, não com número (ex.: barra "DINHEIRO DO CASAL" que esvazia a cada item, com cédulas saindo dela, até "ACABOU!").
 - A criatividade é do Claude (17/11: "A criatividade tem que ser sua, não minha"): quando ele não gostar de um efeito, propor e ENTREGAR uma ideia nova já montada, em vez de pedir que ele invente ou escolha entre opções.
+
+### Novela "A casa de 5 mil dólares": continuidade (17/11)
+- O casal NUNCA chegou a comprar nem a pagar: o guru tentou enganar, mas o Ale apareceu antes. Nenhuma fala pode dizer que eles já pagaram ou perderam o dinheiro.
+- O final tem que MOTIVAR quem quer investir: a mensagem é "faça a conta antes" (lance, dívidas, reforma, tempo de obra), não "não invista".
