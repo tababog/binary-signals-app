@@ -40,3 +40,9 @@ Quase todas disparam DENTRO da conversa antiga (session_01GEqWFq3NTXN543RqEimKHj
 - Rodapé (baseboard colonial 5 1/2 → 4 1/2 sob o gabinete): desenho do retorno feito; atualização oferecida.
 - 501 W. Hudson (Elmira): PDF de resumo de gastos feito em 19/11 a partir da planilha "501 ELMIRA DESPESAS COM REFORMA" (agrupamento dele: mão de obra total sem nomes; ferramentas na cozinha; alimentação no piso; gasolina na mão de obra; US$ 2.000 da mão de obra para "Eletrodomésticos"). O PDF não está no Drive nem no GitHub.
 - 30/11: deixar o repositório privado.
+
+## Arquivos salvos no Drive (19/11)
+Pasta privada "Documentos salvos pelo Claude (privado)": https://drive.google.com/drive/folders/1FZRgdI1-mQAOICZuyl-PtVQ5FEO0tjMI
+- Contrato da Gabriela e do Leandro (endereço novo, 15 meses; a cláusula 5.2 ainda diz 12 meses).
+- 501 W Hudson - Resumo de gastos.pdf
+Nunca tornar essa pasta pública (tem dados pessoais de clientes).
