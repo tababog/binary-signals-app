@@ -74,5 +74,5 @@ O Trial que for bem (decisão pelos insights de 24 h) é compartilhado com todos
 - Gancho "VOCÊ ENTRARIA NUMA CASA ASSIM?"; final "VOCÊ COMPRARIA ESTA CASA?" com botões SIM (verde) e NÃO (vermelho) animados (pedido do Alessandro).
 - Nitidez recuperada por IA (original em 480p). Scripts: `duplex-recorte-nitidez.py` e `duplex-recorte-montagem.py`.
 - Plano: Trial na quinta 19/11 às 14h30 de Connecticut (o Alessandro posta). Leitura de 24 h na sexta; se for bem, "Compartilhar com todos".
-- Teste de cores: cap. 2 verde saiu como Trial em 18/11; cap. 2 vermelho na sexta 20/11 às 14h30 de Connecticut.
+- Teste de cores: cap. 2 verde saiu como Trial em 18/11. Cap. 2 vermelho CANCELADO (decisão do Alessandro em 20/11: não vai postar). O teste fica amarelo × verde.
 - Autorização das pessoas que aparecem: confirmada pelo Alessandro em 18/11.

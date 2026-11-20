@@ -492,3 +492,4 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Postar um por dia como Trial, de preferência no mesmo horário do amarelo (por volta das 14h30 CT). Ler em 24 h: views, % que pula, tempo médio.
 - Diferença pequena (menos de ~8 pontos no % que pula) é ruído: cada Trial alcança só umas 600 a 800 pessoas.
 - Opinião do Claude registrada: a cor quase não muda views; vale pela identidade da marca.
+- (20/11) O Alessandro decidiu NÃO postar o cap. 2 vermelho. O teste de cor termina em amarelo × verde (falta o print de 24 h do verde).
