@@ -127,4 +127,23 @@ Siga @discoveryremodeling para ver a transformação 🏠
 ```
 
 ## Estoque (para trocar se o público cair)
+- **Reel "Imposto predial / aluguel pro governo" (aprovado pelo Alessandro em 20/11)** · doc `estoque-imposto` · PRONTO · dia e horário a definir por ele
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-imposto-predial.mp4
+  - vídeo feito com IA (Gemini): o Windsor NÃO marca o selo "Informação de IA", então este Reel é postado pelo Alessandro no app, marcando o selo. A rotina automática não publica.
+  - legenda:
+
+```
+Você compra a casa nos Estados Unidos e continua pagando aluguel pro governo 😳
+
+Todo ano tem o imposto da casa (property tax). Na média dos EUA, é cerca de 1% do valor por ano: numa casa de 300 mil dólares, são 3 mil por ano. Em New Jersey, passa de 9 mil.
+
+E se o dono para de pagar, o condado leiloa a casa. É assim que nasce o tax deed.
+
+Você sabia disso? SIM ou NÃO 👇
+
+Me segue @discoveryremodeling: no próximo vídeo eu mostro o que acontece quando o dono para de pagar.
+
+O imposto muda de cidade para cidade; os números são uma média de referência.
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #impostopredial
+```
 - "O que ninguém te conta" (drive 1ym3GhFuVEIrte8cAkUSKyebdclGTpdtf) e "Um dia na obra" (1HdnsrCUEIhanO0mwepYj4VpH4CZ3FxF2). Gabinetes da 953 ficam para dezembro.
