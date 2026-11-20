@@ -93,7 +93,8 @@ Atualize este arquivo sempre que uma regra nova for combinada.
 ## Sem logo no final dos vídeos (decisão do Alessandro em 20/11)
 - REGRA ELIMINADA em 20/11: os vídeos NÃO terminam mais com o logo-reveal. O último quadro é ele (ou a cena) com o motivo para seguir na tela.
 - A regra antiga (29/10, "todo vídeo termina com o logo-reveal") e o teste com logo x sem logo (11/11) estão encerrados. O arquivo `designer/logo-reveal/logo-reveal-discovery-novo.mp4` fica guardado, mas não entra nos vídeos.
-- A música padrão continua nos vídeos (decisão do Alessandro em 20/11: "manter a música"): faixa "Upbeat Corporate" baixa, por baixo da voz (volume ~0,13 com ducking na fala), fade-in 0,3 s e fade-out no fim, volume final −14 LUFS.
+- Música: o Alessandro decide por vídeo. O Reel do imposto predial (20/11, avatar de IA) saiu SEM música, a pedido dele. Quando entrar, é a faixa padrão "Upbeat Corporate" baixa, por baixo da voz (volume ~0,13 com ducking na fala).
+- Vídeo feito com IA (Gemini/Veo, HeyGen): marcar o selo "Informação de IA" no Instagram ao postar (autorizado pelo Alessandro em 20/11).
 
 ## Painel da semana (pedido de 29/10)
 - Cada item do painel tem, ao lado do status, um botão **"▶ Ver vídeo"** ou **"🖼 Ver foto"**, que abre o arquivo que vai ser publicado. Se o arquivo ainda está em edição, o botão é **"📁 Ver pasta (em edição)"**.

@@ -13,7 +13,7 @@ CHECKLIST (todo vídeo):
 5. Animação HyperFrames em todo Reel (`hyperframes render --sdr`, GSAP local): palavras entrando, etiquetas dos cômodos sincronizadas com a fala, carimbo/tremor nas revelações, barra de progresso, enquete SIM/NÃO, botão "+ Seguir" pulsando. Variar os efeitos. Sem emoji (não renderiza).
 6. Meia tela: casa em cima, Ale embaixo, degradê suave (máscara cosseno ~300 px), sem linha dura. Referência: scratchpad hf-tour/.
 7. Áudio: voz limpa (highpass + compressor), música padrão baixa (~0,13), loudnorm -14 LUFS.
-8. SEM logo no fim (regra eliminada pelo Alessandro em 20/11). A música padrão continua.
+8. SEM logo no fim (regra eliminada pelo Alessandro em 20/11). Música: perguntar/decidir por vídeo (o Reel do imposto de 20/11 saiu sem música).
 9. O Alessandro aparece em TODO vídeo: abre com ele de frente dizendo o gancho, depois a casa entra como fundo/meia tela e ele continua falando; voltar ao rosto nas frases fortes e no fim.
 10. Proibido: valores da Casa do Lago, endereço, placa, rosto de terceiros sem autorização, promessa de lucro, resposta de quiz no Reel da pergunta.
 11. Antes de entregar: tirar quadros (6 a 8 momentos) e conferir; mandar prévia ao Alessandro; só vai ao painel depois do OK. Nunca apagar originais.
