@@ -106,6 +106,12 @@ Números de ~24 h, informados pelo Alessandro (a Windsor pode não mostrar Reel 
 
 **Novela cap. 3 "A conta da reforma"**: o Alessandro avisou em 17/11 ~22h21 CT que postou como Trial (versão 7: barra "Dinheiro do casal" e cédulas com asinhas voando atrás dos personagens). Leitura de 24 h no dia seguinte, no mesmo horário. Leitura da Windsor em 18/11 7h30 CT (~9 h): 389 views · alcance 348 · **43% pulam** · 11,5 s de tempo médio · 0 compart. Segundo Trial seguido abaixo de 50% (cap. 2: 42%). **Releitura da Windsor em 18/11 10h25 CT (~12 h):** 399 views · alcance 362 · 43,5% pulam · 11,3 s · 0 compart. · 0 salvos. O cap. 2 continua parado na Windsor (125 views), sem atualização. **Releitura da Windsor em 19/11 9h25 CT (~35 h):** 425 views · alcance 387 · 43,6% pulam · 11,2 s · 0 compart. · 0 salvos. Cap. 2 amarelo ainda parado em 125 na Windsor; o Trial cap. 2 VERDE (18/11 14h45 CT) ainda não aparece na Windsor.
 
+### Trial do Reel do imposto predial (avatar IA, trenó acelerado) · postado pelo Alessandro em 20/11 às 10h56 CT
+- Com ~1 h (print 12h09 CT): 243 views · 14 viewers · **28% pulam ("Lower")** · 4 s de tempo médio · 0 interação. Amostra pequena.
+- Com ~7 h (print 17h59 CT): **889 views · 83 viewers · 59,3% pulam ("Higher")** · 5 s de tempo médio · 3 curtidas · 1 comentário · 0 compart. · 0 salvos · 0 seguidores · origem: aba Reels 90%, Explorar 10%.
+- Curva: cai para ~15% até os 4 a 5 s (o trenó acelerado e o começo da fala) e fica em ~10% até o fim.
+- Leitura: o 28% da 1ª hora era amostra pequena. Com mais gente, a abertura sem rosto falando perde mais da metade logo no começo; é o pior skip entre os Trials (cap. 2 amarelo 42%, cap. 3 44%, novela cap. 1 58%). Não vale "Compartilhar com todos". O assunto pode ser bom; a abertura não. Próximo teste: mesma fala começando no 1º quadro com o rosto e o gancho falado (sem trenó).
+
 ## Reel antigo "Oportunidade de Investimento em Leilão!" (duplex de Elmira, 17/02/2026) · análise de 18/11
 - Insights (print do Alessandro): 48.583 views · alcance 38.151 · tempo total assistido 8h34 (≈0,6 s por view) · duração 6min44 · 197 curtidas · 15 comentários · 14 envios · 16 salvos · **464 seguidores**.
 - O Alessandro confirmou que IMPULSIONOU esse vídeo (anúncio pago) em fevereiro. Depois o post foi denunciado e o botão de impulsionar ficou bloqueado.
