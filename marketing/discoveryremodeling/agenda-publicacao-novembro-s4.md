@@ -41,24 +41,7 @@ Valores deste caso; cada terreno é diferente.
 ## Quarta 25/11
 - **08:00** · story · Quartos + quantas cargas? (2·4·6) · doc `s4-qua-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-qua.mp4
-- **14:00** · reel · Lance baixo não é negócio bom: 4 coisas que eu confiro [resposta] · doc `s4-qua-f12` · PRONTO
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-terrenos-p2.mp4
-  - legenda:
-
-```
-Terreno de US$ 50 me ensinou: lance baixo não quer dizer negócio bom.
-
-Antes de qualquer lance eu confiro 4 coisas:
-1️⃣ Tem acesso pela rua?
-2️⃣ A prefeitura deixa construir?
-3️⃣ Fica em área de alagamento?
-4️⃣ Quanto de imposto e taxa vai ficar para você?
-
-Qual desses 4 você não conferia? 👇 Salve para lembrar no próximo leilão.
-
-Me segue @discoveryremodeling: amanhã tem pergunta valendo. Quanto custa o drywall de um corredor? 👀
-#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
-```
+- **14:00** · reel · (a definir: o "Lance baixo, 4 coisas" foi adiantado para dom 22/11) · o Claude propõe um substituto e só entra com o OK do Alessandro
 
 ## Quinta 26/11 (Thanksgiving nos EUA)
 - **08:00** · story · Saindo roupa + hoje a resposta · doc `s4-qui-s8` · refeito e aprovado em 13/11

@@ -111,7 +111,7 @@ Me segue @discoveryremodeling: amanhã tem 3 terrenos por US$ 50 cada no leilão
 ## Sábado 21/11
 - **08:00** · story · Casa do Lago: e o quintal? · doc `s3-sab-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-sab.mp4
-- **14:00** · reel · Quanto tempo leva para colocar esse piso? (pergunta 1 · 2 · 4 dias) [pergunta · obra de cliente] · doc `s3-sab-f12` · PRONTO
+- **14:00** · reel · ~~Piso parte 1~~ (já tinha saído em 14/11) → SAIU no lugar: 3 terrenos por US$ 50 (pergunta), doc `s4-ter-f12`, media 18133513513835941 · doc antigo `s3-sab-f12` segurado
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/piso-p1-pergunta.mp4
   - legenda:
 
@@ -127,20 +127,27 @@ Me segue @discoveryremodeling para ver 👀
 ## Domingo 22/11
 - **08:00** · story · Casa do Lago: próximo passo, telhado novo · doc `s3-dom-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-dom.mp4
-- **14:00** · reel · Piso (resposta): 2 dias [resposta] · doc `s3-dom-f12` · PRONTO
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/piso-p2-resposta.mp4
+- **14:00** · reel · Lance baixo não é negócio bom: 4 coisas que eu confiro [resposta dos 3 terrenos de sáb 21/11] · doc `s4-qua-f12` · PRONTO (trocado em 21/11 com OK do Alessandro)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-terrenos-p2.mp4
   - legenda:
 
 ```
-Resposta: 2 dias para colocar o piso laminado neste ambiente inteiro ⏱️
+Terreno de US$ 50 me ensinou: lance baixo não quer dizer negócio bom.
 
-Acertou? Me diz aí nos comentários 👇
+Antes de qualquer lance eu confiro 4 coisas:
+1️⃣ Tem acesso pela rua?
+2️⃣ A prefeitura deixa construir?
+3️⃣ Fica em área de alagamento?
+4️⃣ Quanto de imposto e taxa vai ficar para você?
 
-Me segue @discoveryremodeling: amanhã eu mostro o dia em que pegamos a chave de mais uma casa de leilão 👀
-#reformanoseua #pisolaminado #obranoseua #brasileirosnoseua #taxdeed
+Qual desses 4 você não conferia? 👇 Salve para lembrar no próximo leilão.
+
+Me segue @discoveryremodeling para ver mais casas de leilão 👀
+#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
 ## Estoque (para trocar se o público cair)
+- 21/11: Piso parte 2 (resposta: 2 dias, doc `s3-dom-f12`) saiu da agenda: a pergunta (parte 1) foi Trial em 14/11, então a resposta ficou sem par. Os 3 terrenos (pergunta) saíram no sáb 21/11 no lugar do piso parte 1.
 - Trocados em 09/11 (foram para o estoque da S4): t1 "O que ninguém te conta" (1ym3GhFuVEIrte8cAkUSKyebdclGTpdtf) e t2 "Um dia na obra" (1HdnsrCUEIhanO0mwepYj4VpH4CZ3FxF2).
 - qc-gabinetes-p1 / p2 · t4 "Quanto tempo leva?" · episódio 9 reeditado (semana-crescimento/s3-ep9.mp4) · vídeos novos da equipe da 953 (pasta "Estoque Obra 09-11 (equipe 953)").
 - t5 "A surpresa" repete a história do plywood do telhado (já contada no domingo 15/11): só usar em dezembro.
