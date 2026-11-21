@@ -127,7 +127,22 @@ Me segue @discoveryremodeling para ver 👀
 ## Domingo 22/11
 - **08:00** · story · Casa do Lago: próximo passo, telhado novo · doc `s3-dom-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s3/story-s3-dom.mp4
-- **14:00** · reel · Lance baixo não é negócio bom: 4 coisas que eu confiro [resposta dos 3 terrenos de sáb 21/11] · doc `s4-qua-f12` · PRONTO (trocado em 21/11 com OK do Alessandro)
+- **14:00** · reel · Duplex de Elmira: "Você compraria esta casa?" (recorte v3 do Reel de fevereiro, Tiene e Bruno entrando) · doc `s3-dom-duplex` · PRONTO (pedido do Alessandro em 21/11; pessoas autorizadas)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/duplex-recorte-trial.mp4
+  - legenda:
+
+```
+Você compraria esta casa? 😳
+
+Ela chegou toda arrumada para visitar uma casa de leilão. Olha como estava por dentro.
+
+Comenta SIM ou NÃO 👇
+
+Me segue @discoveryremodeling para ver como fica depois da reforma.
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua
+```
+
+- **20:00** · reel · Lance baixo não é negócio bom: 4 coisas que eu confiro [resposta dos 3 terrenos de sáb 21/11] · doc `s4-qua-f12` · PRONTO (trocado em 21/11 com OK do Alessandro)
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/s3-terrenos-p2.mp4
   - legenda:
 
@@ -144,21 +159,6 @@ Qual desses 4 você não conferia? 👇 Salve para lembrar no próximo leilão.
 
 Me segue @discoveryremodeling para ver mais casas de leilão 👀
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
-```
-
-- **20:00** · reel · Duplex de Elmira: "Você compraria esta casa?" (recorte v3 do Reel de fevereiro, Tiene e Bruno entrando) · doc `s3-dom-duplex` · PRONTO (pedido do Alessandro em 21/11; pessoas autorizadas)
-  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/duplex-recorte-trial.mp4
-  - legenda:
-
-```
-Você compraria esta casa? 😳
-
-Ela chegou toda arrumada para visitar uma casa de leilão. Olha como estava por dentro.
-
-Comenta SIM ou NÃO 👇
-
-Me segue @discoveryremodeling para ver como fica depois da reforma.
-#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua
 ```
 
 ## Estoque (para trocar se o público cair)
