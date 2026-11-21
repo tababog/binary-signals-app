@@ -24,19 +24,7 @@ Siga @discoveryremodeling para acompanhar a transformação 👀
 ## Terça 24/11
 - **08:00** · story · A sala + Você conhece o Section 8? · doc `s4-ter-s8` · refeito e aprovado em 13/11
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-ter.mp4
-- **14:00** · reel · 3 terrenos por US$ 50 cada [pergunta] · doc `s4-ter-f12` · PRONTO
-  - url: https://drive.usercontent.google.com/download?export=download&confirm=t&id=1pupoZR1Ypju5gs_l0kGnpFkXu1fDFbcZ
-  - legenda:
-
-```
-3 terrenos por US$ 50 cada no leilão 😳 O da esquina hoje vale cerca de US$ 8 mil e os outros dois uns US$ 5 mil cada.
-
-Você teria coragem de dar o lance? 👇 Amanhã eu conto o que eu confiro antes de qualquer lance.
-
-Siga para ver 👀
-Valores deste caso; cada terreno é diferente.
-#taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
-```
+- **14:00** · reel · (a definir: os 3 terrenos (pergunta) já saíram no sáb 21/11) · o Claude propõe um substituto e só entra com o OK do Alessandro
 
 ## Quarta 25/11
 - **08:00** · story · Quartos + quantas cargas? (2·4·6) · doc `s4-qua-s8`
