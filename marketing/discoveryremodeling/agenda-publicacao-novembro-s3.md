@@ -146,6 +146,21 @@ Me segue @discoveryremodeling para ver mais casas de leilão 👀
 #taxdeed #leilaodeimoveis #imoveisnoseua #reformanoseua #brasileirosnoseua
 ```
 
+- **20:00** · reel · Duplex de Elmira: "Você compraria esta casa?" (recorte v3 do Reel de fevereiro, Tiene e Bruno entrando) · doc `s3-dom-duplex` · PRONTO (pedido do Alessandro em 21/11; pessoas autorizadas)
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/duplex-recorte-trial.mp4
+  - legenda:
+
+```
+Você compraria esta casa? 😳
+
+Ela chegou toda arrumada para visitar uma casa de leilão. Olha como estava por dentro.
+
+Comenta SIM ou NÃO 👇
+
+Me segue @discoveryremodeling para ver como fica depois da reforma.
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua
+```
+
 ## Estoque (para trocar se o público cair)
 - 21/11: Piso parte 2 (resposta: 2 dias, doc `s3-dom-f12`) saiu da agenda: a pergunta (parte 1) foi Trial em 14/11, então a resposta ficou sem par. Os 3 terrenos (pergunta) saíram no sáb 21/11 no lugar do piso parte 1.
 - Trocados em 09/11 (foram para o estoque da S4): t1 "O que ninguém te conta" (1ym3GhFuVEIrte8cAkUSKyebdclGTpdtf) e t2 "Um dia na obra" (1HdnsrCUEIhanO0mwepYj4VpH4CZ3FxF2).
