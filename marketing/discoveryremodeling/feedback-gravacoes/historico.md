@@ -37,3 +37,13 @@ Observação: gravação em obra tem eco e ruído, então o número de fala/temp
 Melhorou: gravou na obra de verdade, em formato pergunta e resposta, e regravou por conta própria quando a 1ª resposta ficou fraca (tom subiu de 2,0 para 4,9).
 A ajustar: (1) a pergunta do gancho sai duas vezes e demora 9 s para chegar nas opções; (2) o final repete "nos siga" 3 vezes; (3) a resposta ainda não ensina nada (só "levou dois dias").
 Dicas: 1) pergunta uma vez só, já com as opções ("um, dois ou quatro dias?") em até 4 s; 2) na resposta, dizer o número e UM motivo ("dois dias, porque o piso precisa de um dia para acostumar com o ambiente"); 3) um pedido só no final.
+
+## Semana de 22/11 (1 gravação própria; os outros vídeos da semana foram avatar de IA)
+| Vídeo | Variação de tom (dp) | Fala/tempo | Leitura |
+|---|---|---|---|
+| VID_20261118_081843 (visita a uma casa de leilão com o Bruno, 6 min 48 s) | 4,60 (4,68 nos 2 primeiros minutos) | 0,45 (0,59 nos 2 primeiros minutos) | Natural, fala espontânea de quem está descobrindo a casa |
+
+Observação: a última parte (de 5 min em diante) é quase só silêncio e passos; fala/tempo cai por isso.
+Melhorou: nada soa recitado; abre com um gancho bom ("mais uma casa que a gente vai dar uma olhada para ver se tem negócio ou não"); interage com o Bruno, o que dá vida.
+A ajustar: (1) "interessante" aparece 7 vezes sem dizer O QUE é interessante; (2) frases soltas e baixas ("é bom", "tá bom, né?") que quem assiste não entende sem contexto; (3) não fecha com um veredito (tem negócio ou não?).
+Dicas: 1) troque "interessante" por uma frase com o motivo ("a estrutura está boa, isso economiza muito"); 2) em cada cômodo, diga 1 coisa boa ou 1 problema em voz alta, virado para a câmera; 3) termine com o veredito em 1 frase ("eu daria lance / eu não daria, por causa de…").
