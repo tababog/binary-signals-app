@@ -132,3 +132,10 @@ Números de ~24 h, informados pelo Alessandro (a Windsor pode não mostrar Reel 
 - Leitura: skip e tempo um pouco melhores no verde, mas amostra pequena (72 pessoas). Comparar só com 24 h.
 - Correção (18/11, confirmado pelo Alessandro): o cap. 1 verde está no REELS (perfil), não em Trial. O Trial verde de hoje é o cap. 2 (comparação direta com o cap. 2 amarelo). Calendário de Trials: qui 19/11 duplex, sex 20/11 cap. 2 vermelho, 14h30 CT.
 - Trial cap. 2 VERDE: postado em 18/11 às 14h45 CT (informado pelo Alessandro). A leitura parcial acima (161 views, skip 34,3%, 12 s) foi com 1h30 no ar. Leitura de 24 h: 19/11 às 14h45 CT. Cap. 1 verde no perfil: uma única publicação (sem duplicata).
+
+### Duplex de Elmira (recorte v3) · Reel 14h Brasília de 22/11 · print do Alessandro às 16h45 CT (~4h45 no ar)
+- 926 views · 753 contas · 12 s de tempo médio (vídeo de 31 s) · 12 curtidas · 1 salvo · 0 comentários · 0 compartilhamentos · 1 seguidor · 1 visita ao perfil.
+- Curva: a maior parte das views vem de quem NÃO segue (linha dos seguidores parou em ~180).
+- Curtidas concentradas nos primeiros 3 a 5 s (Tiene na porta) e picos menores ao longo do vídeo.
+- Comparação: em 4h45 é 3 a 5 vezes o que os Reels da Casa do Lago fazem em 24 h (150 a 290) e já passa a novela cap. 1 verde (309 em 15 h).
+- Ponto fraco: quase ninguém comenta SIM/NÃO nem segue (1 visita ao perfil em 753 pessoas). Hipótese: falta motivo para seguir (o vídeo não promete continuação) e a pergunta do final aparece tarde.
