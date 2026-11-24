@@ -493,3 +493,7 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 - Diferença pequena (menos de ~8 pontos no % que pula) é ruído: cada Trial alcança só umas 600 a 800 pessoas.
 - Opinião do Claude registrada: a cor quase não muda views; vale pela identidade da marca.
 - (20/11) O Alessandro decidiu NÃO postar o cap. 2 vermelho. O teste de cor termina em amarelo × verde (falta o print de 24 h do verde).
+
+## Nunca ficar sem postar (24/11)
+- Pedido do Alessandro em 24/11: "Posta qualquer coisa pra não ficar sem postar." Se o Reel do dia estiver "a definir" ou não puder sair (já publicado, sem arquivo), o Claude escolhe sozinho um Reel JÁ APROVADO do estoque (preferência: vídeo real com pessoas, sem venda, sem valores da Casa do Lago), coloca na agenda e no painel como "pronto" e publica no horário. Avisa depois, em 1 linha. Não precisa perguntar antes.
+- O duplex de Elmira (recorte de fevereiro, 22/11) é uma casa que a Discovery NÃO comprou, só visitou: não existe "parte 2" nem "depois da reforma" dela. Não prometer continuação dessa casa.

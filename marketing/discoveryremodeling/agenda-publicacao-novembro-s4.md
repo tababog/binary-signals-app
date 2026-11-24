@@ -29,7 +29,20 @@ Siga @discoveryremodeling para acompanhar a transformação 👀
 ## Quarta 25/11
 - **08:00** · story · Quartos + quantas cargas? (2·4·6) · doc `s4-qua-s8`
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-qua.mp4
-- **14:00** · reel · (a definir: o "Lance baixo, 4 coisas" foi adiantado para dom 22/11) · o Claude propõe um substituto e só entra com o OK do Alessandro
+- **14:00** · reel · O conselho que eu daria pra mim no começo (Alessandro falando) · doc `s4-qua-conselho` · PRONTO (aprovado antes; escolhido pelo Claude em 24/11 pela regra "não ficar sem postar")
+  - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/reel-conselho-reforma.mp4
+  - legenda:
+
+```
+O conselho que eu daria pra mim mesmo no começo 👇
+
+Nunca dê lance numa casa de leilão sem ver o tamanho da reforma. A foto não mostra o telhado, o porão nem o encanamento.
+
+Eu aprendi do jeito caro. Você já sabia disso? SIM ou NÃO 👇
+
+Me segue @discoveryremodeling para ver o que eu olho antes de dar um lance 👀
+#leilaodeimoveis #taxdeed #casasnoseua #brasileirosnoseua #reformanoseua
+```
 
 ## Quinta 26/11 (Thanksgiving nos EUA)
 - **08:00** · story · Saindo roupa + hoje a resposta · doc `s4-qui-s8` · refeito e aprovado em 13/11
