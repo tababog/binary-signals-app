@@ -144,3 +144,4 @@ Números de ~24 h, informados pelo Alessandro (a Windsor pode não mostrar Reel 
 - Curtidas concentradas nos primeiros 3 a 5 s (Tiene na porta) e picos menores ao longo do vídeo.
 - Comparação: em 4h45 é 3 a 5 vezes o que os Reels da Casa do Lago fazem em 24 h (150 a 290) e já passa a novela cap. 1 verde (309 em 15 h).
 - Ponto fraco: quase ninguém comenta SIM/NÃO nem segue (1 visita ao perfil em 753 pessoas). Hipótese: falta motivo para seguir (o vídeo não promete continuação) e a pergunta do final aparece tarde.
+- Releitura 24/11 (Windsor): duplex 1.722 views, 25% pulam (~2 dias) · resposta dos terrenos 226 views, 64% pulam · tour da chave (Lago, 23/11) 250 views, 55% pulam.

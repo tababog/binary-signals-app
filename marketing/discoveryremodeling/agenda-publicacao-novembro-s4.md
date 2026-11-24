@@ -24,7 +24,7 @@ Siga @discoveryremodeling para acompanhar a transformação 👀
 ## Terça 24/11
 - **08:00** · story · A sala + Você conhece o Section 8? · doc `s4-ter-s8` · refeito e aprovado em 13/11
   - url: https://raw.githubusercontent.com/tababog/binary-signals-app/claude/beautiful-hamilton-br5zyn/marketing/discoveryremodeling/semana-crescimento/stories-s4/story-s4-ter.mp4
-- **14:00** · reel · (a definir: os 3 terrenos (pergunta) já saíram no sáb 21/11) · o Claude propõe um substituto e só entra com o OK do Alessandro
+- **tarde** · reel · Casa do Lago 7: o deck (saiu fora do horário, com OK do Alessandro; doc `s3-dom-f20`, media 17878539741587446)
 
 ## Quarta 25/11
 - **08:00** · story · Quartos + quantas cargas? (2·4·6) · doc `s4-qua-s8`
