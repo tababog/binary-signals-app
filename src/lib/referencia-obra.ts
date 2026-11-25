@@ -37,7 +37,8 @@ export async function referenciaDaObra(obraId: string): Promise<Partial<ValorTra
     custoOutrosCent: soma.outros,
     dias: r.diasTrabalhados,
     horas: Math.round((r.horasEquipeMs / 3_600_000) * 10) / 10,
-    precoCobradoCent: r.obra.valorContratoCent,
+    // Contrato + extras: o custo real também inclui o que foi gasto nos extras
+    precoCobradoCent: r.valorTotal,
     observacoes: r.obra.descricao,
   };
 }
