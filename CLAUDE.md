@@ -99,3 +99,7 @@ Conversa com o usuário em português; telas internas em português.
        `CustoFixo` para quando o Drive falhar).
 - [x] 11. Idiomas (regra 8): telas em PT/EN/ES com seletor + tradução automática do conteúdo pela API da Anthropic
        (chave em `ANTHROPIC_API_KEY` na Vercel).
+- [x] 12. Trabalhos extras (change orders) na aba *Extras* da obra (`ExtraObra`, `src/lib/extras.ts`): o que o cliente
+       pediu depois de fechar, com valor a cobrar, custo estimado e multiplicador (alerta abaixo de 2x); situação a cobrar →
+       cobrado → pago (o pagamento entra no caixa da obra como recebimento); mensagem de cobrança em inglês pelo
+       WhatsApp/SMS/e-mail; total de extras no Painel; valor da obra = contrato + extras no resumo e no banco de preços.

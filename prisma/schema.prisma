@@ -43,6 +43,7 @@ model Usuario {
   lancamentos Lancamento[]
   visitas     Visita[]
   recibos     ReciboFuncionario[]
+  extras      ExtraObra[]
 
   @@index([conviteHash])
 }
@@ -110,6 +111,29 @@ model Obra {
   recibos     ReciboFuncionario[]
   referencia  TrabalhoReferencia?
   orcamentos  Orcamento[]
+  extras      ExtraObra[]
+}
+
+// Trabalho extra que o cliente pediu depois de a obra fechada (change order): fica separado para cobrar à parte.
+// Situação: a cobrar (cobradoEm vazio) → cobrado (mensagem enviada ao cliente) → pago (lancamentoId: o recebimento
+// que entrou no caixa da obra). custoCent é a estimativa do custo, para o multiplicador (meta 2x).
+model ExtraObra {
+  id           String      @id @default(cuid())
+  obraId       String
+  obra         Obra        @relation(fields: [obraId], references: [id], onDelete: Cascade)
+  descricao    String
+  valorCent    Int
+  custoCent    Int         @default(0)
+  data         DateTime    @default(now())
+  observacao   String?
+  cobradoEm    DateTime?
+  lancamentoId String?     @unique
+  lancamento   Lancamento? @relation(fields: [lancamentoId], references: [id], onDelete: SetNull)
+  criadoPorId  String
+  criadoPor    Usuario     @relation(fields: [criadoPorId], references: [id])
+  criadoEm     DateTime    @default(now())
+
+  @@index([obraId])
 }
 
 // categoria: "MATERIAL", "MAO_DE_OBRA", "SERVICO", "EQUIPAMENTO", "OUTROS"
@@ -140,6 +164,7 @@ model Lancamento {
   criadoPorId    String
   criadoPor      Usuario     @relation(fields: [criadoPorId], references: [id])
   criadoEm       DateTime    @default(now())
+  extra          ExtraObra?
 
   @@index([obraId, data])
 }

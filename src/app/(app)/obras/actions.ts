@@ -223,3 +223,82 @@ export async function excluirLancamento(id: string, voltarParaCaixa = false) {
   atualizar(lanc.obraId);
   if (voltarParaCaixa) redirect(`/obras/${lanc.obraId}?aba=caixa`);
 }
+
+// ---------- Trabalhos extras (o cliente pediu depois de fechar; cobrar à parte) ----------
+
+function lerExtra(form: FormData) {
+  return {
+    descricao: String(form.get("descricao") ?? "").trim(),
+    valorCent: paraCentavos(form.get("valor")),
+    custoCent: paraCentavos(form.get("custo")),
+    data: lerData(form.get("data")) ?? new Date(),
+    observacao: texto(form.get("observacao")),
+  };
+}
+
+export async function adicionarExtra(obraId: string, _e: EstadoForm, form: FormData): Promise<EstadoForm> {
+  const usuario = await exigirAdmin();
+  const t = getT();
+  const dados = lerExtra(form);
+  if (!dados.descricao) return { erro: t("Descreva o trabalho extra (ex.: pintar o teto do porão).") };
+  if (dados.valorCent <= 0) return { erro: t("Informe o valor que vai cobrar do cliente pelo extra.") };
+  await db.extraObra.create({ data: { ...dados, obraId, criadoPorId: usuario.id } });
+  atualizar(obraId);
+  return { ok: t("Extra adicionado. Ele fica em \"A cobrar\" até você cobrar o cliente.") };
+}
+
+export async function salvarExtra(id: string, _e: EstadoForm, form: FormData): Promise<EstadoForm> {
+  await exigirAdmin();
+  const t = getT();
+  const dados = lerExtra(form);
+  if (!dados.descricao) return { erro: t("Descreva o trabalho extra (ex.: pintar o teto do porão).") };
+  if (dados.valorCent <= 0) return { erro: t("Informe o valor que vai cobrar do cliente pelo extra.") };
+  const extra = await db.extraObra.update({ where: { id }, data: dados });
+  // Extra já pago: o recebimento no caixa acompanha o valor corrigido
+  if (extra.lancamentoId) await db.lancamento.update({ where: { id: extra.lancamentoId }, data: { valorCent: dados.valorCent, descricao: `Extra: ${dados.descricao}` } });
+  atualizar(extra.obraId);
+  return { ok: t("Extra salvo.") };
+}
+
+export async function excluirExtra(id: string) {
+  await exigirAdmin();
+  const extra = await db.extraObra.findUnique({ where: { id } });
+  if (!extra) return;
+  // Se já foi pago, o recebimento continua no caixa (o dinheiro entrou); só o registro do extra sai
+  await db.extraObra.delete({ where: { id } });
+  atualizar(extra.obraId);
+}
+
+/** Depois de mandar a mensagem de cobrança: os extras "a cobrar" passam para "cobrado, esperando pagamento". */
+export async function marcarExtrasCobrados(obraId: string) {
+  await exigirAdmin();
+  await db.extraObra.updateMany({ where: { obraId, cobradoEm: null, lancamentoId: null }, data: { cobradoEm: new Date() } });
+  atualizar(obraId);
+}
+
+/** O cliente pagou o extra: entra no caixa da obra como pagamento do cliente e o extra fica "pago". */
+export async function receberExtra(id: string, _e: EstadoForm, form: FormData): Promise<EstadoForm> {
+  const usuario = await exigirAdmin();
+  const t = getT();
+  const extra = await db.extraObra.findUnique({ where: { id } });
+  if (!extra) return { erro: t("Extra não encontrado.") };
+  if (extra.lancamentoId) return { erro: t("Este extra já está pago.") };
+  const dataPagamento = lerData(form.get("data")) ?? new Date();
+  await db.$transaction(async (tx) => {
+    const lanc = await tx.lancamento.create({
+      data: {
+        obraId: extra.obraId,
+        tipo: "ENTRADA",
+        categoria: "PAGAMENTO_CLIENTE",
+        descricao: `Extra: ${extra.descricao}`,
+        valorCent: extra.valorCent,
+        data: dataPagamento,
+        formaPagamento: texto(form.get("formaPagamento")),
+        criadoPorId: usuario.id,
+      },
+    });
+    await tx.extraObra.update({ where: { id }, data: { lancamentoId: lanc.id, cobradoEm: extra.cobradoEm ?? dataPagamento } });
+  });
+  atualizar(extra.obraId);
+  return { ok: t("Pagamento do extra lançado no caixa da obra.") };
+}

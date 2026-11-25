@@ -1,3 +1,4 @@
+import { totaisExtras } from "./extras";
 import { db } from "./db";
 import { CATEGORIAS_DESPESA } from "./constantes";
 import { rateioCustosFixos } from "./custos-fixos";
@@ -22,13 +23,17 @@ export type ResumoObra = Awaited<ReturnType<typeof resumoObra>>;
 
 /** Tudo o que a obra recebeu, gastou e orçou, separado por categoria. */
 export async function resumoObra(obraId: string) {
-  const [obra, lancamentos, orcamento, registros, rateio] = await Promise.all([
+  const [obra, lancamentos, orcamento, registros, rateio, extras] = await Promise.all([
     db.obra.findUniqueOrThrow({ where: { id: obraId }, include: { cliente: true } }),
     db.lancamento.findMany({ where: { obraId } }),
     db.itemOrcamento.findMany({ where: { obraId } }),
     db.registroPonto.findMany({ where: { obraId } }),
     rateioCustosFixos(),
+    db.extraObra.findMany({ where: { obraId } }),
   ]);
+  // Trabalhos extras pedidos pelo cliente depois de fechar: somam ao valor da obra (contrato + extras)
+  const extrasTotais = totaisExtras(extras);
+  const valorTotal = obra.valorContratoCent + extrasTotais.total;
 
   const recebido = lancamentos.filter((l) => l.tipo === "ENTRADA").reduce((s, l) => s + l.valorCent, 0);
   const custoEquipe = custoPonto(registros);
@@ -55,7 +60,9 @@ export async function resumoObra(obraId: string) {
   return {
     obra,
     recebido,
-    aReceber: obra.valorContratoCent - recebido,
+    aReceber: valorTotal - recebido,
+    extras: extrasTotais,
+    valorTotal,
     custoEquipe,
     horasEquipeMs,
     custoDireto,
@@ -66,8 +73,8 @@ export async function resumoObra(obraId: string) {
     orcadoTotal,
     // Caixa da obra: só o que saiu de verdade por esta obra (o custo fixo é pago pelo caixa da empresa)
     saldoCaixa: recebido - custoDireto,
-    lucroPrevisto: obra.valorContratoCent - orcadoTotal,
-    lucroAtual: obra.valorContratoCent - custoTotal,
+    lucroPrevisto: valorTotal - orcadoTotal - extrasTotais.custo,
+    lucroAtual: valorTotal - custoTotal,
     porCategoria,
   };
 }

@@ -26,7 +26,7 @@ export default async function Painel() {
 
   const seteDias = new Date(Date.now() - 7 * 24 * 3600 * 1000);
   const fimDeHoje = new Date(lerDataHora(`${campoData(new Date())}T23:59`)!.getTime() + 60_000);
-  const [obras, naObra, ultimos, recentes, visitas, followUps, equipe, recibos, respostas] = await Promise.all([
+  const [obras, naObra, ultimos, recentes, visitas, followUps, equipe, recibos, respostas, extrasAbertos] = await Promise.all([
     db.obra.findMany({ where: { status: { not: "CONCLUIDA" } }, include: { cliente: true }, orderBy: { criadoEm: "desc" } }),
     db.registroPonto.findMany({ where: { saida: null }, include: { usuario: true, obra: true }, orderBy: { entrada: "asc" } }),
     db.lancamento.findMany({ include: { obra: true }, orderBy: { criadoEm: "desc" }, take: 8 }),
@@ -47,7 +47,13 @@ export default async function Painel() {
       include: { orcamento: { select: { id: true, cliente: { select: { nome: true } } } } },
       orderBy: { respondidaEm: "desc" },
     }),
+    // Trabalhos extras ainda não pagos (a cobrar ou cobrados esperando pagamento)
+    db.extraObra.findMany({ where: { lancamentoId: null }, include: { obra: { select: { id: true, nome: true } } }, orderBy: { data: "asc" } }),
   ]);
+  const extrasPorObra = [...new Map(extrasAbertos.map((e) => [e.obraId, e.obra])).values()].map((o) => {
+    const daObra = extrasAbertos.filter((e) => e.obraId === o.id);
+    return { obra: o, total: daObra.reduce((s, e) => s + e.valorCent, 0), aCobrar: daObra.filter((e) => !e.cobradoEm).length, n: daObra.length };
+  });
   const agora = new Date();
   const alertas = recentes.filter(temAlertaLocal);
 
@@ -166,6 +172,28 @@ export default async function Painel() {
               </Formulario>
             </details>
           </div>
+          {extrasPorObra.length > 0 && (
+            <div className="cartao border-amber-200 bg-amber-50">
+              <h2 className="mb-2">{t("➕ Extras para receber ({valor})", { valor: dinheiro(extrasPorObra.reduce((s, x) => s + x.total, 0)) })}</h2>
+              <ul className="divide-y divide-amber-100 text-sm">
+                {extrasPorObra.map((x) => (
+                  <li key={x.obra.id} className="flex items-center justify-between gap-2 py-2">
+                    <span className="min-w-0">
+                      <b>{x.obra.nome}</b>
+                      <span className="block text-stone-600">
+                        {t("{n} extra(s)", { n: x.n })}
+                        {x.aCobrar > 0 && <b className="text-amber-900"> · {t("{n} ainda não cobrado(s)", { n: x.aCobrar })}</b>}
+                      </span>
+                    </span>
+                    <span className="flex shrink-0 items-center gap-2">
+                      <span className="font-semibold tabular-nums">{dinheiro(x.total)}</span>
+                      <Link href={`/obras/${x.obra.id}?aba=extras`} className="botao px-3 py-1.5 text-sm">{t("Abrir")}</Link>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
           {respostas.length > 0 && (
             <div className="cartao border-emerald-200 bg-emerald-50">
               <h2 className="mb-2">{t("✍ Respostas das propostas ({n})", { n: respostas.length })}</h2>

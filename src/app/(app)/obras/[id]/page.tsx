@@ -2,7 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { db } from "@/lib/db";
 import { exigirAdmin } from "@/lib/auth";
-import { data, dinheiro, hora, horas } from "@/lib/format";
+import { campoData, centavosParaCampo, data, dinheiro, hora, horas } from "@/lib/format";
+import { FORMAS_PAGAMENTO } from "@/lib/constantes";
 import { CATEGORIAS_ORCAMENTO, nomeCategoria, nomeStatus } from "@/lib/constantes";
 import { custoPonto, duracaoMs, resumoObra } from "@/lib/financeiro";
 import { Cabecalho, Campo, Indicador, SeloStatus, Vazio, Voltar } from "@/components/ui";
@@ -10,13 +11,18 @@ import { Formulario } from "@/components/Formulario";
 import { BotaoEnviar } from "@/components/BotaoEnviar";
 import { SeloLocal } from "@/components/SeloLocal";
 import { TextoUsuario } from "@/components/TextoUsuario";
-import { adicionarItemOrcamento, excluirLancamento, removerItemOrcamento } from "../actions";
+import { adicionarExtra, adicionarItemOrcamento, excluirExtra, excluirLancamento, marcarExtrasCobrados, receberExtra, removerItemOrcamento, salvarExtra } from "../actions";
+import { SITUACOES_EXTRA, mensagemExtras, situacaoExtra } from "@/lib/extras";
+import { META_MULTIPLICADOR } from "@/lib/precos";
+import { traduzirTextos } from "@/lib/traducao";
+import { EnviarMensagem } from "@/components/EnviarMensagem";
 import { getT } from "@/i18n/servidor";
 
 const ABAS = [
   { id: "resumo", rotulo: "Resumo" },
   { id: "caixa", rotulo: "Fluxo de caixa" },
   { id: "orcamento", rotulo: "Orçamento" },
+  { id: "extras", rotulo: "Extras" },
   { id: "equipe", rotulo: "Equipe e horas" },
 ];
 
@@ -67,6 +73,9 @@ export default async function Obra({ params, searchParams }: { params: { id: str
             className={`whitespace-nowrap border-b-2 px-3 py-2 text-sm font-medium ${aba === a.id ? "border-marca-600 text-marca-700" : "border-transparent text-stone-500"}`}
           >
             {t(a.rotulo)}
+            {a.id === "extras" && resumo.extras.quantidade > 0 && (
+              <span className={`ml-1 rounded-full px-1.5 text-xs ${resumo.extras.aCobrar > 0 ? "bg-amber-100 text-amber-900" : "bg-stone-100 text-stone-600"}`}>{resumo.extras.quantidade}</span>
+            )}
           </Link>
         ))}
       </div>
@@ -74,6 +83,7 @@ export default async function Obra({ params, searchParams }: { params: { id: str
       {aba === "resumo" && <AbaResumo resumo={resumo} />}
       {aba === "caixa" && <AbaCaixa obraId={obra.id} />}
       {aba === "orcamento" && <AbaOrcamento obraId={obra.id} resumo={resumo} />}
+      {aba === "extras" && <AbaExtras obraId={obra.id} />}
       {aba === "equipe" && <AbaEquipe obraId={obra.id} />}
     </>
   );
@@ -89,7 +99,11 @@ function AbaResumo({ resumo }: { resumo: Awaited<ReturnType<typeof resumoObra>> 
   return (
     <div className="space-y-4">
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
-        <Indicador rotulo={t("Valor do contrato")} valor={dinheiro(obra.valorContratoCent)} />
+        <Indicador
+          rotulo={t("Valor do contrato")}
+          valor={dinheiro(obra.valorContratoCent)}
+          detalhe={resumo.extras.total > 0 ? t("+ extras {extras} = {total}", { extras: dinheiro(resumo.extras.total), total: dinheiro(resumo.valorTotal) }) : undefined}
+        />
         <Indicador rotulo={t("Recebido do cliente")} valor={dinheiro(resumo.recebido)} detalhe={t("Falta receber {valor}", { valor: dinheiro(resumo.aReceber) })} />
         <Indicador
           rotulo={t("Custo até agora")}
@@ -113,7 +127,9 @@ function AbaResumo({ resumo }: { resumo: Awaited<ReturnType<typeof resumoObra>> 
           detalhe={
             obra.status === "CONCLUIDA" && resumo.custoTotal > 0
               ? t("Contrato = {x}x o custo real (meta 2x)", { x: (obra.valorContratoCent / resumo.custoTotal).toFixed(2) })
-              : t("Contrato − custo realizado até agora")
+              : resumo.extras.total > 0
+                ? t("Contrato + extras − custo realizado até agora")
+                : t("Contrato − custo realizado até agora")
           }
         />
         <Indicador rotulo={t("Mão de obra da equipe")} valor={dinheiro(resumo.custoEquipe)} detalhe={t("{h} trabalhadas", { h: horas(resumo.horasEquipeMs) })} />
@@ -350,6 +366,151 @@ async function AbaEquipe({ obraId }: { obraId: string }) {
         )}
         <Link href={`/registros?obra=${obraId}`} className="link mt-3 inline-block text-sm">{t("Ver e corrigir registros de ponto →")}</Link>
       </div>
+    </div>
+  );
+}
+
+async function AbaExtras({ obraId }: { obraId: string }) {
+  const t = getT();
+  const [obra, extras] = await Promise.all([
+    db.obra.findUniqueOrThrow({ where: { id: obraId }, include: { cliente: true } }),
+    db.extraObra.findMany({ where: { obraId }, orderBy: [{ data: "desc" }, { criadoEm: "desc" }], include: { lancamento: { select: { data: true, formaPagamento: true } } } }),
+  ]);
+  const total = extras.reduce((s, e) => s + e.valorCent, 0);
+  const pago = extras.filter((e) => e.lancamentoId).reduce((s, e) => s + e.valorCent, 0);
+  const abertos = extras.filter((e) => !e.lancamentoId);
+  const aCobrar = abertos.filter((e) => !e.cobradoEm);
+  // Mensagem de cobrança em inglês (regra 9) com os extras ainda não pagos
+  const descricoesEn = abertos.length > 0 ? await traduzirTextos(abertos.map((e) => e.descricao), "en").catch(() => abertos.map((e) => e.descricao)) : [];
+  const mensagem = mensagemExtras(
+    obra.cliente.nome,
+    obra.endereco || obra.nome,
+    abertos.map((e, i) => ({ descricao: descricoesEn[i], valor: dinheiro(e.valorCent) })),
+    dinheiro(abertos.reduce((s, e) => s + e.valorCent, 0)),
+  );
+  const selo: Record<string, string> = {
+    A_COBRAR: "bg-amber-100 text-amber-900",
+    COBRADO: "bg-sky-100 text-sky-900",
+    PAGO: "bg-emerald-100 text-emerald-800",
+  };
+
+  return (
+    <div className="space-y-4">
+      <div className="grid grid-cols-3 gap-2 sm:gap-3">
+        <Indicador compacto rotulo={t("Extras")} valor={dinheiro(total)} detalhe={t("{n} trabalho(s)", { n: extras.length })} />
+        <Indicador compacto rotulo={t("Pago")} valor={dinheiro(pago)} tom="bom" />
+        <Indicador compacto rotulo={t("Falta receber")} valor={dinheiro(total - pago)} tom={total - pago > 0 ? "ruim" : "neutro"} />
+      </div>
+
+      <div className="cartao">
+        <h2 className="mb-1">{t("Adicionar trabalho extra")}</h2>
+        <p className="mb-3 text-sm text-stone-600">{t("O que o cliente pediu além do combinado. Fica separado aqui para cobrar à parte.")}</p>
+        <Formulario acao={adicionarExtra.bind(null, obraId)} limparAoSalvar className="grid gap-3 sm:grid-cols-2">
+          <div className="sm:col-span-2">
+            <Campo rotulo={t("O que é o extra *")}>
+              <input className="campo" name="descricao" required placeholder={t("Ex.: Pintar o teto do porão")} />
+            </Campo>
+          </div>
+          <Campo rotulo={t("Valor para cobrar do cliente *")}>
+            <input className="campo text-lg" name="valor" inputMode="decimal" required placeholder="0.00" />
+          </Campo>
+          <Campo rotulo={t("Custo estimado (opcional)")}>
+            <input className="campo" name="custo" inputMode="decimal" placeholder="0.00" />
+          </Campo>
+          <Campo rotulo={t("Data do pedido")}>
+            <input className="campo" name="data" type="date" defaultValue={campoData(new Date())} />
+          </Campo>
+          <Campo rotulo={t("Observação")}>
+            <input className="campo" name="observacao" placeholder={t("Ex.: pedido pelo WhatsApp")} />
+          </Campo>
+          <div className="sm:col-span-2"><BotaoEnviar className="botao w-full">{t("Adicionar extra")}</BotaoEnviar></div>
+        </Formulario>
+      </div>
+
+      <div className="cartao">
+        <h2 className="mb-2">{t("Trabalhos extras")}</h2>
+        {extras.length === 0 ? (
+          <Vazio>{t("Nenhum extra nesta obra.")}</Vazio>
+        ) : (
+          <ul className="divide-y divide-stone-100">
+            {extras.map((e) => {
+              const sit = situacaoExtra(e);
+              const mult = e.custoCent > 0 ? e.valorCent / e.custoCent : null;
+              return (
+                <li key={e.id} className="py-3">
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="min-w-0">
+                      <span className="block text-xs text-stone-500">{data(e.data)}</span>
+                      <span className="block font-medium"><TextoUsuario texto={e.descricao} /></span>
+                      <span className="mt-1 flex flex-wrap items-center gap-1.5 text-xs">
+                        <span className={`selo ${selo[sit]}`}>{t(SITUACOES_EXTRA[sit])}</span>
+                        {mult !== null && (
+                          <span className={`selo tabular-nums ${mult >= META_MULTIPLICADOR ? "bg-emerald-100 text-emerald-800" : "bg-red-100 text-red-800"}`}>
+                            {mult.toFixed(2)}x
+                          </span>
+                        )}
+                        {e.lancamento && <span className="text-stone-500">{t("pago em {data}", { data: data(e.lancamento.data) })}{e.lancamento.formaPagamento && ` · ${t(e.lancamento.formaPagamento)}`}</span>}
+                        {sit === "COBRADO" && e.cobradoEm && <span className="text-stone-500">{t("cobrado em {data}", { data: data(e.cobradoEm) })}</span>}
+                      </span>
+                      {e.observacao && <span className="mt-1 block text-xs text-stone-500"><TextoUsuario texto={e.observacao} /></span>}
+                      {mult !== null && mult < META_MULTIPLICADOR && (
+                        <span className="mt-1 block text-xs font-semibold text-red-800">{t("⚠ Abaixo da meta 2x. Para chegar ao dobro, o preço seria {valor}.", { valor: dinheiro(e.custoCent * 2) })}</span>
+                      )}
+                    </div>
+                    <span className="whitespace-nowrap font-semibold tabular-nums">{dinheiro(e.valorCent)}</span>
+                  </div>
+                  <div className="mt-2 space-y-2">
+                    {!e.lancamentoId && (
+                      <details className="rounded-lg border border-emerald-200 bg-emerald-50 p-2">
+                        <summary className="cursor-pointer text-sm font-semibold text-emerald-800">{t("Recebi o pagamento deste extra")}</summary>
+                        <Formulario acao={receberExtra.bind(null, e.id)} className="mt-2 grid gap-2 sm:grid-cols-3 sm:items-end">
+                          <Campo rotulo={t("Data")}><input className="campo" name="data" type="date" defaultValue={campoData(new Date())} /></Campo>
+                          <Campo rotulo={t("Forma de pagamento")}>
+                            <select className="campo" name="formaPagamento" defaultValue="">
+                              <option value="">—</option>
+                              {FORMAS_PAGAMENTO.map((f) => <option key={f} value={f}>{t(f)}</option>)}
+                            </select>
+                          </Campo>
+                          <BotaoEnviar className="botao">{t("Lançar no caixa")}</BotaoEnviar>
+                        </Formulario>
+                      </details>
+                    )}
+                    <details className="rounded-lg border border-stone-200 p-2">
+                      <summary className="cursor-pointer text-sm font-semibold text-marca-700">{t("Editar")}</summary>
+                      <Formulario acao={salvarExtra.bind(null, e.id)} className="mt-2 grid gap-2 sm:grid-cols-2">
+                        <div className="sm:col-span-2"><Campo rotulo={t("O que é o extra *")}><input className="campo" name="descricao" defaultValue={e.descricao} required /></Campo></div>
+                        <Campo rotulo={t("Valor para cobrar do cliente *")}><input className="campo" name="valor" inputMode="decimal" defaultValue={centavosParaCampo(e.valorCent)} required /></Campo>
+                        <Campo rotulo={t("Custo estimado (opcional)")}><input className="campo" name="custo" inputMode="decimal" defaultValue={e.custoCent ? centavosParaCampo(e.custoCent) : ""} /></Campo>
+                        <Campo rotulo={t("Data do pedido")}><input className="campo" name="data" type="date" defaultValue={campoData(e.data)} /></Campo>
+                        <Campo rotulo={t("Observação")}><input className="campo" name="observacao" defaultValue={e.observacao ?? ""} /></Campo>
+                        <div className="sm:col-span-2"><BotaoEnviar className="botao-secundario w-full">{t("Salvar")}</BotaoEnviar></div>
+                      </Formulario>
+                      <form action={excluirExtra.bind(null, e.id)} className="mt-2">
+                        <BotaoEnviar className="text-sm font-semibold text-red-700 hover:underline" confirmar={e.lancamentoId ? t("Excluir este extra? O pagamento que já entrou continua no caixa.") : t("Excluir este extra?")}>
+                          {t("Excluir extra")}
+                        </BotaoEnviar>
+                      </form>
+                    </details>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        )}
+      </div>
+
+      {abertos.length > 0 && (
+        <div className="cartao border-amber-200">
+          <h2 className="mb-1">{t("Cobrar o cliente")}</h2>
+          <p className="mb-3 text-sm text-stone-600">{t("Mensagem com os extras ainda não pagos de {cliente}. Depois de enviar, marque como cobrados.", { cliente: obra.cliente.nome })}</p>
+          <EnviarMensagem mensagem={mensagem} telefone={obra.cliente.telefone} email={obra.cliente.email} assunto={`Extra work - ${obra.endereco || obra.nome}`} />
+          {aCobrar.length > 0 && (
+            <form action={marcarExtrasCobrados.bind(null, obraId)} className="mt-3">
+              <BotaoEnviar className="botao w-full">{t("Já enviei: marcar {n} extra(s) como cobrado(s)", { n: aCobrar.length })}</BotaoEnviar>
+            </form>
+          )}
+        </div>
+      )}
     </div>
   );
 }
