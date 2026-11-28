@@ -497,3 +497,10 @@ Regras: usar a descrição do produto (interior/exterior, uso). Se uma linha nã
 ## Nunca ficar sem postar (24/11)
 - Pedido do Alessandro em 24/11: "Posta qualquer coisa pra não ficar sem postar." Se o Reel do dia estiver "a definir" ou não puder sair (já publicado, sem arquivo), o Claude escolhe sozinho um Reel JÁ APROVADO do estoque (preferência: vídeo real com pessoas, sem venda, sem valores da Casa do Lago), coloca na agenda e no painel como "pronto" e publica no horário. Avisa depois, em 1 linha. Não precisa perguntar antes.
 - O duplex de Elmira (recorte de fevereiro, 22/11) é uma casa que a Discovery NÃO comprou, só visitou: não existe "parte 2" nem "depois da reforma" dela. Não prometer continuação dessa casa.
+
+## Economia do plano (28/11)
+- Pedido do Alessandro em 28/11 ("SIM APLICAR"): menos rotinas para gastar menos créditos.
+- DESLIGADAS: respostas aos comentários (ele vê no app), pasta diária do Drive, feedback semanal das gravações, limpeza semanal do Drive.
+- REDUZIDAS: leitura da Central e recibos só 1x/dia (18h47 CT); Secretário só o e-mail da manhã (6h53 CT, "Seu dia hoje"), sem o "Fechamento".
+- Mantidas: analista de crescimento (diário), ouvidor (quarta), concorrentes (sexta), aplicativos (segunda), varredura de leilões (sexta), publicação do Instagram até 29/11.
+- Não criar rotina nova nem aumentar frequência sem pedir a ele. Conversas longas gastam muito: quando o histórico ficar grande, sugerir abrir uma conversa nova com resumo.
